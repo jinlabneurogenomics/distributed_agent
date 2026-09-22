@@ -9,8 +9,10 @@
 # Supply the differential-expression Parquet separately and configure its path
 # in the analysis code. This file does not distribute experimental data, private
 # skill bundles, browser/agent infrastructure, API credentials, or network access.
-# Python 3.12 and R 4.5 match the runtime families observed in the June reports.
-# Dry-run dependency solve checked for Linux x86-64 (glibc 2.39), 2026-09-21.
+# Versions reconstructed from installed-package listings and successful install
+# receipts across 2,046 June 2026 tool transcripts. These are direct dependency pins,
+# not a full lockfile: builds, system libraries, and transitive packages vary.
+# Exact pins passed a Linux x86-64 dependency dry run (glibc 2.39), 2026-09-21.
 # A complete installation/import smoke test has not been performed.
 name: distributed-agent
 
@@ -20,41 +22,46 @@ channels:
   - nodefaults
 
 dependencies:
-  - python=3.12
-  - r-base=4.5
-  - pip
+  - python==3.12.3
+  - r-base==4.5.3
+  - pip==24.0
 
   # Numerical analysis, statistics, and plotting.
-  - numpy
-  - pandas=2.3
-  - scipy
-  - statsmodels
-  - scikit-learn
-  - matplotlib-base
-  - seaborn
+  # Some rollouts downgraded NumPy to 1.26.4 when installing older readers.
+  - numpy==2.2.6
+  - pandas==2.3.3
+  - scipy==1.14.1
+  - statsmodels==0.14.6
+  - scikit-learn==1.8.0
+  - matplotlib-base==3.10.8
+  - seaborn==0.13.2
 
   # Single-cell data structures, enrichment, and biological sequence utilities.
-  - anndata=0.12
-  - scanpy=1.11
-  - biopython=1.86
-  - gseapy=1.1
-  - h5py
+  - anndata==0.12.8
+  - scanpy==1.12
+  - biopython==1.86
+  - gseapy==1.1.11
+  - h5py==3.15.1
 
   # Included up front; the June agents installed these readers at runtime.
-  - pyarrow
-  - python-duckdb
-  - polars
+  # Use the most commonly observed versions; some rollouts installed older ones.
+  # Other observed versions: PyArrow 15.0.2/16.1.0/17.0.0, DuckDB 1.0.0/1.1.3,
+  # and Polars 1.9.0. These alternatives are not installed by this environment.
+  - pyarrow==24.0.0
+  - python-duckdb==1.5.3
+  - polars==1.41.2
 
   # Public database clients and structured-file handling; no credentials included.
-  - requests
-  - httpx
-  - beautifulsoup4
-  - lxml
-  - pyyaml
-  - openpyxl
+  - requests==2.34.2
+  - httpx==0.28.1
+  - beautifulsoup4==4.15.0
+  - lxml==6.1.1
+  - pyyaml==6.0.3
+  - openpyxl==3.1.5
 
   # Interactive analysis and shell utilities.
-  - ipykernel
+  - ipykernel==7.3.0
+  # Historical versions were not recorded; intentionally unpinned.
   - bash
   - curl
   - wget
