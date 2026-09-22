@@ -1,0 +1,61 @@
+# Portable CPU analysis environment for mouse-brain Perturb-seq reports.
+# This is a curated analysis environment, not a lockfile or an exact export of
+# the historical Linux container. Unpinned transitive dependencies may change.
+#
+# Create: CONDA_CHANNEL_PRIORITY=strict conda env create --file environment.yml
+# Activate: conda activate distributed-agent
+# Alternative: micromamba create --file environment.yml --strict-channel-priority
+#
+# Supply the differential-expression Parquet separately and configure its path
+# in the analysis code. This file does not distribute experimental data, private
+# skill bundles, browser/agent infrastructure, API credentials, or network access.
+# Python 3.12 and R 4.5 match the runtime families observed in the June reports.
+# Dry-run dependency solve checked for Linux x86-64 (glibc 2.39), 2026-09-21.
+# A complete installation/import smoke test has not been performed.
+name: distributed-agent
+
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+
+dependencies:
+  - python=3.12
+  - r-base=4.5
+  - pip
+
+  # Numerical analysis, statistics, and plotting.
+  - numpy
+  - pandas=2.3
+  - scipy
+  - statsmodels
+  - scikit-learn
+  - matplotlib-base
+  - seaborn
+
+  # Single-cell data structures, enrichment, and biological sequence utilities.
+  - anndata=0.12
+  - scanpy=1.11
+  - biopython=1.86
+  - gseapy=1.1
+  - h5py
+
+  # Included up front; the June agents installed these readers at runtime.
+  - pyarrow
+  - python-duckdb
+  - polars
+
+  # Public database clients and structured-file handling; no credentials included.
+  - requests
+  - httpx
+  - beautifulsoup4
+  - lxml
+  - pyyaml
+  - openpyxl
+
+  # Interactive analysis and shell utilities.
+  - ipykernel
+  - bash
+  - curl
+  - wget
+  - jq
