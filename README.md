@@ -1,6 +1,6 @@
 # Distributed Agents
 
-DistributedAgents is an agent interface for exploring whole-brain Perturb-seq results. This repository contains the code for the framework, and notebooks to reproduce the manuscript figures and supplementary data tables.
+DistributedAgents is a framework for scaling biological interpretation across large perturbation screens. Applied to a whole-brain in vivo CRISPR Perturb-seq atlas, the pipeline assigns independent AI agents to individual perturbations, integrates cell-type-resolved expression data with literature databases, and creates narrative and structured reports for each perturbation. The framework synthesizes across reports to recover known biology, predict held-out responses, identify relationships between perturbations, and prioritize hypotheses for follow-up. This repository provides the agent runtime, corpus tooling, and notebooks used for the manuscript’s analyses, figures, and supplementary tables.
 
 ## Setup
 
