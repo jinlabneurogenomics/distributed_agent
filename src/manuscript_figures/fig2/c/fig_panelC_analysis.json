@@ -1,0 +1,37 @@
+{
+  "accessed_mean": 19.152003910068427,
+  "accessed_median": 18.0,
+  "accessed_total": 39185,
+  "agent_min_iqr": [
+    24.721641666666667,
+    36.772508333333334
+  ],
+  "agent_min_range": [
+    20.202383333333334,
+    56.44766666666667
+  ],
+  "agent_parallel_hours": 0.5259575,
+  "agent_runtime_n": 24,
+  "agent_serial_hours": 1076.109045,
+  "agent_total_cost": 4795.716926,
+  "agent_unit_cost": 2.3439476666666668,
+  "agent_unit_min": 31.55745,
+  "analyst_accessed_cost": 176058.3333333333,
+  "analyst_accessed_hours": 7042.333333333333,
+  "analyst_base_cost": 12787.5,
+  "analyst_base_hours": 511.5,
+  "analyst_cited_cost": 81308.33333333334,
+  "analyst_cited_hours": 3252.3333333333335,
+  "citation_entries_total": 16555,
+  "cited_mean": 8.03763440860215,
+  "cited_median": 8.0,
+  "cited_total": 16445,
+  "counting_note": "Accessed and cited distributions use distinct report-source pairs. The displayed 16.6k citation total is the 16,555 raw reference entries.",
+  "n": 2046,
+  "source_inputs": {
+    "agent_cost_proxy": "manuscript/fig2/c/framework_human_scale_summary.json",
+    "runtime": "debug/260730_prompt_v4_live_eval/analysis/per_report.csv",
+    "source_access_per_report": "manuscript/fig2/c/updated/source_access_per_report.csv",
+    "source_access_summary": "manuscript/fig2/c/updated/source_access_summary.json"
+  }
+}

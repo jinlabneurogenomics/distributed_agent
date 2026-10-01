@@ -1,0 +1,133 @@
+{
+  "build_policy": {
+    "biological_findings_only": true,
+    "claim_centric_attachment": false,
+    "concept_extraction": false,
+    "disconnected_semantic_merge": false,
+    "freeze_model_calls": false,
+    "null_findings": false,
+    "program_extraction": false,
+    "projection_model_calls": false
+  },
+  "counts": {
+    "candidate_findings": 1840,
+    "claim_confidences": {
+      "high": 233,
+      "low": 1,
+      "moderate": 321
+    },
+    "claims": 555,
+    "contributing_findings": 1753,
+    "contributing_targets": 1286,
+    "contribution_roles": {
+      "ANCHORS": 1015,
+      "CONTRASTS": 81,
+      "QUALIFIES": 402,
+      "SUPPORTS": 736
+    },
+    "contributions": 2234,
+    "finding_dispositions": {
+      "considered_no_contribution": 87,
+      "contributed": 1753,
+      "not_in_candidate_neighborhood": 6878
+    },
+    "findings": 8718,
+    "neighborhoods": 1381,
+    "proposal_dispositions": {
+      "merged": 1263,
+      "rejected": 23,
+      "retained": 294,
+      "split": 49
+    },
+    "proposals": 1629
+  },
+  "inputs": {
+    "claims": {
+      "bytes": 966043,
+      "path": "_work/claims/consolidation/claims.jsonl",
+      "records": 555,
+      "sha256": "c9a50ddfcafd8bedd8b25f46382ad6fabb55b294e870cbc1d56981ea8f140aca"
+    },
+    "neighborhoods": {
+      "bytes": 452921,
+      "path": "_work/claims/neighborhoods.jsonl",
+      "records": 1381,
+      "sha256": "0f3a7bade90fc85950f09e38407a3ef03effec64e36abbf54c49aa8ae8ecf1b5"
+    },
+    "proposal_dispositions": {
+      "bytes": 531303,
+      "path": "_work/claims/consolidation/proposal_dispositions.jsonl",
+      "records": 1629,
+      "sha256": "d4e8cc8f733c5572177e247bc1f6b00cc7f613d4b1e91ec7a648f085e08ac0b3"
+    },
+    "proposals": {
+      "bytes": 2731271,
+      "path": "_work/claims/consolidation/proposals.jsonl",
+      "records": 1629,
+      "sha256": "54fbbcba41535dc16f851765bdbbc6ec5852faeb336fa87592679ffd82beffc4"
+    }
+  },
+  "model_provenance": {
+    "consolidation": {
+      "inference_calls": 81,
+      "model": "gpt-5.5",
+      "reasoning_effort": "low"
+    },
+    "induction": {
+      "inference_calls": 176,
+      "model": "gpt-5.5",
+      "reasoning_effort": "low"
+    },
+    "total_inference_calls": 257
+  },
+  "outputs": {
+    "claims": {
+      "bytes": 555034,
+      "path": "artifacts/claims/claims.jsonl",
+      "records": 555,
+      "sha256": "9b6a6be7be195815259918d77fa0eb2361f0bf8806490f4e68cd7388862270bd"
+    },
+    "contributions": {
+      "bytes": 955894,
+      "path": "artifacts/claims/contributions.jsonl",
+      "records": 2234,
+      "sha256": "ea162fd9898c3c48913a990c6f8214a79e0b52da50c50ab27cad551a37abe040"
+    },
+    "finding_dispositions": {
+      "bytes": 2195008,
+      "path": "artifacts/claims/finding_dispositions.jsonl",
+      "records": 8718,
+      "sha256": "1f5986e4a99234cec5594248a4c455f506d0930e0180109772d2ff763ddb1756"
+    },
+    "neighborhoods": {
+      "bytes": 510923,
+      "path": "artifacts/claims/neighborhoods.jsonl",
+      "records": 1381,
+      "sha256": "0260c6f57aa24ca2e4c9c5c32109d5102abb70b3632268db339718bf872b7b2c"
+    },
+    "proposal_dispositions": {
+      "bytes": 629043,
+      "path": "artifacts/claims/proposal_dispositions.jsonl",
+      "records": 1629,
+      "sha256": "83c8943c55ab5d58db3e0c702d62bf1d408564b1b959cdc0f97c2815b7c20e9a"
+    },
+    "proposals": {
+      "bytes": 2771996,
+      "path": "artifacts/claims/proposals.jsonl",
+      "records": 1629,
+      "sha256": "5adbdf82a427734e6cb13d33d71c6c7fde38c108d1c1ce1a089614c6982b2a81"
+    }
+  },
+  "schema_version": "july-bottom-up-claim-build-v1",
+  "source": {
+    "bytes": 13774975,
+    "path": "artifacts/ledgers/findings.jsonl",
+    "records": 8718,
+    "sha256": "b1f9dc74ceb3a95cf41b14977abbc82c2d110303eca701b90ab2ae5da251acef"
+  },
+  "versions": {
+    "consolidation": "july-bottom-up-claim-consolidation-v1",
+    "induction": "july-bottom-up-claims-batched-v1",
+    "neighborhoods": "july-bottom-up-claims-v1"
+  }
+}

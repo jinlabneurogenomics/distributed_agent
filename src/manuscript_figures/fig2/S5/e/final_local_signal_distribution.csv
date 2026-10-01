@@ -1,0 +1,97 @@
+analysis_layer,local_signal_stratum,local_signal_label,arm,flag,flag_label,count,percent,n_placements,n_unique_findings
+primary,Strong,Strong local signal (≥100),Unshuffled,agree,Agree,257,34.176,752,316
+primary,Strong,Strong local signal (≥100),Unshuffled,disagree,Disagree,9,1.197,752,316
+primary,Strong,Strong local signal (≥100),Unshuffled,inferred,Inferred,275,36.569,752,316
+primary,Strong,Strong local signal (≥100),Unshuffled,no_literature,No Literature,211,28.059,752,316
+primary,Strong,Strong local signal (≥100),Within-screen shuffled,agree,Agree,127,13.834,918,378
+primary,Strong,Strong local signal (≥100),Within-screen shuffled,disagree,Disagree,39,4.248,918,378
+primary,Strong,Strong local signal (≥100),Within-screen shuffled,inferred,Inferred,307,33.442,918,378
+primary,Strong,Strong local signal (≥100),Within-screen shuffled,no_literature,No Literature,445,48.475,918,378
+primary,Strong,Strong local signal (≥100),Out-of-screen shuffled,agree,Agree,73,7.935,920,356
+primary,Strong,Strong local signal (≥100),Out-of-screen shuffled,disagree,Disagree,34,3.696,920,356
+primary,Strong,Strong local signal (≥100),Out-of-screen shuffled,inferred,Inferred,232,25.217,920,356
+primary,Strong,Strong local signal (≥100),Out-of-screen shuffled,no_literature,No Literature,581,63.152,920,356
+primary,Moderate,Moderate local signal (25–99),Unshuffled,agree,Agree,125,26.483,472,289
+primary,Moderate,Moderate local signal (25–99),Unshuffled,disagree,Disagree,7,1.483,472,289
+primary,Moderate,Moderate local signal (25–99),Unshuffled,inferred,Inferred,191,40.466,472,289
+primary,Moderate,Moderate local signal (25–99),Unshuffled,no_literature,No Literature,149,31.568,472,289
+primary,Moderate,Moderate local signal (25–99),Within-screen shuffled,agree,Agree,95,16.184,587,335
+primary,Moderate,Moderate local signal (25–99),Within-screen shuffled,disagree,Disagree,43,7.325,587,335
+primary,Moderate,Moderate local signal (25–99),Within-screen shuffled,inferred,Inferred,210,35.775,587,335
+primary,Moderate,Moderate local signal (25–99),Within-screen shuffled,no_literature,No Literature,239,40.716,587,335
+primary,Moderate,Moderate local signal (25–99),Out-of-screen shuffled,agree,Agree,48,7.583,633,339
+primary,Moderate,Moderate local signal (25–99),Out-of-screen shuffled,disagree,Disagree,16,2.528,633,339
+primary,Moderate,Moderate local signal (25–99),Out-of-screen shuffled,inferred,Inferred,174,27.488,633,339
+primary,Moderate,Moderate local signal (25–99),Out-of-screen shuffled,no_literature,No Literature,395,62.401,633,339
+primary,Low,Low local signal (1–24),Unshuffled,agree,Agree,124,24.314,510,211
+primary,Low,Low local signal (1–24),Unshuffled,disagree,Disagree,2,0.392,510,211
+primary,Low,Low local signal (1–24),Unshuffled,inferred,Inferred,202,39.608,510,211
+primary,Low,Low local signal (1–24),Unshuffled,no_literature,No Literature,182,35.686,510,211
+primary,Low,Low local signal (1–24),Within-screen shuffled,agree,Agree,94,10.375,906,253
+primary,Low,Low local signal (1–24),Within-screen shuffled,disagree,Disagree,125,13.797,906,253
+primary,Low,Low local signal (1–24),Within-screen shuffled,inferred,Inferred,295,32.561,906,253
+primary,Low,Low local signal (1–24),Within-screen shuffled,no_literature,No Literature,392,43.267,906,253
+primary,Low,Low local signal (1–24),Out-of-screen shuffled,agree,Agree,74,6.968,1062,253
+primary,Low,Low local signal (1–24),Out-of-screen shuffled,disagree,Disagree,25,2.354,1062,253
+primary,Low,Low local signal (1–24),Out-of-screen shuffled,inferred,Inferred,348,32.768,1062,253
+primary,Low,Low local signal (1–24),Out-of-screen shuffled,no_literature,No Literature,615,57.91,1062,253
+primary,No local DEGs,No local DEGs (0),Unshuffled,agree,Agree,2,3.774,53,12
+primary,No local DEGs,No local DEGs (0),Unshuffled,disagree,Disagree,0,0.0,53,12
+primary,No local DEGs,No local DEGs (0),Unshuffled,inferred,Inferred,50,94.34,53,12
+primary,No local DEGs,No local DEGs (0),Unshuffled,no_literature,No Literature,1,1.887,53,12
+primary,No local DEGs,No local DEGs (0),Within-screen shuffled,agree,Agree,29,6.304,460,61
+primary,No local DEGs,No local DEGs (0),Within-screen shuffled,disagree,Disagree,144,31.304,460,61
+primary,No local DEGs,No local DEGs (0),Within-screen shuffled,inferred,Inferred,178,38.696,460,61
+primary,No local DEGs,No local DEGs (0),Within-screen shuffled,no_literature,No Literature,109,23.696,460,61
+primary,No local DEGs,No local DEGs (0),Out-of-screen shuffled,agree,Agree,25,6.906,362,51
+primary,No local DEGs,No local DEGs (0),Out-of-screen shuffled,disagree,Disagree,34,9.392,362,51
+primary,No local DEGs,No local DEGs (0),Out-of-screen shuffled,inferred,Inferred,178,49.171,362,51
+primary,No local DEGs,No local DEGs (0),Out-of-screen shuffled,no_literature,No Literature,125,34.53,362,51
+sensitivity,Strong,Strong local signal (≥100),Unshuffled,agree,Agree,263,30.832,853,356
+sensitivity,Strong,Strong local signal (≥100),Unshuffled,disagree,Disagree,9,1.055,853,356
+sensitivity,Strong,Strong local signal (≥100),Unshuffled,inferred,Inferred,293,34.349,853,356
+sensitivity,Strong,Strong local signal (≥100),Unshuffled,no_literature,No Literature,288,33.763,853,356
+sensitivity,Strong,Strong local signal (≥100),Within-screen shuffled,agree,Agree,127,13.312,954,391
+sensitivity,Strong,Strong local signal (≥100),Within-screen shuffled,disagree,Disagree,39,4.088,954,391
+sensitivity,Strong,Strong local signal (≥100),Within-screen shuffled,inferred,Inferred,315,33.019,954,391
+sensitivity,Strong,Strong local signal (≥100),Within-screen shuffled,no_literature,No Literature,473,49.581,954,391
+sensitivity,Strong,Strong local signal (≥100),Out-of-screen shuffled,agree,Agree,74,7.497,987,381
+sensitivity,Strong,Strong local signal (≥100),Out-of-screen shuffled,disagree,Disagree,34,3.445,987,381
+sensitivity,Strong,Strong local signal (≥100),Out-of-screen shuffled,inferred,Inferred,235,23.81,987,381
+sensitivity,Strong,Strong local signal (≥100),Out-of-screen shuffled,no_literature,No Literature,644,65.248,987,381
+sensitivity,Moderate,Moderate local signal (25–99),Unshuffled,agree,Agree,130,23.636,550,335
+sensitivity,Moderate,Moderate local signal (25–99),Unshuffled,disagree,Disagree,7,1.273,550,335
+sensitivity,Moderate,Moderate local signal (25–99),Unshuffled,inferred,Inferred,213,38.727,550,335
+sensitivity,Moderate,Moderate local signal (25–99),Unshuffled,no_literature,No Literature,200,36.364,550,335
+sensitivity,Moderate,Moderate local signal (25–99),Within-screen shuffled,agree,Agree,100,15.625,640,363
+sensitivity,Moderate,Moderate local signal (25–99),Within-screen shuffled,disagree,Disagree,43,6.719,640,363
+sensitivity,Moderate,Moderate local signal (25–99),Within-screen shuffled,inferred,Inferred,216,33.75,640,363
+sensitivity,Moderate,Moderate local signal (25–99),Within-screen shuffled,no_literature,No Literature,281,43.906,640,363
+sensitivity,Moderate,Moderate local signal (25–99),Out-of-screen shuffled,agree,Agree,48,7.09,677,366
+sensitivity,Moderate,Moderate local signal (25–99),Out-of-screen shuffled,disagree,Disagree,16,2.363,677,366
+sensitivity,Moderate,Moderate local signal (25–99),Out-of-screen shuffled,inferred,Inferred,183,27.031,677,366
+sensitivity,Moderate,Moderate local signal (25–99),Out-of-screen shuffled,no_literature,No Literature,430,63.516,677,366
+sensitivity,Low,Low local signal (1–24),Unshuffled,agree,Agree,131,17.655,742,306
+sensitivity,Low,Low local signal (1–24),Unshuffled,disagree,Disagree,2,0.27,742,306
+sensitivity,Low,Low local signal (1–24),Unshuffled,inferred,Inferred,241,32.48,742,306
+sensitivity,Low,Low local signal (1–24),Unshuffled,no_literature,No Literature,368,49.596,742,306
+sensitivity,Low,Low local signal (1–24),Within-screen shuffled,agree,Agree,97,8.077,1201,332
+sensitivity,Low,Low local signal (1–24),Within-screen shuffled,disagree,Disagree,125,10.408,1201,332
+sensitivity,Low,Low local signal (1–24),Within-screen shuffled,inferred,Inferred,352,29.309,1201,332
+sensitivity,Low,Low local signal (1–24),Within-screen shuffled,no_literature,No Literature,627,52.206,1201,332
+sensitivity,Low,Low local signal (1–24),Out-of-screen shuffled,agree,Agree,74,5.49,1348,332
+sensitivity,Low,Low local signal (1–24),Out-of-screen shuffled,disagree,Disagree,25,1.855,1348,332
+sensitivity,Low,Low local signal (1–24),Out-of-screen shuffled,inferred,Inferred,366,27.151,1348,332
+sensitivity,Low,Low local signal (1–24),Out-of-screen shuffled,no_literature,No Literature,883,65.504,1348,332
+sensitivity,No local DEGs,No local DEGs (0),Unshuffled,agree,Agree,2,1.333,150,20
+sensitivity,No local DEGs,No local DEGs (0),Unshuffled,disagree,Disagree,0,0.0,150,20
+sensitivity,No local DEGs,No local DEGs (0),Unshuffled,inferred,Inferred,90,60.0,150,20
+sensitivity,No local DEGs,No local DEGs (0),Unshuffled,no_literature,No Literature,58,38.667,150,20
+sensitivity,No local DEGs,No local DEGs (0),Within-screen shuffled,agree,Agree,29,5.07,572,77
+sensitivity,No local DEGs,No local DEGs (0),Within-screen shuffled,disagree,Disagree,144,25.175,572,77
+sensitivity,No local DEGs,No local DEGs (0),Within-screen shuffled,inferred,Inferred,185,32.343,572,77
+sensitivity,No local DEGs,No local DEGs (0),Within-screen shuffled,no_literature,No Literature,214,37.413,572,77
+sensitivity,No local DEGs,No local DEGs (0),Out-of-screen shuffled,agree,Agree,25,5.631,444,64
+sensitivity,No local DEGs,No local DEGs (0),Out-of-screen shuffled,disagree,Disagree,34,7.658,444,64
+sensitivity,No local DEGs,No local DEGs (0),Out-of-screen shuffled,inferred,Inferred,178,40.09,444,64
+sensitivity,No local DEGs,No local DEGs (0),Out-of-screen shuffled,no_literature,No Literature,207,46.622,444,64

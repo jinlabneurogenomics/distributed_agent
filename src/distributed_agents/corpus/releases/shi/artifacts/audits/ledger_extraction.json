@@ -1,0 +1,52 @@
+{
+  "integrity": {
+    "finding_evidence_links_resolved": true,
+    "finding_reference_links_resolved": true,
+    "unique_target_scoped_ids": true
+  },
+  "issues": [
+    {
+      "block_line": 4,
+      "error": "Expecting ',' delimiter: line 1 column 404 (char 403)",
+      "kind": "invalid_json_line_skipped",
+      "ledger": "findings",
+      "raw_sha256": "98fdd84e323cbb32427922120ddd94d4506707c60b9b1f1a23c6ecca9d7af546",
+      "target_gene": "Hoxc13"
+    }
+  ],
+  "outputs": {
+    "evidence": {
+      "bytes": 8294155,
+      "path": "artifacts/ledgers/evidence.csv",
+      "records": 18602,
+      "sha256": "739a591715a5ab4310bf120ccd35d0f5a02301a122e7125b29228bad7d23eaa1"
+    },
+    "findings": {
+      "bytes": 7950569,
+      "path": "artifacts/ledgers/findings.csv",
+      "records": 11343,
+      "sha256": "644437aa3072d7f6896751824a131bed841bfe3af3b5604bee7970660d22fcb1"
+    },
+    "references": {
+      "bytes": 6803431,
+      "path": "artifacts/ledgers/references.csv",
+      "records": 16580,
+      "sha256": "2bdf86bfbe1e1d64a38b0d8a1951f774f8751b1d5a8b9f60f1c9d6f045f0a015"
+    }
+  },
+  "policy": {
+    "invalid_rows": "record_and_skip_without_semantic_repair",
+    "model_calls": false,
+    "network": false,
+    "ordering": "source-report-order_then-section-row-order",
+    "parser": "legacy-compatible-three-section-jsonl-v1"
+  },
+  "schema_version": "distributed_agents-legacy-ledger-extraction-audit-v1",
+  "source": {
+    "bytes": 60814058,
+    "path": "artifacts/reports/reports.jsonl",
+    "records": 2046,
+    "sha256": "250c65b1cdf001c65ed19fa530048ac2aa4c14630b360c6dc0e68987ba25a053",
+    "unique_targets": 2046
+  }
+}

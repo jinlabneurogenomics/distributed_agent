@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Shi holdout Finding Claim-layer disposition",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "finding_doc_id",
+    "target_gene",
+    "finding_id",
+    "disposition",
+    "claim_ids",
+    "contribution_roles",
+    "neighborhood_count"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "july-bottom-up-finding-claim-disposition-v1"
+    },
+    "finding_doc_id": {
+      "type": "string",
+      "pattern": "^[^:]+:F[0-9]+$"
+    },
+    "target_gene": {
+      "type": "string",
+      "minLength": 1
+    },
+    "finding_id": {
+      "type": "string",
+      "pattern": "^F[0-9]+$"
+    },
+    "disposition": {
+      "enum": [
+        "contributed",
+        "considered_no_contribution",
+        "not_in_candidate_neighborhood"
+      ]
+    },
+    "claim_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^claim:[0-9a-f]{20}$"
+      }
+    },
+    "contribution_roles": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "ANCHORS",
+          "SUPPORTS",
+          "QUALIFIES",
+          "CONTRASTS"
+        ]
+      }
+    },
+    "neighborhood_count": {
+      "type": "integer",
+      "minimum": 0
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "disposition": {
+            "const": "contributed"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "claim_ids": {
+            "minItems": 1
+          },
+          "contribution_roles": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "disposition": {
+            "enum": [
+              "considered_no_contribution",
+              "not_in_candidate_neighborhood"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "claim_ids": {
+            "maxItems": 0
+          },
+          "contribution_roles": {
+            "maxItems": 0
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "disposition": {
+            "const": "not_in_candidate_neighborhood"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "neighborhood_count": {
+            "const": 0
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "disposition": {
+            "enum": [
+              "contributed",
+              "considered_no_contribution"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "neighborhood_count": {
+            "minimum": 1
+          }
+        }
+      }
+    }
+  ],
+  "additionalProperties": false
+}

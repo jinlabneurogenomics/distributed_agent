@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Shi holdout BioKG relationship",
+  "type": "object",
+  "required": ["start_id", "end_id", "type", "properties"],
+  "properties": {
+    "start_id": {"type": "string", "minLength": 1},
+    "end_id": {"type": "string", "minLength": 1},
+    "type": {
+      "enum": [
+        "HAS_FINDING",
+        "HAS_TARGET",
+        "REPORTS_GENE",
+        "SUPPORTED_BY",
+        "CITES",
+        "EXPRESSES_CLAIM"
+      ]
+    },
+    "properties": {
+      "type": "object",
+      "required": ["role"],
+      "properties": {
+        "source_doc": {"type": "string", "minLength": 1},
+        "finding_id": {"type": "string", "pattern": "^F[0-9]+$"},
+        "confidence": {"type": "string", "minLength": 1},
+        "claim_id": {"type": "string", "pattern": "^claim:[0-9a-f]{20}$"},
+        "rationale": {"type": "string", "minLength": 1},
+        "role": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"type": {"const": "HAS_FINDING"}}},
+      "then": {
+        "properties": {
+          "properties": {
+            "required": ["source_doc", "finding_id", "confidence", "role"],
+            "properties": {"role": {"const": "target_to_finding"}}
+          }
+        }
+      }
+    },
+    {
+      "if": {"properties": {"type": {"const": "HAS_TARGET"}}},
+      "then": {
+        "properties": {
+          "properties": {
+            "required": ["source_doc", "finding_id", "confidence", "role"],
+            "properties": {"role": {"const": "finding_target"}}
+          }
+        }
+      }
+    },
+    {
+      "if": {"properties": {"type": {"const": "REPORTS_GENE"}}},
+      "then": {
+        "properties": {
+          "properties": {
+            "required": ["source_doc", "finding_id", "confidence", "role"],
+            "properties": {"role": {"const": "finding_reported_comparator"}}
+          }
+        }
+      }
+    },
+    {
+      "if": {"properties": {"type": {"const": "SUPPORTED_BY"}}},
+      "then": {
+        "properties": {
+          "properties": {
+            "required": ["source_doc", "finding_id", "confidence", "role"],
+            "properties": {"role": {"const": "evidence"}}
+          }
+        }
+      }
+    },
+    {
+      "if": {"properties": {"type": {"const": "CITES"}}},
+      "then": {
+        "properties": {
+          "properties": {
+            "required": ["source_doc", "finding_id", "confidence", "role"],
+            "properties": {"role": {"const": "reference"}}
+          }
+        }
+      }
+    },
+    {
+      "if": {"properties": {"type": {"const": "EXPRESSES_CLAIM"}}},
+      "then": {
+        "properties": {
+          "properties": {
+            "required": ["source_doc", "finding_id", "claim_id", "role", "rationale"],
+            "properties": {
+              "role": {"enum": ["ANCHORS", "SUPPORTS", "QUALIFIES", "CONTRASTS"]}
+            }
+          }
+        }
+      }
+    }
+  ],
+  "additionalProperties": false
+}

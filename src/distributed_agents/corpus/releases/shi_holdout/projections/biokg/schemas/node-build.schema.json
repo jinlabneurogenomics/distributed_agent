@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Shi holdout BioKG node build record",
+  "type": "object",
+  "required": ["schema_version", "sources", "node_counts", "output", "build_policy"],
+  "properties": {
+    "schema_version": {"const": "distributed_agents-biokg-node-build-v2"},
+    "sources": {
+      "type": "object",
+      "required": ["reports", "findings", "evidence", "references", "claims"]
+    },
+    "node_counts": {
+      "type": "object",
+      "required": ["TargetGene", "Gene", "Finding", "Evidence", "Reference", "Claim"],
+      "additionalProperties": {"type": "integer", "minimum": 0}
+    },
+    "output": {
+      "type": "object",
+      "required": ["path", "records", "bytes", "sha256"],
+      "properties": {
+        "path": {"const": "nodes.jsonl"},
+        "records": {"type": "integer", "minimum": 0},
+        "bytes": {"type": "integer", "minimum": 0},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "build_policy": {
+      "type": "object",
+      "required": ["claims", "gene_nodes", "ledger_properties", "model_calls", "network", "relationships", "semantic_extraction"],
+      "properties": {
+        "claims": {"const": "frozen_bottom_up_claim_ledger"},
+        "gene_nodes": {"const": "canonicalized_from_finding_comparators"},
+        "ledger_properties": {"const": "copied_unchanged"},
+        "model_calls": {"const": false},
+        "network": {"const": false},
+        "relationships": {"const": false},
+        "semantic_extraction": {"const": false}
+      }
+    }
+  },
+  "additionalProperties": false
+}

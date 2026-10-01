@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://distributed_agents.local/schemas/legacy-report-v1.schema.json",
+  "title": "Legacy PerturbAI per-target report",
+  "type": "object",
+  "required": ["gene_target", "final_report"],
+  "properties": {
+    "gene_target": {"type": "string", "minLength": 1},
+    "final_report": {"type": "string", "minLength": 1}
+  },
+  "additionalProperties": true
+}

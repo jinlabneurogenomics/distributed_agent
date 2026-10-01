@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Shi holdout bottom-up Claim proposal",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "construction_scope",
+    "proposal_id",
+    "source_neighborhood_id",
+    "source_local_claim_id",
+    "statement",
+    "scope",
+    "higher_order_basis",
+    "confidence",
+    "contributions"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "july-bottom-up-claim-proposal-v1"
+    },
+    "construction_scope": {
+      "const": "corpus"
+    },
+    "proposal_id": {
+      "type": "string",
+      "pattern": "^proposal:[0-9a-f]{20}$"
+    },
+    "source_neighborhood_id": {
+      "type": "string",
+      "pattern": "^neighborhood:[0-9a-f]{20}$"
+    },
+    "source_local_claim_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "statement": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "higher_order_basis": {
+      "type": "string",
+      "minLength": 1
+    },
+    "confidence": {
+      "enum": [
+        "high",
+        "moderate",
+        "low"
+      ]
+    },
+    "contributions": {
+      "type": "array",
+      "minItems": 2,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": [
+          "finding_doc_id",
+          "role",
+          "rationale"
+        ],
+        "properties": {
+          "finding_doc_id": {
+            "type": "string",
+            "pattern": "^[^:]+:F[0-9]+$"
+          },
+          "role": {
+            "enum": [
+              "ANCHORS",
+              "SUPPORTS",
+              "QUALIFIES",
+              "CONTRASTS"
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

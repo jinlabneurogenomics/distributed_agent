@@ -1,0 +1,32 @@
+# Four-direction literature-concordance task. Replace targets.example.json or
+# point a copied manifest at another target-only JSON cohort.
+
+task_id = "literature-flags-4"
+prompt = "prompt.md"
+
+[deliverables]
+files = [
+  "q3_cell_type_specificity.jsonl",
+  "q3_references.jsonl",
+  "q3_evidence.jsonl",
+  "q3_methods.md",
+]
+
+[inputs]
+input_parquet = "${DISTRIBUTED_AGENTS_SHARED_ROOT}/data/wilcoxon_de_results_group_name_final_data_no_multi_guide_cells.parquet"
+target_manifest = "targets.example.json"
+
+[source_policy]
+mode = "filtered-literature"
+max_results = 20
+deny_patterns = [
+  "10.64898/2026.03.16.711480",
+  "2026.03.16.711480",
+  "PMC13108593",
+  "Genome-scale functional mapping of the mammalian whole brain with in vivo Perturb-seq",
+  "jinlabneurogenomics/wholebrainperturbseq",
+  "github.com/jinlabneurogenomics/wholebrainperturbseq",
+  "perturbai/wholebrain_crispr_atlas",
+  "huggingface.co/datasets/perturbai/wholebrain_crispr_atlas",
+  "402693133_Genome-scale_functional_mapping_of_the_mammalian_whole_brain_with_in_vivo_Perturb-seq",
+]

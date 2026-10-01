@@ -1,0 +1,24 @@
+Bootstrap: docker
+From: python:3.12-slim
+
+%labels
+    org.opencontainers.image.title bioeval-filtered-search
+    org.opencontainers.image.description "Filtered PubMed MCP broker for protected bioeval runs"
+    org.opencontainers.image.version 1.0.0
+
+%files
+    ../runtime/filtered_search_server.py /opt/bioeval/filtered_search_server.py
+
+%post
+    mkdir -p /run/bioeval
+    chmod 0755 /opt/bioeval/filtered_search_server.py
+
+%environment
+    export PYTHONUNBUFFERED=1
+    export PYTHONDONTWRITEBYTECODE=1
+
+%runscript
+    exec python3 /opt/bioeval/filtered_search_server.py "$@"
+
+%test
+    python3 /opt/bioeval/filtered_search_server.py --self-test

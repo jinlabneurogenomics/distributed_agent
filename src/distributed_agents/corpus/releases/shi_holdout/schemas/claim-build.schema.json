@@ -1,0 +1,556 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Shi holdout bottom-up Claim freeze build record",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "versions",
+    "source",
+    "inputs",
+    "outputs",
+    "counts",
+    "model_provenance",
+    "build_policy"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "july-bottom-up-claim-build-v1"
+    },
+    "versions": {
+      "type": "object",
+      "required": [
+        "neighborhoods",
+        "induction",
+        "consolidation"
+      ],
+      "properties": {
+        "neighborhoods": {
+          "const": "july-bottom-up-claims-v1"
+        },
+        "induction": {
+          "const": "july-bottom-up-claims-batched-v1"
+        },
+        "consolidation": {
+          "const": "july-bottom-up-claim-consolidation-v1"
+        }
+      },
+      "additionalProperties": false
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "path",
+        "records",
+        "bytes",
+        "sha256"
+      ],
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "records": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "additionalProperties": false
+    },
+    "inputs": {
+      "type": "object",
+      "required": [
+        "neighborhoods",
+        "proposals",
+        "claims",
+        "proposal_dispositions"
+      ],
+      "properties": {
+        "neighborhoods": {
+          "type": "object",
+          "required": [
+            "path",
+            "records",
+            "bytes",
+            "sha256"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "records": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "additionalProperties": false
+        },
+        "proposals": {
+          "type": "object",
+          "required": [
+            "path",
+            "records",
+            "bytes",
+            "sha256"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "records": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "additionalProperties": false
+        },
+        "claims": {
+          "type": "object",
+          "required": [
+            "path",
+            "records",
+            "bytes",
+            "sha256"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "records": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "additionalProperties": false
+        },
+        "proposal_dispositions": {
+          "type": "object",
+          "required": [
+            "path",
+            "records",
+            "bytes",
+            "sha256"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "records": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "outputs": {
+      "type": "object",
+      "required": [
+        "neighborhoods",
+        "proposals",
+        "proposal_dispositions",
+        "claims",
+        "contributions",
+        "finding_dispositions"
+      ],
+      "properties": {
+        "neighborhoods": {
+          "type": "object",
+          "required": [
+            "path",
+            "records",
+            "bytes",
+            "sha256"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "records": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "additionalProperties": false
+        },
+        "proposals": {
+          "type": "object",
+          "required": [
+            "path",
+            "records",
+            "bytes",
+            "sha256"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "records": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "additionalProperties": false
+        },
+        "proposal_dispositions": {
+          "type": "object",
+          "required": [
+            "path",
+            "records",
+            "bytes",
+            "sha256"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "records": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "additionalProperties": false
+        },
+        "claims": {
+          "type": "object",
+          "required": [
+            "path",
+            "records",
+            "bytes",
+            "sha256"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "records": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "additionalProperties": false
+        },
+        "contributions": {
+          "type": "object",
+          "required": [
+            "path",
+            "records",
+            "bytes",
+            "sha256"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "records": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "additionalProperties": false
+        },
+        "finding_dispositions": {
+          "type": "object",
+          "required": [
+            "path",
+            "records",
+            "bytes",
+            "sha256"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "records": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "counts": {
+      "type": "object",
+      "required": [
+        "findings",
+        "candidate_findings",
+        "neighborhoods",
+        "proposals",
+        "claims",
+        "contributions",
+        "contributing_findings",
+        "contributing_targets",
+        "claim_confidences",
+        "contribution_roles",
+        "proposal_dispositions",
+        "finding_dispositions"
+      ],
+      "properties": {
+        "findings": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "candidate_findings": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "neighborhoods": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "proposals": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "claims": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "contributions": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "contributing_findings": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "contributing_targets": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "claim_confidences": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "contribution_roles": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "proposal_dispositions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "finding_dispositions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "model_provenance": {
+      "type": "object",
+      "required": [
+        "induction",
+        "consolidation",
+        "total_inference_calls"
+      ],
+      "properties": {
+        "induction": {
+          "type": "object",
+          "required": [
+            "model",
+            "reasoning_effort",
+            "inference_calls"
+          ],
+          "properties": {
+            "model": {
+              "type": "string",
+              "minLength": 1
+            },
+            "reasoning_effort": {
+              "type": "string",
+              "minLength": 1
+            },
+            "inference_calls": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "additionalProperties": false
+        },
+        "consolidation": {
+          "type": "object",
+          "required": [
+            "model",
+            "reasoning_effort",
+            "inference_calls"
+          ],
+          "properties": {
+            "model": {
+              "type": "string",
+              "minLength": 1
+            },
+            "reasoning_effort": {
+              "type": "string",
+              "minLength": 1
+            },
+            "inference_calls": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "additionalProperties": false
+        },
+        "total_inference_calls": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "build_policy": {
+      "type": "object",
+      "required": [
+        "biological_findings_only",
+        "null_findings",
+        "program_extraction",
+        "concept_extraction",
+        "claim_centric_attachment",
+        "disconnected_semantic_merge",
+        "freeze_model_calls",
+        "projection_model_calls"
+      ],
+      "properties": {
+        "biological_findings_only": {
+          "const": true
+        },
+        "null_findings": {
+          "const": false
+        },
+        "program_extraction": {
+          "const": false
+        },
+        "concept_extraction": {
+          "const": false
+        },
+        "claim_centric_attachment": {
+          "const": false
+        },
+        "disconnected_semantic_merge": {
+          "const": false
+        },
+        "freeze_model_calls": {
+          "const": false
+        },
+        "projection_model_calls": {
+          "const": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

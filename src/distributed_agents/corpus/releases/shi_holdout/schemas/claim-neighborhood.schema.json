@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Shi holdout bottom-up Claim neighborhood",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "construction_scope",
+    "neighborhood_id",
+    "finding_doc_ids",
+    "seed_pair_ids",
+    "retrieval_lanes",
+    "contains_one_sided_seed"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "july-bottom-up-claim-neighborhood-v1"
+    },
+    "construction_scope": {
+      "const": "corpus"
+    },
+    "neighborhood_id": {
+      "type": "string",
+      "pattern": "^neighborhood:[0-9a-f]{20}$"
+    },
+    "finding_doc_ids": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 6,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[^:]+:F[0-9]+$"
+      }
+    },
+    "seed_pair_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^pair:[0-9a-f]{20}$"
+      }
+    },
+    "retrieval_lanes": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "explicit_one_sided_mention",
+          "global_semantic_neighbor"
+        ]
+      }
+    },
+    "contains_one_sided_seed": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "doc_id": {"minLength": 1, "type": "string"},
+    "finding_type": {"minLength": 1, "type": "string"},
+    "schema_version": {"const": "distributed_agents-claim-reconciliation-v1"},
+    "scope_id": {"pattern": "^S[0-9]{4}$", "type": "string"},
+    "summary": {"minLength": 1, "type": "string"},
+    "target_gene": {"minLength": 1, "type": "string"}
+  },
+  "required": ["schema_version", "scope_id", "doc_id", "target_gene", "finding_type", "summary"],
+  "type": "object"
+}

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="567.011321pt" height="621.857891pt" viewBox="0 0 567.011321 621.857891" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-19T20:44:25.705892</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.9, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M -0 621.857891 
+L 567.011321 621.857891 
+L 567.011321 0 
+L -0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 17.035472 139.186291 
+L 549.975849 139.186291 
+Q 558.373019 139.186291 558.373019 130.285291 
+L 558.373019 53.934491 
+Q 558.373019 45.033491 549.975849 45.033491 
+L 17.035472 45.033491 
+Q 8.638302 45.033491 8.638302 53.934491 
+L 8.638302 130.285291 
+Q 8.638302 139.186291 17.035472 139.186291 
+z
+" style="fill: #ffffff; stroke: #d7dadd; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 11.99717 53.934491 
+L 555.014151 53.934491 
+L 555.014151 48.593891 
+L 11.99717 48.593891 
+z
+" style="fill: #d57a1f"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 17.035472 233.339091 
+L 549.975849 233.339091 
+Q 558.373019 233.339091 558.373019 224.438091 
+L 558.373019 148.087291 
+Q 558.373019 139.186291 549.975849 139.186291 
+L 17.035472 139.186291 
+Q 8.638302 139.186291 8.638302 148.087291 
+L 8.638302 224.438091 
+Q 8.638302 233.339091 17.035472 233.339091 
+z
+" style="fill: #ffffff; stroke: #d7dadd; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 11.99717 148.087291 
+L 555.014151 148.087291 
+L 555.014151 142.746691 
+L 11.99717 142.746691 
+z
+" style="fill: #d57a1f"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 17.035472 327.491891 
+L 549.975849 327.491891 
+Q 558.373019 327.491891 558.373019 318.590891 
+L 558.373019 242.240091 
+Q 558.373019 233.339091 549.975849 233.339091 
+L 17.035472 233.339091 
+Q 8.638302 233.339091 8.638302 242.240091 
+L 8.638302 318.590891 
+Q 8.638302 327.491891 17.035472 327.491891 
+z
+" style="fill: #ffffff; stroke: #d7dadd; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 11.99717 242.240091 
+L 555.014151 242.240091 
+L 555.014151 236.899491 
+L 11.99717 236.899491 
+z
+" style="fill: #d57a1f"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 17.035472 421.644691 
+L 549.975849 421.644691 
+Q 558.373019 421.644691 558.373019 412.743691 
+L 558.373019 336.392891 
+Q 558.373019 327.491891 549.975849 327.491891 
+L 17.035472 327.491891 
+Q 8.638302 327.491891 8.638302 336.392891 
+L 8.638302 412.743691 
+Q 8.638302 421.644691 17.035472 421.644691 
+z
+" style="fill: #ffffff; stroke: #d7dadd; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 11.99717 336.392891 
+L 555.014151 336.392891 
+L 555.014151 331.052291 
+L 11.99717 331.052291 
+z
+" style="fill: #d57a1f"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 17.035472 515.797491 
+L 549.975849 515.797491 
+Q 558.373019 515.797491 558.373019 506.896491 
+L 558.373019 430.545691 
+Q 558.373019 421.644691 549.975849 421.644691 
+L 17.035472 421.644691 
+Q 8.638302 421.644691 8.638302 430.545691 
+L 8.638302 506.896491 
+Q 8.638302 515.797491 17.035472 515.797491 
+z
+" style="fill: #ffffff; stroke: #d7dadd; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 11.99717 430.545691 
+L 555.014151 430.545691 
+L 555.014151 425.205091 
+L 11.99717 425.205091 
+z
+" style="fill: #d57a1f"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 17.035472 609.950291 
+L 549.975849 609.950291 
+Q 558.373019 609.950291 558.373019 601.049291 
+L 558.373019 524.698491 
+Q 558.373019 515.797491 549.975849 515.797491 
+L 17.035472 515.797491 
+Q 8.638302 515.797491 8.638302 524.698491 
+L 8.638302 601.049291 
+Q 8.638302 609.950291 17.035472 609.950291 
+z
+" style="fill: #ffffff; stroke: #d7dadd; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 11.99717 524.698491 
+L 555.014151 524.698491 
+L 555.014151 519.357891 
+L 11.99717 519.357891 
+z
+" style="fill: #8a8a8a"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 10.2px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #252525" x="24.313019" y="71.179297" transform="rotate(-0 24.313019 71.179297)">Psmc5</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 7.8px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #666666" x="542.698302" y="70.576597" transform="rotate(-0 542.698302 70.576597)">observed 624  |  predicted 520</text>
+   </g>
+   <g id="text_3">
+    <text style="font-style: italic; font-size: 7.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #252525" transform="translate(24.313019 93.533103)">“I set Psmc5 below Psmb4 and slightly above Psmc1: below Psmb4 because</text>
+    <text style="font-style: italic; font-size: 7.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #252525" transform="translate(24.313019 101.234967)">the closer same-subcomplex anchor is the 430-DEG Psmc1 perturbation,</text>
+    <text style="font-style: italic; font-size: 7.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #252525" transform="translate(24.313019 108.936831)">[...] and because the two measured structural perturbations span a</text>
+    <text style="font-style: italic; font-size: 7.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #252525" transform="translate(24.313019 116.638694)">broad 430-742 range even in the same cell group. The final point</text>
+    <text style="font-style: italic; font-size: 7.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #252525" transform="translate(24.313019 124.340558)">prediction is therefore 520 DEGs.”</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 10.2px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #252525" x="24.313019" y="165.332097" transform="rotate(-0 24.313019 165.332097)">Fus</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 7.8px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #666666" x="542.698302" y="164.729397" transform="rotate(-0 542.698302 164.729397)">observed 130  |  predicted 180</text>
+   </g>
+   <g id="text_6">
+    <text style="font-style: italic; font-size: 7.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #252525" transform="translate(24.313019 187.685903)">“I therefore predict a nonzero intermediate focal-cell response for Fus,</text>
+    <text style="font-style: italic; font-size: 7.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #252525" transform="translate(24.313019 195.387767)">closest to the Tardbp 210 / Matr3 149 / Hnrnpc 122 tier and below the</text>
+    <text style="font-style: italic; font-size: 7.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #252525" transform="translate(24.313019 203.089631)">core spliceosome and Hnrnpu tier: [...]”</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 10.2px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #252525" x="24.313019" y="259.484897" transform="rotate(-0 24.313019 259.484897)">Srrm2</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 7.8px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #666666" x="542.698302" y="258.882197" transform="rotate(-0 542.698302 258.882197)">observed 113  |  predicted 260</text>
+   </g>
+   <g id="text_9">
+    <text style="font-style: italic; font-size: 7.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #252525" transform="translate(24.313019 281.838703)">“Approximate count: I place Srrm2 below Thoc1/Prpf6 and well below</text>
+    <text style="font-style: italic; font-size: 7.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #252525" transform="translate(24.313019 289.540567)">U2af2/Rnpc3, but slightly above the weaker associated RNA-binding</text>
+    <text style="font-style: italic; font-size: 7.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #252525" transform="translate(24.313019 297.242431)">anchors Hnrnpc, Matr3, Tardbp, and Snrnp70. The point estimate is</text>
+    <text style="font-style: italic; font-size: 7.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #252525" transform="translate(24.313019 304.944294)">therefore 260 DEGs.”</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 10.2px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #252525" x="24.313019" y="353.637697" transform="rotate(-0 24.313019 353.637697)">Apc</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 7.8px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #666666" x="542.698302" y="353.034997" transform="rotate(-0 542.698302 353.034997)">observed 303  |  predicted 120</text>
+   </g>
+   <g id="text_12">
+    <text style="font-style: italic; font-size: 7.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #252525" transform="translate(24.313019 375.991503)">“Apc: predicted 120 FDR&lt;0.05 genes. The prediction is driven mainly by</text>
+    <text style="font-style: italic; font-size: 7.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #252525" transform="translate(24.313019 383.693367)">within-dataset Ctnnb1 at 383 and Tcf7l2 at 106 in the same focal cell</text>
+    <text style="font-style: italic; font-size: 7.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #252525" transform="translate(24.313019 391.395231)">group. [...] The small Gsk3b, Lrp6, and Frizzled counts pull the</text>
+    <text style="font-style: italic; font-size: 7.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #252525" transform="translate(24.313019 399.097094)">estimate down because not every Wnt component is limiting under sparse</text>
+    <text style="font-style: italic; font-size: 7.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #252525" transform="translate(24.313019 406.798958)">postnatal neuronal CRISPR.”</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 10.2px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #252525" x="24.313019" y="447.790497" transform="rotate(-0 24.313019 447.790497)">Ddx23</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 7.8px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #666666" x="542.698302" y="447.187797" transform="rotate(-0 542.698302 447.187797)">observed 149  |  predicted 380</text>
+   </g>
+   <g id="text_15">
+    <text style="font-style: italic; font-size: 7.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #252525" transform="translate(24.313019 470.144303)">“I therefore predicted a broad, clearly nonzero response, slightly below</text>
+    <text style="font-style: italic; font-size: 7.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #252525" transform="translate(24.313019 477.846167)">the observed Prpf6 count but above Snrnp70 and Thoc1. The point</text>
+    <text style="font-style: italic; font-size: 7.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #252525" transform="translate(24.313019 485.548031)">estimate is 380 DEGs. It is driven primarily by within-dataset</text>
+    <text style="font-style: italic; font-size: 7.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #252525" transform="translate(24.313019 493.249894)">Prpf6/Snrnp70/Cdc40/U2af2 evidence and externally by DDX23's assignment</text>
+    <text style="font-style: italic; font-size: 7.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #252525" transform="translate(24.313019 500.951758)">to the PRP28 U5/tri-snRNP activation step.”</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 10.2px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #252525" x="24.313019" y="541.943297" transform="rotate(-0 24.313019 541.943297)">Tsc1</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 7.8px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #666666" x="542.698302" y="541.340597" transform="rotate(-0 542.698302 541.340597)">observed 321  |  predicted 80</text>
+   </g>
+   <g id="text_18">
+    <text style="font-style: italic; font-size: 7.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #252525" transform="translate(24.313019 564.297103)">“I therefore transferred most of the Tsc2 count to Tsc1, with a small</text>
+    <text style="font-style: italic; font-size: 7.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #252525" transform="translate(24.313019 571.998967)">downward adjustment for two uncertainties: TSC2 carries the catalytic</text>
+    <text style="font-style: italic; font-size: 7.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #252525" transform="translate(24.313019 579.700831)">GAP activity whereas TSC1 is the stabilizing partner, and the held-out</text>
+    <text style="font-style: italic; font-size: 7.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #252525" transform="translate(24.313019 587.402694)">Tsc1 guides could have had fewer recovered edited nuclei or a weaker</text>
+    <text style="font-style: italic; font-size: 7.6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #252525" transform="translate(24.313019 595.104558)">effective perturbation than the measured Tsc2 guides.”</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 7.3px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #666666" x="555.014151" y="39.30575" transform="rotate(-0 555.014151 39.30575)">Verbatim excerpts; [...] marks an omission</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 13.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start" x="3.6" y="13.857891" transform="rotate(-0 3.6 13.857891)">b  BioAgents trace excerpts</text>
+   </g>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "adjudication_version": {"const": "legacy-sourceguard-claim-reconciliation-v1"},
+    "counts": {"type": "object"},
+    "created_on": {"format": "date", "type": "string"},
+    "integrity": {"type": "object"},
+    "outputs": {"type": "object"},
+    "provenance": {"type": "object"},
+    "schema_version": {"const": "distributed_agents-claim-reconciliation-v1"}
+  },
+  "required": ["schema_version", "adjudication_version", "created_on", "provenance", "outputs", "counts", "integrity"],
+  "type": "object"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Canonical Shi holdout reference record",
+  "type": "object",
+  "required": ["doc_id", "target_gene", "ref_id", "ref_slug", "source", "source_type", "citation", "url", "source_line", "source_report_sha256", "_source_record_sha256"],
+  "properties": {
+    "doc_id": {"type": "string", "minLength": 1},
+    "target_gene": {"type": "string", "minLength": 1},
+    "ref_id": {"type": "string", "pattern": "^R[0-9]+$"},
+    "ref_slug": {"type": "string", "minLength": 1},
+    "source": {"type": "string"},
+    "source_type": {"type": "string"},
+    "citation": {"type": "string"},
+    "url": {"type": ["string", "null"]},
+    "source_line": {"type": "integer", "minimum": 1},
+    "source_report_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "_source_record_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "additionalProperties": true
+}

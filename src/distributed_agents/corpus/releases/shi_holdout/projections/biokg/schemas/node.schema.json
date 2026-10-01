@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Shi holdout BioKG ledger node",
+  "type": "object",
+  "required": ["id", "type", "source_artifact", "properties"],
+  "properties": {
+    "id": {"type": "string", "minLength": 1},
+    "type": {
+      "enum": ["TargetGene", "Gene", "Finding", "Evidence", "Reference", "Claim"]
+    },
+    "source_artifact": {
+      "enum": ["reports", "findings", "evidence", "references", "claims"]
+    },
+    "properties": {"type": "object"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"type": {"const": "TargetGene"}}},
+      "then": {
+        "properties": {
+          "source_artifact": {"const": "reports"},
+          "properties": {
+            "required": ["symbol"],
+            "properties": {"symbol": {"type": "string", "minLength": 1}}
+          }
+        }
+      }
+    },
+    {
+      "if": {"properties": {"type": {"const": "Gene"}}},
+      "then": {
+        "properties": {
+          "source_artifact": {"const": "findings"},
+          "properties": {
+            "required": ["symbol"],
+            "properties": {"symbol": {"type": "string", "minLength": 1}}
+          }
+        }
+      }
+    },
+    {
+      "if": {"properties": {"type": {"const": "Finding"}}},
+      "then": {
+        "properties": {
+          "source_artifact": {"const": "findings"},
+          "properties": {"required": ["doc_id", "target_gene", "finding_id"]}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"type": {"const": "Evidence"}}},
+      "then": {
+        "properties": {
+          "source_artifact": {"const": "evidence"},
+          "properties": {"required": ["doc_id", "target_gene", "evidence_id"]}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"type": {"const": "Reference"}}},
+      "then": {
+        "properties": {
+          "source_artifact": {"const": "references"},
+          "properties": {"required": ["doc_id", "target_gene", "ref_id"]}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"type": {"const": "Claim"}}},
+      "then": {
+        "properties": {
+          "id": {"pattern": "^claim:[0-9a-f]{20}$"},
+          "source_artifact": {"const": "claims"},
+          "properties": {
+            "required": ["claim_id", "claim_scope", "statement", "scope", "higher_order_basis", "confidence", "target_genes", "contribution_count"]
+          }
+        }
+      }
+    }
+  ],
+  "additionalProperties": false
+}

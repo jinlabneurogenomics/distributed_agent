@@ -1,0 +1,22 @@
+module,perturbation,gene,logFC,report_label,source_html
+Synaptic transmission / excitability,Smarcb1,Begain,-0.765,postsynaptic identity/synapse-associated,/data/BioAgents/260410_reports/reports/html/smarcb1.html
+Synaptic transmission / excitability,Smarcb1,Tiam1,-0.722,dendritic remodeling/NMDA-linked signaling,/data/BioAgents/260410_reports/reports/html/smarcb1.html
+Synaptic transmission / excitability,Smarcb1,Atp1b2,-0.649,neuronal membrane/homeostatic program,/data/BioAgents/260410_reports/reports/html/smarcb1.html
+Synaptic transmission / excitability,Smarcb1,Gabra4,-0.258,synaptic receptor program,/data/BioAgents/260410_reports/reports/html/smarcb1.html
+Synaptic transmission / excitability,Smarcc2,Tiam1,-0.84,dendritic/synaptic structural regulator,/data/BioAgents/260410_reports/reports/html/smarcc2.html
+Synaptic transmission / excitability,Smarcc2,Cnih3,-0.78,synaptic/excitability-linked,/data/BioAgents/260410_reports/reports/html/smarcc2.html
+Synaptic transmission / excitability,Smarcc2,Hcn4,-0.43,membrane excitability,/data/BioAgents/260410_reports/reports/html/smarcc2.html
+Synaptic transmission / excitability,Smarcc2,P2rx4,-0.5,ionotropic signaling,/data/BioAgents/260410_reports/reports/html/smarcc2.html
+Synaptic transmission / excitability,Smarcc2,Grin3a,0.75,synaptic remodeling,/data/BioAgents/260410_reports/reports/html/smarcc2.html
+Synaptic transmission / excitability,Smarcc2,Grm5,0.33,synaptic remodeling,/data/BioAgents/260410_reports/reports/html/smarcc2.html
+Synaptic transmission / excitability,Arid2,Gpr4,0.623,membrane signaling receptor,/data/BioAgents/260410_reports/reports/html/arid2.html
+Synaptic transmission / excitability,Arid2,Kcnj9,0.325,excitability-linked channel,/data/BioAgents/260410_reports/reports/html/arid2.html
+Synaptic transmission / excitability,Arid2,Stxbp2,-1.006,vesicle handling/synaptic machinery,/data/BioAgents/260410_reports/reports/html/arid2.html
+Synaptic transmission / excitability,Arid1a,Clstn2,0.385,synaptic/adhesion remodeling,/data/BioAgents/260410_reports/reports/html/arid1a.html
+Synaptic transmission / excitability,Arid1a,Begain,-0.455,postsynaptic scaffold,/data/BioAgents/260410_reports/reports/html/arid1a.html
+Synaptic transmission / excitability,Arid1a,Kcnq2,-0.219,membrane excitability,/data/BioAgents/260410_reports/reports/html/arid1a.html
+Synaptic transmission / excitability,Arid1a,Rasa4,-0.412,Ras/calcium signaling,/data/BioAgents/260410_reports/reports/html/arid1a.html
+Synaptic transmission / excitability,Arid1a,Prkcb,-0.21,signal transduction,/data/BioAgents/260410_reports/reports/html/arid1a.html
+Synaptic transmission / excitability,Arid1a,Mpp2,0.517,synaptic scaffold,/data/BioAgents/260410_reports/reports/html/arid1a.html
+Developmental / state-associated regulators,Smarcb1,Myt1,0.543,neuronal re-specification/remodeling,/data/BioAgents/260410_reports/reports/html/smarcb1.html
+Developmental / state-associated regulators,Arid2,Trim67,0.666,neuronal-state regulator,/data/BioAgents/260410_reports/reports/html/arid2.html

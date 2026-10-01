@@ -1,0 +1,67 @@
+{
+  "schema_version": "distributed_agents-dataset-manifest-v1",
+  "dataset_id": "perturbai-whole-brain-atlas",
+  "experiment_id": "perturbai-atlas-postnatal-mouse-neuron-crispr-lof-v1",
+  "identity_policy": "declared-filename-and-lineage",
+  "portrait": {
+    "filename": "DATASET_CONTEXT.md",
+    "marker": "<!-- DISTRIBUTED_AGENTS_DATASET_CONTEXT:perturbai-atlas-v5 -->"
+  },
+  "input_artifacts": {
+    "atlas_de_no_counts": {
+      "filenames": [
+        "wilcoxon_de_results_group_name_final_data_no_multi_guide_cells_nocounts.parquet"
+      ],
+      "role": "genome-scale differential-expression rows without matched-nucleus count columns",
+      "schema_fingerprint": "names|group_name|gene_target|logfoldchanges|pvals|pvals_adj|scores|control_label"
+    },
+    "atlas_de_full_counts": {
+      "filenames": [
+        "wilcoxon_de_results_group_name_final_data_no_multi_guide_cells.parquet"
+      ],
+      "role": "genome-scale differential-expression rows with matched-nucleus count columns",
+      "schema_fingerprint": "names|group_name|gene_target|logfoldchanges|pvals|pvals_adj|scores|control_label|n_pert_matched|n_ctrl_matched"
+    },
+    "postnatal_cortical_subset": {
+      "filenames": [
+        "pn_de.parquet"
+      ],
+      "role": "declared postnatal cortical subset derived from the same atlas experiment",
+      "schema_fingerprint": "names|group_name|gene_target|logfoldchanges|pvals|pvals_adj|scores"
+    }
+  },
+  "inventory_fingerprint": {
+    "perturbation_labels": 2046,
+    "biological_targets": 1946,
+    "safe_target_controls": 100,
+    "broad_neuronal_classes": 23,
+    "measured_genes": 17994
+  },
+  "screen_sparsity": {
+    "profile_id": "counts-bearing-downstream-de-v1",
+    "source_path": "src/reports/perturbation_corpus/ACCEPTANCE.md",
+    "source_snapshot_sha256": "5995a30d20e76da736838d1fa1ea3686b2a93550bcc7828343ec7b8527799df8",
+    "fdr_threshold": 0.1,
+    "excludes_self_target_transcript": true,
+    "screen_target_count": 1945,
+    "screen_cell_group_count": 23,
+    "target_cell_pairs": 44133,
+    "fdr_null_pairs": 41785,
+    "fdr_non_null_pairs": 2348,
+    "deg_count_quantiles": {
+      "p50": 0,
+      "p95": 1,
+      "p99": 24,
+      "maximum": 3622
+    },
+    "top_two_effect_share": 0.592907,
+    "power_effect_rank_correlation": 0.5507,
+    "interpretation": "Exact downstream-DE screen descriptor. FDR-null pairs are measured nulls, not absent biology, and these counts do not estimate strong hypotheses."
+  },
+  "cell_vocabulary_version": "perturbai-allen-derived-23-class-v1",
+  "semantic_lineage": {
+    "experiment_id": "perturbai-atlas-postnatal-mouse-neuron-crispr-lof-v1",
+    "corpus_selection": "distributed_agents corpus release registry",
+    "coverage_policy": "read counts and capabilities from the selected release manifest"
+  }
+}

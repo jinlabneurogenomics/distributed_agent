@@ -1,0 +1,31 @@
+analysis_layer,arm,scope,scope_label,count,percent,n_findings
+primary,Unshuffled,program_response,Pathway or state change,235,48.156,488
+primary,Unshuffled,comparator_relationship,Perturbation convergence/divergence,158,32.377,488
+primary,Unshuffled,expected_program_test,Prior-prediction outcome,24,4.918,488
+primary,Unshuffled,cell_group_relationship,Cell-group-dependent response,29,5.943,488
+primary,Unshuffled,mixed,Other,42,8.607,488
+primary,Within-screen shuffled,program_response,Pathway or state change,359,59.833,600
+primary,Within-screen shuffled,comparator_relationship,Perturbation convergence/divergence,129,21.500,600
+primary,Within-screen shuffled,expected_program_test,Prior-prediction outcome,98,16.333,600
+primary,Within-screen shuffled,cell_group_relationship,Cell-group-dependent response,8,1.333,600
+primary,Within-screen shuffled,mixed,Other,6,1.000,600
+primary,Out-of-screen shuffled,program_response,Pathway or state change,366,65.241,561
+primary,Out-of-screen shuffled,comparator_relationship,Perturbation convergence/divergence,98,17.469,561
+primary,Out-of-screen shuffled,expected_program_test,Prior-prediction outcome,85,15.152,561
+primary,Out-of-screen shuffled,cell_group_relationship,Cell-group-dependent response,8,1.426,561
+primary,Out-of-screen shuffled,mixed,Other,4,0.713,561
+sensitivity,Unshuffled,program_response,Pathway or state change,301,48.237,624
+sensitivity,Unshuffled,comparator_relationship,Perturbation convergence/divergence,205,32.853,624
+sensitivity,Unshuffled,expected_program_test,Prior-prediction outcome,28,4.487,624
+sensitivity,Unshuffled,cell_group_relationship,Cell-group-dependent response,41,6.571,624
+sensitivity,Unshuffled,mixed,Other,49,7.853,624
+sensitivity,Within-screen shuffled,program_response,Pathway or state change,430,62.774,685
+sensitivity,Within-screen shuffled,comparator_relationship,Perturbation convergence/divergence,137,20.000,685
+sensitivity,Within-screen shuffled,expected_program_test,Prior-prediction outcome,104,15.182,685
+sensitivity,Within-screen shuffled,cell_group_relationship,Cell-group-dependent response,8,1.168,685
+sensitivity,Within-screen shuffled,mixed,Other,6,0.876,685
+sensitivity,Out-of-screen shuffled,program_response,Pathway or state change,431,66.410,649
+sensitivity,Out-of-screen shuffled,comparator_relationship,Perturbation convergence/divergence,117,18.028,649
+sensitivity,Out-of-screen shuffled,expected_program_test,Prior-prediction outcome,89,13.713,649
+sensitivity,Out-of-screen shuffled,cell_group_relationship,Cell-group-dependent response,8,1.233,649
+sensitivity,Out-of-screen shuffled,mixed,Other,4,0.616,649

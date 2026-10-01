@@ -1,0 +1,35 @@
+{
+  "nodes_sha256": "46cf7f8c216e69000002801295652d1967410c178bd94a6be6eb88ae7e08f6c0",
+  "relationships_sha256": "fce43b5122ca5a5359c77129de19362527875e9b7b7839c78e04cf9f7c2b50d7",
+  "summary": {
+    "node_kinds": {
+      "Assay": 1,
+      "CellType": 166,
+      "Complex": 590,
+      "Evidence": 18602,
+      "Finding": 11343,
+      "Gene": 9024,
+      "LiteratureComparison": 8999,
+      "Module": 665,
+      "Other": 3429,
+      "Pathway": 3089,
+      "Phenotype": 2177,
+      "Reference": 15797
+    },
+    "nodes": 73882,
+    "relationship_types": {
+      "CITES": 45085,
+      "DESCRIBES_CELL_TYPE": 6260,
+      "HAS_FINDING": 11343,
+      "HAS_LITERATURE_COMPARISON": 8999,
+      "HAS_TARGET": 11343,
+      "IMPLICATES": 15046,
+      "MEASURED_GENE": 60112,
+      "OBSERVED_IN": 27330,
+      "REPORTS_GENE": 61321,
+      "SUPPORTED_BY": 48743,
+      "USES_ASSAY": 11343
+    },
+    "relationships": 306925
+  }
+}

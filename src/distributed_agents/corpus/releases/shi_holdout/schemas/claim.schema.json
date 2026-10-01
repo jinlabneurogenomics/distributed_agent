@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Shi holdout bottom-up Claim",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "claim_scope",
+    "construction_scope",
+    "claim_id",
+    "statement",
+    "scope",
+    "higher_order_basis",
+    "confidence",
+    "source_component_id",
+    "source_proposal_ids",
+    "target_genes",
+    "contribution_count"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "july-bottom-up-claim-v1"
+    },
+    "claim_scope": {
+      "const": "corpus"
+    },
+    "construction_scope": {
+      "const": "corpus"
+    },
+    "claim_id": {
+      "type": "string",
+      "pattern": "^claim:[0-9a-f]{20}$"
+    },
+    "statement": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "higher_order_basis": {
+      "type": "string",
+      "minLength": 1
+    },
+    "confidence": {
+      "enum": [
+        "high",
+        "moderate",
+        "low"
+      ]
+    },
+    "source_component_id": {
+      "type": "string",
+      "pattern": "^proposal-component:[0-9a-f]{20}$"
+    },
+    "source_proposal_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^proposal:[0-9a-f]{20}$"
+      }
+    },
+    "target_genes": {
+      "type": "array",
+      "minItems": 2,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "contribution_count": {
+      "type": "integer",
+      "minimum": 2
+    }
+  },
+  "additionalProperties": false
+}

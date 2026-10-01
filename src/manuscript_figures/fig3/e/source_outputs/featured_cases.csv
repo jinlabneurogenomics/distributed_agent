@@ -1,0 +1,7 @@
+target_name,set,actual_n_degs,bioagents_predicted_n_degs,fold_error
+Psmc5,substantial_response,624,520,1.2
+Fus,substantial_response,130,180,1.3846153846153846
+Srrm2,substantial_response,113,260,2.3008849557522124
+Apc,substantial_response,303,120,2.525
+Ddx23,substantial_response,149,380,2.5503355704697985
+Tsc1,near_miss,321,80,4.0125

@@ -1,0 +1,929 @@
+concept	type	program_id
+7q11.23	assay_or_molecule_noise	
+ADP	assay_or_molecule_noise	
+AMP-activated protein kinase	program	emergent
+AMPA receptor	assay_or_molecule_noise	
+AMPA receptor internalization	program	emergent
+AMPA receptor pathway	program	emergent
+AMPA receptor trafficking	program	emergent
+AMPAR	assay_or_molecule_noise	
+AP-1	program	emergent
+AP-2	program	emergent
+AP-3	program	emergent
+AP-3/BLOC-1	program	emergent
+AP-4	program	emergent
+ATP	assay_or_molecule_noise	
+Adenosine triphosphate	assay_or_molecule_noise	
+Adrenal steroidogenesis	program	emergent
+Alzheimer disease	disease	
+Alzheimer's Disease	disease	
+Amyloid beta	assay_or_molecule_noise	
+Amyotrophic Lateral Sclerosis	disease	
+Arginine Vasopressin	assay_or_molecule_noise	
+Autism Spectrum Disorder	disease	
+Autophagy Perturbations	program	Autophagy
+Axon Initial Segment	anatomy_celltype	
+BBSome	program	emergent
+BCAA	assay_or_molecule_noise	
+BCKDH phosphorylation	program	emergent
+BLOC-1	program	emergent
+BMP	program	emergent
+BMP-SMAD signaling pathway	program	emergent
+BMP/TGF-beta pathway	program	emergent
+Bone Morphogenetic Protein	program	emergent
+C-C motif chemokine 2	assay_or_molecule_noise	
+CA2-FC	anatomy_celltype	
+CA3	anatomy_celltype	
+CA3 CA2-FC DG	anatomy_celltype	
+CA3/CA2-FC DG Glut	anatomy_celltype	
+CCR4-NOT Complex	program	emergent
+CNS myelination	program	emergent
+CNU-HYa	anatomy_celltype	
+CNU-HYa/HY GABA	anatomy_celltype	
+CNU-MGE	anatomy_celltype	
+COFILIN	assay_or_molecule_noise	
+COG	program	emergent
+COMPASS	program	emergent
+COPI	program	emergent
+COPII	program	emergent
+CRISPR	assay_or_molecule_noise	
+CRISPR interference	assay_or_molecule_noise	
+CRISPR technology	assay_or_molecule_noise	
+CSF flow	program	emergent
+Ca2+	assay_or_molecule_noise	
+Calcium flux	program	emergent
+Calcium ion	assay_or_molecule_noise	
+Calcium signaling pathway	program	emergent
+Canonical ER-Stress Pathway	program	UPR_ER
+Cap-dependent translation initiation	program	emergent
+Cerebellar GABA Synaptic Module	program	emergent
+ChEMBL	assay_or_molecule_noise	
+Class IA PI3K/PIP3-AKT	program	emergent
+Clathrin	assay_or_molecule_noise	
+ClpXP	program	emergent
+Clustered Regularly Interspaced Short Palindromic Repeats	assay_or_molecule_noise	
+Cog5	assay_or_molecule_noise	
+Complex I	program	OXPHOS
+Complex I biogenesis	program	OXPHOS
+Complex IV	program	OXPHOS
+Complexin 1	assay_or_molecule_noise	
+Complexin 2	assay_or_molecule_noise	
+Copa	assay_or_molecule_noise	
+Corticosterone	assay_or_molecule_noise	
+Corticotropin-releasing hormone	assay_or_molecule_noise	
+Cyclic guanosine monophosphate	assay_or_molecule_noise	
+D4Z4 repeat	assay_or_molecule_noise	
+DG	anatomy_celltype	
+DNA replication	program	emergent
+DNA-binding transcriptional regulation	program	emergent
+DNA-damage	program	emergent
+Dataset-wide Negative Result	phenotype	
+Dentate Gyrus	anatomy_celltype	
+Differential Expression Table	assay_or_molecule_noise	
+Dopa	assay_or_molecule_noise	
+Down syndrome	disease	
+EPH-Ephrin signaling	program	emergent
+ER proteostasis	program	UPR_ER
+ER-Golgi	program	emergent
+ER-stress	program	UPR_ER
+ESCRT	program	emergent
+ESCRT-II	program	emergent
+ESCRT-III	program	emergent
+Endosomal Sorting Complex Required for Transport	program	emergent
+Epithelial-Mesenchymal Transition	program	emergent
+Excitability	phenotype	
+Extracellular Matrix	program	emergent
+Extracellular signal-regulated kinase	program	MAPK_ERK
+FDR	assay_or_molecule_noise	
+FDR significance	assay_or_molecule_noise	
+FDR-level response	phenotype	
+FDR-negative	phenotype	
+FDR-null	phenotype	
+FDR-null response phenotype	phenotype	
+FDR-resolved response	phenotype	
+FDR-resolved transcriptional phenotype	phenotype	
+FDR-significant depletion	phenotype	
+FDR-significant differential expression	phenotype	
+FDR-significant downstream genes	phenotype	
+FDR-significant downstream pathway	phenotype	
+FDR-significant genes	phenotype	
+FDR-significant on-target depletion	phenotype	
+FDR-significant on-target transcript depletion	phenotype	
+FDR-significant response	phenotype	
+FDR-significant self-depletion	phenotype	
+FDR-significant self-transcript depletion	phenotype	
+FDR-significant target engagement	phenotype	
+FDR-significant transcriptional response	phenotype	
+FDR-silent phenotype	phenotype	
+FDR-supported pathway signal	phenotype	
+FHF	assay_or_molecule_noise	
+FLRT	assay_or_molecule_noise	
+FXR	assay_or_molecule_noise	
+False Discovery Rate	assay_or_molecule_noise	
+Focal Segmental Glomerulosclerosis	disease	
+Frontotemporal Dementia	disease	
+G Protein-Coupled Receptor	assay_or_molecule_noise	
+G alpha s	assay_or_molecule_noise	
+G-Protein Coupled Receptor	assay_or_molecule_noise	
+G-protein	assay_or_molecule_noise	
+GABA	assay_or_molecule_noise	
+GABA class	anatomy_celltype	
+GABA degradation pathway	program	emergent
+GABA reuptake pathway	program	emergent
+GABA shunt	program	emergent
+GABA synthesis	program	emergent
+GABA vesicular transport	program	emergent
+GABA(B) receptor	assay_or_molecule_noise	
+GABA-A receptor	assay_or_molecule_noise	
+GABA-A receptor pathway	program	emergent
+GABA_A	assay_or_molecule_noise	
+GABAergic	anatomy_celltype	
+GABAergic module	program	emergent
+GABAergic populations	anatomy_celltype	
+GLI	program	Hedgehog
+GPCR	assay_or_molecule_noise	
+GTPase	assay_or_molecule_noise	
+Gamma-Aminobutyric Acid	assay_or_molecule_noise	
+Gi	assay_or_molecule_noise	
+Gi/o-cAMP pathway	program	emergent
+Glioma	disease	
+GluN2B	assay_or_molecule_noise	
+Glut	anatomy_celltype	
+Glutamate	anatomy_celltype	
+Glycolysis	program	emergent
+Glycolytic pathway	program	emergent
+Golgi	assay_or_molecule_noise	
+Golgi apparatus	assay_or_molecule_noise	
+Golgi organization	program	emergent
+Gq	program	emergent
+Gq signaling pathway	program	emergent
+Gq/Phospholipase C pathway	program	emergent
+H3K27me3	assay_or_molecule_noise	
+H3K36	assay_or_molecule_noise	
+H3K4	assay_or_molecule_noise	
+H3K9	assay_or_molecule_noise	
+H3K9me2	assay_or_molecule_noise	
+HDAC	program	emergent
+HY	anatomy_celltype	
+Hedgehog	program	Hedgehog
+Hedgehog/Gli	program	Hedgehog
+Hexosamine Biosynthetic Pathway	program	emergent
+Hippo signaling pathway	program	emergent
+Human Protein Atlas	assay_or_molecule_noise	
+Huntington's disease	disease	
+IFN-pathway	program	JAK_STAT
+IL-10	assay_or_molecule_noise	
+IL-12/IL-23 pathway	program	JAK_STAT
+IL-2	assay_or_molecule_noise	
+Inert safe-targeting control	assay_or_molecule_noise	
+Integrated Stress Response	program	ISR_ATF4
+Intellectual Disability	disease	
+Interferon gamma	assay_or_molecule_noise	
+Interferon signaling pathway	program	JAK_STAT
+Interferon-related module	program	JAK_STAT
+Interleukin-10	assay_or_molecule_noise	
+Intraflagellar Transport	program	emergent
+JAK/STAT signaling pathway	program	JAK_STAT
+JNK	program	emergent
+JNK/AP-1	program	emergent
+Joubert ciliopathy	disease	
+KAP1	assay_or_molecule_noise	
+KRAB/SCAN	program	emergent
+Kallmann syndrome	disease	
+Kinesin-1	assay_or_molecule_noise	
+Kv1	assay_or_molecule_noise	
+Kv1.2	assay_or_molecule_noise	
+Kv4	assay_or_molecule_noise	
+L4-5	anatomy_celltype	
+L5-6	anatomy_celltype	
+LSX	anatomy_celltype	
+Leigh syndrome	disease	
+Leukemia	disease	
+Low Perturbed Cell Counts	phenotype	
+Low-Density Lipoprotein	assay_or_molecule_noise	
+Luc7l2	assay_or_molecule_noise	
+MAPK	program	MAPK_ERK
+MB	anatomy_celltype	
+MH-LH	anatomy_celltype	
+MHC Class II	assay_or_molecule_noise	
+MM	anatomy_celltype	
+Medial ganglionic eminence	anatomy_celltype	
+Metabolic disease	disease	
+Mitochondrial Complex I	program	OXPHOS
+Mitochondrial Unfolded Protein Response	program	emergent
+Mitogen-Activated Protein Kinase signaling pathway	program	MAPK_ERK
+Mus musculus	assay_or_molecule_noise	
+Muted Transcriptional Phenotype	phenotype	
+N-methyl-D-aspartate	assay_or_molecule_noise	
+N-methyl-D-aspartate receptor	assay_or_molecule_noise	
+NADH	assay_or_molecule_noise	
+NADH:ubiquinone oxidoreductase	program	OXPHOS
+NF-kB	program	NF_kB
+NF-kappaB	program	NF_kB
+NHE9	assay_or_molecule_noise	
+NKX-family	program	emergent
+NMDA receptor	assay_or_molecule_noise	
+NMDA receptor assembly	assay_or_molecule_noise	
+NMDA-receptor	assay_or_molecule_noise	
+NMDAR	assay_or_molecule_noise	
+Na,K-ATPase	assay_or_molecule_noise	
+NatA	program	emergent
+Negative Transcriptomic Result	phenotype	
+Netrin-1	assay_or_molecule_noise	
+Neuromuscular Junction	anatomy_celltype	
+Neurotrophic receptor tyrosine kinase 2	assay_or_molecule_noise	
+No measurable depletion	phenotype	
+Non_target	assay_or_molecule_noise	
+Noonan syndrome	disease	
+Notch signaling pathway	program	emergent
+NuRD	program	emergent
+NuRD complex	program	emergent
+Nucleosome Remodeling Deacetylase	program	emergent
+O-GlcNAc	assay_or_molecule_noise	
+O-linked N-acetylglucosamine	assay_or_molecule_noise	
+OXPHOS	program	OXPHOS
+Opg	assay_or_molecule_noise	
+Oxidative Phosphorylation	program	OXPHOS
+Oxidative Stress	program	emergent
+P	anatomy_celltype	
+P MY	anatomy_celltype	
+P MY Pineal	anatomy_celltype	
+P4-ATPase	assay_or_molecule_noise	
+PAK signaling	program	emergent
+PBAF	program	BAF_SWISNF
+PDH complex	program	emergent
+PI3K	program	mTOR
+PI3K-AKT-mTOR signaling pathway	program	mTOR
+PI3K-Akt-mTORC1	program	mTOR
+PI3K-mTOR	program	mTOR
+PI3K/AKT signaling pathway	program	mTOR
+PI4P	assay_or_molecule_noise	
+PKA	program	emergent
+PLC/PKC	program	emergent
+PMCA	assay_or_molecule_noise	
+PPARα	program	emergent
+Parkinson disease	disease	
+Parkinson's disease	disease	
+Perturb-seq	assay_or_molecule_noise	
+Perturb-seq dataset	assay_or_molecule_noise	
+Perturb-seq phenotype	assay_or_molecule_noise	
+Perturb-seq signatures	assay_or_molecule_noise	
+Phosphatase and tensin homolog	assay_or_molecule_noise	
+Phosphatidylinositol calcium signaling	program	emergent
+Phosphoinositide 3-kinase	program	mTOR
+Phosphoinositide 3-kinase/AKT pathway	program	mTOR
+Phosphorylase Kinase	assay_or_molecule_noise	
+Pineal	anatomy_celltype	
+Pineal Gland	anatomy_celltype	
+Post-transcriptional Phenotype	phenotype	
+Postsynaptic signaling pathways	program	emergent
+Potassium ion	assay_or_molecule_noise	
+Prader-Willi syndrome	disease	
+Protein Kinase A	program	emergent
+Protein Phosphatase 2A	assay_or_molecule_noise	
+Proteostasis	program	emergent
+Pulmonary Arterial Hypertension	disease	
+Purkinje	anatomy_celltype	
+RAF-MEK-ERK	program	MAPK_ERK
+RAF/MAPK	program	MAPK_ERK
+RAR-RXR nuclear receptor signaling	program	emergent
+RAR/RXR	program	emergent
+RAS mitogen-activated protein kinase	program	MAPK_ERK
+RAS-RAF-MEK-ERK	program	MAPK_ERK
+RAS/MAPK pathway	program	MAPK_ERK
+RAS/MAPK transcriptional module	program	MAPK_ERK
+RASopathy	disease	
+RFX-family	program	emergent
+RNA	assay_or_molecule_noise	
+RNA polymerase II	assay_or_molecule_noise	
+RNA processing module	program	emergent
+RNA splicing	program	Spliceosome
+RNA-induced silencing complex	program	emergent
+RNA-processing	program	emergent
+RNA-processing state	program	emergent
+ROR	program	emergent
+ROS	assay_or_molecule_noise	
+Raf	program	MAPK_ERK
+Reelin	program	emergent
+Reelin pathway	program	emergent
+Retinoid X receptor	program	emergent
+Retromer complex	program	emergent
+Rett syndrome	disease	
+Rho GTPase	program	emergent
+Rho-family	program	emergent
+Rho-family GTPase	program	emergent
+RhoA/ROCK	program	emergent
+SERCA2	program	emergent
+SET1A complex	program	emergent
+SHH-medulloblastoma	disease	
+SLIT-ROBO	program	emergent
+SNARE	program	emergent
+SREBP signaling pathway	program	Sterol_SREBP2
+STRING	assay_or_molecule_noise	
+STRING protein-protein interaction database	assay_or_molecule_noise	
+SUMOylation	program	emergent
+Safe Target 26	assay_or_molecule_noise	
+Safe target	assay_or_molecule_noise	
+Safe target 70	assay_or_molecule_noise	
+Safe-target control 70	assay_or_molecule_noise	
+Safe_target control family	assay_or_molecule_noise	
+Schizophrenia	disease	
+Sec23a	program	emergent
+Smoothened	program	Hedgehog
+Sodium Channel	program	emergent
+Sonic Hedgehog	program	Hedgehog
+Spastic Paraplegia	disease	
+Src-family	program	emergent
+Sterol Module	program	Sterol_SREBP2
+TCA	program	emergent
+TCA cycle	program	emergent
+TCR-CD3	program	emergent
+TGF-beta	program	emergent
+TGF-beta-family	program	emergent
+TGFβ/SMAD pathway	program	emergent
+TLR	program	emergent
+TNF receptor superfamily	program	emergent
+TREX	program	emergent
+TSC	program	mTOR
+TSC/mTOR signaling pathway	program	mTOR
+Thyrotropin-releasing hormone	program	emergent
+Transforming growth factor beta	program	emergent
+Tumor Necrosis Factor	program	emergent
+Type 2 Diabetes	disease	
+UDP-GlcNAc	assay_or_molecule_noise	
+UFMylation	program	emergent
+Ubiquinol	assay_or_molecule_noise	
+V-ATPase	program	emergent
+V-ATPase complex	program	emergent
+VPS13-family	program	emergent
+Vacuolar ATPase	program	emergent
+Vgf/Ptpn5 module	program	emergent
+WASH complex	program	emergent
+WNK-SPAK/OSR1-cation-chloride cotransporter axis	program	emergent
+WNT	program	Wnt_bcatenin
+Waardenburg syndrome	disease	
+Weak editing	phenotype	
+Williams-Beuren syndrome	disease	
+Wnt	program	Wnt_bcatenin
+Wnt/PCP	program	emergent
+Wnt/beta-catenin signaling pathway	program	Wnt_bcatenin
+X-linked intellectual disability	disease	
+absent transcriptional response	phenotype	
+acetyl-CoA	assay_or_molecule_noise	
+actin-cytoskeleton	program	emergent
+activin	program	emergent
+acute mature-neuron RNA phenotype	phenotype	
+adhesion	program	emergent
+alpha-dystroglycan pathway	program	emergent
+alpha-ketoglutarate	assay_or_molecule_noise	
+amino-acid transport signal	program	emergent
+angiogenesis	program	emergent
+angiotensin II	program	emergent
+ankyrin 3	program	emergent
+anxiety	disease	
+apoptosis	program	emergent
+arcuate nucleus	anatomy_celltype	
+aspartate	assay_or_molecule_noise	
+ataxia	disease	
+autophagy	program	Autophagy
+axon guidance	program	emergent
+baseline expression	phenotype	
+beta-catenin	program	Wnt_bcatenin
+biological buffering	phenotype	
+blood-brain barrier	anatomy_celltype	
+brain-derived neurotrophic factor signaling	program	emergent
+branched-chain amino acid catabolism	program	emergent
+breast cancer	disease	
+broad neuronal transcriptional program	phenotype	
+broadly null phenotype	phenotype	
+buffered transcriptional response	phenotype	
+c-Jun N-terminal kinase	program	emergent
+cAMP	assay_or_molecule_noise	
+cAMP signaling pathway	program	emergent
+cAMP/PKA signaling	program	emergent
+cAMP/PKA/CREB axis	program	emergent
+cGAS-STING	program	emergent
+cGMP	assay_or_molecule_noise	
+cadherin-catenin complex	program	emergent
+calcium	assay_or_molecule_noise	
+calcium-channel perturbations	program	emergent
+calcium/calmodulin	program	emergent
+canonical Wnt signaling pathway	program	Wnt_bcatenin
+canonical Wnt/beta-catenin feedback	program	Wnt_bcatenin
+canonical unfolded protein response	program	UPR_ER
+cardiomyopathy	disease	
+cathepsin B	program	emergent
+cell-type restricted effect	phenotype	
+cell-type selectivity	phenotype	
+cell-type skewed	phenotype	
+cell-type-restricted response	phenotype	
+cell-type-restricted target engagement	phenotype	
+cell-type-restricted transcriptional phenotype	phenotype	
+cell-type-selective neuronal response	phenotype	
+cell-type-selective response	phenotype	
+cell-type-selective target engagement	phenotype	
+central nervous system	anatomy_celltype	
+centrosome	program	emergent
+ceramide metabolism	program	emergent
+ceramide transfer	program	emergent
+cerebellar	anatomy_celltype	
+cerebellar GABA	anatomy_celltype	
+cerebellar GABA neurons	anatomy_celltype	
+cerebellar ataxia	disease	
+cerebellar degeneration	disease	
+chaperone response	program	emergent
+chaperone-mediated autophagy	program	Autophagy
+cholesterol	assay_or_molecule_noise	
+cholesterol biosynthesis pathway	program	Sterol_SREBP2
+cholesterol efflux pathway	program	Sterol_SREBP2
+cholesterol homeostasis	program	Sterol_SREBP2
+cholesterol pathway	program	Sterol_SREBP2
+ciliary transition-zone	program	emergent
+ciliogenesis	program	emergent
+ciliopathy	disease	
+cilium	program	emergent
+cilium assembly	program	emergent
+citrate	assay_or_molecule_noise	
+clathrin-mediated endocytosis	program	emergent
+coenzyme Q	assay_or_molecule_noise	
+cohesin loading	program	emergent
+cohesin pathway	program	emergent
+complex III	program	OXPHOS
+complex-IV	program	OXPHOS
+core actin perturbations	program	emergent
+corrected downstream differential expression	assay_or_molecule_noise	
+cortex	anatomy_celltype	
+cortical	anatomy_celltype	
+cortical classes	anatomy_celltype	
+cortical glutamatergic populations	anatomy_celltype	
+craniosynostosis	disease	
+cyclic adenosine monophosphate	assay_or_molecule_noise	
+cyclic-nucleotide program	program	emergent
+cytokine	assay_or_molecule_noise	
+cytoplasmic-vesicle	assay_or_molecule_noise	
+cytoskeletal module	program	emergent
+dataset	assay_or_molecule_noise	
+dataset-wide null transcriptional phenotype	phenotype	
+dendritic spine morphology	phenotype	
+depletion	phenotype	
+development	assay_or_molecule_noise	
+developmental and epileptic encephalopathy	disease	
+developmental biology	assay_or_molecule_noise	
+developmental mechanisms	assay_or_molecule_noise	
+developmental phenotypes	phenotype	
+developmental timing	phenotype	
+diabetes	disease	
+diacylglycerol	assay_or_molecule_noise	
+differential expression	assay_or_molecule_noise	
+differential-expression rows	assay_or_molecule_noise	
+differential-expression summaries	assay_or_molecule_noise	
+differential_expression_signature	assay_or_molecule_noise	
+disease	disease	
+dopamine	anatomy_celltype	
+dopaminergic phenotype	phenotype	
+downregulated neuronal module	program	emergent
+downstream differential expression	assay_or_molecule_noise	
+downstream null phenotype	phenotype	
+downstream pathway signal	program	emergent
+downstream transcriptional response	phenotype	
+dystonia	disease	
+eIF4F	program	emergent
+electrophysiologic phenotypes	phenotype	
+electrophysiology	assay_or_molecule_noise	
+endolysosomal	program	emergent
+endolysosomal acidification	program	emergent
+endolysosomal trafficking	program	emergent
+endoplasmic reticulum	assay_or_molecule_noise	
+endoplasmic reticulum stress	program	UPR_ER
+epilepsy	disease	
+epileptic encephalopathy	disease	
+exploratory biomarker	assay_or_molecule_noise	
+exploratory signals	assay_or_molecule_noise	
+extracellular-matrix program	program	emergent
+failed guide activity	assay_or_molecule_noise	
+ferroptosis	program	emergent
+flat transcriptional phenotype	phenotype	
+glaucoma	disease	
+glioblastoma	disease	
+global null	phenotype	
+global null transcriptomic phenotype	phenotype	
+globally sparse transcriptional phenotype	phenotype	
+glutamatergic	anatomy_celltype	
+glutamatergic class	anatomy_celltype	
+glutamatergic classes	anatomy_celltype	
+glutamatergic group	anatomy_celltype	
+glutamatergic neuron	anatomy_celltype	
+glutamatergic neurons	anatomy_celltype	
+glutamatergic populations	anatomy_celltype	
+glutamatergic signaling	anatomy_celltype	
+glutamatergic-synapse	anatomy_celltype	
+glutamine	assay_or_molecule_noise	
+glutathione	assay_or_molecule_noise	
+glycosaminoglycan	assay_or_molecule_noise	
+glycosylation	program	emergent
+granulopoiesis	program	emergent
+guide efficiency	assay_or_molecule_noise	
+habenula	anatomy_celltype	
+haploinsufficiency	phenotype	
+heparan-sulfate	assay_or_molecule_noise	
+heparan-sulfate biosynthesis	program	emergent
+hereditary hemorrhagic telangiectasia	disease	
+hereditary spastic paraplegia	disease	
+heterogeneous target engagement	phenotype	
+hindbrain	anatomy_celltype	
+hippocampal	anatomy_celltype	
+hippocampal plasticity	phenotype	
+holoprosencephaly	disease	
+homeostatic compensation	phenotype	
+homeostatic_compensation	phenotype	
+homologous-recombination	program	emergent
+human	assay_or_molecule_noise	
+human disease	disease	
+human neurodevelopmental disease	disease	
+hydrocephalus	disease	
+hyperekplexia	disease	
+hypothalamic	anatomy_celltype	
+hypothalamic region	anatomy_celltype	
+hypothalamus	anatomy_celltype	
+immediate-early pathways	program	emergent
+immunodeficiency	disease	
+impaired learning	phenotype	
+inflammatory markers	assay_or_molecule_noise	
+inhibitory populations	anatomy_celltype	
+inositol trisphosphate	assay_or_molecule_noise	
+integrated stress response	program	ISR_ATF4
+integrin	assay_or_molecule_noise	
+intellectual disability	disease	
+interferon	assay_or_molecule_noise	
+interleukin 1 beta	assay_or_molecule_noise	
+interleukin 21	assay_or_molecule_noise	
+interleukin-6	assay_or_molecule_noise	
+iron	assay_or_molecule_noise	
+ischemia	disease	
+kainate receptor	assay_or_molecule_noise	
+kainate receptor pathway	program	emergent
+kidney	anatomy_celltype	
+lack of differential expression	phenotype	
+lack of phenocopy	phenotype	
+lactate	assay_or_molecule_noise	
+latrophilin	assay_or_molecule_noise	
+lens	anatomy_celltype	
+leptin	assay_or_molecule_noise	
+limb-girdle muscular dystrophy	disease	
+limited perturbed-cell counts	assay_or_molecule_noise	
+limited power	assay_or_molecule_noise	
+lipid-transfer	program	emergent
+lipopolysaccharide	assay_or_molecule_noise	
+localization	assay_or_molecule_noise	
+log fold change	assay_or_molecule_noise	
+long-term potentiation	phenotype	
+loss of function	phenotype	
+loss of synaptic transcripts	phenotype	
+loss-of-function disease	disease	
+loss-of-function phenotype	phenotype	
+loss-of-function phenotypes	phenotype	
+loss-of-function program	phenotype	
+loss-of-function sensitivity	phenotype	
+loss-of-function signature	phenotype	
+loss-of-function state	phenotype	
+low baseline expression	assay_or_molecule_noise	
+low cell counts	assay_or_molecule_noise	
+low expression	assay_or_molecule_noise	
+lysosomal response	program	emergent
+lysosome	assay_or_molecule_noise	
+mRNA	assay_or_molecule_noise	
+mRNA abundance	assay_or_molecule_noise	
+mRNA depletion	phenotype	
+mRNA knockdown	phenotype	
+mRNA splicing	program	Spliceosome
+mRNA-level uncoupling	phenotype	
+mRNA-silent	phenotype	
+mSWI/SNF (BAF) complex	program	BAF_SWISNF
+mSWI/SNF/BAF	program	BAF_SWISNF
+mTOR signaling pathway	program	mTOR
+mTORC1	program	mTOR
+mTORopathy	disease	
+macroautophagy	program	Autophagy
+malate-aspartate shuttle	program	emergent
+mannose-6-phosphate	assay_or_molecule_noise	
+mechanism	assay_or_molecule_noise	
+mechanistic target of rapamycin complex 1	program	mTOR
+medulla	anatomy_celltype	
+medulloblastoma	disease	
+melanocortin	anatomy_celltype	
+messenger RNA	assay_or_molecule_noise	
+mevalonate	assay_or_molecule_noise	
+microcephaly	disease	
+microglia	anatomy_celltype	
+microtubule	assay_or_molecule_noise	
+microtubule defects	phenotype	
+microtubule-associated pathway	program	emergent
+midbrain	anatomy_celltype	
+midbrain context	anatomy_celltype	
+midbrain glutamatergic	anatomy_celltype	
+midbrain glutamatergic neurons	anatomy_celltype	
+midbrain neuronal classes	anatomy_celltype	
+migration	program	emergent
+mitochondrial DNA	assay_or_molecule_noise	
+mitochondrial complex I	program	OXPHOS
+mitochondrial complex I assembly	program	OXPHOS
+mitochondrial complex-I biogenesis	program	OXPHOS
+mitochondrial dynamics	program	emergent
+mitochondrial fission	program	emergent
+mitochondrial genes	assay_or_molecule_noise	
+mitochondrial integrated stress response	program	ISR_ATF4
+mitochondrial iron-sulfur cluster biogenesis	program	emergent
+mitochondrial module	program	emergent
+mitochondrial morphology	phenotype	
+mitochondrial proteostasis	program	emergent
+mitochondrial respiratory chain Complex IV	program	OXPHOS
+mitochondrial respiratory chain complex III	program	OXPHOS
+mitochondrial respiratory electron transport	program	OXPHOS
+mitochondrial respiratory-chain complex I	program	OXPHOS
+mitochondrial stress-response	program	emergent
+mitochondrial tRNA aminoacylation	program	emergent
+mitochondrial translation	program	emergent
+mitogen-activated protein kinase 1	program	MAPK_ERK
+mitophagy	program	Autophagy
+morphology	phenotype	
+mouse	assay_or_molecule_noise	
+mouse brain	anatomy_celltype	
+mouse-brain atlas	assay_or_molecule_noise	
+mouse-brain cell classes	anatomy_celltype	
+mouse-brain subclasses	anatomy_celltype	
+mtDNA	assay_or_molecule_noise	
+mtDNA transcripts	assay_or_molecule_noise	
+mu-opioid receptor	anatomy_celltype	
+muted RNA phenotype	phenotype	
+muted transcriptomic response	phenotype	
+myelination	program	emergent
+narrow transcriptional response	phenotype	
+ncBAF	program	BAF_SWISNF
+near-null perturbation	phenotype	
+near-null profile	phenotype	
+near-null response	phenotype	
+near-null transcriptional phenotype	phenotype	
+neddylation	program	emergent
+negative module	phenotype	
+negative response	phenotype	
+negative transcriptional phenotype	phenotype	
+negative_logFC	assay_or_molecule_noise	
+netrin	assay_or_molecule_noise	
+neural stem-cell programs	program	emergent
+neurexin-neuroligin	program	emergent
+neurite morphology	phenotype	
+neuroblastoma	disease	
+neurodegeneration	disease	
+neurodevelopmental defects	phenotype	
+neurodevelopmental disease	disease	
+neurodevelopmental phenotypes	phenotype	
+neurologic disease	disease	
+neuron projection pathways	program	emergent
+neuronal Perturb-seq phenotype	phenotype	
+neuronal class	anatomy_celltype	
+neuronal liability	phenotype	
+neuronal loss of function	phenotype	
+neuronal migration	program	emergent
+neuronal morphogenesis	program	emergent
+neuronal null	phenotype	
+neuronal response	phenotype	
+neuronal signature	phenotype	
+neuronal transcriptional module	program	emergent
+neuronal transcriptional pathway	program	emergent
+neuronal transcriptomic phenotype	phenotype	
+neuropeptide Y	anatomy_celltype	
+neuropeptide processing	program	emergent
+nicotinic acetylcholine receptor signaling pathway	program	emergent
+no FDR-significant transcriptomic phenotype	phenotype	
+no FDR-supported transcriptomic phenotype	phenotype	
+no FDR-supported transcriptomic response	phenotype	
+no detectable transcriptional response	phenotype	
+no measurable on-target transcript shift	phenotype	
+no robust transcriptomic phenotype	phenotype	
+nominal Rab18 depletion	phenotype	
+nominal decreases	phenotype	
+nominal depletion	phenotype	
+nominal engagement	phenotype	
+nominal on-target decrease	phenotype	
+nominal reductions	phenotype	
+nominal self-depletion	phenotype	
+nominal self-downregulation	phenotype	
+nominal self-knockdown	phenotype	
+nominal self-transcript depletion	phenotype	
+nominal target depletion	phenotype	
+nominal target-transcript depletion	phenotype	
+nominal target-transcript loss	phenotype	
+nominal transcript decrease	phenotype	
+nominal transcript decreases	phenotype	
+nominal transcript depletion	phenotype	
+non-cell-autonomous mechanisms	assay_or_molecule_noise	
+non-neuronal contexts	assay_or_molecule_noise	
+non-target module	assay_or_molecule_noise	
+nuclear RNA-processing module	program	emergent
+nuclear-speckle program	program	emergent
+nucleocytoplasmic transport	program	emergent
+null pattern	phenotype	
+null phenotype	phenotype	
+null result	phenotype	
+null signature	phenotype	
+obesity	disease	
+on-target RNA depletion	phenotype	
+on-target depletion	phenotype	
+on-target transcript depletion	phenotype	
+on-target transcript reduction	phenotype	
+origin-recognition complex	program	emergent
+oxidative stress	program	emergent
+oxytocin	anatomy_celltype	
+pan-neuronal null result	phenotype	
+pancreatic endocrine differentiation	program	emergent
+peroxisome proliferator-activated receptor	program	emergent
+peroxisome-import	program	emergent
+perturbation	assay_or_molecule_noise	
+perturbation phenotype	phenotype	
+phosphatidic acid	assay_or_molecule_noise	
+phosphatidylinositol	assay_or_molecule_noise	
+phosphatidylinositol 4,5-bisphosphate	assay_or_molecule_noise	
+phosphorylation	assay_or_molecule_noise	
+planar-cell-polarity	program	emergent
+pons	anatomy_celltype	
+pontocerebellar hypoplasia	disease	
+postsynaptic density	program	emergent
+power	assay_or_molecule_noise	
+primary-cilium	assay_or_molecule_noise	
+proteasome	program	Proteasome
+protein abundance	phenotype	
+protein depletion	phenotype	
+protein phosphatase 3 catalytic subunit alpha	assay_or_molecule_noise	
+protein-level phenotypes	phenotype	
+protein-trafficking phenotype	phenotype	
+proteoglycan	assay_or_molecule_noise	
+pyridoxal phosphate	assay_or_molecule_noise	
+pyruvate decarboxylation to acetyl-CoA	program	emergent
+pyruvate dehydrogenase complex	program	emergent
+reactive oxygen species	assay_or_molecule_noise	
+receptor tyrosine kinase	assay_or_molecule_noise	
+recessive neurodevelopmental disease	disease	
+recurrent cross-cell-type module	program	emergent
+recurrent down-regulated module	program	emergent
+recurrent downregulated module	program	emergent
+recurrent module	program	emergent
+recurrent pathway	program	emergent
+respiration	program	OXPHOS
+respiratory chain	program	OXPHOS
+respiratory electron transport	program	OXPHOS
+restless legs syndrome	disease	
+restricted response	phenotype	
+restricted signature	phenotype	
+retinoic acid	assay_or_molecule_noise	
+retromer	program	emergent
+rhabdomyosarcoma	disease	
+rheumatoid arthritis	disease	
+ribosome-biogenesis	program	emergent
+robust neuronal transcriptomic phenotype	phenotype	
+robust phenotype	phenotype	
+robust transcriptomic response	phenotype	
+safe target controls	assay_or_molecule_noise	
+self-depletion	phenotype	
+self-knockdown	phenotype	
+self-only response	phenotype	
+self-only transcriptional phenotype	phenotype	
+self-transcript depletion	phenotype	
+semaphorin plexin signaling pathway	program	emergent
+serine	assay_or_molecule_noise	
+serotonin	anatomy_celltype	
+serotonin-receptor	anatomy_celltype	
+sgRNA	assay_or_molecule_noise	
+shared cell types	anatomy_celltype	
+signature-neighbor module	program	emergent
+signatures	phenotype	
+significant depletion	phenotype	
+significant self-depletion	phenotype	
+silent	phenotype	
+silent neuronal phenotype	phenotype	
+skeletal phenotype	phenotype	
+sparse RNA phenotype	phenotype	
+sparse acute transcriptomic response	phenotype	
+sparse neuronal mRNA phenotype	phenotype	
+sparse transcriptomic effects	phenotype	
+sparse transcriptomic phenotype	phenotype	
+sparse transcriptomic response	phenotype	
+spermatogenic failure	disease	
+sphingolipid	assay_or_molecule_noise	
+sphingolipid metabolism	program	emergent
+sphingosine 1-phosphate	assay_or_molecule_noise	
+spinocerebellar ataxia	disease	
+spliceosome	program	Spliceosome
+sterol biosynthesis	program	Sterol_SREBP2
+sterol genes	program	Sterol_SREBP2
+sterol module	program	Sterol_SREBP2
+sterol-pathway	program	Sterol_SREBP2
+sterol/cholesterol module	program	Sterol_SREBP2
+stress module	program	emergent
+stress responses	program	emergent
+stress signature	program	emergent
+strong on-target transcript depletion	phenotype	
+strong self-depletion	phenotype	
+strong transcriptional program	program	emergent
+strongest depletion	phenotype	
+strongest nominal depletion	phenotype	
+strongest signal	phenotype	
+structural mechanisms	assay_or_molecule_noise	
+subcortical neuronal classes	anatomy_celltype	
+substantia nigra	anatomy_celltype	
+subthreshold responses	phenotype	
+succinyl-CoA	assay_or_molecule_noise	
+synapse	anatomy_celltype	
+synaptic pathway	program	emergent
+synaptic physiology	program	emergent
+synaptic remodeling	program	emergent
+synaptic vesicle cycle	program	emergent
+synaptic vesicle recycling	program	emergent
+synaptic-vesicle endocytosis	program	emergent
+target engagement	assay_or_molecule_noise	
+target mRNA depletion	phenotype	
+target transcript	assay_or_molecule_noise	
+target-dominated response	phenotype	
+target-engagement limitation	phenotype	
+target-only response	phenotype	
+target-only transcriptomic phenotype	phenotype	
+target-transcript depletion	phenotype	
+target-transcript reduction	phenotype	
+thalamic	anatomy_celltype	
+thalamic Prkcd/Grin2c glutamatergic class	anatomy_celltype	
+thalamic Prkcd/Grin2c glutamatergic neurons	anatomy_celltype	
+thalamic context	anatomy_celltype	
+thalamic glutamatergic class	anatomy_celltype	
+thalamic glutamatergic context	anatomy_celltype	
+thalamic module	program	emergent
+thalamic neuronal classes	anatomy_celltype	
+thalamic region	anatomy_celltype	
+thalamus	anatomy_celltype	
+thyroid	anatomy_celltype	
+trafficking	program	emergent
+trans-Golgi network	assay_or_molecule_noise	
+transcript depletion	phenotype	
+transcriptional buffering	phenotype	
+transcriptional module	program	emergent
+transcriptional phenotype	phenotype	
+transcriptional program	program	emergent
+transcriptional regulation	program	emergent
+transcriptional repression	program	emergent
+transcriptional response	phenotype	
+transcriptional signature	phenotype	
+transcriptional silence	phenotype	
+transcriptionally flat	phenotype	
+transcriptionally inert	phenotype	
+transcriptionally quiet	phenotype	
+transcriptionally silent phenotype	phenotype	
+transcriptome-wide FDR-significant differentially expressed genes	assay_or_molecule_noise	
+transcriptomic interchangeability	phenotype	
+transcriptomic null	phenotype	
+transcriptomic phenocopy	phenotype	
+transcriptomic response	phenotype	
+transcriptomic signature	phenotype	
+transforming growth factor-beta	program	emergent
+translation	program	emergent
+translation elongation	program	emergent
+tricarboxylic acid cycle	program	emergent
+type-I-interferon	program	JAK_STAT
+ubiquitin-like conjugation	program	emergent
+uncoupling	phenotype	
+underpowered transcriptional response	phenotype	
+unengaged transcriptional phenotype	phenotype	
+unfolded protein response	program	UPR_ER
+v-ATPase	program	emergent
+vascular smooth muscle	anatomy_celltype	
+vasopressin	assay_or_molecule_noise	
+ventral tegmental area	anatomy_celltype	
+vesicle trafficking	program	emergent
+visual phototransduction	program	emergent
+voltage-gated potassium transport	assay_or_molecule_noise	
+voltage-gated potassium-channel activity	assay_or_molecule_noise	
+weak Perturb-seq phenotype	phenotype	
+weak Perturb-seq signature	phenotype	
+weak RNA phenotype	phenotype	
+weak acute response	phenotype	
+weak correlation	phenotype	
+weak engagement	phenotype	
+weak guide activity	phenotype	
+weak knockdown	phenotype	
+weak loss-of-function phenotype	phenotype	
+weak loss-of-function signature	phenotype	
+weak mRNA phenotype	phenotype	
+weak mature-neuron response	phenotype	
+weak neuronal response	phenotype	
+weak on-target depletion	phenotype	
+weak on-target transcript depletion	phenotype	
+weak perturbation	phenotype	
+weak perturbation phenotype	phenotype	
+weak perturbation signature	phenotype	
+weak phenotype	phenotype	
+weak profile	phenotype	
+weak response	phenotype	
+weak signature	phenotype	
+weak target engagement	phenotype	
+weak transcript-level engagement	phenotype	
+weak transcriptional effects	phenotype	
+weak transcriptional signature	phenotype	
+weak transcriptomic effect	phenotype	
+weak_on_target_mRNA_depletion	phenotype	

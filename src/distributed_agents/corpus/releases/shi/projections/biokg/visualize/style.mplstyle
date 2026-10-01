@@ -1,0 +1,59 @@
+# Release-owned BioKG figure style.
+pdf.fonttype       : 42
+ps.fonttype        : 42
+svg.fonttype       : none
+
+font.family        : sans-serif
+font.sans-serif    : Arial, Helvetica, DejaVu Sans
+font.size          : 7
+
+figure.figsize     : 3.5, 2.625
+figure.dpi         : 100
+figure.autolayout  : False
+
+axes.labelsize     : 7
+axes.linewidth     : 0.5
+axes.edgecolor     : 555555
+axes.labelcolor    : 000000
+axes.grid          : False
+axes.unicode_minus : True
+axes.spines.top    : False
+axes.spines.right  : False
+axes.prop_cycle    : cycler('color', ['E69F00', '56B4E9', '009E73', 'F0E442', '0072B2', 'D55E00', 'CC79A7', '000000'])
+
+xtick.labelsize    : 7
+ytick.labelsize    : 7
+xtick.color        : 555555
+ytick.color        : 555555
+xtick.direction    : out
+ytick.direction    : out
+xtick.major.size   : 4
+xtick.major.width  : 0.5
+xtick.minor.size   : 2.5
+xtick.minor.width  : 0.5
+ytick.major.size   : 4
+ytick.major.width  : 0.5
+ytick.minor.size   : 2.5
+ytick.minor.width  : 0.5
+xtick.minor.visible: False
+ytick.minor.visible: False
+
+lines.linewidth    : 1.0
+lines.markersize   : 4
+
+legend.fontsize    : 7
+legend.frameon     : False
+legend.fancybox    : False
+
+grid.color         : CCCCCC
+grid.linestyle     : --
+grid.linewidth     : 0.3
+grid.alpha         : 0.6
+
+savefig.dpi        : 300
+savefig.format     : pdf
+savefig.bbox       : tight
+savefig.transparent: False
+savefig.pad_inches : 0.05
+
+image.cmap         : viridis

@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Shi holdout bottom-up Claim proposal disposition",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "construction_scope",
+    "claim_scope",
+    "proposal_id",
+    "source_component_id",
+    "disposition",
+    "resulting_claim_ids",
+    "rationale"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "july-bottom-up-claim-proposal-disposition-v1"
+    },
+    "construction_scope": {
+      "const": "corpus"
+    },
+    "claim_scope": {
+      "const": "corpus"
+    },
+    "proposal_id": {
+      "type": "string",
+      "pattern": "^proposal:[0-9a-f]{20}$"
+    },
+    "source_component_id": {
+      "type": "string",
+      "pattern": "^proposal-component:[0-9a-f]{20}$"
+    },
+    "disposition": {
+      "enum": [
+        "merged",
+        "retained",
+        "split",
+        "rejected"
+      ]
+    },
+    "resulting_claim_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^claim:[0-9a-f]{20}$"
+      }
+    },
+    "rationale": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "disposition": {
+            "const": "rejected"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "resulting_claim_ids": {
+            "maxItems": 0
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "disposition": {
+            "enum": [
+              "merged",
+              "retained",
+              "split"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "resulting_claim_ids": {
+            "minItems": 1
+          }
+        }
+      }
+    }
+  ],
+  "additionalProperties": false
+}

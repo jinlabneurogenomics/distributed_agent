@@ -1,0 +1,61 @@
+{
+  "counts": {
+    "genes": 18123,
+    "memberships": 464095,
+    "relationships": 51743,
+    "sets": 28252,
+    "sets_by_resource": {
+      "CORUM": 1333,
+      "CORUM:human_ortholog_1to1": 5589,
+      "GO:BP": 12091,
+      "GO:CC": 1900,
+      "GO:MF": 4664,
+      "MSigDB:CP:BIOCARTA": 252,
+      "MSigDB:CP:WIKIPATHWAYS": 202,
+      "MSigDB:MH": 50,
+      "functional_class": 10,
+      "kegg": 330,
+      "reactome": 1831
+    },
+    "sets_by_tier": {
+      "broad_functional_fallback": 19362,
+      "exact_complex_or_paralog": 6922,
+      "narrow_module": 1968
+    }
+  },
+  "output": {
+    "bytes": 48222208,
+    "filename": "gene_analogs.sqlite3",
+    "sha256": "5792e6d51d77a19217009e644f98847438beee955bbb1bad18e905b28cfc650d"
+  },
+  "policy": {
+    "corum": "exact_complex_or_paralog",
+    "go_functional_class_and_hallmark": "broad_functional_fallback",
+    "narrow_membership_max_genes": 50,
+    "ordering": "categorical tier precedence then canonical symbol; no aggregate biological similarity score",
+    "query_time_network_access": false,
+    "string": "pinned physical edges with source confidence retained as provenance"
+  },
+  "schema_version": "distributed_agents-gene-analog-index-build-v1",
+  "sources": {
+    "genes": {
+      "bytes": 638318,
+      "filename": "genes.parquet",
+      "sha256": "bae2952ff6b8e9bcdb9da0cae0af0f9f3774f75f4ed389f4a8f44f5799b1250b"
+    },
+    "memberships": {
+      "bytes": 2015388,
+      "filename": "gene_membership.parquet",
+      "sha256": "426328dc298e7c5485a215c138398d675723a46c440b86c925273da6efe44448"
+    },
+    "relationships": {
+      "bytes": 1524963,
+      "filename": "gene_relationships.parquet",
+      "sha256": "59258be95c693bc493e40ac5747a1ab6f73d47dc8b7ccb5d2b799c1e1b16320a"
+    }
+  },
+  "species": {
+    "scientific_name": "Mus musculus",
+    "taxonomy_id": 10090
+  }
+}

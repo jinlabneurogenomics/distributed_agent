@@ -1,0 +1,60 @@
+{
+  "access_to_raw_citation_entry_ratio": 2.366958622772576,
+  "accessed_and_cited_pairs": 9289,
+  "accessed_by_source_kind": {
+    "database": 25388,
+    "literature": 10947,
+    "unresolved": 1117,
+    "web": 1733
+  },
+  "accessed_not_cited_pairs": 29896,
+  "accessed_pairs_by_channel": {
+    "biorxiv_api": 6,
+    "browser": 4619,
+    "direct_http": 1366,
+    "literature_api": 1616,
+    "ncbi_entrez": 565,
+    "pubmed_esummary": 2972,
+    "structured_api": 25126,
+    "terminal": 5404
+  },
+  "accessed_per_report": {
+    "max": 110,
+    "mean": 19.152003910068427,
+    "median": 18.0,
+    "min": 1
+  },
+  "accessed_report_source_pairs": 39185,
+  "citation_entries_raw": 16555,
+  "cited_by_source_kind": {
+    "database": 5257,
+    "literature": 8893,
+    "web": 2295
+  },
+  "cited_per_report": {
+    "max": 15,
+    "mean": 8.03763440860215,
+    "median": 8.0,
+    "min": 1
+  },
+  "cited_report_source_pairs": 16445,
+  "cited_without_matched_access_pairs": 7156,
+  "counting_unit": "report-source pair; duplicates across reports count separately",
+  "limitations": [
+    "Browser URLs are absent from many exported open results; cursor lineage, page identifiers, and titles are used when needed.",
+    "Literature is expanded to individual PMID/PMCID/DOI records; biological databases are counted as stable entries or distinct query responses.",
+    "Saved raw files count only when their contents were subsequently printed into a model-visible tool result.",
+    "Unresolved sources are retained and included in the primary count; inspect accessed_by_source_kind before manuscript use."
+  ],
+  "trace_metrics": {
+    "browser_open_blocked_events": 2457,
+    "browser_open_error_events": 3956,
+    "browser_open_success_events": 10362,
+    "custom_http_resources": 3047,
+    "entrez_esummary_article_records": 591,
+    "excluded_compact_efetch_envelopes": 253,
+    "excluded_entrez_search_responses": 669,
+    "structured_database_resources": 28851,
+    "terminal_article_content_records": 6315
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://distributed_agents.local/schemas/corpus-sweep-slice-result-v1.json",
+  "title": "DistributedAgents exhaustive corpus sweep reader result",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["unit_id", "decision", "records", "rationale", "evidence_ids", "uncertainty"],
+  "properties": {
+    "unit_id": {"type": "string", "minLength": 1},
+    "decision": {"enum": ["emit", "reject"]},
+    "records": {"type": "array", "items": {"type": "object"}},
+    "rationale": {"type": "string", "minLength": 1},
+    "evidence_ids": {"type": "array", "items": {"type": "string"}},
+    "uncertainty": {"enum": ["low", "medium", "high"]}
+  }
+}

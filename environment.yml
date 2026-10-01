@@ -33,8 +33,10 @@ dependencies:
   - scipy==1.14.1
   - statsmodels==0.14.6
   - scikit-learn==1.8.0
+  - networkx>=3.2,<4
   - matplotlib-base==3.10.8
   - seaborn==0.13.2
+  - adjusttext==1.3.0
 
   # Single-cell data structures, enrichment, and biological sequence utilities.
   - anndata==0.12.8

@@ -1,0 +1,109 @@
+{
+  "adjudication_version": "legacy-sourceguard-claim-reconciliation-v1",
+  "counts": {
+    "affected_legacy_claims": 400,
+    "candidate_sourceguard_findings": 1020,
+    "confidence": {
+      "high": 229,
+      "low": 36,
+      "moderate": 135
+    },
+    "dispositions": {
+      "missing": 55,
+      "preserved": 160,
+      "revised": 185
+    },
+    "legacy_member_contributions": {
+      "essential": 658,
+      "nonessential": 51,
+      "supporting": 257
+    },
+    "legacy_member_match_status": {
+      "matched": 475,
+      "missing_essential": 111,
+      "missing_nonessential": 73,
+      "partially_matched": 276,
+      "superseded": 31
+    },
+    "replacement_finding_support_links": 857,
+    "replacement_findings_used_by_multiple_claims": 34,
+    "target_class_dispositions": {
+      "biological:missing": 41,
+      "biological:preserved": 109,
+      "biological:revised": 131,
+      "safe_control:missing": 14,
+      "safe_control:preserved": 51,
+      "safe_control:revised": 54
+    },
+    "unassigned_sourceguard_findings": 197,
+    "unique_replacement_findings": 823
+  },
+  "created_on": "2026-09-30",
+  "integrity": {
+    "all_affected_claims_reconciled_once": true,
+    "all_candidate_sourceguard_findings_accounted_for": true,
+    "all_legacy_members_characterized_once": true,
+    "finding_ids_treated_as_release_local_ordinals": true,
+    "machine_local_paths": false,
+    "nonessential_missing_members_do_not_force_claim_missing": true,
+    "replacement_findings_restricted_to_target_component": true,
+    "sourceguard_deny_hits": 0
+  },
+  "outputs": {
+    "reconciliation": {
+      "bytes": 1093886,
+      "path": "artifacts/audits/claim_reconciliation.jsonl",
+      "records": 400,
+      "sha256": "8eb7858921bd7e197b00719b4e7af3a5fe56d034c8b6b4c8644b444d311fa4e1"
+    },
+    "unassigned_sourceguard_findings": {
+      "bytes": 61559,
+      "path": "artifacts/audits/claim_reconciliation_unassigned.jsonl",
+      "records": 197,
+      "sha256": "96a2ad7e151c8bf7dfdab530b008efeffbacf3ef31b2721cbb42e14b6b97c75d"
+    }
+  },
+  "provenance": {
+    "adjudication_version": "legacy-sourceguard-claim-reconciliation-v1",
+    "counts": {
+      "affected_claims": 400,
+      "changed_targets": 180,
+      "legacy_claims": 5162,
+      "legacy_findings": 11346,
+      "packets": 33,
+      "sourceguard_findings": 11343,
+      "target_components": 180,
+      "unchanged_claims": 4762
+    },
+    "created_on": "2026-09-30",
+    "model": "gpt-rosalind-5.5",
+    "packet_policy": {
+      "max_prompt_chars": 90000,
+      "max_scopes_per_packet": 6
+    },
+    "prompt_sha256": "2d54b97c18cd11d5924b68f15f8c0a06cb2d5f306c4f33e4c2c116cf5a58d3ca",
+    "reasoning_effort": "high",
+    "repair_prompt_sha256": "e8ebf10480ed7fa25aec5cf052ced4ccee12e79d4d672839bf873970be9dc891",
+    "response_schema_sha256": "509b5f5b46d0fdaed0e884cf9840c1e18038748457bd989856b1827e3144c9f9",
+    "schema_version": "distributed_agents-claim-reconciliation-v1",
+    "sources": {
+      "legacy_claim_assignments": {
+        "path": "../legacy_reports_v1/projections/biokg/data/claims/claim_assignments.tsv",
+        "sha256": "a5471a35887272c56473f7b5b09eb450650c2c16c76376cb3d21a9a29cb331f0"
+      },
+      "legacy_findings": {
+        "path": "../legacy_reports_v1/artifacts/ledgers/findings.csv",
+        "sha256": "79148ce2751596d09b1428c5d9499a4ffdbd66cdc24dbce2569b77b4f7980187"
+      },
+      "replacement_targets": {
+        "path": "provenance/sourceguard_replacement_targets.txt",
+        "sha256": "a5fa58d6a06367e6a89edadc4d2326fad0ec226861bbc3f127830f63ca694d14"
+      },
+      "sourceguard_findings": {
+        "path": "artifacts/ledgers/findings.csv",
+        "sha256": "644437aa3072d7f6896751824a131bed841bfe3af3b5604bee7970660d22fcb1"
+      }
+    }
+  },
+  "schema_version": "distributed_agents-claim-reconciliation-v1"
+}

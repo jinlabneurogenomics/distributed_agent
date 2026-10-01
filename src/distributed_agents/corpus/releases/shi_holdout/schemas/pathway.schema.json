@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Canonical Shi holdout pathway summary",
+  "type": "object",
+  "required": ["doc_id", "target_gene", "pathway_id", "pathway", "evidence_ids", "finding_ids", "source_line", "source_report_sha256", "_source_record_sha256"],
+  "properties": {
+    "doc_id": {"type": "string", "minLength": 1},
+    "target_gene": {"type": "string", "minLength": 1},
+    "pathway_id": {"type": "string", "pattern": "^P[0-9]+$"},
+    "pathway": {"type": ["string", "null"]},
+    "evidence_ids": {"type": "array", "items": {"type": "string"}},
+    "finding_ids": {"type": "array", "items": {"type": "string"}},
+    "source_line": {"type": "integer", "minimum": 1},
+    "source_report_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "_source_record_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "additionalProperties": true
+}

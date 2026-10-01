@@ -1,0 +1,239 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://distributed_agents.local/schemas/publication-reference-mapping-v2.schema.json",
+  "title": "Release-specific exact publication-reference mapping",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "release_id", "source", "policy", "mappings", "summary"],
+  "properties": {
+    "schema_version": {"const": "publication-reference-mapping-v2"},
+    "release_id": {"type": "string", "minLength": 1},
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["artifact", "path", "format", "sha256", "records"],
+      "properties": {
+        "artifact": {"const": "references"},
+        "path": {"type": "string", "minLength": 1},
+        "format": {"enum": ["csv", "jsonl"]},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "records": {"type": "integer", "minimum": 1}
+      }
+    },
+    "policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "identifiers",
+        "canonical_priority",
+        "excluded_source_types",
+        "exact_url_extensions",
+        "multiple_doi_rule",
+        "non_publication_url_hosts",
+        "non_publication_search_pages",
+        "network_resolution",
+        "fuzzy_matching"
+      ],
+      "properties": {
+        "id": {"const": "exact-publication-identifiers-v2"},
+        "identifiers": {
+          "const": ["doi", "pmid", "pmcid"]
+        },
+        "canonical_priority": {
+          "const": ["doi", "pmid", "pmcid"]
+        },
+        "excluded_source_types": {
+          "const": ["clinicaltrials", "database"]
+        },
+        "exact_url_extensions": {
+          "const": [
+            "europe-pmc-med-as-pmid",
+            "europe-pmc-pmc-as-pmcid"
+          ]
+        },
+        "multiple_doi_rule": {
+          "const": "prefer-single-exact-doi-url-matching-an-extracted-doi"
+        },
+        "non_publication_url_hosts": {
+          "const": [
+            "accessdata.fda.gov",
+            "cancer.gov",
+            "dailymed.nlm.nih.gov",
+            "ema.europa.eu",
+            "fda.gov",
+            "medlineplus.gov"
+          ]
+        },
+        "non_publication_search_pages": {
+          "const": [
+            "ncbi-eutils-esearch",
+            "pubmed-query-without-record-id"
+          ]
+        },
+        "network_resolution": {"const": false},
+        "fuzzy_matching": {"const": false}
+      }
+    },
+    "mappings": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/mapping"}
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "total",
+        "resolved",
+        "unique_publications",
+        "non_publication",
+        "unresolved",
+        "conflict",
+        "identifier_rows"
+      ],
+      "properties": {
+        "total": {"type": "integer", "minimum": 1},
+        "resolved": {"type": "integer", "minimum": 0},
+        "unique_publications": {"type": "integer", "minimum": 0},
+        "non_publication": {"type": "integer", "minimum": 0},
+        "unresolved": {"type": "integer", "minimum": 0},
+        "conflict": {"type": "integer", "minimum": 0},
+        "identifier_rows": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["doi", "pmid", "pmcid"],
+          "properties": {
+            "doi": {"type": "integer", "minimum": 0},
+            "pmid": {"type": "integer", "minimum": 0},
+            "pmcid": {"type": "integer", "minimum": 0}
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "nullableIdentifier": {
+      "oneOf": [
+        {"type": "string", "minLength": 1},
+        {"type": "null"}
+      ]
+    },
+    "identifierSet": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["doi", "pmid", "pmcid"],
+      "properties": {
+        "doi": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "pattern": "^10\\.[0-9]{4,9}/.+"}
+        },
+        "pmid": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "pattern": "^[0-9]{5,10}$"}
+        },
+        "pmcid": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "pattern": "^PMC[0-9]{4,10}$"}
+        }
+      }
+    },
+    "canonicalReference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "doi", "pmid", "pmcid"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^reference:(doi|pmid|pmcid):.+"},
+        "doi": {"$ref": "#/$defs/nullableIdentifier"},
+        "pmid": {"$ref": "#/$defs/nullableIdentifier"},
+        "pmcid": {"$ref": "#/$defs/nullableIdentifier"}
+      }
+    },
+    "mapping": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_reference_id",
+        "target_gene",
+        "local_ref_id",
+        "source_record_sha256",
+        "source_type",
+        "resolution",
+        "extracted",
+        "selection",
+        "canonical",
+        "candidate_canonical_reference_ids"
+      ],
+      "properties": {
+        "source_reference_id": {"type": "string", "minLength": 1},
+        "target_gene": {"type": "string", "minLength": 1},
+        "local_ref_id": {"type": "string", "minLength": 1},
+        "source_record_sha256": {
+          "oneOf": [
+            {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+            {"type": "null"}
+          ]
+        },
+        "source_type": {"type": "string"},
+        "resolution": {
+          "enum": [
+            "exact_doi",
+            "exact_pmid",
+            "exact_pmcid",
+            "non_publication",
+            "unresolved",
+            "conflict"
+          ]
+        },
+        "extracted": {"$ref": "#/$defs/identifierSet"},
+        "selection": {
+          "oneOf": [
+            {"$ref": "#/$defs/identifierSelection"},
+            {"type": "null"}
+          ]
+        },
+        "canonical": {
+          "oneOf": [
+            {"$ref": "#/$defs/canonicalReference"},
+            {"type": "null"}
+          ]
+        },
+        "candidate_canonical_reference_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "pattern": "^reference:(doi|pmid|pmcid):.+"}
+        }
+      }
+    },
+    "identifierSelection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "rule",
+        "selected_canonical_reference_id",
+        "unselected_candidate_canonical_reference_ids"
+      ],
+      "properties": {
+        "rule": {
+          "const": "prefer-single-exact-doi-url-matching-an-extracted-doi"
+        },
+        "selected_canonical_reference_id": {
+          "type": "string",
+          "pattern": "^reference:doi:10\\.[0-9]{4,9}/.+"
+        },
+        "unselected_candidate_canonical_reference_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^reference:doi:10\\.[0-9]{4,9}/.+"
+          }
+        }
+      }
+    }
+  }
+}

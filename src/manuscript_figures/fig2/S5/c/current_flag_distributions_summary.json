@@ -1,0 +1,23 @@
+{
+  "workbook_rows": 5129,
+  "plotted_rows": 5125,
+  "blank_flag_rows": 4,
+  "unique_targets": 1092,
+  "targets_missing_pathway_annotation": 8,
+  "input_workbook": "manuscript/tables/legacy_preferred_union_findings_three_tiers_with_references.xlsx",
+  "deg_footprint_definition": "per-target total DE genes at FDR < 0.05",
+  "plot_unit": "finding row with a populated flag",
+  "pathway_minimum_n": 20,
+  "flag_counts": {
+    "Agree": 523,
+    "Disagree": 105,
+    "Inferred": 2577,
+    "No Literature": 1920
+  },
+  "outputs": [
+    "fig_current_flag_distributions__a_deg_kde.{png,svg}",
+    "fig_current_flag_distributions__b_deg_bins.{png,svg}",
+    "fig_current_flag_distributions__c_pathway.{png,svg}",
+    "fig_current_flag_distributions.{png,svg}"
+  ]
+}

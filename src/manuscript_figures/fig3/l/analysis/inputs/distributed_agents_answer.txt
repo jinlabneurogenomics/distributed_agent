@@ -1,0 +1,106 @@
+Predicted depletion ranking for 151 TH Prkcd Grin2c Glut neurons
+
+Important caveat: the DE parquet does not directly measure depletion or survival. This ranking is a biology-grounded hypothesis ranking built from the PerturbAI corpus, external database grounding (GO/UniProt), and only soft corroboration from survivor-cell DE patterns in the target cell type.
+
+Confidence tiers: high = strong mixed evidence; medium = plausible depleter with mixed or soft support; lower = weaker or more indirect support, included because the task requested up to 100 ranked perturbations.
+
+1. Xpo1	high	mixed: exact cell-group PerturbAI PDF + export/spliceosome essentiality + soft DE corroboration
+2. Srsf1	high	mixed: spliceosome-essential biology, embryonic-lethal literature in report, strongest survivor-cell disruption
+3. Uba5	high	mixed: UFMylation/proteostasis-mitochondrial stress with strong exact-group signature
+4. U2af2	high	mixed: essential early spliceosomal factor with strong target-group identity collapse
+5. Tpr	high	mixed: nuclear export/spliceosome stress with top-3 survivor-cell DE burden
+6. Psmb4	high	mixed: proteasome-insufficiency program with ISR/autophagy and identity erosion
+7. Hspa9	high	mixed: mitochondrial HSP70 chaperone; strong target-group stress program and neuronal-loss literature in report
+8. Elp1	high	mixed: ISR/translation-stress and neuronal-function downregulation in target group
+9. Atp1a3	high	mixed: highly subtype-specific vulnerability in 151 TH Prkcd Grin2c Glut; α3-specific dependence
+10. Ppp2r1a	high	mixed: strong stress induction and synaptic deactivation in target group
+11. Hnrnpu	high	mixed: RNA-processing module with strong soft DE corroboration
+12. Rnpc3	high	inference: minor spliceosome component; strong module match to Srsf1/U2af2/Tpr
+13. Tnpo3	high	mixed: transport/spliceosome module with strong soft DE corroboration
+14. Ufc1	high	mixed: UFMylation/proteostasis stress with broad target-group disruption
+15. Psmc5	high	mixed: proteasome-core similarity and strong identity-collapse signature
+16. Cdc40	high	mixed: spliceosome/RNA-processing perturbation with high target-group DEG burden
+17. Naa15	high	mixed: exact-group corpus mention plus strong essential-process prior
+18. Brd4	high	mixed: exact-group corpus mention plus transcriptional-essentiality prior
+19. Huwe1	high	mixed: RNA-processing/proteostasis module and moderate soft corroboration
+20. Opa1	high	mixed: mitochondrial dynamics/ISR mechanism with report support
+21. Dnm1l	medium	mixed: mitochondrial dynamics stress with report support
+22. Psmc1	medium	mixed: proteasome-core similarity with strong soft corroboration
+23. Snrnp70	medium	mixed: spliceosome module and target-group similarity
+24. Prpf6	medium	mixed: spliceosome module and target-group similarity
+25. Ddx23	medium	mixed: spliceosome module and target-group similarity
+26. Ap2s1	medium	mixed: endocytosis/trafficking perturbation with high soft burden and report lethality language
+27. Sin3a	medium	soft-data-led with essential chromatin/transcription prior
+28. Wac	medium	mixed: survival-linked report language with moderate soft corroboration
+29. Atp6v1a	medium	mixed: lysosomal/vesicular ATPase essential process; report survival language
+30. Ndufs2	medium	mixed: mitochondrial respiratory-chain prior with report support
+31. Trrap	medium	soft-data-led with essential chromatin/transcription prior
+32. Polr3b	medium	soft-data-led with RNA polymerase essential-process prior
+33. Rrn3	medium	soft-data-led with ribosomal-transcription prior
+34. Dhx9	medium	soft-data-led with RNA-processing prior
+35. Elp2	medium	mixed: Elongator-related stress module with report support
+36. Thoc2	medium	soft-data-led with RNA export/processing prior
+37. Srrm2	medium	soft-data-led with spliceosome prior
+38. Ogt	medium	soft-data-led with low-DE-but-essential prior
+39. Eif4e	medium	mixed: translational-control essentiality with report support
+40. Hspa5	medium	soft-data-led with proteostasis/UPR prior
+41. Pomp	medium	mixed: proteasome maturation factor, report-supported on-pathway similarity
+42. Atp6v0c	medium	soft-data-led with V-ATPase/lysosomal essentiality prior
+43. Naa20	medium	soft-data-led with N-acetyltransferase essentiality prior
+44. Setd1a	medium	soft-data-led with chromatin/transcription essentiality prior
+45. Kmt2d	medium	soft-data-led with chromatin/transcription essentiality prior
+46. Tardbp	medium	soft-data-led with RNA-binding/neurodegeneration prior
+47. Cnot1	medium	soft-data-led with mRNA decay/CCR4-NOT prior
+48. Vcp	medium	soft-data-led with proteostasis/ERAD prior
+49. Hsf1	medium	soft-data-led with proteotoxic-stress regulatory prior
+50. Nrf1	medium	soft-data-led with proteasome-biogenesis regulatory prior
+51. Gapdh	medium	soft-data-led; low-DE but housekeeping essentiality prior
+52. Pgk1	medium	soft-data-led with glycolytic essentiality prior
+53. Eef1a2	medium	mixed: translation factor and report-supported ISR convergence
+54. Pura	medium	soft-data-led with neuronal RNA/DNA-binding prior
+55. Thap11	medium	soft-data-led with transcriptional-essentiality prior
+56. Med13	medium	soft-data-led with mediator-complex prior
+57. Ndufs1	medium	soft-data-led with respiratory-chain prior
+58. Pcca	medium	soft-data-led with mitochondrial metabolism prior
+59. Kif2a	medium	soft-data-led with microtubule/axonal maintenance prior
+60. Atp6ap2	medium	soft-data-led with V-ATPase/lysosomal prior
+61. Htt	medium	soft-data-led with ISR convergence and neuronal-survival prior
+62. Ctnnb1	medium	soft-data-led with WNT/adhesion essentiality prior
+63. Grin1	medium	soft-data-led with excitatory-neuron identity vulnerability prior
+64. Rab7	medium	soft-data-led with endolysosomal trafficking prior
+65. Sec63	medium	mixed: exact-group corpus mention plus ER protein-handling prior
+66. Gbf1	medium	soft-data-led with Golgi trafficking essentiality prior
+67. Sec31a	medium	soft-data-led with COPII trafficking prior
+68. Tbcd	medium	mixed: exact-group corpus mention plus microtubule/trafficking prior
+69. Klc2	medium	soft-data-led with axonal transport prior
+70. Chchd2	medium	soft-data-led with mitochondrial cristae/respiration prior
+71. Slc25a4	medium	soft-data-led with mitochondrial ADP/ATP carrier prior
+72. Reep1	medium	soft-data-led with ER-shaping/axonal maintenance prior
+73. Tmco1	medium	soft-data-led with ER calcium homeostasis prior
+74. Dhdds	medium	mixed: report ISR/mitochondrial stress convergence
+75. Pcyt2	medium	inference: lipid synthesis essentiality with report essentiality language
+76. Scn1a	lower	silent-killer candidate: low survivor DE but strong disease/essentiality priors in report corpus
+77. Slc25a46	lower	silent-killer candidate: low survivor DE but strong mitochondrial-dynamics prior
+78. Gabbr1	lower	silent-killer candidate: low survivor DE but strong neuronal-dependence prior
+79. Gabrb2	lower	exact-group corpus mention but weaker depletion-specific support
+80. Kcnc2	lower	exact-group corpus mention but weaker depletion-specific support
+81. Cic	lower	exact-group corpus mention plus moderate soft support; likely state-remodeling more than lethal
+82. Prox1	lower	exact-group corpus mention; more cell-state than core survival
+83. Apc	lower	exact-group corpus mention; strong dysregulation but buffered rather than clearly depleting
+84. Chd2	lower	exact-group corpus mention plus chromatin prior
+85. Chd8	lower	exact-group corpus mention plus chromatin prior
+86. Nipbl	lower	exact-group corpus mention plus cohesin/chromatin prior
+87. Ankrd11	lower	exact-group corpus mention plus chromatin prior
+88. Arid2	lower	exact-group corpus mention plus chromatin prior
+89. Zfp423	lower	exact-group corpus mention but limited depletion-specific evidence
+90. Zmym2	lower	exact-group corpus mention but limited depletion-specific evidence
+91. Thra	lower	exact-group corpus mention but weaker acute-depletion support
+92. Atp2b1	lower	exact-group corpus mention but less compelling than Atp1a3
+93. Atp2a2	lower	soft-data-led calcium-homeostasis candidate
+94. Kdm5c	lower	exact-group corpus mention plus chromatin prior
+95. Crebbp	lower	soft-data-led chromatin prior
+96. Ctbp1	lower	exact-group corpus mention plus transcriptional-coregulator prior
+97. Nfic	lower	exact-group corpus mention but limited depletion-specific evidence
+98. Trps1	lower	exact-group corpus mention but limited depletion-specific evidence
+99. Usp48	lower	exact-group corpus mention but limited depletion-specific evidence
+100. Cul3	lower	exact-group corpus mention but limited depletion-specific evidence

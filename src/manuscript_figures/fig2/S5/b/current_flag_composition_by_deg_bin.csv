@@ -1,0 +1,6 @@
+deg_bin,n_findings,agree_count,agree_percent,disagree_count,disagree_percent,inferred_count,inferred_percent,no_literature_count,no_literature_percent
+0,775,41,5.3,7,0.9,398,51.4,329,42.5
+1–10,2632,164,6.2,55,2.1,1388,52.7,1025,38.9
+11–50,793,97,12.2,22,2.8,369,46.5,305,38.5
+51–200,368,85,23.1,10,2.7,163,44.3,110,29.9
+200+,557,136,24.4,11,2.0,259,46.5,151,27.1

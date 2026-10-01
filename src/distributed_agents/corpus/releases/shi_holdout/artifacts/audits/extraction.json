@@ -1,0 +1,131 @@
+{
+  "build_policy": {
+    "incomplete_content": "quarantined_not_invented",
+    "model_calls": false,
+    "network": false
+  },
+  "empty_sections": [
+    {
+      "section": "Pathways JSONL",
+      "target_gene": "Safe_target_27"
+    },
+    {
+      "section": "Pathways JSONL",
+      "target_gene": "Safe_target_28"
+    },
+    {
+      "section": "Pathways JSONL",
+      "target_gene": "Safe_target_38"
+    },
+    {
+      "section": "Pathways JSONL",
+      "target_gene": "Safe_target_42"
+    },
+    {
+      "section": "Pathways JSONL",
+      "target_gene": "Safe_target_49"
+    },
+    {
+      "section": "Pathways JSONL",
+      "target_gene": "Safe_target_51"
+    },
+    {
+      "section": "Pathways JSONL",
+      "target_gene": "Safe_target_6"
+    },
+    {
+      "section": "Pathways JSONL",
+      "target_gene": "Safe_target_60"
+    },
+    {
+      "section": "Pathways JSONL",
+      "target_gene": "Safe_target_65"
+    },
+    {
+      "section": "Cell Type Specificity JSONL",
+      "target_gene": "Safe_target_85"
+    },
+    {
+      "section": "Pathways JSONL",
+      "target_gene": "Safe_target_85"
+    },
+    {
+      "section": "Pathways JSONL",
+      "target_gene": "Safe_target_88"
+    },
+    {
+      "section": "Pathways JSONL",
+      "target_gene": "Safe_target_89"
+    },
+    {
+      "section": "Pathways JSONL",
+      "target_gene": "Safe_target_98"
+    }
+  ],
+  "issues": [
+    {
+      "kind": "missing_section",
+      "section": "Biological Findings JSONL",
+      "target_gene": "Atp6v1b2"
+    },
+    {
+      "kind": "missing_section",
+      "section": "Cell Type Specificity JSONL",
+      "target_gene": "Atp6v1b2"
+    },
+    {
+      "kind": "missing_section",
+      "section": "Null-Cause Findings JSONL",
+      "target_gene": "Atp6v1b2"
+    },
+    {
+      "kind": "missing_section",
+      "section": "Pathways JSONL",
+      "target_gene": "Atp6v1b2"
+    },
+    {
+      "block_line": 3,
+      "error": "Unterminated string starting at: line 1 column 114 (char 113)",
+      "kind": "invalid_json_line",
+      "raw_sha256": "493a035f94b34ddbd4581547869797a8f19d8aa188283a113b590a91ea9d23b0",
+      "section": "References JSONL",
+      "target_gene": "Atp6v1b2"
+    },
+    {
+      "kind": "missing_close_fence",
+      "section": "References JSONL",
+      "target_gene": "Atp6v1b2"
+    }
+  ],
+  "ledger_records": {
+    "cell_types": 29380,
+    "evidence": 45640,
+    "findings": 8718,
+    "null_findings": 3079,
+    "pathways": 6729,
+    "references": 13974
+  },
+  "repairs_applied": {
+    "cplx1-cell-type-f3-padding": 1,
+    "dab1-cell-type-f2-padding": 1,
+    "ephb4-cell-type-f3-padding": 1,
+    "hsd17b4-cell-type-r2-subscript": 1,
+    "kif5c-cell-type-missing-comma": 1
+  },
+  "schema_version": "distributed_agents-corpus-extraction-audit-v1",
+  "source": {
+    "bytes": 78009059,
+    "dataset_variants": [
+      "heldout_filtered_1773"
+    ],
+    "filename": "reports.jsonl",
+    "records": 1773,
+    "run_ids": [
+      "perturb_sciacc_scientist_findings_clean_260713_analysis_universe_v1_sourceguard_soniconly_rosalind_j768_daq5_20260822_161359"
+    ],
+    "sampled_at_utc_max": "2026-08-23T03:00:48.998758+00:00",
+    "sampled_at_utc_min": "2026-08-22T23:27:01.795404+00:00",
+    "sha256": "0d4e926be8a066952c0e1857b9fab5ec70396093b4f8bb41de1a5dc7768a487f",
+    "unique_targets": 1773
+  }
+}

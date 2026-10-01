@@ -1,0 +1,25 @@
+analysis_layer,arm,flag,flag_label,count,percent,n_findings
+primary,Unshuffled,agree,Agree,143,29.303,488
+primary,Unshuffled,disagree,Disagree,11,2.254,488
+primary,Unshuffled,inferred,Inferred,188,38.525,488
+primary,Unshuffled,no_literature,No Literature,146,29.918,488
+primary,Within-screen shuffled,agree,Agree,79,13.167,600
+primary,Within-screen shuffled,disagree,Disagree,46,7.667,600
+primary,Within-screen shuffled,inferred,Inferred,214,35.667,600
+primary,Within-screen shuffled,no_literature,No Literature,261,43.5,600
+primary,Out-of-screen shuffled,agree,Agree,34,6.061,561
+primary,Out-of-screen shuffled,disagree,Disagree,14,2.496,561
+primary,Out-of-screen shuffled,inferred,Inferred,171,30.481,561
+primary,Out-of-screen shuffled,no_literature,No Literature,342,60.963,561
+sensitivity,Unshuffled,agree,Agree,147,23.558,624
+sensitivity,Unshuffled,disagree,Disagree,11,1.763,624
+sensitivity,Unshuffled,inferred,Inferred,215,34.455,624
+sensitivity,Unshuffled,no_literature,No Literature,251,40.224,624
+sensitivity,Within-screen shuffled,agree,Agree,81,11.825,685
+sensitivity,Within-screen shuffled,disagree,Disagree,46,6.715,685
+sensitivity,Within-screen shuffled,inferred,Inferred,227,33.139,685
+sensitivity,Within-screen shuffled,no_literature,No Literature,331,48.321,685
+sensitivity,Out-of-screen shuffled,agree,Agree,35,5.393,649
+sensitivity,Out-of-screen shuffled,disagree,Disagree,14,2.157,649
+sensitivity,Out-of-screen shuffled,inferred,Inferred,179,27.581,649
+sensitivity,Out-of-screen shuffled,no_literature,No Literature,421,64.869,649

@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "adjudication_version": {"const": "legacy-sourceguard-claim-reconciliation-v1"},
+    "confidence": {"enum": ["high", "moderate", "low"], "type": "string"},
+    "coverage": {"enum": ["full", "partial", "none"], "type": "string"},
+    "disposition": {"enum": ["preserved", "revised", "missing"], "type": "string"},
+    "essential_proposition": {"minLength": 1, "type": "string"},
+    "legacy_active_default": {"type": "boolean"},
+    "legacy_canonical_summary": {"minLength": 1, "type": "string"},
+    "legacy_claim_id": {"minLength": 1, "type": "string"},
+    "legacy_members": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "contribution": {"enum": ["essential", "supporting", "nonessential"], "type": "string"},
+          "legacy_doc_id": {"minLength": 1, "type": "string"},
+          "match_status": {
+            "enum": ["matched", "partially_matched", "missing_nonessential", "missing_essential", "superseded"],
+            "type": "string"
+          },
+          "rationale": {"minLength": 1, "type": "string"},
+          "replacement_finding_ids": {"items": {"minLength": 1, "type": "string"}, "type": "array", "uniqueItems": true}
+        },
+        "required": ["legacy_doc_id", "contribution", "match_status", "replacement_finding_ids", "rationale"],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "legacy_relation_family": {"minLength": 1, "type": "string"},
+    "missing_essential_elements": {"items": {"minLength": 1, "type": "string"}, "type": "array", "uniqueItems": true},
+    "proposed_canonical_summary": {"type": "string"},
+    "rationale": {"minLength": 1, "type": "string"},
+    "replacement_findings": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "doc_id": {"minLength": 1, "type": "string"},
+          "rationale": {"minLength": 1, "type": "string"},
+          "role": {"enum": ["anchor", "corroborating", "boundary", "implication", "warning"], "type": "string"}
+        },
+        "required": ["doc_id", "role", "rationale"],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "schema_version": {"const": "distributed_agents-claim-reconciliation-v1"},
+    "scope_id": {"pattern": "^S[0-9]{4}$", "type": "string"},
+    "target_genes": {"items": {"minLength": 1, "type": "string"}, "minItems": 1, "type": "array", "uniqueItems": true}
+  },
+  "required": [
+    "schema_version",
+    "adjudication_version",
+    "scope_id",
+    "target_genes",
+    "legacy_claim_id",
+    "legacy_canonical_summary",
+    "legacy_relation_family",
+    "legacy_active_default",
+    "essential_proposition",
+    "disposition",
+    "coverage",
+    "replacement_findings",
+    "proposed_canonical_summary",
+    "missing_essential_elements",
+    "confidence",
+    "rationale",
+    "legacy_members"
+  ],
+  "type": "object"
+}

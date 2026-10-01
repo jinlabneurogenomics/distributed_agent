@@ -1,0 +1,34 @@
+{
+  "corrected_corpus": {
+    "bytes": 60814058,
+    "records": 2046,
+    "sha256": "250c65b1cdf001c65ed19fa530048ac2aa4c14630b360c6dc0e68987ba25a053",
+    "unique_targets": 2046
+  },
+  "delta": {
+    "byte_identical_non_target_rows": 1866,
+    "changed_target_rows": 180,
+    "manifest_ledger_targets_agree": true,
+    "target_order_preserved": true
+  },
+  "historical_backup": {
+    "bytes": 60026276,
+    "records": 2046,
+    "sha256": "d0ab7670e75b2aa168bdfc43a7363e932ff2334d4a23ae8c7f7f4c9bfd95a277"
+  },
+  "replacement_provenance": {
+    "ledger_sha256": "6e5e30f699057ba5dcf2feb1d0f8a928665c7a81c69787b5c10ab8e060eed9f6",
+    "manifest_sha256": "3cbd0152aa08b63e5a343aaa8063270be97c5e94221f63dbc849cead50a1a1f2",
+    "targets": 180,
+    "targets_sha256": "a5fa58d6a06367e6a89edadc4d2326fad0ec226861bbc3f127830f63ca694d14"
+  },
+  "schema_version": "distributed_agents-sourceguard-reconciliation-audit-v1",
+  "sourceguard": {
+    "deny_pattern_count": 13,
+    "policy_sha256": "f66109aa82eed2b92d33a53e7e52f068ed0dbe7bc7ae2d1518b4341474733084",
+    "reference_hits": [],
+    "references_scanned": 16580,
+    "report_hits": [],
+    "status": "passed"
+  }
+}

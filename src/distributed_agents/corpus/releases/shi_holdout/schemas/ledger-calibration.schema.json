@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://distributed_agents.local/schemas/july-ledger-calibration-v1",
+  "title": "Shi holdout release ledger calibration",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "generation_version",
+    "sources",
+    "counts",
+    "field_value_frequencies",
+    "crosstabs",
+    "atomic_claim_projection",
+    "relation_projection",
+    "candidate_pool_descriptors",
+    "semantic_assertions",
+    "reconciliation"
+  ],
+  "properties": {
+    "schema_version": {"const": "distributed_agents-july-ledger-calibration-v1"},
+    "generation_version": {"const": "distributed_agents-july-tooling-build-v1"},
+    "sources": {"type": "object", "minProperties": 3},
+    "counts": {
+      "type": "object",
+      "additionalProperties": {"type": "integer", "minimum": 0}
+    },
+    "field_value_frequencies": {"type": "object"},
+    "crosstabs": {"type": "object"},
+    "atomic_claim_projection": {
+      "type": "object",
+      "required": ["unit", "finding_rows", "claim_review_units", "findings_per_claim", "duplicate_reduction_fraction", "interpretation"]
+    },
+    "relation_projection": {
+      "type": "object",
+      "required": ["unit", "directed_relations", "undirected_reciprocal_pairs", "claims_with_a_relation", "interpretation"]
+    },
+    "candidate_pool_descriptors": {"type": "object"},
+    "semantic_assertions": {
+      "type": "array",
+      "minItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "statement"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "statement": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "reconciliation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "checks"],
+      "properties": {
+        "status": {"const": "passed"},
+        "checks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "status", "actual", "expected"],
+            "properties": {
+              "id": {"type": "string", "minLength": 1},
+              "status": {"const": "passed"},
+              "actual": {},
+              "expected": {}
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Canonical Shi holdout biological finding",
+  "type": "object",
+  "required": ["doc_id", "target_gene", "finding_id", "finding_type", "summary", "evidence_ids", "ref_ids", "source_line", "source_report_sha256", "_source_record_sha256"],
+  "properties": {
+    "doc_id": {"type": "string", "minLength": 1},
+    "target_gene": {"type": "string", "minLength": 1},
+    "finding_id": {"type": "string", "pattern": "^F[0-9]+$"},
+    "finding_type": {"type": "string", "minLength": 1},
+    "summary": {"type": "string"},
+    "evidence_ids": {"type": "array", "items": {"type": "string"}},
+    "ref_ids": {"type": "array", "items": {"type": "string"}},
+    "source_line": {"type": "integer", "minimum": 1},
+    "source_report_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "_source_record_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "additionalProperties": true
+}

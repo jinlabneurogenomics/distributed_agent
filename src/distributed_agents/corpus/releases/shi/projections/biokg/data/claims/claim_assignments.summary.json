@@ -1,0 +1,15 @@
+{
+  "claim_memberships": 11237,
+  "claim_relations": 4243,
+  "claimed_findings": 11199,
+  "claims": 5107,
+  "findings": 11343,
+  "multi_claim_findings": 38,
+  "preserved_claims": 160,
+  "replacement_memberships": 857,
+  "retired_missing_claims": 55,
+  "revised_claims": 185,
+  "shared_replacement_findings": 34,
+  "unaffected_claims": 4762,
+  "unclaimed_findings": 144
+}

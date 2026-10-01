@@ -1,0 +1,4 @@
+interface:
+  display_name: "Relational Candidate Retrieval"
+  short_description: "Map typed semantic context from visible anchors"
+  default_prompt: "Use $relational-candidate-skill to retrieve an unranked typed semantic map around the supplied Perturb-seq anchors."

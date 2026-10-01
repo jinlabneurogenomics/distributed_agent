@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Shi holdout source report record",
+  "type": "object",
+  "required": ["dataset_variant", "gene_target", "report", "run_id", "sampled_at_utc"],
+  "properties": {
+    "dataset_variant": {"type": "string", "minLength": 1},
+    "gene_target": {"type": "string", "minLength": 1},
+    "report": {"type": "string", "minLength": 1},
+    "run_id": {"type": "string", "minLength": 1},
+    "sampled_at_utc": {"type": "string", "minLength": 1}
+  },
+  "additionalProperties": false
+}

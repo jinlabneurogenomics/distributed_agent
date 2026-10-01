@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://distributed_agents.local/schemas/corpus-sweep-plan-v1.json",
+  "title": "DistributedAgents exhaustive corpus sweep plan",
+  "type": "object",
+  "required": ["schema_version", "input", "id_field", "unit_count", "slice_count", "partition_method", "task", "slices", "units"],
+  "properties": {
+    "schema_version": {"const": "distributed_agents-corpus-sweep-plan-v1"},
+    "unit_count": {"type": "integer", "minimum": 1},
+    "slice_count": {"type": "integer", "minimum": 1},
+    "partition_method": {"const": "sha256-canonical-unit-balanced-round-robin"},
+    "slices": {"type": "array"},
+    "units": {"type": "array"}
+  }
+}

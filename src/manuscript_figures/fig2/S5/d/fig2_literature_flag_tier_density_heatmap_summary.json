@@ -1,0 +1,136 @@
+{
+  "source": "results/bioeval/lit-agree-4flag/phenotype_findings_by_perturbation_deg_ordered.csv",
+  "selected_findings": 5142,
+  "findings_by_confidence": {
+    "high": 1519,
+    "low": 2338,
+    "moderate": 1285
+  },
+  "findings_by_flag": {
+    "Agree": 523,
+    "Disagree": 105,
+    "Inferred": 2577,
+    "No Literature": 1920,
+    "Unassessed": 17
+  },
+  "findings_contributing_at_least_one_plotted_block": 4167,
+  "findings_without_a_plotted_block": 975,
+  "unplaced_findings_by_confidence": {
+    "high": 166,
+    "moderate": 151,
+    "low": 450
+  },
+  "raw_explicit_cell_placements_by_confidence": {
+    "high": 3891,
+    "low": 9629,
+    "moderate": 2259
+  },
+  "plotted_positive_deg_placements_by_confidence": {
+    "high": 3818,
+    "low": 3733,
+    "moderate": 1658
+  },
+  "noncanonical_cell_labels_excluded_by_confidence": {
+    "moderate": 9,
+    "low": 53
+  },
+  "noncanonical_cell_labels": {
+    "19 Ednra/Ednrb matched neuronal groups": 1,
+    "21 measured neuronal cell groups": 3,
+    "22 measured Ddhd1 cell groups": 1,
+    "22 measured neuronal groups": 2,
+    "App-matched neuronal groups": 2,
+    "Chrnb2-matched groups": 1,
+    "Gnb5-matched recovered groups": 1,
+    "Plcb1-matched measured groups": 1,
+    "Ptprt-matched neuronal groups": 1,
+    "Reep2-matched cell groups": 1,
+    "Rgs6-matched recovered groups": 1,
+    "all 19 measured Usp9x groups": 2,
+    "all 21 Rara-measured groups": 1,
+    "all 21 measured Prkag2 groups": 2,
+    "all 21 measured neuronal groups": 3,
+    "all 22 Trmt1-measured neuronal groups": 1,
+    "all 22 measured Gnb1 cell groups": 1,
+    "all 22 measured Notch3 groups": 2,
+    "all 22 measured Ptprt groups": 1,
+    "all 22 recovered Bmpr2 cell groups": 1,
+    "all 22 recovered Ndufa4 cell groups": 4,
+    "all 23 measured groups": 1,
+    "all Gnb5-measured groups": 1,
+    "all Il1rapl1-matched cell groups": 1,
+    "all Kcnab2-matched features": 1,
+    "all Ppp2r5d-measured groups": 2,
+    "all Sar1b-measured neuronal groups": 1,
+    "all matched measured groups": 1,
+    "all matched measured neuronal groups": 1,
+    "all measured Aifm1 cell groups": 1,
+    "all measured Brd1 groups": 1,
+    "all measured Htr2a cell groups": 1,
+    "all measured Meox1 groups": 1,
+    "all measured Plcb1 cell groups": 2,
+    "all measured comparator cell groups": 1,
+    "all measured neuronal groups": 2,
+    "all non-effect measured groups": 1,
+    "all_matched_gene_by_cell_entries": 1,
+    "cortical and hippocampal glutamatergic groups": 2,
+    "matched Atl1 groups": 1,
+    "matched Cdh2-measured neuronal groups": 1,
+    "matched neuronal groups": 2,
+    "other measured groups": 1,
+    "pan-screen comparator groups": 1,
+    "screen-wide matched Sv2a groups": 1
+  },
+  "positive_local_deg_required": true,
+  "zero_deg_placements_excluded_by_confidence": {
+    "low": 5843,
+    "high": 73,
+    "moderate": 592
+  },
+  "visualization": "Literature-flag heatmap with peak-normalized rank densities for DEG burden and the three reader-facing phenotype tiers.",
+  "matrix_finding_filter": "All three reader-facing phenotype tiers: load-bearing (high), evidence-only (moderate), and non-admissible (low).",
+  "density_finding_filter": "All three reader-facing phenotype tiers: load-bearing (high), evidence-only (moderate), and non-admissible (low).",
+  "tier_mapping": {
+    "high": "Load-bearing",
+    "moderate": "Evidence only",
+    "low": "Non-admissible"
+  },
+  "density_definition": "Gaussian-smoothed values across perturbations sorted by descending total DEG burden. DEG values are log10(n+1) before smoothing; each curve is independently scaled to a peak of 1.",
+  "density_bandwidth_targets": 18,
+  "density_colors": {
+    "DEG burden": "#6B7075",
+    "Load-bearing": "#4C78A8",
+    "Evidence only": "#8F6AAE",
+    "Non-admissible": "#9C755F"
+  },
+  "finding_counts_by_tier": {
+    "Load-bearing": 1519,
+    "Evidence only": 1285,
+    "Non-admissible": 2338
+  },
+  "flag_rule": "Each matrix block takes its most decisive finding flag across all tiers: Disagree > Agree > Inferred > No Literature > Unassessed.",
+  "placement_rule": "Explicit reader-view cell placement intersected with target x cell blocks having at least one DEG at FDR < 0.1.",
+  "universe_label": "DEG-positive target\u00d7class blocks",
+  "universe_pairs": 4174,
+  "universe_targets": 1092,
+  "covered_pairs": 3071,
+  "covered_pairs_percent": 73.6,
+  "covered_targets": 1062,
+  "covered_targets_percent": 97.3,
+  "blocks_by_displayed_flag": {
+    "Agree": 824,
+    "Disagree": 200,
+    "Inferred": 1683,
+    "No Literature": 364,
+    "Unassessed": 0
+  },
+  "target_count_csv": "fig2_literature_flag_tier_density_heatmap_target_counts.csv",
+  "outputs": [
+    "fig2_literature_flag_tier_density_heatmap__matrix.png",
+    "fig2_literature_flag_tier_density_heatmap__matrix.svg",
+    "fig2_literature_flag_tier_density_heatmap__matrix.pdf",
+    "fig2_literature_flag_tier_density_heatmap.png",
+    "fig2_literature_flag_tier_density_heatmap.svg",
+    "fig2_literature_flag_tier_density_heatmap.pdf"
+  ]
+}

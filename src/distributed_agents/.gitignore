@@ -1,0 +1,3 @@
+# Files beneath src/distributed_agents are source code or bundled package assets.
+# Generated runtime outputs belong under DISTRIBUTED_AGENTS_RUN_ROOT, not in src/.
+!**/*.csv

@@ -1,0 +1,167 @@
+{
+  "status": "complete",
+  "comparison_design": {
+    "reports_per_arm": 150,
+    "shared_underlying_response_genes": 150,
+    "whole_report_blocks": true,
+    "reports_split_across_packets": false,
+    "arm_visible_to_grader": false,
+    "reported_flag_visible_to_grader": false,
+    "shuffle_report_generation_matched": true,
+    "unshuffled_generation_matched": false,
+    "unshuffled_generation": "260713",
+    "shuffle_generation": "260730",
+    "excluded_source_finding_types": [
+      "buffered_response",
+      "negative_result",
+      "therapeutic_direction_warning"
+    ]
+  },
+  "n_classified_findings": 2610,
+  "admissibility_counts": {
+    "uninterpretable_or_underpowered": 492,
+    "load_bearing": 1649,
+    "over_eager": 158,
+    "evidence_only": 311
+  },
+  "retained_findings_by_layer_and_arm": {
+    "primary": {
+      "Unshuffled": 488,
+      "Within-screen shuffled": 600,
+      "Out-of-screen shuffled": 561
+    },
+    "sensitivity": {
+      "Unshuffled": 624,
+      "Within-screen shuffled": 685,
+      "Out-of-screen shuffled": 649
+    }
+  },
+  "placement_counts_by_layer_and_arm": {
+    "primary": {
+      "Unshuffled": 1787,
+      "Within-screen shuffled": 2871,
+      "Out-of-screen shuffled": 2977
+    },
+    "sensitivity": {
+      "Unshuffled": 2295,
+      "Within-screen shuffled": 3367,
+      "Out-of-screen shuffled": 3456
+    }
+  },
+  "finding_max_signal_primary": {
+    "n_assigned_by_arm": {
+      "Unshuffled": 472,
+      "Within-screen shuffled": 600,
+      "Out-of-screen shuffled": 561
+    },
+    "n_unassigned_by_arm": {
+      "Unshuffled": 16,
+      "Within-screen shuffled": 0,
+      "Out-of-screen shuffled": 0
+    },
+    "definition": "One load-bearing finding per vote; maximum FDR<0.1 DEG count among its listed cell types."
+  },
+  "positive_pair_coverage_primary": {
+    "Unshuffled": {
+      "n_positive_target_celltype_pairs": 1124,
+      "n_pairs_covered_by_primary_finding": 638,
+      "percent_pairs_covered": 56.762,
+      "n_pairs_uncovered": 486,
+      "n_positive_cell_type_categories": 23,
+      "n_cell_type_categories_covered": 22,
+      "uncovered_cell_type_categories_json": "[\"017 CA3 CA2-FC DG Glut\"]",
+      "n_pairs_with_multiple_findings": 431,
+      "percent_all_pairs_with_multiple_findings": 38.345,
+      "percent_covered_pairs_with_multiple_findings": 67.555,
+      "n_pairs_with_multiple_distinct_flags": 344,
+      "percent_all_pairs_with_multiple_distinct_flags": 30.605,
+      "percent_covered_pairs_with_multiple_distinct_flags": 53.918
+    },
+    "Within-screen shuffled": {
+      "n_positive_target_celltype_pairs": 1124,
+      "n_pairs_covered_by_primary_finding": 856,
+      "percent_pairs_covered": 76.157,
+      "n_pairs_uncovered": 268,
+      "n_positive_cell_type_categories": 23,
+      "n_cell_type_categories_covered": 23,
+      "uncovered_cell_type_categories_json": "[]",
+      "n_pairs_with_multiple_findings": 563,
+      "percent_all_pairs_with_multiple_findings": 50.089,
+      "percent_covered_pairs_with_multiple_findings": 65.771,
+      "n_pairs_with_multiple_distinct_flags": 480,
+      "percent_all_pairs_with_multiple_distinct_flags": 42.705,
+      "percent_covered_pairs_with_multiple_distinct_flags": 56.075
+    },
+    "Out-of-screen shuffled": {
+      "n_positive_target_celltype_pairs": 1124,
+      "n_pairs_covered_by_primary_finding": 933,
+      "percent_pairs_covered": 83.007,
+      "n_pairs_uncovered": 191,
+      "n_positive_cell_type_categories": 23,
+      "n_cell_type_categories_covered": 23,
+      "uncovered_cell_type_categories_json": "[]",
+      "n_pairs_with_multiple_findings": 644,
+      "percent_all_pairs_with_multiple_findings": 57.295,
+      "percent_covered_pairs_with_multiple_findings": 69.025,
+      "n_pairs_with_multiple_distinct_flags": 458,
+      "percent_all_pairs_with_multiple_distinct_flags": 40.747,
+      "percent_covered_pairs_with_multiple_distinct_flags": 49.089
+    }
+  },
+  "gold_calibration": {
+    "n_gold_compared": 148,
+    "admissibility_match": {
+      "count": 120,
+      "fraction": 0.8108
+    },
+    "source_relation_match": {
+      "count": 113,
+      "fraction": 0.7635
+    },
+    "flag_match": {
+      "count": 119,
+      "fraction": 0.8041
+    },
+    "primary_gate_match": {
+      "count": 126,
+      "fraction": 0.8514
+    },
+    "sensitivity_gate_match": {
+      "count": 128,
+      "fraction": 0.8649
+    },
+    "exact_tuple_match": {
+      "count": 56,
+      "fraction": 0.3784
+    },
+    "gold_flag_counts": {
+      "inferred": 65,
+      "agree": 27,
+      "no_literature": 55,
+      "disagree": 1
+    },
+    "production_flag_counts": {
+      "no_literature": 68,
+      "agree": 23,
+      "inferred": 54,
+      "disagree": 3
+    }
+  },
+  "local_signal_boundaries": {
+    "Strong": "\u2265100 target\u00d7cell-type DEGs at FDR<0.1",
+    "Moderate": "25\u201399",
+    "Low": "1\u201324",
+    "No local DEGs": "0; absent canonical target\u00d7cell pairs are treated as 0"
+  },
+  "outputs": {
+    "classified_findings": "manuscript/fig2/_debug/260731/final_three_arm_distribution/final_classified_findings.csv",
+    "overall_distribution": "manuscript/fig2/_debug/260731/final_three_arm_distribution/final_overall_distribution.csv",
+    "placements": "manuscript/fig2/_debug/260731/final_three_arm_distribution/final_celltype_signal_placements.csv",
+    "local_distribution": "manuscript/fig2/_debug/260731/final_three_arm_distribution/final_local_signal_distribution.csv",
+    "finding_max_signal_assignments_primary": "manuscript/fig2/_debug/260731/final_three_arm_distribution/final_finding_max_signal_assignments_primary.csv",
+    "finding_max_signal_distribution_primary": "manuscript/fig2/_debug/260731/final_three_arm_distribution/final_flag_distribution_by_finding_max_signal_primary.csv",
+    "positive_pair_coverage_primary": "manuscript/fig2/_debug/260731/final_three_arm_distribution/final_positive_pair_flag_coverage_primary.csv",
+    "positive_pair_coverage_summary_primary": "manuscript/fig2/_debug/260731/final_three_arm_distribution/final_positive_pair_coverage_summary_primary.csv",
+    "unshuffled_positive_pair_coverage_by_deg_primary": "manuscript/fig2/_debug/260731/final_three_arm_distribution/final_unshuffled_positive_pair_coverage_by_deg_primary.csv"
+  }
+}

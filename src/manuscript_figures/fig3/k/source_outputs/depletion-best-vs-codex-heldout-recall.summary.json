@@ -1,0 +1,122 @@
+{
+  "cohort_contract": {
+    "BioAgents": "three-run framework cohort from the 2026-08-26 odd-seed export",
+    "Codex": "three-run framework cohort from the 2026-08-26 odd-seed export",
+    "note": "All agent answers contain 50 non-seed predictions. Deterministic rankings were converted to the same contract by removing the 50 visible odd-ranked seeds before selecting their first 50 candidates."
+  },
+  "cohorts": {
+    "BioAgents": {
+      "hits_at_50": [
+        19,
+        18,
+        17
+      ],
+      "median_recall_at_50": 0.36,
+      "recall_at_50": [
+        0.38,
+        0.36,
+        0.34
+      ],
+      "runs": [
+        {
+          "answer_sha256": "b34e07cb12b6153ff1c314c31a43dfc0789b8c63c244eb6f7cacac8e246704ee",
+          "path": "/gpfs/group/jin/asun/bioagents-adaptive-findings/exports/q7-depletion-odd-seed-framework-results-2026-08-26/results/bioagents/rep1"
+        },
+        {
+          "answer_sha256": "b2753359d56c91777eb7354f96bdf7c6b7cfc101f0af4f49e336b8037a605ef9",
+          "path": "/gpfs/group/jin/asun/bioagents-adaptive-findings/exports/q7-depletion-odd-seed-framework-results-2026-08-26/results/bioagents/rep2"
+        },
+        {
+          "answer_sha256": "d6af50752d2426e7b8cdbc6dd007c983c3f718ae20c32323793961554a3fb0a1",
+          "path": "/gpfs/group/jin/asun/bioagents-adaptive-findings/exports/q7-depletion-odd-seed-framework-results-2026-08-26/results/bioagents/rep3"
+        }
+      ]
+    },
+    "Codex": {
+      "hits_at_50": [
+        9,
+        12,
+        9
+      ],
+      "median_recall_at_50": 0.18,
+      "recall_at_50": [
+        0.18,
+        0.24,
+        0.18
+      ],
+      "runs": [
+        {
+          "answer_sha256": "83504ecb9cbb312550a3bd5cc03b10bf7c759b96fd5fcdd5050de409a3193cae",
+          "path": "/gpfs/group/jin/asun/bioagents-adaptive-findings/exports/q7-depletion-odd-seed-framework-results-2026-08-26/results/codex/rep1"
+        },
+        {
+          "answer_sha256": "8b7225657c04d5c76a820228c51be3b995b614fc611c20e5c87bae584555dbfb",
+          "path": "/gpfs/group/jin/asun/bioagents-adaptive-findings/exports/q7-depletion-odd-seed-framework-results-2026-08-26/results/codex/rep2"
+        },
+        {
+          "answer_sha256": "1c9834a1a24b6044db7575528cc11b02326ec44f61eb3b792ccf9084882b2179",
+          "path": "/gpfs/group/jin/asun/bioagents-adaptive-findings/exports/q7-depletion-odd-seed-framework-results-2026-08-26/results/codex/rep3"
+        }
+      ]
+    },
+    "DepMap": {
+      "hits_at_50": [
+        13
+      ],
+      "implementation": "negative pan-cancer median Chronos gene effect",
+      "median_recall_at_50": 0.26,
+      "ranking_artifacts": [
+        {
+          "path": "/gpfs/group/jin/asun/bioagents/debug/depletion/depmap_baseline/depmap_top100_annotated.csv",
+          "sha256": "8979587b4476d7d1eb4e778b1ada03589c05d14410bbc157bcdbbd1f1cb25236"
+        }
+      ],
+      "recall_at_50": [
+        0.26
+      ],
+      "source_system": "DepMap cancer cell lines"
+    },
+    "Top DEG": {
+      "hits_at_50": [
+        7
+      ],
+      "implementation": "151 TH survivor-cell DEG count at adjusted p < 0.05; ties by summed then mean absolute log fold-change",
+      "median_recall_at_50": 0.14,
+      "ranking_artifacts": [
+        {
+          "path": "/gpfs/group/jin/asun/bioagents/debug/260725_claim_layer/inputs/q7_deg_prune_graph_r01/complete_starting_deg_ranking.tsv",
+          "sha256": "40084ce5e00af5dca9b82d52b43ca472c431c832950e029ccff9cad5f56bcddd"
+        }
+      ],
+      "recall_at_50": [
+        0.14
+      ],
+      "source_system": "same-experiment differential-expression table"
+    }
+  },
+  "cutoffs": [
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    35,
+    40,
+    45,
+    50
+  ],
+  "outputs": {
+    "curves_tsv": "/gpfs/group/jin/asun/bioagents-adaptive-tooling/debug/260831_characterization/depletion-best-vs-codex-heldout-recall.tsv",
+    "png": "/gpfs/group/jin/asun/bioagents-adaptive-tooling/debug/260831_characterization/depletion-best-vs-codex-heldout-recall.png",
+    "svg": "/gpfs/group/jin/asun/bioagents-adaptive-tooling/debug/260831_characterization/depletion-best-vs-codex-heldout-recall.svg"
+  },
+  "schema_version": "depletion-recall-comparison-v1",
+  "task": "q7-depletion-odd-seed",
+  "truth": {
+    "path": "/gpfs/group/jin/asun/bioagents/export/q7-depletion/ground_truth/top150_depletion_151_TH_Prkcd_Grin2c_Glut_predicted_group.csv",
+    "sha256": "010909c44c65491d86d69ed6a567b8b00d4316338cd1fbd35984b4cef21c7441"
+  },
+  "truth_count": 50,
+  "truth_definition": "50 even-ranked held-out targets from the canonical Fisher top-100 depletion ranking for 151 TH Prkcd Grin2c Glut"
+}

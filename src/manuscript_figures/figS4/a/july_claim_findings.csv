@@ -1,0 +1,72 @@
+headline_id,paper_figure,headline,gene,july_verdict,july_finding_ids
+2a,Fig 2F–G,Proteostasis (proteasome+UFM),Psmc1,M,F001;F004;F006
+2a,Fig 2F–G,Proteostasis (proteasome+UFM),Psmb4,M,F002;F003;F005;F006
+2a,Fig 2F–G,Proteostasis (proteasome+UFM),Psmc5,M,F002;F003;F005;F006
+2a,Fig 2F–G,Proteostasis (proteasome+UFM),Pomp,M,F001;F002;F005;F007
+2a,Fig 2F–G,Proteostasis (proteasome+UFM),Hspa5,M,F001;F006;F007
+2a,Fig 2F–G,Proteostasis (proteasome+UFM),Hspa8,M,F002;F004;F005
+2a,Fig 2F–G,Proteostasis (proteasome+UFM),Hspa9,M,F001;F003;F004;F005
+2a,Fig 2F–G,Proteostasis (proteasome+UFM),Lonp1,M,F001;F003;F004
+2a,Fig 2F–G,Proteostasis (proteasome+UFM),Opa1,M,F001;F006;F007;F008
+2a,Fig 2F–G,Proteostasis (proteasome+UFM),Dnm1l,M,F001;F003;F005;F006
+2a,Fig 2F–G,Proteostasis (proteasome+UFM),Tpr,M,F001;F002;F005;F006
+2a,Fig 2F–G,Proteostasis (proteasome+UFM),Uba5,R,F002;F004;F005;F006;F008
+2a,Fig 2F–G,Proteostasis (proteasome+UFM),Ufc1,R,F001;F003;F004;F005
+2b,Fig 3B,Splicing (spliceosome),Snrnp70,M,F002;F003;F006
+2b,Fig 3B,Splicing (spliceosome),Prpf6,M,F002;F003;F007
+2b,Fig 3B,Splicing (spliceosome),U2af2,M,F002;F009
+2b,Fig 3B,Splicing (spliceosome),Rnpc3,M,F004;F006
+2b,Fig 3B,Splicing (spliceosome),Srsf1,R,F002;F007;F008
+2b,Fig 3B,Splicing (spliceosome),Srrm2,R,F002;F007;F008
+2b,Fig 3B,Splicing (spliceosome),Hnrnpu,R,F002;F007;F008
+2b,Fig 3B,Splicing (spliceosome),Tardbp,R,F002;F004;F005;F006
+2c,Fig 2D,Chromatin / SWI-SNF cluster,Smarcb1,M,F001;F002;F003
+2c,Fig 2D,Chromatin / SWI-SNF cluster,Smarcc2,M,F001;F002;F003
+2c,Fig 2D,Chromatin / SWI-SNF cluster,Arid1a,M,F001;F004;F005;F006
+2c,Fig 2D,Chromatin / SWI-SNF cluster,Arid2,M,F001;F004;F005
+2c,Fig 2D,Chromatin / SWI-SNF cluster,Brd4,M,F001;F005;F006
+2c,Fig 2D,Chromatin / SWI-SNF cluster,Cic,M,F002;F003;F004
+2c,Fig 2D,Chromatin / SWI-SNF cluster,Kmt2a,R,F001;F005;F007
+2c,Fig 2D,Chromatin / SWI-SNF cluster,Chd2,R,F001;F003;F007
+2c,Fig 2D,Chromatin / SWI-SNF cluster,Tbl1xr1,R,F001;F002;F005;F006
+2c,Fig 2D,Chromatin / SWI-SNF cluster,Yy1,R,F002;F004;F005;F006
+2c,Fig 2D,Chromatin / SWI-SNF cluster,Huwe1,P,F002;F005;F007;F008
+2c,Fig 2D,Chromatin / SWI-SNF cluster,Kmt2e,D,F002;F003;F004;F005
+2d,Fig 2H,mTOR (Tsc1/Tsc2),Tsc1,M,F002;F003;F004;F005;F006
+2d,Fig 2H,mTOR (Tsc1/Tsc2),Tsc2,M,F002;F003;F006;F007
+3c,Fig 2I,SWI/SNF in TH-Glut,Smarcb1,M,F001;F002
+3c,Fig 2I,SWI/SNF in TH-Glut,Smarcc2,M,F001;F002;F005
+3c,Fig 2I,SWI/SNF in TH-Glut,Arid1a,R,F001;F002;F004;F006
+3c,Fig 2I,SWI/SNF in TH-Glut,Arid2,R,F001;F002;F004;F005
+4b,Fig 3B,Trafficking / V-ATPase,Atp6v0c,M,F004;F006;F007;F008
+4b,Fig 3B,Trafficking / V-ATPase,Atp6v1a,M,F001;F004;F005
+4b,Fig 3B,Trafficking / V-ATPase,Vps37a,M,F002;F005;F007;F008
+4b,Fig 3B,Trafficking / V-ATPase,Pitpna,M,F002;F003;F006
+4b,Fig 3B,Trafficking / V-ATPase,Sec31a,R,F002;F003;F004;F005
+4b,Fig 3B,Trafficking / V-ATPase,Vps53,P,F001;F004;F005;F006
+4b,Fig 3B,Trafficking / V-ATPase,Snf8,P,F001;F003;F004;F006
+4b,Fig 3B,Trafficking / V-ATPase,Tbcd,D,F002;F003;F004
+4e,Fig 3C,Cortical excitability / synaptic,Grin2a,M,F001;F002;F005
+4e,Fig 3C,Cortical excitability / synaptic,Kcnb1,M,F001;F002;F003
+4e,Fig 3C,Cortical excitability / synaptic,Gabrg2,M,F001;F003;F004
+4e,Fig 3C,Cortical excitability / synaptic,Celf2,M,F003;F004;F005
+4e,Fig 3C,Cortical excitability / synaptic,Ppp2r1a,P,F001;F005;F009;F010
+4e,Fig 3C,Cortical excitability / synaptic,Snap25,D,F001;F005;F006
+5,Fig 3D–F,NMDA opposing (Grin2a/Grin2b),Grin2a,M,F002;F003;F006
+5,Fig 3D–F,NMDA opposing (Grin2a/Grin2b),Grin2b,M,F002;F004;F007
+7,Fig 4J,NDD network (top-5),Ankrd11,P,F002;F003
+7,Fig 4J,NDD network (top-5),Mdh1,P,F002;F005
+7,Fig 4J,NDD network (top-5),Xrn1,P,F002;F003;F005
+7,Fig 4J,NDD network (top-5),Slc17a5,D,F004;F006;F007
+7,Fig 4J,NDD network (top-5),Gatad1,D,F002;F003;F005
+1a,Fig 2A,Essentiality (broad),Ddx39b,D,F001;F011
+1a,Fig 2A,Essentiality (broad),Hspa5,D,F001;F005
+1a,Fig 2A,Essentiality (broad),Hspa8,D,F001;F003
+1b,Fig 2A,Essentiality (vulnerable MB/TH),Atp6v1a,D,F001;F005
+1b,Fig 2A,Essentiality (vulnerable MB/TH),Atp6v1b2,D,F001;F005
+1b,Fig 2A,Essentiality (vulnerable MB/TH),Pafah1b1,D,F001;F002;F003
+8,Fig S7,KO validation,Ctcf,P,F002
+8,Fig S7,KO validation,Myt1l,P,F003;F004;F005
+8,Fig S7,KO validation,Chd8,D,F002;F007
+8,Fig S7,KO validation,Mef2c,D,F001;F002;F007
+8,Fig S7,KO validation,Grin2a,D,F001;F002

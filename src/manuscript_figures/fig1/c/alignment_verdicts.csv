@@ -1,0 +1,72 @@
+headline_id,paper_figure,headline,input_scope,gene,verdict
+2a,Fig 2F–G,Proteostasis (proteasome+UFM),direct,Psmc1,M
+2a,Fig 2F–G,Proteostasis (proteasome+UFM),direct,Psmb4,M
+2a,Fig 2F–G,Proteostasis (proteasome+UFM),direct,Psmc5,M
+2a,Fig 2F–G,Proteostasis (proteasome+UFM),direct,Pomp,M
+2a,Fig 2F–G,Proteostasis (proteasome+UFM),direct,Hspa5,M
+2a,Fig 2F–G,Proteostasis (proteasome+UFM),direct,Hspa8,M
+2a,Fig 2F–G,Proteostasis (proteasome+UFM),direct,Hspa9,M
+2a,Fig 2F–G,Proteostasis (proteasome+UFM),direct,Lonp1,M
+2a,Fig 2F–G,Proteostasis (proteasome+UFM),direct,Opa1,M
+2a,Fig 2F–G,Proteostasis (proteasome+UFM),direct,Dnm1l,M
+2a,Fig 2F–G,Proteostasis (proteasome+UFM),direct,Tpr,M
+2a,Fig 2F–G,Proteostasis (proteasome+UFM),direct,Uba5,R
+2a,Fig 2F–G,Proteostasis (proteasome+UFM),direct,Ufc1,R
+2b,Fig 3B,Splicing (spliceosome),direct,Snrnp70,M
+2b,Fig 3B,Splicing (spliceosome),direct,Prpf6,M
+2b,Fig 3B,Splicing (spliceosome),direct,U2af2,M
+2b,Fig 3B,Splicing (spliceosome),direct,Rnpc3,M
+2b,Fig 3B,Splicing (spliceosome),direct,Srsf1,R
+2b,Fig 3B,Splicing (spliceosome),direct,Srrm2,R
+2b,Fig 3B,Splicing (spliceosome),direct,Hnrnpu,R
+2b,Fig 3B,Splicing (spliceosome),direct,Tardbp,R
+2c,Fig 2D,Chromatin / SWI-SNF cluster,direct,Smarcb1,M
+2c,Fig 2D,Chromatin / SWI-SNF cluster,direct,Smarcc2,M
+2c,Fig 2D,Chromatin / SWI-SNF cluster,direct,Arid1a,M
+2c,Fig 2D,Chromatin / SWI-SNF cluster,direct,Arid2,M
+2c,Fig 2D,Chromatin / SWI-SNF cluster,direct,Brd4,M
+2c,Fig 2D,Chromatin / SWI-SNF cluster,direct,Cic,M
+2c,Fig 2D,Chromatin / SWI-SNF cluster,direct,Kmt2a,R
+2c,Fig 2D,Chromatin / SWI-SNF cluster,direct,Chd2,R
+2c,Fig 2D,Chromatin / SWI-SNF cluster,direct,Tbl1xr1,R
+2c,Fig 2D,Chromatin / SWI-SNF cluster,direct,Yy1,R
+2c,Fig 2D,Chromatin / SWI-SNF cluster,direct,Huwe1,P
+2c,Fig 2D,Chromatin / SWI-SNF cluster,direct,Kmt2e,D
+2d,Fig 2H,mTOR (Tsc1/Tsc2),direct,Tsc1,M
+2d,Fig 2H,mTOR (Tsc1/Tsc2),direct,Tsc2,M
+3c,Fig 2I,SWI/SNF in TH-Glut,direct,Smarcb1,M
+3c,Fig 2I,SWI/SNF in TH-Glut,direct,Smarcc2,M
+3c,Fig 2I,SWI/SNF in TH-Glut,direct,Arid1a,R
+3c,Fig 2I,SWI/SNF in TH-Glut,direct,Arid2,R
+4b,Fig 3B,Trafficking / V-ATPase,direct,Atp6v0c,M
+4b,Fig 3B,Trafficking / V-ATPase,direct,Atp6v1a,M
+4b,Fig 3B,Trafficking / V-ATPase,direct,Vps37a,M
+4b,Fig 3B,Trafficking / V-ATPase,direct,Pitpna,M
+4b,Fig 3B,Trafficking / V-ATPase,direct,Sec31a,R
+4b,Fig 3B,Trafficking / V-ATPase,direct,Vps53,P
+4b,Fig 3B,Trafficking / V-ATPase,direct,Snf8,P
+4b,Fig 3B,Trafficking / V-ATPase,direct,Tbcd,D
+4e,Fig 3C,Cortical excitability / synaptic,direct,Grin2a,M
+4e,Fig 3C,Cortical excitability / synaptic,direct,Kcnb1,M
+4e,Fig 3C,Cortical excitability / synaptic,direct,Gabrg2,M
+4e,Fig 3C,Cortical excitability / synaptic,direct,Celf2,M
+4e,Fig 3C,Cortical excitability / synaptic,direct,Ppp2r1a,P
+4e,Fig 3C,Cortical excitability / synaptic,direct,Snap25,D
+5,Fig 3D–F,NMDA opposing (Grin2a/Grin2b),direct,Grin2a,M
+5,Fig 3D–F,NMDA opposing (Grin2a/Grin2b),direct,Grin2b,M
+7,Fig 4J,NDD network (top-5),external,Ankrd11,P
+7,Fig 4J,NDD network (top-5),external,Mdh1,P
+7,Fig 4J,NDD network (top-5),external,Xrn1,P
+7,Fig 4J,NDD network (top-5),external,Slc17a5,D
+7,Fig 4J,NDD network (top-5),external,Gatad1,D
+1a,Fig 2A,Essentiality (broad),external,Ddx39b,D
+1a,Fig 2A,Essentiality (broad),external,Hspa5,D
+1a,Fig 2A,Essentiality (broad),external,Hspa8,D
+1b,Fig 2A,Essentiality (vulnerable MB/TH),external,Atp6v1a,D
+1b,Fig 2A,Essentiality (vulnerable MB/TH),external,Atp6v1b2,D
+1b,Fig 2A,Essentiality (vulnerable MB/TH),external,Pafah1b1,D
+8,Fig S7,KO validation,external,Ctcf,P
+8,Fig S7,KO validation,external,Myt1l,P
+8,Fig S7,KO validation,external,Chd8,D
+8,Fig S7,KO validation,external,Mef2c,D
+8,Fig S7,KO validation,external,Grin2a,D

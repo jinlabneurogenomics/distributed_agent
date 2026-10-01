@@ -1,0 +1,466 @@
+{
+  "schema_version": "distributed_agents-corpus-release-v1",
+  "release_id": "shi_holdout",
+  "title": "Shi holdout corpus",
+  "corpus_family": "shi_holdout",
+  "release_date": "2026-09-01",
+  "description": "A 1,773-target holdout corpus with structured ledgers, Claims, comparator relationships, and a queryable BioKG projection.",
+  "artifacts": {
+    "reports": {
+      "path": "artifacts/reports/reports.jsonl",
+      "kind": "per_target_reports",
+      "format": "jsonl",
+      "media_type": "application/x-ndjson",
+      "sha256": "0d4e926be8a066952c0e1857b9fab5ec70396093b4f8bb41de1a5dc7768a487f",
+      "bytes": 78009059,
+      "records": 1773,
+      "schema": "schemas/report.schema.json",
+      "required_fields": ["dataset_variant", "gene_target", "report", "run_id", "sampled_at_utc"],
+      "text_field": "report",
+      "target_field": "gene_target"
+    },
+    "evidence": {
+      "path": "artifacts/ledgers/evidence.jsonl",
+      "kind": "evidence_ledger",
+      "format": "jsonl",
+      "media_type": "application/x-ndjson",
+      "sha256": "cb471eb1fc2f98c75c78006e319877f02d01cb877341bc4e77008a86c66f39d6",
+      "bytes": 31418604,
+      "records": 45640,
+      "schema": "schemas/evidence.schema.json",
+      "required_fields": ["doc_id", "target_gene", "evidence_id", "source_line", "source_report_sha256"],
+      "id_column": "evidence_id",
+      "scope_column": "target_gene"
+    },
+    "references": {
+      "path": "artifacts/ledgers/references.jsonl",
+      "kind": "references_ledger",
+      "format": "jsonl",
+      "media_type": "application/x-ndjson",
+      "sha256": "ca383015fc09a8e1fd55ab1e576a1950cc025814be32f0d85ecc8237d8e49e2e",
+      "bytes": 11060798,
+      "records": 13974,
+      "schema": "schemas/reference.schema.json",
+      "required_fields": ["doc_id", "target_gene", "ref_id", "source_line", "source_report_sha256"],
+      "id_column": "ref_id",
+      "scope_column": "target_gene"
+    },
+    "mgi_target_mapping": {
+      "path": "artifacts/contracts/mgi_target_mapping.json",
+      "kind": "target_normalization_ledger",
+      "format": "json",
+      "media_type": "application/json",
+      "sha256": "c27be89d0f021d2c610e15f88971b6696b12564443a6d526e26f95e22b8ec45b",
+      "bytes": 778328,
+      "records": 1,
+      "schema": "schemas/mgi-target-mapping.schema.json",
+      "required_fields": ["schema_version", "source", "mappings", "summary"]
+    },
+    "publication_reference_mapping": {
+      "path": "artifacts/contracts/publication_reference_mapping.json",
+      "kind": "publication_reference_normalization_ledger",
+      "format": "json",
+      "media_type": "application/json",
+      "sha256": "9f0b2bc1fc1eb92c78f89c00123b6de3b1dd868c6ba7e3c933a83d58c486c7eb",
+      "bytes": 9111799,
+      "records": 1,
+      "schema": "schemas/publication-reference-mapping.schema.json",
+      "required_fields": ["schema_version", "release_id", "source", "policy", "mappings", "summary"]
+    },
+    "findings": {
+      "path": "artifacts/ledgers/findings.jsonl",
+      "kind": "biological_findings_ledger",
+      "format": "jsonl",
+      "media_type": "application/x-ndjson",
+      "sha256": "b1f9dc74ceb3a95cf41b14977abbc82c2d110303eca701b90ab2ae5da251acef",
+      "bytes": 13774975,
+      "records": 8718,
+      "schema": "schemas/finding.schema.json",
+      "required_fields": ["doc_id", "target_gene", "finding_id", "finding_type", "summary", "evidence_ids", "ref_ids"],
+      "id_column": "finding_id",
+      "scope_column": "target_gene"
+    },
+    "null_findings": {
+      "path": "artifacts/ledgers/null_findings.jsonl",
+      "kind": "null_cause_findings_ledger",
+      "format": "jsonl",
+      "media_type": "application/x-ndjson",
+      "sha256": "52190dae8c122eb9ac4607920b886617eb8a3b25ea86ea2cec73eddf31ecbea0",
+      "bytes": 6364948,
+      "records": 3079,
+      "schema": "schemas/null-finding.schema.json",
+      "required_fields": ["doc_id", "target_gene", "finding_id", "finding_type", "summary", "null_cause", "evidence_ids", "ref_ids"],
+      "id_column": "finding_id",
+      "scope_column": "target_gene"
+    },
+    "pathways": {
+      "path": "artifacts/ledgers/pathways.jsonl",
+      "kind": "pathway_summary_ledger",
+      "format": "jsonl",
+      "media_type": "application/x-ndjson",
+      "sha256": "99e85d5591a7abcbd27da5a656ecc61502a418bf903a84da494804c748c66021",
+      "bytes": 4838813,
+      "records": 6729,
+      "schema": "schemas/pathway.schema.json",
+      "required_fields": ["doc_id", "target_gene", "pathway_id", "pathway", "evidence_ids", "finding_ids"],
+      "id_column": "pathway_id",
+      "scope_column": "target_gene"
+    },
+    "cell_types": {
+      "path": "artifacts/ledgers/cell_types.jsonl",
+      "kind": "cell_type_summary_ledger",
+      "format": "jsonl",
+      "media_type": "application/x-ndjson",
+      "sha256": "b2ae2cf8ab43c97e3cddc01d98c0d740ee645a52feb149f7bc8553f4ecc362d6",
+      "bytes": 17007859,
+      "records": 29380,
+      "schema": "schemas/cell-type.schema.json",
+      "required_fields": ["doc_id", "target_gene", "cell_type_id", "cell_type", "summary", "evidence_ids", "finding_ids", "ref_ids"],
+      "id_column": "cell_type_id",
+      "scope_column": "target_gene"
+    },
+    "extraction_audit": {
+      "path": "artifacts/audits/extraction.json",
+      "kind": "extraction_audit",
+      "format": "json",
+      "media_type": "application/json",
+      "sha256": "24e86fb5c78eec27934453997f4f0d0d6675015da4d9541e1f5dd1bcd2e0405b",
+      "bytes": 3300,
+      "records": 1,
+      "schema": "schemas/extraction-audit.schema.json",
+      "required_fields": ["schema_version", "source", "ledger_records", "repairs_applied", "issues", "build_policy"]
+    },
+    "claim_neighborhoods": {
+      "path": "artifacts/claims/neighborhoods.jsonl",
+      "kind": "claim_construction_neighborhoods",
+      "format": "jsonl",
+      "media_type": "application/x-ndjson",
+      "sha256": "0260c6f57aa24ca2e4c9c5c32109d5102abb70b3632268db339718bf872b7b2c",
+      "bytes": 510923,
+      "records": 1381,
+      "schema": "schemas/claim-neighborhood.schema.json",
+      "required_fields": ["schema_version", "construction_scope", "neighborhood_id", "finding_doc_ids", "seed_pair_ids", "retrieval_lanes", "contains_one_sided_seed"],
+      "id_column": "neighborhood_id",
+      "scope_column": "construction_scope"
+    },
+    "claim_proposals": {
+      "path": "artifacts/claims/proposals.jsonl",
+      "kind": "claim_induction_proposals",
+      "format": "jsonl",
+      "media_type": "application/x-ndjson",
+      "sha256": "5adbdf82a427734e6cb13d33d71c6c7fde38c108d1c1ce1a089614c6982b2a81",
+      "bytes": 2771996,
+      "records": 1629,
+      "schema": "schemas/claim-proposal.schema.json",
+      "required_fields": ["schema_version", "construction_scope", "proposal_id", "source_neighborhood_id", "statement", "scope", "confidence", "contributions"],
+      "id_column": "proposal_id",
+      "scope_column": "construction_scope"
+    },
+    "claim_proposal_dispositions": {
+      "path": "artifacts/claims/proposal_dispositions.jsonl",
+      "kind": "claim_consolidation_proposal_dispositions",
+      "format": "jsonl",
+      "media_type": "application/x-ndjson",
+      "sha256": "83c8943c55ab5d58db3e0c702d62bf1d408564b1b959cdc0f97c2815b7c20e9a",
+      "bytes": 629043,
+      "records": 1629,
+      "schema": "schemas/claim-proposal-disposition.schema.json",
+      "required_fields": ["schema_version", "construction_scope", "claim_scope", "proposal_id", "source_component_id", "disposition", "resulting_claim_ids", "rationale"],
+      "id_column": "proposal_id",
+      "scope_column": "construction_scope"
+    },
+    "claims": {
+      "path": "artifacts/claims/claims.jsonl",
+      "kind": "bottom_up_claim_ledger",
+      "format": "jsonl",
+      "media_type": "application/x-ndjson",
+      "sha256": "9b6a6be7be195815259918d77fa0eb2361f0bf8806490f4e68cd7388862270bd",
+      "bytes": 555034,
+      "records": 555,
+      "schema": "schemas/claim.schema.json",
+      "required_fields": ["schema_version", "claim_scope", "claim_id", "statement", "scope", "higher_order_basis", "confidence", "source_proposal_ids", "target_genes", "contribution_count"],
+      "id_column": "claim_id",
+      "scope_column": "claim_scope"
+    },
+    "claim_contributions": {
+      "path": "artifacts/claims/contributions.jsonl",
+      "kind": "finding_claim_contribution_ledger",
+      "format": "jsonl",
+      "media_type": "application/x-ndjson",
+      "sha256": "ea162fd9898c3c48913a990c6f8214a79e0b52da50c50ab27cad551a37abe040",
+      "bytes": 955894,
+      "records": 2234,
+      "schema": "schemas/claim-contribution.schema.json",
+      "required_fields": ["schema_version", "contribution_id", "claim_id", "claim_scope", "finding_doc_id", "target_gene", "finding_id", "role", "rationale"],
+      "id_column": "contribution_id",
+      "scope_column": "claim_scope"
+    },
+    "finding_claim_dispositions": {
+      "path": "artifacts/claims/finding_dispositions.jsonl",
+      "kind": "finding_claim_layer_dispositions",
+      "format": "jsonl",
+      "media_type": "application/x-ndjson",
+      "sha256": "1f5986e4a99234cec5594248a4c455f506d0930e0180109772d2ff763ddb1756",
+      "bytes": 2195008,
+      "records": 8718,
+      "schema": "schemas/finding-claim-disposition.schema.json",
+      "required_fields": ["schema_version", "finding_doc_id", "target_gene", "finding_id", "disposition", "claim_ids", "contribution_roles", "neighborhood_count"],
+      "id_column": "finding_id",
+      "scope_column": "target_gene"
+    },
+    "claim_build": {
+      "path": "artifacts/claims/build.json",
+      "kind": "bottom_up_claim_build_record",
+      "format": "json",
+      "media_type": "application/json",
+      "sha256": "cd100db2a13c652aeef84c5d9bfa6a6639fcb7ef8a8e28e63dbd130af4b26b66",
+      "bytes": 3954,
+      "records": 1,
+      "schema": "schemas/claim-build.schema.json",
+      "required_fields": ["schema_version", "versions", "source", "inputs", "outputs", "counts", "model_provenance", "build_policy"]
+    },
+    "claim_assignments": {
+      "path": "artifacts/relations/claim_assignments.csv",
+      "kind": "atomic_claim_assignments",
+      "format": "csv",
+      "media_type": "text/csv",
+      "sha256": "c562635882576b04284f682e4bc3f0ea13451eae43ccf6eb341cf0de489ff61f",
+      "bytes": 3385339,
+      "records": 8718,
+      "required_columns": ["claim_id", "doc_id", "target_gene", "member_role", "canonical_summary", "relation_family", "targets", "confidence", "claim_unit", "source_hash"],
+      "id_column": "claim_id",
+      "scope_column": "target_gene"
+    },
+    "claim_relations": {
+      "path": "artifacts/relations/claim_relations.csv",
+      "kind": "atomic_claim_review_relations",
+      "format": "csv",
+      "media_type": "text/csv",
+      "sha256": "0a59b1e9d1e0819ce72b8a3a25f24fd5f7935039dcdbfcdb4c61d2f9d8b4f51c",
+      "bytes": 2720063,
+      "records": 9860,
+      "required_columns": ["source_claim_id", "target_claim_id", "source_target", "target_target", "relation_type", "confidence", "basis", "reason", "relation_version"]
+    },
+    "tooling_build": {
+      "path": "artifacts/relations/tooling_build.json",
+      "kind": "tooling_build_record",
+      "format": "json",
+      "media_type": "application/json",
+      "sha256": "a12ea3313535b38031875c6e09fa0314c7d9f1c3f0738471f483f45fe85b98e8",
+      "bytes": 2300,
+      "records": 1,
+      "required_fields": ["schema_version", "build_policy", "inputs", "outputs", "reconciliation"]
+    },
+    "ledger_calibration": {
+      "path": "artifacts/contracts/ledger_calibration.json",
+      "kind": "ledger_calibration_contract",
+      "format": "json",
+      "media_type": "application/json",
+      "sha256": "79461812c9a4bee9e80b1dc5e5842e52422f823c6520e0bd0a4114bda43332f4",
+      "bytes": 468238,
+      "records": 1,
+      "schema": "schemas/ledger-calibration.schema.json",
+      "required_fields": ["schema_version", "generation_version", "sources", "counts", "field_value_frequencies", "atomic_claim_projection", "relation_projection", "semantic_assertions", "reconciliation"]
+    },
+    "value_dictionary": {
+      "path": "artifacts/contracts/value_dictionary.csv",
+      "kind": "corpus_value_dictionary",
+      "format": "csv",
+      "media_type": "text/csv",
+      "sha256": "31b352c48766a70a994ebdaf07221ea6184e96c13da6bca0bd847c517f394129",
+      "bytes": 12305,
+      "records": 55,
+      "required_columns": ["artifact", "field", "value_or_pattern", "meaning", "non_meaning", "aliases", "derivation", "constraints", "related_fields", "example_ids"]
+    },
+    "biokg_nodes": {
+      "path": "projections/biokg/data/base/nodes.jsonl",
+      "kind": "biokg_ledger_nodes",
+      "format": "jsonl",
+      "media_type": "application/x-ndjson",
+      "sha256": "377db4a550f037fa4ad07eeadbffe3c4877b61923112b4947340bb8842b2d82b",
+      "bytes": 63234178,
+      "records": 70969,
+      "schema": "projections/biokg/schemas/node.schema.json",
+      "required_fields": ["id", "type", "source_artifact", "properties"],
+      "id_column": "id"
+    },
+    "biokg_node_build": {
+      "path": "projections/biokg/data/base/node_build.json",
+      "kind": "biokg_node_build_record",
+      "format": "json",
+      "media_type": "application/json",
+      "sha256": "65c9c50bb8b7628c0d09b980bec01f6d54a6cf7bde88935ce0302a9c2be8ad8e",
+      "bytes": 1351,
+      "records": 1,
+      "schema": "projections/biokg/schemas/node-build.schema.json",
+      "required_fields": ["schema_version", "sources", "node_counts", "output", "build_policy"]
+    },
+    "biokg_relationships": {
+      "path": "projections/biokg/data/base/relationships.jsonl",
+      "kind": "biokg_legacy_language_relationships",
+      "format": "jsonl",
+      "media_type": "application/x-ndjson",
+      "sha256": "ae4d579be6295251e35d88981652d4a69b1e3e0e817972bf691f8ec3500767d0",
+      "bytes": 22779554,
+      "records": 115724,
+      "schema": "projections/biokg/schemas/relationship.schema.json",
+      "required_fields": ["start_id", "end_id", "type", "properties"]
+    },
+    "biokg_relationship_build": {
+      "path": "projections/biokg/data/base/relationship_build.json",
+      "kind": "biokg_relationship_build_record",
+      "format": "json",
+      "media_type": "application/json",
+      "sha256": "29006fac8dccee0c9cbef483980f74f85b466cc8c90999bfc608adab05f6f193",
+      "bytes": 1132,
+      "records": 1,
+      "schema": "projections/biokg/schemas/relationship-build.schema.json",
+      "required_fields": ["schema_version", "input", "relationship_counts", "role_counts", "dangling_endpoints", "output", "build_policy"]
+    }
+  },
+  "capabilities": {
+    "skills": {
+      "path": "skills",
+      "version": "shi_holdout",
+      "names": ["findings-ledger-skill", "findings-analysis-skill", "relational-candidate-skill", "biokg-recall-skill"],
+      "roles": {
+        "ledger": {
+          "skill": "findings-ledger-skill",
+          "entrypoints": {
+            "query": "scripts/query_ledger.py",
+            "calibration": "scripts/query_corpus.py",
+            "read_reports": "scripts/read_reports.py",
+            "resolve_evidence": "scripts/resolve_evidence.py"
+          }
+        },
+        "analysis": {
+          "skill": "findings-analysis-skill",
+          "entrypoints": {"query": "scripts/query_ledger.py"}
+        },
+        "relational_candidates": {
+          "skill": "relational-candidate-skill",
+          "entrypoints": {
+            "query": "scripts/relational_candidates.py",
+            "predictive_review": "scripts/predictive_graph_review.py"
+          }
+        },
+        "direct_evidence": {
+          "skill": "relational-candidate-skill",
+          "entrypoints": {"query": "scripts/direct_evidence.py"}
+        },
+        "graph": {
+          "skill": "biokg-recall-skill",
+          "entrypoints": {"query": "scripts/biokg_cypher.py"},
+          "graph_contract": {
+            "schema": {
+              "node_labels": ["TargetGene", "Gene", "Finding", "Evidence", "Reference", "Claim"],
+              "label_invariants": ["Every TargetGene node also has the Gene label."],
+              "relationship_patterns": [
+                "(TargetGene)-[:HAS_FINDING]->(Finding)",
+                "(Finding)-[:HAS_TARGET]->(TargetGene)",
+                "(Finding)-[:REPORTS_GENE]->(Gene)",
+                "(Finding)-[:SUPPORTED_BY]->(Evidence)",
+                "(Finding)-[:CITES]->(Reference)",
+                "(Finding)-[:EXPRESSES_CLAIM]->(Claim)"
+              ]
+            },
+            "canonical_target_expansion": {
+              "query": "MATCH (t:TargetGene {symbol: $target})-[:HAS_FINDING]->(f:Finding)-[:REPORTS_GENE {role: 'finding_reported_comparator'}]->(g:Gene) RETURN f.doc_id AS finding_id, f.finding_type AS finding_type, g.symbol AS comparator, labels(g) AS comparator_labels ORDER BY finding_id, comparator LIMIT 50",
+              "parameters": {"target": "Cplx1"}
+            }
+          }
+        }
+      }
+    },
+    "tooling": {
+      "path": "tooling",
+      "version": "shi_holdout",
+      "entrypoints": ["read_reports.py", "query_ledger.py", "resolve_evidence.py"]
+    },
+    "projections": {
+      "biokg": {"path": "projections/biokg", "version": "shi_holdout"}
+    }
+  },
+  "integrity": {
+    "target_membership": [
+      {
+        "artifacts": ["evidence", "references", "findings", "null_findings", "pathways", "cell_types", "claim_assignments", "claim_contributions", "finding_claim_dispositions"],
+        "field": "target_gene",
+        "reports_artifact": "reports",
+        "report_field": "gene_target"
+      }
+    ],
+    "joins": [
+      {
+        "from_artifacts": ["findings", "null_findings", "pathways", "cell_types"],
+        "field": "evidence_ids",
+        "to_artifacts": ["evidence"],
+        "to_field": "evidence_id",
+        "scope_field": "target_gene"
+      },
+      {
+        "from_artifacts": ["findings", "null_findings", "cell_types"],
+        "field": "ref_ids",
+        "to_artifacts": ["references"],
+        "to_field": "ref_id",
+        "scope_field": "target_gene"
+      },
+      {
+        "from_artifacts": ["pathways", "cell_types"],
+        "field": "finding_ids",
+        "to_artifacts": ["findings", "null_findings"],
+        "to_field": "finding_id",
+        "scope_field": "target_gene"
+      },
+      {
+        "from_artifacts": ["claim_proposals"],
+        "field": "source_neighborhood_id",
+        "to_artifacts": ["claim_neighborhoods"],
+        "to_field": "neighborhood_id",
+        "scope_field": "construction_scope"
+      },
+      {
+        "from_artifacts": ["claim_proposal_dispositions"],
+        "field": "proposal_id",
+        "to_artifacts": ["claim_proposals"],
+        "to_field": "proposal_id",
+        "scope_field": "construction_scope"
+      },
+      {
+        "from_artifacts": ["claim_proposal_dispositions"],
+        "field": "resulting_claim_ids",
+        "to_artifacts": ["claims"],
+        "to_field": "claim_id",
+        "scope_field": "claim_scope"
+      },
+      {
+        "from_artifacts": ["claims"],
+        "field": "source_proposal_ids",
+        "to_artifacts": ["claim_proposals"],
+        "to_field": "proposal_id",
+        "scope_field": "construction_scope"
+      },
+      {
+        "from_artifacts": ["claim_contributions"],
+        "field": "claim_id",
+        "to_artifacts": ["claims"],
+        "to_field": "claim_id",
+        "scope_field": "claim_scope"
+      },
+      {
+        "from_artifacts": ["claim_contributions"],
+        "field": "finding_id",
+        "to_artifacts": ["findings"],
+        "to_field": "finding_id",
+        "scope_field": "target_gene"
+      },
+      {
+        "from_artifacts": ["finding_claim_dispositions"],
+        "field": "finding_id",
+        "to_artifacts": ["findings"],
+        "to_field": "finding_id",
+        "scope_field": "target_gene"
+      }
+    ]
+  }
+}

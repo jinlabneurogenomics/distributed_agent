@@ -1,0 +1,72 @@
+# Optimized for generating panels that will be composed in Illustrator/Inkscape
+
+# FONT EMBEDDING (CRITICAL -  requirement)
+pdf.fonttype       : 42          # TrueType embedding for editable text in PDF
+ps.fonttype        : 42          # TrueType embedding for PS/EPS
+svg.fonttype       : none        # Editable text in SVG (not paths)
+
+# FONT SETTINGS
+font.family        : sans-serif
+font.sans-serif    : Arial, Helvetica, DejaVu Sans
+font.size          : 7           # : 5-7 pt range
+
+# FIGURE DIMENSIONS ( single column)
+figure.figsize     : 3.5, 2.625  # Single column width, 4:3 aspect ratio
+figure.dpi         : 100         # Screen display only
+figure.autolayout  : False       # Use layout='constrained' instead
+
+# AXES
+axes.labelsize     : 7
+axes.linewidth     : 0.5         # : 0.25-1 pt range
+axes.edgecolor     : 555555      # Softer gray instead of pure black
+axes.labelcolor    : 000000      # Pure black for labels
+axes.grid          : False       # : avoid background gridlines
+axes.unicode_minus : True        # Typographically correct minus sign
+axes.spines.top    : False       # Remove top spine (optional, common in modern figures)
+axes.spines.right  : False       # Remove right spine (optional)
+
+# COLOR CYCLE (Okabe-Ito palette, orange-first order)
+axes.prop_cycle    : cycler('color', ['E69F00', '56B4E9', '009E73', 'F0E442', '0072B2', 'D55E00', 'CC79A7', '000000'])
+
+# TICKS
+xtick.labelsize    : 7
+ytick.labelsize    : 7
+xtick.color        : 555555      # Softer gray for tick marks
+ytick.color        : 555555
+xtick.direction    : out          # or 'in' based on field conventions
+ytick.direction    : out
+xtick.major.size   : 4           # Length in points
+xtick.major.width  : 0.5         #  minimum: 0.25 pt
+xtick.minor.size   : 2.5
+xtick.minor.width  : 0.5
+ytick.major.size   : 4
+ytick.major.width  : 0.5
+ytick.minor.size   : 2.5
+ytick.minor.width  : 0.5
+xtick.minor.visible: False        # Don't show minor ticks
+ytick.minor.visible: False
+
+# LINES
+lines.linewidth    : 1.0         # : 0.25-1 pt range
+lines.markersize   : 4
+
+# LEGEND
+legend.fontsize    : 7
+legend.frameon     : False       # No frame for cleaner appearance
+legend.fancybox    : False       # Square corners
+
+# GRID (if enabled, make subtle)
+grid.color         : CCCCCC      # Light gray
+grid.linestyle     : --          # Dashed
+grid.linewidth     : 0.3
+grid.alpha         : 0.6
+
+# SAVE SETTINGS
+savefig.dpi        : 300         # : 300-600 dpi for raster elements
+savefig.format     : pdf         # Vector format preferred
+savefig.bbox       : tight       # Trim whitespace
+savefig.transparent: False       # White background
+savefig.pad_inches : 0.05        # Minimal padding
+
+# IMAGE
+image.cmap         : viridis     # Colorblind-safe default colormap

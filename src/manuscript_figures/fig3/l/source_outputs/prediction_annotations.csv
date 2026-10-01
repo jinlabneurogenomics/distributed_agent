@@ -1,0 +1,201 @@
+framework,pred_rank,pred_gene,gt_rank,gt_bin,is_gt_top100
+BioAgents q7b_v2,1,Xpo1,,NA,False
+BioAgents q7b_v2,2,Srsf1,136.0,GT 101-150,False
+BioAgents q7b_v2,3,Uba5,,NA,False
+BioAgents q7b_v2,4,U2af2,122.0,GT 101-150,False
+BioAgents q7b_v2,5,Tpr,60.0,GT 51-100,True
+BioAgents q7b_v2,6,Psmb4,11.0,GT 11-25,True
+BioAgents q7b_v2,7,Hspa9,41.0,GT 26-50,True
+BioAgents q7b_v2,8,Elp1,,NA,False
+BioAgents q7b_v2,9,Atp1a3,,NA,False
+BioAgents q7b_v2,10,Ppp2r1a,69.0,GT 51-100,True
+BioAgents q7b_v2,11,Hnrnpu,,NA,False
+BioAgents q7b_v2,12,Rnpc3,,NA,False
+BioAgents q7b_v2,13,Tnpo3,33.0,GT 26-50,True
+BioAgents q7b_v2,14,Ufc1,,NA,False
+BioAgents q7b_v2,15,Psmc5,20.0,GT 11-25,True
+BioAgents q7b_v2,16,Cdc40,,NA,False
+BioAgents q7b_v2,17,Naa15,,NA,False
+BioAgents q7b_v2,18,Brd4,65.0,GT 51-100,True
+BioAgents q7b_v2,19,Huwe1,,NA,False
+BioAgents q7b_v2,20,Opa1,,NA,False
+BioAgents q7b_v2,21,Dnm1l,,NA,False
+BioAgents q7b_v2,22,Psmc1,22.0,GT 11-25,True
+BioAgents q7b_v2,23,Snrnp70,,NA,False
+BioAgents q7b_v2,24,Prpf6,16.0,GT 11-25,True
+BioAgents q7b_v2,25,Ddx23,51.0,GT 51-100,True
+BioAgents q7b_v2,26,Ap2s1,,NA,False
+BioAgents q7b_v2,27,Sin3a,,NA,False
+BioAgents q7b_v2,28,Wac,,NA,False
+BioAgents q7b_v2,29,Atp6v1a,15.0,GT 11-25,True
+BioAgents q7b_v2,30,Ndufs2,,NA,False
+BioAgents q7b_v2,31,Trrap,,NA,False
+BioAgents q7b_v2,32,Polr3b,37.0,GT 26-50,True
+BioAgents q7b_v2,33,Rrn3,,NA,False
+BioAgents q7b_v2,34,Dhx9,,NA,False
+BioAgents q7b_v2,35,Elp2,86.0,GT 51-100,True
+BioAgents q7b_v2,36,Thoc2,8.0,GT 1-10,True
+BioAgents q7b_v2,37,Srrm2,,NA,False
+BioAgents q7b_v2,38,Ogt,4.0,GT 1-10,True
+BioAgents q7b_v2,39,Eif4e,,NA,False
+BioAgents q7b_v2,40,Hspa5,10.0,GT 1-10,True
+BioAgents q7b_v2,41,Pomp,25.0,GT 11-25,True
+BioAgents q7b_v2,42,Atp6v0c,44.0,GT 26-50,True
+BioAgents q7b_v2,43,Naa20,,NA,False
+BioAgents q7b_v2,44,Setd1a,,NA,False
+BioAgents q7b_v2,45,Kmt2d,,NA,False
+BioAgents q7b_v2,46,Tardbp,,NA,False
+BioAgents q7b_v2,47,Cnot1,45.0,GT 26-50,True
+BioAgents q7b_v2,48,Vcp,46.0,GT 26-50,True
+BioAgents q7b_v2,49,Hsf1,,NA,False
+BioAgents q7b_v2,50,Nrf1,,NA,False
+BioAgents q7b_v2,51,Gapdh,,NA,False
+BioAgents q7b_v2,52,Pgk1,,NA,False
+BioAgents q7b_v2,53,Eef1a2,,NA,False
+BioAgents q7b_v2,54,Pura,,NA,False
+BioAgents q7b_v2,55,Thap11,,NA,False
+BioAgents q7b_v2,56,Med13,,NA,False
+BioAgents q7b_v2,57,Ndufs1,,NA,False
+BioAgents q7b_v2,58,Pcca,,NA,False
+BioAgents q7b_v2,59,Kif2a,56.0,GT 51-100,True
+BioAgents q7b_v2,60,Atp6ap2,106.0,GT 101-150,False
+BioAgents q7b_v2,61,Htt,,NA,False
+BioAgents q7b_v2,62,Ctnnb1,101.0,GT 101-150,False
+BioAgents q7b_v2,63,Grin1,,NA,False
+BioAgents q7b_v2,64,Rab7,,NA,False
+BioAgents q7b_v2,65,Sec63,107.0,GT 101-150,False
+BioAgents q7b_v2,66,Gbf1,9.0,GT 1-10,True
+BioAgents q7b_v2,67,Sec31a,17.0,GT 11-25,True
+BioAgents q7b_v2,68,Tbcd,57.0,GT 51-100,True
+BioAgents q7b_v2,69,Klc2,,NA,False
+BioAgents q7b_v2,70,Chchd2,,NA,False
+BioAgents q7b_v2,71,Slc25a4,,NA,False
+BioAgents q7b_v2,72,Reep1,,NA,False
+BioAgents q7b_v2,73,Tmco1,,NA,False
+BioAgents q7b_v2,74,Dhdds,28.0,GT 26-50,True
+BioAgents q7b_v2,75,Pcyt2,,NA,False
+BioAgents q7b_v2,76,Scn1a,,NA,False
+BioAgents q7b_v2,77,Slc25a46,,NA,False
+BioAgents q7b_v2,78,Gabbr1,,NA,False
+BioAgents q7b_v2,79,Gabrb2,,NA,False
+BioAgents q7b_v2,80,Kcnc2,68.0,GT 51-100,True
+BioAgents q7b_v2,81,Cic,,NA,False
+BioAgents q7b_v2,82,Prox1,,NA,False
+BioAgents q7b_v2,83,Apc,,NA,False
+BioAgents q7b_v2,84,Chd2,,NA,False
+BioAgents q7b_v2,85,Chd8,,NA,False
+BioAgents q7b_v2,86,Nipbl,,NA,False
+BioAgents q7b_v2,87,Ankrd11,,NA,False
+BioAgents q7b_v2,88,Arid2,,NA,False
+BioAgents q7b_v2,89,Zfp423,,NA,False
+BioAgents q7b_v2,90,Zmym2,,NA,False
+BioAgents q7b_v2,91,Thra,,NA,False
+BioAgents q7b_v2,92,Atp2b1,,NA,False
+BioAgents q7b_v2,93,Atp2a2,58.0,GT 51-100,True
+BioAgents q7b_v2,94,Kdm5c,,NA,False
+BioAgents q7b_v2,95,Crebbp,,NA,False
+BioAgents q7b_v2,96,Ctbp1,,NA,False
+BioAgents q7b_v2,97,Nfic,,NA,False
+BioAgents q7b_v2,98,Trps1,,NA,False
+BioAgents q7b_v2,99,Usp48,,NA,False
+BioAgents q7b_v2,100,Cul3,63.0,GT 51-100,True
+q7b_r4,1,Psmb4,11.0,GT 11-25,True
+q7b_r4,2,Cltc,7.0,GT 1-10,True
+q7b_r4,3,Polr3b,37.0,GT 26-50,True
+q7b_r4,4,Sec31a,17.0,GT 11-25,True
+q7b_r4,5,Glmn,,NA,False
+q7b_r4,6,Usp9x,62.0,GT 51-100,True
+q7b_r4,7,Atp6ap1,,NA,False
+q7b_r4,8,Nfe2l1,,NA,False
+q7b_r4,9,Diaph2,,NA,False
+q7b_r4,10,Gabra2,,NA,False
+q7b_r4,11,Safe_target_53,,NA,False
+q7b_r4,12,Appl1,,NA,False
+q7b_r4,13,Sec63,107.0,GT 101-150,False
+q7b_r4,14,Ndufb8,,NA,False
+q7b_r4,15,Safe_target_26,,NA,False
+q7b_r4,16,Gp6,,NA,False
+q7b_r4,17,Safe_target_77,,NA,False
+q7b_r4,18,Eef2,13.0,GT 11-25,True
+q7b_r4,19,Mpdz,,NA,False
+q7b_r4,20,Tbce,139.0,GT 101-150,False
+q7b_r4,21,Igsf1,,NA,False
+q7b_r4,22,Pcca,,NA,False
+q7b_r4,23,Smad4,,NA,False
+q7b_r4,24,Srr,,NA,False
+q7b_r4,25,Thbd,,NA,False
+q7b_r4,26,Slf2,,NA,False
+q7b_r4,27,Figla,,NA,False
+q7b_r4,28,Stard7,,NA,False
+q7b_r4,29,Safe_target_90,,NA,False
+q7b_r4,30,Smad9,,NA,False
+q7b_r4,31,Kif11,,NA,False
+q7b_r4,32,Syn1,,NA,False
+q7b_r4,33,Zfp106,,NA,False
+q7b_r4,34,Champ1,,NA,False
+q7b_r4,35,Cd36,,NA,False
+q7b_r4,36,Kcnt2,,NA,False
+q7b_r4,37,Safe_target_7,,NA,False
+q7b_r4,38,Cd3d,,NA,False
+q7b_r4,39,Tlr4,,NA,False
+q7b_r4,40,Pafah1b1,5.0,GT 1-10,True
+q7b_r4,41,Htt,,NA,False
+q7b_r4,42,Lrrc3b,,NA,False
+q7b_r4,43,Mchr1,,NA,False
+q7b_r4,44,Zhx3,,NA,False
+q7b_r4,45,Cnot1,45.0,GT 26-50,True
+q7b_r4,46,Safe_target_65,,NA,False
+q7b_r4,47,Ube3a,,NA,False
+q7b_r4,48,Trpm7,,NA,False
+q7b_r4,49,Aff2,,NA,False
+q7b_r4,50,Prr12,,NA,False
+q7b_r4,51,Pou2f2,,NA,False
+q7b_r4,52,Lpar6,,NA,False
+q7b_r4,53,Safe_target_27,,NA,False
+q7b_r4,54,Timmdc1,,NA,False
+q7b_r4,55,Phf6,,NA,False
+q7b_r4,56,Camk4,,NA,False
+q7b_r4,57,Kpna3,,NA,False
+q7b_r4,58,Mff,,NA,False
+q7b_r4,59,Zfp644,,NA,False
+q7b_r4,60,Atl1,,NA,False
+q7b_r4,61,Acox1,,NA,False
+q7b_r4,62,Uqcrb,,NA,False
+q7b_r4,63,Gata3,,NA,False
+q7b_r4,64,Thoc2,8.0,GT 1-10,True
+q7b_r4,65,Tmem126a,,NA,False
+q7b_r4,66,Adra2a,80.0,GT 51-100,True
+q7b_r4,67,Fhit,,NA,False
+q7b_r4,68,Safe_target_34,,NA,False
+q7b_r4,69,Tbk1,,NA,False
+q7b_r4,70,Got1,38.0,GT 26-50,True
+q7b_r4,71,Bmal1,,NA,False
+q7b_r4,72,Pknox2,,NA,False
+q7b_r4,73,Vps37a,,NA,False
+q7b_r4,74,Foxk2,,NA,False
+q7b_r4,75,Adarb1,59.0,GT 51-100,True
+q7b_r4,76,Hcn1,,NA,False
+q7b_r4,77,Rasa2,,NA,False
+q7b_r4,78,Ttll5,,NA,False
+q7b_r4,79,Safe_target_28,,NA,False
+q7b_r4,80,Unc13b,,NA,False
+q7b_r4,81,Rpgrip1l,,NA,False
+q7b_r4,82,Pik3r1,,NA,False
+q7b_r4,83,Oxtr,,NA,False
+q7b_r4,84,Tmem106b,,NA,False
+q7b_r4,85,Nipa1,,NA,False
+q7b_r4,86,Son,21.0,GT 11-25,True
+q7b_r4,87,Zswim6,32.0,GT 26-50,True
+q7b_r4,88,Smpd3,,NA,False
+q7b_r4,89,Rfx3,,NA,False
+q7b_r4,90,Pacs1,,NA,False
+q7b_r4,91,Safe_target_17,,NA,False
+q7b_r4,92,Tia1,,NA,False
+q7b_r4,93,Safe_target_76,,NA,False
+q7b_r4,94,Dnajb6,,NA,False
+q7b_r4,95,Cdkl5,,NA,False
+q7b_r4,96,Dnajb4,,NA,False
+q7b_r4,97,Safe_target_71,,NA,False
+q7b_r4,98,Suco,,NA,False
+q7b_r4,99,Dock3,47.0,GT 26-50,True
+q7b_r4,100,Safe_target_15,,NA,False

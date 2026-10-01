@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://distributed_agents.local/schemas/mgi-target-mapping-v1.schema.json",
+  "title": "MGI 6.24 Target Normalization Ledger",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "source", "mappings", "summary"],
+  "properties": {
+    "schema_version": {"const": "mgi-target-mapping-v1"},
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["database", "version", "report", "url", "sha256"],
+      "properties": {
+        "database": {"const": "MGI"},
+        "version": {"const": "6.24"},
+        "report": {"const": "MRK_List1.rpt.gz"},
+        "url": {
+          "const": "https://www.informatics.jax.org/downloads/reports/MRK_List1.rpt.gz"
+        },
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "mappings": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/mapping"}
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["total", "mapped", "controls", "ambiguous", "unmapped"],
+      "properties": {
+        "total": {"type": "integer", "minimum": 1},
+        "mapped": {"type": "integer", "minimum": 0},
+        "controls": {"type": "integer", "minimum": 0},
+        "ambiguous": {"type": "integer", "minimum": 0},
+        "unmapped": {"type": "integer", "minimum": 0}
+      }
+    }
+  },
+  "$defs": {
+    "nullableString": {
+      "oneOf": [{"type": "string", "minLength": 1}, {"type": "null"}]
+    },
+    "mapping": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "input_target",
+        "normalized_symbol",
+        "mgi_accession_id",
+        "match_method",
+        "matched_value",
+        "source_marker_status",
+        "marker_type",
+        "feature_types",
+        "candidate_mgi_accession_ids",
+        "candidate_symbols"
+      ],
+      "properties": {
+        "input_target": {"type": "string", "minLength": 1},
+        "normalized_symbol": {"$ref": "#/$defs/nullableString"},
+        "mgi_accession_id": {
+          "oneOf": [
+            {"type": "string", "pattern": "^MGI:[0-9]+$"},
+            {"type": "null"}
+          ]
+        },
+        "match_method": {
+          "type": "string",
+          "enum": [
+            "mgi_accession_id",
+            "official_symbol",
+            "withdrawn_symbol",
+            "synonym",
+            "casefold_official_symbol",
+            "casefold_withdrawn_symbol",
+            "casefold_synonym",
+            "withdrawn_without_replacement",
+            "non_gene_control",
+            "ambiguous",
+            "unmapped"
+          ]
+        },
+        "matched_value": {"$ref": "#/$defs/nullableString"},
+        "source_marker_status": {"$ref": "#/$defs/nullableString"},
+        "marker_type": {"$ref": "#/$defs/nullableString"},
+        "feature_types": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "candidate_mgi_accession_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "pattern": "^MGI:[0-9]+$"}
+        },
+        "candidate_symbols": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  }
+}

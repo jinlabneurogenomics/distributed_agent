@@ -1,0 +1,27 @@
+{
+  "schema_version": "distributed_agents-capability-manifest-v4",
+  "scope": "trusted-project-session",
+  "description": "Read-only Shi corpus capabilities for direct local Codex sessions, including its Claim layer and mouse target-analog lookup; no unrestricted graph access.",
+  "capabilities": [
+    {
+      "id": "corpus.calibration",
+      "available": true
+    },
+    {
+      "id": "corpus.findings",
+      "available": true
+    },
+    {
+      "id": "corpus.report_evidence",
+      "available": true
+    },
+    {
+      "id": "corpus.target_analogs",
+      "available": true
+    },
+    {
+      "id": "corpus.graph",
+      "available": false
+    }
+  ]
+}

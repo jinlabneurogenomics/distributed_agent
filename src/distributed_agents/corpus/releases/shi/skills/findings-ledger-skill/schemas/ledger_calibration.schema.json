@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://distributed_agents.local/schemas/ledger-calibration-v2.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "generation_version",
+    "artifact_schema",
+    "sources",
+    "counts",
+    "field_value_frequencies",
+    "crosstabs",
+    "claim_layer",
+    "semantic_assertions",
+    "reconciliation"
+  ],
+  "properties": {
+    "schema_version": {"const": "distributed_agents-ledger-calibration-v2"},
+    "generation_version": {"type": "string", "minLength": 1},
+    "artifact_schema": {"$ref": "#/$defs/source"},
+    "sources": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["findings"],
+      "properties": {"findings": {"$ref": "#/$defs/source"}}
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["findings", "targets", "biological_targets", "controls"],
+      "properties": {
+        "findings": {"type": "integer", "minimum": 1},
+        "targets": {"type": "integer", "minimum": 1},
+        "biological_targets": {"type": "integer", "minimum": 1},
+        "controls": {"type": "integer", "minimum": 0}
+      }
+    },
+    "field_value_frequencies": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["findings"],
+      "properties": {
+        "findings": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {"$ref": "#/$defs/frequency"}
+          }
+        }
+      }
+    },
+    "crosstabs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["finding_confidence_by_type"],
+      "properties": {
+        "finding_confidence_by_type": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["confidence", "finding_type", "count"],
+            "properties": {
+              "confidence": {"type": "string"},
+              "finding_type": {"type": "string"},
+              "count": {"type": "integer", "minimum": 1}
+            }
+          }
+        }
+      }
+    },
+    "claim_layer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "claims",
+        "claim_memberships",
+        "claimed_findings",
+        "unclaimed_findings",
+        "multi_claim_findings"
+      ],
+      "properties": {
+        "status": {"const": "available_compatibility_overlay"},
+        "claims": {"type": "integer", "minimum": 1},
+        "claim_memberships": {"type": "integer", "minimum": 1},
+        "claimed_findings": {"type": "integer", "minimum": 1},
+        "unclaimed_findings": {"type": "integer", "minimum": 0},
+        "multi_claim_findings": {"type": "integer", "minimum": 0}
+      }
+    },
+    "semantic_assertions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "statement"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "statement": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "reconciliation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "checks"],
+      "properties": {
+        "status": {"const": "passed"},
+        "checks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/check"}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": {"type": "string", "minLength": 1},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "schema_version": {"type": "string", "minLength": 1}
+      }
+    },
+    "frequency": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "count"],
+      "properties": {
+        "value": {"type": "string"},
+        "count": {"type": "integer", "minimum": 1}
+      }
+    },
+    "check": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "status", "actual", "expected"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "status": {"const": "passed"},
+        "actual": {"type": "integer", "minimum": 0},
+        "expected": {"type": "integer", "minimum": 0}
+      }
+    }
+  }
+}

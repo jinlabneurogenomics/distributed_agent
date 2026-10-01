@@ -1,0 +1,206 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://distributed_agents.local/schemas/corpus-release-v1.schema.json",
+  "title": "DistributedAgents corpus release manifest v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "release_id",
+    "title",
+    "corpus_family",
+    "release_date",
+    "artifacts",
+    "capabilities"
+  ],
+  "properties": {
+    "schema_version": {"const": "distributed_agents-corpus-release-v1"},
+    "release_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]+$"},
+    "title": {"type": "string", "minLength": 1},
+    "corpus_family": {"type": "string", "minLength": 1},
+    "release_date": {"type": "string", "format": "date"},
+    "description": {"type": "string"},
+    "artifacts": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {"$ref": "#/$defs/artifact"}
+    },
+    "capabilities": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["skills", "tooling", "projections"],
+      "properties": {
+        "skills": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["path", "version", "names", "roles"],
+          "properties": {
+            "path": {"$ref": "#/$defs/relativePath"},
+            "version": {"type": "string", "minLength": 1},
+            "names": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/skillName"}, "uniqueItems": true},
+            "roles": {
+              "type": "object",
+              "minProperties": 1,
+              "additionalProperties": {"$ref": "#/$defs/skillRole"}
+            }
+          }
+        },
+        "tooling": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["path", "version", "entrypoints"],
+          "properties": {
+            "path": {"$ref": "#/$defs/relativePath"},
+            "version": {"type": "string", "minLength": 1},
+            "entrypoints": {"type": "array", "items": {"$ref": "#/$defs/relativePath"}, "uniqueItems": true}
+          }
+        },
+        "projections": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["path", "version"],
+            "properties": {
+              "path": {"$ref": "#/$defs/relativePath"},
+              "version": {"type": "string", "minLength": 1}
+            }
+          }
+        }
+      }
+    },
+    "integrity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "target_membership": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["artifacts", "field", "reports_artifact", "report_field"],
+            "properties": {
+              "artifacts": {"type": "array", "minItems": 1, "items": {"type": "string"}, "uniqueItems": true},
+              "field": {"type": "string", "minLength": 1},
+              "reports_artifact": {"type": "string", "minLength": 1},
+              "report_field": {"type": "string", "minLength": 1}
+            }
+          }
+        },
+        "joins": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["from_artifacts", "field", "to_artifacts", "to_field", "scope_field"],
+            "properties": {
+              "from_artifacts": {"type": "array", "minItems": 1, "items": {"type": "string"}, "uniqueItems": true},
+              "field": {"type": "string", "minLength": 1},
+              "to_artifacts": {"type": "array", "minItems": 1, "items": {"type": "string"}, "uniqueItems": true},
+              "to_field": {"type": "string", "minLength": 1},
+              "scope_field": {"type": "string", "minLength": 1}
+            }
+          }
+        }
+      }
+    },
+    "lineage": {"type": "object"}
+  },
+  "$defs": {
+    "relativePath": {
+      "type": "string",
+      "minLength": 1,
+      "not": {"pattern": "^(?:/|[A-Za-z]:[\\\\/])"}
+    },
+    "skillName": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*-skill$"
+    },
+    "skillRole": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["skill", "entrypoints"],
+      "properties": {
+        "skill": {"$ref": "#/$defs/skillName"},
+        "entrypoints": {
+          "type": "object",
+          "additionalProperties": {"$ref": "#/$defs/relativePath"}
+        },
+        "graph_contract": {"$ref": "#/$defs/graphContract"}
+      }
+    },
+    "graphContract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema", "canonical_target_expansion"],
+      "properties": {
+        "schema": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["node_labels", "label_invariants", "relationship_patterns"],
+          "properties": {
+            "node_labels": {
+              "type": "array",
+              "minItems": 1,
+              "items": {"type": "string", "minLength": 1},
+              "uniqueItems": true
+            },
+            "label_invariants": {
+              "type": "array",
+              "items": {"type": "string", "minLength": 1},
+              "uniqueItems": true
+            },
+            "relationship_patterns": {
+              "type": "array",
+              "minItems": 1,
+              "items": {"type": "string", "minLength": 1},
+              "uniqueItems": true
+            }
+          }
+        },
+        "canonical_target_expansion": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["query", "parameters"],
+          "properties": {
+            "query": {"type": "string", "minLength": 1},
+            "parameters": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["target"],
+              "properties": {"target": {"type": "string", "minLength": 1}}
+            }
+          }
+        }
+      }
+    },
+    "artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "kind", "format", "media_type", "sha256", "bytes", "records"],
+      "properties": {
+        "path": {"$ref": "#/$defs/relativePath"},
+        "kind": {"type": "string", "minLength": 1},
+        "format": {"enum": ["jsonl", "csv", "json", "sqlite", "text"]},
+        "media_type": {"type": "string", "minLength": 1},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "bytes": {"type": "integer", "minimum": 1},
+        "records": {"type": "integer", "minimum": 1},
+        "schema": {"$ref": "#/$defs/relativePath"},
+        "required_fields": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "required_columns": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "record_table": {"type": "string", "pattern": "^[A-Za-z][A-Za-z0-9_]{0,63}$"},
+        "id_column": {"type": "string"},
+        "scope_column": {"type": "string"},
+        "text_field": {"type": "string"},
+        "target_field": {"type": "string"}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"format": {"const": "sqlite"}}, "required": ["format"]},
+          "then": {"required": ["record_table"]}
+        }
+      ]
+    }
+  }
+}

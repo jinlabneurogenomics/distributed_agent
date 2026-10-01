@@ -1,0 +1,27 @@
+{
+  "ground_truth": "/gpfs/group/jin/asun/bioagents/debug/depletion/ground_truth/fisher/top150_depletion_151_TH_Prkcd_Grin2c_Glut_predicted_group.csv",
+  "predictions": {
+    "BioAgents q7b_v2": "/gpfs/group/jin/asun/bioagents/debug/depletion/runs/20260529T191007Z/bioagents/answer.txt",
+    "q7b_r4": "/gpfs/group/jin/asun/bioagents/debug/depletion/runs/q7b_r4/answer.txt"
+  },
+  "top_gt_relevance_cutoff": 100,
+  "pngs": [
+    "01_metric_summary_top100.png",
+    "01v2_metric_summary_top100_no_ap.png",
+    "02_at_k_curves_top100.png",
+    "03_cumulative_hits_top100.png",
+    "04_rank_scatter_gt150.png",
+    "05_predicted_rank_strips_gt_bins.png",
+    "06_gt_top30_recovery.png",
+    "07_hit_bin_composition.png",
+    "08_top30_mapping_table_bioagents_q7b_v2.png",
+    "08_top30_mapping_table_q7b_r4.png"
+  ],
+  "tables": [
+    "gt_top100_recovery.csv",
+    "metrics_top100.csv",
+    "predicted_top30_mapping.csv",
+    "prediction_annotations.csv",
+    "summary_tables.md"
+  ]
+}

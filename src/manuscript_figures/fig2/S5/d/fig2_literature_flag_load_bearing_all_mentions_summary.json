@@ -1,0 +1,61 @@
+{
+  "source": "results/bioeval/lit-agree-4flag/phenotype_findings_by_perturbation_deg_ordered.csv",
+  "selected_findings": 1519,
+  "findings_by_confidence": {
+    "high": 1519
+  },
+  "findings_by_flag": {
+    "Agree": 420,
+    "Disagree": 101,
+    "Inferred": 636,
+    "No Literature": 362,
+    "Unassessed": 0
+  },
+  "findings_contributing_at_least_one_plotted_block": 1353,
+  "findings_without_a_plotted_block": 166,
+  "unplaced_findings_by_confidence": {
+    "high": 166
+  },
+  "raw_explicit_cell_placements_by_confidence": {
+    "high": 3891
+  },
+  "plotted_explicit_cell_placements_by_confidence": {
+    "high": 3891
+  },
+  "noncanonical_cell_labels_excluded_by_confidence": {},
+  "noncanonical_cell_labels": {},
+  "positive_local_deg_required": false,
+  "zero_deg_placements_included_by_confidence": {
+    "high": 73
+  },
+  "visualization": "Literature flags: load-bearing findings only",
+  "matrix_and_density_tiers": {
+    "high": "Load-bearing"
+  },
+  "flag_rule": "Each matrix block takes its most decisive flag among findings in the selected tiers: Disagree > Agree > Inferred > No Literature > Unassessed.",
+  "placement_rule": "Every explicit reader-view placement in one of the 23 canonical cell classes is plotted, regardless of whether the target x cell block has a DEG at FDR < 0.1. Unresolved aggregate labels are excluded.",
+  "universe_label": "target\u00d7class blocks",
+  "universe_pairs": 25116,
+  "universe_targets": 1092,
+  "covered_pairs": 1808,
+  "covered_pairs_percent": 7.2,
+  "covered_targets": 520,
+  "covered_targets_percent": 47.6,
+  "blocks_by_displayed_flag": {
+    "Agree": 777,
+    "Disagree": 203,
+    "Inferred": 600,
+    "No Literature": 228,
+    "Unassessed": 0
+  },
+  "density_definition": "Gaussian-smoothed values across perturbations sorted by descending total DEG burden. DEG values are log10(n+1) before smoothing; each curve is independently scaled to a peak of 1.",
+  "density_bandwidth_targets": 18,
+  "outputs": [
+    "fig2_literature_flag_load_bearing_all_mentions__matrix.png",
+    "fig2_literature_flag_load_bearing_all_mentions__matrix.svg",
+    "fig2_literature_flag_load_bearing_all_mentions__matrix.pdf",
+    "fig2_literature_flag_load_bearing_all_mentions.png",
+    "fig2_literature_flag_load_bearing_all_mentions.svg",
+    "fig2_literature_flag_load_bearing_all_mentions.pdf"
+  ]
+}

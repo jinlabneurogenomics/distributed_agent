@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Shi holdout BioKG relationship build record",
+  "type": "object",
+  "required": ["schema_version", "input", "relationship_counts", "role_counts", "dangling_endpoints", "output", "build_policy"],
+  "properties": {
+    "schema_version": {"const": "distributed_agents-biokg-relationship-build-v2"},
+    "input": {
+      "type": "object",
+      "required": ["findings", "claim_contributions", "nodes"]
+    },
+    "relationship_counts": {
+      "type": "object",
+      "required": ["HAS_FINDING", "HAS_TARGET", "REPORTS_GENE", "SUPPORTED_BY", "CITES", "EXPRESSES_CLAIM"],
+      "additionalProperties": {"type": "integer", "minimum": 0}
+    },
+    "role_counts": {
+      "type": "object",
+      "required": ["target_to_finding", "finding_target", "finding_reported_comparator", "evidence", "reference", "ANCHORS", "SUPPORTS", "QUALIFIES", "CONTRASTS"],
+      "additionalProperties": {"type": "integer", "minimum": 0}
+    },
+    "dangling_endpoints": {"const": 0},
+    "output": {
+      "type": "object",
+      "required": ["path", "records", "bytes", "sha256"]
+    },
+    "build_policy": {
+      "type": "object",
+      "required": ["edge_vocabulary", "model_calls", "network", "semantic_extraction"],
+      "properties": {
+        "edge_vocabulary": {"const": "legacy_biokg_v2_subset_plus_frozen_claims_v1"},
+        "model_calls": {"const": false},
+        "network": {"const": false},
+        "semantic_extraction": {"const": false}
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,101 @@
+cohort	series	replicate	cutoff_k	recall
+BioAgents	individual	1	5	0.08
+BioAgents	individual	1	10	0.16
+BioAgents	individual	1	15	0.16
+BioAgents	individual	1	20	0.18
+BioAgents	individual	1	25	0.24
+BioAgents	individual	1	30	0.26
+BioAgents	individual	1	35	0.26
+BioAgents	individual	1	40	0.34
+BioAgents	individual	1	45	0.36
+BioAgents	individual	1	50	0.38
+BioAgents	individual	2	5	0.1
+BioAgents	individual	2	10	0.18
+BioAgents	individual	2	15	0.22
+BioAgents	individual	2	20	0.24
+BioAgents	individual	2	25	0.24
+BioAgents	individual	2	30	0.28
+BioAgents	individual	2	35	0.28
+BioAgents	individual	2	40	0.32
+BioAgents	individual	2	45	0.34
+BioAgents	individual	2	50	0.36
+BioAgents	individual	3	5	0.1
+BioAgents	individual	3	10	0.18
+BioAgents	individual	3	15	0.22
+BioAgents	individual	3	20	0.24
+BioAgents	individual	3	25	0.26
+BioAgents	individual	3	30	0.26
+BioAgents	individual	3	35	0.28
+BioAgents	individual	3	40	0.28
+BioAgents	individual	3	45	0.3
+BioAgents	individual	3	50	0.34
+BioAgents	median		5	0.1
+BioAgents	median		10	0.18
+BioAgents	median		15	0.22
+BioAgents	median		20	0.24
+BioAgents	median		25	0.24
+BioAgents	median		30	0.26
+BioAgents	median		35	0.28
+BioAgents	median		40	0.32
+BioAgents	median		45	0.34
+BioAgents	median		50	0.36
+Codex	individual	1	5	0.08
+Codex	individual	1	10	0.1
+Codex	individual	1	15	0.14
+Codex	individual	1	20	0.16
+Codex	individual	1	25	0.16
+Codex	individual	1	30	0.16
+Codex	individual	1	35	0.16
+Codex	individual	1	40	0.16
+Codex	individual	1	45	0.16
+Codex	individual	1	50	0.18
+Codex	individual	2	5	0.08
+Codex	individual	2	10	0.12
+Codex	individual	2	15	0.16
+Codex	individual	2	20	0.18
+Codex	individual	2	25	0.2
+Codex	individual	2	30	0.2
+Codex	individual	2	35	0.2
+Codex	individual	2	40	0.22
+Codex	individual	2	45	0.24
+Codex	individual	2	50	0.24
+Codex	individual	3	5	0.04
+Codex	individual	3	10	0.04
+Codex	individual	3	15	0.06
+Codex	individual	3	20	0.12
+Codex	individual	3	25	0.14
+Codex	individual	3	30	0.14
+Codex	individual	3	35	0.14
+Codex	individual	3	40	0.14
+Codex	individual	3	45	0.16
+Codex	individual	3	50	0.18
+Codex	median		5	0.08
+Codex	median		10	0.1
+Codex	median		15	0.14
+Codex	median		20	0.16
+Codex	median		25	0.16
+Codex	median		30	0.16
+Codex	median		35	0.16
+Codex	median		40	0.16
+Codex	median		45	0.16
+Codex	median		50	0.18
+DepMap	baseline		5	0.06
+DepMap	baseline		10	0.12
+DepMap	baseline		15	0.14
+DepMap	baseline		20	0.14
+DepMap	baseline		25	0.16
+DepMap	baseline		30	0.18
+DepMap	baseline		35	0.22
+DepMap	baseline		40	0.24
+DepMap	baseline		45	0.26
+DepMap	baseline		50	0.26
+Top DEG	baseline		5	0.02
+Top DEG	baseline		10	0.02
+Top DEG	baseline		15	0.04
+Top DEG	baseline		20	0.06
+Top DEG	baseline		25	0.1
+Top DEG	baseline		30	0.1
+Top DEG	baseline		35	0.1
+Top DEG	baseline		40	0.12
+Top DEG	baseline		45	0.12
+Top DEG	baseline		50	0.14

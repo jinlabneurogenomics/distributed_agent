@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Shi holdout corpus extraction audit",
+  "type": "object",
+  "required": ["schema_version", "source", "ledger_records", "repairs_applied", "issues", "empty_sections", "build_policy"],
+  "properties": {
+    "schema_version": {"const": "distributed_agents-corpus-extraction-audit-v1"},
+    "source": {"type": "object"},
+    "ledger_records": {"type": "object"},
+    "repairs_applied": {"type": "object"},
+    "issues": {"type": "array"},
+    "empty_sections": {"type": "array"},
+    "build_policy": {"type": "object"}
+  },
+  "additionalProperties": false
+}

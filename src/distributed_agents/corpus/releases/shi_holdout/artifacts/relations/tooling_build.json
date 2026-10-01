@@ -1,0 +1,85 @@
+{
+  "build_policy": {
+    "claim_unit": "july-atomic-finding-claim-v1",
+    "evaluation_inputs": false,
+    "model_calls": false,
+    "network": false,
+    "relation_unit": "july-reciprocal-comparator-review-v1",
+    "semantic_deduplication": false
+  },
+  "inputs": {
+    "findings": {
+      "path": "artifacts/ledgers/findings.jsonl",
+      "records": 8718,
+      "sha256": "b1f9dc74ceb3a95cf41b14977abbc82c2d110303eca701b90ab2ae5da251acef"
+    }
+  },
+  "outputs": {
+    "claim_assignments": {
+      "bytes": 3385339,
+      "path": "artifacts/relations/claim_assignments.csv",
+      "records": 8718,
+      "sha256": "c562635882576b04284f682e4bc3f0ea13451eae43ccf6eb341cf0de489ff61f"
+    },
+    "claim_relations": {
+      "bytes": 2720063,
+      "path": "artifacts/relations/claim_relations.csv",
+      "records": 9860,
+      "sha256": "0a59b1e9d1e0819ce72b8a3a25f24fd5f7935039dcdbfcdb4c61d2f9d8b4f51c"
+    },
+    "ledger_calibration": {
+      "bytes": 468287,
+      "path": "artifacts/contracts/ledger_calibration.json",
+      "records": 1,
+      "sha256": "f18204317577d1ddeebcf4b775fbf558cb6ad89e7dcc95ff9d08f92566b16e40"
+    },
+    "value_dictionary": {
+      "bytes": 12291,
+      "path": "artifacts/contracts/value_dictionary.csv",
+      "records": 55,
+      "sha256": "6b4e5e0a72ddd9dece5b0029f550d5bcf3d60361ee6b4ff25ffaaf93196db300"
+    }
+  },
+  "reconciliation": {
+    "checks": [
+      {
+        "actual": 8718,
+        "expected": 8718,
+        "id": "finding_doc_ids_unique",
+        "status": "passed"
+      },
+      {
+        "actual": 8718,
+        "expected": 8718,
+        "id": "assignment_doc_ids_unique",
+        "status": "passed"
+      },
+      {
+        "actual": 8718,
+        "expected": 8718,
+        "id": "one_atomic_claim_per_finding",
+        "status": "passed"
+      },
+      {
+        "actual": 8718,
+        "expected": 8718,
+        "id": "claim_ids_unique",
+        "status": "passed"
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "id": "relation_endpoints_resolve",
+        "status": "passed"
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "id": "relations_are_reciprocal_pairs",
+        "status": "passed"
+      }
+    ],
+    "status": "passed"
+  },
+  "schema_version": "distributed_agents-july-tooling-build-v1"
+}

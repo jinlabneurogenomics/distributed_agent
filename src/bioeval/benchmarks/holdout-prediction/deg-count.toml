@@ -1,0 +1,10 @@
+task_id = "holdout-deg-count-prediction"
+prompt = "deg-count-prompt.md"
+
+[deliverables]
+files = ["trace.md", "answer.txt"]
+
+[inputs]
+training_de_path = "${DISTRIBUTED_AGENTS_SHARED_ROOT}/debug/260901_predict/holdout_task/Inputs/training_de_all_cell_groups.parquet"
+training_counts_path = "${DISTRIBUTED_AGENTS_SHARED_ROOT}/debug/260901_predict/holdout_task/Inputs/151_TH_Prkcd_Grin2c_Glut_deg_counts_training.csv"
+target_list_path = "deg-count-targets.csv"

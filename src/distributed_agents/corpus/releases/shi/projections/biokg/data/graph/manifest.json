@@ -1,0 +1,43 @@
+{
+  "schema_version": "distributed_agents.biokg.neo4j-dump-manifest-v1",
+  "created_at": "2026-09-30T23:06:04Z",
+  "artifact": {
+    "path": "neo4j.dump",
+    "sha256": "4c28d2fcd467d89b85a73c5fb55b85a02282fb627e79648944fa3414feebd1e2",
+    "size_bytes": 71630772,
+    "storage": "git-lfs"
+  },
+  "database": {
+    "name": "neo4j",
+    "neo4j_version": "5.26.30",
+    "edition": "community",
+    "apoc_version": "5.26.27",
+    "apoc_sha256": "59bb2a42376cd3c8c54ccdd804eb974bc71439656aba328fa724e4f65a7d1492"
+  },
+  "graph": {
+    "nodes": 79033,
+    "relationships": 324032,
+    "programs": 15,
+    "claims": 5107,
+    "claim_memberships": 11237,
+    "claimed_findings": 11199,
+    "unclaimed_findings": 144,
+    "multi_claim_findings": 38,
+    "claim_relations": 4243
+  },
+  "source": {
+    "repository_commit": "03d35e8c87a28307e0316c41b1f651fb67c07447",
+    "build_command": "load reconciled base; apply program and normalization layers; load Claim overlay; dump Neo4j",
+    "inputs": {
+      "data/base/nodes.merged.csv": "46cf7f8c216e69000002801295652d1967410c178bd94a6be6eb88ae7e08f6c0",
+      "data/base/relationships.merged.csv": "fce43b5122ca5a5359c77129de19362527875e9b7b7839c78e04cf9f7c2b50d7",
+      "data/claims/claim_assignments.tsv": "11cc9c2545ada30aafed10c1b356714d749dff11d32ec5674cd1502b470b91ca",
+      "data/claims/claim_relations.tsv": "19a61698119975ece225cf0e819ee7aff84fd51702b8faefe7d5be881f47f221",
+      "data/normalization/normalization.tsv": "714200f25549bb66c20c34094ddd62f5f0b80c78390efae74bc0fa6078537f85",
+      "data/normalization/measured_universe.txt": "63de22fa4464a0111a0912d59e28f5a701ed9d05018d877b9e91170bb12ac79c",
+      "build/build_program_layer.py": "6a2c8422287014666c91817ecd8e0e203be7740d0b66c66884f76c82f2aa83c7",
+      "build/apply_llm_normalization.py": "e66609cb6a6999a9b77f10c0d04f270550519bf325756cd8b6262d30f12259f8",
+      "build/load_claim_layer.py": "d62d710b253f2e93519d38c86d3ae88770f386bd5e96a0e63588b66ae3b7c5ac"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Shi holdout Finding-to-Claim contribution",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "contribution_id",
+    "claim_id",
+    "claim_scope",
+    "finding_doc_id",
+    "target_gene",
+    "finding_id",
+    "role",
+    "rationale"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "july-bottom-up-claim-contribution-v1"
+    },
+    "contribution_id": {
+      "type": "string",
+      "pattern": "^claim-contribution:[0-9a-f]{20}$"
+    },
+    "claim_id": {
+      "type": "string",
+      "pattern": "^claim:[0-9a-f]{20}$"
+    },
+    "claim_scope": {
+      "const": "corpus"
+    },
+    "finding_doc_id": {
+      "type": "string",
+      "pattern": "^[^:]+:F[0-9]+$"
+    },
+    "target_gene": {
+      "type": "string",
+      "minLength": 1
+    },
+    "finding_id": {
+      "type": "string",
+      "pattern": "^F[0-9]+$"
+    },
+    "role": {
+      "enum": [
+        "ANCHORS",
+        "SUPPORTS",
+        "QUALIFIES",
+        "CONTRASTS"
+      ]
+    },
+    "rationale": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": false
+}

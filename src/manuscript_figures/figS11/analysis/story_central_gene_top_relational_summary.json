@@ -1,0 +1,12 @@
+{
+  "relational_corpus_size": 3397,
+  "stories": 144,
+  "story_central_gene_pairs": 233,
+  "unique_central_genes": 217,
+  "pair_proxy_is_exact_anchor": 52,
+  "pairs_with_any_exact_anchor_in_3397": 108,
+  "story_selected_proxy_is_exact_anchor": 26,
+  "detail_output": "runs/260920_efron_unfloored_novelty_stats_replication/story_central_gene_top_relational_finding.tsv",
+  "story_output": "runs/260920_efron_unfloored_novelty_stats_replication/story_best_central_gene_top_relational_finding.tsv",
+  "selection_rule": "For each story-central-gene pair, select the first occurrence of that gene in the exact pre-floor Efron 3,397 ordering. For the 144-row story view, select the lowest-rank pair among that story central genes."
+}

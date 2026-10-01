@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="272.325994pt" height="165.312pt" viewBox="0 0 272.325994 165.312" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-08-01T18:51:40.757219</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.9, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 165.312 
+L 272.325994 165.312 
+L 272.325994 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 79.185994 48.033175 
+L 223.555829 48.033175 
+L 223.555829 36.608168 
+L 79.185994 36.608168 
+z
+" clip-path="url(#paf712bbca6)" style="fill: #5f7f95; stroke: #ffffff; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 223.555829 48.033175 
+L 268.725994 48.033175 
+L 268.725994 36.608168 
+L 223.555829 36.608168 
+z
+" clip-path="url(#paf712bbca6)" style="fill: #c8c7be; stroke: #ffffff; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #ffffff" x="151.370911" y="43.976297" transform="rotate(-0 151.370911 43.976297)">Has literature  76.2%</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 6px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #52514e" x="246.140911" y="43.976297" transform="rotate(-0 246.140911 43.976297)">23.8%</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_4">
+    <path d="M 79.185994 161.712 
+L 268.725994 161.712 
+L 268.725994 66.503604 
+L 79.185994 66.503604 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 79.185994 161.712 
+L 79.185994 66.503604 
+" clip-path="url(#pd9b31d4e3b)" style="fill: none; stroke: #e1e0d9; stroke-width: 0.7; stroke-linecap: square"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 79.185994 85.695387 
+L 169.543534 85.695387 
+L 169.543534 73.901554 
+L 79.185994 73.901554 
+z
+" clip-path="url(#pd9b31d4e3b)" style="fill: #70bf73"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 79.185994 107.138719 
+L 100.914831 107.138719 
+L 100.914831 95.344886 
+L 79.185994 95.344886 
+z
+" clip-path="url(#pd9b31d4e3b)" style="fill: #ed8255"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 79.185994 128.582051 
+L 216.013126 128.582051 
+L 216.013126 116.788219 
+L 79.185994 116.788219 
+z
+" clip-path="url(#pd9b31d4e3b)" style="fill: #92918c"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 79.185994 154.31405 
+L 157.065588 154.31405 
+L 157.065588 142.520218 
+L 79.185994 142.520218 
+z
+" clip-path="url(#pd9b31d4e3b)" style="fill: #c8c7be"/>
+   </g>
+   <g id="matplotlib.axis_1"/>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_2"/>
+     <g id="text_3">
+      <text style="font-size: 7.4px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #0b0b0b" x="75.685994" y="82.609892" transform="rotate(-0 75.685994 82.609892)">Agree</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_3"/>
+     <g id="text_4">
+      <text style="font-size: 7.4px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #0b0b0b" x="75.685994" y="104.053225" transform="rotate(-0 75.685994 104.053225)">Disagree</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_4"/>
+     <g id="text_5">
+      <text style="font-size: 7.4px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #0b0b0b" x="75.685994" y="125.496557" transform="rotate(-0 75.685994 125.496557)">Inferred</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_5"/>
+     <g id="text_6">
+      <text style="font-size: 7.4px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #0b0b0b" x="75.685994" y="151.228556" transform="rotate(-0 75.685994 151.228556)">No Literature</text>
+     </g>
+    </g>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 7.4px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #0b0b0b" x="232.778752" y="81.840408" transform="rotate(-0 232.778752 81.840408)">420</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 6.4px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #52514e" x="265.458063" y="81.56447" transform="rotate(-0 265.458063 81.56447)">27.6%</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 7.4px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #0b0b0b" x="232.778752" y="103.28374" transform="rotate(-0 232.778752 103.28374)">101</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 6.4px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #52514e" x="265.458063" y="103.007803" transform="rotate(-0 265.458063 103.007803)">6.6%</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 7.4px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #0b0b0b" x="232.778752" y="124.727073" transform="rotate(-0 232.778752 124.727073)">636</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 6.4px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #52514e" x="265.458063" y="124.451135" transform="rotate(-0 265.458063 124.451135)">41.9%</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 7.4px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #0b0b0b" x="232.778752" y="150.459071" transform="rotate(-0 232.778752 150.459071)">362</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 6.4px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #52514e" x="265.458063" y="150.183134" transform="rotate(-0 265.458063 150.183134)">23.8%</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 5.4px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #52514e" transform="translate(7.703156 119.336865) rotate(-90)">has literature</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 5.4px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; fill: #52514e" transform="translate(7.703156 156.055181) rotate(-90)">no lit.</text>
+   </g>
+   <g id="patch_9">
+    <path d="M 10.951594 131.691335 
+L 16.637794 131.691335 
+L 16.637794 70.792271 
+L 10.951594 70.792271 
+z
+" style="fill: #5f7f95"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 10.951594 157.423334 
+L 16.637794 157.423334 
+L 16.637794 139.410934 
+L 10.951594 139.410934 
+z
+" style="fill: #c8c7be"/>
+   </g>
+  </g>
+  <g id="text_17">
+   <text style="font-weight: 700; font-size: 8.5px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start" x="79.185994" y="10.058672" transform="rotate(-0 79.185994 10.058672)">Union literature flags</text>
+  </g>
+  <g id="text_18">
+   <text style="font-size: 6.4px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #52514e" x="268.725994" y="8.9814" transform="rotate(-0 268.725994 8.9814)">n = 1,519 findings</text>
+  </g>
+  <g id="text_19">
+   <text style="font-size: 5.8px; font-family: 'Arial', 'Helvetica', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #52514e" x="79.185994" y="20.103094" transform="rotate(-0 79.185994 20.103094)">Agree, Disagree and Inferred all rest on retrieved literature.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="paf712bbca6">
+   <rect x="79.185994" y="34.704" width="189.54" height="15.233343"/>
+  </clipPath>
+  <clipPath id="pd9b31d4e3b">
+   <rect x="79.185994" y="66.503604" width="189.54" height="95.208396"/>
+  </clipPath>
+ </defs>
+</svg>

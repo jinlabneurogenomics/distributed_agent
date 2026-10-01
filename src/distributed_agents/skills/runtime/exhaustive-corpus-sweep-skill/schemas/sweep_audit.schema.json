@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://distributed_agents.local/schemas/corpus-sweep-audit-v1.json",
+  "title": "DistributedAgents exhaustive corpus sweep audit",
+  "type": "object",
+  "required": ["schema_version", "status", "counts", "missing_ids", "extra_ids", "duplicate_ids", "slices", "errors"],
+  "properties": {
+    "schema_version": {"const": "distributed_agents-corpus-sweep-audit-v1"},
+    "status": {"enum": ["passed", "failed"]},
+    "counts": {
+      "type": "object",
+      "required": ["planned", "covered", "emitted_units", "rejected_units", "emitted_records"]
+    },
+    "missing_ids": {"type": "array", "items": {"type": "string"}},
+    "extra_ids": {"type": "array", "items": {"type": "string"}},
+    "duplicate_ids": {"type": "array", "items": {"type": "string"}},
+    "slices": {"type": "array"},
+    "errors": {"type": "array", "items": {"type": "string"}}
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "BioKG Recall"
+  short_description: "Plan and run flexible Cypher retrieval over the BioKG Neo4j finding graph"
+  default_prompt: "Read the schema with biokg_cypher.py --schema, construct effect_status-aware Cypher for the endpoint (convergence, dominant pathways, cell-type landscape, target evidence), aggregate with count(DISTINCT target), and report the effect_status mode plus the finding, evidence, and reference records behind every count."

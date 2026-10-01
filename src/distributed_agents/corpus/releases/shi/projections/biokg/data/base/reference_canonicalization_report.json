@@ -1,0 +1,17 @@
+{
+  "summary": {
+    "cites_relationships": 45085,
+    "conflict": 0,
+    "identifier_rows": {
+      "doi": 5276,
+      "pmcid": 253,
+      "pmid": 6850
+    },
+    "non_publication": 7156,
+    "reference_nodes": 15797,
+    "resolved": 9291,
+    "total": 16580,
+    "unique_publications": 8508,
+    "unresolved": 133
+  }
+}
