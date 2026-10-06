@@ -1,0 +1,130 @@
+{
+  "story_id": "S121",
+  "title": "Ranbp2 knockdown yields gated RNA/SUMO and calcium-synaptic programs rather than a uniform nuclear-pore response",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Ranbp2 knockdown produced FDR-positive signatures in 6 of 20 tested cell types. 022 L5 ET CTX Glut had FDR-supported target depletion, Ranbp2 logFC -0.536 and FDR 0.00653, plus a 56-gene mixed RNA/nuclear response including Gpr162, Dync1h1, Rbm15, Kmt2a, Srrm2, and Pcbp1. 308 CB GABA instead had 98 FDR genes enriched for calcium/synaptic transcripts, including Grm1, Epha4, Itpr1, Prkcg, Kcna6, Dlg2, and Cacna2d2.",
+  "biological_interpretation": "A RANBP2/SUMO nuclear-pore perturbation is read out differently by different neurons: cortical L5 ET cells couple it to RNA and nuclear-protein abundance, whereas cerebellar GABA cells expose a calcium/synaptic program.",
+  "targets": [
+    "Ranbp2"
+  ],
+  "cell_types": [
+    "022 L5 ET CTX Glut",
+    "308 CB GABA",
+    "052 Pvalb Gaba",
+    "155 MB Glut"
+  ],
+  "support": {
+    "support_level": 4,
+    "exact_de_rows": [
+      {
+        "gene_target": "Ranbp2",
+        "cell_type": "022 L5 ET CTX Glut",
+        "gene": "Ranbp2",
+        "log2_fold_change": -0.536,
+        "pvals_adj": 0.00653
+      },
+      {
+        "gene_target": "Ranbp2",
+        "cell_type": "022 L5 ET CTX Glut",
+        "gene": "Gpr162",
+        "log2_fold_change": -0.487,
+        "pvals_adj": 0.00778
+      },
+      {
+        "gene_target": "Ranbp2",
+        "cell_type": "022 L5 ET CTX Glut",
+        "gene": "Rbm15",
+        "log2_fold_change": 0.751,
+        "pvals_adj": 0.0194
+      },
+      {
+        "gene_target": "Ranbp2",
+        "cell_type": "022 L5 ET CTX Glut",
+        "gene": "Srrm2",
+        "log2_fold_change": -0.373,
+        "pvals_adj": 0.035
+      },
+      {
+        "gene_target": "Ranbp2",
+        "cell_type": "308 CB GABA",
+        "gene": "Grm1",
+        "log2_fold_change": 0.829,
+        "pvals_adj": 0.00872
+      },
+      {
+        "gene_target": "Ranbp2",
+        "cell_type": "308 CB GABA",
+        "gene": "Epha4",
+        "log2_fold_change": 1.084,
+        "pvals_adj": 0.00872
+      },
+      {
+        "gene_target": "Ranbp2",
+        "cell_type": "308 CB GABA",
+        "gene": "Itpr1",
+        "log2_fold_change": 1.412,
+        "pvals_adj": 0.0261
+      },
+      {
+        "gene_target": "Ranbp2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Coro6",
+        "log2_fold_change": -0.866,
+        "pvals_adj": 0.0335
+      }
+    ],
+    "report_evidence_summary": [
+      "Ranbp2:E001",
+      "Ranbp2:E002",
+      "Ranbp2:E003",
+      "Ranbp2:E004",
+      "Ranbp2:E005",
+      "Ranbp2:E007"
+    ]
+  },
+  "caveats": [
+    "The 155 MB Glut and 052 Pvalb GABA responses had weak or absent measured Ranbp2 transcript depletion; 14 of 20 tested classes had zero FDR-level downstream genes."
+  ],
+  "prior_expectation": {
+    "summary": "RANBP2 is a nuclear-envelope SUMO E3 ligase component, so RNA/nuclear-protein responses are plausible; the cerebellar calcium/synaptic arm is cell-state-specific and not a generic nuclear-pore signature.",
+    "citations": [
+      {
+        "ref_id": "Ranbp2:R001",
+        "ref": "Reactome R-HSA-3108232",
+        "url_or_doi": "https://reactome.org/content/detail/R-HSA-3108232",
+        "supports": "RANBP2 in nuclear-envelope SUMOylation"
+      },
+      {
+        "ref_id": "Ranbp2:R003",
+        "ref": "Werner et al. 2012 PMID:22464730",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/22464730/",
+        "supports": "RanBP2/RanGAP1*SUMO1/Ubc9 as a SUMO E3 ligase"
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 4,
+    "priority": 3
+  },
+  "report_evidence_ids": [
+    "Ranbp2:E001",
+    "Ranbp2:E002",
+    "Ranbp2:E003",
+    "Ranbp2:E004",
+    "Ranbp2:E005",
+    "Ranbp2:E007"
+  ],
+  "reference_ids": [
+    "Ranbp2:R001",
+    "Ranbp2:R003"
+  ],
+  "source_urls_or_dois": [
+    "https://reactome.org/content/detail/R-HSA-3108232",
+    "https://pubmed.ncbi.nlm.nih.gov/22464730/"
+  ],
+  "source_claim_ids": [
+    "claim:ranbp2_f001_f4b8d0c8a795"
+  ]
+}

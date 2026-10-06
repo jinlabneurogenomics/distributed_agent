@@ -1,0 +1,122 @@
+{
+  "story_id": "S036",
+  "title": "Manf loss derepresses an Hspa5-centered ER chaperone module while Atf6 loss does not",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Manf perturbation recurrently induced Hspa5, Sdf2l1, Dnajb9, Hyou1, Pdia6, Snd1, and related ER proteostasis transcripts across caudal and subcortical neuronal classes; Atf6 perturbation stayed buffered in the same ER-stress neighborhood.",
+  "biological_interpretation": "Basal MANF insufficiency is a stronger trigger of neuronal ER-chaperone transcription than ATF6 loss, supporting MANF augmentation rather than inhibition as the stress-reducing direction.",
+  "targets": [
+    "Manf",
+    "Atf6",
+    "Hspa5",
+    "Sdf2l1",
+    "Dnajb9",
+    "Hyou1",
+    "Pdia6",
+    "Snd1"
+  ],
+  "cell_types": [
+    "155 MB Glut",
+    "191 MB P MY GABA",
+    "054 CNU-MGE GABA",
+    "066 CNU-HYa HY GABA",
+    "151 TH Prkcd Grin2c Glut"
+  ],
+  "support": {
+    "exact_de_rows": [
+      {
+        "target": "Manf",
+        "cell_type": "155 MB Glut",
+        "gene": "Hspa5",
+        "logfoldchanges": 0.8788982033729553,
+        "pvals": 1.3958417504308482e-18,
+        "pvals_adj": 2.4347667652765286e-14,
+        "score": 8.797752380371094
+      },
+      {
+        "target": "Manf",
+        "cell_type": "155 MB Glut",
+        "gene": "Sdf2l1",
+        "logfoldchanges": 1.379090666770935,
+        "pvals": 6.416718828893404e-09,
+        "pvals_adj": 3.730894217746255e-05,
+        "score": 5.80551815032959
+      },
+      {
+        "target": "Manf",
+        "cell_type": "155 MB Glut",
+        "gene": "Dnajb9",
+        "logfoldchanges": 0.7793358564376831,
+        "pvals": 2.1568154715540877e-08,
+        "pvals_adj": 9.405333067579488e-05,
+        "score": 5.598927974700928
+      },
+      {
+        "target": "Manf",
+        "cell_type": "155 MB Glut",
+        "gene": "Pdia6",
+        "logfoldchanges": 0.5334029793739319,
+        "pvals": 8.547785435729914e-08,
+        "pvals_adj": 0.0002484983689257281,
+        "score": 5.355165958404541
+      },
+      {
+        "target": "Manf",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Hspa5",
+        "logfoldchanges": 0.4581541121006012,
+        "pvals": 6.938055961918086e-11,
+        "pvals_adj": 1.1974390784674424e-06,
+        "score": 6.5219902992248535
+      },
+      {
+        "target": "Atf6",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Hspa5",
+        "logfoldchanges": -0.17884273827075958,
+        "pvals": 0.03672971860893582,
+        "pvals_adj": 1.0,
+        "score": -2.0887556076049805
+      }
+    ],
+    "evidence_summary": "Manf:F001 resolves recurrent Hspa5-centered ER chaperone induction; Atf6:F003 resolves that Atf6 loss did not enter the Manf/Hspa5 ER-chaperone state."
+  },
+  "caveats": [
+    "Atf6 target depletion was only nominal.",
+    "The assay measured basal RNA abundance, not acute ER stress, ATF6 cleavage, or Xbp1 splicing."
+  ],
+  "prior_expectation": {
+    "summary": "Manf:F001 resolves recurrent Hspa5-centered ER chaperone induction; Atf6:F003 resolves that Atf6 loss did not enter the Manf/Hspa5 ER-chaperone state.",
+    "citations": [
+      "Apostolou 2008 PMID:18561914",
+      "Yan 2019 PMID:30710085",
+      "Kovaleva 2023 PMID:36739529",
+      "Reactome R-HSA-381119"
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 3,
+    "support": 5,
+    "priority": 4
+  },
+  "report_evidence_ids": [
+    "Manf:E002",
+    "Manf:E003",
+    "Manf:E004",
+    "Manf:E006",
+    "Atf6:E004",
+    "Atf6:E006"
+  ],
+  "reference_ids": [
+    "Manf:R003",
+    "Manf:R004",
+    "Manf:R005",
+    "Atf6:R002"
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/18561914/",
+    "https://pubmed.ncbi.nlm.nih.gov/30710085/",
+    "https://pubmed.ncbi.nlm.nih.gov/36739529/",
+    "https://reactome.org/content/detail/R-HSA-381119"
+  ]
+}

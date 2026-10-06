@@ -1,0 +1,39 @@
+{
+  "story_id": "S063",
+  "title": "ADNP loss produces a CHD4-like sparse chromatin program in thalamic, midbrain, hindbrain, and Pvalb neurons",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Adnp perturbation produced a sparse multi-cell response: 25 FDR genes in 151 TH Prkcd Grin2c Glut, three in 155 MB Glut, two in 191 MB P MY GABA, and one in 052 Pvalb Gaba. Cacnb3 rose recurrently, Plppr3/Atp9a fell in midbrain and thalamic contexts, and the 151/155 score vectors placed Chd4 as the nearest non-self Adnp neighbor.",
+  "biological_interpretation": "The signal fits a ChAHP-biased ADNP/CHD4 chromatin branch, but the measured transcriptome is sparse and cell-context-gated rather than a broad ADNP-loss collapse.",
+  "targets": ["Adnp", "Chd4", "Arid2"],
+  "cell_types": ["151 TH Prkcd Grin2c Glut", "155 MB Glut", "191 MB P MY GABA", "052 Pvalb Gaba"],
+  "support": [
+    {
+      "evidence_id": "Adnp:E002;Adnp:E005;Adnp:E006;Adnp:E008",
+      "description": "Adnp generated a 151 TH chromatin response and recurrent Cacnb3/Plppr3/Atp9a markers; Chd4 was its nearest non-self signature neighbor in 151 and 155.",
+      "exact_de_rows": [
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Adnp", "gene": "Xylt2", "logfoldchanges": -0.925364, "pvals": null, "pvals_adj": 1.54e-10},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Adnp", "gene": "Cpne7", "logfoldchanges": -0.906277, "pvals": null, "pvals_adj": 1.81e-09},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Adnp", "gene": "Vstm2l", "logfoldchanges": 1.582988, "pvals": null, "pvals_adj": 7.76e-06},
+        {"cell_type": "052 Pvalb Gaba", "gene_target": "Adnp", "gene": "Cacnb3", "logfoldchanges": 1.092834, "pvals": null, "pvals_adj": 2.70e-05},
+        {"cell_type": "155 MB Glut", "gene_target": "Adnp", "gene": "Cacnb3", "logfoldchanges": 0.863358, "pvals": null, "pvals_adj": 0.000123},
+        {"cell_type": "191 MB P MY GABA", "gene_target": "Adnp", "gene": "Plppr3", "logfoldchanges": -1.053785, "pvals": null, "pvals_adj": 0.033503}
+      ]
+    }
+  ],
+  "caveats": [
+    "Adnp self-transcript rows were nominal at best; none of 21 self rows passed FDR.",
+    "Arid2 diverged from the strongest thalamic Adnp response and should be treated as a negative comparator, not a driver."
+  ],
+  "prior_expectation": {
+    "summary": "ADNP is an autism and intellectual-disability chromatin factor and can recruit HP1 and CHD4 in the ChAHP complex, creating a direct prior for ADNP-CHD4 convergence.",
+    "citations": [
+      {"reference_id": "Adnp:R001", "citation": "Helsmoortel et al., Nature Genetics, 2014. PMID:24531329.", "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/24531329/"},
+      {"reference_id": "Adnp:R002", "citation": "Ostapcuk et al., Nature, 2018. PMID:29795351.", "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/29795351/"}
+    ]
+  },
+  "preliminary_scores": {"novelty": 3, "support": 4, "priority": 3},
+  "report_evidence_ids": ["Adnp:E001", "Adnp:E002", "Adnp:E003", "Adnp:E005", "Adnp:E006", "Adnp:E008"],
+  "reference_ids": ["Adnp:R001", "Adnp:R002", "Adnp:R003", "Adnp:R006", "Adnp:R010"],
+  "source_urls_or_dois": ["https://pubmed.ncbi.nlm.nih.gov/24531329/", "https://pubmed.ncbi.nlm.nih.gov/29795351/", "https://pubmed.ncbi.nlm.nih.gov/32714933/", "https://string-db.org/"]
+}

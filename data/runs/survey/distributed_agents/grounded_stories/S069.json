@@ -1,0 +1,126 @@
+{
+  "story_id": "S069",
+  "title": "PROX1 perturbation creates a thalamic transcription-factor state uncoupled from lymphatic VEGFC/FLT4/SOX18 circuitry",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Prox1 guides produced a statistically resolved 151 TH Prkcd Grin2c Glut response in which the measured Prox1 transcript increased and Tmem145/Vgf rose while Rreb1, Nexn, Snx25, and Kcnd2 fell; Flt4, Nr2f2, Sox18, and lymphatic VEGFC/PROX1 neighbors were inert in the same class.",
+  "biological_interpretation": "The adult thalamic Prox1-associated state is a guide-associated neuronal transcription-factor response, not a recapitulation of endothelial or lymphatic PROX1-FLT4 biology.",
+  "targets": [
+    "Prox1",
+    "Flt4",
+    "Sox18",
+    "Nr2f2",
+    "Mef2c",
+    "Auts2"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut"
+  ],
+  "support": {
+    "exact_de_rows": [
+      {
+        "target": "Prox1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Tmem145",
+        "logfoldchanges": 0.833490252494812,
+        "pvals": 1.5837413965024995e-19,
+        "pvals_adj": 2.7333792762236637e-15,
+        "score": 9.038818359375
+      },
+      {
+        "target": "Prox1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Vgf",
+        "logfoldchanges": 0.688552737236023,
+        "pvals": 1.7745093909020836e-14,
+        "pvals_adj": 1.531312878878953e-10,
+        "score": 7.665994167327881
+      },
+      {
+        "target": "Prox1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rreb1",
+        "logfoldchanges": -0.952707052230835,
+        "pvals": 7.726462308201121e-13,
+        "pvals_adj": 4.4450337659081045e-09,
+        "score": -7.165922164916992
+      },
+      {
+        "target": "Prox1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Nexn",
+        "logfoldchanges": -0.513613224029541,
+        "pvals": 4.3806228903031496e-06,
+        "pvals_adj": 0.003780258523187103,
+        "score": -4.59245491027832
+      },
+      {
+        "target": "Prox1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Snx25",
+        "logfoldchanges": -0.4616284966468811,
+        "pvals": 7.097600294901534e-06,
+        "pvals_adj": 0.005104061812071065,
+        "score": -4.4907402992248535
+      },
+      {
+        "target": "Prox1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kcnd2",
+        "logfoldchanges": -0.3273261487483978,
+        "pvals": 3.066988327916886e-05,
+        "pvals_adj": 0.013929776724083562,
+        "score": -4.1684346199035645
+      },
+      {
+        "target": "Prox1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Flt4",
+        "logfoldchanges": -19.053237915039062,
+        "pvals": 0.9767067737276826,
+        "pvals_adj": 1.0,
+        "score": -0.029197877272963524
+      },
+      {
+        "target": "Prox1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Sox18",
+        "logfoldchanges": 0.9797650575637817,
+        "pvals": 0.958657019594767,
+        "pvals_adj": 1.0,
+        "score": 0.0518389493227005
+      }
+    ],
+    "evidence_summary": "Prox1:F001 resolves a 151 TH-restricted response; Prox1:F005 resolves uncoupling from the VEGFC/FLT4/PROX1 lymphatic network."
+  },
+  "caveats": [
+    "Prox1 mRNA rose in the responsive class rather than falling.",
+    "Negative Flt4/Nr2f2/Sox18 profiles are off-context for endothelial lymphatic biology."
+  ],
+  "prior_expectation": {
+    "summary": "Prox1:F001 resolves a 151 TH-restricted response; Prox1:F005 resolves uncoupling from the VEGFC/FLT4/PROX1 lymphatic network.",
+    "citations": [
+      "Gauvrit 2018 DOI:10.1038/s41467-018-05039-1",
+      "STRING mouse Prox1 network"
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 4,
+    "priority": 3
+  },
+  "report_evidence_ids": [
+    "Prox1:E001",
+    "Prox1:E002",
+    "Prox1:E003",
+    "Prox1:E006"
+  ],
+  "reference_ids": [
+    "Prox1:R005",
+    "Prox1:R006"
+  ],
+  "source_urls_or_dois": [
+    "https://doi.org/10.1038/s41467-018-05039-1",
+    "https://string-db.org/"
+  ]
+}

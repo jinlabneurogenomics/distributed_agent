@@ -1,0 +1,122 @@
+{
+  "story_id": "S044",
+  "title": "Eef2 loss induces a cortical L2/3 Vgf/Cx3cl1/Son/Ranbp2/Smpd1 state rather than a generic elongation signature",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Eef2 perturbation produced its largest FDR signature in 007 L2-3 IT CTX Glut with 575 genes, including Vgf logFC 2.149 and FDR 1.01e-08, Nptx2 logFC 2.946 and FDR 3.02e-08, Cx3cl1 logFC 0.864 and FDR 4.93e-08, and Uchl1 logFC -0.712 and FDR 5.35e-05. Smaller Vgf-positive or Ranbp2-positive signatures appeared in Pvalb, L5 ET, and MB Glut.",
+  "biological_interpretation": "The mRNA response to Eef2 perturbation is strongly state-gated and biased toward superficial cortical excitatory neurons instead of reading out simple pan-neuronal translation elongation failure.",
+  "targets": [
+    "Eef2"
+  ],
+  "cell_types": [
+    "007 L2-3 IT CTX Glut",
+    "052 Pvalb Gaba",
+    "155 MB Glut",
+    "022 L5 ET CTX Glut"
+  ],
+  "support": {
+    "support_level": 3,
+    "exact_de_rows": [
+      {
+        "gene_target": "Eef2",
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "gene": "Vgf",
+        "log2_fold_change": 2.149,
+        "pvals_adj": 1.01e-08,
+        "wilcoxon_score": 7.162
+      },
+      {
+        "gene_target": "Eef2",
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "gene": "Nptx2",
+        "log2_fold_change": 2.946,
+        "pvals_adj": 3.02e-08,
+        "wilcoxon_score": 6.894
+      },
+      {
+        "gene_target": "Eef2",
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "gene": "Cx3cl1",
+        "log2_fold_change": 0.864,
+        "pvals_adj": 4.93e-08,
+        "wilcoxon_score": 6.783
+      },
+      {
+        "gene_target": "Eef2",
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "gene": "Uchl1",
+        "log2_fold_change": -0.712,
+        "pvals_adj": 5.35e-05,
+        "wilcoxon_score": -5.214
+      },
+      {
+        "gene_target": "Eef2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Vgf",
+        "log2_fold_change": 1.424,
+        "pvals_adj": 1.35e-05,
+        "wilcoxon_score": 6.144
+      },
+      {
+        "gene_target": "Eef2",
+        "cell_type": "155 MB Glut",
+        "gene": "Ranbp2",
+        "log2_fold_change": 0.827,
+        "pvals_adj": 2.6e-05,
+        "wilcoxon_score": 6.045
+      }
+    ],
+    "report_evidence_summary": [
+      "Eef2:E001",
+      "Eef2:E002",
+      "Eef2:E003",
+      "Eef2:E004",
+      "Eef2:E005",
+      "Eef2:E006"
+    ]
+  },
+  "caveats": [
+    "The measured Eef2 transcript itself was not FDR-depleted in any tested cell type, so the large downstream response could reflect protein-level editing, unmeasured isoforms, or guide-linked biology not captured by the assayed 3-prime Eef2 row."
+  ],
+  "prior_expectation": {
+    "summary": "EEF2 is the conserved ribosomal translocation factor and neuronal eEF2 phosphorylation is tied to dendritic mRNA translation; that prior biology predicts translation-related consequences but not this L2/3-centered Vgf/Cx3cl1 abundance state.",
+    "citations": [
+      {
+        "ref_id": "Eef2:R001",
+        "ref": "UniProtKB P58252",
+        "url_or_doi": "https://rest.uniprot.org/uniprotkb/P58252",
+        "supports": "mouse EEF2 catalytic function"
+      },
+      {
+        "ref_id": "Eef2:R004",
+        "ref": "Heise et al. 2014 DOI:10.3389/fncel.2014.00035",
+        "url_or_doi": "https://doi.org/10.3389/fncel.2014.00035",
+        "supports": "neuronal eEF2 phosphorylation and dendritic translation"
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 3,
+    "priority": 3
+  },
+  "report_evidence_ids": [
+    "Eef2:E001",
+    "Eef2:E002",
+    "Eef2:E003",
+    "Eef2:E004",
+    "Eef2:E005",
+    "Eef2:E006"
+  ],
+  "reference_ids": [
+    "Eef2:R001",
+    "Eef2:R004"
+  ],
+  "source_urls_or_dois": [
+    "https://rest.uniprot.org/uniprotkb/P58252",
+    "https://doi.org/10.3389/fncel.2014.00035"
+  ],
+  "source_claim_ids": [
+    "claim:eef2_f001_fddc8dcb8a77"
+  ]
+}

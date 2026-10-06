@@ -1,0 +1,230 @@
+{
+  "biological_interpretation": "This 308 CB GABA branch is Tsc2-specific and should be kept separate from the canonical TSC1/TSC2-mTOR sterol or lysosomal programs observed elsewhere.",
+  "caveats": [
+    "Tsc2 target-row depletion in 308 CB GABA was only nominal.",
+    "The story is a cell-specific RNA branch and does not negate canonical TSC1/TSC2 regulation of RHEB-mTORC1."
+  ],
+  "cell_types": [
+    "308 CB GABA"
+  ],
+  "exact_observed_result": "In 308 CB GABA, Tsc2 perturbation produced 37 FDR genes including Shank3, Cacna1d, Stxbp1, Grm8, Cabp1 and Slc8a3 up; Tsc1 had no FDR genes in the same class and Mtor/Akt3/Strada did not phenocopy the Tsc2 vector.",
+  "preliminary_scores": {
+    "novelty": 4,
+    "priority": 3,
+    "support": 3
+  },
+  "prior_expectation": {
+    "citations": [
+      "Reactome mTORC1-mediated signalling R-HSA-166208",
+      "STRING synapse enrichment for the 308 CB GABA Tsc2 FDR set"
+    ],
+    "expectation": "Reactome places TSC1/TSC2 upstream of RHEB and mTORC1; the cerebellar synaptic/calcium RNA state is noncanonical."
+  },
+  "reference_ids": [
+    "Tsc2:R001",
+    "Tsc2:R008"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Tsc2:E006",
+    "Tsc2:E011"
+  ],
+  "source_claims": [
+    {
+      "claim_id": "claim:tsc2_f005_462f26a9b714",
+      "finding_id": "F005",
+      "gene": "Tsc2",
+      "role": "member"
+    }
+  ],
+  "source_references": [
+    {
+      "citation": "Reactome. mTORC1-mediated signalling, R-HSA-166208, and TSC-related pathway annotations. Accessed 2025-04-29.",
+      "description": "Places TSC2 with TSC1 and TBC1D7 upstream of RHEB and mTORC1 in curated human signaling pathways.",
+      "ref_id": "R001",
+      "ref_slug": "reactome_mtorc1_tsc_complex",
+      "source": "Reactome",
+      "source_type": "database",
+      "target_gene": "Tsc2",
+      "url": "https://reactome.org/content/detail/R-HSA-166208"
+    },
+    {
+      "citation": "STRING enrichment query of the 308 CB GABA Tsc2 FDR-significant genes against Mus musculus. Accessed 2025-04-29.",
+      "description": "The 308 CB GABA Tsc2 significant gene set was enriched for synapse, synaptic membrane, presynapse, dendrite, and postsynapse compartment annotations.",
+      "ref_id": "R008",
+      "ref_slug": "string_308_cb_gaba_tsc2_enrichment",
+      "source": "STRING enrichment API",
+      "source_type": "database",
+      "target_gene": "Tsc2",
+      "url": "https://string-db.org/"
+    }
+  ],
+  "source_urls_or_dois": [
+    "https://reactome.org/content/detail/R-HSA-166208",
+    "https://string-db.org/"
+  ],
+  "status": "grounded",
+  "story_id": "S086",
+  "support": [
+    {
+      "exact_de_rows": [
+        {
+          "cell_type": "308 CB GABA",
+          "fdr": 0.8107706048416432,
+          "gene": "Tsc2",
+          "gene_target": "Tsc2",
+          "log2fc": -0.2766541838645935,
+          "pval": 0.06622050853353993,
+          "score": -1.836928129196167
+        },
+        {
+          "cell_type": "308 CB GABA",
+          "fdr": 0.0017109110004860965,
+          "gene": "Shank3",
+          "gene_target": "Tsc2",
+          "log2fc": 1.1081827878952026,
+          "pval": 1.009684863078251e-07,
+          "score": 5.324972152709961
+        },
+        {
+          "cell_type": "308 CB GABA",
+          "fdr": 0.020439465233533415,
+          "gene": "Cacna1d",
+          "gene_target": "Tsc2",
+          "log2fc": 0.8622183799743652,
+          "pval": 1.1357399747262019e-05,
+          "score": 4.3895721435546875
+        },
+        {
+          "cell_type": "308 CB GABA",
+          "fdr": 0.020439465233533415,
+          "gene": "Stxbp1",
+          "gene_target": "Tsc2",
+          "log2fc": 0.6036526560783386,
+          "pval": 1.044798470076459e-05,
+          "score": 4.407688140869141
+        },
+        {
+          "cell_type": "308 CB GABA",
+          "fdr": 0.0279659220117926,
+          "gene": "Grm8",
+          "gene_target": "Tsc2",
+          "log2fc": 1.4056906700134277,
+          "pval": 3.04317281626313e-05,
+          "score": 4.170211315155029
+        },
+        {
+          "cell_type": "308 CB GABA",
+          "fdr": 0.0279659220117926,
+          "gene": "Cabp1",
+          "gene_target": "Tsc2",
+          "log2fc": 1.3423196077346802,
+          "pval": 3.218340437585697e-05,
+          "score": 4.157439708709717
+        },
+        {
+          "cell_type": "308 CB GABA",
+          "fdr": 0.04188483835089475,
+          "gene": "Slc8a3",
+          "gene_target": "Tsc2",
+          "log2fc": 1.1865370273590088,
+          "pval": 8.387181441601532e-05,
+          "score": 3.933058500289917
+        }
+      ],
+      "finding": "Tsc2 308 CB GABA module"
+    },
+    {
+      "exact_de_rows": [
+        {
+          "cell_type": "308 CB GABA",
+          "fdr": 1.0,
+          "gene": "Tsc1",
+          "gene_target": "Tsc1",
+          "log2fc": -0.3784959614276886,
+          "pval": 0.011662921469979142,
+          "score": -2.5221824645996094
+        },
+        {
+          "cell_type": "308 CB GABA",
+          "fdr": 1.0,
+          "gene": "Shank3",
+          "gene_target": "Tsc1",
+          "log2fc": 0.15917563438415527,
+          "pval": 0.8829450463361004,
+          "score": 0.1472368836402893
+        },
+        {
+          "cell_type": "308 CB GABA",
+          "fdr": 1.0,
+          "gene": "Cacna1d",
+          "gene_target": "Tsc1",
+          "log2fc": 0.16203993558883667,
+          "pval": 0.29937347420777227,
+          "score": 1.0377779006958008
+        },
+        {
+          "cell_type": "308 CB GABA",
+          "fdr": 1.0,
+          "gene": "Stxbp1",
+          "gene_target": "Tsc1",
+          "log2fc": 0.11008681356906891,
+          "pval": 0.39837360116457976,
+          "score": 0.8445294499397278
+        },
+        {
+          "cell_type": "308 CB GABA",
+          "fdr": 1.0,
+          "gene": "Cabp1",
+          "gene_target": "Tsc1",
+          "log2fc": 0.45036059617996216,
+          "pval": 0.25904012410680166,
+          "score": 1.1286627054214478
+        },
+        {
+          "cell_type": "308 CB GABA",
+          "fdr": 1.0,
+          "gene": "Mtor",
+          "gene_target": "Mtor",
+          "log2fc": -0.17980621755123138,
+          "pval": 0.18265694432100144,
+          "score": -1.3326187133789062
+        },
+        {
+          "cell_type": "308 CB GABA",
+          "fdr": 1.0,
+          "gene": "Shank3",
+          "gene_target": "Mtor",
+          "log2fc": -0.03550003096461296,
+          "pval": 0.8318052356844325,
+          "score": 0.2123868614435196
+        },
+        {
+          "cell_type": "308 CB GABA",
+          "fdr": 1.0,
+          "gene": "Cacna1d",
+          "gene_target": "Mtor",
+          "log2fc": -0.12297078967094421,
+          "pval": 0.5125358369360193,
+          "score": -0.654894232749939
+        },
+        {
+          "cell_type": "308 CB GABA",
+          "fdr": 1.0,
+          "gene": "Stxbp1",
+          "gene_target": "Mtor",
+          "log2fc": -0.13758444786071777,
+          "pval": 0.5056134301871142,
+          "score": -0.6656835079193115
+        }
+      ],
+      "finding": "Tsc1/Mtor boundary"
+    }
+  ],
+  "targets": [
+    "Tsc2",
+    "Tsc1",
+    "Mtor"
+  ],
+  "title": "Tsc2 loss induces a cerebellar GABA synaptic/calcium state not shared with Tsc1 or Mtor"
+}

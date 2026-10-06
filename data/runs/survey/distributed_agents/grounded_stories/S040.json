@@ -1,0 +1,1039 @@
+{
+  "biological_interpretation": "The active DHX9 response is a nuclear RNP/splicing and pore-basket state, not a collapse of every nuclear-transport target or cytoplasmic RNAi/editing partner. / A putative TPR/nuclear-basket lesion yields a strong cell-selective RNA export/RNA-processing stress state in midbrain and thalamic neurons, but the absence of Tpr mRNA depletion means the hit should be treated as downstream-signature grounded rather than direct transcript-engagement grounded.",
+  "caveats": [
+    "Target-transcript depletion was not FDR-detectable, and several low-count classes had limited power.",
+    "Target editing and protein loss were not measured, so low-response subclasses could include weaker guide engagement.",
+    "Ranbp2 and Nup93 guides may have different editing efficiencies; Nup93 lacks a significant self-transcript decrease.",
+    "Correlations were restricted to Tnpo3-significant genes and do not prove direct physical ordering among TPR, spliceosome factors, and TNPO3.",
+    "The cosine similarities are modest and computed from summary signatures, not from replicated perturbation-level covariance.",
+    "Score-vector correlations were modest and do not prove direct biochemical interaction.",
+    "Exact log2 fold changes, scores, p-values, and FDRs in exact_de_rows were re-read from the Wilcoxon Parquet; the graph and cluster summaries were used only to nominate the target/readout combinations."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "066 CNU-HYa HY GABA",
+    "052 Pvalb Gaba",
+    "005 L4-5 IT CTX Glut",
+    "191 MB P MY GABA",
+    "145 MH-LH TH Glut",
+    "308 CB GABA"
+  ],
+  "exact_observed_result": "Dhx9 elicited a cell-selective RNA-processing state involving Trappc11, Glo1, Iqgap1, Prpf38a, Riok3, Atat1, Dusp11, Son, Ccdc93, and Snhg11; Tpr, Tnpo3, and Ranbp2 placed this response near nuclear-pore basket, SR/splicing, and nuclear-transport perturbations but away from Nup93, Kpna3, Xpo7, Dicer/Ago, and Adar arms. / Tpr ranked fourth in the footprint sweep with 5087 significant cell-gene pairs across 10 contexts, 50% in 155 MB Glut, and no on-target FDR support. The Tpr report found 5216 FDR<0.05 gene hits across 21 measured subclasses, dominated by 2578 in 155 MB Glut and 1768 in 151 TH Prkcd Grin2c Glut; the recurrent module included Ranbp6, Xpo1, Pigm, Med13, Tob1, and Zfp281 up and Rnpc3, Ogt, Ddx17, Amy1, Leng8, and Snhg11 down. Eleven subclasses, including 052 Pvalb Gaba with 86 perturbed cells, had zero FDR genes. Parquet-verified leading rows: Dhx9->Trappc11 in 155 MB Glut log2FC 1.79, FDR 7.78e-30; Dhx9->Iqgap1 in 151 TH Prkcd Grin2c Glut log2FC 1.51, FDR 9.38e-25; Dhx9->Trappc11 in 191 MB P MY GABA log2FC 2.04, FDR 1.02e-24; Dhx9->Zfp811 in 151 TH Prkcd Grin2c Glut log2FC 2.02, FDR 8.02e-20; Tpr->Snhg11 in 155 MB Glut log2FC -1.01, FDR 1.05e-19; Tpr->Tob1 in 155 MB Glut log2FC 1.67, FDR 1.55e-19.",
+  "preliminary_scores": {
+    "novelty": 4,
+    "priority": 4,
+    "support": 4
+  },
+  "prior_expectation": {
+    "citations": [
+      {
+        "citation": "Human Protein Atlas entry ENSG00000135829 / DHX9.",
+        "description": "Reports low brain-region and brain single-nucleus specificity with DHX9 RNA detected broadly, useful for comparing baseline expression with cell-type-restricted Perturb-seq response.",
+        "ref_id": "R002",
+        "ref_slug": "human_protein_atlas_dhx9",
+        "scoped_ref_id": "Dhx9:R002",
+        "source": "Human Protein Atlas",
+        "source_type": "database",
+        "target_gene": "Dhx9",
+        "url": "https://www.proteinatlas.org/ENSG00000135829-DHX9"
+      },
+      {
+        "citation": "Reactome. ContentService pathway and search queries for human TPR and NUP93. Accessed 2025-04-29.",
+        "description": "Database context linking TPR to mature mRNA transport, snRNP assembly, SUMOylation-related pathways, and NUP93 to a nuclear-envelope Nup93 complex.",
+        "ref_id": "R001",
+        "ref_slug": "reactome_tpr_nup93_annotations",
+        "scoped_ref_id": "Tpr:R001",
+        "source": "Reactome Content Service",
+        "source_type": "database",
+        "target_gene": "Tpr",
+        "url": "https://reactome.org/ContentService/data/pathways/low/entity/R-HSA-157692"
+      },
+      {
+        "citation": "Aksenova V, Smith A, Lee H, et al. Nucleoporin TPR is an integral component of the TREX-2 mRNA export pathway. Nat Commun. 2020;11:4577. doi:10.1038/s41467-020-18266-2.",
+        "description": "Acute degron study showing a unique TPR role at the nuclear basket that connects TREX-2 subunits with RNA transcription and export.",
+        "ref_id": "R002",
+        "ref_slug": "aksenova_2020_tpr_trex2",
+        "scoped_ref_id": "Tpr:R002",
+        "source": "Nature Communications",
+        "source_type": "pubmed",
+        "target_gene": "Tpr",
+        "url": "https://doi.org/10.1038/s41467-020-18266-2"
+      },
+      {
+        "citation": "Lee ES, Wolf EJ, Ihn SSJ, Smith HW, Emili A, Palazzo AF. TPR is required for the efficient nuclear export of mRNAs and lncRNAs from short and intron-poor genes. Nucleic Acids Res. 2020;48:11645-11663. doi:10.1093/nar/gkaa919.",
+        "description": "Defines a selective mRNA and lncRNA export defect after TPR depletion in human cells.",
+        "ref_id": "R003",
+        "ref_slug": "lee_2020_tpr_short_intronpoor_export",
+        "scoped_ref_id": "Tpr:R003",
+        "source": "Nucleic Acids Research",
+        "source_type": "pubmed",
+        "target_gene": "Tpr",
+        "url": "https://doi.org/10.1093/nar/gkaa919"
+      },
+      {
+        "citation": "Forler D, Rabut G, Ciccarelli FD, et al. RanBP2/Nup358 provides a major binding site for NXF1-p15 dimers at the nuclear pore complex and functions in nuclear mRNA export. Mol Cell Biol. 2004;24:1155-1167. doi:10.1128/MCB.24.3.1155-1167.2004.",
+        "description": "Shows that the cytoplasmic-filament nucleoporin RanBP2/Nup358 participates in mRNA export through NXF1-p15 binding.",
+        "ref_id": "R005",
+        "ref_slug": "forler_2004_ranbp2_nxf1",
+        "scoped_ref_id": "Tpr:R005",
+        "source": "Molecular and Cellular Biology",
+        "source_type": "pubmed",
+        "target_gene": "Tpr",
+        "url": "https://doi.org/10.1128/MCB.24.3.1155-1167.2004"
+      },
+      {
+        "citation": "Lai MC, Lin RI, Tarn WY. Transportin-SR2 mediates nuclear import of phosphorylated SR proteins. Proc Natl Acad Sci U S A. 2001;98(18):10154-10159. doi:10.1073/pnas.181354098.",
+        "description": "Primary evidence that Transportin-SR2/TNPO3 targets phosphorylated SR proteins to the nucleus and interacts with a nucleoporin.",
+        "ref_id": "R002",
+        "ref_slug": "lai_2001_transportin_sr2",
+        "scoped_ref_id": "Tnpo3:R002",
+        "source": "Proceedings of the National Academy of Sciences of the United States of America",
+        "source_type": "pubmed",
+        "target_gene": "Tnpo3",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/11517331/"
+      },
+      {
+        "citation": "Maertens GN et al. Structural basis for nuclear import of splicing factors by human Transportin 3. Proc Natl Acad Sci U S A. 2014;111(7):2728-2733. doi:10.1073/pnas.1320755111.",
+        "description": "Structural and interactome study showing TNPO3 binds many RS-repeat RNA-metabolism proteins and explaining cargo recognition and Ran-mediated release.",
+        "ref_id": "R003",
+        "ref_slug": "maertens_2014_tnpo3_structure",
+        "scoped_ref_id": "Tnpo3:R003",
+        "source": "Proceedings of the National Academy of Sciences of the United States of America",
+        "source_type": "pubmed",
+        "target_gene": "Tnpo3",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/24449914/"
+      },
+      {
+        "citation": "STRING API mouse Tnpo3 interaction-partner and enrichment queries.",
+        "description": "Database support that mouse Tnpo3 is functionally linked to Srsf1, Srsf5, Cpsf6, Nup153, and Ranbp2 and that recurrent Tnpo3-response genes are enriched for nuclear speckle and mRNA-splicing annotations.",
+        "ref_id": "R006",
+        "ref_slug": "string_mouse_tnpo3_network",
+        "scoped_ref_id": "Tnpo3:R006",
+        "source": "STRING",
+        "source_type": "database",
+        "target_gene": "Tnpo3",
+        "url": "https://string-db.org"
+      },
+      {
+        "citation": "Lee ES et al. TPR is required for the efficient nuclear export of mRNAs and lncRNAs from short and intron-poor genes. Nucleic Acids Res. 2020;48(20):11645-11663. doi:10.1093/nar/gkaa919.",
+        "description": "Primary evidence linking the TPR nuclear basket to export of mRNAs and lncRNAs from nuclear speckles to the nuclear pore.",
+        "ref_id": "R007",
+        "ref_slug": "lee_2020_tpr_rna_export",
+        "scoped_ref_id": "Tnpo3:R007",
+        "source": "Nucleic Acids Research",
+        "source_type": "pubmed",
+        "target_gene": "Tnpo3",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33091126/"
+      },
+      {
+        "citation": "STRING human RANBP2 interaction network, accessed through the STRING API for taxon 9606.",
+        "description": "Database support that RANBP2 is linked with RANGAP1, UBE2I, SUMO1, TPR, NUP153, NUP214, and NUP88 at high combined confidence.",
+        "ref_id": "R002",
+        "ref_slug": "string_ranbp2_network",
+        "scoped_ref_id": "Ranbp2:R002",
+        "source": "STRING",
+        "source_type": "database",
+        "target_gene": "Ranbp2",
+        "url": "https://string-db.org/cgi/network?identifiers=RANBP2&species=9606"
+      },
+      {
+        "citation": "Werner A, Flotho A, Melchior F. The RanBP2/RanGAP1*SUMO1/Ubc9 complex is a multisubunit SUMO E3 ligase. Mol Cell. 2012;46(3):287-298.",
+        "description": "Primary biochemical evidence that the stable RanBP2/RanGAP1*SUMO1/Ubc9 complex is the physiologically relevant RANBP2 SUMO E3 ligase.",
+        "ref_id": "R003",
+        "ref_slug": "werner_2012_ranbp2_multisubunit_sumo_e3",
+        "scoped_ref_id": "Ranbp2:R003",
+        "source": "Mol Cell",
+        "source_type": "pubmed",
+        "target_gene": "Ranbp2",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/22464730/"
+      },
+      {
+        "citation": "Ritterhoff T, Das H, Hofhaus G, Schr\u00f6der RR, Flotho A, Melchior F. The RanBP2/RanGAP1*SUMO1/Ubc9 SUMO E3 ligase is a disassembly machine for Crm1-dependent nuclear export complexes. Nat Commun. 2016;7:11482.",
+        "description": "Reconstituted work connecting the RANBP2 complex with Crm1-dependent nuclear export and SUMO-compatible RanGTP hydrolysis.",
+        "ref_id": "R004",
+        "ref_slug": "ritterhoff_2016_ranbp2_crm1_export_disassembly",
+        "scoped_ref_id": "Ranbp2:R004",
+        "source": "Nat Commun",
+        "source_type": "pubmed",
+        "target_gene": "Ranbp2",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/27160050/"
+      }
+    ],
+    "summary": "References were retained only when they were linked to one of the resolved source findings."
+  },
+  "reference_ids": [
+    "Dhx9:R002",
+    "Ranbp2:R002",
+    "Ranbp2:R003",
+    "Ranbp2:R004",
+    "Tnpo3:R002",
+    "Tnpo3:R003",
+    "Tnpo3:R006",
+    "Tnpo3:R007",
+    "Tpr:R001",
+    "Tpr:R002",
+    "Tpr:R003",
+    "Tpr:R005"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Dhx9:E002",
+    "Dhx9:E003",
+    "Dhx9:E004",
+    "Dhx9:E005",
+    "Dhx9:E006",
+    "Dhx9:E008",
+    "Ranbp2:E009",
+    "Tnpo3:E007",
+    "Tnpo3:E008",
+    "Tnpo3:E010",
+    "Tpr:E002",
+    "Tpr:E003",
+    "Tpr:E004",
+    "Tpr:E005",
+    "Tpr:E007",
+    "Tpr:E008",
+    "Tpr:E009"
+  ],
+  "source_urls_or_dois": [
+    "https://doi.org/10.1038/s41467-020-18266-2",
+    "https://doi.org/10.1093/nar/gkaa919",
+    "https://doi.org/10.1128/MCB.24.3.1155-1167.2004",
+    "https://pubmed.ncbi.nlm.nih.gov/11517331/",
+    "https://pubmed.ncbi.nlm.nih.gov/22464730/",
+    "https://pubmed.ncbi.nlm.nih.gov/24449914/",
+    "https://pubmed.ncbi.nlm.nih.gov/27160050/",
+    "https://pubmed.ncbi.nlm.nih.gov/33091126/",
+    "https://reactome.org/ContentService/data/pathways/low/entity/R-HSA-157692",
+    "https://string-db.org",
+    "https://string-db.org/cgi/network?identifiers=RANBP2&species=9606",
+    "https://www.proteinatlas.org/ENSG00000135829-DHX9"
+  ],
+  "status": "grounded",
+  "story_id": "S040",
+  "support": {
+    "exact_de_rows": [
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 7.778935119686215e-30,
+        "gene": "Trappc11",
+        "log2_fold_change": 1.7865983247756958,
+        "p_value": 4.459631439366058e-34,
+        "score": 12.170568466186523,
+        "target_gene": "Dhx9"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 9.378789474228466e-25,
+        "gene": "Iqgap1",
+        "log2_fold_change": 1.5095419883728027,
+        "p_value": 5.434144199680436e-29,
+        "score": 11.17452335357666,
+        "target_gene": "Dhx9"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr": 1.0206380924393113e-24,
+        "gene": "Trappc11",
+        "log2_fold_change": 2.036104917526245,
+        "p_value": 5.969341984087679e-29,
+        "score": 11.166179656982422,
+        "target_gene": "Dhx9"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 8.015580525493819e-20,
+        "gene": "Zfp811",
+        "log2_fold_change": 2.018659830093384,
+        "p_value": 9.288580480321941e-24,
+        "score": 10.048913955688477,
+        "target_gene": "Dhx9"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 1.0454949250534865e-19,
+        "gene": "Snhg11",
+        "log2_fold_change": -1.0066667795181274,
+        "p_value": 5.993779310058399e-24,
+        "score": -10.091996192932129,
+        "target_gene": "Tpr"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 1.5514383656395786e-19,
+        "gene": "Tob1",
+        "log2_fold_change": 1.6724895238876343,
+        "p_value": 1.7788664399926374e-23,
+        "score": 9.984672546386719,
+        "target_gene": "Tpr"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 5.229054589410069e-19,
+        "gene": "Chd9",
+        "log2_fold_change": 1.233361005783081,
+        "p_value": 8.993386325878695e-23,
+        "score": 9.822665214538574,
+        "target_gene": "Tpr"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 1.2153478215560868e-18,
+        "gene": "Glo1",
+        "log2_fold_change": 1.562206745147705,
+        "p_value": 1.3935077928751784e-22,
+        "score": 9.778433799743652,
+        "target_gene": "Dhx9"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 1.9284373686087592e-18,
+        "gene": "Wsb1",
+        "log2_fold_change": -1.0767203569412231,
+        "p_value": 4.422260777638615e-22,
+        "score": -9.660839080810547,
+        "target_gene": "Tpr"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 3.2722540358110754e-18,
+        "gene": "Ranbp6",
+        "log2_fold_change": 1.5548148155212402,
+        "p_value": 9.379848752539917e-22,
+        "score": 9.583513259887695,
+        "target_gene": "Tpr"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 1.3500594232214013e-17,
+        "gene": "Leng8",
+        "log2_fold_change": -0.8538535833358765,
+        "p_value": 4.643901014348683e-21,
+        "score": -9.416948318481445,
+        "target_gene": "Tpr"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 8.444131769124365e-17,
+        "gene": "Leng8",
+        "log2_fold_change": -0.7586143016815186,
+        "p_value": 4.8925961927831076e-21,
+        "score": -9.411466598510742,
+        "target_gene": "Tpr"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 9.705336218550563e-17,
+        "gene": "Amy1",
+        "log2_fold_change": -1.5656440258026123,
+        "p_value": 3.8948204741073176e-20,
+        "score": -9.190923690795898,
+        "target_gene": "Tpr"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 1.4885920930761924e-16,
+        "gene": "Glo1",
+        "log2_fold_change": 1.1952979564666748,
+        "p_value": 3.0721555497554873e-20,
+        "score": 9.216409683227539,
+        "target_gene": "Dhx9"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 1.4885920930761924e-16,
+        "gene": "Trappc11",
+        "log2_fold_change": 1.281023383140564,
+        "p_value": 3.4500077480182916e-20,
+        "score": 9.203958511352539,
+        "target_gene": "Dhx9"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr": 2.776036006771178e-16,
+        "gene": "Iqgap1",
+        "log2_fold_change": 2.0066967010498047,
+        "p_value": 3.2472055290340135e-20,
+        "score": 9.210463523864746,
+        "target_gene": "Dhx9"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr": 4.1367655959506895e-16,
+        "gene": "Zfp811",
+        "log2_fold_change": 2.0024828910827637,
+        "p_value": 7.258332429437401e-20,
+        "score": 9.12372875213623,
+        "target_gene": "Dhx9"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 5.758744618555863e-16,
+        "gene": "Pigm",
+        "log2_fold_change": 1.7368807792663574,
+        "p_value": 3.301464552287946e-19,
+        "score": 8.958158493041992,
+        "target_gene": "Tpr"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 8.514833851436434e-16,
+        "gene": "Zfp799",
+        "log2_fold_change": 0.946388304233551,
+        "p_value": 2.4667807669727197e-19,
+        "score": 8.990245819091797,
+        "target_gene": "Dhx9"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 1.1160790690471347e-15,
+        "gene": "Prpf38a",
+        "log2_fold_change": 1.0986628532409668,
+        "p_value": 3.879989810697496e-19,
+        "score": 8.940333366394043,
+        "target_gene": "Dhx9"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 1.2049271848801523e-15,
+        "gene": "Iqgap1",
+        "log2_fold_change": 1.6688563823699951,
+        "p_value": 2.0723393651553384e-19,
+        "score": 9.00937557220459,
+        "target_gene": "Dhx9"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 4.936566913352551e-15,
+        "gene": "Slitrk6",
+        "log2_fold_change": 0.8601117730140686,
+        "p_value": 5.720571195726926e-19,
+        "score": 8.897331237792969,
+        "target_gene": "Tpr"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 6.066255987702414e-15,
+        "gene": "Phip",
+        "log2_fold_change": 1.1452347040176392,
+        "p_value": 3.825535507924472e-18,
+        "score": 8.68386173248291,
+        "target_gene": "Tpr"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 1.9892060084900163e-14,
+        "gene": "Zfp281",
+        "log2_fold_change": 1.5494943857192993,
+        "p_value": 1.8117453707800525e-17,
+        "score": 8.505269050598145,
+        "target_gene": "Tpr"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 2.260862934374968e-14,
+        "gene": "Nap1l5",
+        "log2_fold_change": 0.8427125215530396,
+        "p_value": 2.203443781710397e-17,
+        "score": 8.482532501220703,
+        "target_gene": "Tpr"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 2.6392599341800162e-14,
+        "gene": "Med13",
+        "log2_fold_change": 1.094922661781311,
+        "p_value": 3.0136086927205456e-17,
+        "score": 8.446036338806152,
+        "target_gene": "Tpr"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr": 2.940787876136549e-14,
+        "gene": "Zfp799",
+        "log2_fold_change": 1.1747890710830688,
+        "p_value": 6.879840627293365e-18,
+        "score": 8.616888046264648,
+        "target_gene": "Dhx9"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 3.1984520396767406e-14,
+        "gene": "Zfp770",
+        "log2_fold_change": 1.3404945135116577,
+        "p_value": 6.592541497343132e-18,
+        "score": 8.621772766113281,
+        "target_gene": "Tpr"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 3.1984520396767406e-14,
+        "gene": "Xpo1",
+        "log2_fold_change": 0.9551512598991394,
+        "p_value": 7.412832816911154e-18,
+        "score": 8.608336448669434,
+        "target_gene": "Tpr"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 3.507837781913976e-14,
+        "gene": "Prpf38a",
+        "log2_fold_change": 1.3819962739944458,
+        "p_value": 8.044115764292785e-18,
+        "score": 8.598960876464844,
+        "target_gene": "Dhx9"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 4.302068279266098e-14,
+        "gene": "Rnpc3",
+        "log2_fold_change": -0.9857093095779419,
+        "p_value": 5.67262342619505e-17,
+        "score": -8.371838569641113,
+        "target_gene": "Tpr"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 4.987240633020267e-14,
+        "gene": "Atat1",
+        "log2_fold_change": 1.232425332069397,
+        "p_value": 1.429582248758891e-17,
+        "score": 8.532710075378418,
+        "target_gene": "Dhx9"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr": 5.827878931407086e-14,
+        "gene": "Riok3",
+        "log2_fold_change": 1.1805999279022217,
+        "p_value": 1.7042574954401353e-17,
+        "score": 8.512361526489258,
+        "target_gene": "Dhx9"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 8.102336811074517e-14,
+        "gene": "Agrn",
+        "log2_fold_change": -0.9521227478981018,
+        "p_value": 1.2077094369542938e-16,
+        "score": -8.282346725463867,
+        "target_gene": "Tpr"
+      },
+      {
+        "cell_type": "066 CNU-HYa HY GABA",
+        "fdr": 9.787806044321122e-14,
+        "gene": "Trappc11",
+        "log2_fold_change": 1.660226583480835,
+        "p_value": 5.7191808135568084e-18,
+        "score": 8.63802719116211,
+        "target_gene": "Dhx9"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 1.2839830363943825e-13,
+        "gene": "Ddx17",
+        "log2_fold_change": -0.9169629216194153,
+        "p_value": 2.2083065465706287e-16,
+        "score": -8.21019458770752,
+        "target_gene": "Tpr"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 1.7776094020213396e-13,
+        "gene": "Xpo1",
+        "log2_fold_change": 1.0493513345718384,
+        "p_value": 3.2611076572082135e-16,
+        "score": 8.163256645202637,
+        "target_gene": "Tpr"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 3.104693250406502e-13,
+        "gene": "Ogt",
+        "log2_fold_change": -0.6263216733932495,
+        "p_value": 1.0793301757018955e-16,
+        "score": -8.295716285705566,
+        "target_gene": "Tpr"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 4.827922549246955e-13,
+        "gene": "Ogt",
+        "log2_fold_change": -0.6865683794021606,
+        "p_value": 1.1071312387197055e-15,
+        "score": -8.014358520507812,
+        "target_gene": "Tpr"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 6.676162591202362e-13,
+        "gene": "Tob1",
+        "log2_fold_change": 1.1026360988616943,
+        "p_value": 3.4813988829492586e-16,
+        "score": 8.155360221862793,
+        "target_gene": "Tpr"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 2.0158164394661943e-12,
+        "gene": "Leng8",
+        "log2_fold_change": -0.5291988253593445,
+        "p_value": 1.1679798594740103e-16,
+        "score": -8.286328315734863,
+        "target_gene": "Tnpo3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 2.4967688310226518e-12,
+        "gene": "Riok3",
+        "log2_fold_change": 1.0420149564743042,
+        "p_value": 1.6884608569510694e-15,
+        "score": 7.962317943572998,
+        "target_gene": "Dhx9"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 3.3393289809667578e-12,
+        "gene": "Wsb1",
+        "log2_fold_change": -0.82625812292099,
+        "p_value": 1.9348334092165003e-15,
+        "score": -7.9454522132873535,
+        "target_gene": "Tpr"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 3.475271003462923e-12,
+        "gene": "Dusp11",
+        "log2_fold_change": 0.5627210736274719,
+        "p_value": 2.617679068602932e-15,
+        "score": 7.907899379730225,
+        "target_gene": "Dhx9"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 3.635538614726159e-12,
+        "gene": "Ddx17",
+        "log2_fold_change": -0.6697597503662109,
+        "p_value": 2.527751513802301e-15,
+        "score": -7.9122514724731445,
+        "target_gene": "Tpr"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 6.343831467887432e-12,
+        "gene": "Dhx9",
+        "log2_fold_change": 1.080766201019287,
+        "p_value": 2.036659761518639e-14,
+        "score": 7.648292064666748,
+        "target_gene": "Tpr"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 8.115521297720771e-12,
+        "gene": "Amy1",
+        "log2_fold_change": -1.0447466373443604,
+        "p_value": 6.58307539069997e-15,
+        "score": -7.79224157333374,
+        "target_gene": "Tpr"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 1.0884081848888143e-11,
+        "gene": "Ccdc93",
+        "log2_fold_change": 1.1431260108947754,
+        "p_value": 8.828851375191726e-15,
+        "score": 7.7550787925720215,
+        "target_gene": "Dhx9"
+      }
+    ],
+    "finding_summaries": [
+      {
+        "claim_id": "claim:dhx9_f001_3024b08da12b",
+        "confidence": "high",
+        "direction": "response concentrated in selected neuronal classes",
+        "finding_id": "F001",
+        "finding_type": "cell_type_selectivity",
+        "summary": "Dhx9 perturbation produced a sharply restricted neuronal response rather than a pan-neuronal expression program.",
+        "target_gene": "Dhx9",
+        "why_it_matters": "DHX9 is broadly expressed in brain resources, so the concentration of 207/243 FDR-significant rows in three thalamic, midbrain, and hindbrain classes suggests that the downstream state change is controlled by cellular context rather than baseline detectability alone."
+      },
+      {
+        "claim_id": "claim:tpr_f001_ccf8c1115389",
+        "confidence": "moderate",
+        "direction": "strong in 155 MB Glut and 151 TH Prkcd Grin2c Glut; absent or buffered in 11 of 21 measured subclasses",
+        "finding_id": "F001",
+        "finding_type": "cell_type_selectivity",
+        "summary": "Tpr perturbation produced a highly subclass-restricted response, dominated by 155 MB Glut and 151 TH Prkcd Grin2c Glut while many subclasses had no FDR-significant genes.",
+        "target_gene": "Tpr",
+        "why_it_matters": "A ubiquitous nuclear-basket mRNA-export factor did not yield a uniform neuronal phenotype; vulnerable midbrain and thalamic subclasses were much more transcriptionally responsive than many cortical and GABA subclasses."
+      },
+      {
+        "claim_id": "claim:tpr_f003_fdc50ebb8110",
+        "confidence": "moderate",
+        "direction": "Ranbp2 weakly similar; Nup93 divergent and silent",
+        "finding_id": "F003",
+        "finding_type": "cross_perturbation_contrast",
+        "summary": "Tpr partially converged with the cytoplasmic-filament nucleoporin Ranbp2 but sharply diverged from Nup93, whose perturbation was transcriptionally silent across all tested subclasses.",
+        "target_gene": "Tpr",
+        "why_it_matters": "The nuclear-pore phenotype is subcomplex-specific; the Tpr response cannot be inferred from a generic NPC perturbation and is not phenocopied by Nup93 in this dataset."
+      },
+      {
+        "claim_id": "claim:tnpo3_f003_23a2705e3a89",
+        "confidence": "moderate",
+        "direction": "convergent_with_sr_and_tpr_partial_or_absent_for_generic_transport",
+        "finding_id": "F003",
+        "finding_type": "cross_perturbation_contrast",
+        "summary": "Tnpo3 signatures aligned with Srsf1, Tpr, Prpf6, and Ddx23 perturbations but were absent or weaker for Kpna3, Xpo7, and Xpo1.",
+        "target_gene": "Tnpo3",
+        "why_it_matters": "This contrast narrows the interpretation to SR/splicing and nuclear-pore-basket RNA trafficking instead of a generic importin/exportin perturbation state."
+      },
+      {
+        "claim_id": "claim:ranbp2_f006_00ccbacc7d71",
+        "confidence": "exploratory",
+        "direction": "weakly similar for Tpr/Tnpo3 and near-neutral for Nup93/Xpo1/Xpo7/Kpna3",
+        "finding_id": "F006",
+        "finding_type": "pathway_uncoupling",
+        "summary": "Ranbp2 signatures weakly converged with Tpr and Tnpo3 but not with every assayed nuclear-transport perturbation.",
+        "target_gene": "Ranbp2",
+        "why_it_matters": "The result argues against treating all nuclear pore or transport genes as interchangeable; the closest dataset neighbors point to a limited TPR/import-export axis plus proteasome and splicing perturbations."
+      },
+      {
+        "claim_id": "claim:tpr_f004_c369e78cc453",
+        "confidence": "exploratory",
+        "direction": "positive signature similarity to Tpr",
+        "finding_id": "F004",
+        "finding_type": "convergent_module",
+        "summary": "Tpr signatures repeatedly placed spliceosome, RNA-export, proteasome, and UFMylation perturbations among the closest positive neighbors.",
+        "target_gene": "Tpr",
+        "why_it_matters": "The neighbor structure links Tpr loss to a broader post-transcriptional and proteostasis stress axis beyond one nuclear-basket gene."
+      }
+    ],
+    "parquet_filter": {
+      "cell_types": [
+        "151 TH Prkcd Grin2c Glut",
+        "155 MB Glut",
+        "066 CNU-HYa HY GABA",
+        "052 Pvalb Gaba",
+        "005 L4-5 IT CTX Glut",
+        "191 MB P MY GABA",
+        "145 MH-LH TH Glut",
+        "308 CB GABA"
+      ],
+      "gene_targets": [
+        "Dhx9",
+        "Ranbp2",
+        "Tnpo3",
+        "Tpr"
+      ],
+      "names": [
+        "Adar",
+        "Adarb1",
+        "Ago1",
+        "Ago2",
+        "Agrn",
+        "Amy1",
+        "Atat1",
+        "Carmil3",
+        "Ccdc93",
+        "Cdc40",
+        "Chd9",
+        "Ddx17",
+        "Ddx23",
+        "Ddx39b",
+        "Dhx9",
+        "Dicer1",
+        "Dusp11",
+        "Glo1",
+        "Iqgap1",
+        "Kpna3",
+        "Leng8",
+        "Med13",
+        "Nap1l5",
+        "Nup93",
+        "Ogt",
+        "Phip",
+        "Pigm",
+        "Pomp",
+        "Prpf38a",
+        "Prpf6",
+        "Psmb4",
+        "Psmc1",
+        "Psmc5",
+        "Ranbp2",
+        "Ranbp6",
+        "Riok3",
+        "Rnpc3",
+        "Slitrk6",
+        "Snhg11",
+        "Srrm2",
+        "Srsf1",
+        "Thoc1",
+        "Tnpo3",
+        "Tob1",
+        "Tpr",
+        "Trappc11",
+        "Ttc4",
+        "Uba5",
+        "Ufc1",
+        "Wsb1",
+        "Xpo1",
+        "Xpo7",
+        "Zcchc7",
+        "Zfp281",
+        "Zfp770",
+        "Zfp799",
+        "Zfp811"
+      ]
+    },
+    "resolved_evidence": [
+      {
+        "cell_type": "",
+        "description": "Most Dhx9-associated transcriptomic signal was concentrated in a few neuronal classes.",
+        "evidence_id": "E002",
+        "evidence_slug": "dhx9_cell_type_distribution_of_significant_de",
+        "genes": "",
+        "has_cell_type": "0",
+        "has_genes": "0",
+        "n_genes": "0",
+        "scoped_evidence_id": "Dhx9:E002",
+        "statistics": "371,818 Dhx9 rows covering 22 cell classes; 243 rows were FDR<0.05, representing 148 genes in 9 cell classes. FDR<0.05 row counts: 151 TH Prkcd Grin2c Glut 116, 155 MB Glut 55, 191 MB P MY GABA 36, 066 CNU-HYa HY GABA 11, 110 CNU-HYa HY MM Glut 9, 052 Pvalb Gaba 9, 005 L4-5 IT CTX Glut 4, 145 MH-LH TH Glut 2, 054 CNU-MGE GABA 1.",
+        "target_gene": "Dhx9"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "Strongest Dhx9 downstream signature.",
+        "evidence_id": "E003",
+        "evidence_slug": "dhx9_151_th_prkcd_strong_signature",
+        "genes": "Iqgap1|Zfp811|Glo1|Trappc11|Zfp799|Prpf38a|Zcchc7|Leng8|Amy1|Snhg11",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "10",
+        "scoped_evidence_id": "Dhx9:E003",
+        "statistics": "145 Dhx9 cells versus 23,679 controls; 116 FDR<0.05 genes. Top up: Iqgap1 score 11.175 logFC 1.510 FDR 9.38e-25; Zfp811 10.049, 2.019, 8.02e-20; Glo1 9.216, 1.195, 1.49e-16; Trappc11 9.204, 1.281, 1.49e-16. Top down: Zcchc7 score -7.085 logFC -0.546 FDR 1.60e-9; Leng8 -6.530, -0.305, 6.66e-8; Amy1 -6.371, -0.661, 1.70e-7; Snhg11 -5.878, -0.159, 2.98e-6.",
+        "target_gene": "Dhx9"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "description": "Second-largest Dhx9 signature, in midbrain glutamatergic neurons.",
+        "evidence_id": "E004",
+        "evidence_slug": "dhx9_155_mb_glut_signature",
+        "genes": "Trappc11|Glo1|Iqgap1|Prpf38a|Atat1|Zcchc7|Snhg11|Carmil3|Leng8",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "9",
+        "scoped_evidence_id": "Dhx9:E004",
+        "statistics": "108 Dhx9 cells versus 20,353 controls; 55 FDR<0.05 genes. Top up: Trappc11 score 12.171 logFC 1.787 FDR 7.78e-30; Glo1 9.778, 1.562, 1.22e-18; Iqgap1 9.009, 1.669, 1.20e-15. Top down: Zcchc7 -6.605, -0.758, 6.31e-8; Snhg11 -5.609, -0.222, 1.97e-5; Carmil3 -5.552, -0.675, 2.59e-5.",
+        "target_gene": "Dhx9"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "description": "Third-largest Dhx9 signature, in a GABAergic midbrain-pons-medulla class.",
+        "evidence_id": "E005",
+        "evidence_slug": "dhx9_191_mb_p_my_gaba_signature",
+        "genes": "Trappc11|Iqgap1|Zfp811|Zfp799|Riok3|Zcchc7|Snhg11|Leng8|Ttc4",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "9",
+        "scoped_evidence_id": "Dhx9:E005",
+        "statistics": "70 Dhx9 cells versus 10,309 controls; 36 FDR<0.05 genes. Top up: Trappc11 score 11.166 logFC 2.036 FDR 1.02e-24; Iqgap1 9.210, 2.007, 2.78e-16; Zfp811 9.124, 2.002, 4.14e-16. Top down: Zcchc7 -5.826, -0.795, 8.09e-6; Snhg11 -5.196, -0.226, 2.48e-4; Leng8 -5.087, -0.333, 4.14e-4.",
+        "target_gene": "Dhx9"
+      },
+      {
+        "cell_type": "",
+        "description": "Moderate or very small Dhx9 signatures retained the recurrent core but had few FDR-significant genes.",
+        "evidence_id": "E006",
+        "evidence_slug": "dhx9_smaller_cell_type_signatures",
+        "genes": "Trappc11|Atat1|Riok3|Zfp799|Zcchc7|Snhg11|Leng8|Prpf38a|Dusp11|Glo1",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "10",
+        "scoped_evidence_id": "Dhx9:E006",
+        "statistics": "FDR<0.05 row counts and examples: 066 CNU-HYa HY GABA, 57 cells, 11 genes including Trappc11 FDR 9.79e-14 and Snhg11/Leng8 FDR 0.0156; 110 CNU-HYa HY MM Glut, 50 cells, 9 genes including Riok3 FDR 2.84e-6 and Zcchc7 FDR 0.00587; 052 Pvalb Gaba, 80 cells, 9 genes; 005 L4-5 IT CTX Glut, 91 cells, 4 genes; 145 MH-LH TH Glut, 47 cells, 2 genes; 054 CNU-MGE GABA, 45 cells, only Riok3 at FDR 0.0164.",
+        "target_gene": "Dhx9"
+      },
+      {
+        "cell_type": "",
+        "description": "Several classes had matched-cell counts comparable to responsive classes but lacked FDR-significant downstream expression changes.",
+        "evidence_id": "E008",
+        "evidence_slug": "dhx9_many_classes_without_fdr_response",
+        "genes": "",
+        "has_cell_type": "0",
+        "has_genes": "0",
+        "n_genes": "0",
+        "scoped_evidence_id": "Dhx9:E008",
+        "statistics": "Thirteen of 22 Dhx9-tested cell classes had 0 FDR<0.05 genes: 001 L5-6 IT Glut n=27, 007 L2-3 IT CTX Glut n=59, 008 L2-3 IT ENT PPP RSP Glut n=40, 009 L2-3 IT PIR AON ENT Glut n=53, 012 MEA LA CA1 DG Glut n=51, 017 CA3 CA2-FC DG Glut n=35, 022 L5 ET CTX Glut n=56, 027 NP-CT-L6b-OB Glut n=29, 046 CTX-CGE GABA n=47, 053 Sst Gaba n=26, 059 CNU-LGE LSX GABA n=57, 217 P MY Pineal Glut n=20, and 308 CB GABA n=51.",
+        "target_gene": "Dhx9"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "description": "The largest Tpr differential-expression response occurred in 155 MB Glut.",
+        "evidence_id": "E002",
+        "evidence_slug": "tpr_155_mb_glut_strong_signature",
+        "genes": "Tob1|Chd9|Ranbp6|Pigm|Phip|Zfp281|Nap1l5|Med13|Snhg11|Wsb1|Leng8|Amy1|Rnpc3",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "13",
+        "scoped_evidence_id": "Tpr:E002",
+        "statistics": "96 perturbed cells versus 20,353 controls; 2,578 genes at pvals_adj < 0.05; top scores included Tob1 score 9.98 logFC 1.67 FDR 1.55e-19, Chd9 score 9.82 logFC 1.23 FDR 5.23e-19, Ranbp6 score 9.58 logFC 1.55 FDR 3.27e-18, and Snhg11 score -10.09 logFC -1.01 FDR 1.05e-19.",
+        "target_gene": "Tpr"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "A second very large Tpr response was observed in 151 TH Prkcd Grin2c Glut.",
+        "evidence_id": "E003",
+        "evidence_slug": "tpr_151_th_prkcd_strong_signature",
+        "genes": "Slitrk6|Zfp770|Xpo1|Tob1|Pigm|Ranbp6|Med13|Leng8|Ogt|Wsb1|Ddx17|Amy1|Agrn",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "13",
+        "scoped_evidence_id": "Tpr:E003",
+        "statistics": "114 perturbed cells versus 23,679 controls; 1,768 genes at pvals_adj < 0.05; Xpo1 score 8.61 logFC 0.96 FDR 3.20e-14, Ranbp6 score 7.36 logFC 1.06 FDR 1.54e-10, Leng8 score -9.41 logFC -0.76 FDR 8.44e-17, and Ogt score -8.30 logFC -0.63 FDR 3.10e-13.",
+        "target_gene": "Tpr"
+      },
+      {
+        "cell_type": "",
+        "description": "Tpr also produced smaller significant signatures in a set of cortical, thalamic, midbrain, hindbrain, and GABA subclasses.",
+        "evidence_id": "E004",
+        "evidence_slug": "tpr_intermediate_subclass_signatures",
+        "genes": "Ranbp6|Xpo1|Pigm|Med13|Amy1|Rnpc3",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "6",
+        "scoped_evidence_id": "Tpr:E004",
+        "statistics": "Adjusted-p < 0.05 gene counts outside the top two subclasses were 005 L4-5 IT CTX Glut 301, 191 MB P MY GABA 246, 145 MH-LH TH Glut 174, 066 CNU-HYa HY GABA 91, 308 CB GABA 42, 110 CNU-HYa HY MM Glut 10, 022 L5 ET CTX Glut 4, and 007 L2-3 IT CTX Glut 2.",
+        "target_gene": "Tpr"
+      },
+      {
+        "cell_type": "",
+        "description": "Many subclasses had no significant downstream Tpr response despite usable cell counts.",
+        "evidence_id": "E005",
+        "evidence_slug": "tpr_buffered_or_negative_subclasses",
+        "genes": "",
+        "has_cell_type": "0",
+        "has_genes": "0",
+        "n_genes": "0",
+        "scoped_evidence_id": "Tpr:E005",
+        "statistics": "11 of 21 measured Tpr subclasses had zero genes with pvals_adj < 0.05; examples with substantial matched cells were 052 Pvalb Gaba with 86 perturbed cells and min FDR 0.189, 009 L2-3 IT PIR AON ENT Glut with 65 cells and min FDR 0.271, and 046 CTX-CGE GABA with 50 cells and min FDR 0.614.",
+        "target_gene": "Tpr"
+      },
+      {
+        "cell_type": "",
+        "description": "Ranbp2 partially resembled Tpr by correlation but produced a weaker and differently distributed DE phenotype.",
+        "evidence_id": "E008",
+        "evidence_slug": "tpr_ranbp2_partial_convergence",
+        "genes": "Tpr|Ranbp2",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "2",
+        "scoped_evidence_id": "Tpr:E008",
+        "statistics": "Ranbp2 was a top-10 positive Tpr score-correlation neighbor in 12 of 21 Tpr subclasses. Correlation was 0.360 in 155 MB Glut, 0.229 in 005 L4-5 IT CTX Glut, and 0.218 in 151 TH Prkcd Grin2c Glut. Ranbp2 perturbation yielded 35 FDR<0.05 genes in 155 MB Glut, 2 in 005 L4-5 IT CTX Glut, and 0 in 151 TH Prkcd Grin2c Glut.",
+        "target_gene": "Tpr"
+      },
+      {
+        "cell_type": "",
+        "description": "The Nup93 comparator lacked a significant downstream signature and did not track the Tpr signature.",
+        "evidence_id": "E009",
+        "evidence_slug": "tpr_nup93_divergence",
+        "genes": "Tpr|Nup93",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "2",
+        "scoped_evidence_id": "Tpr:E009",
+        "statistics": "Nup93 perturbation produced 0 adjusted-p < 0.05 genes in all 22 Nup93 result subclasses, including 125 Nup93 cells in 151 TH Prkcd Grin2c Glut and 130 in 155 MB Glut. The maximum Tpr-versus-Nup93 score correlation in a shared subclass was 0.092; correlations in 151 and 155 were 0.071 and 0.033.",
+        "target_gene": "Tpr"
+      },
+      {
+        "cell_type": "",
+        "description": "Restricted-signature correlations identified Srsf1, Tpr, Prpf6, and Ddx23 as reproducible positive neighbors of Tnpo3 in active cell classes.",
+        "evidence_id": "E007",
+        "evidence_slug": "tnpo3_positive_signature_neighbors",
+        "genes": "Srsf1|Tpr|Prpf6|Ddx23",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "4",
+        "scoped_evidence_id": "Tnpo3:E007",
+        "statistics": "Pearson correlations against Tnpo3 FDR genes in 066/151/155/191 were: Srsf1 r=0.692/0.683/0.678/0.687; Tpr r=0.478/0.755/0.751/0.677; Prpf6 r=0.633/0.682/0.631/0.656; Ddx23 r=0.606/0.502/0.579/0.553. Tnpo3 FDR-gene set sizes were 40, 618, 215, and 288 respectively.",
+        "target_gene": "Tnpo3"
+      },
+      {
+        "cell_type": "",
+        "description": "Comparator import/export factors were absent or only partially aligned with the Tnpo3 state, arguing against a uniform nuclear-transport response.",
+        "evidence_id": "E008",
+        "evidence_slug": "tnpo3_generic_transport_contrast",
+        "genes": "Kpna3|Xpo1|Xpo7",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "3",
+        "scoped_evidence_id": "Tnpo3:E008",
+        "statistics": "In the four strongest Tnpo3-responsive classes, Kpna3 had 0 FDR<0.05 genes in each and restricted correlations from -0.065 to 0.031; Xpo7 had 0 FDR<0.05 genes in each and correlations 0.083 to 0.207; Xpo1 had 9, 514, 91, and 32 FDR<0.05 genes with correlations 0.285, 0.566, 0.433, and 0.306 in 066, 151, 155, and 191 respectively.",
+        "target_gene": "Tnpo3"
+      },
+      {
+        "cell_type": "",
+        "description": "The major Tnpo3-responsive classes were also strongly affected by direct Srsf1 perturbation.",
+        "evidence_id": "E010",
+        "evidence_slug": "srsf1_large_signatures_same_cell_classes",
+        "genes": "Srsf1",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "1",
+        "scoped_evidence_id": "Tnpo3:E010",
+        "statistics": "Srsf1 perturbation produced FDR<0.05 counts of 733 in 066 CNU-HYa HY GABA, 2765 in 151 TH Prkcd Grin2c Glut, 1456 in 155 MB Glut, and 1118 in 191 MB P MY GABA.",
+        "target_gene": "Tnpo3"
+      },
+      {
+        "cell_type": "",
+        "description": "Restricted-signature comparison placed the nuclear-pore basket protein Tpr and import factor Tnpo3 among the closest Ranbp2-positive neighbors, whereas several assayed nuclear-transport neighbors were near neutral.",
+        "evidence_id": "E009",
+        "evidence_slug": "nuclear_transport_signature_neighbors",
+        "genes": "Ranbp2|Tpr|Tnpo3|Nup93|Xpo1|Xpo7|Kpna3|Psmb4|Prpf6",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "9",
+        "scoped_evidence_id": "Ranbp2:E009",
+        "statistics": "Genome-wide score cosine correlations to Ranbp2 over the 20 overlapping cell types ranked Tpr 6th overall including Ranbp2 itself, cosine=0.151, and Tnpo3 8th, cosine=0.130, among targets with at least 15 overlapping cell types. Xpo1 ranked 52nd, cosine=0.0526; Nup93 127th, cosine=0.0335; Xpo7 170th, cosine=0.0300; Kpna3 1391st, cosine=-0.00133. Proteasome/splicing targets Psmb4 and Prpf6 ranked 2nd and 4th with cosines 0.184 and 0.169.",
+        "target_gene": "Ranbp2"
+      },
+      {
+        "cell_type": "",
+        "description": "Full-signature comparison linked Tpr to a recurrent neighborhood of RNA-processing, mRNA-export, proteasome, and UFMylation perturbations.",
+        "evidence_id": "E007",
+        "evidence_slug": "tpr_signature_neighbor_module",
+        "genes": "Prpf6|Psmb4|Ranbp2|Psmc1|Psmc5|Cdc40|Ddx39b|Ufc1|Ogt|Pomp|Thoc1|Tnpo3|Uba5",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "13",
+        "scoped_evidence_id": "Tpr:E007",
+        "statistics": "Among top-10 positive score-correlation neighbors of Tpr across 21 subclasses, Prpf6 appeared 14 times; Psmb4, Ranbp2, Psmc1, and Psmc5 each appeared 12 times; Cdc40 appeared 8 times; Ddx39b appeared 7 times; Ufc1, Ogt, Pomp, Thoc1, and Tnpo3 each appeared 6 times. In 151 TH Prkcd Grin2c Glut, Tnpo3, Uba5, and Ufc1 had correlations 0.422, 0.419, and 0.414; in 155 MB Glut, Prpf6, Psmb4, Psmc5, and Psmc1 had correlations 0.394, 0.388, 0.383, and 0.382.",
+        "target_gene": "Tpr"
+      }
+    ],
+    "source_claim_ids": [
+      "claim:dhx9_f001_3024b08da12b",
+      "claim:tpr_f001_ccf8c1115389",
+      "claim:tpr_f003_fdc50ebb8110",
+      "claim:tnpo3_f003_23a2705e3a89",
+      "claim:ranbp2_f006_00ccbacc7d71",
+      "claim:tpr_f004_c369e78cc453"
+    ],
+    "source_cluster_ids": [
+      "C053",
+      "C009"
+    ]
+  },
+  "targets": [
+    "Dhx9",
+    "Tpr",
+    "Tnpo3",
+    "Ranbp2",
+    "Srsf1",
+    "Prpf6",
+    "Ddx23",
+    "Dusp11",
+    "Trappc11",
+    "Glo1",
+    "Snhg11"
+  ],
+  "title": "Dhx9 and nuclear-pore transport perturbations expose a nuclear RNP/splicing state rather than Dicer/Ago or generic karyopherin loss"
+}

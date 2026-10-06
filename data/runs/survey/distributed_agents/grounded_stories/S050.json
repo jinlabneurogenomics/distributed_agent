@@ -1,0 +1,210 @@
+{
+  "biological_interpretation": "The ZNF148-associated neuronal response is a local splicing/synaptic program rather than a detectable p53 or generic chromatin/RNA-binding neighbor state.",
+  "caveats": [
+    "The target transcript row was not the direct anchor of the 151 TH corrected module.",
+    "The strongest human ZNF148 truncation prior is disease context rather than a match to Srrm2/Srsf9/Luc7l2 regulation."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut"
+  ],
+  "exact_observed_result": "Zfp148 perturbation produced its only corrected response in 151 TH Prkcd Grin2c Glut, where Srrm2, Srsf9, Cacnb3, Slitrk5, Ptprn, and Rasgrp2 passed FDR<0.05; Trp53, Hdac8, Celf2, and Esrra did not provide close same-cell surrogates.",
+  "preliminary_scores": {
+    "novelty": 5,
+    "priority": 3,
+    "support": 4
+  },
+  "prior_expectation": {
+    "citations": [
+      {
+        "ref": "Reactome mRNA splicing",
+        "supports": "SRSF9, SRRM2, and LUC7L2 as splicing-pathway members",
+        "url_or_doi": "https://reactome.org/content/detail/R-HSA-72163"
+      },
+      {
+        "ref": "Chopp et al. 2023",
+        "supports": "Zfp148 paralog cooperation is context-specific",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/37948511/"
+      }
+    ],
+    "summary": "Prior expectation is grounded by the listed traceable corpus citations; direct prior support for the exact cell-type/state relationship is partial unless noted in the caveats."
+  },
+  "reference_ids": [
+    "Zfp148:R008",
+    "Zfp148:R009",
+    "Zfp148:R010"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Zfp148:E002",
+    "Zfp148:E003",
+    "Zfp148:E006",
+    "Zfp148:E007",
+    "Zfp148:E008"
+  ],
+  "source_urls_or_dois": [
+    {
+      "ref": "Reactome mRNA splicing",
+      "supports": "SRSF9, SRRM2, and LUC7L2 as splicing-pathway members",
+      "url_or_doi": "https://reactome.org/content/detail/R-HSA-72163"
+    },
+    {
+      "ref": "Chopp et al. 2023",
+      "supports": "Zfp148 paralog cooperation is context-specific",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/37948511/"
+    }
+  ],
+  "status": "grounded",
+  "story_id": "S050",
+  "support": {
+    "exact_de_rows": [
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Cacnb3",
+        "log2_fold_change": -0.938762,
+        "pval": 4.737522825449668e-07,
+        "pvals_adj": 0.002547008703825428,
+        "score": -5.036649,
+        "target": "Zfp148"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Cdkn1a",
+        "log2_fold_change": 0.900386,
+        "pval": 0.30957645159538494,
+        "pvals_adj": 1.0,
+        "score": 1.016111,
+        "target": "Zfp148"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Celf2",
+        "log2_fold_change": 0.027385,
+        "pval": 0.9323207914086845,
+        "pvals_adj": 1.0,
+        "score": 0.084925,
+        "target": "Zfp148"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Esrra",
+        "log2_fold_change": -0.06571,
+        "pval": 0.8477085757932797,
+        "pvals_adj": 1.0,
+        "score": -0.192043,
+        "target": "Zfp148"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Hdac8",
+        "log2_fold_change": -0.446143,
+        "pval": 0.0003513601526857252,
+        "pvals_adj": 0.25267186980012213,
+        "score": -3.574155,
+        "target": "Zfp148"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Luc7l2",
+        "log2_fold_change": -0.249144,
+        "pval": 3.461355342972361e-05,
+        "pvals_adj": 0.05430866533123634,
+        "score": -4.140774,
+        "target": "Zfp148"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Mdm2",
+        "log2_fold_change": 0.222791,
+        "pval": 0.06594445557347517,
+        "pvals_adj": 1.0,
+        "score": 1.838801,
+        "target": "Zfp148"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Ptprn",
+        "log2_fold_change": -0.349657,
+        "pval": 2.0641958740451617e-05,
+        "pvals_adj": 0.04499543779302376,
+        "score": -4.257832,
+        "target": "Zfp148"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Rasgrp2",
+        "log2_fold_change": -0.947998,
+        "pval": 2.085656772374935e-05,
+        "pvals_adj": 0.04499543779302376,
+        "score": -4.255518,
+        "target": "Zfp148"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Slitrk5",
+        "log2_fold_change": -0.761888,
+        "pval": 1.0252156687420708e-05,
+        "pvals_adj": 0.029490328711365664,
+        "score": -4.411786,
+        "target": "Zfp148"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Srrm2",
+        "log2_fold_change": -0.287959,
+        "pval": 1.1777383393960013e-07,
+        "pvals_adj": 0.0016435508798833905,
+        "score": -5.296917,
+        "target": "Zfp148"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Srsf9",
+        "log2_fold_change": -0.568874,
+        "pval": 2.9918953638666883e-06,
+        "pvals_adj": 0.010327424416995034,
+        "score": -4.671375,
+        "target": "Zfp148"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Trp53",
+        "log2_fold_change": 0.155903,
+        "pval": 0.647660604751656,
+        "pvals_adj": 1.0,
+        "score": 0.457015,
+        "target": "Zfp148"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Zfp148",
+        "log2_fold_change": -0.044275,
+        "pval": 0.808079842116205,
+        "pvals_adj": 1.0,
+        "score": -0.242904,
+        "target": "Zfp148"
+      }
+    ],
+    "summary": [
+      "The 151 TH class had eight FDR<0.05 genes, mostly down-regulated spliceosomal and synaptic transcripts.",
+      "All 20 non-151 classes lacked even FDR<0.20 genes for Zfp148."
+    ]
+  },
+  "targets": [
+    "Zfp148"
+  ],
+  "title": "Zfp148 loss selectively lowers spliceosomal and synaptic transcripts in 151 TH neurons"
+}

@@ -1,0 +1,382 @@
+{
+  "biological_interpretation": "The evidence supports a thalamic KMT2D/KDM6A MLL3/4-adjacent module that is not simply shared by all KMT2/KDM6 paralogs or by CBP loss.",
+  "caveats": [
+    "Neither Kmt2d nor Kdm6a showed FDR-confirmed target-transcript depletion.",
+    "The Kdm6a arm had only one FDR gene and the Kmt2d relation was based on a restricted top-500 Kdm6a vector."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut"
+  ],
+  "exact_observed_result": "Kmt2d produced 314 FDR genes in 151 TH Prkcd Grin2c Glut, and the weak Kdm6a signature aligned with Kmt2d on Ntng1, Nell1, Ptpn5, Cyp46a1, Tspan33, Thy1 and Mical2; Crebbp placed Kmt2d/Kdm6a only in its weak positive neighbor tail.",
+  "preliminary_scores": {
+    "novelty": 3,
+    "priority": 3,
+    "support": 4
+  },
+  "prior_expectation": {
+    "citations": [
+      "Cho et al. 2007 PMID:17500065",
+      "Lee et al. 2007 PMID:17761849",
+      "Lavery et al. 2020 doi:10.1186/s13148-019-0802-2"
+    ],
+    "expectation": "KDM6A is a UTX H3K27 demethylase in MLL3/MLL4 complexes with KMT2D, matching the same-direction 151 TH relationship."
+  },
+  "reference_ids": [
+    "Crebbp:R005",
+    "Crebbp:R006",
+    "Kdm6a:R001",
+    "Kdm6a:R002",
+    "Kdm6a:R003",
+    "Kdm6a:R005",
+    "Kdm6a:R006",
+    "Kmt2d:R002",
+    "Kmt2d:R004"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Crebbp:E007",
+    "Crebbp:E009",
+    "Kdm6a:E002",
+    "Kdm6a:E006",
+    "Kmt2d:E001",
+    "Kmt2d:E002",
+    "Kmt2d:E005",
+    "Kmt2d:E006"
+  ],
+  "source_claims": [
+    {
+      "claim_id": "claim:kmt2d_f001_a6f0fcc943ea",
+      "finding_id": "F001",
+      "gene": "Kmt2d",
+      "role": "member"
+    },
+    {
+      "claim_id": "claim:kdm6a_f002_181ab8f3b258",
+      "finding_id": "F002",
+      "gene": "Kdm6a",
+      "role": "member"
+    },
+    {
+      "claim_id": "claim:crebbp_f005_3e810fb1206f",
+      "finding_id": "F005",
+      "gene": "Crebbp",
+      "role": "peripheral"
+    }
+  ],
+  "source_references": [
+    {
+      "citation": "Reactome pathways R-HSA-9818564 and R-HSA-9944971: Epigenetic regulation of gene expression by MLL3 and MLL4 complexes; Loss of Function of KMT2D in Kabuki Syndrome.",
+      "description": "Places KMT2D in the MLL3/MLL4 enhancer-regulatory pathway, with a disease pathway for KMT2D loss of function in Kabuki syndrome.",
+      "ref_id": "R002",
+      "ref_slug": "reactome_kmt2d_mll34_kabuki",
+      "source": "Reactome",
+      "source_type": "database",
+      "target_gene": "Kmt2d",
+      "url": "https://reactome.org/content/detail/R-HSA-9818564"
+    },
+    {
+      "citation": "Lee JE et al. H3K4 mono- and di-methyltransferase MLL4 is required for enhancer activation during cell differentiation. eLife. 2013;2:e01503. PMID:24368734.",
+      "description": "Established KMT2D/MLL4 as a major H3K4me1/2 enhancer methyltransferase with partial redundancy with KMT2C/MLL3 and cell-type-specific enhancer binding.",
+      "ref_id": "R004",
+      "ref_slug": "lee_2013_mll4_enhancer",
+      "source": "eLife",
+      "source_type": "pubmed",
+      "target_gene": "Kmt2d",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24368734/"
+    },
+    {
+      "citation": "UniProtKB reviewed entries O15550, O15054, O14686, Q9UMN6, Q9UQL6, and Q96ST3, accessed through the UniProt REST API.",
+      "description": "Curated protein functions and subunit annotations for KDM6A, KDM6B, KMT2D, KMT2B, HDAC5, and SIN3A.",
+      "ref_id": "R001",
+      "ref_slug": "uniprot_kdm6a_kmt2d_kdm6b_kmt2b_hdac5_sin3a",
+      "source": "UniProtKB",
+      "source_type": "database",
+      "target_gene": "Kdm6a",
+      "url": "https://rest.uniprot.org/uniprotkb/O15550"
+    },
+    {
+      "citation": "Reactome ContentService entries R-HSA-9818564, R-HSA-9821410, R-HSA-9821412, and R-HSA-9822985 for MLL3/MLL4 epigenetic regulation and KDM6A reactions.",
+      "description": "Curated pathway context placing KDM6A in MLL3/MLL4-ASCOM complexes and in H3K27me3 demethylation.",
+      "ref_id": "R002",
+      "ref_slug": "reactome_kdm6a_mll3_mll4_epigenetic_regulation",
+      "source": "Reactome",
+      "source_type": "database",
+      "target_gene": "Kdm6a",
+      "url": "https://reactome.org/content/detail/R-HSA-9818564"
+    },
+    {
+      "citation": "Cho YW, Hong T, Hong S, Guo H, Yu H, Kim D, et al. PTIP associates with MLL3- and MLL4-containing histone H3 lysine 4 methyltransferase complex. J Biol Chem. 2007;282(28):20395-406.",
+      "description": "Primary biochemical evidence that PTIP/PA1 associate with Set1-like MLL3/MLL4 complexes containing WRAD, NCOA6, and UTX/KDM6A.",
+      "ref_id": "R003",
+      "ref_slug": "cho_2007_ptip_mll3_mll4_complex",
+      "source": "Journal of Biological Chemistry",
+      "source_type": "pubmed",
+      "target_gene": "Kdm6a",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17500065/"
+    },
+    {
+      "citation": "Lee MG, Villa R, Trojer P, Norman J, Yan KP, Reinberg D, et al. Demethylation of H3K27 regulates polycomb recruitment and H2A ubiquitination. Science. 2007;318(5849):447-50.",
+      "description": "Primary evidence that UTX is an H3K27 demethylase associated with MLL2/3 complexes and couples H3K27 demethylation to H3K4 methylation at HOX loci.",
+      "ref_id": "R005",
+      "ref_slug": "lee_2007_utx_links_h3k27_and_mll_h3k4",
+      "source": "Science",
+      "source_type": "pubmed",
+      "target_gene": "Kdm6a",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17761849/"
+    },
+    {
+      "citation": "STRING v network query for human KDM6A, KMT2D, KMT2C, and KDM6B, accessed through the STRING API.",
+      "description": "Network support showing high-confidence functional links among KDM6A, KMT2D, KMT2C, and KDM6B.",
+      "ref_id": "R006",
+      "ref_slug": "string_kdm6a_kmt2d_kmt2c_kdm6b",
+      "source": "STRING",
+      "source_type": "database",
+      "target_gene": "Kdm6a",
+      "url": "https://string-db.org/"
+    },
+    {
+      "citation": "Lavery WJ, Barski A, Wiley S, Schorry EK, Lindsley AW. KMT2C/D COMPASS complex-associated diseases [KCDCOM-ADs]: an emerging class of congenital regulopathies. Clin Epigenetics. 2020;12:10. doi:10.1186/s13148-019-0802-2.",
+      "description": "Review connecting KMT2D/KDM6A Kabuki syndrome and CREBBP/EP300 Rubinstein-Taybi syndrome within enhancer/chromatin congenital regulopathies.",
+      "ref_id": "R005",
+      "ref_slug": "lavery_2020_kmt2cd_compass_regulopathies",
+      "source": "Clinical Epigenetics",
+      "source_type": "review",
+      "target_gene": "Crebbp",
+      "url": "https://link.springer.com/article/10.1186/s13148-019-0802-2"
+    },
+    {
+      "citation": "UniProtKB Q9Y4A5. Transformation/transcription domain-associated protein, human TRRAP_HUMAN.",
+      "description": "Curated description of TRRAP as an adaptor in histone-acetyltransferase chromatin complexes including NuA4 and STAGA.",
+      "ref_id": "R006",
+      "ref_slug": "uniprot_trrap_q9y4a5",
+      "source": "UniProtKB",
+      "source_type": "database",
+      "target_gene": "Crebbp",
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact:TRRAP%20AND%20organism_id:9606%20AND%20reviewed:true"
+    }
+  ],
+  "source_urls_or_dois": [
+    "https://link.springer.com/article/10.1186/s13148-019-0802-2",
+    "https://pubmed.ncbi.nlm.nih.gov/17500065/",
+    "https://pubmed.ncbi.nlm.nih.gov/17761849/",
+    "https://pubmed.ncbi.nlm.nih.gov/24368734/",
+    "https://reactome.org/content/detail/R-HSA-9818564",
+    "https://rest.uniprot.org/uniprotkb/O15550",
+    "https://rest.uniprot.org/uniprotkb/search?query=gene_exact:TRRAP%20AND%20organism_id:9606%20AND%20reviewed:true",
+    "https://string-db.org/"
+  ],
+  "status": "grounded",
+  "story_id": "S130",
+  "support": [
+    {
+      "exact_de_rows": [
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.7664584862699627,
+          "gene": "Kmt2d",
+          "gene_target": "Kmt2d",
+          "log2fc": -0.1820191890001297,
+          "pval": 0.07376369115791229,
+          "score": -1.788076400756836
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 6.528079894232045e-13,
+          "gene": "Ntng1",
+          "gene_target": "Kmt2d",
+          "log2fc": 0.26768648624420166,
+          "pval": 1.5129682818777552e-16,
+          "score": 8.255476951599121
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 4.06842185499725e-12,
+          "gene": "Nell1",
+          "gene_target": "Kmt2d",
+          "log2fc": 0.387002557516098,
+          "pval": 1.178637770148111e-15,
+          "score": 8.006662368774414
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 6.639800876402165e-05,
+          "gene": "Ptpn5",
+          "gene_target": "Kmt2d",
+          "log2fc": -0.4715903699398041,
+          "pval": 1.7312187232058486e-07,
+          "score": -5.226100921630859
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 2.252548307999806e-05,
+          "gene": "Cyp46a1",
+          "gene_target": "Kmt2d",
+          "log2fc": -0.22408680617809296,
+          "pval": 4.900388391547846e-08,
+          "score": -5.454887390136719
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 4.0440265763279687e-07,
+          "gene": "Tspan33",
+          "gene_target": "Kmt2d",
+          "log2fc": -0.5023236274719238,
+          "pval": 4.686281448899669e-10,
+          "score": -6.229265213012695
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.6914259077904994e-05,
+          "gene": "Thy1",
+          "gene_target": "Kmt2d",
+          "log2fc": -0.18198223412036896,
+          "pval": 3.528091585865808e-08,
+          "score": -5.512979507446289
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.4107134825123479e-14,
+          "gene": "Mical2",
+          "gene_target": "Kmt2d",
+          "log2fc": -0.7393773794174194,
+          "pval": 1.6347569181439804e-18,
+          "score": -8.779999732971191
+        }
+      ],
+      "finding": "Kmt2d 151 module"
+    },
+    {
+      "exact_de_rows": [
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Kdm6a",
+          "gene_target": "Kdm6a",
+          "log2fc": -0.09053599089384079,
+          "pval": 0.4518628973650367,
+          "score": -0.7523128986358643
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.03152745348498724,
+          "gene": "Ntng1",
+          "gene_target": "Kdm6a",
+          "log2fc": 0.15955469012260437,
+          "pval": 1.826725388781925e-06,
+          "score": 4.771705627441406
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.12179789344325918,
+          "gene": "Nell1",
+          "gene_target": "Kdm6a",
+          "log2fc": 0.2157062590122223,
+          "pval": 1.81197760696029e-05,
+          "score": 4.2868828773498535
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.12179789344325918,
+          "gene": "Ptpn5",
+          "gene_target": "Kdm6a",
+          "log2fc": -0.317674845457077,
+          "pval": 2.6491145311020226e-05,
+          "score": -4.201705455780029
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.12960867060133038,
+          "gene": "Cyp46a1",
+          "gene_target": "Kdm6a",
+          "log2fc": -0.16059617698192596,
+          "pval": 3.754814027502474e-05,
+          "score": -4.122070789337158
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.39687141491100264,
+          "gene": "Tspan33",
+          "gene_target": "Kdm6a",
+          "log2fc": -0.35421234369277954,
+          "pval": 0.000160965287929603,
+          "score": -3.773512363433838
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.6927056538181832,
+          "gene": "Thy1",
+          "gene_target": "Kdm6a",
+          "log2fc": -0.13175706565380096,
+          "pval": 0.00032108727217946957,
+          "score": -3.5976645946502686
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.7604391549379044,
+          "gene": "Mical2",
+          "gene_target": "Kdm6a",
+          "log2fc": -0.278952032327652,
+          "pval": 0.0004406044121547624,
+          "score": -3.514486789703369
+        }
+      ],
+      "finding": "Kdm6a shared-direction tail"
+    },
+    {
+      "exact_de_rows": [
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Crebbp",
+          "gene_target": "Crebbp",
+          "log2fc": 0.04757242649793625,
+          "pval": 0.5638036490534437,
+          "score": -0.5772010684013367
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Ntng1",
+          "gene_target": "Crebbp",
+          "log2fc": -0.048379454761743546,
+          "pval": 0.3818586757124568,
+          "score": -0.8744767308235168
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Nell1",
+          "gene_target": "Crebbp",
+          "log2fc": -0.07349921762943268,
+          "pval": 0.1679256409994111,
+          "score": -1.3788998126983643
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.1511578425835513,
+          "gene": "Ptpn5",
+          "gene_target": "Crebbp",
+          "log2fc": -0.5033928155899048,
+          "pval": 0.0003941191793417816,
+          "score": -3.5439906120300293
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.10778653359611168,
+          "gene": "Cyp46a1",
+          "gene_target": "Crebbp",
+          "log2fc": -0.25129762291908264,
+          "pval": 0.00013757064941371543,
+          "score": -3.812495708465576
+        }
+      ],
+      "finding": "Crebbp weak neighbor boundary"
+    }
+  ],
+  "targets": [
+    "Kmt2d",
+    "Kdm6a",
+    "Crebbp"
+  ],
+  "title": "Kmt2d and Kdm6a converge on a 151 TH neuronal enhancer module"
+}

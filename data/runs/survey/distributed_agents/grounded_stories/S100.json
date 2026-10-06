@@ -1,0 +1,122 @@
+{
+  "story_id": "S100",
+  "title": "Ppp2r1a loss defines a cortical Amy1/Leng8/Stmn4/Rsrp1 signature with TSC/STXBP1-positive and LIMK1/DNAJB6-negative neighbors",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "In 005 L4-5 IT CTX Glut, Ppp2r1a perturbation produced a mixed recurrent marker panel: Amy1, Stmn4, Jun, Pcsk1n, Ovgp1, and Rnpc3 were induced, while Leng8, Rsrp1, Kifc2, and Pabpn1 were repressed. The report treated Stxbp1/Tsc1/Tsc2 positive and Limk1/Dnajb6 negative neighbors as exploratory restricted-signature comparators.",
+  "biological_interpretation": "PP2A scaffold loss yields a practical cortical reporter state, but the recurrent markers are stronger than the proposed TSC/STXBP1/LIMK1 mechanistic assignment.",
+  "targets": [
+    "Ppp2r1a",
+    "Amy1",
+    "Leng8",
+    "Stmn4",
+    "Rsrp1",
+    "Kifc2",
+    "Jun",
+    "Pcsk1n",
+    "Pabpn1",
+    "Ovgp1",
+    "Rnpc3"
+  ],
+  "cell_types": [
+    "005 L4-5 IT CTX Glut"
+  ],
+  "support": {
+    "support_level": 3,
+    "exact_de_rows": [
+      {
+        "gene_target": "Ppp2r1a",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Amy1",
+        "log2_fold_change": 1.1808640956878662,
+        "pvals_adj": 3.0247448900573903e-18,
+        "wilcoxon_score": 9.642279624938965
+      },
+      {
+        "gene_target": "Ppp2r1a",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Rnpc3",
+        "log2_fold_change": 0.6758140325546265,
+        "pvals_adj": 2.7022076295323478e-14,
+        "wilcoxon_score": 8.562470436096191
+      },
+      {
+        "gene_target": "Ppp2r1a",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Rsrp1",
+        "log2_fold_change": -0.37928497791290283,
+        "pvals_adj": 1.1618721758533226e-11,
+        "wilcoxon_score": -7.776354789733887
+      },
+      {
+        "gene_target": "Ppp2r1a",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Leng8",
+        "log2_fold_change": -0.3585479259490967,
+        "pvals_adj": 3.531815983648169e-09,
+        "wilcoxon_score": -6.913023948669434
+      },
+      {
+        "gene_target": "Ppp2r1a",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Stmn4",
+        "log2_fold_change": 0.4746212065219879,
+        "pvals_adj": 8.334252451228722e-07,
+        "wilcoxon_score": 5.998156547546387
+      },
+      {
+        "gene_target": "Ppp2r1a",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Kifc2",
+        "log2_fold_change": -0.3785417675971985,
+        "pvals_adj": 3.3484547113106774e-08,
+        "wilcoxon_score": -6.547089099884033
+      }
+    ],
+    "report_evidence_summary": [
+      "Ppp2r1a:E005"
+    ]
+  },
+  "caveats": [
+    "The story is best supported as a biomarker panel; the restricted TSC/STXBP1/LIMK1/DNAJB6 neighbor links are correlation-based and tentative.",
+    "The exact neighbor correlations were report-derived rather than direct rows in the DE Parquet."
+  ],
+  "prior_expectation": {
+    "summary": "PP2A holoenzymes contain scaffold, catalytic, and regulatory subunits; PPP2R1A and PPP2R5D variants can cause PP2A-related intellectual disability",
+    "citations": [
+      {
+        "ref_id": "Ppp2r1a:R001",
+        "ref": "Xu et al. 2006 PMID:17174897",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/17174897/",
+        "supports": "PP2A holoenzymes contain scaffold, catalytic, and regulatory subunits"
+      },
+      {
+        "ref_id": "Ppp2r1a:R003",
+        "ref": "Houge et al. 2015 DOI:10.1172/JCI79860",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/26168268/",
+        "supports": "PPP2R1A and PPP2R5D variants can cause PP2A-related intellectual disability"
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 3,
+    "priority": 3
+  },
+  "report_evidence_ids": [
+    "Ppp2r1a:E005"
+  ],
+  "reference_ids": [
+    "Ppp2r1a:R001",
+    "Ppp2r1a:R002",
+    "Ppp2r1a:R003",
+    "Ppp2r1a:R004"
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/17174897/",
+    "https://pubmed.ncbi.nlm.nih.gov/26168268/"
+  ],
+  "source_claim_ids": [
+    "claim:ppp2r1a_f005_3e7a98afafd1"
+  ]
+}

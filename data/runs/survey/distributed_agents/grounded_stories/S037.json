@@ -1,0 +1,237 @@
+{
+  "story_id": "S037",
+  "title": "Vps37a loss induces V-ATPase genes and represses synaptic membrane transcripts in MB and MB/P/MY neurons",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Vps37a guide assignment yielded 138 FDR genes in 155 MB Glut and 25 in 191 MB P MY GABA, repeatedly inducing Atp6v1h or Atp6v0b while decreasing membrane/synaptic genes such as Gria4, Gria3, Asic1, and Cntn1.",
+  "biological_interpretation": "ESCRT-I/VPS37A disruption pushes selected posterior neurons toward endolysosomal acidification stress and erodes synaptic membrane identity.",
+  "targets": [
+    "Vps37a",
+    "Atp6v1h",
+    "Atp6v0b",
+    "Gria4",
+    "Gria3",
+    "Gria2",
+    "Asic1",
+    "Cntn1",
+    "Syt1",
+    "Cacna1g"
+  ],
+  "cell_types": [
+    "066 CNU-HYa HY GABA",
+    "110 CNU-HYa HY MM Glut",
+    "155 MB Glut",
+    "191 MB P MY GABA"
+  ],
+  "support": {
+    "exact_de_rows": [
+      {
+        "gene_target": "Vps37a",
+        "group_name": "155 MB Glut",
+        "names": "Atp6v0b",
+        "score": -1.7570756673812866,
+        "logfoldchanges": -0.1780768632888794,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Vps37a",
+        "group_name": "155 MB Glut",
+        "names": "Atp6v1h",
+        "score": -1.0502365827560425,
+        "logfoldchanges": -0.15491561591625214,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Vps37a",
+        "group_name": "155 MB Glut",
+        "names": "Ddit3",
+        "score": 1.4700875282287598,
+        "logfoldchanges": 0.4484756886959076,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Vps37a",
+        "group_name": "155 MB Glut",
+        "names": "Gria2",
+        "score": 1.394991159439087,
+        "logfoldchanges": 0.2402506172657013,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Vps37a",
+        "group_name": "155 MB Glut",
+        "names": "Jun",
+        "score": 0.09855102002620697,
+        "logfoldchanges": 0.15851286053657532,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Vps37a",
+        "group_name": "066 CNU-HYa HY GABA",
+        "names": "Kifc2",
+        "score": -0.3047555387020111,
+        "logfoldchanges": -0.20677915215492249,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Vps37a",
+        "group_name": "066 CNU-HYa HY GABA",
+        "names": "Lhfpl3",
+        "score": -0.11929626017808914,
+        "logfoldchanges": -0.08289330452680588,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Vps37a",
+        "group_name": "110 CNU-HYa HY MM Glut",
+        "names": "Atp6v1h",
+        "score": 1.1017497777938843,
+        "logfoldchanges": 0.09330593794584274,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Vps37a",
+        "group_name": "110 CNU-HYa HY MM Glut",
+        "names": "Metap1d",
+        "score": 0.5229021310806274,
+        "logfoldchanges": 0.05965782329440117,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Vps37a",
+        "group_name": "191 MB P MY GABA",
+        "names": "Atp6v1h",
+        "score": 5.182375431060791,
+        "logfoldchanges": 0.8979254364967346,
+        "pvals_adj": 0.003745786680660875
+      },
+      {
+        "gene_target": "Vps37a",
+        "group_name": "191 MB P MY GABA",
+        "names": "Atp6v0b",
+        "score": 4.212258815765381,
+        "logfoldchanges": 0.48477283120155334,
+        "pvals_adj": 0.03226398134166519
+      },
+      {
+        "gene_target": "Vps37a",
+        "group_name": "191 MB P MY GABA",
+        "names": "Cntn1",
+        "score": -4.202331066131592,
+        "logfoldchanges": -0.9376744627952576,
+        "pvals_adj": 0.03226398134166519
+      },
+      {
+        "gene_target": "Vps37a",
+        "group_name": "191 MB P MY GABA",
+        "names": "Gria3",
+        "score": -4.2432684898376465,
+        "logfoldchanges": -1.2998342514038086,
+        "pvals_adj": 0.031387326496719214
+      },
+      {
+        "gene_target": "Vps37a",
+        "group_name": "191 MB P MY GABA",
+        "names": "Asic1",
+        "score": -4.33927583694458,
+        "logfoldchanges": -1.4290812015533447,
+        "pvals_adj": 0.028752413532072998
+      },
+      {
+        "gene_target": "Vps37a",
+        "group_name": "191 MB P MY GABA",
+        "names": "Gria4",
+        "score": -4.379833221435547,
+        "logfoldchanges": -0.9248591661453247,
+        "pvals_adj": 0.028752413532072998
+      }
+    ],
+    "evidence_records": [
+      {
+        "target_gene": "Vps37a",
+        "evidence_id": "E002",
+        "evidence_slug": "vps37a_fdr_hits_are_four_cell_type_restricted",
+        "cell_type": "",
+        "genes": "",
+        "n_genes": "0",
+        "has_genes": "0",
+        "has_cell_type": "0",
+        "statistics": "167 gene-by-cell-type hits had FDR<0.05, representing 160 unique genes. Counts by cell type were 155 MB Glut=138, 191 MB P MY GABA=25, 066 CNU-HYa HY GABA=2, 110 CNU-HYa HY MM Glut=2; the remaining 15 of 19 Vps37a signatures had zero FDR<0.05 genes.",
+        "description": "Distribution of downstream FDR-significant responses for Vps37a across cell types."
+      },
+      {
+        "target_gene": "Vps37a",
+        "evidence_id": "E003",
+        "evidence_slug": "vps37a_155_mb_glut_dominant_signature",
+        "cell_type": "155 MB Glut",
+        "genes": "Rhoq|Ly6h|Atp6v0b|Cpeb1|Ddit3|Tnfrsf12a|Kifc2|Jun|Atp6v1h",
+        "n_genes": "9",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "58 perturbed cells versus 20353 controls; 138 FDR<0.05 genes. Top examples: Rhoq logFC 1.678 FDR 8.59e-06; Ly6h logFC -1.283 FDR 2.36e-04; Atp6v0b logFC 0.541 FDR 3.84e-04; Ddit3 logFC 1.759 FDR 6.43e-04; Tnfrsf12a logFC 2.451 FDR 0.00107; Kifc2 logFC -0.777 FDR 0.00107; Jun logFC 1.705 FDR 0.00373; Atp6v1h logFC 0.848 FDR 0.00918.",
+        "description": "The largest Vps37a FDR signature, containing stress, lysosomal-acidification, and synaptic/neuronal negative genes."
+      },
+      {
+        "target_gene": "Vps37a",
+        "evidence_id": "E004",
+        "evidence_slug": "vps37a_191_mb_p_my_gaba_signature",
+        "cell_type": "191 MB P MY GABA",
+        "genes": "Atp6v1h|Tnfrsf12a|Cd63|Atp6v0b|Lynx1|Rasgrp2|Gria4|Asic1|Rhbdl1|Gria3|Cntn1|Jund",
+        "n_genes": "12",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "33 perturbed cells versus 10309 controls; 25 FDR<0.05 genes. Atp6v1h logFC 0.898 FDR 0.00375; Tnfrsf12a logFC 2.602 FDR 0.0188; Cd63 logFC 2.406 FDR 0.0291; Atp6v0b logFC 0.485 FDR 0.0323; Lynx1 logFC -1.182 FDR 0.0188; Rasgrp2 logFC -1.669 FDR 0.0188; Gria4 logFC -0.925 FDR 0.0288; Asic1 logFC -1.429 FDR 0.0288; Rhbdl1 logFC -1.164 FDR 0.0291; Gria3 logFC -1.300 FDR 0.0314.",
+        "description": "The second-largest Vps37a response, dominated by positive lysosomal/stress genes and negative membrane/synaptic genes."
+      },
+      {
+        "target_gene": "Vps37a",
+        "evidence_id": "E005",
+        "evidence_slug": "vps37a_small_cnu_active_signatures",
+        "cell_type": "",
+        "genes": "Lhfpl3|Kifc2|Atp6v1h|Metap1d",
+        "n_genes": "4",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "066 CNU-HYa HY GABA: 22 perturbed cells, two FDR genes, Lhfpl3 logFC -2.130 FDR 0.0210 and Kifc2 logFC -1.248 FDR 0.0265. 110 CNU-HYa HY MM Glut: 20 perturbed cells, two FDR genes, Atp6v1h logFC 1.152 FDR 0.0163 and Metap1d logFC 1.838 FDR 0.0296.",
+        "description": "Low-depth but FDR-significant Vps37a effects outside the two MB signatures."
+      }
+    ],
+    "source_claim_ids": [
+      "claim:vps37a_f001_4202535d8b17"
+    ],
+    "source_cluster_ids": [
+      "C017"
+    ]
+  },
+  "caveats": [
+    "Vps37a mRNA was not FDR-depleted, and the 066 and 110 CNU signatures contained only two FDR genes each."
+  ],
+  "prior_expectation": {
+    "summary": "Prior literature and pathway context were taken from the resolved report references; the observed Perturb-seq signal either refines expected gene function by cell type or marks an exploratory response-state neighbor where noted in caveats.",
+    "citations": [
+      {
+        "reference_id": "Vps37a:R009",
+        "citation": "UniProtKB Q8NEZ2, Vacuolar protein sorting-associated protein 37A, human.",
+        "url": "https://rest.uniprot.org/uniprotkb/Q8NEZ2",
+        "supports": "Reviewed VPS37A protein entry annotating ESCRT-I membership, late-endosome membrane localization, and broad tissue expression including brain."
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 4,
+    "priority": 4
+  },
+  "report_evidence_ids": [
+    "Vps37a:E002",
+    "Vps37a:E003",
+    "Vps37a:E004",
+    "Vps37a:E005"
+  ],
+  "reference_ids": [
+    "Vps37a:R009"
+  ],
+  "source_urls_or_dois": [
+    "https://rest.uniprot.org/uniprotkb/Q8NEZ2"
+  ]
+}

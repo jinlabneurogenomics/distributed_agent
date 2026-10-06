@@ -1,0 +1,10 @@
+category,n_findings,agree_count,agree_percent,disagree_count,disagree_percent,inferred_count,inferred_percent,no_literature_count,no_literature_percent,plotted
+Other,2597,230,8.9,43,1.7,1321,50.9,1003,38.6,True
+Neuronal identity/synapse/excitability,531,34,6.4,5,0.9,289,54.4,203,38.2,True
+Metabolism/PTMs,494,50,10.1,21,4.3,245,49.6,178,36.0,True
+Chromatin/transcription/epigenetic,472,68,14.4,7,1.5,210,44.5,187,39.6,True
+Endolysosomal/vesicle trafficking,337,29,8.6,10,3.0,187,55.5,111,32.9,True
+RNA splicing & processing,328,39,11.9,11,3.4,151,46.0,127,38.7,True
+Proteasome/UB-proteostasis,194,38,19.6,6,3.1,82,42.3,68,35.1,True
+mTOR/autophagy,133,25,18.8,2,1.5,72,54.1,34,25.6,True
+Nuclear transport,39,10,25.6,0,0.0,20,51.3,9,23.1,True

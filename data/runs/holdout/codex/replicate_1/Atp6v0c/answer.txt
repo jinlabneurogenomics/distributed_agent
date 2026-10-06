@@ -1,0 +1,2 @@
+target_name	predicted_n_degs
+Atp6v0c	1

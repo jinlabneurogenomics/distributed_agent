@@ -1,0 +1,1316 @@
+{
+  "story_id": "S016",
+  "title": "Hnrnpc reduction exposes a caudal and diencephalic splicing-speckle abundance response",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Hnrnpc perturbation yielded FDR-supported responses in 8 of 22 assayed classes, strongest in 151 TH Prkcd Grin2c Glut and 155 MB Glut and recurring in 191 MB P MY GABA, 217 P MY Pineal Glut, 066 CNU-HYa HY GABA, 145 MH-LH TH Glut, 110 CNU-HYa HY MM Glut, and 052 Pvalb Gaba; Txnl1, Mterf3, Zbed4, Leng8, and Slc25a36 moved up while Luc7l2 moved down in the recurrent module.",
+  "biological_interpretation": "HNRNPC lowering exposes a posterior/diencephalic RNA-processing abundance state, compatible with hnRNP control of alternative splicing and neurodevelopmental disease but resolved here as gene-level abundance changes rather than measured exon changes.",
+  "targets": [
+    "Hnrnpc"
+  ],
+  "cell_types": [
+    "052 Pvalb Gaba",
+    "066 CNU-HYa HY GABA",
+    "110 CNU-HYa HY MM Glut",
+    "145 MH-LH TH Glut"
+  ],
+  "support": {
+    "source_findings": [
+      {
+        "target_gene": "Hnrnpc",
+        "finding_id": "F001",
+        "finding_type": "cell_type_selectivity",
+        "direction": "response concentrated in 8 of 22 tested cell classes",
+        "confidence": "high",
+        "literature_status": "refines_cell_type_context",
+        "summary": "Hnrnpc produced a caudal/diencephalic-biased abundance response rather than a pan-neuronal response.",
+        "why_it_matters": "The main biological signal is not simply ubiquitous RNA-binding-protein toxicity; it is concentrated in thalamic, midbrain, hindbrain/pineal, hypothalamic, and Pvalb contexts while many cortical, hippocampal, and striatal classes were FDR-silent.",
+        "n_genes": "0",
+        "comparators": "005 L4-5 IT CTX Glut|054 CNU-MGE GABA|308 CB GABA",
+        "cell_types": "151 TH Prkcd Grin2c Glut|155 MB Glut|191 MB P MY GABA|217 P MY Pineal Glut|066 CNU-HYa HY GABA|145 MH-LH TH Glut|110 CNU-HYa HY MM Glut|052 Pvalb Gaba",
+        "n_cell_types": "8",
+        "evidence_ids": "E002|E003|E004|E005|E006|E009|E011",
+        "ref_ids": "R006|R007",
+        "main_caveats": "Cell-type intrinsic selectivity is not separable from guide activity and power because Hnrnpc mRNA itself was weakly depleted."
+      }
+    ],
+    "evidence_ledger_rows": [
+      {
+        "target_gene": "Hnrnpc",
+        "evidence_id": "E002",
+        "evidence_slug": "hnrnpc_fdr_response_distribution",
+        "n_genes": "0",
+        "has_genes": "0",
+        "has_cell_type": "0",
+        "statistics": "218 FDR<0.05 genes across 8 of 22 Hnrnpc-tested cell classes: 122 in 151 TH Prkcd Grin2c Glut, 35 in 155 MB Glut, 23 in 191 MB P MY GABA, 22 in 217 P MY Pineal Glut, 7 in 066 CNU-HYa HY GABA, 5 in 145 MH-LH TH Glut, 2 in 110 CNU-HYa HY MM Glut, and 2 in 052 Pvalb Gaba; 14/22 classes had zero FDR<0.05 genes.",
+        "description": "Hnrnpc downstream differential expression was concentrated in a small subset of neuronal classes."
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "evidence_id": "E003",
+        "evidence_slug": "hnrnpc_151_th_strong_signature",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Txnl1|Tspan33|Rbm25|Luc7l2|Cacna1a|Mterf3|Zbed4|Slc25a36|Ddx39b",
+        "n_genes": "9",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "196 perturbed cells versus 23679 controls; 122 FDR<0.05 genes, 77 up and 45 down. Txnl1 logFC 0.812 FDR 7.38e-27; Tspan33 logFC 0.725 FDR 4.95e-14; Rbm25 logFC -0.513 FDR 4.95e-14; Luc7l2 logFC -0.360 FDR 5.20e-11; Cacna1a logFC 0.581 FDR 8.55e-12.",
+        "description": "The thalamic Prkcd/Grin2c glutamatergic class carried the strongest Hnrnpc abundance signature."
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "evidence_id": "E004",
+        "evidence_slug": "hnrnpc_155_mb_signature",
+        "cell_type": "155 MB Glut",
+        "genes": "Mterf3|Leng8|Zbed4|Txnl1|Slc25a36|Ddx39b|Luc7l2",
+        "n_genes": "7",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "150 perturbed cells versus 20353 controls; 35 FDR<0.05 genes. Mterf3 logFC 0.822 FDR 8.56e-11; Leng8 logFC 0.337 FDR 4.32e-09; Zbed4 logFC 1.376 FDR 1.53e-07; Txnl1 logFC 0.615 FDR 3.52e-07; Luc7l2 logFC -0.417 FDR 6.83e-06.",
+        "description": "Midbrain glutamatergic neurons reproduced the recurrent Hnrnpc module with both induced and repressed genes."
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "evidence_id": "E005",
+        "evidence_slug": "hnrnpc_191_217_recurrent_module",
+        "genes": "Slc25a36|Acbd6|Zbed4|Txnl1|Luc7l2|Mterf3|Cacna1a|Rbm25|Cfp",
+        "n_genes": "9",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "191 MB P MY GABA: 76 perturbed cells, 23 FDR<0.05 genes, Slc25a36 FDR 2.34e-06 and Luc7l2 FDR 1.89e-04. 217 P MY Pineal Glut: 32 perturbed cells, 22 FDR<0.05 genes, Zbed4 FDR 8.41e-06, Mterf3 FDR 1.33e-05, Cacna1a FDR 3.55e-04, Cfp FDR 9.72e-03, Rbm25 FDR 1.29e-02.",
+        "description": "A low-cell-count hindbrain/pineal glutamatergic class and a midbrain/pons/myelencephalon GABA class shared the same recurrent Hnrnpc genes seen in larger signatures."
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "evidence_id": "E006",
+        "evidence_slug": "hnrnpc_minor_responsive_classes",
+        "genes": "Ddx39b|Mterf3|Zbed4|Txnl1|Pabpn1|Anapc5|Dst|Zfand1|Slc25a36|Orc4|Dcaf11|Luc7l2|Leng8|Ddx17",
+        "n_genes": "14",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "066 CNU-HYa HY GABA had 7 FDR<0.05 genes including Ddx39b, Mterf3, Zbed4, Txnl1, and Dst; 145 MH-LH TH Glut had 5, all up, led by Zfand1 FDR 3.08e-05 and Slc25a36 FDR 2.74e-04; 110 CNU-HYa HY MM Glut had Dcaf11 up FDR 0.0216 and Luc7l2 down FDR 3.81e-04; 052 Pvalb Gaba had Leng8 up FDR 0.00187 and Ddx17 up FDR 0.0189.",
+        "description": "Four additional classes showed smaller but FDR-significant fragments of the same response."
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "evidence_id": "E009",
+        "evidence_slug": "hnrnpc_cross_cell_signature_correlations",
+        "n_genes": "0",
+        "has_genes": "0",
+        "has_cell_type": "0",
+        "statistics": "Whole-signature Pearson correlations of Hnrnpc Wilcoxon scores were 151-vs-155 r=0.335, 151-vs-191 r=0.311, 151-vs-217 r=0.296, 155-vs-191 r=0.295, 155-vs-217 r=0.271, and 191-vs-217 r=0.278; 151-vs-005 L4-5 IT CTX Glut was r=0.093.",
+        "description": "The four larger posterior signatures were mutually more similar than an anterior cortical negative class was to the 151 signature."
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "evidence_id": "E011",
+        "evidence_slug": "hnrnpc_multi_class_negative_results",
+        "n_genes": "0",
+        "has_genes": "0",
+        "has_cell_type": "0",
+        "statistics": "Zero FDR<0.05 genes were detected in 005 L4-5 IT CTX Glut despite 128 perturbed cells and min FDR 0.192, in 054 CNU-MGE GABA with 53 perturbed cells and min FDR 0.311, and in 308 CB GABA with 65 perturbed cells and min FDR 0.595; 11 other zero-hit classes had min FDR 1.0.",
+        "description": "Several measured cell classes did not show a genome-wide-significant Hnrnpc abundance response."
+      }
+    ],
+    "exact_de_rows": [
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Cacna1a",
+        "score": 2.214957,
+        "logfoldchange": 0.166925,
+        "pval": 0.026763035219540165,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Dcaf11",
+        "score": 0.9084,
+        "logfoldchange": 0.113876,
+        "pval": 0.36366678778445527,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Ddx17",
+        "score": 0.904569,
+        "logfoldchange": 0.077631,
+        "pval": 0.36569391432983744,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Ddx39b",
+        "score": 3.469453,
+        "logfoldchange": 0.316595,
+        "pval": 0.0005215196169921832,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Hnrnpc",
+        "score": -1.200449,
+        "logfoldchange": -0.208594,
+        "pval": 0.22996498905057572,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Leng8",
+        "score": 1.76398,
+        "logfoldchange": 0.092831,
+        "pval": 0.07773535434799501,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Luc7l2",
+        "score": -0.642676,
+        "logfoldchange": -0.076145,
+        "pval": 0.5204346178953047,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Mterf3",
+        "score": 3.957954,
+        "logfoldchange": 0.526525,
+        "pval": 7.559438101102787e-05,
+        "pvals_adj": 0.43144233055693976
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Rbm25",
+        "score": -1.344548,
+        "logfoldchange": -0.117396,
+        "pval": 0.17877139566357103,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Slc25a36",
+        "score": 2.158497,
+        "logfoldchange": 0.177293,
+        "pval": 0.030889195912344004,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Tspan33",
+        "score": 0.956041,
+        "logfoldchange": 0.183794,
+        "pval": 0.339051444734103,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Txnl1",
+        "score": 0.968448,
+        "logfoldchange": 0.114244,
+        "pval": 0.33282064979177006,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Zbed4",
+        "score": 1.76842,
+        "logfoldchange": 0.47321,
+        "pval": 0.0769907691303852,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Zfand1",
+        "score": 3.33094,
+        "logfoldchange": 0.589148,
+        "pval": 0.0008655341525332414,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Cacna1a",
+        "score": 2.969016,
+        "logfoldchange": 0.283255,
+        "pval": 0.0029875522203337184,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Dcaf11",
+        "score": 1.377979,
+        "logfoldchange": 0.143749,
+        "pval": 0.16820977969014006,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Ddx17",
+        "score": 4.729567,
+        "logfoldchange": 0.297508,
+        "pval": 2.2499934422773645e-06,
+        "pvals_adj": 0.018857195039726594
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Ddx39b",
+        "score": 1.461574,
+        "logfoldchange": 0.135012,
+        "pval": 0.14385800946604885,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Hnrnpc",
+        "score": -0.633988,
+        "logfoldchange": -0.137551,
+        "pval": 0.5260889163419524,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Leng8",
+        "score": 5.306415,
+        "logfoldchange": 0.22362,
+        "pval": 1.1180219649196741e-07,
+        "pvals_adj": 0.0018740284175983578
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Luc7l2",
+        "score": -1.13377,
+        "logfoldchange": -0.108643,
+        "pval": 0.256890989700031,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Mterf3",
+        "score": 0.26514,
+        "logfoldchange": 0.047251,
+        "pval": 0.7909018355414821,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Rbm25",
+        "score": -2.324715,
+        "logfoldchange": -0.223799,
+        "pval": 0.020087224396435344,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Slc25a36",
+        "score": 3.288281,
+        "logfoldchange": 0.247248,
+        "pval": 0.0010080102988911392,
+        "pvals_adj": 0.938681590556293
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Tspan33",
+        "score": 0.862428,
+        "logfoldchange": 0.313179,
+        "pval": 0.3884519081853929,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Txnl1",
+        "score": 1.531526,
+        "logfoldchange": 0.165384,
+        "pval": 0.12563934567129081,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Zbed4",
+        "score": 3.248254,
+        "logfoldchange": 1.048346,
+        "pval": 0.0011611577684444247,
+        "pvals_adj": 0.9731663257332724
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Zfand1",
+        "score": -0.156491,
+        "logfoldchange": 0.046918,
+        "pval": 0.8756461458282745,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Cacna1a",
+        "score": 3.143308,
+        "logfoldchange": 0.509425,
+        "pval": 0.0016704971492250567,
+        "pvals_adj": 0.5549814770685046
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Dcaf11",
+        "score": 2.386018,
+        "logfoldchange": 0.304322,
+        "pval": 0.017031909085879933,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Ddx17",
+        "score": 3.866539,
+        "logfoldchange": 0.380318,
+        "pval": 0.0001103909287239103,
+        "pvals_adj": 0.17577088082161463
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Ddx39b",
+        "score": 5.06077,
+        "logfoldchange": 0.52964,
+        "pval": 4.17567895378884e-07,
+        "pvals_adj": 0.00609157773809142
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Hnrnpc",
+        "score": -2.337527,
+        "logfoldchange": -0.770183,
+        "pval": 0.019411811334174054,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Leng8",
+        "score": 2.919134,
+        "logfoldchange": 0.182249,
+        "pval": 0.003510053518016104,
+        "pvals_adj": 0.8586834074912739
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Luc7l2",
+        "score": -3.380465,
+        "logfoldchange": -0.366605,
+        "pval": 0.0007236328043835032,
+        "pvals_adj": 0.4218051006645204
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Mterf3",
+        "score": 4.90221,
+        "logfoldchange": 0.774108,
+        "pval": 9.476467630846822e-07,
+        "pvals_adj": 0.00609157773809142
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Rbm25",
+        "score": 0.116425,
+        "logfoldchange": 0.030881,
+        "pval": 0.9073157499794233,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Slc25a36",
+        "score": 3.677253,
+        "logfoldchange": 0.369285,
+        "pval": 0.00023575971323998152,
+        "pvals_adj": 0.23734069014053197
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Tspan33",
+        "score": 1.330139,
+        "logfoldchange": 0.363891,
+        "pval": 0.18347241551993088,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Txnl1",
+        "score": 4.77245,
+        "logfoldchange": 0.662136,
+        "pval": 1.8199788190280686e-06,
+        "pvals_adj": 0.007786779377211592
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Zbed4",
+        "score": 4.878709,
+        "logfoldchange": 1.352729,
+        "pval": 1.0678236072381829e-06,
+        "pvals_adj": 0.00609157773809142
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Zfand1",
+        "score": 1.874746,
+        "logfoldchange": 0.425065,
+        "pval": 0.060827631644281704,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "gene": "Cacna1a",
+        "score": 4.162509,
+        "logfoldchange": 0.710058,
+        "pval": 3.14769173606028e-05,
+        "pvals_adj": 0.13509106008236707
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "gene": "Dcaf11",
+        "score": 4.706975,
+        "logfoldchange": 0.756266,
+        "pval": 2.514197846805564e-06,
+        "pvals_adj": 0.021580617218055556
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "gene": "Ddx17",
+        "score": 0.846118,
+        "logfoldchange": 0.095627,
+        "pval": 0.397486892490585,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "gene": "Ddx39b",
+        "score": 3.753584,
+        "logfoldchange": 0.469011,
+        "pval": 0.0001743238879937978,
+        "pvals_adj": 0.4987696975315878
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "gene": "Hnrnpc",
+        "score": -1.452788,
+        "logfoldchange": -0.387716,
+        "pval": 0.14628255153525166,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "gene": "Leng8",
+        "score": 1.996684,
+        "logfoldchange": 0.142873,
+        "pval": 0.04585948704333755,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "gene": "Luc7l2",
+        "score": -5.593838,
+        "logfoldchange": -0.629725,
+        "pval": 2.221042507564272e-08,
+        "pvals_adj": 0.00038128636727355857
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "gene": "Mterf3",
+        "score": 3.69899,
+        "logfoldchange": 0.624673,
+        "pval": 0.00021645898592842684,
+        "pvals_adj": 0.5065720713201668
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "gene": "Rbm25",
+        "score": 0.577703,
+        "logfoldchange": 0.100989,
+        "pval": 0.5634643175349697,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "gene": "Slc25a36",
+        "score": 3.561198,
+        "logfoldchange": 0.390444,
+        "pval": 0.0003691670552279715,
+        "pvals_adj": 0.5761355306453261
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "gene": "Tspan33",
+        "score": 0.591527,
+        "logfoldchange": 0.278233,
+        "pval": 0.5541675331034306,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "gene": "Txnl1",
+        "score": 3.373212,
+        "logfoldchange": 0.48343,
+        "pval": 0.000742968112749157,
+        "pvals_adj": 0.8503022394376518
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "gene": "Zbed4",
+        "score": 1.046711,
+        "logfoldchange": 0.512825,
+        "pval": 0.2952330639499531,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "gene": "Zfand1",
+        "score": 0.411307,
+        "logfoldchange": 0.13008,
+        "pval": 0.68084768211749,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Cacna1a",
+        "score": 3.310631,
+        "logfoldchange": 0.528153,
+        "pval": 0.0009308576119873779,
+        "pvals_adj": 0.38207524919045877
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Dcaf11",
+        "score": 2.180973,
+        "logfoldchange": 0.362552,
+        "pval": 0.0291853909983217,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Ddx17",
+        "score": 3.404103,
+        "logfoldchange": 0.343241,
+        "pval": 0.0006638182882106091,
+        "pvals_adj": 0.3465753794104577
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Ddx39b",
+        "score": 3.701792,
+        "logfoldchange": 0.50625,
+        "pval": 0.0002140821524861654,
+        "pvals_adj": 0.14696924405187956
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Hnrnpc",
+        "score": -1.908466,
+        "logfoldchange": -0.616678,
+        "pval": 0.05633107651511407,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Leng8",
+        "score": 3.752383,
+        "logfoldchange": 0.247644,
+        "pval": 0.0001751616878195214,
+        "pvals_adj": 0.14696924405187956
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Luc7l2",
+        "score": -3.371698,
+        "logfoldchange": -0.315473,
+        "pval": 0.0007470623117261457,
+        "pvals_adj": 0.3516697423894511
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Mterf3",
+        "score": 5.128944,
+        "logfoldchange": 0.903058,
+        "pval": 2.913717943048139e-07,
+        "pvals_adj": 0.0016226495224835086
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Rbm25",
+        "score": -2.008736,
+        "logfoldchange": -0.309128,
+        "pval": 0.0445650954776477,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Slc25a36",
+        "score": 5.525961,
+        "logfoldchange": 0.700194,
+        "pval": 3.276870823963541e-08,
+        "pvals_adj": 0.0002737334042797944
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Tspan33",
+        "score": 2.061149,
+        "logfoldchange": 0.447713,
+        "pval": 0.03928880249453506,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Txnl1",
+        "score": 3.996293,
+        "logfoldchange": 0.591392,
+        "pval": 6.43421058074574e-05,
+        "pvals_adj": 0.10750170182561312
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Zbed4",
+        "score": 2.65565,
+        "logfoldchange": 0.998685,
+        "pval": 0.00791558137942876,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Zfand1",
+        "score": 6.011146,
+        "logfoldchange": 1.145699,
+        "pval": 1.8421661568134431e-09,
+        "pvals_adj": 3.0777069981882194e-05
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cacna1a",
+        "score": 7.942464,
+        "logfoldchange": 0.580541,
+        "pval": 1.98203405722753e-15,
+        "pvals_adj": 8.551981448422485e-12
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Dcaf11",
+        "score": 2.318851,
+        "logfoldchange": 0.15854,
+        "pval": 0.020403126700439866,
+        "pvals_adj": 0.5942360775008387
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ddx17",
+        "score": 4.934783,
+        "logfoldchange": 0.204986,
+        "pval": 8.023980944760104e-07,
+        "pvals_adj": 0.0003644365450674069
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ddx39b",
+        "score": 3.812324,
+        "logfoldchange": 0.225281,
+        "pval": 0.00013766627167212378,
+        "pvals_adj": 0.024039269720372246
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Hnrnpc",
+        "score": -2.567621,
+        "logfoldchange": -0.36491,
+        "pval": 0.01023991074376703,
+        "pvals_adj": 0.4345858130680734
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Leng8",
+        "score": 5.330637,
+        "logfoldchange": 0.180588,
+        "pval": 9.786877879645189e-08,
+        "pvals_adj": 6.756469012991852e-05
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Luc7l2",
+        "score": -7.686925,
+        "logfoldchange": -0.360018,
+        "pval": 1.5071345169250356e-14,
+        "pvals_adj": 5.2023269255218376e-11
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Mterf3",
+        "score": 6.436441,
+        "logfoldchange": 0.653568,
+        "pval": 1.2230730652216805e-10,
+        "pvals_adj": 1.759084836055082e-07
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rbm25",
+        "score": -8.591229,
+        "logfoldchange": -0.513398,
+        "pval": 8.604326298820962e-18,
+        "pvals_adj": 4.950068919711699e-14
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Slc25a36",
+        "score": 6.180324,
+        "logfoldchange": 0.410086,
+        "pval": 6.397011008846206e-10,
+        "pvals_adj": 7.886143785834048e-07
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Tspan33",
+        "score": 8.629926,
+        "logfoldchange": 0.725378,
+        "pval": 6.139163806924605e-18,
+        "pvals_adj": 4.950068919711699e-14
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Txnl1",
+        "score": 11.596799,
+        "logfoldchange": 0.812411,
+        "pval": 4.277839207613648e-31,
+        "pvals_adj": 7.383122688420395e-27
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Zbed4",
+        "score": 7.005879,
+        "logfoldchange": 1.360565,
+        "pval": 2.454404192452475e-12,
+        "pvals_adj": 5.295070244692159e-09
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Zfand1",
+        "score": 5.131828,
+        "logfoldchange": 0.544192,
+        "pval": 2.869412300635102e-07,
+        "pvals_adj": 0.00015975221579568136
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "155 MB Glut",
+        "gene": "Cacna1a",
+        "score": 3.010654,
+        "logfoldchange": 0.342852,
+        "pval": 0.0026068536418623355,
+        "pvals_adj": 0.39887147434214665
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "155 MB Glut",
+        "gene": "Dcaf11",
+        "score": 1.976555,
+        "logfoldchange": 0.190901,
+        "pval": 0.04809195825174714,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "155 MB Glut",
+        "gene": "Ddx17",
+        "score": 3.181336,
+        "logfoldchange": 0.200247,
+        "pval": 0.0014659753399037369,
+        "pvals_adj": 0.2779457375428357
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "155 MB Glut",
+        "gene": "Ddx39b",
+        "score": 6.145905,
+        "logfoldchange": 0.499855,
+        "pval": 7.950871640792483e-10,
+        "pvals_adj": 2.311450900505721e-06
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "155 MB Glut",
+        "gene": "Hnrnpc",
+        "score": -2.034499,
+        "logfoldchange": -0.366593,
+        "pval": 0.04190133455199919,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "155 MB Glut",
+        "gene": "Leng8",
+        "score": 7.226443,
+        "logfoldchange": 0.337439,
+        "pval": 4.958090938535771e-13,
+        "pvals_adj": 4.324199012043972e-09
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "155 MB Glut",
+        "gene": "Luc7l2",
+        "score": -5.946321,
+        "logfoldchange": -0.416598,
+        "pval": 2.742359360225464e-09,
+        "pvals_adj": 6.833567760058966e-06
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "155 MB Glut",
+        "gene": "Mterf3",
+        "score": 7.829321,
+        "logfoldchange": 0.821939,
+        "pval": 4.905102260968235e-15,
+        "pvals_adj": 8.555969873806892e-11
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "155 MB Glut",
+        "gene": "Rbm25",
+        "score": -3.282928,
+        "logfoldchange": -0.331051,
+        "pval": 0.0010273492034915703,
+        "pvals_adj": 0.22213855153001558
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "155 MB Glut",
+        "gene": "Slc25a36",
+        "score": 6.456358,
+        "logfoldchange": 0.536087,
+        "pval": 1.0725269179668699e-10,
+        "pvals_adj": 3.741617406019222e-07
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "155 MB Glut",
+        "gene": "Tspan33",
+        "score": 2.83548,
+        "logfoldchange": 0.540999,
+        "pval": 0.004575687970114833,
+        "pvals_adj": 0.5242224372280451
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "155 MB Glut",
+        "gene": "Txnl1",
+        "score": 6.499341,
+        "logfoldchange": 0.61536,
+        "pval": 8.06722497288756e-11,
+        "pvals_adj": 3.5179151300519426e-07
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "155 MB Glut",
+        "gene": "Zbed4",
+        "score": 6.665627,
+        "logfoldchange": 1.376489,
+        "pval": 2.6353740748855028e-11,
+        "pvals_adj": 1.5322943329409274e-07
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "155 MB Glut",
+        "gene": "Zfand1",
+        "score": 2.83476,
+        "logfoldchange": 0.480106,
+        "pval": 0.004586011921428987,
+        "pvals_adj": 0.5242224372280451
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Cacna1a",
+        "score": 4.380607,
+        "logfoldchange": 0.574397,
+        "pval": 1.1834933194704136e-05,
+        "pvals_adj": 0.010117684388152566
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Dcaf11",
+        "score": 1.293967,
+        "logfoldchange": 0.131588,
+        "pval": 0.19567671432758305,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Ddx17",
+        "score": 2.898816,
+        "logfoldchange": 0.269508,
+        "pval": 0.0037457434244796326,
+        "pvals_adj": 0.6158146256899303
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Ddx39b",
+        "score": 4.619773,
+        "logfoldchange": 0.474026,
+        "pval": 3.841601274807864e-06,
+        "pvals_adj": 0.005737700466825446
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Hnrnpc",
+        "score": 0.68551,
+        "logfoldchange": 0.281422,
+        "pval": 0.49302199978069383,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Leng8",
+        "score": 4.835937,
+        "logfoldchange": 0.313674,
+        "pval": 1.325201378779623e-06,
+        "pvals_adj": 0.0028322866467967492
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Luc7l2",
+        "score": -5.523751,
+        "logfoldchange": -0.527,
+        "pval": 3.318376988917686e-08,
+        "pvals_adj": 0.00018912536585504862
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Mterf3",
+        "score": 4.57394,
+        "logfoldchange": 0.667648,
+        "pval": 4.786359064702335e-06,
+        "pvals_adj": 0.005737700466825446
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Rbm25",
+        "score": -2.89897,
+        "logfoldchange": -0.292421,
+        "pval": 0.003743908842858351,
+        "pvals_adj": 0.6158146256899303
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Slc25a36",
+        "score": 6.376462,
+        "logfoldchange": 0.65507,
+        "pval": 1.8122499326380558e-10,
+        "pvals_adj": 2.3355517984256904e-06
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Tspan33",
+        "score": -0.098712,
+        "logfoldchange": -0.031056,
+        "pval": 0.9213671113400934,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Txnl1",
+        "score": 5.036817,
+        "logfoldchange": 0.58299,
+        "pval": 4.7333849427935895e-07,
+        "pvals_adj": 0.001156163082169783
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Zbed4",
+        "score": 5.111066,
+        "logfoldchange": 1.449875,
+        "pval": 3.20345678177495e-07,
+        "pvals_adj": 0.0009128784009131348
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Zfand1",
+        "score": 3.4874,
+        "logfoldchange": 0.6244,
+        "pval": 0.00048774057018941615,
+        "pvals_adj": 0.2084847067274659
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Cacna1a",
+        "score": 5.408515,
+        "logfoldchange": 1.068826,
+        "pval": 6.354943128857711e-08,
+        "pvals_adj": 0.00035528368719067174
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Dcaf11",
+        "score": 0.202719,
+        "logfoldchange": 0.003466,
+        "pval": 0.8393544561421162,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Ddx17",
+        "score": 1.326514,
+        "logfoldchange": 0.142518,
+        "pval": 0.18466949154619983,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Ddx39b",
+        "score": 2.654787,
+        "logfoldchange": 0.448881,
+        "pval": 0.007935849804523581,
+        "pvals_adj": 0.6854821592591437
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Hnrnpc",
+        "score": -1.617445,
+        "logfoldchange": -0.746338,
+        "pval": 0.10578230793962885,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Leng8",
+        "score": 5.326372,
+        "logfoldchange": 0.440105,
+        "pval": 1.0019381956399974e-07,
+        "pvals_adj": 0.0004201126854318509
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Luc7l2",
+        "score": -3.097779,
+        "logfoldchange": -0.329746,
+        "pval": 0.0019497664004521137,
+        "pvals_adj": 0.3791265949400678
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Mterf3",
+        "score": 6.035758,
+        "logfoldchange": 1.264075,
+        "pval": 1.582186488969134e-09,
+        "pvals_adj": 1.3268215896495157e-05
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Rbm25",
+        "score": -4.363257,
+        "logfoldchange": -0.6513,
+        "pval": 1.2813992417598713e-05,
+        "pvals_adj": 0.012878096495345792
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Slc25a36",
+        "score": 3.916484,
+        "logfoldchange": 0.503017,
+        "pval": 8.984991072280324e-05,
+        "pvals_adj": 0.06552011750621113
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Tspan33",
+        "score": 0.227081,
+        "logfoldchange": 0.258702,
+        "pval": 0.820360938466655,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Txnl1",
+        "score": 5.087858,
+        "logfoldchange": 0.866465,
+        "pval": 3.6213024097835556e-07,
+        "pvals_adj": 0.001214729680337796
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Zbed4",
+        "score": 6.218601,
+        "logfoldchange": 2.171625,
+        "pval": 5.016080766218811e-10,
+        "pvals_adj": 8.41297066110219e-06
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Zfand1",
+        "score": 2.169844,
+        "logfoldchange": 0.541541,
+        "pval": 0.030018680617820356,
+        "pvals_adj": 1.0
+      }
+    ]
+  },
+  "caveats": [
+    "Hnrnpc self-depletion was weak at the mRNA level, so downstream vulnerability is partly confounded with guide activity and power.",
+    "The assay measures total transcript abundance, not nuclear-speckle morphology or splice isoforms."
+  ],
+  "prior_expectation": {
+    "citations": [
+      {
+        "target_gene": "Hnrnpc",
+        "ref_id": "R006",
+        "ref_slug": "tilliole_2024_hnrnp_brain_review",
+        "source": "Frontiers in Molecular Neuroscience",
+        "source_type": "review",
+        "citation": "Tilliole P, Fix S, Godin JD. hnRNPs: roles in neurodevelopment and implication for brain disorders. Front Mol Neurosci. 2024;17:1411639. doi:10.3389/fnmol.2024.1411639. PMID:39086926.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39086926/",
+        "description": "Review summarizing hnRNP proteins as multifunctional RNA-binding proteins, their roles in tissue-specific alternative splicing, and their links to neurodevelopmental and neurodegenerative disorders."
+      },
+      {
+        "target_gene": "Hnrnpc",
+        "ref_id": "R007",
+        "ref_slug": "niggl_2023_hnrnpc_haploinsufficiency",
+        "source": "American Journal of Human Genetics",
+        "source_type": "journal_article",
+        "citation": "Niggl E, Bouman A, Briere LC, Hoogenboezem RM, Wallaard I, Park J, et al. HNRNPC haploinsufficiency affects alternative splicing of intellectual disability-associated genes and causes a neurodevelopmental disorder. Am J Hum Genet. 2023;110(8):1414-1435. doi:10.1016/j.ajhg.2023.07.005.",
+        "url": "https://doi.org/10.1016/j.ajhg.2023.07.005",
+        "description": "Reported heterozygous HNRNPC germline variants in individuals with global developmental delay and intellectual disability and showed that altered HNRNPC levels perturb splicing of intellectual-disability genes and neuronal phenotypes."
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 5,
+    "priority": 4
+  },
+  "report_evidence_ids": [
+    "Hnrnpc:E002",
+    "Hnrnpc:E003",
+    "Hnrnpc:E004",
+    "Hnrnpc:E005",
+    "Hnrnpc:E006",
+    "Hnrnpc:E009",
+    "Hnrnpc:E011"
+  ],
+  "reference_ids": [
+    "Hnrnpc:R006",
+    "Hnrnpc:R007"
+  ],
+  "source_urls_or_dois": [
+    {
+      "ref_id": "Hnrnpc:R006",
+      "citation": "Tilliole P, Fix S, Godin JD. hnRNPs: roles in neurodevelopment and implication for brain disorders. Front Mol Neurosci. 2024;17:1411639. doi:10.3389/fnmol.2024.1411639. PMID:39086926.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/39086926/"
+    },
+    {
+      "ref_id": "Hnrnpc:R007",
+      "citation": "Niggl E, Bouman A, Briere LC, Hoogenboezem RM, Wallaard I, Park J, et al. HNRNPC haploinsufficiency affects alternative splicing of intellectual disability-associated genes and causes a neurodevelopmental disorder. Am J Hum Genet. 2023;110(8):1414-1435. doi:10.1016/j.ajhg.2023.07.005.",
+      "url_or_doi": "https://doi.org/10.1016/j.ajhg.2023.07.005"
+    }
+  ],
+  "source_cluster_ids": [
+    "C064"
+  ],
+  "source_claim_ids": [
+    "claim:hnrnpc_f001_b564021861d4"
+  ]
+}

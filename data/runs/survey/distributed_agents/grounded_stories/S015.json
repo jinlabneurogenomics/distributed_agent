@@ -1,0 +1,243 @@
+{
+  "story_id": "S015",
+  "title": "Wdfy3 loss selectively suppresses synaptic and AP-1/JNK transcripts in thalamic neurons",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Wdfy3 perturbation generated its only broad corrected response in 151 TH Prkcd Grin2c Glut, where Stmn4 and Jun led a synaptic/AP-1 module, and the Dctn1/Sema6a/Herc2/Pten versus Grin1 neighborhood remained exploratory because whole-transcriptome correlations were modest.",
+  "biological_interpretation": "WDFY3 supports a thalamic neuronal state linked to synaptic and stress transcripts rather than a simple pan-autophagy or DVL/Wnt output.",
+  "targets": [
+    "Wdfy3"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut"
+  ],
+  "support": {
+    "exact_de_rows": [
+      {
+        "gene_target": "Wdfy3",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Gls",
+        "score": 5.234571933746338,
+        "logfoldchanges": 0.2110077440738678,
+        "pvals_adj": 0.0007135198210423848
+      },
+      {
+        "gene_target": "Wdfy3",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Gpm6a",
+        "score": -5.339544296264648,
+        "logfoldchanges": -0.34594839811325073,
+        "pvals_adj": 0.0005360678761268016
+      },
+      {
+        "gene_target": "Wdfy3",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Jun",
+        "score": -7.263975620269775,
+        "logfoldchanges": -1.0900044441223145,
+        "pvals_adj": 3.243618965773773e-09
+      },
+      {
+        "gene_target": "Wdfy3",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Jund",
+        "score": -3.9869492053985596,
+        "logfoldchanges": -0.41525107622146606,
+        "pvals_adj": 0.06195797696534856
+      },
+      {
+        "gene_target": "Wdfy3",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Mapk8",
+        "score": 3.8909525871276855,
+        "logfoldchanges": 0.3083203136920929,
+        "pvals_adj": 0.07117913708049106
+      },
+      {
+        "gene_target": "Wdfy3",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Stmn4",
+        "score": -7.332329750061035,
+        "logfoldchanges": -0.38924965262413025,
+        "pvals_adj": 3.243618965773773e-09
+      },
+      {
+        "gene_target": "Wdfy3",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Syt11",
+        "score": -4.603649616241455,
+        "logfoldchanges": -0.17086316645145416,
+        "pvals_adj": 0.008956356108280144
+      },
+      {
+        "gene_target": "Wdfy3",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Wdfy3",
+        "score": -3.6994540691375732,
+        "logfoldchanges": -0.20888406038284302,
+        "pvals_adj": 0.1065440820315009
+      },
+      {
+        "gene_target": "Wdfy3",
+        "group_name": "155 MB Glut",
+        "names": "Stmn4",
+        "score": -5.600338935852051,
+        "logfoldchanges": -0.6631442904472351,
+        "pvals_adj": 0.0003731634858082971
+      }
+    ],
+    "evidence_records": [
+      {
+        "target_gene": "Wdfy3",
+        "evidence_id": "E001",
+        "evidence_slug": "wdfy3_on_target_across_contexts",
+        "cell_type": "",
+        "genes": "Wdfy3",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "371,818 Wdfy3-target rows from 22 cell types; Wdfy3 transcript was present in every contrast. The strongest Wdfy3 row was in 151 TH Prkcd Grin2c Glut: logFC -0.2089, score -3.699, p=2.16e-4, FDR=0.1065, 230 perturbed versus 23,679 controls.",
+        "description": "Direct quantification of the target transcript after Wdfy3 perturbation."
+      },
+      {
+        "target_gene": "Wdfy3",
+        "evidence_id": "E002",
+        "evidence_slug": "th_prkcd_grin2c_broad_signature",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Wdfy3|Stmn4|Jun",
+        "n_genes": "3",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "230 perturbed cells versus 23,679 controls; 17 genes at FDR<0.05, 32 at FDR<0.10, 69 at p<0.001, and 240 at p<0.01 among 17,259 tested genes; top p values were Stmn4 p=2.26e-13 FDR=3.24e-9 and Jun p=3.76e-13 FDR=3.24e-9.",
+        "description": "The only Wdfy3 contrast with a broad transcriptome-wide response."
+      },
+      {
+        "target_gene": "Wdfy3",
+        "evidence_id": "E007",
+        "evidence_slug": "wdfy3_most_contexts_no_fdr_genes",
+        "cell_type": "",
+        "genes": "",
+        "n_genes": "0",
+        "has_genes": "0",
+        "has_cell_type": "0",
+        "statistics": "20 of 22 Wdfy3 cell-type contrasts had zero genes at FDR<0.10; 155 MB Glut had one FDR<0.10 gene; 151 TH Prkcd Grin2c Glut had 32 FDR<0.10 genes.",
+        "description": "Aggregate cell-type specificity of the Wdfy3 perturbation."
+      },
+      {
+        "target_gene": "Wdfy3",
+        "evidence_id": "E009",
+        "evidence_slug": "th_top_signature_neighbors",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "",
+        "n_genes": "0",
+        "has_genes": "0",
+        "has_cell_type": "1",
+        "statistics": "Full-transcriptome Wdfy3 score correlations: Dctn1 r=0.204, Herc2 0.189, Celf2 0.186, Pten 0.180, Grin1 -0.269, Tbce -0.181, Ptprd -0.149, Atp6v0c -0.147. Restricted to the 240 Wdfy3 p<0.01 genes, Dctn1 r=0.669, Sema6a 0.612, Herc2 0.566, Pten 0.458, and Grin1 -0.694.",
+        "description": "Top positive and negative signature-neighbor scan for the strongest Wdfy3 cell type."
+      }
+    ],
+    "source_claim_ids": [
+      "claim:wdfy3_f001_9a6415df9c84",
+      "claim:wdfy3_f008_f73afc91705e"
+    ],
+    "source_cluster_ids": [
+      "C049"
+    ]
+  },
+  "caveats": [
+    "The Wdfy3 self-transcript decrease in the responsive thalamic class was nominal, so the phenotype is assigned by guides without FDR-verified Wdfy3 mRNA depletion."
+  ],
+  "prior_expectation": {
+    "summary": "Prior literature and pathway context were taken from the resolved report references; the observed Perturb-seq signal either refines expected gene function by cell type or marks an exploratory response-state neighbor where noted in caveats.",
+    "citations": [
+      {
+        "reference_id": "Wdfy3:R003",
+        "citation": "Orosco LA et al. Loss of Wdfy3 in mice alters cerebral cortical neurogenesis reflecting aspects of the autism pathology. Nat Commun. 2014;5:4692.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25198012/",
+        "supports": "Mouse Wdfy3 loss altered cortical progenitor division, expansion, neuronal migration, and ASD-like neurodevelopmental pathology."
+      },
+      {
+        "reference_id": "Wdfy3:R004",
+        "citation": "Dragich JM et al. Autophagy linked FYVE (Alfy/WDFY3) is required for establishing neuronal connectivity in the mammalian brain. eLife. 2016;5:e14810.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/27648578/",
+        "supports": "Mouse genetics study showing that Alfy/Wdfy3 is required for axonal tract formation and axon outgrowth responses to Netrin-1 in the developing CNS."
+      },
+      {
+        "reference_id": "Wdfy3:R006",
+        "citation": "Napoli E et al. Wdfy3 regulates glycophagy, mitophagy, and synaptic plasticity. J Cereb Blood Flow Metab. 2021;41(12):3213-3231.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34187232/",
+        "supports": "Evidence that Wdfy3 haploinsufficiency affects mitophagy, mitochondrial morphology/localization at synaptic terminals, synaptic density, and glycogen autophagy in mouse brain."
+      },
+      {
+        "reference_id": "Wdfy3:R001",
+        "citation": "UniProt Consortium. Reviewed UniProtKB entries Q8IZQ1 and Q6VNB8 for human and mouse WDFY3.",
+        "url": "https://www.uniprot.org/uniprotkb/Q8IZQ1",
+        "supports": "Curated WDFY3/ALFY annotations for selective macroautophagy, ATG5-ATG12-ATG16L and SQSTM1 interactions, PI3P binding, brain-development roles, and mouse orthology."
+      },
+      {
+        "reference_id": "Wdfy3:R002",
+        "citation": "Filimonenko M et al. The selective macroautophagic degradation of aggregated proteins requires the PI3P-binding protein Alfy. Mol Cell. 2010;38(2):265-279.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/20417604/",
+        "supports": "Primary evidence that ALFY/WDFY3 scaffolds SQSTM1-positive cargo to ATG5, ATG12, ATG16L and LC3 for aggregate-selective autophagy."
+      },
+      {
+        "reference_id": "Wdfy3:R005",
+        "citation": "Le Duc D et al. Pathogenic WDFY3 variants cause neurodevelopmental disorders and opposing effects on brain size. Brain. 2019;142(9):2617-2630.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31327001/",
+        "supports": "Human genetics linking heterozygous WDFY3 variants to neurodevelopmental delay, intellectual disability, macrocephaly and psychiatric diagnoses, with allele-class-dependent effects on brain size."
+      },
+      {
+        "reference_id": "Wdfy3:R007",
+        "citation": "ChEMBL target search for WDFY3, queried in this analysis, returned zero target records.",
+        "url": "https://www.ebi.ac.uk/chembl/",
+        "supports": "Supports the absence of curated direct WDFY3 small-molecule target pharmacology in ChEMBL for this report."
+      },
+      {
+        "reference_id": "Wdfy3:R008",
+        "citation": "STRING functional-enrichment API analysis of the 32 Wdfy3 FDR<0.10 genes from 151 TH Prkcd Grin2c Glut, Mus musculus background, queried in this analysis.",
+        "url": "https://string-db.org/",
+        "supports": "Mapped the thalamic Wdfy3 FDR<0.10 gene set to presynaptic membrane, synaptic membrane, and AP-1 complex terms."
+      },
+      {
+        "reference_id": "Wdfy3:R009",
+        "citation": "Kadir R et al. ALFY-Controlled DVL3 Autophagy Regulates Wnt Signaling, Determining Human Brain Size. PLoS Genet. 2016;12(3):e1005919.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/27008544/",
+        "supports": "Connected ALFY/WDFY3 control of DVL3 aggregate turnover to Wnt signaling and human brain-size phenotypes."
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 4,
+    "priority": 4
+  },
+  "report_evidence_ids": [
+    "Wdfy3:E001",
+    "Wdfy3:E002",
+    "Wdfy3:E007",
+    "Wdfy3:E009"
+  ],
+  "reference_ids": [
+    "Wdfy3:R003",
+    "Wdfy3:R004",
+    "Wdfy3:R006",
+    "Wdfy3:R001",
+    "Wdfy3:R002",
+    "Wdfy3:R005",
+    "Wdfy3:R007",
+    "Wdfy3:R008",
+    "Wdfy3:R009"
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/25198012/",
+    "https://pubmed.ncbi.nlm.nih.gov/27648578/",
+    "https://pubmed.ncbi.nlm.nih.gov/34187232/",
+    "https://www.uniprot.org/uniprotkb/Q8IZQ1",
+    "https://pubmed.ncbi.nlm.nih.gov/20417604/",
+    "https://pubmed.ncbi.nlm.nih.gov/31327001/",
+    "https://www.ebi.ac.uk/chembl/",
+    "https://string-db.org/",
+    "https://pubmed.ncbi.nlm.nih.gov/27008544/"
+  ]
+}

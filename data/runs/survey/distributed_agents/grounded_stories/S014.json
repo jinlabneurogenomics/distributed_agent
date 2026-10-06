@@ -1,0 +1,93 @@
+{
+  "story_id": "S014",
+  "title": "Kcnb1 loss raises a compact Bdnf/Vgf/Scg2/Nptx2 module in L4/5 IT cortical neurons",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Kcnb1 perturbation produced an L4/5 intratelencephalic response marked by Bdnf, Vgf, Scg2, Nptx2, and Zbtb16 up-regulation, with weak Kcns2/Kcnma1 induction; Kcnb2 did not phenocopy it or compensate at the mRNA level.",
+  "biological_interpretation": "Kv2.1 loss or blockade can mimic an activity-linked cortical IT RNA state that is not shared by Kv2.2.",
+  "targets": [
+    "Kcnb1",
+    "Kcnb2"
+  ],
+  "cell_types": [
+    "005 L4-5 IT CTX Glut"
+  ],
+  "support": {
+    "exact_de_rows": [
+      {
+        "target": "Kcnb1",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Bdnf",
+        "logfoldchanges": 1.0625169277191162,
+        "pvals": 9.972912964705414e-08,
+        "pvals_adj": 0.0014407049828868042,
+        "score": 5.327216625213623
+      },
+      {
+        "target": "Kcnb1",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Vgf",
+        "logfoldchanges": 0.5103605389595032,
+        "pvals": 1.6828699718336693e-07,
+        "pvals_adj": 0.0014407049828868042,
+        "score": 5.2313385009765625
+      },
+      {
+        "target": "Kcnb1",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Scg2",
+        "logfoldchanges": 0.6599612832069397,
+        "pvals": 4.3958521795222746e-06,
+        "pvals_adj": 0.018816445254445095,
+        "score": 4.59173059463501
+      },
+      {
+        "target": "Kcnb1",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Nptx2",
+        "logfoldchanges": 0.8179369568824768,
+        "pvals": 1.1463741748817624e-05,
+        "pvals_adj": 0.039256437244651075,
+        "score": 4.387544631958008
+      },
+      {
+        "target": "Kcnb2",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Bdnf",
+        "logfoldchanges": 0.05598076060414314,
+        "pvals": 0.6740344145691562,
+        "pvals_adj": 1.0,
+        "score": -0.4206174910068512
+      }
+    ],
+    "evidence_summary": "Kcnb1:F001 resolves a five-gene all-up L4/5 IT module; Kcnb1:F005 resolves failure of Kcnb2 to phenocopy it."
+  },
+  "caveats": [
+    "Kcnb1 self-mRNA did not pass FDR.",
+    "The Bdnf/Vgf/Scg2/Nptx2 module passed FDR only in 005 L4-5 IT CTX Glut."
+  ],
+  "prior_expectation": {
+    "summary": "Kcnb1:F001 resolves a five-gene all-up L4/5 IT module; Kcnb1:F005 resolves failure of Kcnb2 to phenocopy it.",
+    "citations": [
+      "UniProtKB Q14721",
+      "STRING human KCNB1 network"
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 4,
+    "priority": 3
+  },
+  "report_evidence_ids": [
+    "Kcnb1:E002",
+    "Kcnb1:E006"
+  ],
+  "reference_ids": [
+    "Kcnb1:R001",
+    "Kcnb1:R009"
+  ],
+  "source_urls_or_dois": [
+    "https://www.uniprot.org/uniprotkb/Q14721",
+    "https://string-db.org/network/9606.ENSP00000360806"
+  ]
+}

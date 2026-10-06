@@ -1,0 +1,13 @@
+Done. I wrote:
+
+- [trace.md]([local file: trace.md])
+- [answer.txt]([local file: answer.txt])
+
+`answer.txt` contains only:
+
+```tsv
+target_name	predicted_n_degs
+Syn3	1
+```
+
+I also validated the final TSV content exactly.

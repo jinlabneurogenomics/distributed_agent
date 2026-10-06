@@ -1,0 +1,45 @@
+{
+  "story_id": "S052",
+  "title": "MAX disruption derepresses nucleolar, Stag3/ncPRC1.6, and Per/Cry clock branches that MYC/MYCN do not mimic",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Max perturbation produced 167 FDR<0.05 gene-by-cell rows across six Max-tested cell types, including repeated nucleolar/biosynthetic induction, Stag3 induction, and Per2/Cry1 induction. Mga partially shared the Stag3/Obscn branch, while Mnt, Myc, Mycn, E2f1, E2f4, E2f5, Tfdp1, and Tfdp2 failed to induce Stag3 in 151 TH and 155 MB Glut.",
+  "biological_interpretation": "The neuronal Max signature is more consistent with release of repressive MAX branches, including an MGA/ncPRC1.6-associated meiotic branch and an E-box clock branch, than with simple loss of MYC-driven ribosome biogenesis.",
+  "targets": ["Max", "Mga", "Myc", "Mycn", "Mdn1", "Gnl3", "Ltv1", "Pno1", "Nop2", "Stag3", "Obscn", "Per2", "Cry1"],
+  "cell_types": ["151 TH Prkcd Grin2c Glut", "155 MB Glut", "191 MB P MY GABA", "066 CNU-HYa HY GABA"],
+  "support": [
+    {
+      "evidence_id": "Max:E003;Max:E004;Max:E006",
+      "description": "Max induced the Stag3 and Per/Cry branches, and Mga shared the Stag3 branch in 151 and 155.",
+      "exact_de_rows": [
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Max", "gene": "Stag3", "logfoldchanges": 3.324, "pvals": null, "pvals_adj": 1.90e-11},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Max", "gene": "Per2", "logfoldchanges": 1.108, "pvals": null, "pvals_adj": 1.64e-10},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Max", "gene": "Cry1", "logfoldchanges": 0.654, "pvals": null, "pvals_adj": 0.0275},
+        {"cell_type": "155 MB Glut", "gene_target": "Max", "gene": "Stag3", "logfoldchanges": 3.047, "pvals": null, "pvals_adj": 5.03e-06},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Mga", "gene": "Stag3", "logfoldchanges": 3.606, "pvals": null, "pvals_adj": 4.83e-05},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Mga", "gene": "Obscn", "logfoldchanges": 4.435, "pvals": null, "pvals_adj": 1.73e-08}
+      ]
+    },
+    {
+      "evidence_id": "Max:E002;Mga:E009",
+      "description": "Max drove a larger nucleolar/biosynthetic state and the Stag3 branch was absent after MYC/MYCN/E2F-DP perturbations.",
+      "exact_de_rows": []
+    }
+  ],
+  "caveats": [
+    "Max mRNA itself was not FDR-depleted and showed mixed log fold-change signs, so the response should be interpreted as a Max-locus perturbation rather than a clean measured Max RNA loss.",
+    "MAX/MGA whole-transcriptome similarity was weak even when their Stag3 branch overlapped."
+  ],
+  "prior_expectation": {
+    "summary": "MAX is the obligatory bHLHZip partner in MYC/MAX and MXD/MNT/MGA repressor networks; MAX and MGA can repress germline or meiosis genes, and MAX has been reported to repress E-box circadian promoters.",
+    "citations": [
+      {"reference_id": "Max:R004", "citation": "Stielow et al., PLoS Genetics, 2018. PMID:29381691.", "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/29381691/"},
+      {"reference_id": "Max:R006", "citation": "Suzuki et al., Nature Communications, 2016. PMID:27025988.", "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/27025988/"},
+      {"reference_id": "Max:R007", "citation": "Blazevits et al., International Journal of Molecular Sciences, 2020. PMID:32225100.", "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/32225100/"}
+    ]
+  },
+  "preliminary_scores": {"novelty": 4, "support": 5, "priority": 4},
+  "report_evidence_ids": ["Max:E001", "Max:E002", "Max:E003", "Max:E004", "Max:E006", "Max:E008", "Mga:E009", "Mga:E010"],
+  "reference_ids": ["Max:R001", "Max:R003", "Max:R004", "Max:R005", "Max:R006", "Max:R007", "Max:R008", "Mga:R006"],
+  "source_urls_or_dois": ["https://pubmed.ncbi.nlm.nih.gov/16908182/", "https://pubmed.ncbi.nlm.nih.gov/23612295/", "https://pubmed.ncbi.nlm.nih.gov/29381691/", "https://pubmed.ncbi.nlm.nih.gov/27025988/", "https://pubmed.ncbi.nlm.nih.gov/32225100/"]
+}

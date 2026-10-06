@@ -1,0 +1,389 @@
+{
+  "biological_interpretation": "The evidence supports LRP6, not LRP5 or Kremen1, as the only proximal receptor perturbation in this packet that exposed a beta-catenin-like thalamic Wnt branch.",
+  "caveats": [
+    "Lrp6 target RNA itself did not reach FDR in any cell type; the call is a weak downstream signature.",
+    "Kremen1 and Alx4 are primarily negative comparators and cannot by themselves establish receptor divergence."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut"
+  ],
+  "exact_observed_result": "Lrp6 guides produced four FDR genes in 151 TH Prkcd Grin2c Glut despite no FDR-confirmed Lrp6 self-depletion; the report links this state to lower Axin2/Lef1 and an Atrnl1/Nsmf/Nrbp2/Chgb FDR core aligned with Ctnnb1 loss and opposed to Apc loss, whereas Lrp5, Kremen1 and Alx4 were inactive or divergent.",
+  "preliminary_scores": {
+    "novelty": 3,
+    "priority": 3,
+    "support": 3
+  },
+  "prior_expectation": {
+    "citations": [
+      "Ren et al. 2021 doi:10.3389/fcell.2021.670960",
+      "Lustig et al. 2002 Axin2 feedback evidence"
+    ],
+    "expectation": "LRP5/LRP6 are canonical Wnt co-receptors, but reviews note molecular divergence between the paralogs."
+  },
+  "reference_ids": [
+    "Alx4:R007",
+    "Kremen1:R004",
+    "Kremen1:R005",
+    "Lrp5:R001",
+    "Lrp5:R002",
+    "Lrp5:R003",
+    "Lrp5:R004",
+    "Lrp6:R001",
+    "Lrp6:R002",
+    "Lrp6:R003",
+    "Lrp6:R004",
+    "Lrp6:R005",
+    "Lrp6:R006",
+    "Lrp6:R007",
+    "Lrp6:R008"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Alx4:E001",
+    "Alx4:E008",
+    "Alx4:E009",
+    "Kremen1:E001",
+    "Kremen1:E002",
+    "Kremen1:E008",
+    "Lrp5:E004",
+    "Lrp5:E005",
+    "Lrp5:E006",
+    "Lrp6:E001",
+    "Lrp6:E002"
+  ],
+  "source_claims": [
+    {
+      "claim_id": "claim:lrp6_f001_d5d447d8f841",
+      "finding_id": "F001",
+      "gene": "Lrp6",
+      "role": "member"
+    },
+    {
+      "claim_id": "claim:lrp5_f003_647102e9bc18",
+      "finding_id": "F003",
+      "gene": "Lrp5",
+      "role": "peripheral"
+    },
+    {
+      "claim_id": "claim:kremen1_f001_2e6397c203a1",
+      "finding_id": "F001",
+      "gene": "Kremen1",
+      "role": "peripheral"
+    },
+    {
+      "claim_id": "claim:alx4_f004_8a34673f5fac",
+      "finding_id": "F004",
+      "gene": "Alx4",
+      "role": "peripheral"
+    }
+  ],
+  "source_references": [
+    {
+      "citation": "UniProtKB reviewed entry O75581, LRP6_HUMAN: low-density lipoprotein receptor-related protein 6.",
+      "description": "Curated LRP6 function, subunit interactions with WNT/FZD/AXIN1/GSK3B, membrane localization, and phosphorylation context for canonical Wnt signaling.",
+      "ref_id": "R001",
+      "ref_slug": "uniprot_lrp6_o75581",
+      "source": "UniProtKB",
+      "source_type": "database",
+      "target_gene": "Lrp6",
+      "url": "https://rest.uniprot.org/uniprotkb/O75581"
+    },
+    {
+      "citation": "Reactome pathways R-HSA-4641262, R-HSA-195253, and R-HSA-4411364 for WNT receptor activation, beta-catenin destruction-complex regulation, and TCF/LEF target-gene binding.",
+      "description": "Places LRP6 upstream of AXIN recruitment to the membrane, beta-catenin destruction-complex disassembly, and TCF/LEF-dependent feedback targets such as AXIN2.",
+      "ref_id": "R002",
+      "ref_slug": "reactome_wnt_beta_catenin_lrp6",
+      "source": "Reactome",
+      "source_type": "database",
+      "target_gene": "Lrp6",
+      "url": "https://reactome.org/content/query?q=LRP6%20WNT%20AXIN"
+    },
+    {
+      "citation": "Szklarczyk D, Kirsch R, Koutrouli M, et al. The STRING database in 2023: protein-protein association networks and functional enrichment analyses for any sequenced genome of interest. Nucleic Acids Res. 2023;51(D1):D638-D646.",
+      "description": "Mouse STRING queries confirmed high-confidence Lrp6 links to Lrp5, Wnt/Dkk/Fzd/Dvl/Gsk3b/Ctnnb1 pathway members and annotated the nominal thalamic Lrp6 gene set for glutamatergic-synapse enrichment.",
+      "ref_id": "R003",
+      "ref_slug": "string_mouse_lrp6_network_enrichment",
+      "source": "STRING",
+      "source_type": "database",
+      "target_gene": "Lrp6",
+      "url": "https://string-db.org/"
+    },
+    {
+      "citation": "Ren Q, Chen J, Liu Y. LRP5 and LRP6 in Wnt Signaling: Similarity and Divergence. Front Cell Dev Biol. 2021;9:670960.",
+      "description": "Review summarizing the shared coreceptor role and the non-identical molecular regulation of LRP5 and LRP6.",
+      "ref_id": "R004",
+      "ref_slug": "ren_2021_lrp5_lrp6_review",
+      "source": "Frontiers in Cell and Developmental Biology",
+      "source_type": "review",
+      "target_gene": "Lrp6",
+      "url": "https://doi.org/10.3389/fcell.2021.670960"
+    },
+    {
+      "citation": "Lustig B, Jerchow B, Sachs M, et al. Negative feedback loop of Wnt signaling through upregulation of conductin/axin2 in colorectal and liver tumors. Mol Cell Biol. 2002;22(4):1184-1193.",
+      "description": "Primary support that AXIN2/conductin is transcriptionally induced by Wnt/beta-catenin signaling as a negative-feedback regulator.",
+      "ref_id": "R005",
+      "ref_slug": "lustig_2002_axin2_feedback",
+      "source": "Molecular and Cellular Biology",
+      "source_type": "pubmed",
+      "target_gene": "Lrp6",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11809809/"
+    },
+    {
+      "citation": "Liu CC, Tsai CW, Deak F, Rogers J, Penuliar M, Sung YM, et al. Deficiency in LRP6-mediated Wnt signaling contributes to synaptic abnormalities and amyloid pathology in Alzheimer's disease. Neuron. 2014;84(1):63-77.",
+      "description": "Shows neuronal Lrp6-mediated Wnt signaling supports synaptic function and that Lrp6 deficiency can increase APP processing to amyloid-beta in an Alzheimer mouse context.",
+      "ref_id": "R006",
+      "ref_slug": "liu_2014_lrp6_alzheimer",
+      "source": "Neuron",
+      "source_type": "pubmed",
+      "target_gene": "Lrp6",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25242217/"
+    },
+    {
+      "citation": "Jones ME, B\u00fcchler J, Dufor T, Palomer E, Teo S, et al. A genetic variant of the Wnt receptor LRP6 accelerates synapse degeneration during aging and in Alzheimer's disease. Sci Adv. 2023;9:eabo7421.",
+      "description": "Demonstrates that an LRP6-Val variant reduces Wnt7a/FZD5 signaling and accelerates age- and Alzheimer-model synapse defects.",
+      "ref_id": "R007",
+      "ref_slug": "jones_2023_lrp6_ad_variant",
+      "source": "Science Advances",
+      "source_type": "pubmed",
+      "target_gene": "Lrp6",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36638182/"
+    },
+    {
+      "citation": "Elliott C, Rojo AI, Ribe E, Broadstock M, Xia W, et al. A role for APP in Wnt signalling links synapse loss with \u03b2-amyloid production. Transl Psychiatry. 2018;8:179.",
+      "description": "Reports APP interaction with Wnt co-receptors including LRP6 and a pathological feedback between APP/A\u03b2 and canonical versus non-canonical Wnt signaling.",
+      "ref_id": "R008",
+      "ref_slug": "elliott_2018_app_wnt_lrp6",
+      "source": "Translational Psychiatry",
+      "source_type": "pubmed",
+      "target_gene": "Lrp6",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30232325/"
+    },
+    {
+      "citation": "Reactome. Signaling by WNT, R-HSA-195721.",
+      "description": "Curated pathway context placing WNT, Frizzled, and LRP5/6 upstream of beta-catenin stabilization and LEF/TCF transcription.",
+      "ref_id": "R001",
+      "ref_slug": "reactome_signaling_by_wnt",
+      "source": "Reactome",
+      "source_type": "database",
+      "target_gene": "Lrp5",
+      "url": "https://reactome.org/content/detail/R-HSA-195721"
+    },
+    {
+      "citation": "Reactome. TCF/LEF:CTNNB1 promote transcription of AXIN2, R-HSA-4411372.",
+      "description": "Curated reaction describing AXIN2 as a beta-catenin:TCF/LEF transcriptional output.",
+      "ref_id": "R002",
+      "ref_slug": "reactome_axin2_beta_catenin_tcf",
+      "source": "Reactome",
+      "source_type": "database",
+      "target_gene": "Lrp5",
+      "url": "https://reactome.org/content/detail/R-HSA-4411372"
+    },
+    {
+      "citation": "Ren Q, Chen J, Liu Y. LRP5 and LRP6 in Wnt Signaling: Similarity and Divergence. Front Cell Dev Biol. 2021;9:670960.",
+      "description": "Review summarizing that LRP5 and LRP6 are homologous WNT co-receptors with overlapping but divergent functions and with LRP6 often acting as the more potent transducer.",
+      "ref_id": "R003",
+      "ref_slug": "ren_2021_lrp5_lrp6_similarity_divergence",
+      "source": "Frontiers in Cell and Developmental Biology",
+      "source_type": "review",
+      "target_gene": "Lrp5",
+      "url": "https://www.frontiersin.org/journals/cell-and-developmental-biology/articles/10.3389/fcell.2021.670960/full"
+    },
+    {
+      "citation": "Singh HD, Ma JX, Takahashi Y. Distinct roles of LRP5 and LRP6 in Wnt signaling regulation in the retina. Biochem Biophys Res Commun. 2021;545:8-13. PMID:33545636.",
+      "description": "CRISPR knockout study in human retinal pigment epithelial cells that directly tested non-equivalence of LRP5 and LRP6 in WNT responses.",
+      "ref_id": "R004",
+      "ref_slug": "singh_2021_lrp5_lrp6_rpe_crispr",
+      "source": "Biochemical and Biophysical Research Communications",
+      "source_type": "pubmed",
+      "target_gene": "Lrp5",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33545636/"
+    },
+    {
+      "citation": "UniProt Consortium. UniProtKB accession Q96MU8, KREM1_HUMAN, Kremen protein 1.",
+      "description": "Curates KREMEN1 as a single-pass membrane receptor for Dickkopf proteins that inhibits Wnt/beta-catenin signaling with DKK1/2 and may potentiate Wnt signaling in the absence of DKK1.",
+      "ref_id": "R004",
+      "ref_slug": "uniprot_q96mu8_kremen1",
+      "source": "UniProtKB Q96MU8",
+      "source_type": "database",
+      "target_gene": "Kremen1",
+      "url": "https://www.uniprot.org/uniprotkb/Q96MU8/entry"
+    },
+    {
+      "citation": "Reactome. DKK and KRM bind LRP5/6, event R-HSA-3769401; Negative regulation of TCF-dependent signaling by WNT ligand antagonists, R-HSA-3772470.",
+      "description": "Places Kremen proteins in the DKK-KRM-LRP5/6 reaction within negative regulation of TCF-dependent WNT signaling.",
+      "ref_id": "R005",
+      "ref_slug": "reactome_kremen_wnt_antagonists",
+      "source": "Reactome",
+      "source_type": "database",
+      "target_gene": "Kremen1",
+      "url": "https://reactome.org/content/detail/R-HSA-3769401"
+    },
+    {
+      "citation": "Boras K, Hamel PA. Alx4 binding to LEF-1 regulates N-CAM promoter activity. J Biol Chem. 2002;277(2):1120-1127. doi:10.1074/jbc.M109912200. PMID:11696550.",
+      "description": "Biochemical promoter study showing ALX4 interaction with LEF-1, a Wnt/\u03b2-catenin transcriptional partner.",
+      "ref_id": "R007",
+      "ref_slug": "boras_2002_alx4_lef1",
+      "source": "Journal of Biological Chemistry",
+      "source_type": "pubmed",
+      "target_gene": "Alx4",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11696550/"
+    }
+  ],
+  "source_urls_or_dois": [
+    "https://doi.org/10.3389/fcell.2021.670960",
+    "https://pubmed.ncbi.nlm.nih.gov/11696550/",
+    "https://pubmed.ncbi.nlm.nih.gov/11809809/",
+    "https://pubmed.ncbi.nlm.nih.gov/25242217/",
+    "https://pubmed.ncbi.nlm.nih.gov/30232325/",
+    "https://pubmed.ncbi.nlm.nih.gov/33545636/",
+    "https://pubmed.ncbi.nlm.nih.gov/36638182/",
+    "https://reactome.org/content/detail/R-HSA-195721",
+    "https://reactome.org/content/detail/R-HSA-3769401",
+    "https://reactome.org/content/detail/R-HSA-4411372",
+    "https://reactome.org/content/query?q=LRP6%20WNT%20AXIN",
+    "https://rest.uniprot.org/uniprotkb/O75581",
+    "https://string-db.org/",
+    "https://www.frontiersin.org/journals/cell-and-developmental-biology/articles/10.3389/fcell.2021.670960/full",
+    "https://www.uniprot.org/uniprotkb/Q96MU8/entry"
+  ],
+  "status": "grounded",
+  "story_id": "S031",
+  "support": [
+    {
+      "exact_de_rows": [
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Lrp6",
+          "gene_target": "Lrp6",
+          "log2fc": -0.229691281914711,
+          "pval": 0.06430432768821684,
+          "score": -1.8500640392303467
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.5722579224485586,
+          "gene": "Lef1",
+          "gene_target": "Lrp6",
+          "log2fc": -0.28191515803337097,
+          "pval": 0.0006962985324421884,
+          "score": -3.3910324573516846
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.04621643232594919,
+          "gene": "Chgb",
+          "gene_target": "Lrp6",
+          "log2fc": 0.35211536288261414,
+          "pval": 1.0711265386395317e-05,
+          "score": 4.4022932052612305
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.040559560471582316,
+          "gene": "Nrbp2",
+          "gene_target": "Lrp6",
+          "log2fc": -0.36571377515792847,
+          "pval": 7.050158260313283e-06,
+          "score": -4.492168426513672
+        }
+      ],
+      "finding": "Lrp6 Wnt-like 151 response"
+    },
+    {
+      "exact_de_rows": [
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Lrp5",
+          "gene_target": "Lrp5",
+          "log2fc": 0.6713577508926392,
+          "pval": 0.9648011185396919,
+          "score": 0.04412957653403282
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Lef1",
+          "gene_target": "Lrp5",
+          "log2fc": 0.03035382553935051,
+          "pval": 0.5442045142619225,
+          "score": 0.6064672470092773
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Chgb",
+          "gene_target": "Lrp5",
+          "log2fc": -0.038628797978162766,
+          "pval": 0.9166035910773075,
+          "score": 0.10471294075250626
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Nrbp2",
+          "gene_target": "Lrp5",
+          "log2fc": 0.004139785189181566,
+          "pval": 0.8791219464576452,
+          "score": 0.1520823985338211
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Kremen1",
+          "gene_target": "Kremen1",
+          "log2fc": -0.9605262279510498,
+          "pval": 0.28245954002243145,
+          "score": -1.0748106241226196
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Lef1",
+          "gene_target": "Kremen1",
+          "log2fc": 0.020583590492606163,
+          "pval": 0.6704670147235398,
+          "score": 0.42550715804100037
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Chgb",
+          "gene_target": "Kremen1",
+          "log2fc": -0.061347950249910355,
+          "pval": 0.3459273774786503,
+          "score": -0.9425182342529297
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Alx4",
+          "gene_target": "Alx4",
+          "log2fc": -17.262516021728516,
+          "pval": 0.9922469975627406,
+          "score": -0.00971710029989481
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Lef1",
+          "gene_target": "Alx4",
+          "log2fc": -0.015256671234965324,
+          "pval": 0.871330195995996,
+          "score": -0.16196909546852112
+        }
+      ],
+      "finding": "Lrp5/Kremen1/Alx4 boundary rows"
+    }
+  ],
+  "targets": [
+    "Lrp6",
+    "Lrp5",
+    "Kremen1",
+    "Alx4",
+    "Ctnnb1",
+    "Apc"
+  ],
+  "title": "Lrp6 loss reveals a weak 151 TH Wnt response that Lrp5 does not share"
+}

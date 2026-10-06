@@ -1,0 +1,160 @@
+{
+  "story_id": "S077",
+  "title": "TUBA1A depletion induces compensatory beta-tubulin and Tuba4a transcripts in thalamic and Pvalb neurons",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "In 151 TH Prkcd Grin2c Glut, Tuba1a was depleted with logFC -0.967 and FDR 2.78e-20 while Tubb3, Tubb2a, Tuba4a, Tubb4a, Tubb4b, and Tubb5 rose at FDR<0.05. Pvalb GABA neurons reproduced the same direction with Tuba1a logFC -0.674 FDR 0.0151 and Tubb2a/Tuba4a/Tubb3 induction. Tbcd and Tbce perturbations separately induced Tuba1a across several caudal classes.",
+  "biological_interpretation": "Neurons activate transcript-level tubulin compensation after losing the dominant alpha-tubulin Tuba1a, whereas individual beta-tubulin or Tuba4a perturbations do not simply reciprocate; tubulin-folding cofactor perturbations expose a related but opposite Tuba1a induction axis.",
+  "targets": [
+    "Tuba1a",
+    "Tubb2a",
+    "Tbcd",
+    "Tbce"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "052 Pvalb Gaba",
+    "155 MB Glut",
+    "191 MB P MY GABA"
+  ],
+  "support": {
+    "support_level": 5,
+    "exact_de_rows": [
+      {
+        "gene_target": "Tuba1a",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Tuba1a",
+        "log2_fold_change": -0.967,
+        "pvals_adj": 2.78e-20
+      },
+      {
+        "gene_target": "Tuba1a",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Tubb3",
+        "log2_fold_change": 0.576,
+        "pvals_adj": 6.37e-09
+      },
+      {
+        "gene_target": "Tuba1a",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Tubb2a",
+        "log2_fold_change": 0.523,
+        "pvals_adj": 2.68e-07
+      },
+      {
+        "gene_target": "Tuba1a",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Tuba4a",
+        "log2_fold_change": 0.696,
+        "pvals_adj": 1.14e-05
+      },
+      {
+        "gene_target": "Tuba1a",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Tubb2a",
+        "log2_fold_change": 0.614,
+        "pvals_adj": 0.000758
+      },
+      {
+        "gene_target": "Tbcd",
+        "cell_type": "155 MB Glut",
+        "gene": "Tuba1a",
+        "log2_fold_change": 0.931,
+        "pvals_adj": 3.78e-17,
+        "wilcoxon_score": 9.497
+      },
+      {
+        "gene_target": "Tbce",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Tuba1a",
+        "log2_fold_change": 0.63,
+        "pvals_adj": 2.51e-07
+      }
+    ],
+    "report_evidence_summary": [
+      "Tuba1a:E002",
+      "Tuba1a:E003",
+      "Tuba1a:E005",
+      "Tuba1a:E006",
+      "Tubb2a:E001",
+      "Tubb2a:E002",
+      "Tbcd:E002",
+      "Tbcd:E003",
+      "Tbcd:E010",
+      "Tbce:E002",
+      "Tbce:E003",
+      "Tbce:E008"
+    ]
+  },
+  "caveats": [
+    "The direct Tubb2a response is much narrower than direct Tuba1a or cofactor loss; it should be kept as comparator support, not merged into the same strong alpha-tubulin-loss response."
+  ],
+  "prior_expectation": {
+    "summary": "Alpha/beta tubulins form microtubule heterodimers, tubulin mRNA is autoregulated by nascent tubulin recognition, and post-chaperonin cofactors TBCE/TBCD participate in heterodimer folding, matching the reciprocal isotype and cofactor-sensitive response.",
+    "citations": [
+      {
+        "ref_id": "Tuba1a:R002",
+        "ref": "Lin et al. 2020 DOI:10.1126/science.aaz4352",
+        "url_or_doi": "https://doi.org/10.1126/science.aaz4352",
+        "supports": "TTC5-mediated tubulin mRNA autoregulation"
+      },
+      {
+        "ref_id": "Tuba1a:R003",
+        "ref": "Janke and Magiera 2020 DOI:10.1038/s41580-020-0214-3",
+        "url_or_doi": "https://doi.org/10.1038/s41580-020-0214-3",
+        "supports": "tubulin isotype specialization"
+      },
+      {
+        "ref_id": "Tbce:R001",
+        "ref": "Reactome R-HSA-389977",
+        "url_or_doi": "https://reactome.org/content/detail/R-HSA-389977",
+        "supports": "post-chaperonin tubulin folding pathway"
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 5,
+    "priority": 4
+  },
+  "report_evidence_ids": [
+    "Tuba1a:E002",
+    "Tuba1a:E003",
+    "Tuba1a:E005",
+    "Tuba1a:E006",
+    "Tubb2a:E001",
+    "Tubb2a:E002",
+    "Tubb2a:E006",
+    "Tbcd:E002",
+    "Tbcd:E003",
+    "Tbcd:E010",
+    "Tbcd:E011",
+    "Tbce:E002",
+    "Tbce:E003",
+    "Tbce:E008"
+  ],
+  "reference_ids": [
+    "Tuba1a:R001",
+    "Tuba1a:R002",
+    "Tuba1a:R003",
+    "Tubb2a:R006",
+    "Tbcd:R001",
+    "Tbce:R001",
+    "Tbce:R006"
+  ],
+  "source_urls_or_dois": [
+    "https://doi.org/10.1126/science.aaz4352",
+    "https://doi.org/10.1038/s41580-020-0214-3",
+    "https://reactome.org/content/detail/R-HSA-389977"
+  ],
+  "source_claim_ids": [
+    "claim:tuba1a_f001_14815dc03062",
+    "claim:tubb2a_f003_d1e066e2305f",
+    "claim:tubb2a_f001_6e8c0dc4e9e8",
+    "claim:tuba1a_f003_8bb5bb12cf32",
+    "claim:tbcd_f001_caa8dc63f490",
+    "claim:tbce_f001_413bf7f7a727",
+    "claim:tbcd_f003_65027c5d752d",
+    "claim:tbce_f005_d17a6e26972d"
+  ]
+}

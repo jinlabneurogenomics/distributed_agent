@@ -1,0 +1,6 @@
+flag,has_literature,count,percent,n_findings
+Agree,1,420,27.6,1519
+Disagree,1,101,6.6,1519
+Inferred,1,636,41.9,1519
+No Literature,0,362,23.8,1519
+Has literature (Agree+Disagree+Inferred),1,1157,76.2,1519

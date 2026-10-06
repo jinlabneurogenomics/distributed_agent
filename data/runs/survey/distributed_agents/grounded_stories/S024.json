@@ -1,0 +1,230 @@
+{
+  "biological_interpretation": "Loss of the dolichol-phosphate enzyme DHDDS is stress-inducing in selected glutamatergic neurons and couples protein-glycosylation stress to CHOP/amino-acid-stress output plus reduced neuronal state transcripts.",
+  "caveats": [
+    "Dhdds mRNA depletion was not FDR-confirmed in the responsive 151 and 155 classes, so the downstream program should be treated as guide-associated DHDDS pathway stress rather than a clean mRNA dose response.",
+    "The 215 MB Dopa boundary is underpowered and not target-engaged."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "215 MB Dopa"
+  ],
+  "exact_observed_result": "Dhdds perturbation activated the clearest stress program in 151 TH Prkcd Grin2c Glut, with Chac1, Ddit3, Herpud1, Hsp90b1, Asns, and Creld2 induced and Atp1a3, Chga, Gabbr2, Gabrd, and Grin2b repressed. 155 MB Glut shared chaperone induction through Hsp90b1, Herpud1, and Dnajb11 with Atp1a3 repression, while 215 MB Dopa lacked Dhdds target support.",
+  "preliminary_scores": {
+    "novelty": 3,
+    "priority": 4,
+    "support": 4
+  },
+  "prior_expectation": "DHDDS participates in dolichol-linked protein glycosylation, and NUS1/DHDDS biology predicts ER stress or secretory stress when dolichol-phosphate synthesis is perturbed.",
+  "reference_ids": [
+    "Dhdds:F001"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    {
+      "finding_id": "F001",
+      "gene": "Dhdds"
+    }
+  ],
+  "source_claim_ids": [
+    "claim:dhdds_f001_1b53e6ce3548"
+  ],
+  "source_cluster_ids": [
+    "C057"
+  ],
+  "source_urls_or_dois": [
+    "https://rest.uniprot.org/uniprotkb/Q86SQ9",
+    "https://reactome.org/content/detail/R-HSA-4419978",
+    "https://pubmed.ncbi.nlm.nih.gov/21572394/"
+  ],
+  "status": "grounded",
+  "story_id": "S024",
+  "support": {
+    "exact_de_rows": [
+      {
+        "gene_target": "Dhdds",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.6686158776283264,
+        "names": "Asns",
+        "pvals": 3.272687987454508e-05,
+        "pvals_adj": 0.010725960959859223,
+        "scores": 4.153611183166504
+      },
+      {
+        "gene_target": "Dhdds",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.255128413438797,
+        "names": "Atp1a3",
+        "pvals": 6.34104770609089e-05,
+        "pvals_adj": 0.016386677684032357,
+        "scores": -3.999746084213257
+      },
+      {
+        "gene_target": "Dhdds",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 2.572582483291626,
+        "names": "Chac1",
+        "pvals": 1.501422557145369e-09,
+        "pvals_adj": 1.2956525956885964e-05,
+        "scores": 6.0442118644714355
+      },
+      {
+        "gene_target": "Dhdds",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.35553592443466187,
+        "names": "Chga",
+        "pvals": 0.00029549845211103296,
+        "pvals_adj": 0.0444117699544151,
+        "scores": -3.6192145347595215
+      },
+      {
+        "gene_target": "Dhdds",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 1.0062118768692017,
+        "names": "Creld2",
+        "pvals": 3.678808322503385e-05,
+        "pvals_adj": 0.01111421563170637,
+        "scores": 4.1267781257629395
+      },
+      {
+        "gene_target": "Dhdds",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 1.267629623413086,
+        "names": "Ddit3",
+        "pvals": 4.05398794210133e-06,
+        "pvals_adj": 0.0024126819963009257,
+        "scores": 4.608595371246338
+      },
+      {
+        "gene_target": "Dhdds",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.28170594573020935,
+        "names": "Dhdds",
+        "pvals": 0.020694901475163764,
+        "pvals_adj": 0.5828299379799102,
+        "scores": -2.313504695892334
+      },
+      {
+        "gene_target": "Dhdds",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.05804328992962837,
+        "names": "Dnajb11",
+        "pvals": 0.9061178246755098,
+        "pvals_adj": 1.0,
+        "scores": -0.11793668568134308
+      },
+      {
+        "gene_target": "Dhdds",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.25225719809532166,
+        "names": "Gabbr2",
+        "pvals": 0.00014633973970098828,
+        "pvals_adj": 0.028378399634824233,
+        "scores": -3.7971999645233154
+      },
+      {
+        "gene_target": "Dhdds",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.35672739148139954,
+        "names": "Gabrd",
+        "pvals": 0.00012483815874587154,
+        "pvals_adj": 0.025053276532499964,
+        "scores": -3.836425304412842
+      },
+      {
+        "gene_target": "Dhdds",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.21162667870521545,
+        "names": "Grin2b",
+        "pvals": 0.0002620982345784366,
+        "pvals_adj": 0.04223034292853407,
+        "scores": -3.650139093399048
+      },
+      {
+        "gene_target": "Dhdds",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.6178097724914551,
+        "names": "Herpud1",
+        "pvals": 7.383145403582111e-06,
+        "pvals_adj": 0.0038613850460734443,
+        "scores": 4.482332706451416
+      },
+      {
+        "gene_target": "Dhdds",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.5010697245597839,
+        "names": "Hsp90b1",
+        "pvals": 4.729662574002557e-06,
+        "pvals_adj": 0.0026332014956358105,
+        "scores": 4.576435089111328
+      },
+      {
+        "gene_target": "Dhdds",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": -0.38347339630126953,
+        "names": "Atp1a3",
+        "pvals": 4.475711506514784e-10,
+        "pvals_adj": 7.806983580813738e-06,
+        "scores": -6.236464500427246
+      },
+      {
+        "gene_target": "Dhdds",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": -0.22495412826538086,
+        "names": "Chga",
+        "pvals": 0.012985954426448926,
+        "pvals_adj": 0.8306539100293611,
+        "scores": -2.484154224395752
+      },
+      {
+        "gene_target": "Dhdds",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": -0.39227601885795593,
+        "names": "Dhdds",
+        "pvals": 0.014643600400697556,
+        "pvals_adj": 0.8475792912135387,
+        "scores": -2.441075325012207
+      },
+      {
+        "gene_target": "Dhdds",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": 0.7419971227645874,
+        "names": "Dnajb11",
+        "pvals": 1.7218052562848202e-05,
+        "pvals_adj": 0.010726231816205757,
+        "scores": 4.298213005065918
+      },
+      {
+        "gene_target": "Dhdds",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": 0.642443060874939,
+        "names": "Herpud1",
+        "pvals": 4.41087599234308e-06,
+        "pvals_adj": 0.004792343160555093,
+        "scores": 4.5910186767578125
+      },
+      {
+        "gene_target": "Dhdds",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": 0.6021809577941895,
+        "names": "Hsp90b1",
+        "pvals": 6.538423981699918e-07,
+        "pvals_adj": 0.0019008288252131945,
+        "scores": 4.974595069885254
+      },
+      {
+        "gene_target": "Dhdds",
+        "group_name": "215 MB Dopa",
+        "logfoldchanges": -0.5119720101356506,
+        "names": "Dhdds",
+        "pvals": 0.1103936799609641,
+        "pvals_adj": 1.0,
+        "scores": -1.5964261293411255
+      }
+    ]
+  },
+  "targets": [
+    "Dhdds"
+  ],
+  "title": "Dhdds loss activates ER and amino-acid stress genes in thalamic and midbrain neurons"
+}

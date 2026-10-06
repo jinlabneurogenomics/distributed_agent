@@ -1,0 +1,532 @@
+gene,finding_id,finding_type,status
+Ppp2r1a,F001,cell_type_selectivity,Cited for ≥1 claim
+Ppp2r1a,F002,homeostatic_compensation,Not cited in any claim
+Ppp2r1a,F003,homeostatic_compensation,Not cited in any claim
+Ppp2r1a,F004,other,Not cited in any claim
+Ppp2r1a,F005,negative_result,Cited for ≥1 claim
+Ppp2r1a,F006,other,Not cited in any claim
+Ppp2r1a,F007,cell_type_selectivity,Not cited in any claim
+Ppp2r1a,F008,homeostatic_compensation,Not cited in any claim
+Ppp2r1a,F009,convergent_module,Cited for ≥1 claim
+Ppp2r1a,F010,cross_perturbation_contrast,Cited for ≥1 claim
+Ppp2r1a,F011,cross_perturbation_contrast,Not cited in any claim
+Ppp2r1a,F012,disease_mechanism_refinement,Not cited in any claim
+Uba5,F001,cell_type_selectivity,Not cited in any claim
+Uba5,F002,convergent_module,Cited for ≥1 claim
+Uba5,F003,homeostatic_compensation,Not cited in any claim
+Uba5,F004,biomarker_candidate,Cited for ≥1 claim
+Uba5,F005,homeostatic_compensation,Cited for ≥1 claim
+Uba5,F006,pathway_uncoupling,Cited for ≥1 claim
+Uba5,F007,homeostatic_compensation,Not cited in any claim
+Uba5,F008,disease_mechanism_refinement,Cited for ≥1 claim
+Uba5,F009,other,Not cited in any claim
+Uba5,F010,cross_perturbation_contrast,Not cited in any claim
+Uba5,F011,therapeutic_direction_warning,Not cited in any claim
+Snap25,F001,buffered_response,Cited for ≥1 claim
+Snap25,F002,homeostatic_compensation,Not cited in any claim
+Snap25,F003,homeostatic_compensation,Not cited in any claim
+Snap25,F004,biomarker_candidate,Not cited in any claim
+Snap25,F005,cross_perturbation_contrast,Cited for ≥1 claim
+Snap25,F006,negative_result,Cited for ≥1 claim
+Kcnb1,F001,cell_type_selectivity,Cited for ≥1 claim
+Kcnb1,F002,convergent_module,Cited for ≥1 claim
+Kcnb1,F003,cross_perturbation_contrast,Cited for ≥1 claim
+Kcnb1,F004,negative_result,Not cited in any claim
+Tbcd,F001,cell_type_selectivity,Not cited in any claim
+Tbcd,F002,homeostatic_compensation,Cited for ≥1 claim
+Tbcd,F003,convergent_module,Cited for ≥1 claim
+Tbcd,F004,pathway_uncoupling,Cited for ≥1 claim
+Tbcd,F005,other,Not cited in any claim
+Tbcd,F006,cross_perturbation_contrast,Not cited in any claim
+Tbcd,F007,negative_result,Not cited in any claim
+Ankrd11,F001,cell_type_selectivity,Not cited in any claim
+Ankrd11,F002,convergent_module,Cited for ≥1 claim
+Ankrd11,F003,homeostatic_compensation,Cited for ≥1 claim
+Ankrd11,F004,biomarker_candidate,Not cited in any claim
+Ankrd11,F005,convergent_module,Not cited in any claim
+Ankrd11,F006,cross_perturbation_contrast,Not cited in any claim
+Ankrd11,F007,pathway_uncoupling,Not cited in any claim
+Ankrd11,F008,negative_result,Not cited in any claim
+Huwe1,F001,cell_type_selectivity,Not cited in any claim
+Huwe1,F002,convergent_module,Cited for ≥1 claim
+Huwe1,F003,homeostatic_compensation,Not cited in any claim
+Huwe1,F004,cell_type_selectivity,Not cited in any claim
+Huwe1,F005,pathway_uncoupling,Cited for ≥1 claim
+Huwe1,F006,buffered_response,Not cited in any claim
+Huwe1,F007,cross_perturbation_contrast,Cited for ≥1 claim
+Huwe1,F008,convergent_module,Cited for ≥1 claim
+Huwe1,F009,cross_perturbation_contrast,Not cited in any claim
+Myt1l,F001,cell_type_selectivity,Not cited in any claim
+Myt1l,F002,biomarker_candidate,Not cited in any claim
+Myt1l,F003,pathway_uncoupling,Cited for ≥1 claim
+Myt1l,F004,convergent_module,Cited for ≥1 claim
+Myt1l,F005,convergent_module,Cited for ≥1 claim
+Myt1l,F006,convergent_module,Not cited in any claim
+Myt1l,F007,cell_type_selectivity,Not cited in any claim
+Myt1l,F008,homeostatic_compensation,Not cited in any claim
+Myt1l,F009,cross_perturbation_contrast,Not cited in any claim
+Myt1l,F010,cross_perturbation_contrast,Not cited in any claim
+Myt1l,F011,buffered_response,Not cited in any claim
+Tardbp,F001,cell_type_selectivity,Not cited in any claim
+Tardbp,F002,homeostatic_compensation,Cited for ≥1 claim
+Tardbp,F003,pathway_uncoupling,Not cited in any claim
+Tardbp,F004,literature_direction_mismatch,Cited for ≥1 claim
+Tardbp,F005,convergent_module,Cited for ≥1 claim
+Tardbp,F006,cross_perturbation_contrast,Cited for ≥1 claim
+Tardbp,F007,buffered_response,Not cited in any claim
+Gabrg2,F001,cell_type_selectivity,Cited for ≥1 claim
+Gabrg2,F002,cross_perturbation_contrast,Not cited in any claim
+Gabrg2,F003,cross_perturbation_contrast,Cited for ≥1 claim
+Gabrg2,F004,negative_result,Cited for ≥1 claim
+Prpf6,F001,cell_type_selectivity,Not cited in any claim
+Prpf6,F002,homeostatic_compensation,Cited for ≥1 claim
+Prpf6,F003,pathway_uncoupling,Cited for ≥1 claim
+Prpf6,F004,convergent_module,Not cited in any claim
+Prpf6,F005,biomarker_candidate,Not cited in any claim
+Prpf6,F006,disease_mechanism_refinement,Not cited in any claim
+Prpf6,F007,cross_perturbation_contrast,Cited for ≥1 claim
+Prpf6,F008,negative_result,Not cited in any claim
+Kmt2a,F001,cell_type_selectivity,Cited for ≥1 claim
+Kmt2a,F002,other,Not cited in any claim
+Kmt2a,F003,buffered_response,Not cited in any claim
+Kmt2a,F004,cross_perturbation_contrast,Not cited in any claim
+Kmt2a,F005,pathway_uncoupling,Cited for ≥1 claim
+Kmt2a,F006,negative_result,Not cited in any claim
+Kmt2a,F007,negative_result,Cited for ≥1 claim
+Ufc1,F001,convergent_module,Cited for ≥1 claim
+Ufc1,F002,cell_type_selectivity,Not cited in any claim
+Ufc1,F003,biomarker_candidate,Cited for ≥1 claim
+Ufc1,F004,homeostatic_compensation,Cited for ≥1 claim
+Ufc1,F005,other,Cited for ≥1 claim
+Ufc1,F006,homeostatic_compensation,Not cited in any claim
+Ufc1,F007,pathway_uncoupling,Not cited in any claim
+Ufc1,F008,convergent_module,Not cited in any claim
+Ufc1,F009,therapeutic_direction_warning,Not cited in any claim
+Psmc1,F001,homeostatic_compensation,Cited for ≥1 claim
+Psmc1,F002,homeostatic_compensation,Not cited in any claim
+Psmc1,F003,therapeutic_direction_warning,Not cited in any claim
+Psmc1,F004,disease_mechanism_refinement,Cited for ≥1 claim
+Psmc1,F005,cell_type_selectivity,Not cited in any claim
+Psmc1,F006,convergent_module,Cited for ≥1 claim
+Psmc1,F007,pathway_uncoupling,Not cited in any claim
+Psmc1,F008,cross_perturbation_contrast,Not cited in any claim
+Psmc1,F009,buffered_response,Not cited in any claim
+Smarcc2,F001,cell_type_selectivity,Cited for ≥1 claim
+Smarcc2,F002,convergent_module,Cited for ≥1 claim
+Smarcc2,F003,cross_perturbation_contrast,Cited for ≥1 claim
+Smarcc2,F004,cross_perturbation_contrast,Not cited in any claim
+Smarcc2,F005,pathway_uncoupling,Cited for ≥1 claim
+Smarcc2,F006,other,Not cited in any claim
+Smarcc2,F007,pathway_uncoupling,Not cited in any claim
+Smarcc2,F008,homeostatic_compensation,Not cited in any claim
+Smarcc2,F009,disease_mechanism_refinement,Not cited in any claim
+Chd2,F001,cell_type_selectivity,Cited for ≥1 claim
+Chd2,F002,biomarker_candidate,Not cited in any claim
+Chd2,F003,convergent_module,Cited for ≥1 claim
+Chd2,F004,disease_mechanism_refinement,Not cited in any claim
+Chd2,F005,homeostatic_compensation,Not cited in any claim
+Chd2,F006,convergent_module,Not cited in any claim
+Chd2,F007,cross_perturbation_contrast,Cited for ≥1 claim
+Chd2,F008,negative_result,Not cited in any claim
+Chd2,F009,therapeutic_direction_warning,Not cited in any claim
+Smarcb1,F001,cell_type_selectivity,Cited for ≥1 claim
+Smarcb1,F002,convergent_module,Cited for ≥1 claim
+Smarcb1,F003,cross_perturbation_contrast,Cited for ≥1 claim
+Smarcb1,F004,disease_mechanism_refinement,Not cited in any claim
+Smarcb1,F005,biomarker_candidate,Not cited in any claim
+Smarcb1,F006,buffered_response,Not cited in any claim
+Smarcb1,F007,cell_type_selectivity,Not cited in any claim
+Smarcb1,F008,cross_perturbation_contrast,Not cited in any claim
+Arid1a,F001,cell_type_selectivity,Cited for ≥1 claim
+Arid1a,F002,disease_mechanism_refinement,Cited for ≥1 claim
+Arid1a,F003,other,Not cited in any claim
+Arid1a,F004,convergent_module,Cited for ≥1 claim
+Arid1a,F005,pathway_uncoupling,Cited for ≥1 claim
+Arid1a,F006,pathway_uncoupling,Cited for ≥1 claim
+Arid1a,F007,negative_result,Not cited in any claim
+Arid1a,F008,convergent_module,Not cited in any claim
+Arid2,F001,cell_type_selectivity,Cited for ≥1 claim
+Arid2,F002,convergent_module,Cited for ≥1 claim
+Arid2,F003,negative_result,Not cited in any claim
+Arid2,F004,convergent_module,Cited for ≥1 claim
+Arid2,F005,pathway_uncoupling,Cited for ≥1 claim
+Arid2,F006,cross_perturbation_contrast,Not cited in any claim
+Arid2,F007,disease_mechanism_refinement,Not cited in any claim
+Rnpc3,F001,cell_type_selectivity,Not cited in any claim
+Rnpc3,F002,convergent_module,Not cited in any claim
+Rnpc3,F003,homeostatic_compensation,Not cited in any claim
+Rnpc3,F004,homeostatic_compensation,Cited for ≥1 claim
+Rnpc3,F005,disease_mechanism_refinement,Not cited in any claim
+Rnpc3,F006,cross_perturbation_contrast,Cited for ≥1 claim
+Rnpc3,F007,convergent_module,Not cited in any claim
+Rnpc3,F008,pathway_uncoupling,Not cited in any claim
+Rnpc3,F009,negative_result,Not cited in any claim
+Atp6v0c,F001,cell_type_selectivity,Not cited in any claim
+Atp6v0c,F002,homeostatic_compensation,Not cited in any claim
+Atp6v0c,F003,biomarker_candidate,Not cited in any claim
+Atp6v0c,F004,convergent_module,Cited for ≥1 claim
+Atp6v0c,F005,cell_type_selectivity,Not cited in any claim
+Atp6v0c,F006,convergent_module,Cited for ≥1 claim
+Atp6v0c,F007,convergent_module,Cited for ≥1 claim
+Atp6v0c,F008,cross_perturbation_contrast,Cited for ≥1 claim
+Atp6v0c,F009,negative_result,Not cited in any claim
+Atp6v0c,F010,pathway_uncoupling,Not cited in any claim
+Atp6v0c,F011,buffered_response,Not cited in any claim
+Atp6v0c,F012,therapeutic_direction_warning,Not cited in any claim
+Pitpna,F001,cell_type_selectivity,Not cited in any claim
+Pitpna,F002,disease_mechanism_refinement,Cited for ≥1 claim
+Pitpna,F003,convergent_module,Cited for ≥1 claim
+Pitpna,F004,homeostatic_compensation,Not cited in any claim
+Pitpna,F005,other,Not cited in any claim
+Pitpna,F006,convergent_module,Cited for ≥1 claim
+Pitpna,F007,pathway_uncoupling,Not cited in any claim
+Pitpna,F008,negative_result,Not cited in any claim
+Pitpna,F009,buffered_response,Not cited in any claim
+Grin2a,F001,cell_type_selectivity,Cited for ≥1 claim
+Grin2a,F002,convergent_module,Cited for ≥1 claim
+Grin2a,F003,homeostatic_compensation,Cited for ≥1 claim
+Grin2a,F004,homeostatic_compensation,Not cited in any claim
+Grin2a,F005,biomarker_candidate,Cited for ≥1 claim
+Grin2a,F006,literature_direction_mismatch,Cited for ≥1 claim
+Grin2a,F007,pathway_uncoupling,Not cited in any claim
+Grin2a,F008,negative_result,Not cited in any claim
+Mdh1,F001,cell_type_selectivity,Not cited in any claim
+Mdh1,F002,disease_mechanism_refinement,Cited for ≥1 claim
+Mdh1,F003,homeostatic_compensation,Not cited in any claim
+Mdh1,F004,homeostatic_compensation,Not cited in any claim
+Mdh1,F005,convergent_module,Cited for ≥1 claim
+Mdh1,F006,cross_perturbation_contrast,Not cited in any claim
+Mdh1,F007,pathway_uncoupling,Not cited in any claim
+Tpr,F001,cell_type_selectivity,Cited for ≥1 claim
+Tpr,F002,convergent_module,Cited for ≥1 claim
+Tpr,F003,homeostatic_compensation,Not cited in any claim
+Tpr,F004,other,Not cited in any claim
+Tpr,F005,convergent_module,Cited for ≥1 claim
+Tpr,F006,cross_perturbation_contrast,Cited for ≥1 claim
+Tpr,F007,pathway_uncoupling,Not cited in any claim
+Tpr,F008,negative_result,Not cited in any claim
+Tpr,F009,buffered_response,Not cited in any claim
+Opa1,F001,convergent_module,Cited for ≥1 claim
+Opa1,F002,cell_type_selectivity,Not cited in any claim
+Opa1,F003,convergent_module,Not cited in any claim
+Opa1,F004,homeostatic_compensation,Not cited in any claim
+Opa1,F005,homeostatic_compensation,Not cited in any claim
+Opa1,F006,other,Cited for ≥1 claim
+Opa1,F007,convergent_module,Cited for ≥1 claim
+Opa1,F008,cross_perturbation_contrast,Cited for ≥1 claim
+Opa1,F009,cross_perturbation_contrast,Not cited in any claim
+Opa1,F010,negative_result,Not cited in any claim
+Opa1,F011,pathway_uncoupling,Not cited in any claim
+Opa1,F012,buffered_response,Not cited in any claim
+Tsc2,F001,cell_type_selectivity,Not cited in any claim
+Tsc2,F002,convergent_module,Cited for ≥1 claim
+Tsc2,F003,homeostatic_compensation,Cited for ≥1 claim
+Tsc2,F004,buffered_response,Not cited in any claim
+Tsc2,F005,homeostatic_compensation,Not cited in any claim
+Tsc2,F006,disease_mechanism_refinement,Cited for ≥1 claim
+Tsc2,F007,cross_perturbation_contrast,Cited for ≥1 claim
+Tsc2,F008,convergent_module,Not cited in any claim
+Tsc2,F009,pathway_uncoupling,Not cited in any claim
+Tsc2,F010,buffered_response,Not cited in any claim
+Tbl1xr1,F001,cell_type_selectivity,Cited for ≥1 claim
+Tbl1xr1,F002,other,Cited for ≥1 claim
+Tbl1xr1,F003,homeostatic_compensation,Not cited in any claim
+Tbl1xr1,F004,biomarker_candidate,Not cited in any claim
+Tbl1xr1,F005,pathway_uncoupling,Cited for ≥1 claim
+Tbl1xr1,F006,cross_perturbation_contrast,Cited for ≥1 claim
+Tbl1xr1,F007,convergent_module,Not cited in any claim
+Atp6v1a,F001,negative_result,Cited for ≥1 claim
+Atp6v1a,F002,cell_type_selectivity,Not cited in any claim
+Atp6v1a,F003,biomarker_candidate,Not cited in any claim
+Atp6v1a,F004,convergent_module,Cited for ≥1 claim
+Atp6v1a,F005,cross_perturbation_contrast,Cited for ≥1 claim
+Atp6v1a,F006,disease_mechanism_refinement,Not cited in any claim
+Dnm1l,F001,convergent_module,Cited for ≥1 claim
+Dnm1l,F002,cell_type_selectivity,Not cited in any claim
+Dnm1l,F003,convergent_module,Cited for ≥1 claim
+Dnm1l,F004,homeostatic_compensation,Not cited in any claim
+Dnm1l,F005,convergent_module,Cited for ≥1 claim
+Dnm1l,F006,cross_perturbation_contrast,Cited for ≥1 claim
+Dnm1l,F007,pathway_uncoupling,Not cited in any claim
+Dnm1l,F008,therapeutic_direction_warning,Not cited in any claim
+Srrm2,F001,cell_type_selectivity,Not cited in any claim
+Srrm2,F002,convergent_module,Cited for ≥1 claim
+Srrm2,F003,homeostatic_compensation,Not cited in any claim
+Srrm2,F004,homeostatic_compensation,Not cited in any claim
+Srrm2,F005,cell_type_selectivity,Not cited in any claim
+Srrm2,F006,biomarker_candidate,Not cited in any claim
+Srrm2,F007,convergent_module,Cited for ≥1 claim
+Srrm2,F008,cross_perturbation_contrast,Cited for ≥1 claim
+Srrm2,F009,negative_result,Not cited in any claim
+Hnrnpu,F001,disease_mechanism_refinement,Not cited in any claim
+Hnrnpu,F002,homeostatic_compensation,Cited for ≥1 claim
+Hnrnpu,F003,homeostatic_compensation,Not cited in any claim
+Hnrnpu,F004,convergent_module,Not cited in any claim
+Hnrnpu,F005,cell_type_selectivity,Not cited in any claim
+Hnrnpu,F006,homeostatic_compensation,Not cited in any claim
+Hnrnpu,F007,convergent_module,Cited for ≥1 claim
+Hnrnpu,F008,cross_perturbation_contrast,Cited for ≥1 claim
+Hnrnpu,F009,cross_perturbation_contrast,Not cited in any claim
+Hnrnpu,F010,negative_result,Not cited in any claim
+Hspa8,F001,cell_type_selectivity,Cited for ≥1 claim
+Hspa8,F002,homeostatic_compensation,Cited for ≥1 claim
+Hspa8,F003,pathway_uncoupling,Cited for ≥1 claim
+Hspa8,F004,convergent_module,Cited for ≥1 claim
+Hspa8,F005,cross_perturbation_contrast,Cited for ≥1 claim
+Hspa8,F006,biomarker_candidate,Not cited in any claim
+Hspa8,F007,negative_result,Not cited in any claim
+Pafah1b1,F001,cell_type_selectivity,Cited for ≥1 claim
+Pafah1b1,F002,homeostatic_compensation,Cited for ≥1 claim
+Pafah1b1,F003,convergent_module,Cited for ≥1 claim
+Pafah1b1,F004,cross_perturbation_contrast,Not cited in any claim
+Pafah1b1,F005,pathway_uncoupling,Not cited in any claim
+Pafah1b1,F006,cross_perturbation_contrast,Not cited in any claim
+Mef2c,F001,cell_type_selectivity,Cited for ≥1 claim
+Mef2c,F002,convergent_module,Cited for ≥1 claim
+Mef2c,F003,homeostatic_compensation,Not cited in any claim
+Mef2c,F004,biomarker_candidate,Not cited in any claim
+Mef2c,F005,cell_type_selectivity,Not cited in any claim
+Mef2c,F006,buffered_response,Not cited in any claim
+Mef2c,F007,pathway_uncoupling,Cited for ≥1 claim
+Mef2c,F008,convergent_module,Not cited in any claim
+Mef2c,F009,pathway_uncoupling,Not cited in any claim
+Mef2c,F010,disease_mechanism_refinement,Not cited in any claim
+Yy1,F001,cell_type_selectivity,Not cited in any claim
+Yy1,F002,convergent_module,Cited for ≥1 claim
+Yy1,F003,cell_type_selectivity,Not cited in any claim
+Yy1,F004,pathway_uncoupling,Cited for ≥1 claim
+Yy1,F005,convergent_module,Cited for ≥1 claim
+Yy1,F006,cross_perturbation_contrast,Cited for ≥1 claim
+Yy1,F007,negative_result,Not cited in any claim
+Yy1,F008,disease_mechanism_refinement,Not cited in any claim
+Sec31a,F001,cell_type_selectivity,Not cited in any claim
+Sec31a,F002,homeostatic_compensation,Cited for ≥1 claim
+Sec31a,F003,biomarker_candidate,Cited for ≥1 claim
+Sec31a,F004,convergent_module,Cited for ≥1 claim
+Sec31a,F005,cross_perturbation_contrast,Cited for ≥1 claim
+Sec31a,F006,negative_result,Not cited in any claim
+Sec31a,F007,biomarker_candidate,Not cited in any claim
+Sec31a,F008,biomarker_candidate,Not cited in any claim
+Sec31a,F009,pathway_uncoupling,Not cited in any claim
+Sec31a,F010,other,Not cited in any claim
+Hspa5,F001,convergent_module,Cited for ≥1 claim
+Hspa5,F002,buffered_response,Not cited in any claim
+Hspa5,F003,homeostatic_compensation,Not cited in any claim
+Hspa5,F004,cell_type_selectivity,Not cited in any claim
+Hspa5,F005,cell_type_selectivity,Cited for ≥1 claim
+Hspa5,F006,cross_perturbation_contrast,Cited for ≥1 claim
+Hspa5,F007,pathway_uncoupling,Cited for ≥1 claim
+Hspa5,F008,negative_result,Not cited in any claim
+Slc17a5,F001,cell_type_selectivity,Not cited in any claim
+Slc17a5,F002,homeostatic_compensation,Not cited in any claim
+Slc17a5,F003,homeostatic_compensation,Not cited in any claim
+Slc17a5,F004,negative_result,Cited for ≥1 claim
+Slc17a5,F005,homeostatic_compensation,Not cited in any claim
+Slc17a5,F006,cross_perturbation_contrast,Cited for ≥1 claim
+Slc17a5,F007,convergent_module,Cited for ≥1 claim
+Slc17a5,F008,cross_perturbation_contrast,Not cited in any claim
+Slc17a5,F009,disease_mechanism_refinement,Not cited in any claim
+Cic,F001,cell_type_selectivity,Not cited in any claim
+Cic,F002,convergent_module,Cited for ≥1 claim
+Cic,F003,pathway_uncoupling,Cited for ≥1 claim
+Cic,F004,literature_direction_mismatch,Cited for ≥1 claim
+Cic,F005,biomarker_candidate,Not cited in any claim
+Cic,F006,other,Not cited in any claim
+Cic,F007,disease_mechanism_refinement,Not cited in any claim
+Cic,F008,other,Not cited in any claim
+Cic,F009,disease_mechanism_refinement,Not cited in any claim
+Cic,F010,homeostatic_compensation,Not cited in any claim
+Cic,F011,cross_perturbation_contrast,Not cited in any claim
+Celf2,F001,cell_type_selectivity,Not cited in any claim
+Celf2,F002,biomarker_candidate,Not cited in any claim
+Celf2,F003,convergent_module,Cited for ≥1 claim
+Celf2,F004,cell_type_selectivity,Cited for ≥1 claim
+Celf2,F005,convergent_module,Cited for ≥1 claim
+Celf2,F006,homeostatic_compensation,Not cited in any claim
+Celf2,F007,homeostatic_compensation,Not cited in any claim
+Celf2,F008,cross_perturbation_contrast,Not cited in any claim
+Celf2,F009,cross_perturbation_contrast,Not cited in any claim
+Xrn1,F001,cell_type_selectivity,Not cited in any claim
+Xrn1,F002,pathway_uncoupling,Cited for ≥1 claim
+Xrn1,F003,biomarker_candidate,Cited for ≥1 claim
+Xrn1,F004,homeostatic_compensation,Not cited in any claim
+Xrn1,F005,convergent_module,Cited for ≥1 claim
+Xrn1,F006,cross_perturbation_contrast,Not cited in any claim
+Xrn1,F007,cross_perturbation_contrast,Not cited in any claim
+Psmb4,F001,cell_type_selectivity,Not cited in any claim
+Psmb4,F002,homeostatic_compensation,Cited for ≥1 claim
+Psmb4,F003,convergent_module,Cited for ≥1 claim
+Psmb4,F004,homeostatic_compensation,Not cited in any claim
+Psmb4,F005,pathway_uncoupling,Cited for ≥1 claim
+Psmb4,F006,cross_perturbation_contrast,Cited for ≥1 claim
+Psmb4,F007,other,Not cited in any claim
+Psmb4,F008,therapeutic_direction_warning,Not cited in any claim
+Ctcf,F001,cell_type_selectivity,Not cited in any claim
+Ctcf,F002,disease_mechanism_refinement,Cited for ≥1 claim
+Ctcf,F003,convergent_module,Not cited in any claim
+Ctcf,F004,homeostatic_compensation,Not cited in any claim
+Ctcf,F005,homeostatic_compensation,Not cited in any claim
+Ctcf,F006,homeostatic_compensation,Not cited in any claim
+Ctcf,F007,cross_perturbation_contrast,Not cited in any claim
+Ctcf,F008,convergent_module,Not cited in any claim
+Ctcf,F009,literature_direction_mismatch,Not cited in any claim
+Ctcf,F010,pathway_uncoupling,Not cited in any claim
+Vps37a,F001,cell_type_selectivity,Not cited in any claim
+Vps37a,F002,homeostatic_compensation,Cited for ≥1 claim
+Vps37a,F003,homeostatic_compensation,Not cited in any claim
+Vps37a,F004,homeostatic_compensation,Not cited in any claim
+Vps37a,F005,disease_mechanism_refinement,Cited for ≥1 claim
+Vps37a,F006,convergent_module,Not cited in any claim
+Vps37a,F007,convergent_module,Cited for ≥1 claim
+Vps37a,F008,pathway_uncoupling,Cited for ≥1 claim
+Vps37a,F009,buffered_response,Not cited in any claim
+Vps37a,F010,negative_result,Not cited in any claim
+Vps37a,F011,therapeutic_direction_warning,Not cited in any claim
+Psmc5,F001,cell_type_selectivity,Not cited in any claim
+Psmc5,F002,homeostatic_compensation,Cited for ≥1 claim
+Psmc5,F003,biomarker_candidate,Cited for ≥1 claim
+Psmc5,F004,homeostatic_compensation,Not cited in any claim
+Psmc5,F005,disease_mechanism_refinement,Cited for ≥1 claim
+Psmc5,F006,convergent_module,Cited for ≥1 claim
+Psmc5,F007,cross_perturbation_contrast,Not cited in any claim
+Psmc5,F008,buffered_response,Not cited in any claim
+Psmc5,F009,negative_result,Not cited in any claim
+Psmc5,F010,therapeutic_direction_warning,Not cited in any claim
+Snrnp70,F001,cell_type_selectivity,Not cited in any claim
+Snrnp70,F002,homeostatic_compensation,Cited for ≥1 claim
+Snrnp70,F003,convergent_module,Cited for ≥1 claim
+Snrnp70,F004,buffered_response,Not cited in any claim
+Snrnp70,F005,homeostatic_compensation,Not cited in any claim
+Snrnp70,F006,cross_perturbation_contrast,Cited for ≥1 claim
+Snrnp70,F007,negative_result,Not cited in any claim
+Pomp,F001,convergent_module,Cited for ≥1 claim
+Pomp,F002,homeostatic_compensation,Cited for ≥1 claim
+Pomp,F003,homeostatic_compensation,Not cited in any claim
+Pomp,F004,homeostatic_compensation,Not cited in any claim
+Pomp,F005,other,Cited for ≥1 claim
+Pomp,F006,cell_type_selectivity,Not cited in any claim
+Pomp,F007,convergent_module,Cited for ≥1 claim
+Pomp,F008,pathway_uncoupling,Not cited in any claim
+Pomp,F009,buffered_response,Not cited in any claim
+Pomp,F010,disease_mechanism_refinement,Not cited in any claim
+Brd4,F001,cell_type_selectivity,Cited for ≥1 claim
+Brd4,F002,cell_type_selectivity,Not cited in any claim
+Brd4,F003,convergent_module,Not cited in any claim
+Brd4,F004,homeostatic_compensation,Not cited in any claim
+Brd4,F005,convergent_module,Cited for ≥1 claim
+Brd4,F006,pathway_uncoupling,Cited for ≥1 claim
+Brd4,F007,negative_result,Not cited in any claim
+Brd4,F008,negative_result,Not cited in any claim
+Lonp1,F001,convergent_module,Cited for ≥1 claim
+Lonp1,F002,homeostatic_compensation,Not cited in any claim
+Lonp1,F003,convergent_module,Cited for ≥1 claim
+Lonp1,F004,pathway_uncoupling,Cited for ≥1 claim
+Lonp1,F005,negative_result,Not cited in any claim
+Lonp1,F006,disease_mechanism_refinement,Not cited in any claim
+Srsf1,F001,cell_type_selectivity,Not cited in any claim
+Srsf1,F002,convergent_module,Cited for ≥1 claim
+Srsf1,F003,homeostatic_compensation,Not cited in any claim
+Srsf1,F004,homeostatic_compensation,Not cited in any claim
+Srsf1,F005,homeostatic_compensation,Not cited in any claim
+Srsf1,F006,negative_result,Not cited in any claim
+Srsf1,F007,convergent_module,Cited for ≥1 claim
+Srsf1,F008,pathway_uncoupling,Cited for ≥1 claim
+Srsf1,F009,cross_perturbation_contrast,Not cited in any claim
+Srsf1,F010,therapeutic_direction_warning,Not cited in any claim
+Hspa9,F001,convergent_module,Cited for ≥1 claim
+Hspa9,F002,cell_type_selectivity,Not cited in any claim
+Hspa9,F003,homeostatic_compensation,Cited for ≥1 claim
+Hspa9,F004,other,Cited for ≥1 claim
+Hspa9,F005,convergent_module,Cited for ≥1 claim
+Hspa9,F006,cross_perturbation_contrast,Not cited in any claim
+Hspa9,F007,pathway_uncoupling,Not cited in any claim
+Hspa9,F008,disease_mechanism_refinement,Not cited in any claim
+Hspa9,F009,therapeutic_direction_warning,Not cited in any claim
+Hspa9,F010,buffered_response,Not cited in any claim
+Hspa9,F011,negative_result,Not cited in any claim
+Chd8,F001,cell_type_selectivity,Not cited in any claim
+Chd8,F002,convergent_module,Cited for ≥1 claim
+Chd8,F003,homeostatic_compensation,Not cited in any claim
+Chd8,F004,buffered_response,Not cited in any claim
+Chd8,F005,convergent_module,Not cited in any claim
+Chd8,F006,cross_perturbation_contrast,Not cited in any claim
+Chd8,F007,pathway_uncoupling,Cited for ≥1 claim
+Chd8,F008,therapeutic_direction_warning,Not cited in any claim
+Ddx39b,F001,cell_type_selectivity,Cited for ≥1 claim
+Ddx39b,F002,homeostatic_compensation,Not cited in any claim
+Ddx39b,F003,homeostatic_compensation,Not cited in any claim
+Ddx39b,F004,homeostatic_compensation,Not cited in any claim
+Ddx39b,F005,disease_mechanism_refinement,Not cited in any claim
+Ddx39b,F006,buffered_response,Not cited in any claim
+Ddx39b,F007,buffered_response,Not cited in any claim
+Ddx39b,F008,convergent_module,Not cited in any claim
+Ddx39b,F009,convergent_module,Not cited in any claim
+Ddx39b,F010,negative_result,Not cited in any claim
+Ddx39b,F011,cross_perturbation_contrast,Cited for ≥1 claim
+Grin2b,F001,cell_type_selectivity,Not cited in any claim
+Grin2b,F002,convergent_module,Cited for ≥1 claim
+Grin2b,F003,disease_mechanism_refinement,Not cited in any claim
+Grin2b,F004,convergent_module,Cited for ≥1 claim
+Grin2b,F005,homeostatic_compensation,Not cited in any claim
+Grin2b,F006,convergent_module,Not cited in any claim
+Grin2b,F007,cross_perturbation_contrast,Cited for ≥1 claim
+Grin2b,F008,pathway_uncoupling,Not cited in any claim
+Grin2b,F009,buffered_response,Not cited in any claim
+Grin2b,F010,therapeutic_direction_warning,Not cited in any claim
+Tsc1,F001,cell_type_selectivity,Not cited in any claim
+Tsc1,F002,convergent_module,Cited for ≥1 claim
+Tsc1,F003,literature_direction_mismatch,Cited for ≥1 claim
+Tsc1,F004,homeostatic_compensation,Cited for ≥1 claim
+Tsc1,F005,convergent_module,Cited for ≥1 claim
+Tsc1,F006,cross_perturbation_contrast,Cited for ≥1 claim
+Tsc1,F007,convergent_module,Not cited in any claim
+Tsc1,F008,cell_type_selectivity,Not cited in any claim
+Tsc1,F009,cross_perturbation_contrast,Not cited in any claim
+Tsc1,F010,homeostatic_compensation,Not cited in any claim
+Tsc1,F011,biomarker_candidate,Not cited in any claim
+Vps53,F001,cell_type_selectivity,Cited for ≥1 claim
+Vps53,F002,biomarker_candidate,Not cited in any claim
+Vps53,F003,homeostatic_compensation,Not cited in any claim
+Vps53,F004,convergent_module,Cited for ≥1 claim
+Vps53,F005,cross_perturbation_contrast,Cited for ≥1 claim
+Vps53,F006,pathway_uncoupling,Cited for ≥1 claim
+U2af2,F001,cell_type_selectivity,Not cited in any claim
+U2af2,F002,homeostatic_compensation,Cited for ≥1 claim
+U2af2,F003,convergent_module,Not cited in any claim
+U2af2,F004,disease_mechanism_refinement,Not cited in any claim
+U2af2,F005,homeostatic_compensation,Not cited in any claim
+U2af2,F006,homeostatic_compensation,Not cited in any claim
+U2af2,F007,biomarker_candidate,Not cited in any claim
+U2af2,F008,cross_perturbation_contrast,Not cited in any claim
+U2af2,F009,cross_perturbation_contrast,Cited for ≥1 claim
+U2af2,F010,cross_perturbation_contrast,Not cited in any claim
+U2af2,F011,biomarker_candidate,Not cited in any claim
+Atp6v1b2,F001,cell_type_selectivity,Cited for ≥1 claim
+Atp6v1b2,F002,other,Not cited in any claim
+Atp6v1b2,F003,homeostatic_compensation,Not cited in any claim
+Atp6v1b2,F004,convergent_module,Not cited in any claim
+Atp6v1b2,F005,cross_perturbation_contrast,Cited for ≥1 claim
+Atp6v1b2,F006,convergent_module,Not cited in any claim
+Atp6v1b2,F007,pathway_uncoupling,Not cited in any claim
+Gatad1,F001,cell_type_selectivity,Not cited in any claim
+Gatad1,F002,homeostatic_compensation,Cited for ≥1 claim
+Gatad1,F003,homeostatic_compensation,Cited for ≥1 claim
+Gatad1,F004,buffered_response,Not cited in any claim
+Gatad1,F005,convergent_module,Cited for ≥1 claim
+Gatad1,F006,cross_perturbation_contrast,Not cited in any claim
+Gatad1,F007,convergent_module,Not cited in any claim
+Gatad1,F008,negative_result,Not cited in any claim
+Gatad1,F009,negative_result,Not cited in any claim
+Kmt2e,F001,cell_type_selectivity,Not cited in any claim
+Kmt2e,F002,biomarker_candidate,Cited for ≥1 claim
+Kmt2e,F003,pathway_uncoupling,Cited for ≥1 claim
+Kmt2e,F004,cross_perturbation_contrast,Cited for ≥1 claim
+Kmt2e,F005,convergent_module,Cited for ≥1 claim
+Kmt2e,F006,convergent_module,Not cited in any claim
+Kmt2e,F007,disease_mechanism_refinement,Not cited in any claim
+Snf8,F001,cell_type_selectivity,Cited for ≥1 claim
+Snf8,F002,convergent_module,Not cited in any claim
+Snf8,F003,cross_perturbation_contrast,Cited for ≥1 claim
+Snf8,F004,pathway_uncoupling,Cited for ≥1 claim
+Snf8,F005,biomarker_candidate,Not cited in any claim
+Snf8,F006,negative_result,Cited for ≥1 claim

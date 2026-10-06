@@ -1,0 +1,148 @@
+{
+  "story_id": "S034",
+  "title": "Mib1 induces a neuronal sterol program that Notch ligands and receptors fail to mimic",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Mib1 perturbation induced a recurrent all-up sterol/cholesterol program: in 151 TH, Insig1 logFC 1.52772855758667 FDR 1.2485262063074146e-19, Dhcr24 1.1180424690246582 FDR 4.973949083479575e-17, Fdft1 1.6080328226089478 FDR 4.973949083479575e-17, Ldlr 2.095721483230591 FDR 1.7299382480231483e-15, and Hmgcr 0.9627998471260071 FDR 9.825108272472224e-13. Dll1, Notch1-4, Adam10, and Psen1 were weak or sterol-silent in matched analyses.",
+  "biological_interpretation": "The dominant Mib1 loss signature in adult neurons is a SREBP/cholesterol response rather than a canonical Notch-target transcript response, although a sender-cell Notch defect remains biologically plausible and unmeasured.",
+  "targets": [
+    "Mib1",
+    "Dll1",
+    "Notch1",
+    "Notch2",
+    "Notch3",
+    "Notch4",
+    "Adam10",
+    "Psen1"
+  ],
+  "cell_types": [
+    "007 L2-3 IT CTX Glut",
+    "052 Pvalb Gaba",
+    "066 CNU-HYa HY GABA",
+    "110 CNU-HYa HY MM Glut",
+    "145 MH-LH TH Glut",
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "191 MB P MY GABA"
+  ],
+  "support": {
+    "support_level": 5,
+    "exact_de_rows": [
+      {
+        "gene_target": "Mib1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Insig1",
+        "log2_fold_change": 1.52772855758667,
+        "pvals_adj": 1.2485262063074146e-19,
+        "wilcoxon_score": 10.073521614074707
+      },
+      {
+        "gene_target": "Mib1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Fdft1",
+        "log2_fold_change": 1.6080328226089478,
+        "pvals_adj": 4.973949083479575e-17,
+        "wilcoxon_score": 9.351445198059082
+      },
+      {
+        "gene_target": "Mib1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Msmo1",
+        "log2_fold_change": 1.3899506330490112,
+        "pvals_adj": 5.809540359708502e-14,
+        "wilcoxon_score": 8.513813018798828
+      },
+      {
+        "gene_target": "Mib1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ldlr",
+        "log2_fold_change": 2.095721483230591,
+        "pvals_adj": 1.7299382480231483e-15,
+        "wilcoxon_score": 8.936708450317383
+      },
+      {
+        "gene_target": "Mib1",
+        "cell_type": "155 MB Glut",
+        "gene": "Insig1",
+        "log2_fold_change": 1.627953290939331,
+        "pvals_adj": 3.1660968697399474e-16,
+        "wilcoxon_score": 9.272688865661621
+      },
+      {
+        "gene_target": "Mib1",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Insig1",
+        "log2_fold_change": 1.7458264827728271,
+        "pvals_adj": 5.28766517039713e-15,
+        "wilcoxon_score": 8.965364456176758
+      }
+    ],
+    "report_evidence_summary": [
+      "Dll1:E002",
+      "Dll1:E007",
+      "Dll1:E008",
+      "Notch3:E007",
+      "Notch3:E008",
+      "Notch3:E009",
+      "Mib1:E002",
+      "Mib1:E010"
+    ]
+  },
+  "caveats": [
+    "Mib1 target RNA depletion reached FDR only in 155 MB Glut in the full report.",
+    "Dll1 and Notch-family target engagement was weak, so the absence of a sterol phenocopy is a boundary on the tested signatures rather than a definitive genetic epistasis result."
+  ],
+  "prior_expectation": {
+    "summary": "Mib1 is required for mammalian Notch ligand signaling during development; Mib1 can modulate Delta-Notch signaling in developing CNS; SREBP feedback regulates lipid-synthesis transcriptional programs",
+    "citations": [
+      {
+        "ref_id": "Dll1:R006",
+        "ref": "Koo et al. 2007 DOI:10.1371/journal.pone.0001221",
+        "url_or_doi": "https://doi.org/10.1371/journal.pone.0001221",
+        "supports": "Mib1 is required for mammalian Notch ligand signaling during development"
+      },
+      {
+        "ref_id": "Notch3:R009",
+        "ref": "Kang et al. 2013 DOI:10.1074/jbc.M112.398263",
+        "url_or_doi": "https://doi.org/10.1074/jbc.M112.398263",
+        "supports": "Mib1 can modulate Delta-Notch signaling in developing CNS"
+      },
+      {
+        "ref_id": "Mib1:R009",
+        "ref": "Brown and Goldstein 2009 DOI:10.1194/jlr.R800054-JLR200",
+        "url_or_doi": "https://doi.org/10.1194/jlr.R800054-JLR200",
+        "supports": "SREBP feedback regulates lipid-synthesis transcriptional programs"
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 5,
+    "support": 5,
+    "priority": 4
+  },
+  "report_evidence_ids": [
+    "Dll1:E002",
+    "Dll1:E007",
+    "Dll1:E008",
+    "Notch3:E007",
+    "Notch3:E008",
+    "Notch3:E009",
+    "Mib1:E002",
+    "Mib1:E010"
+  ],
+  "reference_ids": [
+    "Dll1:R006",
+    "Dll1:R008",
+    "Notch3:R009",
+    "Mib1:R009"
+  ],
+  "source_urls_or_dois": [
+    "https://doi.org/10.1074/jbc.M112.398263",
+    "https://doi.org/10.1194/jlr.R800054-JLR200",
+    "https://doi.org/10.1371/journal.pone.0001221"
+  ],
+  "source_claim_ids": [
+    "claim:dll1_f004_9a46c9b4a054",
+    "claim:notch3_f003_a8d50e59961f"
+  ]
+}

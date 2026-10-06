@@ -1,0 +1,415 @@
+{
+  "biological_interpretation": "Mediator perturbations split by subunit and neuronal context: a Med15/Med13/Med23-sensitive synaptic and dendritic module is not reproduced by the CDK8-module genes Med12 or Cdk8.",
+  "caveats": [
+    "Med15, Med23, and Med13 mRNA rows were not themselves FDR-depleted in the 151 TH response, so the module is a perturbation-associated signature rather than confirmed transcript dose response.",
+    "Genome-wide correlations among Mediator perturbations were weak; the convergence is driven by a restricted marker module."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "052 Pvalb Gaba",
+    "005 L4-5 IT CTX Glut"
+  ],
+  "exact_observed_result": "Med15 produced a 151 TH Prkcd Grin2c Glut down-module containing Atp2b1, Lrrc7, Plekhg1, Atp2a2, Grm1, Pcp4, Prkcd, and Kcnc2; Med13 and Med23 overlapped that module on Grm1/Pcp4/Plekhg1/Atp2a2/Prkcd. Med13l contributed only Grm1, while Med12 and Cdk8 were FDR-silent in the same thalamic markers.",
+  "preliminary_scores": {
+    "novelty": 4,
+    "priority": 5,
+    "support": 5
+  },
+  "prior_expectation": "Mediator complex subunits are physically connected through Pol-II transcriptional regulation, but different tail and kinase-module members can have context-specific transcription factor dependencies; the thalamic synaptic down-module refines complex membership into subunit-specific neuronal outputs.",
+  "reference_ids": [
+    "Cdk8:F002",
+    "Med12:F003",
+    "Med13:F001",
+    "Med13l:F002"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    {
+      "finding_id": "F001",
+      "gene": "Med13"
+    },
+    {
+      "finding_id": "F002",
+      "gene": "Med13l"
+    },
+    {
+      "finding_id": "F003",
+      "gene": "Med12"
+    },
+    {
+      "finding_id": "F002",
+      "gene": "Cdk8"
+    }
+  ],
+  "source_claim_ids": [
+    "claim:med13_f001_fc2ddf8bebeb",
+    "claim:med13l_f002_d427c923d721",
+    "claim:med12_f003_a8606f899c93",
+    "claim:cdk8_f002_3105cbd27d4f"
+  ],
+  "source_cluster_ids": [
+    "C074"
+  ],
+  "source_urls_or_dois": [
+    "https://doi.org/10.1016/j.tibs.2022.01.002",
+    "https://pubmed.ncbi.nlm.nih.gov/25845469/",
+    "https://string-db.org/"
+  ],
+  "status": "grounded",
+  "story_id": "S134",
+  "support": {
+    "exact_de_rows": [
+      {
+        "gene_target": "Cdk8",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.24305710196495056,
+        "names": "Cdk8",
+        "pvals": 0.011711688811327482,
+        "pvals_adj": 1.0,
+        "scores": -2.520714282989502
+      },
+      {
+        "gene_target": "Cdk8",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.018660733476281166,
+        "names": "Grm1",
+        "pvals": 0.7212975423936445,
+        "pvals_adj": 1.0,
+        "scores": 0.35672518610954285
+      },
+      {
+        "gene_target": "Cdk8",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.09514683485031128,
+        "names": "Pcp4",
+        "pvals": 0.10725665902214641,
+        "pvals_adj": 1.0,
+        "scores": 1.6106470823287964
+      },
+      {
+        "gene_target": "Cdk8",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.023237386718392372,
+        "names": "Plekhg1",
+        "pvals": 0.9637599449891288,
+        "pvals_adj": 1.0,
+        "scores": -0.04543580114841461
+      },
+      {
+        "gene_target": "Med12",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.03712041303515434,
+        "names": "Grm1",
+        "pvals": 0.9442614192978396,
+        "pvals_adj": 1.0,
+        "scores": -0.06991486996412277
+      },
+      {
+        "gene_target": "Med12",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.5476747155189514,
+        "names": "Med12",
+        "pvals": 0.2385691647637268,
+        "pvals_adj": 1.0,
+        "scores": -1.1785707473754883
+      },
+      {
+        "gene_target": "Med12",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.10380124300718307,
+        "names": "Pcp4",
+        "pvals": 0.26544157796889556,
+        "pvals_adj": 1.0,
+        "scores": 1.1136215925216675
+      },
+      {
+        "gene_target": "Med12",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.07660140097141266,
+        "names": "Plekhg1",
+        "pvals": 0.022504728168157895,
+        "pvals_adj": 1.0,
+        "scores": -2.2817394733428955
+      },
+      {
+        "gene_target": "Med13",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.2358044981956482,
+        "names": "Atp2a2",
+        "pvals": 7.127230002244309e-07,
+        "pvals_adj": 0.00275666130261831,
+        "scores": -4.957864284515381
+      },
+      {
+        "gene_target": "Med13",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.18854504823684692,
+        "names": "Atp2b1",
+        "pvals": 5.609430384180153e-05,
+        "pvals_adj": 0.07737854805885312,
+        "scores": -4.028665542602539
+      },
+      {
+        "gene_target": "Med13",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.22944454848766327,
+        "names": "Grm1",
+        "pvals": 2.8451892764530923e-06,
+        "pvals_adj": 0.00701501738890056,
+        "scores": -4.681690216064453
+      },
+      {
+        "gene_target": "Med13",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.16801698505878448,
+        "names": "Kcnc2",
+        "pvals": 2.3858354253476682e-05,
+        "pvals_adj": 0.0411771336060754,
+        "scores": -4.225337028503418
+      },
+      {
+        "gene_target": "Med13",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.1045093834400177,
+        "names": "Lrrc7",
+        "pvals": 0.022000291149656796,
+        "pvals_adj": 1.0,
+        "scores": -2.29036283493042
+      },
+      {
+        "gene_target": "Med13",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.054192475974559784,
+        "names": "Med13",
+        "pvals": 0.8181046985498901,
+        "pvals_adj": 1.0,
+        "scores": -0.2299833595752716
+      },
+      {
+        "gene_target": "Med13",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.32443541288375854,
+        "names": "Pcp4",
+        "pvals": 9.583387111483783e-07,
+        "pvals_adj": 0.00275666130261831,
+        "scores": -4.90000581741333
+      },
+      {
+        "gene_target": "Med13",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.3167048692703247,
+        "names": "Plekhg1",
+        "pvals": 3.382185890212167e-07,
+        "pvals_adj": 0.0019457715426390593,
+        "scores": -5.100801467895508
+      },
+      {
+        "gene_target": "Med13",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.42683348059654236,
+        "names": "Prkcd",
+        "pvals": 1.4263191160369945e-08,
+        "pvals_adj": 0.0002461684162368249,
+        "scores": -5.670198917388916
+      },
+      {
+        "gene_target": "Med13l",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.22695714235305786,
+        "names": "Grm1",
+        "pvals": 5.761810254083274e-08,
+        "pvals_adj": 0.0009944308317522323,
+        "scores": -5.426039695739746
+      },
+      {
+        "gene_target": "Med13l",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.317257285118103,
+        "names": "Med13l",
+        "pvals": 0.002321559890769697,
+        "pvals_adj": 1.0,
+        "scores": -3.0456783771514893
+      },
+      {
+        "gene_target": "Med15",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.2850709557533264,
+        "names": "Atp2a2",
+        "pvals": 1.088519690615388e-07,
+        "pvals_adj": 0.0002683823048618712,
+        "scores": -5.3112897872924805
+      },
+      {
+        "gene_target": "Med15",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.3122963309288025,
+        "names": "Atp2b1",
+        "pvals": 8.864786984209139e-10,
+        "pvals_adj": 5.709863154923867e-06,
+        "scores": -6.1286139488220215
+      },
+      {
+        "gene_target": "Med15",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.28338396549224854,
+        "names": "Grm1",
+        "pvals": 1.6250176587642158e-07,
+        "pvals_adj": 0.0003116242196956845,
+        "scores": -5.237800121307373
+      },
+      {
+        "gene_target": "Med15",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.231798455119133,
+        "names": "Kcnc2",
+        "pvals": 1.2643006936159357e-06,
+        "pvals_adj": 0.0018183804725931195,
+        "scores": -4.845284938812256
+      },
+      {
+        "gene_target": "Med15",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.26280227303504944,
+        "names": "Lrrc7",
+        "pvals": 9.925018520639434e-10,
+        "pvals_adj": 5.709863154923867e-06,
+        "scores": -6.110611438751221
+      },
+      {
+        "gene_target": "Med15",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.08386670798063278,
+        "names": "Med15",
+        "pvals": 0.48562449321991263,
+        "pvals_adj": 1.0,
+        "scores": -0.6972849369049072
+      },
+      {
+        "gene_target": "Med15",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.29841262102127075,
+        "names": "Pcp4",
+        "pvals": 1.463465370172486e-05,
+        "pvals_adj": 0.018041392017004956,
+        "scores": -4.334116458892822
+      },
+      {
+        "gene_target": "Med15",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.37750256061553955,
+        "names": "Plekhg1",
+        "pvals": 9.493190058544701e-09,
+        "pvals_adj": 4.0960741805105746e-05,
+        "scores": -5.739543914794922
+      },
+      {
+        "gene_target": "Med15",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.4018041789531708,
+        "names": "Prkcd",
+        "pvals": 2.0021912820537152e-05,
+        "pvals_adj": 0.02159738708560317,
+        "scores": -4.264646053314209
+      },
+      {
+        "gene_target": "Med23",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.19716905057430267,
+        "names": "Atp2a2",
+        "pvals": 1.2144894515176441e-05,
+        "pvals_adj": 0.017467394536452515,
+        "scores": -4.374970436096191
+      },
+      {
+        "gene_target": "Med23",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.18812313675880432,
+        "names": "Atp2b1",
+        "pvals": 8.232992132860139e-07,
+        "pvals_adj": 0.0020299030174433306,
+        "scores": -4.92976188659668
+      },
+      {
+        "gene_target": "Med23",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.3432059586048126,
+        "names": "Grm1",
+        "pvals": 2.7045078841562247e-09,
+        "pvals_adj": 2.333855078632614e-05,
+        "scores": -5.948596954345703
+      },
+      {
+        "gene_target": "Med23",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.1153884008526802,
+        "names": "Kcnc2",
+        "pvals": 0.0017722003674866087,
+        "pvals_adj": 0.5366036165342347,
+        "scores": -3.125969409942627
+      },
+      {
+        "gene_target": "Med23",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.14895595610141754,
+        "names": "Lrrc7",
+        "pvals": 0.0004881643496971328,
+        "pvals_adj": 0.30019216576434077,
+        "scores": -3.487168073654175
+      },
+      {
+        "gene_target": "Med23",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.03827562928199768,
+        "names": "Med23",
+        "pvals": 0.9672594530753036,
+        "pvals_adj": 1.0,
+        "scores": 0.04104571416974068
+      },
+      {
+        "gene_target": "Med23",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.3950479328632355,
+        "names": "Pcp4",
+        "pvals": 6.024257189028907e-09,
+        "pvals_adj": 3.46575516084833e-05,
+        "scores": -5.816082954406738
+      },
+      {
+        "gene_target": "Med23",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.27225345373153687,
+        "names": "Plekhg1",
+        "pvals": 4.851957321214374e-07,
+        "pvals_adj": 0.0013956655234473147,
+        "scores": -5.032076358795166
+      },
+      {
+        "gene_target": "Med23",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.4850822985172272,
+        "names": "Prkcd",
+        "pvals": 2.0176239462816895e-10,
+        "pvals_adj": 3.482217168887568e-06,
+        "scores": -6.3599934577941895
+      }
+    ]
+  },
+  "targets": [
+    "Med15",
+    "Med13",
+    "Med23",
+    "Med13l",
+    "Med12",
+    "Cdk8",
+    "Atp2b1",
+    "Ptpn3",
+    "Lrrc7",
+    "Plekhg1",
+    "Atp2a2",
+    "Grm1",
+    "Pcp4",
+    "Prkcd",
+    "Kcnc1"
+  ],
+  "title": "Med15, Med13, and Med23 repress a shared thalamic Mediator output"
+}

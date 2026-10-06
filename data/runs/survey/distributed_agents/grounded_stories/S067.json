@@ -1,0 +1,148 @@
+{
+  "story_id": "S067",
+  "title": "Lower glycolysis perturbations converge on OGT and nuclear-speckle markers in thalamic and hypothalamic glutamatergic neurons",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Pgk1 knockdown in 151 TH repressed Pgk1, Pnisr, Rsrp1, Srrm2, Arglu1, Ogt, and Grm1 at FDR<0.05. Gapdh in the same class independently repressed Pnisr, Ttc14, Rsrp1, Ogt, and Leng8 at FDR<0.05, while Tpi1 was self-depleted in 151 TH and showed nominal 151 TH movement of Pnisr/Ttc14/Rsrp1 plus an FDR-supported Ogt decrease in 145 MH-LH TH Glut.",
+  "biological_interpretation": "Lower glycolysis perturbations in selected glutamatergic neurons couple metabolic stress to a compact Ogt and nuclear-speckle/RNA-processing state, but the effect is not shared by every glycolytic node.",
+  "targets": [
+    "Pgk1",
+    "Gapdh",
+    "Tpi1",
+    "Ogt"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "145 MH-LH TH Glut"
+  ],
+  "support": {
+    "support_level": 4,
+    "exact_de_rows": [
+      {
+        "gene_target": "Pgk1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Pgk1",
+        "log2_fold_change": -1.440921664237976,
+        "pvals_adj": 4.430565075479951e-32,
+        "wilcoxon_score": -12.584578514099121
+      },
+      {
+        "gene_target": "Pgk1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Pnisr",
+        "log2_fold_change": -0.22693754732608795,
+        "pvals_adj": 7.00392051003895e-11,
+        "wilcoxon_score": -7.765751361846924
+      },
+      {
+        "gene_target": "Pgk1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ogt",
+        "log2_fold_change": -0.14565037190914154,
+        "pvals_adj": 0.0004998475332809164,
+        "wilcoxon_score": -5.171926498413086
+      },
+      {
+        "gene_target": "Gapdh",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Pnisr",
+        "log2_fold_change": -0.25522252917289734,
+        "pvals_adj": 2.192907328421143e-05,
+        "wilcoxon_score": -6.071072578430176
+      },
+      {
+        "gene_target": "Gapdh",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rsrp1",
+        "log2_fold_change": -0.19735021889209747,
+        "pvals_adj": 0.00014913899376043957,
+        "wilcoxon_score": -5.630657196044922
+      },
+      {
+        "gene_target": "Gapdh",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ogt",
+        "log2_fold_change": -0.1767629086971283,
+        "pvals_adj": 0.022013508773315246,
+        "wilcoxon_score": -4.513474941253662
+      },
+      {
+        "gene_target": "Tpi1",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Ogt",
+        "log2_fold_change": -0.38743871450424194,
+        "pvals_adj": 0.012068740120415708,
+        "wilcoxon_score": -4.818729400634766
+      }
+    ],
+    "report_evidence_summary": [
+      "Pgk1:E002",
+      "Pgk1:E003",
+      "Gapdh:E002",
+      "Gapdh:E003",
+      "Tpi1:E007",
+      "Tpi1:E008",
+      "Tpi1:E009",
+      "Tpi1:E010"
+    ]
+  },
+  "caveats": [
+    "Gapdh mRNA itself was absent from the measured features, and Tpi1 secondary rows in 151 TH were nominal rather than FDR-supported.",
+    "The relationship links transcriptomic readouts to glycolysis and O-GlcNAc biology but does not measure glycolytic flux, UDP-GlcNAc, or OGT activity."
+  ],
+  "prior_expectation": {
+    "summary": "GAPDH and PGK1 are adjacent cytosolic glycolysis enzymes; TPI1 catalyzes the DHAP/G3P step of glycolysis; PNISR, RSRP1, SRRM2, ARGLU1 and related readouts are annotated RNA-processing or spliceosome-associated proteins",
+    "citations": [
+      {
+        "ref_id": "Gapdh:R001",
+        "ref": "Reactome Glycolysis R-HSA-70171",
+        "url_or_doi": "https://reactome.org/content/detail/R-HSA-70171",
+        "supports": "GAPDH and PGK1 are adjacent cytosolic glycolysis enzymes"
+      },
+      {
+        "ref_id": "Tpi1:R002",
+        "ref": "Reactome TPI1 reactions R-HSA-70454 and R-HSA-70481",
+        "url_or_doi": "https://reactome.org/content/detail/R-HSA-70454",
+        "supports": "TPI1 catalyzes the DHAP/G3P step of glycolysis"
+      },
+      {
+        "ref_id": "Pgk1:R004",
+        "ref": "UniProtKB nuclear-speckle and spliceosome entries",
+        "url_or_doi": "https://www.uniprot.org/",
+        "supports": "PNISR, RSRP1, SRRM2, ARGLU1 and related readouts are annotated RNA-processing or spliceosome-associated proteins"
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 4,
+    "priority": 4
+  },
+  "report_evidence_ids": [
+    "Pgk1:E002",
+    "Pgk1:E003",
+    "Gapdh:E002",
+    "Gapdh:E003",
+    "Tpi1:E007",
+    "Tpi1:E008",
+    "Tpi1:E009",
+    "Tpi1:E010"
+  ],
+  "reference_ids": [
+    "Gapdh:R001",
+    "Tpi1:R002",
+    "Tpi1:R008",
+    "Pgk1:R004"
+  ],
+  "source_urls_or_dois": [
+    "https://reactome.org/content/detail/R-HSA-70171",
+    "https://reactome.org/content/detail/R-HSA-70454",
+    "https://www.uniprot.org/"
+  ],
+  "source_claim_ids": [
+    "claim:pgk1_f002_26f66bcae86d",
+    "claim:gapdh_f001_bf16dc316f7e",
+    "claim:tpi1_f003_f884a6be195b",
+    "claim:tpi1_f004_008fd511a114"
+  ]
+}

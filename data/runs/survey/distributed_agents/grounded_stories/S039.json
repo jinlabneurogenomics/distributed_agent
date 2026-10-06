@@ -1,0 +1,378 @@
+{
+  "biological_interpretation": "SERCA2 calcium handling and Elongator activity are distinct upstream perturbations that can converge on a vulnerable thalamic ER/amino-acid stress program.",
+  "caveats": [
+    "The shared interpretation is based on convergent marker genes, not direct measurement of ATF4, ER calcium, or tRNA modifications.",
+    "Elp2 target depletion outside 151 TH was mostly nominal."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "007 L2-3 IT CTX Glut",
+    "191 MB P MY GABA"
+  ],
+  "exact_observed_result": "Atp2a2 loss produced its largest 151 TH Prkcd Grin2c Glut footprint with ER and amino-acid stress genes, and Elp2 loss in the same class induced Asns, Shmt2, Herpud1, Cars, and related ATF4/stress output while most non-151 Elp2 classes were buffered.",
+  "preliminary_scores": {
+    "novelty": 4,
+    "priority": 4,
+    "support": 5
+  },
+  "prior_expectation": {
+    "citations": [
+      {
+        "ref": "Sehgal et al. 2017",
+        "supports": "SERCA inhibition can deplete ER calcium and induce UPR",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/28972171/"
+      },
+      {
+        "ref": "Kojic et al. 2021",
+        "supports": "ELP2 mutations perturb Elongator-dependent tRNA modification and protein homeostasis",
+        "url_or_doi": "https://doi.org/10.1038/s41467-021-22888-5"
+      }
+    ],
+    "summary": "Prior expectation is grounded by the listed traceable corpus citations; direct prior support for the exact cell-type/state relationship is partial unless noted in the caveats."
+  },
+  "reference_ids": [
+    "Atp2a2:R001",
+    "Atp2a2:R004",
+    "Atp2a2:R006",
+    "Elp2:R005"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Atp2a2:E001",
+    "Atp2a2:E002",
+    "Atp2a2:E006",
+    "Atp2a2:E007",
+    "Atp2a2:E008",
+    "Elp2:E001",
+    "Elp2:E002",
+    "Elp2:E005"
+  ],
+  "source_urls_or_dois": [
+    {
+      "ref": "Sehgal et al. 2017",
+      "supports": "SERCA inhibition can deplete ER calcium and induce UPR",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/28972171/"
+    },
+    {
+      "ref": "Kojic et al. 2021",
+      "supports": "ELP2 mutations perturb Elongator-dependent tRNA modification and protein homeostasis",
+      "url_or_doi": "https://doi.org/10.1038/s41467-021-22888-5"
+    }
+  ],
+  "status": "grounded",
+  "story_id": "S039",
+  "support": {
+    "exact_de_rows": [
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Asns",
+        "log2_fold_change": 0.866488,
+        "pval": 1.7846390808639744e-09,
+        "pvals_adj": 3.0801085896631333e-06,
+        "score": 6.016286,
+        "target": "Atp2a2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Atp2a2",
+        "log2_fold_change": -1.256338,
+        "pval": 1.0318672009161343e-23,
+        "pvals_adj": 1.7808996020611563e-19,
+        "score": -10.038544,
+        "target": "Atp2a2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Chac1",
+        "log2_fold_change": 3.01368,
+        "pval": 1.9157018582778707e-11,
+        "pvals_adj": 6.612619674403554e-08,
+        "score": 6.712308,
+        "target": "Atp2a2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Ddit3",
+        "log2_fold_change": 1.603674,
+        "pval": 3.5775841800915356e-12,
+        "pvals_adj": 2.0581841788066604e-08,
+        "score": 6.952937,
+        "target": "Atp2a2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Herpud1",
+        "log2_fold_change": 0.857425,
+        "pval": 3.8123303716033697e-10,
+        "pvals_adj": 8.22462623543782e-07,
+        "score": 6.261524,
+        "target": "Atp2a2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Hspa5",
+        "log2_fold_change": 0.749096,
+        "pval": 1.0186661563174035e-09,
+        "pvals_adj": 1.953462132431341e-06,
+        "score": 6.106458,
+        "target": "Atp2a2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Mthfd2",
+        "log2_fold_change": 1.99506,
+        "pval": 1.101627265762415e-07,
+        "pvals_adj": 0.00012675323319862345,
+        "score": 5.309109,
+        "target": "Atp2a2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Shmt2",
+        "log2_fold_change": 2.020881,
+        "pval": 9.243952595079806e-12,
+        "pvals_adj": 3.988534445962059e-08,
+        "score": 6.817809,
+        "target": "Atp2a2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Slc3a2",
+        "log2_fold_change": 0.363536,
+        "pval": 0.005647224148632533,
+        "pvals_adj": 0.213272301053061,
+        "score": 2.767591,
+        "target": "Atp2a2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Xbp1",
+        "log2_fold_change": 0.785159,
+        "pval": 1.0446441907384534e-10,
+        "pvals_adj": 3.004919014659161e-07,
+        "score": 6.460345,
+        "target": "Atp2a2"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Atp2a2",
+        "log2_fold_change": -1.228294,
+        "pval": 5.469189621075751e-14,
+        "pvals_adj": 9.539907456042433e-10,
+        "score": -7.520202,
+        "target": "Atp2a2"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Chac1",
+        "log2_fold_change": 2.343818,
+        "pval": 1.6139590996172928e-05,
+        "pvals_adj": 0.04021755510660634,
+        "score": 4.312531,
+        "target": "Atp2a2"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Ddit3",
+        "log2_fold_change": 1.630676,
+        "pval": 2.6235689307585036e-05,
+        "pvals_adj": 0.04576291285922057,
+        "score": 4.203898,
+        "target": "Atp2a2"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Slc3a2",
+        "log2_fold_change": 0.941382,
+        "pval": 2.283667957460607e-05,
+        "pvals_adj": 0.04426002242442818,
+        "score": 4.235182,
+        "target": "Atp2a2"
+      },
+      {
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Atp2a2",
+        "log2_fold_change": -0.76566,
+        "pval": 1.98143744628744e-10,
+        "pvals_adj": 3.3195021537653483e-06,
+        "score": -6.362773,
+        "target": "Atp2a2"
+      },
+      {
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Creld2",
+        "log2_fold_change": 0.992838,
+        "pval": 6.4654560016963375e-06,
+        "pvals_adj": 0.03610526146547291,
+        "score": 4.510567,
+        "target": "Atp2a2"
+      },
+      {
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Hspa5",
+        "log2_fold_change": 0.790285,
+        "pval": 2.4607797007182304e-06,
+        "pvals_adj": 0.020612721163066255,
+        "score": 4.711353,
+        "target": "Atp2a2"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": true,
+        "gene": "Atp2a2",
+        "log2_fold_change": -1.260061,
+        "pval": 4.643652626066907e-09,
+        "pvals_adj": 7.939717260049198e-05,
+        "score": -5.859463,
+        "target": "Atp2a2"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": false,
+        "gene": "Chac1",
+        "log2_fold_change": 2.08806,
+        "pval": 1.985337017555499e-05,
+        "pvals_adj": 0.08486323081540981,
+        "score": 4.266533,
+        "target": "Atp2a2"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": true,
+        "gene": "Eprs",
+        "log2_fold_change": 0.941855,
+        "pval": 4.386188412234721e-06,
+        "pvals_adj": 0.0322647508002341,
+        "score": 4.59219,
+        "target": "Atp2a2"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": true,
+        "gene": "Mbd2",
+        "log2_fold_change": 1.14373,
+        "pval": 5.6611447187216235e-06,
+        "pvals_adj": 0.0322647508002341,
+        "score": 4.538665,
+        "target": "Atp2a2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Asns",
+        "log2_fold_change": 1.249351,
+        "pval": 2.0868632930460884e-20,
+        "pvals_adj": 3.601717357468244e-16,
+        "score": 9.257801,
+        "target": "Elp2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Cars",
+        "log2_fold_change": 0.865139,
+        "pval": 6.366780574752929e-16,
+        "pvals_adj": 2.74710664849152e-12,
+        "score": 8.082087,
+        "target": "Elp2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Chac1",
+        "log2_fold_change": 2.857677,
+        "pval": 2.591173949380166e-12,
+        "pvals_adj": 7.453511865392047e-09,
+        "score": 6.998283,
+        "target": "Elp2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Ddit3",
+        "log2_fold_change": 1.014776,
+        "pval": 2.0111092674800137e-08,
+        "pvals_adj": 1.577715220338071e-05,
+        "score": 5.611043,
+        "target": "Elp2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Elp2",
+        "log2_fold_change": -0.601307,
+        "pval": 0.00012507197854671621,
+        "pvals_adj": 0.019803828236126378,
+        "score": -3.835965,
+        "target": "Elp2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Herpud1",
+        "log2_fold_change": 0.810872,
+        "pval": 7.617237683681689e-17,
+        "pvals_adj": 4.382196839422076e-13,
+        "score": 8.337042,
+        "target": "Elp2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Mthfd2",
+        "log2_fold_change": 1.970026,
+        "pval": 3.5782566173987947e-09,
+        "pvals_adj": 3.6327724093932824e-06,
+        "score": 5.902596,
+        "target": "Elp2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Shmt2",
+        "log2_fold_change": 1.929496,
+        "pval": 4.039408537269729e-17,
+        "pvals_adj": 3.4858075972369126e-13,
+        "score": 8.411749,
+        "target": "Elp2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Slc3a2",
+        "log2_fold_change": 0.791409,
+        "pval": 3.8669590182400255e-15,
+        "pvals_adj": 1.334796913916092e-11,
+        "score": 7.859167,
+        "target": "Elp2"
+      }
+    ],
+    "summary": [
+      "Atp2a2 had 187 FDR<0.05 genes in 151 TH, the largest response for the target.",
+      "Elp2 had 150 FDR<0.05 genes in 151 TH and almost no corrected response outside that class."
+    ]
+  },
+  "targets": [
+    "Atp2a2",
+    "Elp2"
+  ],
+  "title": "Atp2a2 and Elp2 losses converge on a 151 TH ER/ATF4 integrated-stress state"
+}

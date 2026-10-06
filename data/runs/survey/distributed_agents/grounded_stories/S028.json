@@ -1,0 +1,253 @@
+{
+  "biological_interpretation": "DEAF1 reduction controls a small caudal neuronal RNA module rather than a broad serotonin-neighbor program.",
+  "caveats": [
+    "Deaf1 mRNA itself was not FDR-depleted in the strongest responding 151 and 155 classes, so support is guide-defined rather than based on a corrected target-transcript row.",
+    "The report did not find direct prior literature for this exact four-gene neuronal module."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "191 MB P MY GABA",
+    "145 MH-LH TH Glut",
+    "005 L4-5 IT CTX Glut"
+  ],
+  "exact_observed_result": "Deaf1 perturbation lowered Eif4g3, Rac3, B4gat1, and Tmem80 across a compact response that was strongest in 155 MB Glut and 151 TH Prkcd Grin2c Glut, with additional Rac3 support in 145 MH-LH TH Glut and 191 MB P MY GABA.",
+  "preliminary_scores": {
+    "novelty": 5,
+    "priority": 3,
+    "support": 4
+  },
+  "prior_expectation": {
+    "citations": [
+      {
+        "ref": "QuickGO DEAF1 annotations",
+        "supports": "DEAF1 as a sequence-specific RNA polymerase II repressor",
+        "url_or_doi": "https://www.ebi.ac.uk/QuickGO/annotations?geneProductId=O75398"
+      }
+    ],
+    "summary": "Prior expectation is grounded by the listed traceable corpus citations; direct prior support for the exact cell-type/state relationship is partial unless noted in the caveats."
+  },
+  "reference_ids": [
+    "Deaf1:R001"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Deaf1:E002",
+    "Deaf1:E003",
+    "Deaf1:E004",
+    "Deaf1:E005",
+    "Deaf1:E006",
+    "Deaf1:E007"
+  ],
+  "source_urls_or_dois": [
+    {
+      "ref": "QuickGO DEAF1 annotations",
+      "supports": "DEAF1 as a sequence-specific RNA polymerase II repressor",
+      "url_or_doi": "https://www.ebi.ac.uk/QuickGO/annotations?geneProductId=O75398"
+    }
+  ],
+  "status": "grounded",
+  "story_id": "S028",
+  "support": {
+    "exact_de_rows": [
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "B4gat1",
+        "log2_fold_change": -0.693891,
+        "pval": 8.623126244178922e-11,
+        "pvals_adj": 7.4413267924142e-07,
+        "score": -6.489308,
+        "target": "Deaf1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Deaf1",
+        "log2_fold_change": -0.158521,
+        "pval": 0.13132716084428803,
+        "pvals_adj": 1.0,
+        "score": -1.508889,
+        "target": "Deaf1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Eif4g3",
+        "log2_fold_change": -0.66091,
+        "pval": 1.6431873516397042e-25,
+        "pvals_adj": 2.8359770501949653e-21,
+        "score": -10.439125,
+        "target": "Deaf1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Rac3",
+        "log2_fold_change": -0.673994,
+        "pval": 4.23888090351076e-06,
+        "pvals_adj": 0.0243862818378974,
+        "score": -4.599312,
+        "target": "Deaf1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Tmem80",
+        "log2_fold_change": -0.501403,
+        "pval": 0.0017884433297408713,
+        "pvals_adj": 1.0,
+        "score": -3.123285,
+        "target": "Deaf1"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "B4gat1",
+        "log2_fold_change": -0.499106,
+        "pval": 4.013851159871458e-06,
+        "pvals_adj": 0.01750340144540946,
+        "score": -4.610664,
+        "target": "Deaf1"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Deaf1",
+        "log2_fold_change": -0.457876,
+        "pval": 0.0003155170714679355,
+        "pvals_adj": 0.7862234682307426,
+        "score": -3.602215,
+        "target": "Deaf1"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Eif4g3",
+        "log2_fold_change": -0.456098,
+        "pval": 1.3383846159221273e-11,
+        "pvals_adj": 2.3345442855529665e-07,
+        "score": -6.764426,
+        "target": "Deaf1"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Rac3",
+        "log2_fold_change": -0.816491,
+        "pval": 2.7393216995830172e-06,
+        "pvals_adj": 0.015927329468608857,
+        "score": -4.689456,
+        "target": "Deaf1"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Tmem80",
+        "log2_fold_change": -1.124269,
+        "pval": 3.3033971722315516e-08,
+        "pvals_adj": 0.0002881057843761748,
+        "score": -5.524546,
+        "target": "Deaf1"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": false,
+        "gene": "B4gat1",
+        "log2_fold_change": -0.624413,
+        "pval": 8.917618618585525e-05,
+        "pvals_adj": 0.30494688628115063,
+        "score": -3.918299,
+        "target": "Deaf1"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": false,
+        "gene": "Eif4g3",
+        "log2_fold_change": -0.311069,
+        "pval": 0.0009917029233287421,
+        "pvals_adj": 1.0,
+        "score": -3.29287,
+        "target": "Deaf1"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": true,
+        "gene": "Rac3",
+        "log2_fold_change": -1.211489,
+        "pval": 1.8972560665133855e-06,
+        "pvals_adj": 0.03243928422524586,
+        "score": -4.764071,
+        "target": "Deaf1"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": false,
+        "gene": "Tmem80",
+        "log2_fold_change": -0.831705,
+        "pval": 0.0002998664657373953,
+        "pvals_adj": 0.732445261596855,
+        "score": -3.615415,
+        "target": "Deaf1"
+      },
+      {
+        "cell_type": "145 MH-LH TH Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Eif4g3",
+        "log2_fold_change": -0.440376,
+        "pval": 0.00027508653178931757,
+        "pvals_adj": 1.0,
+        "score": -3.637697,
+        "target": "Deaf1"
+      },
+      {
+        "cell_type": "145 MH-LH TH Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Rac3",
+        "log2_fold_change": -1.26259,
+        "pval": 1.1918357626997495e-06,
+        "pvals_adj": 0.019912000087424716,
+        "score": -4.85699,
+        "target": "Deaf1"
+      },
+      {
+        "cell_type": "145 MH-LH TH Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Tmem80",
+        "log2_fold_change": -0.738954,
+        "pval": 0.017502231668987286,
+        "pvals_adj": 1.0,
+        "score": -2.375984,
+        "target": "Deaf1"
+      },
+      {
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "fdr_lt_0_05": false,
+        "gene": "B4gat1",
+        "log2_fold_change": -0.299771,
+        "pval": 0.01005452583442425,
+        "pvals_adj": 1.0,
+        "score": -2.573948,
+        "target": "Deaf1"
+      },
+      {
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Eif4g3",
+        "log2_fold_change": -0.320454,
+        "pval": 1.1678118003652725e-06,
+        "pvals_adj": 0.019995273645854194,
+        "score": -4.861022,
+        "target": "Deaf1"
+      }
+    ],
+    "summary": [
+      "All 10 Deaf1 FDR<0.05 rows in the report were from Eif4g3, Rac3, B4gat1, or Tmem80.",
+      "The strongest two-class support was 155 MB Glut and 151 TH Prkcd Grin2c Glut."
+    ]
+  },
+  "targets": [
+    "Deaf1"
+  ],
+  "title": "Deaf1 loss reproducibly lowers an Eif4g3/Rac3/B4gat1/Tmem80 module in TH and MB neurons"
+}

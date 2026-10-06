@@ -1,0 +1,1918 @@
+{
+  "story_id": "S137",
+  "title": "Matr3 lowering induces a specific RBP liability program led by Atp9b, Ddhd1, E2f4, Zkscan3, and Rsrp1",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Matr3 lowering induced a recurrent Atp9b/Ddhd1/E2f4/Zkscan3/Kcnq2/Sugp2/Uggt2-up and Rsrp1-down core across 005 L4-5 IT CTX Glut, 151 TH Prkcd Grin2c Glut, 155 MB Glut, and 191 MB P MY GABA; Fus and Tardbp were active comparators but did not reproduce that MATR3 core.",
+  "biological_interpretation": "The result defines an acute MATR3-loss RNA-binding-protein liability program that is distinct from TDP-43 or FUS loss even though all three genes are tied to ALS/RBP biology.",
+  "targets": [
+    "Matr3",
+    "Atp9b",
+    "Ddhd1",
+    "E2f4",
+    "Kcnq2",
+    "Sugp2",
+    "Uggt2",
+    "Zkscan3",
+    "Rsrp1",
+    "Fus",
+    "Tardbp"
+  ],
+  "cell_types": [
+    "005 L4-5 IT CTX Glut",
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "191 MB P MY GABA"
+  ],
+  "support": {
+    "source_findings": [
+      {
+        "target_gene": "Matr3",
+        "finding_id": "F001",
+        "finding_type": "cell_type_selectivity",
+        "direction": "Matr3_down; downstream_response_highly_cell_type_skewed",
+        "confidence": "high",
+        "literature_status": "refines_cell_type_context",
+        "summary": "Matr3 transcript reduction was directionally present in every measured class, but sizeable downstream DE was concentrated in thalamic and midbrain classes plus one L4-5 cortical IT class.",
+        "why_it_matters": "The response is not a uniform consequence of lowering a ubiquitous nuclear RNA-binding protein; the dataset identifies neuronal contexts in which acute Matr3 loss is transcriptionally amplified.",
+        "genes": "Matr3",
+        "n_genes": "1",
+        "cell_types": "151 TH Prkcd Grin2c Glut|155 MB Glut|191 MB P MY GABA|005 L4-5 IT CTX Glut|066 CNU-HYa HY GABA",
+        "n_cell_types": "5",
+        "evidence_ids": "E001|E002",
+        "ref_ids": "R001|R002|R006|R007",
+        "main_caveats": "On-target Matr3 FDR<0.05 was detected in only 4 of 21 classes; several smaller classes have weaker engagement and cannot be interpreted as true resistance."
+      },
+      {
+        "target_gene": "Matr3",
+        "finding_id": "F003",
+        "finding_type": "cross_perturbation_contrast",
+        "direction": "Matr3_core_specific",
+        "confidence": "moderate",
+        "literature_status": "refines_cell_type_context",
+        "summary": "ALS-linked RNA-binding-protein perturbations did not recapitulate the Matr3 recurrent core, even when Tardbp or Fus perturbations produced broad signatures in the same cell type.",
+        "why_it_matters": "This separates the acute Matr3-loss state from a generic RBP-loss or ALS-RBP knockdown state and argues against treating Tardbp, Fus, Hnrnpa1, and Hnrnpa2b1 as interchangeable comparators in this dataset.",
+        "genes": "Matr3|Tardbp|Fus|Hnrnpa1|Hnrnpa2b1|Ddhd1|Atp9b|E2f4|Gpt2|Rsrp1",
+        "n_genes": "10",
+        "comparators": "Tardbp|Fus|Hnrnpa1|Hnrnpa2b1|Son",
+        "cell_types": "005 L4-5 IT CTX Glut|151 TH Prkcd Grin2c Glut|155 MB Glut|191 MB P MY GABA",
+        "n_cell_types": "4",
+        "evidence_ids": "E008|E009",
+        "ref_ids": "R002|R005",
+        "main_caveats": "The comparison uses transcriptome similarity after knockdown rather than biochemical interaction; guide efficiency and target engagement differ among perturbations."
+      },
+      {
+        "target_gene": "Tardbp",
+        "finding_id": "F005",
+        "finding_type": "cross_perturbation_contrast",
+        "direction": "divergent",
+        "confidence": "moderate",
+        "literature_status": "refines_expected_relationship",
+        "summary": "Fus and Matr3 perturbations did not phenocopy Tardbp in the Tardbp-sensitive hindbrain/thalamic groups despite being functionally linked RNA-binding proteins; Fus is also an ALS-family comparator.",
+        "why_it_matters": "The map argues against treating related RNA-binding proteins as interchangeable perturbations; the Tardbp loss-of-function program is more specific than generic RBP knockdown or motor-neuron-disease-gene stress.",
+        "genes": "Tardbp|Fus|Matr3",
+        "n_genes": "3",
+        "comparators": "Fus|Matr3",
+        "cell_types": "151 TH Prkcd Grin2c Glut|155 MB Glut|191 MB P MY GABA",
+        "n_cell_types": "3",
+        "evidence_ids": "E013",
+        "ref_ids": "R010|R011",
+        "main_caveats": "The comparison is transcriptomic only and limited to the cell types in which the comparator perturbations had measurable engagement."
+      }
+    ],
+    "evidence_ledger_rows": [
+      {
+        "target_gene": "Matr3",
+        "evidence_id": "E001",
+        "evidence_slug": "matr3_on_target_engagement",
+        "genes": "Matr3",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Matr3 was measured in 21 cell types and decreased in all 21; logFC range -0.987 to -0.286. Four cell types had Matr3 FDR<0.05: 151 TH Prkcd Grin2c Glut logFC -0.987 FDR 6.28e-16 with 130 perturbed cells, 155 MB Glut logFC -0.902 FDR 1.44e-08 with 94 cells, 005 L4-5 IT CTX Glut logFC -0.890 FDR 5.60e-06 with 75 cells, and 066 CNU-HYa HY GABA logFC -0.828 FDR 0.0451 with 40 cells.",
+        "description": "On-target Matr3 transcript modulation after the Matr3 perturbation."
+      },
+      {
+        "target_gene": "Matr3",
+        "evidence_id": "E002",
+        "evidence_slug": "matr3_de_burden_by_cell_type",
+        "n_genes": "0",
+        "has_genes": "0",
+        "has_cell_type": "0",
+        "statistics": "FDR<0.05 gene counts after Matr3 perturbation: 151 TH Prkcd Grin2c Glut 149, 155 MB Glut 104, 005 L4-5 IT CTX Glut 43, 191 MB P MY GABA 42, 066 CNU-HYa HY GABA 25, 145 MH-LH TH Glut 18, 054 CNU-MGE GABA 13, 009 L2-3 IT PIR AON ENT Glut 13; the remaining assayed classes had 0-9.",
+        "description": "Cell-type skew in the number of significant downstream DE genes."
+      },
+      {
+        "target_gene": "Matr3",
+        "evidence_id": "E008",
+        "evidence_slug": "als_rbp_core_module_contrast",
+        "cell_type": "005 L4-5 IT CTX Glut; 151 TH Prkcd Grin2c Glut; 155 MB Glut; 191 MB P MY GABA",
+        "genes": "Ddhd1|Atp9b|E2f4|Zkscan3|Kcnq2|Sugp2|Uggt2|Rsrp1|Rcor3|Gpt2",
+        "n_genes": "10",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "For the 10-gene recurrent Matr3 core, the Matr3 perturbation produced same-direction FDR<0.05 changes in 9/10 genes in 005 L4-5 IT CTX Glut, 10/10 in 151 TH Prkcd Grin2c Glut, 10/10 in 155 MB Glut, and 9/10 in 191 MB P MY GABA. In the same cell types, Fus produced 0 same-direction and 1 opposite-direction core changes; Tardbp produced 1 same-direction and 0-1 opposite-direction core changes; Hnrnpa1, Hnrnpa2b1, and Son produced 0 same-direction core changes.",
+        "description": "ALS-associated RNA-binding-protein perturbations did not reproduce the recurrent Matr3 gene module."
+      },
+      {
+        "target_gene": "Matr3",
+        "evidence_id": "E009",
+        "evidence_slug": "active_fus_tardbp_comparator_signatures",
+        "cell_type": "151 TH Prkcd Grin2c Glut; 155 MB Glut; 191 MB P MY GABA",
+        "genes": "Tardbp|Fus|Hnrnpa2b1",
+        "n_genes": "3",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "Comparator DE burdens at FDR<0.05 showed that lack of core-module overlap was not simply inactivity: Tardbp had 210, 91, and 97 DE genes in 151 TH Prkcd Grin2c Glut, 155 MB Glut, and 191 MB P MY GABA; Fus had 130, 20, and 15; Hnrnpa2b1 had 11, 1, and 1.",
+        "description": "Several RNA-binding-protein comparators generated significant signatures in Matr3-responsive classes."
+      },
+      {
+        "target_gene": "Tardbp",
+        "evidence_id": "E013",
+        "evidence_slug": "fus_matr3_do_not_mimic_tardbp",
+        "genes": "Tardbp|Fus|Matr3",
+        "n_genes": "3",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Fus was strongly self-depleted in 151, 155, and 191, with Fus FDR 1.0e-45, 1.2e-25, and 3.9e-24, but its all-gene Pearson correlations to the corresponding Tardbp signatures were -0.014, 0.023, and -0.005 and top-200 correlations were -0.014, 0.042, and 0.012. Matr3 was self-depleted in 151 and 155 with FDR 6.3e-16 and 1.4e-08, but its all-gene correlations to Tardbp were -0.003 and 0.041.",
+        "description": "ALS-linked TDP-43-interacting RNA-binding-protein perturbations had been engaged in the dataset but did not recreate the Tardbp expression response."
+      }
+    ],
+    "exact_de_rows": [
+      {
+        "target_gene": "Fus",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ascc3",
+        "score": -0.316867,
+        "logfoldchange": -0.005779,
+        "pval": 0.7513443884917078,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Atp9b",
+        "score": -0.056565,
+        "logfoldchange": -0.018181,
+        "pval": 0.9548921121160961,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cdc40",
+        "score": -0.360711,
+        "logfoldchange": -0.028317,
+        "pval": 0.7183157439128611,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ddhd1",
+        "score": -1.632358,
+        "logfoldchange": -0.132293,
+        "pval": 0.10260413030355303,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "E2f4",
+        "score": -0.649722,
+        "logfoldchange": -0.039314,
+        "pval": 0.5158720450877943,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Fus",
+        "score": -14.859767,
+        "logfoldchange": -1.406912,
+        "pval": 6.013412093095728e-50,
+        "pvals_adj": 1.0378547931473917e-45
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gpt2",
+        "score": -0.307767,
+        "logfoldchange": -0.038665,
+        "pval": 0.758259268299643,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kcnq2",
+        "score": 0.672165,
+        "logfoldchange": 0.020317,
+        "pval": 0.5014786555167932,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Matr3",
+        "score": -1.141897,
+        "logfoldchange": -0.068374,
+        "pval": 0.2534967274511628,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rcor3",
+        "score": -0.990163,
+        "logfoldchange": -0.114259,
+        "pval": 0.32209454280724903,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rsrp1",
+        "score": 11.962087,
+        "logfoldchange": 0.428343,
+        "pval": 5.613323187691758e-33,
+        "pvals_adj": 4.844017244818603e-29
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Sugp2",
+        "score": 2.740309,
+        "logfoldchange": 0.190029,
+        "pval": 0.006138149744505893,
+        "pvals_adj": 0.31066957900418535
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Tardbp",
+        "score": 0.049327,
+        "logfoldchange": -0.007457,
+        "pval": 0.9606584249812387,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Uggt2",
+        "score": 2.084502,
+        "logfoldchange": 0.165376,
+        "pval": 0.03711449036074419,
+        "pvals_adj": 0.7917910866947886
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Zkscan3",
+        "score": 1.444935,
+        "logfoldchange": 0.134774,
+        "pval": 0.14847624350345792,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "155 MB Glut",
+        "gene": "Ascc3",
+        "score": 0.921692,
+        "logfoldchange": 0.104698,
+        "pval": 0.3566891089228118,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "155 MB Glut",
+        "gene": "Atp9b",
+        "score": -1.341262,
+        "logfoldchange": -0.147646,
+        "pval": 0.17983549010133582,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "155 MB Glut",
+        "gene": "Cdc40",
+        "score": -1.150931,
+        "logfoldchange": -0.227328,
+        "pval": 0.24976081556204188,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "155 MB Glut",
+        "gene": "Ddhd1",
+        "score": 0.3601,
+        "logfoldchange": 0.000813,
+        "pval": 0.7187725362295287,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "155 MB Glut",
+        "gene": "E2f4",
+        "score": -0.164635,
+        "logfoldchange": -0.03128,
+        "pval": 0.8692313302688185,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "155 MB Glut",
+        "gene": "Fus",
+        "score": -11.360092,
+        "logfoldchange": -1.166568,
+        "pval": 6.607473893518246e-30,
+        "pvals_adj": 1.1525416712463877e-25
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "155 MB Glut",
+        "gene": "Gpt2",
+        "score": 0.187655,
+        "logfoldchange": 0.05978,
+        "pval": 0.8511469214998754,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "155 MB Glut",
+        "gene": "Kcnq2",
+        "score": 1.19307,
+        "logfoldchange": 0.081778,
+        "pval": 0.23284201218628686,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "155 MB Glut",
+        "gene": "Matr3",
+        "score": -0.917453,
+        "logfoldchange": -0.077493,
+        "pval": 0.3589053135822997,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "155 MB Glut",
+        "gene": "Rcor3",
+        "score": -2.429575,
+        "logfoldchange": -0.350684,
+        "pval": 0.015116545663070191,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "155 MB Glut",
+        "gene": "Rsrp1",
+        "score": 8.86621,
+        "logfoldchange": 0.387029,
+        "pval": 7.56776706861783e-19,
+        "pvals_adj": 6.60022804889504e-15
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "155 MB Glut",
+        "gene": "Sugp2",
+        "score": 1.830265,
+        "logfoldchange": 0.183974,
+        "pval": 0.06721027584750751,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "155 MB Glut",
+        "gene": "Tardbp",
+        "score": 1.654187,
+        "logfoldchange": 0.07919,
+        "pval": 0.09808949859999301,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "155 MB Glut",
+        "gene": "Uggt2",
+        "score": 0.371423,
+        "logfoldchange": 0.058084,
+        "pval": 0.7103222798341371,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "155 MB Glut",
+        "gene": "Zkscan3",
+        "score": 0.116594,
+        "logfoldchange": 0.015137,
+        "pval": 0.9071814694105563,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Ascc3",
+        "score": 1.141706,
+        "logfoldchange": 0.125056,
+        "pval": 0.25357633067264096,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Atp9b",
+        "score": -0.1707,
+        "logfoldchange": -0.00154,
+        "pval": 0.8644593128985487,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Cdc40",
+        "score": 1.745796,
+        "logfoldchange": 0.422694,
+        "pval": 0.0808464065705087,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Ddhd1",
+        "score": 0.591201,
+        "logfoldchange": 0.050853,
+        "pval": 0.5543858676982518,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "E2f4",
+        "score": 1.982266,
+        "logfoldchange": 0.284494,
+        "pval": 0.047449505188050196,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Fus",
+        "score": -11.046141,
+        "logfoldchange": -1.478679,
+        "pval": 2.2884371368105796e-28,
+        "pvals_adj": 3.912769816518729e-24
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Gpt2",
+        "score": 0.935176,
+        "logfoldchange": 0.197919,
+        "pval": 0.34969757044480376,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Kcnq2",
+        "score": 0.312783,
+        "logfoldchange": 0.036931,
+        "pval": 0.7544452986748531,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Matr3",
+        "score": -1.1848,
+        "logfoldchange": -0.084142,
+        "pval": 0.23609665916242628,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Rcor3",
+        "score": 0.13235,
+        "logfoldchange": -0.004291,
+        "pval": 0.8947076904505088,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Rsrp1",
+        "score": 6.727654,
+        "logfoldchange": 0.362044,
+        "pval": 1.724209228059788e-11,
+        "pvals_adj": 1.4740264690683128e-07
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Sugp2",
+        "score": 1.660948,
+        "logfoldchange": 0.222261,
+        "pval": 0.09672382997984066,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Tardbp",
+        "score": -0.164406,
+        "logfoldchange": -0.041403,
+        "pval": 0.869411828104372,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Uggt2",
+        "score": 0.744886,
+        "logfoldchange": 0.096297,
+        "pval": 0.4563407058504674,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Fus",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Zkscan3",
+        "score": 0.385553,
+        "logfoldchange": 0.061213,
+        "pval": 0.6998279510108494,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Ascc3",
+        "score": 1.35603,
+        "logfoldchange": 0.175495,
+        "pval": 0.1750896098175455,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Atp9b",
+        "score": 8.115499,
+        "logfoldchange": 1.060611,
+        "pval": 4.83789997561789e-16,
+        "pvals_adj": 4.141726169126476e-12
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Cdc40",
+        "score": 0.460584,
+        "logfoldchange": 0.070391,
+        "pval": 0.6450972315487975,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Ddhd1",
+        "score": 8.733516,
+        "logfoldchange": 1.59396,
+        "pval": 2.4687614105703997e-18,
+        "pvals_adj": 4.227013287178638e-14
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "E2f4",
+        "score": 6.760319,
+        "logfoldchange": 1.292251,
+        "pval": 1.3768861038081364e-11,
+        "pvals_adj": 4.715008773880583e-08
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Fus",
+        "score": -0.383977,
+        "logfoldchange": 0.011498,
+        "pval": 0.7009956342607218,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Gpt2",
+        "score": 2.549003,
+        "logfoldchange": 0.535508,
+        "pval": 0.01080312921559809,
+        "pvals_adj": 0.9768667138316295
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Kcnq2",
+        "score": 5.167768,
+        "logfoldchange": 0.491594,
+        "pval": 2.3690533861828317e-07,
+        "pvals_adj": 0.00027041954718814965
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Matr3",
+        "score": -5.975823,
+        "logfoldchange": -0.890099,
+        "pval": 2.289311979803178e-09,
+        "pvals_adj": 5.599657102598573e-06
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Rcor3",
+        "score": 6.291165,
+        "logfoldchange": 1.100097,
+        "pval": 3.1509130726008275e-10,
+        "pvals_adj": 8.991655604845228e-07
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Rsrp1",
+        "score": -5.28441,
+        "logfoldchange": -0.352849,
+        "pval": 1.2611036890891788e-07,
+        "pvals_adj": 0.00019629652149622654
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Sugp2",
+        "score": 6.975296,
+        "logfoldchange": 0.824712,
+        "pval": 3.0522802672199852e-12,
+        "pvals_adj": 1.7420380911780194e-08
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Tardbp",
+        "score": -0.465465,
+        "logfoldchange": -0.032239,
+        "pval": 0.6415981876241961,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Uggt2",
+        "score": 6.911835,
+        "logfoldchange": 1.035759,
+        "pval": 4.784253330802685e-12,
+        "pvals_adj": 2.047899638250089e-08
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Zkscan3",
+        "score": 5.523292,
+        "logfoldchange": 1.162866,
+        "pval": 3.3270723991982256e-08,
+        "pvals_adj": 6.329570402119113e-05
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Ascc3",
+        "score": -1.60746,
+        "logfoldchange": -0.347877,
+        "pval": 0.10795351523897882,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Atp9b",
+        "score": 6.218682,
+        "logfoldchange": 1.134692,
+        "pval": 5.01348837194502e-10,
+        "pvals_adj": 4.290041999873354e-06
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Cdc40",
+        "score": -0.274524,
+        "logfoldchange": 0.043217,
+        "pval": 0.7836818412817236,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Ddhd1",
+        "score": 6.954288,
+        "logfoldchange": 1.656692,
+        "pval": 3.543480784868034e-12,
+        "pvals_adj": 6.064313015223153e-08
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "E2f4",
+        "score": 5.518652,
+        "logfoldchange": 1.715314,
+        "pval": 3.416100067178161e-08,
+        "pvals_adj": 0.00011692627309937409
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Fus",
+        "score": -1.995903,
+        "logfoldchange": -0.309242,
+        "pval": 0.04594450222180559,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Gpt2",
+        "score": 6.058969,
+        "logfoldchange": 2.12563,
+        "pval": 1.3699722961324942e-09,
+        "pvals_adj": 7.815235292003834e-06
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Kcnq2",
+        "score": 4.819108,
+        "logfoldchange": 0.634725,
+        "pval": 1.4420096735711653e-06,
+        "pvals_adj": 0.0025093120584428535
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Matr3",
+        "score": -4.000484,
+        "logfoldchange": -0.827815,
+        "pval": 6.321323461160982e-05,
+        "pvals_adj": 0.04507630404762877
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Rcor3",
+        "score": 4.327669,
+        "logfoldchange": 1.078564,
+        "pval": 1.5069600363975628e-05,
+        "pvals_adj": 0.017193409375271928
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Rsrp1",
+        "score": -4.815784,
+        "logfoldchange": -0.617721,
+        "pval": 1.4662335271957775e-06,
+        "pvals_adj": 0.0025093120584428535
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Sugp2",
+        "score": 5.522247,
+        "logfoldchange": 1.006939,
+        "pval": 3.3469077474001856e-08,
+        "pvals_adj": 0.00011692627309937409
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Tardbp",
+        "score": 0.475842,
+        "logfoldchange": 0.055129,
+        "pval": 0.6341870356326167,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Uggt2",
+        "score": 5.42098,
+        "logfoldchange": 1.233328,
+        "pval": 5.9273096469895354e-08,
+        "pvals_adj": 0.00014491425328368415
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Zkscan3",
+        "score": 5.46764,
+        "logfoldchange": 1.292771,
+        "pval": 4.560671350134359e-08,
+        "pvals_adj": 0.0001300855491436657
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Ascc3",
+        "score": 1.171923,
+        "logfoldchange": 0.228795,
+        "pval": 0.2412279766829396,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Atp9b",
+        "score": 6.480479,
+        "logfoldchange": 1.332735,
+        "pval": 9.143183942769987e-11,
+        "pvals_adj": 7.637758706592909e-07
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Cdc40",
+        "score": -1.660182,
+        "logfoldchange": -0.574757,
+        "pval": 0.09687778770938237,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Ddhd1",
+        "score": 6.177682,
+        "logfoldchange": 1.654435,
+        "pval": 6.504958724891319e-10,
+        "pvals_adj": 3.6226115138919757e-06
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "E2f4",
+        "score": 7.496053,
+        "logfoldchange": 2.073442,
+        "pval": 6.57680229360859e-14,
+        "pvals_adj": 1.0987863591931873e-09
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Fus",
+        "score": -0.37105,
+        "logfoldchange": -0.003348,
+        "pval": 0.7106001302396923,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Gpt2",
+        "score": 3.325776,
+        "logfoldchange": 1.205234,
+        "pval": 0.0008817270889774902,
+        "pvals_adj": 0.3507384398939745
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Kcnq2",
+        "score": 5.385241,
+        "logfoldchange": 0.742647,
+        "pval": 7.234756832501324e-08,
+        "pvals_adj": 0.00017267297485799946
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Matr3",
+        "score": -2.9989,
+        "logfoldchange": -0.603703,
+        "pval": 0.002709565971107894,
+        "pvals_adj": 0.6466959811328512
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Rcor3",
+        "score": 5.398036,
+        "logfoldchange": 1.543373,
+        "pval": 6.737434188752518e-08,
+        "pvals_adj": 0.00017267297485799946
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Rsrp1",
+        "score": -4.178541,
+        "logfoldchange": -0.453795,
+        "pval": 2.933845719709348e-05,
+        "pvals_adj": 0.03063485027449005
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Sugp2",
+        "score": 5.630357,
+        "logfoldchange": 1.049441,
+        "pval": 1.798373386433699e-08,
+        "pvals_adj": 6.009084833429562e-05
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Tardbp",
+        "score": -0.375791,
+        "logfoldchange": -0.085917,
+        "pval": 0.7070725785432551,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Uggt2",
+        "score": 4.61,
+        "logfoldchange": 1.100744,
+        "pval": 4.026689002699027e-06,
+        "pvals_adj": 0.006115808469826604
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Zkscan3",
+        "score": 5.737372,
+        "logfoldchange": 1.571618,
+        "pval": 9.615699765672948e-09,
+        "pvals_adj": 4.016237399627449e-05
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ascc3",
+        "score": -1.062206,
+        "logfoldchange": -0.068686,
+        "pval": 0.2881419980445006,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Atp9b",
+        "score": 13.598376,
+        "logfoldchange": 1.481752,
+        "pval": 4.0942309712986514e-42,
+        "pvals_adj": 3.533116616682171e-38
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cdc40",
+        "score": -0.424491,
+        "logfoldchange": -0.106261,
+        "pval": 0.671207756811329,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ddhd1",
+        "score": 15.404284,
+        "logfoldchange": 1.765966,
+        "pval": 1.5317844312958627e-53,
+        "pvals_adj": 2.6437067499735294e-49
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "E2f4",
+        "score": 13.119875,
+        "logfoldchange": 1.7348,
+        "pval": 2.5335158682595633e-39,
+        "pvals_adj": 1.4575316790097266e-35
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Fus",
+        "score": -1.627672,
+        "logfoldchange": -0.09042,
+        "pval": 0.10359446814589231,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gpt2",
+        "score": 10.685709,
+        "logfoldchange": 1.457383,
+        "pval": 1.1873854408894695e-26,
+        "pvals_adj": 2.0493085324311353e-23
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kcnq2",
+        "score": 11.075588,
+        "logfoldchange": 0.675019,
+        "pval": 1.6479487122261833e-28,
+        "pvals_adj": 4.740324470718615e-25
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Matr3",
+        "score": -8.888598,
+        "logfoldchange": -0.986813,
+        "pval": 6.188438035863713e-19,
+        "pvals_adj": 6.282720709468931e-16
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rcor3",
+        "score": 10.590229,
+        "logfoldchange": 1.481135,
+        "pval": 3.307826764377704e-26,
+        "pvals_adj": 5.1899801933086183e-23
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rsrp1",
+        "score": -12.01632,
+        "logfoldchange": -0.692622,
+        "pval": 2.916738305467621e-33,
+        "pvals_adj": 1.2584996603516418e-29
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Sugp2",
+        "score": 10.827668,
+        "logfoldchange": 1.007286,
+        "pval": 2.5455406938934123e-27,
+        "pvals_adj": 6.276212405129486e-24
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Tardbp",
+        "score": -0.770175,
+        "logfoldchange": -0.02386,
+        "pval": 0.441196394634476,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Uggt2",
+        "score": 8.371181,
+        "logfoldchange": 0.968805,
+        "pval": 5.704393331844371e-17,
+        "pvals_adj": 5.181690763910631e-14
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Zkscan3",
+        "score": 11.426083,
+        "logfoldchange": 1.408516,
+        "pval": 3.0977109205566555e-30,
+        "pvals_adj": 1.0692678555577463e-26
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "155 MB Glut",
+        "gene": "Ascc3",
+        "score": -0.216553,
+        "logfoldchange": -0.05567,
+        "pval": 0.8285569440108573,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "155 MB Glut",
+        "gene": "Atp9b",
+        "score": 9.762552,
+        "logfoldchange": 1.184013,
+        "pval": 1.6300036009892973e-22,
+        "pvals_adj": 4.0617361160080447e-19
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "155 MB Glut",
+        "gene": "Cdc40",
+        "score": -0.845667,
+        "logfoldchange": -0.178989,
+        "pval": 0.3977386311540986,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "155 MB Glut",
+        "gene": "Ddhd1",
+        "score": 11.787967,
+        "logfoldchange": 1.936987,
+        "pval": 4.5027995728011573e-32,
+        "pvals_adj": 2.837384688559631e-28
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "155 MB Glut",
+        "gene": "E2f4",
+        "score": 11.781189,
+        "logfoldchange": 2.11623,
+        "pval": 4.879982838777099e-32,
+        "pvals_adj": 2.837384688559631e-28
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "155 MB Glut",
+        "gene": "Fus",
+        "score": -1.603755,
+        "logfoldchange": -0.101066,
+        "pval": 0.10876816406767313,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "155 MB Glut",
+        "gene": "Gpt2",
+        "score": 12.638652,
+        "logfoldchange": 2.631198,
+        "pval": 1.2925166485023324e-36,
+        "pvals_adj": 2.2545367899826184e-32
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "155 MB Glut",
+        "gene": "Kcnq2",
+        "score": 10.518723,
+        "logfoldchange": 0.855279,
+        "pval": 7.082752895434518e-26,
+        "pvals_adj": 2.470889175101286e-22
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "155 MB Glut",
+        "gene": "Matr3",
+        "score": -6.741647,
+        "logfoldchange": -0.901837,
+        "pval": 1.5660131539583784e-11,
+        "pvals_adj": 1.4376824970787365e-08
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "155 MB Glut",
+        "gene": "Rcor3",
+        "score": 8.375692,
+        "logfoldchange": 1.342252,
+        "pval": 5.490030915553762e-17,
+        "pvals_adj": 8.705691750909478e-14
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "155 MB Glut",
+        "gene": "Rsrp1",
+        "score": -8.638964,
+        "logfoldchange": -0.516808,
+        "pval": 5.672528855165202e-18,
+        "pvals_adj": 1.0942209661009554e-14
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "155 MB Glut",
+        "gene": "Sugp2",
+        "score": 10.4771,
+        "logfoldchange": 1.258934,
+        "pval": 1.10067045002605e-25,
+        "pvals_adj": 3.1998324433007316e-22
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "155 MB Glut",
+        "gene": "Tardbp",
+        "score": 1.286969,
+        "logfoldchange": 0.148617,
+        "pval": 0.19810515122892491,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "155 MB Glut",
+        "gene": "Uggt2",
+        "score": 8.627457,
+        "logfoldchange": 1.296847,
+        "pval": 6.2731236948974115e-18,
+        "pvals_adj": 1.0942209661009554e-14
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "155 MB Glut",
+        "gene": "Zkscan3",
+        "score": 11.12527,
+        "logfoldchange": 1.936618,
+        "pval": 9.451976226687309e-29,
+        "pvals_adj": 4.121770533052668e-25
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Ascc3",
+        "score": 2.595746,
+        "logfoldchange": 0.436807,
+        "pval": 0.009438570692625454,
+        "pvals_adj": 0.7047191340720961
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Atp9b",
+        "score": 4.55097,
+        "logfoldchange": 0.949138,
+        "pval": 5.339922565078679e-06,
+        "pvals_adj": 0.004546013306012171
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Cdc40",
+        "score": -0.777097,
+        "logfoldchange": -0.273794,
+        "pval": 0.4371014852152918,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Ddhd1",
+        "score": 7.913023,
+        "logfoldchange": 1.891912,
+        "pval": 2.5121149993715678e-15,
+        "pvals_adj": 1.4317380753085022e-11
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "E2f4",
+        "score": 7.96398,
+        "logfoldchange": 2.231388,
+        "pval": 1.665916099061243e-15,
+        "pvals_adj": 1.4241916730874567e-11
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Fus",
+        "score": -0.967172,
+        "logfoldchange": -0.10216,
+        "pval": 0.3334582734706397,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Gpt2",
+        "score": 8.516789,
+        "logfoldchange": 3.119658,
+        "pval": 1.6403703642184107e-17,
+        "pvals_adj": 2.8047052487406384e-13
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Kcnq2",
+        "score": 6.167162,
+        "logfoldchange": 0.874359,
+        "pval": 6.952662046289293e-10,
+        "pvals_adj": 2.3775323133490867e-06
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Matr3",
+        "score": -3.792125,
+        "logfoldchange": -0.795289,
+        "pval": 0.0001493634599088066,
+        "pvals_adj": 0.05804128267092672
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Rcor3",
+        "score": 5.348668,
+        "logfoldchange": 1.27078,
+        "pval": 8.860411761414758e-08,
+        "pvals_adj": 0.00015149532029666953
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Rsrp1",
+        "score": -3.022184,
+        "logfoldchange": -0.245483,
+        "pval": 0.002509579224376665,
+        "pvals_adj": 0.3771016384204251
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Sugp2",
+        "score": 5.941057,
+        "logfoldchange": 1.128456,
+        "pval": 2.831901032655681e-09,
+        "pvals_adj": 8.069973976057805e-06
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Tardbp",
+        "score": -0.208551,
+        "logfoldchange": -0.020686,
+        "pval": 0.8347989030880991,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Uggt2",
+        "score": 5.05763,
+        "logfoldchange": 1.239576,
+        "pval": 4.244990060904091e-07,
+        "pvals_adj": 0.0006048403338444845
+      },
+      {
+        "target_gene": "Matr3",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Zkscan3",
+        "score": 6.800529,
+        "logfoldchange": 1.784634,
+        "pval": 1.042356655239793e-11,
+        "pvals_adj": 4.4555535228224954e-08
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ascc3",
+        "score": 0.772027,
+        "logfoldchange": 0.042485,
+        "pval": 0.4400986523875525,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Atp9b",
+        "score": -0.142616,
+        "logfoldchange": -0.040328,
+        "pval": 0.8865931358486361,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cdc40",
+        "score": 0.760026,
+        "logfoldchange": 0.13942,
+        "pval": 0.44723933143599026,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ddhd1",
+        "score": 0.981191,
+        "logfoldchange": 0.055391,
+        "pval": 0.3264983264930168,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "E2f4",
+        "score": -0.787559,
+        "logfoldchange": -0.09225,
+        "pval": 0.4309549787106154,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Fus",
+        "score": -5.521533,
+        "logfoldchange": -0.378524,
+        "pval": 3.360540793934845e-08,
+        "pvals_adj": 9.459226886323318e-06
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gpt2",
+        "score": -0.969391,
+        "logfoldchange": -0.150528,
+        "pval": 0.332350254857797,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kcnq2",
+        "score": -2.259729,
+        "logfoldchange": -0.13552,
+        "pval": 0.023838082331571454,
+        "pvals_adj": 0.5149204792998645
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Matr3",
+        "score": 0.708926,
+        "logfoldchange": 0.02259,
+        "pval": 0.4783701126626404,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rcor3",
+        "score": 0.714774,
+        "logfoldchange": 0.076034,
+        "pval": 0.4747488489152367,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rsrp1",
+        "score": 5.274284,
+        "logfoldchange": 0.155037,
+        "pval": 1.3327510841230422e-07,
+        "pvals_adj": 3.239711402940787e-05
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Sugp2",
+        "score": -0.716348,
+        "logfoldchange": -0.055256,
+        "pval": 0.4737767512274481,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Tardbp",
+        "score": -13.822722,
+        "logfoldchange": -1.414223,
+        "pval": 1.859047183754211e-43,
+        "pvals_adj": 1.6042647672206965e-39
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Uggt2",
+        "score": 12.389166,
+        "logfoldchange": 1.359129,
+        "pval": 2.9913695079331563e-35,
+        "pvals_adj": 7.375435191059764e-32
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Zkscan3",
+        "score": 3.181604,
+        "logfoldchange": 0.330423,
+        "pval": 0.0014646170845816744,
+        "pvals_adj": 0.09611340784332745
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "155 MB Glut",
+        "gene": "Ascc3",
+        "score": -2.234145,
+        "logfoldchange": -0.255411,
+        "pval": 0.025473518091276556,
+        "pvals_adj": 0.8274386891361954
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "155 MB Glut",
+        "gene": "Atp9b",
+        "score": 0.365371,
+        "logfoldchange": 0.002056,
+        "pval": 0.714834272311004,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "155 MB Glut",
+        "gene": "Cdc40",
+        "score": 1.53801,
+        "logfoldchange": 0.323056,
+        "pval": 0.12404623766871686,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "155 MB Glut",
+        "gene": "Ddhd1",
+        "score": 2.248552,
+        "logfoldchange": 0.262609,
+        "pval": 0.024541040105599876,
+        "pvals_adj": 0.8169262644312569
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "155 MB Glut",
+        "gene": "E2f4",
+        "score": 0.889531,
+        "logfoldchange": 0.119402,
+        "pval": 0.3737179177240588,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "155 MB Glut",
+        "gene": "Fus",
+        "score": -2.69521,
+        "logfoldchange": -0.182817,
+        "pval": 0.00703442127300886,
+        "pvals_adj": 0.45955584368948893
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "155 MB Glut",
+        "gene": "Gpt2",
+        "score": -1.910117,
+        "logfoldchange": -0.415304,
+        "pval": 0.05611816506364996,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "155 MB Glut",
+        "gene": "Kcnq2",
+        "score": -3.340173,
+        "logfoldchange": -0.174772,
+        "pval": 0.0008372635429487635,
+        "pvals_adj": 0.10980742841846076
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "155 MB Glut",
+        "gene": "Matr3",
+        "score": 0.194468,
+        "logfoldchange": 0.001229,
+        "pval": 0.8458092614543686,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "155 MB Glut",
+        "gene": "Rcor3",
+        "score": 0.101724,
+        "logfoldchange": 0.00843,
+        "pval": 0.9189761065940615,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "155 MB Glut",
+        "gene": "Rsrp1",
+        "score": 3.740988,
+        "logfoldchange": 0.168947,
+        "pval": 0.00018329788041635122,
+        "pvals_adj": 0.03717749916398156
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "155 MB Glut",
+        "gene": "Sugp2",
+        "score": 0.354364,
+        "logfoldchange": 0.024408,
+        "pval": 0.7230660790586337,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "155 MB Glut",
+        "gene": "Tardbp",
+        "score": -9.625434,
+        "logfoldchange": -1.031665,
+        "pval": 6.244294621036174e-22,
+        "pvals_adj": 2.1783846214946795e-18
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "155 MB Glut",
+        "gene": "Uggt2",
+        "score": 7.835967,
+        "logfoldchange": 1.00239,
+        "pval": 4.652469979278286e-15,
+        "pvals_adj": 5.7966452748965096e-12
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "155 MB Glut",
+        "gene": "Zkscan3",
+        "score": 1.655912,
+        "logfoldchange": 0.244257,
+        "pval": 0.09773967200543397,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Ascc3",
+        "score": -0.913264,
+        "logfoldchange": -0.112682,
+        "pval": 0.3611038743483407,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Atp9b",
+        "score": 0.316745,
+        "logfoldchange": 0.001059,
+        "pval": 0.7514374332313214,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Cdc40",
+        "score": 0.954769,
+        "logfoldchange": 0.304391,
+        "pval": 0.33969439511871957,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Ddhd1",
+        "score": 1.755369,
+        "logfoldchange": 0.251516,
+        "pval": 0.07919617498046938,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "E2f4",
+        "score": 0.096174,
+        "logfoldchange": 0.04526,
+        "pval": 0.9233820646419191,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Fus",
+        "score": -2.526357,
+        "logfoldchange": -0.250894,
+        "pval": 0.011525233725507098,
+        "pvals_adj": 0.5662599029848286
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Gpt2",
+        "score": 1.283266,
+        "logfoldchange": 0.303505,
+        "pval": 0.19939889736169036,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Kcnq2",
+        "score": -2.245292,
+        "logfoldchange": -0.168357,
+        "pval": 0.024749380883954526,
+        "pvals_adj": 0.7965061303438888
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Matr3",
+        "score": -0.943662,
+        "logfoldchange": -0.14957,
+        "pval": 0.34534232847639923,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Rcor3",
+        "score": 0.610065,
+        "logfoldchange": 0.091421,
+        "pval": 0.5418184949397431,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Rsrp1",
+        "score": 4.448273,
+        "logfoldchange": 0.245189,
+        "pval": 8.656367154452608e-06,
+        "pvals_adj": 0.002726344832129225
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Sugp2",
+        "score": -0.347183,
+        "logfoldchange": -0.033076,
+        "pval": 0.7284535975545172,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Tardbp",
+        "score": -7.750031,
+        "logfoldchange": -1.122323,
+        "pval": 9.186963554389783e-15,
+        "pvals_adj": 1.9634837856619562e-11
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Uggt2",
+        "score": 6.648794,
+        "logfoldchange": 1.183531,
+        "pval": 2.955052486691044e-11,
+        "pvals_adj": 3.368365827829565e-08
+      },
+      {
+        "target_gene": "Tardbp",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Zkscan3",
+        "score": 0.980572,
+        "logfoldchange": 0.19881,
+        "pval": 0.32680401694231265,
+        "pvals_adj": 1.0
+      }
+    ]
+  },
+  "caveats": [
+    "The assay is gene-level and does not test alternative splicing, RNA export, or protein aggregation.",
+    "Comparator divergence can reflect acute knockdown context and guide efficiency rather than every ALS mechanism."
+  ],
+  "prior_expectation": {
+    "citations": [
+      {
+        "target_gene": "Matr3",
+        "ref_id": "R001",
+        "ref_slug": "uniprot_quickgo_matr3_nuclear_rbp",
+        "source": "UniProtKB and QuickGO",
+        "source_type": "database",
+        "citation": "UniProtKB Q8K310, MATR3_MOUSE, and QuickGO annotations for RNA binding, nucleic-acid binding, nucleus, and post-transcriptional regulation of gene expression.",
+        "url": "https://rest.uniprot.org/uniprotkb/Q8K310",
+        "description": "Authoritative database context that mouse Matr3 encodes a nuclear nucleic-acid/RNA-binding protein with post-transcriptional gene-regulatory annotations."
+      },
+      {
+        "target_gene": "Matr3",
+        "ref_id": "R002",
+        "ref_slug": "malik_barmada_2021_matr3_neuromuscular_review",
+        "source": "JCI Insight",
+        "source_type": "review",
+        "citation": "Malik AM, Barmada SJ. Matrin 3 in neuromuscular disease: physiology and pathophysiology. JCI Insight. 2021;6:e143948.",
+        "url": "https://doi.org/10.1172/jci.insight.143948",
+        "description": "Review of MATR3 function, ALS/frontotemporal dementia and distal-myopathy disease links, and relationships to other disease-associated RNA-binding proteins."
+      },
+      {
+        "target_gene": "Matr3",
+        "ref_id": "R006",
+        "ref_slug": "kao_2020_matr3_s85c_knockin",
+        "source": "Nature Communications",
+        "source_type": "pubmed",
+        "citation": "Kao CS, van Bruggen R, Kim JR, Chen XXL, Chan C, Lee J, Cho WI, Zhao M, Arndt C, Maksimovic K, Khan M, Tan Q, Wilson MD, Park J. Selective neuronal degeneration in MATR3 S85C knock-in mouse model of early-stage ALS. Nat Commun. 2020;11:5304.",
+        "url": "https://doi.org/10.1038/s41467-020-18949-w",
+        "description": "Generated an endogenous mouse Matr3 S85C model showing early ALS-like motor, neuromuscular-junction, Purkinje-cell, and motor-neuron phenotypes with reduced MATR3 protein in vulnerable neurons."
+      },
+      {
+        "target_gene": "Matr3",
+        "ref_id": "R007",
+        "ref_slug": "you_2022_matr3_s85c_selective_cns_loss",
+        "source": "Biology",
+        "source_type": "pubmed",
+        "citation": "You J, Maksimovic K, Lee J, Khan M, Masuda R, Park J. Selective Loss of MATR3 in Spinal Interneurons, Upper Motor Neurons and Hippocampal CA1 Neurons in a MATR3 S85C Knock-In Mouse Model of Amyotrophic Lateral Sclerosis. Biology. 2022;11:298.",
+        "url": "https://doi.org/10.3390/biology11020298",
+        "description": "Extended the MATR3 S85C model by documenting selective loss of MATR3 staining in additional CNS neuronal populations rather than uniform vulnerability."
+      },
+      {
+        "target_gene": "Matr3",
+        "ref_id": "R002",
+        "ref_slug": "malik_barmada_2021_matr3_neuromuscular_review",
+        "source": "JCI Insight",
+        "source_type": "review",
+        "citation": "Malik AM, Barmada SJ. Matrin 3 in neuromuscular disease: physiology and pathophysiology. JCI Insight. 2021;6:e143948.",
+        "url": "https://doi.org/10.1172/jci.insight.143948",
+        "description": "Review of MATR3 function, ALS/frontotemporal dementia and distal-myopathy disease links, and relationships to other disease-associated RNA-binding proteins."
+      },
+      {
+        "target_gene": "Matr3",
+        "ref_id": "R005",
+        "ref_slug": "watanabe_2025_als_rbps_rest_unc13a",
+        "source": "EMBO Journal",
+        "source_type": "pubmed",
+        "citation": "Watanabe Y, Suzuki N, Nakagawa T, Hosogane M, Akiyama T, Kageyama N, Funayama Y, Warita H, Morimoto S, Okano H, Aoki M, Nakayama K. ALS-associated RNA-binding proteins promote UNC13A transcription through REST downregulation. EMBO J. 2025;44:4745-4771.",
+        "url": "https://doi.org/10.1038/s44318-025-00506-0",
+        "description": "Reported convergence of MATR3, FUS, and hnRNPA1 loss on REST mRNA stabilization and UNC13A repression in ALS-relevant cellular contexts."
+      },
+      {
+        "target_gene": "Tardbp",
+        "ref_id": "R010",
+        "ref_slug": "string_mouse_tardbp_partners",
+        "source": "STRING",
+        "source_type": "database",
+        "citation": "STRING interaction-partner query for Mus musculus Tardbp, species 10090, required score 400, accessed for this report.",
+        "url": "https://string-db.org/",
+        "description": "Returned high-scoring functional links from mouse Tardbp to Fus, Matr3, Drosha, Sod1, Atxn2, and other neurodegeneration-associated or RNA-processing proteins."
+      },
+      {
+        "target_gene": "Tardbp",
+        "ref_id": "R011",
+        "ref_slug": "vance_2009_fus_fals",
+        "source": "Science",
+        "source_type": "pubmed",
+        "citation": "Vance C et al. Mutations in FUS, an RNA processing protein, cause familial amyotrophic lateral sclerosis type 6. Science. 2009.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/19251628/",
+        "description": "Established FUS, another RNA-processing protein compared in the Perturb-seq map, as a familial ALS gene."
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 5,
+    "priority": 4
+  },
+  "report_evidence_ids": [
+    "Matr3:E001",
+    "Matr3:E002",
+    "Matr3:E008",
+    "Matr3:E009",
+    "Tardbp:E013"
+  ],
+  "reference_ids": [
+    "Matr3:R001",
+    "Matr3:R002",
+    "Matr3:R005",
+    "Matr3:R006",
+    "Matr3:R007",
+    "Tardbp:R010",
+    "Tardbp:R011"
+  ],
+  "source_urls_or_dois": [
+    {
+      "ref_id": "Matr3:R001",
+      "citation": "UniProtKB Q8K310, MATR3_MOUSE, and QuickGO annotations for RNA binding, nucleic-acid binding, nucleus, and post-transcriptional regulation of gene expression.",
+      "url_or_doi": "https://rest.uniprot.org/uniprotkb/Q8K310"
+    },
+    {
+      "ref_id": "Matr3:R002",
+      "citation": "Malik AM, Barmada SJ. Matrin 3 in neuromuscular disease: physiology and pathophysiology. JCI Insight. 2021;6:e143948.",
+      "url_or_doi": "https://doi.org/10.1172/jci.insight.143948"
+    },
+    {
+      "ref_id": "Matr3:R006",
+      "citation": "Kao CS, van Bruggen R, Kim JR, Chen XXL, Chan C, Lee J, Cho WI, Zhao M, Arndt C, Maksimovic K, Khan M, Tan Q, Wilson MD, Park J. Selective neuronal degeneration in MATR3 S85C knock-in mouse model of early-stage ALS. Nat Commun. 2020;11:5304.",
+      "url_or_doi": "https://doi.org/10.1038/s41467-020-18949-w"
+    },
+    {
+      "ref_id": "Matr3:R007",
+      "citation": "You J, Maksimovic K, Lee J, Khan M, Masuda R, Park J. Selective Loss of MATR3 in Spinal Interneurons, Upper Motor Neurons and Hippocampal CA1 Neurons in a MATR3 S85C Knock-In Mouse Model of Amyotrophic Lateral Sclerosis. Biology. 2022;11:298.",
+      "url_or_doi": "https://doi.org/10.3390/biology11020298"
+    },
+    {
+      "ref_id": "Matr3:R005",
+      "citation": "Watanabe Y, Suzuki N, Nakagawa T, Hosogane M, Akiyama T, Kageyama N, Funayama Y, Warita H, Morimoto S, Okano H, Aoki M, Nakayama K. ALS-associated RNA-binding proteins promote UNC13A transcription through REST downregulation. EMBO J. 2025;44:4745-4771.",
+      "url_or_doi": "https://doi.org/10.1038/s44318-025-00506-0"
+    },
+    {
+      "ref_id": "Tardbp:R010",
+      "citation": "STRING interaction-partner query for Mus musculus Tardbp, species 10090, required score 400, accessed for this report.",
+      "url_or_doi": "https://string-db.org/"
+    },
+    {
+      "ref_id": "Tardbp:R011",
+      "citation": "Vance C et al. Mutations in FUS, an RNA processing protein, cause familial amyotrophic lateral sclerosis type 6. Science. 2009.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/19251628/"
+    }
+  ],
+  "source_cluster_ids": [
+    "C179"
+  ],
+  "source_claim_ids": [
+    "claim:matr3_f001_c734d62c1d93",
+    "claim:matr3_f003_4cdb2f36db78",
+    "claim:tardbp_f005_e8390c255c53"
+  ]
+}

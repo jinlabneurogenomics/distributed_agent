@@ -1,0 +1,40 @@
+{
+  "story_id": "S096",
+  "title": "Mecp2 perturbation alters a sparse excitability and membrane-gene module rather than a universal Rett-like transcriptome",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Mecp2 mRNA itself was not FDR-depleted in any measured class, but four of 22 cell types had FDR-supported downstream rows. The richest 151 TH Prkcd/Grin2c signature included Ache, Fxyd7, L1cam, Cacna1g, Mast1, and Mgat5 down plus Itpr1 and Kcnh5 up; Cacna1g was also FDR-down in 155 MB Glut, and Auts2 was the isolated Pvalb FDR hit.",
+  "biological_interpretation": "Acute Mecp2 perturbation exposes a sparse cell-type-resolved excitability and membrane module, with Cacna1g and Auts2 as the cleanest markers, rather than a uniform Rett-like expression collapse or a single downstream rescue node.",
+  "targets": ["Mecp2", "Ache", "Auts2", "Cacna1g", "Fxyd7", "Itpr1", "Kcnh5", "L1cam", "Mast1"],
+  "cell_types": ["151 TH Prkcd Grin2c Glut", "052 Pvalb Gaba", "155 MB Glut", "191 MB P MY GABA"],
+  "support": [
+    {
+      "evidence_id": "Mecp2:E003;Mecp2:E004;Mecp2:E005;Mecp2:E006",
+      "description": "The thalamic membrane/ion module is mixed-sign, Cacna1g is recurrently down, and Auts2 is the Pvalb marker.",
+      "exact_de_rows": [
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Mecp2", "gene": "Ache", "logfoldchanges": -0.693, "pvals": null, "pvals_adj": 4.61e-06},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Mecp2", "gene": "Fxyd7", "logfoldchanges": -0.795, "pvals": null, "pvals_adj": 0.00689},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Mecp2", "gene": "Cacna1g", "logfoldchanges": -0.203, "pvals": null, "pvals_adj": 0.0175},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Mecp2", "gene": "Kcnh5", "logfoldchanges": 0.450, "pvals": null, "pvals_adj": 0.0371},
+        {"cell_type": "155 MB Glut", "gene_target": "Mecp2", "gene": "Cacna1g", "logfoldchanges": -0.645, "pvals": null, "pvals_adj": 0.000118},
+        {"cell_type": "052 Pvalb Gaba", "gene_target": "Mecp2", "gene": "Auts2", "logfoldchanges": 0.527, "pvals": 5.50e-09, "pvals_adj": 9.21e-05}
+      ]
+    }
+  ],
+  "caveats": [
+    "No Mecp2 self row reached FDR, so protein engagement must be inferred from downstream expression.",
+    "Auts2 recurrence outside Pvalb was nominal only.",
+    "The Perturb-seq rows do not measure Rett-like electrophysiology, behavior, or developmental time."
+  ],
+  "prior_expectation": {
+    "summary": "MECP2 loss causes Rett syndrome and MECP2 is a methyl-DNA/chromatin-binding corepressor; prior mouse work also implicates PV interneurons, but the acute scRNA-seq markers here are sparse.",
+    "citations": [
+      {"reference_id": "Mecp2:R001", "citation": "Amir et al., Nature Genetics, 1999. PMID:10508514.", "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/10508514/"},
+      {"reference_id": "Mecp2:R003", "citation": "Boxer et al., Molecular Cell, 2020. PMID:31784358.", "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/31784358/"}
+    ]
+  },
+  "preliminary_scores": {"novelty": 3, "support": 3, "priority": 4},
+  "report_evidence_ids": ["Mecp2:E002", "Mecp2:E003", "Mecp2:E004", "Mecp2:E005", "Mecp2:E006", "Mecp2:E008"],
+  "reference_ids": ["Mecp2:R001", "Mecp2:R003", "Mecp2:R005", "Mecp2:R006", "Mecp2:R007"],
+  "source_urls_or_dois": ["https://pubmed.ncbi.nlm.nih.gov/10508514/", "https://pubmed.ncbi.nlm.nih.gov/31784358/", "https://www.proteinatlas.org/ENSG00000169057", "https://string-db.org/"]
+}

@@ -1,0 +1,552 @@
+{
+  "biological_interpretation": "Acute neuronal loss of TDP-43 or FUS is sufficient to create strong RNA-processing abundance states in selected thalamic, midbrain, and GABAergic cells, but the response is not a generic consequence of ALS/FTD gene perturbation and does not reproduce every canonical human cryptic-exon scalar marker.",
+  "caveats": [
+    "The output is 3-prime mRNA abundance and cannot directly observe cryptic-exon inclusion.",
+    "Several negative ALS comparators were transcriptionally weak, so they reject phenocopy of the observed acute state rather than every protein-level disease mechanism."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "191 MB P MY GABA",
+    "052 Pvalb Gaba"
+  ],
+  "exact_observed_result": "Tardbp depletion repeatedly induced Ppp6c/Fam135a/Usp15/Gabpa while repressing Snrnp70 in 151 TH, 155 MB, and 191 MB classes; Fus depletion induced Rsrp1 and Atxn2l with Luc7l2/Snrnp70 movement in 151 TH and midbrain classes, while Grn, Nek1, Setx, and Tbk1 did not phenocopy these RNA-binding protein states.",
+  "preliminary_scores": {
+    "novelty": 4,
+    "priority": 5,
+    "support": 5
+  },
+  "prior_expectation": {
+    "citations": [
+      {
+        "ref": "Ling et al. 2015",
+        "supports": "TDP-43 cryptic exon repression",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/26250685/"
+      },
+      {
+        "ref": "Jeong et al. 2017",
+        "supports": "cell-type-specific TDP-43 cryptic exons",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/28153034/"
+      },
+      {
+        "ref": "Rogelj et al. 2012",
+        "supports": "FUS binding and alternative splicing in mouse brain",
+        "url_or_doi": "https://doi.org/10.1038/srep00603"
+      }
+    ],
+    "summary": "Prior expectation is grounded by the listed traceable corpus citations; direct prior support for the exact cell-type/state relationship is partial unless noted in the caveats."
+  },
+  "reference_ids": [
+    "Tardbp:R006",
+    "Tardbp:R007",
+    "Tardbp:R008",
+    "Tardbp:R009",
+    "Fus:R003",
+    "Grn:R015",
+    "Nek1:R005",
+    "Tbk1:R004"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Tardbp:E001",
+    "Tardbp:E002",
+    "Tardbp:E003",
+    "Tardbp:E004",
+    "Tardbp:E011",
+    "Fus:E001",
+    "Fus:E002",
+    "Fus:E003",
+    "Grn:E009",
+    "Nek1:E008",
+    "Setx:E004",
+    "Setx:E005",
+    "Tbk1:E007"
+  ],
+  "source_urls_or_dois": [
+    {
+      "ref": "Ling et al. 2015",
+      "supports": "TDP-43 cryptic exon repression",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/26250685/"
+    },
+    {
+      "ref": "Jeong et al. 2017",
+      "supports": "cell-type-specific TDP-43 cryptic exons",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/28153034/"
+    },
+    {
+      "ref": "Rogelj et al. 2012",
+      "supports": "FUS binding and alternative splicing in mouse brain",
+      "url_or_doi": "https://doi.org/10.1038/srep00603"
+    }
+  ],
+  "status": "grounded",
+  "story_id": "S017",
+  "support": {
+    "exact_de_rows": [
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Abcc5",
+        "log2_fold_change": 0.54798,
+        "pval": 1.8517280825606385e-30,
+        "pvals_adj": 3.0263442698311936e-27,
+        "score": 11.470692,
+        "target": "Tardbp"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Atg4b",
+        "log2_fold_change": -0.0117,
+        "pval": 0.8765884496469927,
+        "pvals_adj": 1.0,
+        "score": 0.155295,
+        "target": "Tardbp"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Brms1l",
+        "log2_fold_change": 1.240446,
+        "pval": 7.01169156861727e-36,
+        "pvals_adj": 2.0169130797127576e-32,
+        "score": 12.504981,
+        "target": "Tardbp"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Fam135a",
+        "log2_fold_change": 2.131962,
+        "pval": 1.2061549285417937e-38,
+        "pvals_adj": 4.1634055823405634e-35,
+        "score": 13.001088,
+        "target": "Tardbp"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Gabpa",
+        "log2_fold_change": 2.247697,
+        "pval": 3.025835683455207e-42,
+        "pvals_adj": 1.7407632686917805e-38,
+        "score": 13.620478,
+        "target": "Tardbp"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Poldip3",
+        "log2_fold_change": -0.01355,
+        "pval": 0.9566212126250482,
+        "pvals_adj": 1.0,
+        "score": -0.054394,
+        "target": "Tardbp"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Ppp6c",
+        "log2_fold_change": 1.984933,
+        "pval": 1.4213745016337807e-45,
+        "pvals_adj": 2.453150252369742e-41,
+        "score": 14.169187,
+        "target": "Tardbp"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Sec24b",
+        "log2_fold_change": 0.73006,
+        "pval": 7.950121371448397e-14,
+        "pvals_adj": 4.900398026779568e-11,
+        "score": 7.471143,
+        "target": "Tardbp"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Snrnp70",
+        "log2_fold_change": -0.587018,
+        "pval": 4.4314831567492995e-23,
+        "pvals_adj": 5.098864520155744e-20,
+        "score": -9.893742,
+        "target": "Tardbp"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Stmn2",
+        "log2_fold_change": -0.161706,
+        "pval": 0.10341574004741003,
+        "pvals_adj": 0.9949063758918977,
+        "score": -1.628515,
+        "target": "Tardbp"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Tardbp",
+        "log2_fold_change": -1.414223,
+        "pval": 1.859047183754211e-43,
+        "pvals_adj": 1.6042647672206965e-39,
+        "score": -13.822722,
+        "target": "Tardbp"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Uggt2",
+        "log2_fold_change": 1.359129,
+        "pval": 2.9913695079331563e-35,
+        "pvals_adj": 7.375435191059764e-32,
+        "score": 12.389166,
+        "target": "Tardbp"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Unc13a",
+        "log2_fold_change": 0.5129,
+        "pval": 1.2884937628285646e-15,
+        "pvals_adj": 9.66874515332965e-13,
+        "score": 7.995691,
+        "target": "Tardbp"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Usp15",
+        "log2_fold_change": 0.977633,
+        "pval": 2.0562471084433036e-40,
+        "pvals_adj": 8.872192211155744e-37,
+        "score": 13.308849,
+        "target": "Tardbp"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Fam135a",
+        "log2_fold_change": 1.926103,
+        "pval": 4.031047143358837e-27,
+        "pvals_adj": 3.51567776608041e-23,
+        "score": 10.785486,
+        "target": "Tardbp"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Gabpa",
+        "log2_fold_change": 1.983309,
+        "pval": 7.383322388245533e-26,
+        "pvals_adj": 4.292909747272227e-22,
+        "score": 10.514805,
+        "target": "Tardbp"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Ppp6c",
+        "log2_fold_change": 2.264267,
+        "pval": 2.9273601683816425e-34,
+        "pvals_adj": 5.106194341708099e-30,
+        "score": 12.204881,
+        "target": "Tardbp"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Sec24b",
+        "log2_fold_change": 1.049867,
+        "pval": 1.6995242924385137e-24,
+        "pvals_adj": 7.411200558251248e-21,
+        "score": 10.214958,
+        "target": "Tardbp"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Snrnp70",
+        "log2_fold_change": -0.666611,
+        "pval": 1.6072820688703922e-17,
+        "pvals_adj": 2.8035821127306248e-14,
+        "score": -8.519151,
+        "target": "Tardbp"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Tardbp",
+        "log2_fold_change": -1.031665,
+        "pval": 6.244294621036174e-22,
+        "pvals_adj": 2.1783846214946795e-18,
+        "score": -9.625434,
+        "target": "Tardbp"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Unc13a",
+        "log2_fold_change": 0.558581,
+        "pval": 4.737948492306475e-13,
+        "pvals_adj": 5.165252221956366e-10,
+        "score": 7.232611,
+        "target": "Tardbp"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": true,
+        "gene": "Fam135a",
+        "log2_fold_change": 2.223951,
+        "pval": 2.4506395893665268e-20,
+        "pvals_adj": 2.0950517849494436e-16,
+        "score": 9.240624,
+        "target": "Tardbp"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": true,
+        "gene": "Gabpa",
+        "log2_fold_change": 2.431148,
+        "pval": 3.172725013154208e-17,
+        "pvals_adj": 1.0849450454982128e-13,
+        "score": 8.440024,
+        "target": "Tardbp"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": true,
+        "gene": "Ppp6c",
+        "log2_fold_change": 2.462708,
+        "pval": 2.2819218727859e-21,
+        "pvals_adj": 3.9016300180893316e-17,
+        "score": 9.49129,
+        "target": "Tardbp"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": true,
+        "gene": "Snrnp70",
+        "log2_fold_change": -0.588589,
+        "pval": 1.791249698802595e-09,
+        "pvals_adj": 1.5313393675063383e-06,
+        "score": -6.015687,
+        "target": "Tardbp"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": true,
+        "gene": "Tardbp",
+        "log2_fold_change": -1.122323,
+        "pval": 9.186963554389783e-15,
+        "pvals_adj": 1.9634837856619562e-11,
+        "score": -7.750031,
+        "target": "Tardbp"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": true,
+        "gene": "Unc13a",
+        "log2_fold_change": 0.641176,
+        "pval": 3.978060130941767e-09,
+        "pvals_adj": 2.99785049672561e-06,
+        "score": 5.885103,
+        "target": "Tardbp"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": true,
+        "gene": "Usp15",
+        "log2_fold_change": 1.127107,
+        "pval": 3.0012765804457186e-17,
+        "pvals_adj": 1.0849450454982128e-13,
+        "score": 8.446515,
+        "target": "Tardbp"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Atxn2l",
+        "log2_fold_change": 0.411259,
+        "pval": 6.674887585722683e-18,
+        "pvals_adj": 3.840062828066259e-14,
+        "score": 8.620352,
+        "target": "Fus"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Clk1",
+        "log2_fold_change": -0.28242,
+        "pval": 8.850800506115612e-12,
+        "pvals_adj": 1.6972885103894374e-08,
+        "score": -6.824052,
+        "target": "Fus"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Fus",
+        "log2_fold_change": -1.406912,
+        "pval": 6.013412093095728e-50,
+        "pvals_adj": 1.0378547931473917e-45,
+        "score": -14.859767,
+        "target": "Fus"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Luc7l2",
+        "log2_fold_change": 0.36406,
+        "pval": 2.5647426914258738e-17,
+        "pvals_adj": 1.1066223527829788e-13,
+        "score": 8.464854,
+        "target": "Fus"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Rsrp1",
+        "log2_fold_change": 0.428343,
+        "pval": 5.613323187691758e-33,
+        "pvals_adj": 4.844017244818603e-29,
+        "score": 11.962087,
+        "target": "Fus"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Snrnp70",
+        "log2_fold_change": 0.260767,
+        "pval": 7.651825646131175e-08,
+        "pvals_adj": 5.7418634272425195e-05,
+        "score": 5.375152,
+        "target": "Fus"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Srsf6",
+        "log2_fold_change": -0.415605,
+        "pval": 3.281856694310997e-10,
+        "pvals_adj": 4.720130390592791e-07,
+        "score": -6.284843,
+        "target": "Fus"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Atxn2l",
+        "log2_fold_change": 0.550786,
+        "pval": 4.813357763266507e-16,
+        "pvals_adj": 2.7986466488219224e-12,
+        "score": 8.116117,
+        "target": "Fus"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Fus",
+        "log2_fold_change": -1.166568,
+        "pval": 6.607473893518246e-30,
+        "pvals_adj": 1.1525416712463877e-25,
+        "score": -11.360092,
+        "target": "Fus"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Luc7l2",
+        "log2_fold_change": 0.35379,
+        "pval": 1.058644587056816e-07,
+        "pvals_adj": 0.00036931875064064084,
+        "score": 5.316359,
+        "target": "Fus"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Rsrp1",
+        "log2_fold_change": 0.387029,
+        "pval": 7.56776706861783e-19,
+        "pvals_adj": 6.60022804889504e-15,
+        "score": 8.86621,
+        "target": "Fus"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Snrnp70",
+        "log2_fold_change": 0.258096,
+        "pval": 4.472920100036944e-06,
+        "pvals_adj": 0.007802114530494441,
+        "score": 4.588103,
+        "target": "Fus"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": true,
+        "gene": "Atxn2l",
+        "log2_fold_change": 0.479851,
+        "pval": 1.981400053365369e-09,
+        "pvals_adj": 1.1292659370813691e-05,
+        "score": 5.999324,
+        "target": "Fus"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": true,
+        "gene": "Fus",
+        "log2_fold_change": -1.478679,
+        "pval": 2.2884371368105796e-28,
+        "pvals_adj": 3.912769816518729e-24,
+        "score": -11.046141,
+        "target": "Fus"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": true,
+        "gene": "Luc7l2",
+        "log2_fold_change": 0.291195,
+        "pval": 3.529662304110368e-05,
+        "pvals_adj": 0.04023344405045272,
+        "score": 4.13629,
+        "target": "Fus"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": true,
+        "gene": "Rsrp1",
+        "log2_fold_change": 0.362044,
+        "pval": 1.724209228059788e-11,
+        "pvals_adj": 1.4740264690683128e-07,
+        "score": 6.727654,
+        "target": "Fus"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": true,
+        "gene": "Snrnp70",
+        "log2_fold_change": 0.361727,
+        "pval": 8.732609724400317e-07,
+        "pvals_adj": 0.003732754026694915,
+        "score": 4.918239,
+        "target": "Fus"
+      }
+    ],
+    "summary": [
+      "Tardbp and Fus both had strong corrected RNA-processing signatures in 151 TH Prkcd Grin2c Glut and midbrain-related populations.",
+      "Tardbp scalar Unc13a increased rather than modeling human UNC13A cryptic-exon depletion, and Stmn2, Atg4b, and Poldip3 did not pass 5% FDR.",
+      "Grn, Nek1, Setx, and Tbk1 comparisons support non-phenocopy against the active Tardbp/Fus states."
+    ]
+  },
+  "targets": [
+    "Tardbp",
+    "Fus",
+    "Grn",
+    "Nek1",
+    "Setx",
+    "Tbk1"
+  ],
+  "title": "Tardbp and Fus expose related but separable RNA-processing ALS states"
+}

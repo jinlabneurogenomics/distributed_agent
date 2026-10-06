@@ -1,0 +1,225 @@
+{
+  "biological_interpretation": "Retromer core loss has a selective thalamic synaptic/excitability transcriptional output that is distinct from simple transcriptional replacement of the retromer, sorting nexin, WASH, or TBC1D5 machinery.",
+  "caveats": [
+    "The exact response is cell-type-selective and cannot be generalized to all neurons.",
+    "The assay measured total mRNA and did not test retromer cargo localization or endosomal trafficking directly."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "110 CNU-HYa HY MM Glut"
+  ],
+  "exact_observed_result": "Vps35 perturbation in 151 TH Prkcd Grin2c Glut produced FDR-supported changes in a synaptic and excitability module including Grin2b, Rims3, L1cam, Kcnc2, Ache, Cttnbp2, Lrrc7, Ppp1r9b, and Dgkz. Strong Vps35 self-knockdown in 110 CNU-HYa HY MM Glut stayed target-only, and 151 TH did not significantly compensate Vps26a, Vps26b, Vps29, Snx1, Snx6, Tbc1d5, or Washc2 mRNAs.",
+  "preliminary_scores": {
+    "novelty": 4,
+    "priority": 4,
+    "support": 5
+  },
+  "prior_expectation": "VPS35 is a retromer core subunit implicated in neuronal endosomal trafficking and neurodegenerative disease; a synaptic-cargo RNA output is biologically plausible but not a direct measure of cargo sorting.",
+  "reference_ids": [
+    "Vps35:F001",
+    "Vps35:F003"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    {
+      "finding_id": "F001",
+      "gene": "Vps35"
+    },
+    {
+      "finding_id": "F003",
+      "gene": "Vps35"
+    }
+  ],
+  "source_claim_ids": [
+    "claim:vps35_f001_27a7f6e20365",
+    "claim:vps35_f003_2682d2dd358d"
+  ],
+  "source_cluster_ids": [
+    "C226"
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/17891154/",
+    "https://reactome.org/content/detail/R-HSA-3247839"
+  ],
+  "status": "grounded",
+  "story_id": "S057",
+  "support": {
+    "exact_de_rows": [
+      {
+        "gene_target": "Vps35",
+        "group_name": "110 CNU-HYa HY MM Glut",
+        "logfoldchanges": -1.3811215162277222,
+        "names": "Vps35",
+        "pvals": 9.830967835085408e-07,
+        "pvals_adj": 0.01687682248249112,
+        "scores": -4.894991874694824
+      },
+      {
+        "gene_target": "Vps35",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.3871857225894928,
+        "names": "Ache",
+        "pvals": 3.8803541085693145e-05,
+        "pvals_adj": 0.04293599669486328,
+        "scores": 4.114490509033203
+      },
+      {
+        "gene_target": "Vps35",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.17813336849212646,
+        "names": "Cttnbp2",
+        "pvals": 6.11106113210414e-05,
+        "pvals_adj": 0.05859489115499187,
+        "scores": 4.008480548858643
+      },
+      {
+        "gene_target": "Vps35",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.23266547918319702,
+        "names": "Dgkz",
+        "pvals": 0.00014717734330980527,
+        "pvals_adj": 0.08891558577873651,
+        "scores": 3.7957844734191895
+      },
+      {
+        "gene_target": "Vps35",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.19834885001182556,
+        "names": "Grin2b",
+        "pvals": 1.4962345432344948e-07,
+        "pvals_adj": 0.0008607837327228048,
+        "scores": -5.253022193908691
+      },
+      {
+        "gene_target": "Vps35",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.1901608407497406,
+        "names": "Kcnc2",
+        "pvals": 3.803737210955677e-05,
+        "pvals_adj": 0.04293599669486328,
+        "scores": -4.119088649749756
+      },
+      {
+        "gene_target": "Vps35",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.2553260326385498,
+        "names": "L1cam",
+        "pvals": 2.9386584542921614e-05,
+        "pvals_adj": 0.039014081740483396,
+        "scores": -4.178168773651123
+      },
+      {
+        "gene_target": "Vps35",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.1494360715150833,
+        "names": "Lrrc7",
+        "pvals": 6.649218714741338e-05,
+        "pvals_adj": 0.06034183663943115,
+        "scores": 3.9885008335113525
+      },
+      {
+        "gene_target": "Vps35",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.3602462410926819,
+        "names": "Ppp1r9b",
+        "pvals": 0.00016340182011003658,
+        "pvals_adj": 0.09097264558964907,
+        "scores": 3.7697641849517822
+      },
+      {
+        "gene_target": "Vps35",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.36002787947654724,
+        "names": "Rims3",
+        "pvals": 1.2085507070236167e-05,
+        "pvals_adj": 0.023175974058356225,
+        "scores": -4.376039505004883
+      },
+      {
+        "gene_target": "Vps35",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.25703099370002747,
+        "names": "Snx1",
+        "pvals": 0.03992973770423987,
+        "pvals_adj": 1.0,
+        "scores": -2.0544750690460205
+      },
+      {
+        "gene_target": "Vps35",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.31903260946273804,
+        "names": "Snx6",
+        "pvals": 0.024415668247711624,
+        "pvals_adj": 1.0,
+        "scores": -2.2505245208740234
+      },
+      {
+        "gene_target": "Vps35",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.091423399746418,
+        "names": "Tbc1d5",
+        "pvals": 0.7037954244048987,
+        "pvals_adj": 1.0,
+        "scores": 0.380202054977417
+      },
+      {
+        "gene_target": "Vps35",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.15330705046653748,
+        "names": "Vps26a",
+        "pvals": 0.4962220095048623,
+        "pvals_adj": 1.0,
+        "scores": 0.6804461479187012
+      },
+      {
+        "gene_target": "Vps35",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.03871563449501991,
+        "names": "Vps26b",
+        "pvals": 0.7078839634122762,
+        "pvals_adj": 1.0,
+        "scores": 0.37469950318336487
+      },
+      {
+        "gene_target": "Vps35",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.046639975160360336,
+        "names": "Vps29",
+        "pvals": 0.6389144249334942,
+        "pvals_adj": 1.0,
+        "scores": -0.4692171514034271
+      },
+      {
+        "gene_target": "Vps35",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.6549255847930908,
+        "names": "Vps35",
+        "pvals": 6.630058480476362e-07,
+        "pvals_adj": 0.0022885635862908305,
+        "scores": -4.971898078918457
+      },
+      {
+        "gene_target": "Vps35",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.1745217740535736,
+        "names": "Washc2",
+        "pvals": 0.04515786558911177,
+        "pvals_adj": 1.0,
+        "scores": 2.003180980682373
+      }
+    ]
+  },
+  "targets": [
+    "Vps35",
+    "Grin2b",
+    "Rims3",
+    "L1cam",
+    "Kcnc2",
+    "Ache",
+    "Cttnbp2",
+    "Lrrc7",
+    "Ppp1r9b",
+    "Dgkz"
+  ],
+  "title": "Vps35 loss remodels a thalamic synaptic receptor and ion-channel RNA module"
+}

@@ -1,0 +1,502 @@
+{
+  "biological_interpretation": "A subset of cohesin-loader and ring perturbations exposes a thalamic projection/synapse vulnerability distinct from simple pan-cohesin or Cornelia-de-Lange-gene interchangeability.",
+  "caveats": [
+    "Stag2 had weak self-transcript depletion despite a coherent downstream signature.",
+    "Smc3 correlated with the Stag2/Nipbl state but had no 5% FDR genes in 151 TH."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut"
+  ],
+  "exact_observed_result": "In 151 TH Prkcd Grin2c Glut, Nipbl, Smc1a, and Stag2 perturbations shared down-regulation of Ptprm, Necab2, Smtn, and Adamts2 and Stag2-neighbor correlations prioritized Smc1a, Smc3, and Nipbl, whereas Stag1, Pds5a, and Hdac8 did not fully phenocopy the state.",
+  "preliminary_scores": {
+    "novelty": 3,
+    "priority": 4,
+    "support": 4
+  },
+  "prior_expectation": {
+    "citations": [
+      {
+        "ref": "Weiss et al. 2021",
+        "supports": "cohesin-dependent neuronal gene expression in CdLS models",
+        "url_or_doi": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8131595/"
+      },
+      {
+        "ref": "Calderon et al. 2022",
+        "supports": "cohesin dependence of neuronal gene expression relates to loop length",
+        "url_or_doi": "https://doi.org/10.7554/eLife.76539"
+      },
+      {
+        "ref": "Deardorff et al. 2012",
+        "supports": "HDAC8 in the cohesin acetylation cycle and CdLS",
+        "url_or_doi": "https://doi.org/10.1038/nature11316"
+      }
+    ],
+    "summary": "Prior expectation is grounded by the listed traceable corpus citations; direct prior support for the exact cell-type/state relationship is partial unless noted in the caveats."
+  },
+  "reference_ids": [
+    "Smc1a:R004",
+    "Stag2:R001",
+    "Stag2:R003",
+    "Stag2:R004",
+    "Stag2:R005",
+    "Nipbl:R001",
+    "Nipbl:R002",
+    "Hdac8:R003",
+    "Pds5a:R002",
+    "Pds5a:R007"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Smc1a:E002",
+    "Smc1a:E005",
+    "Stag2:E001",
+    "Stag2:E002",
+    "Stag2:E005",
+    "Stag2:E006",
+    "Stag2:E007",
+    "Nipbl:E008",
+    "Nipbl:E009",
+    "Hdac8:E004",
+    "Hdac8:E005",
+    "Pds5a:E004",
+    "Pds5a:E006",
+    "Pds5a:E007"
+  ],
+  "source_urls_or_dois": [
+    {
+      "ref": "Weiss et al. 2021",
+      "supports": "cohesin-dependent neuronal gene expression in CdLS models",
+      "url_or_doi": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8131595/"
+    },
+    {
+      "ref": "Calderon et al. 2022",
+      "supports": "cohesin dependence of neuronal gene expression relates to loop length",
+      "url_or_doi": "https://doi.org/10.7554/eLife.76539"
+    },
+    {
+      "ref": "Deardorff et al. 2012",
+      "supports": "HDAC8 in the cohesin acetylation cycle and CdLS",
+      "url_or_doi": "https://doi.org/10.1038/nature11316"
+    }
+  ],
+  "status": "grounded",
+  "story_id": "S105",
+  "support": {
+    "exact_de_rows": [
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Smc1a",
+        "log2_fold_change": -0.574794,
+        "pval": 2.789010953029506e-05,
+        "pvals_adj": 0.02406777001916812,
+        "score": -4.190043,
+        "target": "Smc1a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Ptprm",
+        "log2_fold_change": -0.783266,
+        "pval": 3.701875099340554e-11,
+        "pvals_adj": 6.389066233951863e-07,
+        "score": -6.615544,
+        "target": "Smc1a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Necab2",
+        "log2_fold_change": -0.674619,
+        "pval": 8.179202772285178e-09,
+        "pvals_adj": 3.5291215161717475e-05,
+        "score": -5.764723,
+        "target": "Smc1a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Smtn",
+        "log2_fold_change": -0.856764,
+        "pval": 4.965749604540369e-07,
+        "pvals_adj": 0.0009522652491640249,
+        "score": -5.027631,
+        "target": "Smc1a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Adamts2",
+        "log2_fold_change": -0.875627,
+        "pval": 2.4237235020357094e-07,
+        "pvals_adj": 0.0005828767205065481,
+        "score": -5.163502,
+        "target": "Smc1a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Adamts19",
+        "log2_fold_change": -0.739703,
+        "pval": 3.1249918000140285e-05,
+        "pvals_adj": 0.025682968322115293,
+        "score": -4.164161,
+        "target": "Smc1a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Gabra1",
+        "log2_fold_change": -0.223698,
+        "pval": 0.022351272105792658,
+        "pvals_adj": 0.899369157783687,
+        "score": -2.284345,
+        "target": "Smc1a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Brinp1",
+        "log2_fold_change": -0.154527,
+        "pval": 0.04397877579037827,
+        "pvals_adj": 1.0,
+        "score": -2.014293,
+        "target": "Smc1a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Stag2",
+        "log2_fold_change": -0.238678,
+        "pval": 0.04100644392600474,
+        "pvals_adj": 1.0,
+        "score": -2.043465,
+        "target": "Stag2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Ptprm",
+        "log2_fold_change": -0.883603,
+        "pval": 1.0033278732628425e-22,
+        "pvals_adj": 1.7316435764643398e-18,
+        "score": -9.811632,
+        "target": "Stag2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Necab2",
+        "log2_fold_change": -1.055892,
+        "pval": 9.178876958492714e-22,
+        "pvals_adj": 7.920911871331288e-18,
+        "score": -9.58575,
+        "target": "Stag2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Smtn",
+        "log2_fold_change": -1.577281,
+        "pval": 1.9809781090636157e-20,
+        "pvals_adj": 1.139656706144298e-16,
+        "score": -9.26336,
+        "target": "Stag2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Adamts2",
+        "log2_fold_change": -0.936041,
+        "pval": 1.5742883808482945e-10,
+        "pvals_adj": 5.434128633012143e-07,
+        "score": -6.397996,
+        "target": "Stag2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Adamts19",
+        "log2_fold_change": -0.819988,
+        "pval": 8.746597833135554e-08,
+        "pvals_adj": 0.00018869691500260816,
+        "score": -5.351007,
+        "target": "Stag2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Gabra1",
+        "log2_fold_change": 0.328651,
+        "pval": 5.4330566330085765e-06,
+        "pvals_adj": 0.004528232820221769,
+        "score": 4.547331,
+        "target": "Stag2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Brinp1",
+        "log2_fold_change": 0.242982,
+        "pval": 6.965995631246293e-05,
+        "pvals_adj": 0.03617863459654537,
+        "score": 3.977444,
+        "target": "Stag2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Nipbl",
+        "log2_fold_change": -0.265915,
+        "pval": 0.03057333288929845,
+        "pvals_adj": 0.658847359532729,
+        "score": -2.162582,
+        "target": "Nipbl"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Ptprm",
+        "log2_fold_change": -0.985046,
+        "pval": 1.0200940374697726e-10,
+        "pvals_adj": 2.054436272127315e-07,
+        "score": -6.463943,
+        "target": "Nipbl"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Necab2",
+        "log2_fold_change": -0.576641,
+        "pval": 1.8696143035806122e-05,
+        "pvals_adj": 0.004033459158187223,
+        "score": -4.279919,
+        "target": "Nipbl"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Smtn",
+        "log2_fold_change": -0.973602,
+        "pval": 4.987211469519024e-07,
+        "pvals_adj": 0.000260831159855845,
+        "score": -5.026804,
+        "target": "Nipbl"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Adamts2",
+        "log2_fold_change": -0.748604,
+        "pval": 9.517160655907383e-05,
+        "pvals_adj": 0.013920057267822502,
+        "score": -3.902583,
+        "target": "Nipbl"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Adamts19",
+        "log2_fold_change": -0.750133,
+        "pval": 0.0003852380734308854,
+        "pvals_adj": 0.04054160920331494,
+        "score": -3.549995,
+        "target": "Nipbl"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Gabra1",
+        "log2_fold_change": -0.522603,
+        "pval": 2.0494833831811346e-06,
+        "pvals_adj": 0.0007369173689650666,
+        "score": -4.748483,
+        "target": "Nipbl"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Brinp1",
+        "log2_fold_change": -0.560604,
+        "pval": 5.845968183216595e-07,
+        "pvals_adj": 0.0002789812975252009,
+        "score": -4.996237,
+        "target": "Nipbl"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Smc3",
+        "log2_fold_change": -0.247302,
+        "pval": 0.09180437655286254,
+        "pvals_adj": 1.0,
+        "score": -1.685956,
+        "target": "Smc3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Ptprm",
+        "log2_fold_change": -0.498175,
+        "pval": 5.550886538664941e-05,
+        "pvals_adj": 0.4328535238966091,
+        "score": -4.031132,
+        "target": "Smc3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Necab2",
+        "log2_fold_change": -0.410875,
+        "pval": 0.00036397964995654833,
+        "pvals_adj": 0.6750979454735722,
+        "score": -3.564911,
+        "target": "Smc3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Adamts2",
+        "log2_fold_change": -0.554699,
+        "pval": 0.001274627561981096,
+        "pvals_adj": 1.0,
+        "score": -3.221632,
+        "target": "Smc3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Stag1",
+        "log2_fold_change": -0.207871,
+        "pval": 0.4376066575198181,
+        "pvals_adj": 1.0,
+        "score": -0.776241,
+        "target": "Stag1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Ptprm",
+        "log2_fold_change": 0.072323,
+        "pval": 0.26985753639769106,
+        "pvals_adj": 1.0,
+        "score": 1.103391,
+        "target": "Stag1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Necab2",
+        "log2_fold_change": 0.022257,
+        "pval": 0.8447638598640771,
+        "pvals_adj": 1.0,
+        "score": 0.195804,
+        "target": "Stag1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Adamts2",
+        "log2_fold_change": 0.005781,
+        "pval": 0.9402464236217509,
+        "pvals_adj": 1.0,
+        "score": -0.07496,
+        "target": "Stag1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Pds5a",
+        "log2_fold_change": -0.103747,
+        "pval": 0.20293601287975127,
+        "pvals_adj": 1.0,
+        "score": -1.273231,
+        "target": "Pds5a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Ptprm",
+        "log2_fold_change": 0.027303,
+        "pval": 0.9730976218155274,
+        "pvals_adj": 1.0,
+        "score": -0.033724,
+        "target": "Pds5a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Necab2",
+        "log2_fold_change": 0.005865,
+        "pval": 0.9586976857777657,
+        "pvals_adj": 1.0,
+        "score": -0.051788,
+        "target": "Pds5a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Adamts2",
+        "log2_fold_change": -0.067329,
+        "pval": 0.776175132141518,
+        "pvals_adj": 1.0,
+        "score": -0.284307,
+        "target": "Pds5a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Hdac8",
+        "log2_fold_change": -0.026103,
+        "pval": 0.4885623904522566,
+        "pvals_adj": 1.0,
+        "score": -0.692597,
+        "target": "Hdac8"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Ptprm",
+        "log2_fold_change": 0.116429,
+        "pval": 0.3710711486288778,
+        "pvals_adj": 1.0,
+        "score": 0.894469,
+        "target": "Hdac8"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Necab2",
+        "log2_fold_change": 0.09018,
+        "pval": 0.4022150581026239,
+        "pvals_adj": 1.0,
+        "score": 0.837672,
+        "target": "Hdac8"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Adamts2",
+        "log2_fold_change": -0.139766,
+        "pval": 0.4633097153070922,
+        "pvals_adj": 1.0,
+        "score": -0.733408,
+        "target": "Hdac8"
+      }
+    ],
+    "summary": [
+      "Nipbl, Smc1a, and Stag2 had corrected 151 TH responses and shared Ptprm, Necab2, Smtn, and Adamts2 down-regulation.",
+      "Stag1 and Pds5a had no FDR<0.05 genes in 151 TH; Hdac8 showed neither target depletion nor downstream FDR hits."
+    ]
+  },
+  "targets": [
+    "Nipbl",
+    "Smc1a",
+    "Smc3",
+    "Stag2",
+    "Stag1",
+    "Pds5a",
+    "Hdac8"
+  ],
+  "title": "Nipbl, Smc1a, and Stag2 converge on a thalamic cohesin-loader neuronal projection program"
+}

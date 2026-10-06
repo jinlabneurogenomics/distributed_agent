@@ -1,0 +1,4 @@
+```tsv
+target_name	predicted_n_degs
+Nme7	0
+```

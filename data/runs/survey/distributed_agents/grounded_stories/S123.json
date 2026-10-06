@@ -1,0 +1,182 @@
+{
+  "biological_interpretation": "The COUP-TF1/Nr2f1 adult response is sparse and thalamic-state-selective rather than a broad cortex or GABAergic transcriptome collapse.",
+  "caveats": [
+    "Nr2f1 itself was only nominally reduced in the responsive 151 TH class.",
+    "Chst1, Igsf21, Lrrtm4, Ncan, and Plxdc1 were nominal thalamic markers rather than FDR-supported genes."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "001 L5-6 IT Glut",
+    "046 CTX-CGE GABA"
+  ],
+  "exact_observed_result": "Nr2f1 perturbation produced only two genome-wide FDR-supported downstream genes, both in 151 TH Prkcd Grin2c Glut: Sorl1 increased and Sema7a decreased. 001 L5-6 IT Glut and 046 CTX-CGE GABA showed stronger nominal Nr2f1 target decreases without Sorl1 or Sema7a FDR responses.",
+  "preliminary_scores": {
+    "novelty": 5,
+    "priority": 4,
+    "support": 4
+  },
+  "prior_expectation": "NR2F1/COUP-TF1 is a neurodevelopmental transcription factor; the adult Sorl1/Sema7a module refines that role to a sparse acute thalamic RNA phenotype.",
+  "reference_ids": [
+    "Nr2f1:F001"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    {
+      "finding_id": "F001",
+      "gene": "Nr2f1"
+    }
+  ],
+  "source_claim_ids": [
+    "claim:nr2f1_f001_2af2ed6a56ad"
+  ],
+  "source_cluster_ids": [
+    "C325"
+  ],
+  "source_urls_or_dois": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK587319/",
+    "https://pubmed.ncbi.nlm.nih.gov/18165280/"
+  ],
+  "status": "grounded",
+  "story_id": "S123",
+  "support": {
+    "exact_de_rows": [
+      {
+        "gene_target": "Nr2f1",
+        "group_name": "001 L5-6 IT Glut",
+        "logfoldchanges": -0.5971848368644714,
+        "names": "Nr2f1",
+        "pvals": 0.0020645132088735045,
+        "pvals_adj": 1.0,
+        "scores": -3.0807912349700928
+      },
+      {
+        "gene_target": "Nr2f1",
+        "group_name": "001 L5-6 IT Glut",
+        "logfoldchanges": 0.1092563271522522,
+        "names": "Sema7a",
+        "pvals": 0.6943963658386099,
+        "pvals_adj": 1.0,
+        "scores": 0.39289590716362
+      },
+      {
+        "gene_target": "Nr2f1",
+        "group_name": "001 L5-6 IT Glut",
+        "logfoldchanges": -0.10449536144733429,
+        "names": "Sorl1",
+        "pvals": 0.6422237291091502,
+        "pvals_adj": 1.0,
+        "scores": -0.464591920375824
+      },
+      {
+        "gene_target": "Nr2f1",
+        "group_name": "046 CTX-CGE GABA",
+        "logfoldchanges": -0.6201907992362976,
+        "names": "Nr2f1",
+        "pvals": 0.0005157712030743175,
+        "pvals_adj": 1.0,
+        "scores": -3.472429037094116
+      },
+      {
+        "gene_target": "Nr2f1",
+        "group_name": "046 CTX-CGE GABA",
+        "logfoldchanges": 0.24323490262031555,
+        "names": "Sema7a",
+        "pvals": 0.27345260460785303,
+        "pvals_adj": 1.0,
+        "scores": 1.0951461791992188
+      },
+      {
+        "gene_target": "Nr2f1",
+        "group_name": "046 CTX-CGE GABA",
+        "logfoldchanges": 0.052913177758455276,
+        "names": "Sorl1",
+        "pvals": 0.674457214766097,
+        "pvals_adj": 1.0,
+        "scores": 0.4200386703014374
+      },
+      {
+        "gene_target": "Nr2f1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.2936021089553833,
+        "names": "Chst1",
+        "pvals": 0.0004462200962216001,
+        "pvals_adj": 0.5831701334711643,
+        "scores": 3.5111217498779297
+      },
+      {
+        "gene_target": "Nr2f1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.44563478231430054,
+        "names": "Igsf21",
+        "pvals": 0.00025066875713807,
+        "pvals_adj": 0.5128873767347357,
+        "scores": 3.6615757942199707
+      },
+      {
+        "gene_target": "Nr2f1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.39379534125328064,
+        "names": "Lrrtm4",
+        "pvals": 0.00034956090408830824,
+        "pvals_adj": 0.5831701334711643,
+        "scores": 3.5754988193511963
+      },
+      {
+        "gene_target": "Nr2f1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.27101296186447144,
+        "names": "Ncan",
+        "pvals": 0.00016443046098338582,
+        "pvals_adj": 0.4729842210187093,
+        "scores": -3.768197774887085
+      },
+      {
+        "gene_target": "Nr2f1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.22502490878105164,
+        "names": "Nr2f1",
+        "pvals": 0.007424414690811533,
+        "pvals_adj": 1.0,
+        "scores": -2.677182674407959
+      },
+      {
+        "gene_target": "Nr2f1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.4036070704460144,
+        "names": "Plxdc1",
+        "pvals": 4.621578380136093e-05,
+        "pvals_adj": 0.2658794042092294,
+        "scores": -4.073983192443848
+      },
+      {
+        "gene_target": "Nr2f1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.3501512110233307,
+        "names": "Sema7a",
+        "pvals": 4.721674677098196e-06,
+        "pvals_adj": 0.04074569162601888,
+        "scores": -4.576788902282715
+      },
+      {
+        "gene_target": "Nr2f1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.4881669282913208,
+        "names": "Sorl1",
+        "pvals": 5.760308404104123e-07,
+        "pvals_adj": 0.009941716274643306,
+        "scores": 4.999084949493408
+      }
+    ]
+  },
+  "targets": [
+    "Nr2f1",
+    "Sorl1",
+    "Sema7a",
+    "Chst1",
+    "Igsf21",
+    "Lrrtm4",
+    "Ncan",
+    "Plxdc1"
+  ],
+  "title": "Nr2f1 loss selectively couples to Sorl1 induction and Sema7a repression"
+}

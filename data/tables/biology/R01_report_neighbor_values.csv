@@ -1,0 +1,25 @@
+neighbor,r,process,focal
+Psmb4,0.576,Proteostasis,Tpr
+Psmc5,0.561,Proteostasis,Tpr
+Psmc1,0.548,Proteostasis,Tpr
+Ranbp2,0.479,Nuclear transport,Tpr
+Tnpo3,0.457,Nuclear transport,Tpr
+Ogt,0.437,Nuclear transport,Tpr
+Prpf6,0.4,Splicing,Tpr
+Ufc1,0.393,Proteostasis,Tpr
+Uba5,0.382,Proteostasis,Tpr
+Thoc1,0.368,TREX / export,Tpr
+Slc17a5,-0.154,Weak inverse,Tpr
+Herc1,-0.149,Weak inverse,Tpr
+Ifngr2,-0.145,Weak inverse,Tpr
+Chp1,-0.144,Weak inverse,Tpr
+Thoc1,0.224,TREX / export,Thoc2
+Ddx39b,0.208,TREX / export,Thoc2
+Snrnp70,0.194,Splicing,Thoc2
+Tpr,0.184,Nuclear transport,Thoc2
+Prpf6,0.167,Splicing,Thoc2
+U2af2,0.163,Splicing,Thoc2
+Atp8a2,-0.06,Weak inverse,Thoc2
+Wdfy3,-0.061,Weak inverse,Thoc2
+Hjv,-0.063,Weak inverse,Thoc2
+Samd12,-0.065,Weak inverse,Thoc2

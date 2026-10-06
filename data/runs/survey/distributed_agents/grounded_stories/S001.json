@@ -1,0 +1,155 @@
+{
+  "story_id": "S001",
+  "title": "Rb1 and E2f4 derepress overlapping but non-identical cell-cycle programs in thalamic and selected GABAergic neurons",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Rb1 induced a thalamic G1/S replication arm, including Dnmt1 logFC 1.5137015581130981 FDR 9.333656391552613e-10, Tipin 1.518267035484314 FDR 2.9339765482620998e-06, Prim1 2.7237536907196045 FDR 5.870073633290243e-05, and Lig1 1.9420918226242065 FDR 0.00016314637711243264 in 151 TH Prkcd Grin2c Glut, with smaller Dnmt1-positive Rb1 responses in 155 MB Glut and 052 Pvalb Gaba. E2f4 induced a parallel chromosome/repair arm in 151 TH marked by Aaas, Rad18, Tacc3, Tube1, Blm, Ddx11, and Polq.",
+  "biological_interpretation": "Adult neurons preserve a measurable RB/E2F brake on cell-cycle genes, but Rb1 preferentially releases G1/S replication transcripts whereas E2f4 releases a partly distinct DREAM-like mitotic, chromosome, and repair module; E2f1 and E2f5 do not substitute for either active perturbation in the assayed neuronal states.",
+  "targets": [
+    "Rb1",
+    "E2f4",
+    "Tfdp1",
+    "E2f1",
+    "E2f5"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "052 Pvalb Gaba",
+    "066 CNU-HYa HY GABA"
+  ],
+  "support": {
+    "support_level": 5,
+    "exact_de_rows": [
+      {
+        "gene_target": "Rb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Dnmt1",
+        "log2_fold_change": 1.5137015581130981,
+        "pvals_adj": 9.333656391552613e-10,
+        "wilcoxon_score": 7.521672248840332
+      },
+      {
+        "gene_target": "Rb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Tipin",
+        "log2_fold_change": 1.518267035484314,
+        "pvals_adj": 2.9339765482620998e-06,
+        "wilcoxon_score": 6.279348850250244
+      },
+      {
+        "gene_target": "Rb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Prim1",
+        "log2_fold_change": 2.7237536907196045,
+        "pvals_adj": 5.870073633290243e-05,
+        "wilcoxon_score": 5.727311134338379
+      },
+      {
+        "gene_target": "Rb1",
+        "cell_type": "155 MB Glut",
+        "gene": "Dnmt1",
+        "log2_fold_change": 1.1575857400894165,
+        "pvals_adj": 0.0007688113784555293,
+        "wilcoxon_score": 5.473691463470459
+      },
+      {
+        "gene_target": "E2f4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Aaas",
+        "log2_fold_change": 1.3308825492858887,
+        "pvals_adj": 3.651113752678084e-14,
+        "wilcoxon_score": 8.750958442687988
+      },
+      {
+        "gene_target": "E2f4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rad18",
+        "log2_fold_change": 1.634875774383545,
+        "pvals_adj": 5.312257765115223e-06,
+        "wilcoxon_score": 6.14076042175293
+      },
+      {
+        "gene_target": "E2f4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Polq",
+        "log2_fold_change": 2.1203386783599854,
+        "pvals_adj": 0.007632417124059112,
+        "wilcoxon_score": 4.466254234313965
+      }
+    ],
+    "report_evidence_summary": [
+      "Rb1:E002",
+      "Rb1:E004",
+      "Rb1:E006",
+      "Rb1:E007",
+      "Rb1:E008",
+      "E2f4:E002",
+      "E2f4:E006",
+      "E2f1:E004",
+      "E2f5:E004"
+    ]
+  },
+  "caveats": [
+    "Rb1 mRNA itself was not FDR-depleted in the report, so downstream E2F-like induction is the engagement readout.",
+    "The assay measures RNA only; it does not prove DNA synthesis, pRB phosphorylation, apoptosis, or DREAM occupancy."
+  ],
+  "prior_expectation": {
+    "summary": "RB:E2F and DREAM/E2F4 repress related but separable cell-cycle waves; E2F4 participates in the p130-containing DREAM cell-cycle repressor complex; acute Rb inactivation in terminal neurons can trigger ectopic cell-cycle protein expression and neuronal loss",
+    "citations": [
+      {
+        "ref_id": "Rb1:R006",
+        "ref": "Fischer et al. 2022 PMID:35835684",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/35835684/",
+        "supports": "RB:E2F and DREAM/E2F4 repress related but separable cell-cycle waves"
+      },
+      {
+        "ref_id": "E2f4:R004",
+        "ref": "Litovchick et al. 2007 PMID:17531812",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/17531812/",
+        "supports": "E2F4 participates in the p130-containing DREAM cell-cycle repressor complex"
+      },
+      {
+        "ref_id": "Rb1:R003",
+        "ref": "Andrusiak et al. 2012 PMID:23077065",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/23077065/",
+        "supports": "acute Rb inactivation in terminal neurons can trigger ectopic cell-cycle protein expression and neuronal loss"
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 5,
+    "priority": 5
+  },
+  "report_evidence_ids": [
+    "Rb1:E002",
+    "Rb1:E004",
+    "Rb1:E006",
+    "Rb1:E007",
+    "Rb1:E008",
+    "E2f4:E002",
+    "E2f4:E006",
+    "E2f1:E004",
+    "E2f5:E004"
+  ],
+  "reference_ids": [
+    "Rb1:R003",
+    "Rb1:R006",
+    "E2f4:R004",
+    "E2f5:R002"
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/17531812/",
+    "https://pubmed.ncbi.nlm.nih.gov/23077065/",
+    "https://pubmed.ncbi.nlm.nih.gov/35835684/"
+  ],
+  "source_claim_ids": [
+    "claim:rb1_f001_b3ded86782cd",
+    "claim:e2f4_f001_cef30805ebba",
+    "claim:rb1_f004_2f4d4fbe66de",
+    "claim:rb1_f005_c1f41570a39d",
+    "claim:e2f1_f003_b2286701aa80",
+    "claim:e2f5_f002_8d9104a73396"
+  ]
+}

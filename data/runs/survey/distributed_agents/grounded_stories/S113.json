@@ -1,0 +1,119 @@
+{
+  "story_id": "S113",
+  "title": "Vezf1 loss produces a compact thalamic Hr/Prkcg/Kcnc1/Rasa4-down and Tle2/Abi2-up signature",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Vezf1 generated FDR-supported Rasa4, Prkcg, Kcnc1, and Hr down-regulation with Tle2 and Abi2 up-regulation primarily in 151 TH Prkcd Grin2c Glut; Ctcf and Dnmt3a did not recapitulate the signature, while Zbtb7a showed only modest inverse structure.",
+  "biological_interpretation": "Neuronal Vezf1 loss drives a targeted thalamic chromatin/zinc-finger state rather than replaying published endothelial or DNA-methylation mechanisms.",
+  "targets": [
+    "Vezf1",
+    "Hr",
+    "Prkcg",
+    "Kcnc1",
+    "Rasa4",
+    "Tle2",
+    "Abi2",
+    "Ctcf",
+    "Dnmt3a",
+    "Zbtb7a"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "008 L2-3 IT ENT PPP RSP Glut",
+    "066 CNU-HYa HY GABA"
+  ],
+  "support": {
+    "exact_de_rows": [
+      {
+        "target": "Vezf1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rasa4",
+        "logfoldchanges": -1.110549807548523,
+        "pvals": 3.534465424794762e-18,
+        "pvals_adj": 6.10013387665328e-14,
+        "score": -8.692853927612305
+      },
+      {
+        "target": "Vezf1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Prkcg",
+        "logfoldchanges": -0.26885175704956055,
+        "pvals": 2.4869840565952474e-08,
+        "pvals_adj": 0.0002146142891638869,
+        "score": -5.5741801261901855
+      },
+      {
+        "target": "Vezf1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Hr",
+        "logfoldchanges": -0.5141052007675171,
+        "pvals": 1.6274053507055368e-05,
+        "pvals_adj": 0.046812314913044765,
+        "score": -4.310697555541992
+      },
+      {
+        "target": "Vezf1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Tle2",
+        "logfoldchanges": 0.6834281086921692,
+        "pvals": 1.2236713558207603e-07,
+        "pvals_adj": 0.0007039781310036833,
+        "score": 5.289924144744873
+      },
+      {
+        "target": "Vezf1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Abi2",
+        "logfoldchanges": 0.3026169538497925,
+        "pvals": 1.0532572409328473e-05,
+        "pvals_adj": 0.036356333442520025,
+        "score": 4.405941009521484
+      },
+      {
+        "target": "Vezf1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ctcf",
+        "logfoldchanges": 0.1694178432226181,
+        "pvals": 0.1526300508694616,
+        "pvals_adj": 1.0,
+        "score": 1.4303030967712402
+      }
+    ],
+    "evidence_summary": "Vezf1:F001 supports the compact thalamic signature; Vezf1:F003 supports failure to replay Dnmt/Cited2/Stmn1 endothelial or methylation axes."
+  },
+  "caveats": [
+    "Vezf1 self-RNA did not pass FDR.",
+    "Only six downstream rows define the main state."
+  ],
+  "prior_expectation": {
+    "summary": "Vezf1:F001 supports the compact thalamic signature; Vezf1:F003 supports failure to replay Dnmt/Cited2/Stmn1 endothelial or methylation axes.",
+    "citations": [
+      "Kuhnert 2005 DOI:10.1016/j.ydbio.2005.04.003",
+      "Gowher 2008 DOI:10.1101/gad.1658408",
+      "Dickson 2010 DOI:10.1371/journal.pgen.1000804",
+      "AlAbdi 2018 DOI:10.1074/jbc.RA118.002911"
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 3,
+    "priority": 3
+  },
+  "report_evidence_ids": [
+    "Vezf1:E001",
+    "Vezf1:E002",
+    "Vezf1:E007"
+  ],
+  "reference_ids": [
+    "Vezf1:R002",
+    "Vezf1:R003",
+    "Vezf1:R004",
+    "Vezf1:R005"
+  ],
+  "source_urls_or_dois": [
+    "https://doi.org/10.1016/j.ydbio.2005.04.003",
+    "https://doi.org/10.1101/gad.1658408",
+    "https://doi.org/10.1371/journal.pgen.1000804",
+    "https://doi.org/10.1074/jbc.RA118.002911"
+  ]
+}

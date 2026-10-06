@@ -1,0 +1,322 @@
+{
+  "story_id": "S125",
+  "title": "Hnrnpu, U2af2, and Naa15 signatures link spliceosome and proteasome perturbation neighborhoods",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Naa15, Hnrnpu, and U2af2 restricted-neighbor analyses repeatedly nominated spliceosome factors including Prpf6, Cdc40, Ddx23, and Snrnp70 and proteasome/proteostasis perturbations including Pomp, Psmb4, Psmc1, and Psmc5, while the same reports kept Rbfox1 orthogonal.",
+  "biological_interpretation": "Core post-transcriptional perturbations share an exploratory spliceosome-proteasome stress neighborhood distinct from a broad splicing-factor disease phenocopy.",
+  "targets": [
+    "Hnrnpu",
+    "U2af2",
+    "Naa15",
+    "Cdc40",
+    "Ddx23",
+    "Prpf6",
+    "Snrnp70",
+    "Pomp",
+    "Psmb4",
+    "Psmc1",
+    "Psmc5",
+    "Rbfox1"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "191 MB P MY GABA",
+    "005 L4-5 IT CTX Glut",
+    "066 CNU-HYa HY GABA"
+  ],
+  "support": {
+    "exact_de_rows": [
+      {
+        "gene_target": "Naa15",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Actr1b",
+        "score": 5.497048377990723,
+        "logfoldchanges": 0.5840033292770386,
+        "pvals_adj": 7.484999295342569e-05
+      },
+      {
+        "gene_target": "Naa15",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Atp1b1",
+        "score": -5.921255111694336,
+        "logfoldchanges": -0.3884233832359314,
+        "pvals_adj": 1.3932309726778848e-05
+      },
+      {
+        "gene_target": "Naa15",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Idh3g",
+        "score": 3.7026262283325195,
+        "logfoldchanges": 0.37147843837738037,
+        "pvals_adj": 0.04484302664399002
+      },
+      {
+        "gene_target": "Naa15",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Ldhd",
+        "score": 3.7857871055603027,
+        "logfoldchanges": 0.9815090298652649,
+        "pvals_adj": 0.035166663976800606
+      },
+      {
+        "gene_target": "Naa15",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Matk",
+        "score": 5.32824182510376,
+        "logfoldchanges": 0.6783067584037781,
+        "pvals_adj": 0.00015279740322043003
+      },
+      {
+        "gene_target": "Naa15",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Ring1",
+        "score": 6.218521595001221,
+        "logfoldchanges": 0.8976529836654663,
+        "pvals_adj": 8.753947121129418e-06
+      },
+      {
+        "gene_target": "Naa15",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Rtn3",
+        "score": -5.697845935821533,
+        "logfoldchanges": -0.3945290744304657,
+        "pvals_adj": 3.023387058281058e-05
+      },
+      {
+        "gene_target": "Naa15",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Thy1",
+        "score": -6.092144012451172,
+        "logfoldchanges": -0.4197867512702942,
+        "pvals_adj": 9.716473995311572e-06
+      },
+      {
+        "gene_target": "Hnrnpu",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Ahi1",
+        "score": -4.904158592224121,
+        "logfoldchanges": -0.45301058888435364,
+        "pvals_adj": 9.268202597718127e-05
+      },
+      {
+        "gene_target": "Hnrnpu",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Atxn2l",
+        "score": 7.996179580688477,
+        "logfoldchanges": 0.4679916501045227,
+        "pvals_adj": 1.2305587539556163e-12
+      },
+      {
+        "gene_target": "Hnrnpu",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Dmtf1",
+        "score": 12.146387100219727,
+        "logfoldchanges": 1.4176909923553467,
+        "pvals_adj": 5.1739982980257626e-30
+      },
+      {
+        "gene_target": "Hnrnpu",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Gpr180",
+        "score": 6.926819801330566,
+        "logfoldchanges": 0.8442219495773315,
+        "pvals_adj": 1.920299935117323e-09
+      },
+      {
+        "gene_target": "Hnrnpu",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Macf1",
+        "score": 9.918683052062988,
+        "logfoldchanges": 0.5060447454452515,
+        "pvals_adj": 9.932017246277907e-20
+      },
+      {
+        "gene_target": "Hnrnpu",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Rsrp1",
+        "score": -10.862637519836426,
+        "logfoldchanges": -0.41711336374282837,
+        "pvals_adj": 9.990618120455021e-24
+      },
+      {
+        "gene_target": "U2af2",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Cdc40",
+        "score": 2.416856527328491,
+        "logfoldchanges": 0.26060399413108826,
+        "pvals_adj": 0.18081594877281076
+      },
+      {
+        "gene_target": "U2af2",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Ddx23",
+        "score": 3.0339205265045166,
+        "logfoldchanges": 0.24715499579906464,
+        "pvals_adj": 0.050196242224004914
+      },
+      {
+        "gene_target": "U2af2",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Prpf6",
+        "score": 0.28398051857948303,
+        "logfoldchanges": 0.03509189933538437,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "U2af2",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Snrnp70",
+        "score": -1.6893949508666992,
+        "logfoldchanges": -0.09595971554517746,
+        "pvals_adj": 0.5400103645137653
+      },
+      {
+        "gene_target": "U2af2",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "U2af2",
+        "score": -2.8860349655151367,
+        "logfoldchanges": -0.24731118977069855,
+        "pvals_adj": 0.06941479018152621
+      }
+    ],
+    "evidence_records": [
+      {
+        "target_gene": "Naa15",
+        "evidence_id": "E011",
+        "evidence_slug": "naa15_top_signature_neighbors",
+        "cell_type": "",
+        "genes": "Prpf6|Cdc40|Ddx23|Hnrnpu|U2af2|Pomp|Psmc1|Psmb4|Psmc5|Rnpc3|Snrnp70",
+        "n_genes": "11",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "In 151 TH Prkcd Grin2c Glut, the top non-self Pearson correlations to the Naa15 score vector were Prpf6 0.206, Cdc40 0.202, Ddx23 0.190, Hnrnpu 0.189, and U2af2 0.186; the most negative was Rora -0.109. In 155 MB Glut, top positives were Hnrnpu 0.214, Prpf6 0.182, Pomp 0.168, Psmc1 0.168, Psmb4 0.160, while the most negative was Kcnq3 -0.075. In 191 MB P MY GABA, top positives included Psmc1 0.193 and Psmb4 0.179.",
+        "description": "Whole-signature neighbors of Naa15 were enriched for RNA-processing and proteasome/proteostasis perturbations, but the correlations were modest and no strong opposing neighbor was detected."
+      },
+      {
+        "target_gene": "Hnrnpu",
+        "evidence_id": "E012",
+        "evidence_slug": "restricted_signature_neighbors_of_hnrnpu",
+        "cell_type": "",
+        "genes": "U2af2|Pomp|Psmc1|Psmb4|Cdc40|Snrnp70|Psmc5|Prpf6|Mtor|Atl3|Atrx",
+        "n_genes": "11",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Top-300 absolute-Hnrnpu-gene score correlations: in 155 MB Glut, U2af2 0.554, Pomp 0.532, Psmc1 0.517, Psmb4 0.516, Cdc40 0.479, Snrnp70 0.466, Prpf6 0.418; in 151 TH Prkcd Grin2c Glut, Psmb4 0.544, Psmc1 0.514, Psmc5 0.496, Pomp 0.493, Prpf6 0.490, Snrnp70 0.454, U2af2 0.451. The most negative correlations in the same restricted analyses were weaker in magnitude, including Atl3 -0.289 in 155 MB Glut and Smad2 -0.251 in 151 TH Prkcd Grin2c Glut.",
+        "description": "Restricted Hnrnpu-signature neighbor analysis nominated spliceosome and proteasome perturbations as the strongest positive comparators and found no strong recurrent negative comparator."
+      },
+      {
+        "target_gene": "U2af2",
+        "evidence_id": "E010",
+        "evidence_slug": "u2af2_spliceosome_and_proteasome_signature_neighbors",
+        "cell_type": "",
+        "genes": "U2af2|Prpf6|Cdc40|Snrnp70|Psmc1|Psmb4|Psmc5|Pomp",
+        "n_genes": "8",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Pearson correlations of Wilcoxon scores with the U2af2 signature were highest in responsive posterior classes. In 155 MB Glut: Psmc1 r=0.373, Prpf6 r=0.368, Psmb4 r=0.353, Cdc40 r=0.350, Pomp r=0.331, Psmc5 r=0.329, Snrnp70 r=0.311. In 151 TH Prkcd Grin2c Glut: Prpf6 r=0.345, Psmc5 r=0.312, Psmb4 r=0.312, Cdc40 r=0.297. In 191 MB P MY GABA: Psmc1 r=0.341, Prpf6 r=0.309, Psmc5 r=0.302, Psmb4 r=0.287.",
+        "description": "Signature-neighbor analysis found convergence with other RNA-splicing perturbations and with proteasome perturbations."
+      },
+      {
+        "target_gene": "U2af2",
+        "evidence_id": "E013",
+        "evidence_slug": "u2af2_no_strong_negative_signature_neighbors",
+        "cell_type": "",
+        "genes": "U2af2",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "The strongest negative same-cell-type correlations with U2af2 were small in magnitude: Cckar in 308 CB GABA r=-0.151, Safe_target_72 in 008 L2-3 IT ENT PPP RSP Glut r=-0.148, and Pde1c in 308 CB GABA r=-0.138; no comparator had r<=-0.20.",
+        "description": "The cross-perturbation search did not uncover a robust opposing signature."
+      }
+    ],
+    "source_claim_ids": [
+      "claim:naa15_f005_d342f750d0b1",
+      "claim:hnrnpu_f004_e10629835cd5",
+      "claim:u2af2_f003_4fb0eb3d19a6"
+    ],
+    "source_cluster_ids": [
+      "C543"
+    ]
+  },
+  "caveats": [
+    "This story rests mostly on same-cell signature correlations, not shared FDR marker rows, and all reported correlations are modest enough to make the relationship hypothesis-generating."
+  ],
+  "prior_expectation": {
+    "summary": "Prior literature and pathway context were taken from the resolved report references; the observed Perturb-seq signal either refines expected gene function by cell type or marks an exploratory response-state neighbor where noted in caveats.",
+    "citations": [
+      {
+        "reference_id": "Naa15:R004",
+        "citation": "Gottlieb L, Marmorstein R. Structure of Human NatA and Its Regulation by the Huntingtin Interacting Protein HYPK. Structure. 2018;26(7):925-935.e8. doi:10.1016/j.str.2018.04.003.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29754825/",
+        "supports": "Structural and biochemical evidence that human NatA contains NAA10 catalytic and NAA15 auxiliary subunits and is regulated by HYPK."
+      },
+      {
+        "reference_id": "Naa15:R006",
+        "citation": "Van Damme P. Charting the N-Terminal Acetylome: A Comprehensive Map of Human NatA Substrates. Int J Mol Sci. 2021;22(19):10692. doi:10.3390/ijms221910692.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34639033/",
+        "supports": "Review and acetylome analysis describing NatA as a major NAA10/NAA15 complex with many mammalian substrates and effects on target protein stability."
+      },
+      {
+        "reference_id": "Hnrnpu:R002",
+        "citation": "QuickGO annotations for UniProtKB:Q00839, heterogeneous nuclear ribonucleoprotein U. Accessed 2025-04-29.",
+        "url": "https://www.ebi.ac.uk/QuickGO/annotations?geneProductId=UniProtKB:Q00839",
+        "supports": "Annotates HNRNPU to RNA processing, alternative mRNA splicing, mRNA splicing via spliceosome, chromatin organization, and RNA polymerase II transcriptional regulation."
+      },
+      {
+        "reference_id": "Hnrnpu:R004",
+        "citation": "Nozawa RS, Boteva L, Soares DC, et al. SAF-A Regulates Interphase Chromosome Structure through Oligomerization with Chromatin-Associated RNAs. Cell. 2017;169(7):1214-1227.e18. doi:10.1016/j.cell.2017.05.029.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28622508/",
+        "supports": "Shows that SAF-A/HNRNPU interacts with chromatin-associated RNAs and organizes interphase chromatin structure."
+      },
+      {
+        "reference_id": "U2af2:R001",
+        "citation": "UniProtKB reviewed entry P26369, U2AF2_MOUSE, splicing factor U2AF 65 kDa subunit.",
+        "url": "https://rest.uniprot.org/uniprotkb/P26369",
+        "supports": "Curated mouse U2af2 function, subunit interactions with U2AF1, PRPF19, SF3B, and CFIm partners, nuclear localization, and RRM-domain annotation."
+      },
+      {
+        "reference_id": "U2af2:R003",
+        "citation": "David CJ, Boyne AR, Millhouse SR, Manley JL. The RNA polymerase II C-terminal domain promotes splicing activation through recruitment of a U2AF65-Prp19 complex. Genes Dev. 2011;25(9):972-983.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/21536736/",
+        "supports": "Primary study linking U2AF65 to PRPF19 recruitment and coupling of RNA polymerase II CTD activity to splicing."
+      },
+      {
+        "reference_id": "U2af2:R008",
+        "citation": "UniProtKB reviewed entries P08621 SNRNP70, O60508 CDC40/PRP17, and O94906 PRPF6.",
+        "url": "https://rest.uniprot.org/uniprotkb/search?query=%28gene_exact%3APRPF6+OR+gene_exact%3ACDC40+OR+gene_exact%3ASNRNP70%29+AND+organism_id%3A9606+AND+reviewed%3Atrue",
+        "supports": "Curated support that the Prpf6, Cdc40, and Snrnp70 perturbation comparators encode spliceosome components or pre-mRNA splicing factors."
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 3,
+    "priority": 3
+  },
+  "report_evidence_ids": [
+    "Naa15:E011",
+    "Hnrnpu:E012",
+    "U2af2:E010",
+    "U2af2:E013"
+  ],
+  "reference_ids": [
+    "Naa15:R004",
+    "Naa15:R006",
+    "Hnrnpu:R002",
+    "Hnrnpu:R004",
+    "U2af2:R001",
+    "U2af2:R003",
+    "U2af2:R008"
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/29754825/",
+    "https://pubmed.ncbi.nlm.nih.gov/34639033/",
+    "https://www.ebi.ac.uk/QuickGO/annotations?geneProductId=UniProtKB:Q00839",
+    "https://pubmed.ncbi.nlm.nih.gov/28622508/",
+    "https://rest.uniprot.org/uniprotkb/P26369",
+    "https://pubmed.ncbi.nlm.nih.gov/21536736/",
+    "https://rest.uniprot.org/uniprotkb/search?query=%28gene_exact%3APRPF6+OR+gene_exact%3ACDC40+OR+gene_exact%3ASNRNP70%29+AND+organism_id%3A9606+AND+reviewed%3Atrue"
+  ]
+}

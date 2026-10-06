@@ -1,0 +1,125 @@
+{
+  "story_id": "S091",
+  "title": "Rbfox1 loss selectively represses a thalamic and midbrain axon-excitability module",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Rbfox1 loss produced its strongest mRNA responses in 151 TH Prkcd Grin2c Glut and 155 MB Glut, with a shared down-regulated core of Adgrb1, Nat8l, Dync1i2, Kcnc3, and Adss and a broader thalamic module containing Grin1, Vamp1, Scn1a, Scn1b, Kcnc3, Cntnap1, and Adgrb1.",
+  "biological_interpretation": "RBFOX1 loss depresses mature axonal and synaptic excitability transcripts in a selective subset of neurons, making these genes better abundance readouts than a generic splicing-factor score.",
+  "targets": [
+    "Rbfox1",
+    "Adgrb1",
+    "Nat8l",
+    "Dync1i2",
+    "Kcnc3",
+    "Adss",
+    "Grin1",
+    "Vamp1",
+    "Scn1a",
+    "Scn1b",
+    "Cntnap1"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "005 L4-5 IT CTX Glut",
+    "052 Pvalb Gaba"
+  ],
+  "support": {
+    "exact_de_rows": [
+      {
+        "target": "Rbfox1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Adgrb1",
+        "logfoldchanges": -0.5130507946014404,
+        "pvals": 2.2979714423570196e-21,
+        "pvals_adj": 3.96606891236398e-17,
+        "score": -9.490559577941895
+      },
+      {
+        "target": "Rbfox1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Dync1i2",
+        "logfoldchanges": -0.46708300709724426,
+        "pvals": 3.0622361418933586e-13,
+        "pvals_adj": 2.6425566786468737e-09,
+        "score": -7.291631698608398
+      },
+      {
+        "target": "Rbfox1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Grin1",
+        "logfoldchanges": -0.24589067697525024,
+        "pvals": 7.042842695533442e-08,
+        "pvals_adj": 0.0003038810552055292,
+        "score": -5.390074729919434
+      },
+      {
+        "target": "Rbfox1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Vamp1",
+        "logfoldchanges": -0.5304454565048218,
+        "pvals": 2.0531759871948727e-07,
+        "pvals_adj": 0.0006812000864714782,
+        "score": -5.194457530975342
+      },
+      {
+        "target": "Rbfox1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Scn1a",
+        "logfoldchanges": -0.31998422741889954,
+        "pvals": 2.7628487196826853e-07,
+        "pvals_adj": 0.0006812000864714782,
+        "score": -5.13894510269165
+      },
+      {
+        "target": "Rbfox1",
+        "cell_type": "155 MB Glut",
+        "gene": "Nat8l",
+        "logfoldchanges": -0.46750688552856445,
+        "pvals": 2.008425483319612e-07,
+        "pvals_adj": 0.0017516482852771996,
+        "score": -5.198555946350098
+      },
+      {
+        "target": "Rbfox1",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Adgrb1",
+        "logfoldchanges": -0.2945109009742737,
+        "pvals": 2.8919825171765636e-06,
+        "pvals_adj": 0.049516524659097116,
+        "score": -4.678346157073975
+      }
+    ],
+    "evidence_summary": "Rbfox1:F001 resolves a 151/155-dominant down-regulated neuronal membrane, ion-channel, vesicle, and adhesion transcript signature."
+  },
+  "caveats": [
+    "Rbfox1 self-RNA was not FDR-depleted.",
+    "RBFOX1 biology is strongly splicing-based; these rows capture only abundance."
+  ],
+  "prior_expectation": {
+    "summary": "Rbfox1:F001 resolves a 151/155-dominant down-regulated neuronal membrane, ion-channel, vesicle, and adhesion transcript signature.",
+    "citations": [
+      "Wamsley 2018 DOI:10.1016/j.neuron.2018.09.026",
+      "Human Protein Atlas RBFOX1"
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 4,
+    "priority": 4
+  },
+  "report_evidence_ids": [
+    "Rbfox1:E001",
+    "Rbfox1:E002",
+    "Rbfox1:E003",
+    "Rbfox1:E004"
+  ],
+  "reference_ids": [
+    "Rbfox1:R003",
+    "Rbfox1:R007"
+  ],
+  "source_urls_or_dois": [
+    "https://doi.org/10.1016/j.neuron.2018.09.026",
+    "https://www.proteinatlas.org/ENSG00000078328-RBFOX1"
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "biological_interpretation": "The adult Zbtb18 response is a restricted thalamic and cortical glutamatergic output, not a generic readout of perturbing associated Dnmt3a/Ctbp1 co-repressors.",
+  "caveats": [
+    "The Zbtb18 transcript increased in the responsive 151 TH cells, so the perturbation does not look like simple depletion of target mRNA.",
+    "Dnmt3a and Ctbp1 are imperfect co-repressor comparators because their own target engagement and downstream signatures differ."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "001 L5-6 IT Glut",
+    "005 L4-5 IT CTX Glut",
+    "007 L2-3 IT CTX Glut",
+    "017 CA3 CA2-FC DG Glut"
+  ],
+  "exact_observed_result": "Zbtb18 perturbation in 151 TH Prkcd Grin2c Glut induced Endou, Pxdn, Clstn2, Man2a2, and Zbtb18 at FDR<0.05, with Pxdn also FDR-supported in 005 L4-5 IT CTX Glut. Candidate co-repressors Dnmt3a and Ctbp1 did not reproduce the thalamic Endou/Pxdn/Clstn2/Man2a2 program.",
+  "preliminary_scores": {
+    "novelty": 5,
+    "priority": 4,
+    "support": 5
+  },
+  "prior_expectation": "ZBTB18/RP58 is a transcriptional repressor with neurodevelopmental and synaptic maturation links; the Endou/Pxdn/Clstn2/Man2a2 output is an adult neuronal candidate rather than a known canonical pathway.",
+  "reference_ids": [
+    "Zbtb18:F001",
+    "Zbtb18:F005"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    {
+      "finding_id": "F001",
+      "gene": "Zbtb18"
+    },
+    {
+      "finding_id": "F005",
+      "gene": "Zbtb18"
+    }
+  ],
+  "source_claim_ids": [
+    "claim:zbtb18_f001_be4b4cbf6731",
+    "claim:zbtb18_f005_94edc55d4936"
+  ],
+  "source_cluster_ids": [
+    "C099"
+  ],
+  "source_urls_or_dois": [
+    "https://doi.org/10.1093/emboj/20.10.2536",
+    "https://doi.org/10.1038/s41380-023-01941-3"
+  ],
+  "status": "grounded",
+  "story_id": "S112",
+  "support": {
+    "exact_de_rows": [
+      {
+        "gene_target": "Ctbp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.09068312495946884,
+        "names": "Clstn2",
+        "pvals": 0.26850205347829914,
+        "pvals_adj": 1.0,
+        "scores": 1.1065187454223633
+      },
+      {
+        "gene_target": "Ctbp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.38313499093055725,
+        "names": "Ctbp1",
+        "pvals": 0.00011724208458663221,
+        "pvals_adj": 0.1278672639768104,
+        "scores": -3.8518223762512207
+      },
+      {
+        "gene_target": "Ctbp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.39034873247146606,
+        "names": "Endou",
+        "pvals": 0.09659404120432168,
+        "pvals_adj": 1.0,
+        "scores": 1.6615948677062988
+      },
+      {
+        "gene_target": "Ctbp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.10755583643913269,
+        "names": "Man2a2",
+        "pvals": 0.028421301796163995,
+        "pvals_adj": 1.0,
+        "scores": -2.1914215087890625
+      },
+      {
+        "gene_target": "Ctbp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.09371987730264664,
+        "names": "Pxdn",
+        "pvals": 0.41279058902258814,
+        "pvals_adj": 1.0,
+        "scores": -0.8189926743507385
+      },
+      {
+        "gene_target": "Dnmt3a",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.028536133468151093,
+        "names": "Clstn2",
+        "pvals": 0.5437959670310768,
+        "pvals_adj": 1.0,
+        "scores": -0.6070827841758728
+      },
+      {
+        "gene_target": "Dnmt3a",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.3360632658004761,
+        "names": "Dnmt3a",
+        "pvals": 1.4916275368892938e-05,
+        "pvals_adj": 0.17291935389494661,
+        "scores": -4.329921245574951
+      },
+      {
+        "gene_target": "Dnmt3a",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.16503316164016724,
+        "names": "Endou",
+        "pvals": 0.5569373639295375,
+        "pvals_adj": 1.0,
+        "scores": -0.5873966217041016
+      },
+      {
+        "gene_target": "Dnmt3a",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.06971993297338486,
+        "names": "Man2a2",
+        "pvals": 0.22986344825398441,
+        "pvals_adj": 1.0,
+        "scores": -1.200710654258728
+      },
+      {
+        "gene_target": "Dnmt3a",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.014890780672430992,
+        "names": "Pxdn",
+        "pvals": 0.8935300464371898,
+        "pvals_adj": 1.0,
+        "scores": 0.13383880257606506
+      },
+      {
+        "gene_target": "Zbtb18",
+        "group_name": "005 L4-5 IT CTX Glut",
+        "logfoldchanges": 0.13431669771671295,
+        "names": "Clstn2",
+        "pvals": 0.2602051983958581,
+        "pvals_adj": 1.0,
+        "scores": 1.125906229019165
+      },
+      {
+        "gene_target": "Zbtb18",
+        "group_name": "005 L4-5 IT CTX Glut",
+        "logfoldchanges": 0.8228219747543335,
+        "names": "Endou",
+        "pvals": 0.47961629108327686,
+        "pvals_adj": 1.0,
+        "scores": 0.7069198489189148
+      },
+      {
+        "gene_target": "Zbtb18",
+        "group_name": "005 L4-5 IT CTX Glut",
+        "logfoldchanges": 0.17330302298069,
+        "names": "Man2a2",
+        "pvals": 0.09407294216097867,
+        "pvals_adj": 1.0,
+        "scores": 1.6742933988571167
+      },
+      {
+        "gene_target": "Zbtb18",
+        "group_name": "005 L4-5 IT CTX Glut",
+        "logfoldchanges": 0.8553394675254822,
+        "names": "Pxdn",
+        "pvals": 7.977327688993068e-09,
+        "pvals_adj": 0.0001365878046909393,
+        "scores": 5.768936634063721
+      },
+      {
+        "gene_target": "Zbtb18",
+        "group_name": "005 L4-5 IT CTX Glut",
+        "logfoldchanges": 0.39386746287345886,
+        "names": "Zbtb18",
+        "pvals": 0.0002680941502084902,
+        "pvals_adj": 0.8257346369041542,
+        "scores": 3.6443252563476562
+      },
+      {
+        "gene_target": "Zbtb18",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.38949209451675415,
+        "names": "Clstn2",
+        "pvals": 2.6809593602763537e-08,
+        "pvals_adj": 0.00015423559199669861,
+        "scores": 5.561089515686035
+      },
+      {
+        "gene_target": "Zbtb18",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 1.3078585863113403,
+        "names": "Endou",
+        "pvals": 8.513159304859581e-13,
+        "pvals_adj": 1.469286164425715e-08,
+        "scores": 7.1526288986206055
+      },
+      {
+        "gene_target": "Zbtb18",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.2705416679382324,
+        "names": "Man2a2",
+        "pvals": 3.4362911271103944e-06,
+        "pvals_adj": 0.014826737140699575,
+        "scores": 4.6428542137146
+      },
+      {
+        "gene_target": "Zbtb18",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.697206974029541,
+        "names": "Pxdn",
+        "pvals": 4.0312686313181734e-11,
+        "pvals_adj": 3.478783265396018e-07,
+        "scores": 6.60292387008667
+      },
+      {
+        "gene_target": "Zbtb18",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.5483984351158142,
+        "names": "Zbtb18",
+        "pvals": 8.049970426572898e-06,
+        "pvals_adj": 0.027786887918444327,
+        "scores": 4.463850498199463
+      }
+    ]
+  },
+  "targets": [
+    "Zbtb18",
+    "Pxdn",
+    "Clstn2",
+    "Endou",
+    "Man2a2",
+    "Dnmt3a",
+    "Ctbp1"
+  ],
+  "title": "Zbtb18 loss induces a thalamic Endou-Pxdn-Clstn2-Man2a2 program"
+}

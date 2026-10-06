@@ -1,0 +1,3380 @@
+{
+  "story_id": "S126",
+  "title": "Atp6v0c loss exposes a selective V-ATPase vulnerability program that converges with Pitpna in thalamic glutamatergic neurons",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Atp6v0c depletion was efficient in nearly all cell classes but produced most downstream FDR genes in 151 TH Prkcd Grin2c Glut and 052 Pvalb Gaba; in 151 TH it overlapped a Pitpna vulnerability branch involving calcium/synaptic genes, while Atp6v1b2 produced a smaller 052 Pvalb stress signature with Dusp1, Scg2, Gadd45g, and Ptprn induction.",
+  "biological_interpretation": "The V0c proteolipid subunit creates a selective V-ATPase liability state, and partial convergence with Pitpna links vesicle/endolysosomal acidification to phosphoinositide/calcium stress in thalamic neurons.",
+  "targets": [
+    "Atp6v0c",
+    "Pitpna",
+    "Atp6v1b2",
+    "Atp6v0a1",
+    "Tubb3",
+    "Scg2",
+    "Jun",
+    "Kcnc1",
+    "Gria2"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "052 Pvalb Gaba",
+    "217 P MY Pineal Glut",
+    "155 MB Glut",
+    "191 MB P MY GABA"
+  ],
+  "support": {
+    "source_findings": [
+      {
+        "target_gene": "Atp6v0c",
+        "finding_id": "F001",
+        "finding_type": "cell_type_selectivity",
+        "direction": "broad_target_depletion_with_selective_downstream_response",
+        "confidence": "high",
+        "literature_status": "refines_cell_type_context",
+        "summary": "Atp6v0c knockdown was broadly achieved but the downstream transcriptome was sharply concentrated in five neuronal groups.",
+        "why_it_matters": "HPA and UniProt describe ATP6V0C as broadly detected and central to V-ATPase biology, so the dataset argues that some neuronal cell classes are buffered at the mRNA level whereas TH Prkcd, Pvalb, midbrain glutamatergic, brainstem/midbrain GABAergic, and pineal/brainstem glutamatergic cells are transcriptionally vulnerable.",
+        "genes": "Atp6v0c",
+        "n_genes": "1",
+        "cell_types": "151 TH Prkcd Grin2c Glut|052 Pvalb Gaba|155 MB Glut|191 MB P MY GABA|217 P MY Pineal Glut",
+        "n_cell_types": "5",
+        "evidence_ids": "E001|E002",
+        "ref_ids": "R001|R003",
+        "main_caveats": "Significant rows are mRNA changes only; response size is not the same as loss of lysosomal acidification or neuronal firing defects."
+      },
+      {
+        "target_gene": "Pitpna",
+        "finding_id": "F001",
+        "finding_type": "cell_type_selectivity",
+        "direction": "selective_downstream_response_after_loss_of_Pitpna",
+        "confidence": "high",
+        "literature_status": "refines_cell_type_context",
+        "summary": "Pitpna knockdown was measured across 22 neuronal classes, but FDR-scale downstream transcription was concentrated in 151 TH Prkcd Grin2c Glut and 217 P MY Pineal Glut, with a Jun-only significant response in 191 MB P MY GABA.",
+        "why_it_matters": "The response is not simply proportional to on-target knockdown or target expression; it points to a small set of vulnerable neuronal states for a broadly expressed lipid-transfer protein.",
+        "genes": "Pitpna|Jun",
+        "n_genes": "2",
+        "cell_types": "151 TH Prkcd Grin2c Glut|217 P MY Pineal Glut|191 MB P MY GABA",
+        "n_cell_types": "3",
+        "evidence_ids": "E001|E002|E003|E004",
+        "ref_ids": "R009",
+        "main_caveats": "Cell classes with small perturbed-cell counts may be underpowered, and the assay measures mRNA rather than acute lipid signaling."
+      },
+      {
+        "target_gene": "Pitpna",
+        "finding_id": "F003",
+        "finding_type": "disease_mechanism_refinement",
+        "direction": "Prkcg_Atp2a2_Gabra4_down_and_Scg2_Kctd16_Pip5kl1_up",
+        "confidence": "moderate",
+        "literature_status": "extends_known_mechanism",
+        "summary": "In 151 TH Prkcd Grin2c Glut, Pitpna loss suppressed Prkcg, Atp2a2, Ramp3, Gabra4, Lrrc7, Tubb3, and Tubb4b while inducing Scg2, Kctd16, Cnnm1, and Pip5kl1.",
+        "why_it_matters": "The directionally mixed but coherent signature connects a lipid-transfer perturbation to PKC/calcium handling and synaptic genes in a neuronal class relevant to the known neurodegenerative loss-of-function biology of Pitpna.",
+        "genes": "Pitpna|Prkcg|Atp2a2|Ramp3|Gabra4|Scg2|Kctd16|Pip5kl1|Lrrc7|Tubb3|Tubb4b",
+        "n_genes": "11",
+        "cell_types": "151 TH Prkcd Grin2c Glut",
+        "n_cell_types": "1",
+        "evidence_ids": "E002",
+        "ref_ids": "R001|R003|R004|R005|R006|R008",
+        "main_caveats": "The genes are transcript changes downstream of partial knockdown; the experiment did not directly measure phosphoinositides, PKC activity, cytosolic calcium, or neuronal firing."
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "finding_id": "F005",
+        "finding_type": "cross_perturbation_contrast",
+        "direction": "Atp6v0c_much_stronger_than_related_subunits",
+        "confidence": "moderate",
+        "literature_status": "contradicts_expected_relationship",
+        "summary": "Atp6v0c was not interchangeable with other assayed V-ATPase subunits: even robust Atp6ap1, Atp6ap2, or Atp6v0a1 transcript depletion produced far fewer FDR genes in the same responsive cell types.",
+        "why_it_matters": "The contrast preserves an unexpected perturbation-specific effect inside a complex that structural literature treats as an obligate assembly; V0c may be uniquely limiting, or the other subunit proteins may be buffered by slower turnover or weaker functional engagement.",
+        "genes": "Atp6v0c|Atp6ap1|Atp6ap2|Atp6v0a1|Atp6v1a|Atp6v1b2|Atp6v1e1",
+        "n_genes": "7",
+        "comparators": "Atp6ap1|Atp6ap2|Atp6v0a1|Atp6v1a|Atp6v1b2|Atp6v1e1",
+        "cell_types": "151 TH Prkcd Grin2c Glut|052 Pvalb Gaba",
+        "n_cell_types": "2",
+        "evidence_ids": "E009",
+        "ref_ids": "R001|R005",
+        "main_caveats": "The assay reports transcript knockdown; residual protein, gRNA potency, and subunit stoichiometry could differ across targets."
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "finding_id": "F003",
+        "finding_type": "pathway_uncoupling",
+        "direction": "canonical transcripts mostly unchanged at FDR level",
+        "confidence": "moderate",
+        "literature_status": "extends_known_mechanism",
+        "summary": "The Pvalb response was not a transcriptional induction of measured V-ATPase, Ragulator-mTORC1, or TFEB/MITF lysosome-biogenesis genes.",
+        "why_it_matters": "V-ATPase is embedded in lysosomal acidification, amino-acid sensing, and autophagy biology; the dataset instead highlights a compact neuronal/secretory and stress-response mRNA signature.",
+        "genes": "Atp6v1a|Atp6v1e1|Atp6v0a1|Atp6v0c|Atp6ap1|Atp6ap2|Mtor|Rptor|Rraga|Rragb|Rragc|Rragd|Lamtor1|Lamtor2|Lamtor3|Lamtor4|Lamtor5|Tfeb|Tfe3|Mitf|Lamp1|Lamp2|Ctsb|Ctsd|Mcoln1|Vps35",
+        "n_genes": "26",
+        "cell_types": "052 Pvalb Gaba",
+        "n_cell_types": "1",
+        "evidence_ids": "E002|E007",
+        "ref_ids": "R002|R004|R008",
+        "main_caveats": "The absence of mRNA changes does not test V-ATPase assembly, pump activity, lysosomal pH, autophagic flux, mTORC1 phosphorylation, or TFEB localization."
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "finding_id": "F001",
+        "finding_type": "cell_type_selectivity",
+        "direction": "Atp6v1b2 down with a mixed downstream Pvalb signature",
+        "confidence": "high",
+        "literature_status": "refines_cell_type_context",
+        "summary": "Atp6v1b2 loss produced a genome-wide FDR-resolved response only in 052 Pvalb Gaba.",
+        "why_it_matters": "ATP6V1B2 is a core proton-pump subunit with broad expected endolysosomal and synaptic-vesicle roles, but the dataset localizes the clearest loss-of-transcript consequence to Pvalb inhibitory neurons.",
+        "genes": "Atp6v1b2|Hcn3|Dusp1|Serpini1|Scg2|Gadd45g|Slc6a17|Ptprn|Lpcat1",
+        "n_genes": "9",
+        "comparators": "005 L4-5 IT CTX Glut",
+        "cell_types": "052 Pvalb Gaba|005 L4-5 IT CTX Glut",
+        "n_cell_types": "2",
+        "evidence_ids": "E001|E002|E004",
+        "ref_ids": "R001|R002|R005|R007",
+        "main_caveats": "Most non-Pvalb cell classes had fewer than 35 perturbed cells; this is an mRNA signature rather than a direct lysosomal-pH or synaptic-vesicle assay."
+      }
+    ],
+    "evidence_ledger_rows": [
+      {
+        "target_gene": "Atp6v0c",
+        "evidence_id": "E001",
+        "evidence_slug": "atp6v0c_target_engagement",
+        "cell_type": "all measured Atp6v0c cell types",
+        "genes": "Atp6v0c",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "23 cell types; on-target score negative in 23/23; target FDR <0.05 in 22/23; median on-target logFC -1.26, range -2.31 to -0.525. Strongest measurements included 155 MB Glut logFC -1.73, FDR 5.18e-45; 151 TH Prkcd Grin2c Glut logFC -1.43, FDR 1.04e-34; 005 L4-5 IT CTX Glut logFC -1.21, FDR 3.96e-27.",
+        "description": "The Atp6v0c transcript was directly measured and strongly depleted across almost every cell type."
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "evidence_id": "E002",
+        "evidence_slug": "atp6v0c_downstream_cell_type_skew",
+        "cell_type": "all measured Atp6v0c cell types",
+        "n_genes": "0",
+        "has_genes": "0",
+        "has_cell_type": "1",
+        "statistics": "791 FDR<0.05 downstream genes after excluding Atp6v0c; 771/791, or 97.5%, were in five groups: 151 TH Prkcd Grin2c Glut 536; 052 Pvalb Gaba 157; 155 MB Glut 32; 191 MB P MY GABA 23; 217 P MY Pineal Glut 23. The other 18 groups each had <=6 downstream FDR genes.",
+        "description": "The downstream transcriptional response to Atp6v0c knockdown was concentrated in a small subset of cell classes."
+      },
+      {
+        "target_gene": "Pitpna",
+        "evidence_id": "E001",
+        "evidence_slug": "pitpna_target_engagement_all_cell_types",
+        "genes": "Pitpna",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Pitpna transcript was present for 22 cell types; logFC was negative in 21/22 rows; median logFC -0.455, range -0.976 to 0.016; 5/22 rows had FDR<0.05 and 14/22 had nominal p<0.05.",
+        "description": "Aggregate on-target readout for Pitpna perturbation across all measured cell types."
+      },
+      {
+        "target_gene": "Pitpna",
+        "evidence_id": "E002",
+        "evidence_slug": "pitpna_th_prkcd_broad_signature",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Pitpna|Prkcg|Atp2a2|Ramp3|Scg2|Gabra4|Kctd16|Pip5kl1|Tubb3|Tubb4b",
+        "n_genes": "10",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "189 perturbed cells versus 23679 controls; 21 FDR<0.05 genes including Pitpna; 20 FDR<0.05 non-target genes. Pitpna logFC -0.788 FDR 2.48e-16; Prkcg -0.376 FDR 5.90e-05; Atp2a2 -0.226 FDR 7.06e-04; Ramp3 -0.337 FDR 0.00579; Scg2 +0.358 FDR 0.0142; Gabra4 -0.224 FDR 0.0142; Kctd16 +0.285 FDR 0.0150; Pip5kl1 +0.564 FDR 0.0300.",
+        "description": "The largest Pitpna downstream transcriptome was concentrated in the thalamic Prkcd/Grin2c glutamatergic class."
+      },
+      {
+        "target_gene": "Pitpna",
+        "evidence_id": "E003",
+        "evidence_slug": "pitpna_p_my_pineal_jun_grn_cx3cl1_signature",
+        "cell_type": "217 P MY Pineal Glut",
+        "genes": "Cadm3|Ptprn|Jun|Crem|Pomgnt2|Aifm3|Pitpna|Cx3cl1|Grn|Cdh18|Tmem63b|Tpt1",
+        "n_genes": "12",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "29 perturbed cells versus 3465 controls; 12 FDR<0.05 genes including Pitpna; Cadm3 logFC +0.637 FDR 0.0244; Ptprn +0.909 FDR 0.0244; Jun +2.207 FDR 0.0244; Crem +1.555 FDR 0.0244; Aifm3 -1.163 FDR 0.0244; Pitpna -0.808 FDR 0.0285; Cx3cl1 -0.848 FDR 0.0285; Grn +1.196 FDR 0.0285.",
+        "description": "A small but FDR-supported posterior glutamatergic response coupled immediate-early induction to altered neuron-to-glia signaling transcripts."
+      },
+      {
+        "target_gene": "Pitpna",
+        "evidence_id": "E004",
+        "evidence_slug": "pitpna_mb_p_my_gaba_jun_only_signature",
+        "cell_type": "191 MB P MY GABA",
+        "genes": "Pitpna|Jun",
+        "n_genes": "2",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "74 perturbed cells versus 10309 controls; only Pitpna and Jun met FDR<0.05. Pitpna logFC -0.933 FDR 2.35e-05; Jun logFC +1.599 FDR 6.86e-05.",
+        "description": "A midbrain/pons/myelencephalon GABA class shared the Jun component of the posterior Pitpna response but had little additional FDR-supported transcriptomic remodeling."
+      },
+      {
+        "target_gene": "Pitpna",
+        "evidence_id": "E002",
+        "evidence_slug": "pitpna_th_prkcd_broad_signature",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Pitpna|Prkcg|Atp2a2|Ramp3|Scg2|Gabra4|Kctd16|Pip5kl1|Tubb3|Tubb4b",
+        "n_genes": "10",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "189 perturbed cells versus 23679 controls; 21 FDR<0.05 genes including Pitpna; 20 FDR<0.05 non-target genes. Pitpna logFC -0.788 FDR 2.48e-16; Prkcg -0.376 FDR 5.90e-05; Atp2a2 -0.226 FDR 7.06e-04; Ramp3 -0.337 FDR 0.00579; Scg2 +0.358 FDR 0.0142; Gabra4 -0.224 FDR 0.0142; Kctd16 +0.285 FDR 0.0150; Pip5kl1 +0.564 FDR 0.0300.",
+        "description": "The largest Pitpna downstream transcriptome was concentrated in the thalamic Prkcd/Grin2c glutamatergic class."
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "evidence_id": "E009",
+        "evidence_slug": "vatpase_member_contrast",
+        "cell_type": "052 Pvalb Gaba and 151 TH Prkcd Grin2c Glut",
+        "genes": "Atp6v0c|Atp6ap1|Atp6ap2|Atp6v0a1|Atp6v1a|Atp6v1b2|Atp6v1e1",
+        "n_genes": "7",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "In 151 TH Prkcd Grin2c Glut, Atp6v0c produced 537 FDR<0.05 genes, whereas Atp6ap1, Atp6ap2, Atp6v0a1, Atp6v1a, Atp6v1b2, and Atp6v1e1 produced respectively 2, 2, 1, 0, 0, and 0; Atp6ap1, Atp6ap2, and Atp6v0a1 themselves were strongly depleted, with own-transcript FDR 7.91e-28, 1.90e-28, and 4.52e-12. In 052 Pvalb Gaba, Atp6v0c produced 158 FDR genes whereas the six related perturbations produced 0-9 FDR genes.",
+        "description": "Several V-ATPase complex or accessory subunit perturbations were present in the dataset but did not phenocopy Atp6v0c at transcriptome scale."
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "evidence_id": "E002",
+        "evidence_slug": "pvalb_only_fdr_resolved_signature",
+        "cell_type": "052 Pvalb Gaba",
+        "genes": "Atp6v1b2|Hcn3|Dusp1|Serpini1|Scg2|Gadd45g|Slc6a17|Ptprn|Lpcat1",
+        "n_genes": "9",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "64 perturbed versus 13,710 control cells; 9 genes at FDR<0.05. Atp6v1b2 logFC -0.694, score -5.885, p=3.98e-09, FDR=6.67e-05; Hcn3 logFC 0.994, FDR=0.00273; Dusp1 logFC 1.139, FDR=0.0114; Serpini1 logFC -0.727, FDR=0.0323; Scg2 logFC 0.861, FDR=0.0340; Gadd45g logFC 1.871, FDR=0.0402; Slc6a17 logFC 0.473, FDR=0.0490; Ptprn logFC 0.545, FDR=0.0490; Lpcat1 logFC 1.007, FDR=0.0490.",
+        "description": "The only Atp6v1b2 cell class with multiple genome-wide FDR-significant genes was Pvalb GABA."
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "evidence_id": "E007",
+        "evidence_slug": "pvalb_canonical_vatpase_mtor_autophagy_transcripts_unchanged",
+        "cell_type": "052 Pvalb Gaba",
+        "genes": "Atp6v1a|Atp6v1e1|Atp6v0a1|Atp6v0c|Atp6ap1|Atp6ap2|Mtor|Rptor|Rraga|Rragb|Rragc|Rragd|Lamtor1|Lamtor2|Lamtor3|Lamtor4|Lamtor5|Tfeb|Tfe3|Mitf|Lamp1|Lamp2|Ctsb|Ctsd|Mcoln1|Vps35|Rab5b|Rab7",
+        "n_genes": "28",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "In 052 Pvalb Gaba, all listed V-ATPase, Ragulator/Rag, mTOR, TFEB/MITF, lysosomal, and endosomal marker transcripts had FDR=1.0 except Ctsd, which had nominal p=0.0126 and FDR=0.884. Other measured V-ATPase genes were not FDR significant: Atp6v1a p=0.0644, Atp6v1e1 p=0.336, Atp6v0a1 p=0.595, Atp6v0c p=0.278, Atp6ap1 p=0.899, Atp6ap2 p=0.827.",
+        "description": "The Pvalb response did not transcriptionally induce other measured pump subunits, mTORC1/Ragulator transcripts, or canonical lysosome-biogenesis regulators."
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "evidence_id": "E001",
+        "evidence_slug": "atp6v1b2_self_depletion_across_cells",
+        "genes": "Atp6v1b2",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "14 Atp6v1b2 tests, 22-64 perturbed cells each; target logFC was negative in all 14. The target row reached FDR 6.67e-05 in 052 Pvalb Gaba, had nominal p<0.001 in 005, 022, 046, 052, and 308, and had nominal p<0.05 in 7/14 tests.",
+        "description": "Direct on-target transcript quantification for every cell class in which an Atp6v1b2 perturbation was tested."
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "evidence_id": "E002",
+        "evidence_slug": "pvalb_only_fdr_resolved_signature",
+        "cell_type": "052 Pvalb Gaba",
+        "genes": "Atp6v1b2|Hcn3|Dusp1|Serpini1|Scg2|Gadd45g|Slc6a17|Ptprn|Lpcat1",
+        "n_genes": "9",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "64 perturbed versus 13,710 control cells; 9 genes at FDR<0.05. Atp6v1b2 logFC -0.694, score -5.885, p=3.98e-09, FDR=6.67e-05; Hcn3 logFC 0.994, FDR=0.00273; Dusp1 logFC 1.139, FDR=0.0114; Serpini1 logFC -0.727, FDR=0.0323; Scg2 logFC 0.861, FDR=0.0340; Gadd45g logFC 1.871, FDR=0.0402; Slc6a17 logFC 0.473, FDR=0.0490; Ptprn logFC 0.545, FDR=0.0490; Lpcat1 logFC 1.007, FDR=0.0490.",
+        "description": "The only Atp6v1b2 cell class with multiple genome-wide FDR-significant genes was Pvalb GABA."
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "evidence_id": "E004",
+        "evidence_slug": "same_n_l45_nominal_target_no_fdr",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "genes": "Atp6v1b2|Camk2a|Atf7|Extl1|Ccdc85a",
+        "n_genes": "5",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "64 perturbed versus 15,039 control cells, matching the Pvalb perturbed-cell count; Atp6v1b2 was the top-ranked gene by nominal p with logFC -0.580, score -4.053, p=5.06e-05, FDR=0.456. No gene reached FDR<0.05.",
+        "description": "A same-sample-size cortical glutamatergic class showed nominal on-target depletion but no FDR-resolved downstream transcriptome."
+      }
+    ],
+    "exact_de_rows": [
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Atf3",
+        "score": 0.087314,
+        "logfoldchange": 1.020729,
+        "pval": 0.9304217770387248,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Atp2a2",
+        "score": -2.241936,
+        "logfoldchange": -0.154017,
+        "pval": 0.024965489830184887,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Atp6v0a1",
+        "score": -5.689062,
+        "logfoldchange": -0.367605,
+        "pval": 1.2773884164892136e-08,
+        "pvals_adj": 0.00010935722233564157
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Atp6v0c",
+        "score": -11.649254,
+        "logfoldchange": -1.206233,
+        "pval": 2.3147726753593755e-31,
+        "pvals_adj": 3.963353774750322e-27
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Atp6v1a",
+        "score": 2.509631,
+        "logfoldchange": 0.228661,
+        "pval": 0.012085731485487815,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Atp6v1b2",
+        "score": 1.219032,
+        "logfoldchange": 0.08219,
+        "pval": 0.22283209320753816,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Cadm3",
+        "score": 2.715426,
+        "logfoldchange": 0.179833,
+        "pval": 0.006619056240082018,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Crem",
+        "score": 0.52907,
+        "logfoldchange": 0.097928,
+        "pval": 0.5967569496255187,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Ddit3",
+        "score": 1.533496,
+        "logfoldchange": 0.605723,
+        "pval": 0.1251537653331112,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Dusp1",
+        "score": 1.545933,
+        "logfoldchange": 0.262203,
+        "pval": 0.12212064671422199,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Ecel1",
+        "score": 0.442275,
+        "logfoldchange": 1.269351,
+        "pval": 0.6582900965804466,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Gabrd",
+        "score": -1.365649,
+        "logfoldchange": -0.184027,
+        "pval": 0.17204918535741365,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Gadd45g",
+        "score": -0.021009,
+        "logfoldchange": 0.134892,
+        "pval": 0.9832388724153751,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Gria2",
+        "score": -0.523039,
+        "logfoldchange": -0.022431,
+        "pval": 0.6009473718026269,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Hcn3",
+        "score": -1.069702,
+        "logfoldchange": -0.192474,
+        "pval": 0.28475337351461494,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Jun",
+        "score": -0.188067,
+        "logfoldchange": 0.015416,
+        "pval": 0.8508245163662819,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Jund",
+        "score": 2.181325,
+        "logfoldchange": 0.196093,
+        "pval": 0.02915937001894435,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Kcnab3",
+        "score": 0.214481,
+        "logfoldchange": 0.015984,
+        "pval": 0.8301719473830216,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Kcnc1",
+        "score": 0.988996,
+        "logfoldchange": 0.145118,
+        "pval": 0.3226648729328022,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Pitpna",
+        "score": -0.470123,
+        "logfoldchange": -0.052011,
+        "pval": 0.6382671569823706,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Prkcg",
+        "score": -0.304748,
+        "logfoldchange": -0.053158,
+        "pval": 0.760557821755974,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Ptprn",
+        "score": 0.753247,
+        "logfoldchange": 0.023983,
+        "pval": 0.45130138490508354,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Ramp3",
+        "score": -1.071607,
+        "logfoldchange": -0.651812,
+        "pval": 0.2838966678768594,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Scg2",
+        "score": 1.552686,
+        "logfoldchange": 0.305215,
+        "pval": 0.12049813037715296,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Serpini1",
+        "score": 0.564959,
+        "logfoldchange": 0.095805,
+        "pval": 0.572101350360704,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Slc6a17",
+        "score": 0.222908,
+        "logfoldchange": -0.029093,
+        "pval": 0.8236074741251851,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Stmn4",
+        "score": 2.882311,
+        "logfoldchange": 0.284247,
+        "pval": 0.003947700351164235,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Tubb3",
+        "score": -3.16001,
+        "logfoldchange": -0.38147,
+        "pval": 0.0015776382178177802,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Atf3",
+        "score": 4.681042,
+        "logfoldchange": 6.345102,
+        "pval": 2.854206856875033e-06,
+        "pvals_adj": 0.0014897426410379856
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Atp2a2",
+        "score": -3.171521,
+        "logfoldchange": -0.184814,
+        "pval": 0.001516430519958387,
+        "pvals_adj": 0.1020792851637519
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Atp6v0a1",
+        "score": -6.743765,
+        "logfoldchange": -0.449663,
+        "pval": 1.5433384719905204e-11,
+        "pvals_adj": 1.2934719733752553e-07
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Atp6v0c",
+        "score": -10.317166,
+        "logfoldchange": -1.037062,
+        "pval": 5.893686446425999e-25,
+        "pvals_adj": 9.87899722149926e-21
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Atp6v1a",
+        "score": 3.319928,
+        "logfoldchange": 0.309117,
+        "pval": 0.0009004062915042141,
+        "pvals_adj": 0.07546305129096818
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Atp6v1b2",
+        "score": 0.955389,
+        "logfoldchange": 0.041819,
+        "pval": 0.33938104069870145,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Cadm3",
+        "score": 1.149485,
+        "logfoldchange": 0.101958,
+        "pval": 0.25035585767517055,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Crem",
+        "score": 5.901482,
+        "logfoldchange": 1.268305,
+        "pval": 3.602505875599774e-09,
+        "pvals_adj": 8.626457640971915e-06
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Ddit3",
+        "score": 4.215147,
+        "logfoldchange": 0.783041,
+        "pval": 2.4961588583172198e-05,
+        "pvals_adj": 0.007607384506020589
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Dusp1",
+        "score": 2.528664,
+        "logfoldchange": 0.528108,
+        "pval": 0.011449761380120299,
+        "pvals_adj": 0.3690786543338009
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Ecel1",
+        "score": 5.940844,
+        "logfoldchange": 5.486316,
+        "pval": 2.835593515398731e-09,
+        "pvals_adj": 7.921703084185589e-06
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Gabrd",
+        "score": -5.444682,
+        "logfoldchange": -0.628748,
+        "pval": 5.189811614186003e-08,
+        "pvals_adj": 6.624520249578404e-05
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Gadd45g",
+        "score": 3.936431,
+        "logfoldchange": 1.174743,
+        "pval": 8.27025122297846e-05,
+        "pvals_adj": 0.017547588734122144
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Gria2",
+        "score": -5.19393,
+        "logfoldchange": -0.487731,
+        "pval": 2.0590037453089946e-07,
+        "pvals_adj": 0.00021570637986793355
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Hcn3",
+        "score": 3.172621,
+        "logfoldchange": 0.518747,
+        "pval": 0.0015106974817092386,
+        "pvals_adj": 0.1020792851637519
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Jun",
+        "score": 5.433274,
+        "logfoldchange": 1.691054,
+        "pval": 5.532948543974326e-08,
+        "pvals_adj": 6.624520249578404e-05
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Jund",
+        "score": 2.988526,
+        "logfoldchange": 0.476186,
+        "pval": 0.002803265356316509,
+        "pvals_adj": 0.15610742160324692
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Kcnab3",
+        "score": -5.686724,
+        "logfoldchange": -0.515164,
+        "pval": 1.2949952389194943e-08,
+        "pvals_adj": 1.9733372904335058e-05
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Kcnc1",
+        "score": -6.173054,
+        "logfoldchange": -0.450759,
+        "pval": 6.698336742505538e-10,
+        "pvals_adj": 3.244147598105571e-06
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Pitpna",
+        "score": -2.41557,
+        "logfoldchange": -0.186212,
+        "pval": 0.01571062603622811,
+        "pvals_adj": 0.42680958447205114
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Prkcg",
+        "score": 0.057188,
+        "logfoldchange": -0.098659,
+        "pval": 0.9543954876643737,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Ptprn",
+        "score": 5.983164,
+        "logfoldchange": 0.688872,
+        "pval": 2.1884349357468517e-09,
+        "pvals_adj": 7.336509278597746e-06
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Ramp3",
+        "score": 0.389905,
+        "logfoldchange": 0.092623,
+        "pval": 0.6966065167449351,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Scg2",
+        "score": 5.708304,
+        "logfoldchange": 0.892719,
+        "pval": 1.1410741342181763e-08,
+        "pvals_adj": 1.9733372904335058e-05
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Serpini1",
+        "score": -2.040894,
+        "logfoldchange": -0.260446,
+        "pval": 0.04126138648015943,
+        "pvals_adj": 0.6809362810485406
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Slc6a17",
+        "score": -0.255265,
+        "logfoldchange": -0.008089,
+        "pval": 0.7985185750326341,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Stmn4",
+        "score": 4.609894,
+        "logfoldchange": 0.865003,
+        "pval": 4.028737932730047e-06,
+        "pvals_adj": 0.0017400991864592317
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Tubb3",
+        "score": -2.760273,
+        "logfoldchange": -0.238992,
+        "pval": 0.005775301808566266,
+        "pvals_adj": 0.2390261948523154
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Atf3",
+        "score": 2.292352,
+        "logfoldchange": 5.580226,
+        "pval": 0.021885343061996073,
+        "pvals_adj": 0.3068674427637226
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Atp2a2",
+        "score": -10.14259,
+        "logfoldchange": -0.577396,
+        "pval": 3.574949211016348e-24,
+        "pvals_adj": 3.085002421646558e-20
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Atp6v0a1",
+        "score": -9.900284,
+        "logfoldchange": -0.576954,
+        "pval": 4.1509369666063057e-23,
+        "pvals_adj": 2.3880340368886076e-19
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Atp6v0c",
+        "score": -13.054154,
+        "logfoldchange": -1.433256,
+        "pval": 6.01745487334209e-39,
+        "pvals_adj": 1.0385525365901112e-34
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Atp6v1a",
+        "score": -0.084066,
+        "logfoldchange": -0.032938,
+        "pval": 0.9330040785794317,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Atp6v1b2",
+        "score": -0.843753,
+        "logfoldchange": -0.065701,
+        "pval": 0.3988075713315403,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cadm3",
+        "score": -3.098519,
+        "logfoldchange": -0.22388,
+        "pval": 0.0019449043412155555,
+        "pvals_adj": 0.059097014128590274
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Crem",
+        "score": 6.382523,
+        "logfoldchange": 1.104402,
+        "pval": 1.7419377430997233e-10,
+        "pvals_adj": 7.819610372417508e-08
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ddit3",
+        "score": 3.170399,
+        "logfoldchange": 0.855246,
+        "pval": 0.0015222980095318571,
+        "pvals_adj": 0.049109049245813684
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Dusp1",
+        "score": 5.797813,
+        "logfoldchange": 1.133351,
+        "pval": 6.718509350233981e-09,
+        "pvals_adj": 2.0342939100997943e-06
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ecel1",
+        "score": 0.651315,
+        "logfoldchange": 2.492296,
+        "pval": 0.5148433734229201,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gabrd",
+        "score": -8.041128,
+        "logfoldchange": -0.696738,
+        "pval": 8.901481170822006e-16,
+        "pvals_adj": 1.7070073725246335e-12
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gadd45g",
+        "score": -0.127553,
+        "logfoldchange": 0.086532,
+        "pval": 0.8985024655056697,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gria2",
+        "score": -3.26103,
+        "logfoldchange": -0.226403,
+        "pval": 0.0011100842134240695,
+        "pvals_adj": 0.039421694319930076
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Hcn3",
+        "score": 2.198639,
+        "logfoldchange": 0.485976,
+        "pval": 0.027903615912484553,
+        "pvals_adj": 0.3512680576466601
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Jun",
+        "score": 2.672306,
+        "logfoldchange": 0.487166,
+        "pval": 0.00753319389848629,
+        "pvals_adj": 0.1557070580766166
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Jund",
+        "score": 5.905624,
+        "logfoldchange": 0.704149,
+        "pval": 3.51313857512742e-09,
+        "pvals_adj": 1.1440237484551724e-06
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kcnab3",
+        "score": 2.493882,
+        "logfoldchange": 0.4047,
+        "pval": 0.012635461996768255,
+        "pvals_adj": 0.21285679701568508
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kcnc1",
+        "score": -3.253258,
+        "logfoldchange": -0.233734,
+        "pval": 0.0011408982555947906,
+        "pvals_adj": 0.04018523059859284
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Pitpna",
+        "score": -3.84866,
+        "logfoldchange": -0.327508,
+        "pval": 0.00011876557690373959,
+        "pvals_adj": 0.007117274624241812
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Prkcg",
+        "score": -9.17516,
+        "logfoldchange": -0.855778,
+        "pval": 4.509031590071235e-20,
+        "pvals_adj": 1.5564275242607887e-16
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ptprn",
+        "score": 5.050336,
+        "logfoldchange": 0.332876,
+        "pval": 4.41032332481516e-07,
+        "pvals_adj": 6.736085863980961e-05
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ramp3",
+        "score": -7.080939,
+        "logfoldchange": -0.744155,
+        "pval": 1.4318067876958268e-12,
+        "pvals_adj": 1.5444720843026423e-09
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Scg2",
+        "score": 7.42912,
+        "logfoldchange": 0.682339,
+        "pval": 1.0932264423621965e-13,
+        "pvals_adj": 1.572332930727429e-10
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Serpini1",
+        "score": 0.407265,
+        "logfoldchange": 0.121077,
+        "pval": 0.6838133150602606,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Slc6a17",
+        "score": 2.597905,
+        "logfoldchange": 0.083733,
+        "pval": 0.009379436373283128,
+        "pvals_adj": 0.1780135918826718
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Stmn4",
+        "score": 4.444594,
+        "logfoldchange": 0.349319,
+        "pval": 8.805794782575e-06,
+        "pvals_adj": 0.000808400064640755
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Tubb3",
+        "score": -7.460941,
+        "logfoldchange": -0.705888,
+        "pval": 8.590671665529754e-14,
+        "pvals_adj": 1.3478763843216183e-10
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "155 MB Glut",
+        "gene": "Atf3",
+        "score": 1.248638,
+        "logfoldchange": 4.262263,
+        "pval": 0.21179755090259844,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "155 MB Glut",
+        "gene": "Atp2a2",
+        "score": -1.688637,
+        "logfoldchange": -0.089618,
+        "pval": 0.09128899776589501,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "155 MB Glut",
+        "gene": "Atp6v0a1",
+        "score": -8.334002,
+        "logfoldchange": -0.438145,
+        "pval": 7.815503299760702e-17,
+        "pvals_adj": 6.816291202886295e-13
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "155 MB Glut",
+        "gene": "Atp6v0c",
+        "score": -14.752433,
+        "logfoldchange": -1.731271,
+        "pval": 2.967716071461896e-49,
+        "pvals_adj": 5.176587143450985e-45
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "155 MB Glut",
+        "gene": "Atp6v1a",
+        "score": 1.406961,
+        "logfoldchange": 0.110579,
+        "pval": 0.15943902366814688,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "155 MB Glut",
+        "gene": "Atp6v1b2",
+        "score": 0.546743,
+        "logfoldchange": 0.021633,
+        "pval": 0.5845554233616967,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "155 MB Glut",
+        "gene": "Cadm3",
+        "score": 1.408744,
+        "logfoldchange": 0.081781,
+        "pval": 0.15891104431206327,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "155 MB Glut",
+        "gene": "Crem",
+        "score": 1.060279,
+        "logfoldchange": 0.372754,
+        "pval": 0.2890176130369231,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "155 MB Glut",
+        "gene": "Ddit3",
+        "score": 2.294511,
+        "logfoldchange": 0.68869,
+        "pval": 0.02176116947372921,
+        "pvals_adj": 0.8608775264275045
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "155 MB Glut",
+        "gene": "Dusp1",
+        "score": 1.099432,
+        "logfoldchange": 0.356272,
+        "pval": 0.2715795438754215,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "155 MB Glut",
+        "gene": "Ecel1",
+        "score": 1.247677,
+        "logfoldchange": 1.161417,
+        "pval": 0.21214919509863672,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "155 MB Glut",
+        "gene": "Gabrd",
+        "score": -0.656604,
+        "logfoldchange": -0.312369,
+        "pval": 0.5114352584613788,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "155 MB Glut",
+        "gene": "Gadd45g",
+        "score": 0.458681,
+        "logfoldchange": 0.28989,
+        "pval": 0.6464631487973816,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "155 MB Glut",
+        "gene": "Gria2",
+        "score": -1.365854,
+        "logfoldchange": -0.116525,
+        "pval": 0.17198482077969257,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "155 MB Glut",
+        "gene": "Hcn3",
+        "score": 2.91118,
+        "logfoldchange": 0.453447,
+        "pval": 0.003600671472332629,
+        "pvals_adj": 0.40407474344579425
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "155 MB Glut",
+        "gene": "Jun",
+        "score": 3.02239,
+        "logfoldchange": 0.956717,
+        "pval": 0.0025078751027412475,
+        "pvals_adj": 0.3294667694095764
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "155 MB Glut",
+        "gene": "Jund",
+        "score": 2.555644,
+        "logfoldchange": 0.313379,
+        "pval": 0.010599159465378963,
+        "pvals_adj": 0.6589978614558681
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "155 MB Glut",
+        "gene": "Kcnab3",
+        "score": -3.413816,
+        "logfoldchange": -0.530393,
+        "pval": 0.0006405986952245111,
+        "pvals_adj": 0.14702582948422563
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "155 MB Glut",
+        "gene": "Kcnc1",
+        "score": -2.501808,
+        "logfoldchange": -0.17202,
+        "pval": 0.012356087721516003,
+        "pvals_adj": 0.7160373359681185
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "155 MB Glut",
+        "gene": "Pitpna",
+        "score": -2.366009,
+        "logfoldchange": -0.230215,
+        "pval": 0.017981016896940417,
+        "pvals_adj": 0.8155691888391698
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "155 MB Glut",
+        "gene": "Prkcg",
+        "score": -1.094538,
+        "logfoldchange": -0.153864,
+        "pval": 0.2737190171321361,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "155 MB Glut",
+        "gene": "Ptprn",
+        "score": 2.573457,
+        "logfoldchange": 0.199726,
+        "pval": 0.010068807021778954,
+        "pvals_adj": 0.6526856823100552
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "155 MB Glut",
+        "gene": "Ramp3",
+        "score": -0.034141,
+        "logfoldchange": -0.158499,
+        "pval": 0.9727650396580204,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "155 MB Glut",
+        "gene": "Scg2",
+        "score": 2.377271,
+        "logfoldchange": 0.302299,
+        "pval": 0.017441288214449832,
+        "pvals_adj": 0.8155691888391698
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "155 MB Glut",
+        "gene": "Serpini1",
+        "score": -2.191411,
+        "logfoldchange": -0.276891,
+        "pval": 0.028422021968412314,
+        "pvals_adj": 0.9476855091877446
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "155 MB Glut",
+        "gene": "Slc6a17",
+        "score": 0.818184,
+        "logfoldchange": 0.133097,
+        "pval": 0.41325238022918553,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "155 MB Glut",
+        "gene": "Stmn4",
+        "score": 4.412188,
+        "logfoldchange": 0.508041,
+        "pval": 1.0233119020019553e-05,
+        "pvals_adj": 0.00939454184558953
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "155 MB Glut",
+        "gene": "Tubb3",
+        "score": -6.238322,
+        "logfoldchange": -0.632832,
+        "pval": 4.4229072761291586e-10,
+        "pvals_adj": 2.5716257205840303e-06
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Atf3",
+        "score": 1.715362,
+        "logfoldchange": 4.854821,
+        "pval": 0.08627882920132418,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Atp2a2",
+        "score": -1.834558,
+        "logfoldchange": -0.114081,
+        "pval": 0.06657118969521422,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Atp6v0a1",
+        "score": -6.224668,
+        "logfoldchange": -0.430032,
+        "pval": 4.825762931781165e-10,
+        "pvals_adj": 4.125544730379718e-06
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Atp6v0c",
+        "score": -10.574576,
+        "logfoldchange": -1.708953,
+        "pval": 3.9094151400747224e-26,
+        "pvals_adj": 6.68431800649976e-22
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Atp6v1a",
+        "score": 1.236075,
+        "logfoldchange": 0.146451,
+        "pval": 0.2164306666530007,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Atp6v1b2",
+        "score": 1.259473,
+        "logfoldchange": 0.097894,
+        "pval": 0.2078593884102664,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Cadm3",
+        "score": 1.585534,
+        "logfoldchange": 0.141286,
+        "pval": 0.11284505684436583,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Crem",
+        "score": 4.452917,
+        "logfoldchange": 1.031446,
+        "pval": 8.47114698637653e-06,
+        "pvals_adj": 0.011045595654192941
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Ddit3",
+        "score": 2.872461,
+        "logfoldchange": 1.032481,
+        "pval": 0.004072880202564759,
+        "pvals_adj": 0.3464582373306082
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Dusp1",
+        "score": 1.907945,
+        "logfoldchange": 0.65359,
+        "pval": 0.056398367907651396,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Ecel1",
+        "score": 4.246052,
+        "logfoldchange": 2.687151,
+        "pval": 2.1756982137045305e-05,
+        "pvals_adj": 0.01875529390318662
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Gabrd",
+        "score": -0.253168,
+        "logfoldchange": -0.083601,
+        "pval": 0.8001385865035715,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Gadd45g",
+        "score": -0.719019,
+        "logfoldchange": -0.368543,
+        "pval": 0.47212922524339473,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Gria2",
+        "score": -4.548115,
+        "logfoldchange": -0.323569,
+        "pval": 5.412853607293966e-06,
+        "pvals_adj": 0.009254897097751222
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Hcn3",
+        "score": 0.473345,
+        "logfoldchange": 0.053981,
+        "pval": 0.6359670252647578,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Jun",
+        "score": 5.819155,
+        "logfoldchange": 1.688824,
+        "pval": 5.914571793491092e-09,
+        "pvals_adj": 3.37091161750369e-05
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Jund",
+        "score": 2.966301,
+        "logfoldchange": 0.51253,
+        "pval": 0.0030140482046328984,
+        "pvals_adj": 0.32208872626758306
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Kcnab3",
+        "score": -3.32731,
+        "logfoldchange": -0.586165,
+        "pval": 0.0008768883053484741,
+        "pvals_adj": 0.19221841339548987
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Kcnc1",
+        "score": -4.622031,
+        "logfoldchange": -0.380756,
+        "pval": 3.8000192184006407e-06,
+        "pvals_adj": 0.0072191920662460175
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Pitpna",
+        "score": -2.389013,
+        "logfoldchange": -0.269322,
+        "pval": 0.01689371530482778,
+        "pvals_adj": 0.6558539435479548
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Prkcg",
+        "score": 0.483484,
+        "logfoldchange": 0.173869,
+        "pval": 0.6287522938072501,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Ptprn",
+        "score": 3.177874,
+        "logfoldchange": 0.312707,
+        "pval": 0.001483591241380412,
+        "pvals_adj": 0.24294036377391437
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Ramp3",
+        "score": -0.307564,
+        "logfoldchange": -1.126832,
+        "pval": 0.7584140557714965,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Scg2",
+        "score": 2.993702,
+        "logfoldchange": 0.564961,
+        "pval": 0.0027561456686256377,
+        "pvals_adj": 0.3184356543985071
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Serpini1",
+        "score": 1.420264,
+        "logfoldchange": 0.216197,
+        "pval": 0.1555307275592285,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Slc6a17",
+        "score": 2.021657,
+        "logfoldchange": 0.255638,
+        "pval": 0.04321181927789016,
+        "pvals_adj": 0.9121062925105928
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Stmn4",
+        "score": 4.361969,
+        "logfoldchange": 0.87054,
+        "pval": 1.288974046754345e-05,
+        "pvals_adj": 0.014102285510922173
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Tubb3",
+        "score": -4.757889,
+        "logfoldchange": -0.67633,
+        "pval": 1.9562782841153365e-06,
+        "pvals_adj": 0.005695247777269742
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Atf3",
+        "score": 0.864336,
+        "logfoldchange": 4.197402,
+        "pval": 0.3874034335541844,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Atp2a2",
+        "score": 0.690913,
+        "logfoldchange": 0.043714,
+        "pval": 0.48962025178706925,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Atp6v0a1",
+        "score": -3.169327,
+        "logfoldchange": -0.429794,
+        "pval": 0.0015279228989333073,
+        "pvals_adj": 0.2487992510767906
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Atp6v0c",
+        "score": -7.567178,
+        "logfoldchange": -2.306719,
+        "pval": 3.814183515459761e-14,
+        "pvals_adj": 6.397148592129111e-10
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Atp6v1a",
+        "score": 0.58111,
+        "logfoldchange": 0.081691,
+        "pval": 0.5611660586340961,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Atp6v1b2",
+        "score": 1.469783,
+        "logfoldchange": 0.203939,
+        "pval": 0.14162055980657443,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Cadm3",
+        "score": 2.388733,
+        "logfoldchange": 0.321763,
+        "pval": 0.016906603771426717,
+        "pvals_adj": 0.6465065079528818
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Crem",
+        "score": 2.477169,
+        "logfoldchange": 0.970199,
+        "pval": 0.01324293045113364,
+        "pvals_adj": 0.6065065811855622
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Ddit3",
+        "score": 0.348858,
+        "logfoldchange": 0.748122,
+        "pval": 0.7271960230981632,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Dusp1",
+        "score": 1.778495,
+        "logfoldchange": 1.367824,
+        "pval": 0.07532262415743007,
+        "pvals_adj": 0.9739476814734237
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Ecel1",
+        "score": 4.130627,
+        "logfoldchange": 3.319628,
+        "pval": 3.6177591035266575e-05,
+        "pvals_adj": 0.03792315980271819
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Gabrd",
+        "score": -0.032864,
+        "logfoldchange": -0.208833,
+        "pval": 0.9737829487217222,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Gadd45g",
+        "score": 0.079621,
+        "logfoldchange": 0.067899,
+        "pval": 0.9365385134513013,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Gria2",
+        "score": -1.991393,
+        "logfoldchange": -0.363378,
+        "pval": 0.04643770299255075,
+        "pvals_adj": 0.8540056519638829
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Hcn3",
+        "score": 1.95872,
+        "logfoldchange": 0.61798,
+        "pval": 0.050145532040768694,
+        "pvals_adj": 0.8633217657632729
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Jun",
+        "score": 5.056283,
+        "logfoldchange": 1.99688,
+        "pval": 4.2750645427480215e-07,
+        "pvals_adj": 0.0023900460836989938
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Jund",
+        "score": 4.690466,
+        "logfoldchange": 1.187227,
+        "pval": 2.725831739133911e-06,
+        "pvals_adj": 0.0108090948950088
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Kcnab3",
+        "score": -2.691312,
+        "logfoldchange": -0.762908,
+        "pval": 0.0071171515732458175,
+        "pvals_adj": 0.5091210182684179
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Kcnc1",
+        "score": -2.695049,
+        "logfoldchange": -0.479369,
+        "pval": 0.007037825345142496,
+        "pvals_adj": 0.5091210182684179
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Pitpna",
+        "score": -2.204866,
+        "logfoldchange": -0.28685,
+        "pval": 0.02746349975962917,
+        "pvals_adj": 0.7393544429670955
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Prkcg",
+        "score": -0.062183,
+        "logfoldchange": -0.010198,
+        "pval": 0.95041700235899,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Ptprn",
+        "score": 3.339396,
+        "logfoldchange": 0.663854,
+        "pval": 0.0008396060438101734,
+        "pvals_adj": 0.18775830089045636
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Ramp3",
+        "score": -0.494112,
+        "logfoldchange": -24.755121,
+        "pval": 0.6212274345497972,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Scg2",
+        "score": 4.335956,
+        "logfoldchange": 1.182023,
+        "pval": 1.4512837639519856e-05,
+        "pvals_adj": 0.020380515666247906
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Serpini1",
+        "score": 2.617152,
+        "logfoldchange": 0.726189,
+        "pval": 0.00886667050284718,
+        "pvals_adj": 0.5330171959632721
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Slc6a17",
+        "score": 1.202367,
+        "logfoldchange": 0.172985,
+        "pval": 0.2292214716243528,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Stmn4",
+        "score": 5.119999,
+        "logfoldchange": 1.550127,
+        "pval": 3.055367932349364e-07,
+        "pvals_adj": 0.0023900460836989938
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Tubb3",
+        "score": -4.101212,
+        "logfoldchange": -0.875889,
+        "pval": 4.109923242899974e-05,
+        "pvals_adj": 0.03829535146106575
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Atf3",
+        "score": 1.0442,
+        "logfoldchange": 6.138592,
+        "pval": 0.2963926694983635,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Atp2a2",
+        "score": 0.690297,
+        "logfoldchange": 0.021126,
+        "pval": 0.4900077413095696,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Atp6v0a1",
+        "score": -1.491723,
+        "logfoldchange": -0.147376,
+        "pval": 0.13577174962662464,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Atp6v0c",
+        "score": -0.704518,
+        "logfoldchange": -0.145842,
+        "pval": 0.4811101362531113,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Atp6v1a",
+        "score": 0.947967,
+        "logfoldchange": 0.166465,
+        "pval": 0.3431461638081429,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Atp6v1b2",
+        "score": -4.052973,
+        "logfoldchange": -0.579815,
+        "pval": 5.057090847983997e-05,
+        "pvals_adj": 0.45593113429111665
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Cadm3",
+        "score": 1.347452,
+        "logfoldchange": 0.121218,
+        "pval": 0.17783462561883856,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Crem",
+        "score": 2.259966,
+        "logfoldchange": 0.563797,
+        "pval": 0.02382337237186429,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Ddit3",
+        "score": 1.197723,
+        "logfoldchange": 0.691103,
+        "pval": 0.2310250455697338,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Dusp1",
+        "score": 0.810678,
+        "logfoldchange": 0.368269,
+        "pval": 0.417550693113414,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Ecel1",
+        "score": 1.046743,
+        "logfoldchange": 2.487761,
+        "pval": 0.29521808532286675,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Gabrd",
+        "score": -0.323651,
+        "logfoldchange": -0.041016,
+        "pval": 0.7462026044395913,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Gadd45g",
+        "score": 0.659684,
+        "logfoldchange": 0.430253,
+        "pval": 0.5094566211494334,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Gria2",
+        "score": -0.037163,
+        "logfoldchange": -0.04958,
+        "pval": 0.9703549829322243,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Hcn3",
+        "score": 3.034644,
+        "logfoldchange": 0.707479,
+        "pval": 0.0024081960713681935,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Jun",
+        "score": 1.094551,
+        "logfoldchange": 0.378441,
+        "pval": 0.27371345474948117,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Jund",
+        "score": 0.170114,
+        "logfoldchange": 0.018561,
+        "pval": 0.8649204304685147,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Kcnab3",
+        "score": -1.036888,
+        "logfoldchange": -0.101121,
+        "pval": 0.299787832771958,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Kcnc1",
+        "score": -2.417539,
+        "logfoldchange": -0.48441,
+        "pval": 0.0156258608940845,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Pitpna",
+        "score": 0.412127,
+        "logfoldchange": 0.011117,
+        "pval": 0.6802466770027762,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Prkcg",
+        "score": -0.389128,
+        "logfoldchange": -0.088478,
+        "pval": 0.6971817060989367,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Ptprn",
+        "score": 0.481755,
+        "logfoldchange": 0.057151,
+        "pval": 0.6299798404445702,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Ramp3",
+        "score": 0.170631,
+        "logfoldchange": 0.031838,
+        "pval": 0.8645137487668542,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Scg2",
+        "score": 1.171865,
+        "logfoldchange": 0.603511,
+        "pval": 0.2412512663117814,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Serpini1",
+        "score": -0.337111,
+        "logfoldchange": -0.092241,
+        "pval": 0.7360333298225206,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Slc6a17",
+        "score": 1.903807,
+        "logfoldchange": 0.182857,
+        "pval": 0.05693538341592614,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Stmn4",
+        "score": 2.69535,
+        "logfoldchange": 0.382237,
+        "pval": 0.007031477020843752,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Tubb3",
+        "score": 0.799085,
+        "logfoldchange": 0.066131,
+        "pval": 0.42424109973420276,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Atf3",
+        "score": 2.264134,
+        "logfoldchange": 5.299486,
+        "pval": 0.02356586216700479,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Atp2a2",
+        "score": -0.789981,
+        "logfoldchange": -0.089417,
+        "pval": 0.4295391016017672,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Atp6v0a1",
+        "score": 0.531874,
+        "logfoldchange": 0.050679,
+        "pval": 0.5948134472670592,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Atp6v0c",
+        "score": -1.085631,
+        "logfoldchange": -0.054933,
+        "pval": 0.277642477329445,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Atp6v1a",
+        "score": 1.849333,
+        "logfoldchange": 0.243727,
+        "pval": 0.06440980839008544,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Atp6v1b2",
+        "score": -5.885082,
+        "logfoldchange": -0.69447,
+        "pval": 3.9785648303999346e-09,
+        "pvals_adj": 6.668870368716371e-05
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Cadm3",
+        "score": -0.346395,
+        "logfoldchange": -0.099011,
+        "pval": 0.7290455999303691,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Crem",
+        "score": 1.881062,
+        "logfoldchange": 0.602803,
+        "pval": 0.05996345527253753,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Ddit3",
+        "score": 0.997326,
+        "logfoldchange": 0.392747,
+        "pval": 0.31860616283185283,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Dusp1",
+        "score": 4.749399,
+        "logfoldchange": 1.139277,
+        "pval": 2.0402174104567657e-06,
+        "pvals_adj": 0.011399374744692103
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Ecel1",
+        "score": 2.651302,
+        "logfoldchange": 3.950148,
+        "pval": 0.008018202524095266,
+        "pvals_adj": 0.731939732627411
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Gabrd",
+        "score": -0.992947,
+        "logfoldchange": -0.250362,
+        "pval": 0.3207360216817241,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Gadd45g",
+        "score": 4.338064,
+        "logfoldchange": 1.870642,
+        "pval": 1.4374351847622618e-05,
+        "pvals_adj": 0.04015714761164172
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Gria2",
+        "score": -3.789994,
+        "logfoldchange": -0.416013,
+        "pval": 0.0001506507727257531,
+        "pvals_adj": 0.14854166190759255
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Hcn3",
+        "score": 5.107957,
+        "logfoldchange": 0.993803,
+        "pval": 3.2566037948496e-07,
+        "pvals_adj": 0.00272935964046345
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Jun",
+        "score": 0.535025,
+        "logfoldchange": 0.361921,
+        "pval": 0.5926328127982436,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Jund",
+        "score": 2.181722,
+        "logfoldchange": 0.425478,
+        "pval": 0.029130046832128952,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Kcnab3",
+        "score": -2.681063,
+        "logfoldchange": -0.393249,
+        "pval": 0.007338876124172367,
+        "pvals_adj": 0.7193815297858317
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Kcnc1",
+        "score": -3.332608,
+        "logfoldchange": -0.432332,
+        "pval": 0.0008603605781849309,
+        "pvals_adj": 0.36053410028839533
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Pitpna",
+        "score": -0.600642,
+        "logfoldchange": -0.088524,
+        "pval": 0.548078213814253,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Prkcg",
+        "score": -0.697564,
+        "logfoldchange": -0.237256,
+        "pval": 0.4854496634488491,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Ptprn",
+        "score": 4.22523,
+        "logfoldchange": 0.545204,
+        "pval": 2.3869733354660813e-05,
+        "pvals_adj": 0.04895114494799482
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Ramp3",
+        "score": -0.511377,
+        "logfoldchange": -0.315621,
+        "pval": 0.6090870523456656,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Scg2",
+        "score": 4.41441,
+        "logfoldchange": 0.861235,
+        "pval": 1.0128573080913205e-05,
+        "pvals_adj": 0.03395502839645343
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Serpini1",
+        "score": -4.473001,
+        "logfoldchange": -0.726521,
+        "pval": 7.712926424561612e-06,
+        "pvals_adj": 0.03232101818212543
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Slc6a17",
+        "score": 4.23996,
+        "logfoldchange": 0.47263,
+        "pval": 2.2355955897094737e-05,
+        "pvals_adj": 0.04895114494799482
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Stmn4",
+        "score": 1.867435,
+        "logfoldchange": 0.506979,
+        "pval": 0.061840931208073435,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Tubb3",
+        "score": -2.255753,
+        "logfoldchange": -0.327959,
+        "pval": 0.024086118341395398,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Atf3",
+        "score": 0.365996,
+        "logfoldchange": 2.122966,
+        "pval": 0.7143680384279378,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Atp2a2",
+        "score": -5.289314,
+        "logfoldchange": -0.225889,
+        "pval": 1.2277609652804986e-07,
+        "pvals_adj": 0.0007063308833258708
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Atp6v0a1",
+        "score": -0.619432,
+        "logfoldchange": -0.016632,
+        "pval": 0.5356319995833214,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Atp6v0c",
+        "score": 1.049111,
+        "logfoldchange": 0.05767,
+        "pval": 0.2941269209628471,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Atp6v1a",
+        "score": 1.161444,
+        "logfoldchange": 0.080763,
+        "pval": 0.24546149716377008,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Atp6v1b2",
+        "score": 0.326006,
+        "logfoldchange": 0.046344,
+        "pval": 0.7444195377372143,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cadm3",
+        "score": -1.727717,
+        "logfoldchange": -0.09787,
+        "pval": 0.08403904085380513,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Crem",
+        "score": 2.455628,
+        "logfoldchange": 0.455683,
+        "pval": 0.014063861468229842,
+        "pvals_adj": 0.957123163230301
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ddit3",
+        "score": -1.723249,
+        "logfoldchange": -0.235928,
+        "pval": 0.08484347167045375,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Dusp1",
+        "score": 3.671031,
+        "logfoldchange": 0.649437,
+        "pval": 0.00024157417818563868,
+        "pvals_adj": 0.13797885980403382
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ecel1",
+        "score": 0.241067,
+        "logfoldchange": 0.911475,
+        "pval": 0.8095033777939548,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gabrd",
+        "score": -2.870846,
+        "logfoldchange": -0.191411,
+        "pval": 0.004093756266742289,
+        "pvals_adj": 0.6197476831725429
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gadd45g",
+        "score": 0.904378,
+        "logfoldchange": 0.232426,
+        "pval": 0.36579504126754414,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gria2",
+        "score": 0.098061,
+        "logfoldchange": -0.017368,
+        "pval": 0.9218838133486085,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Hcn3",
+        "score": 0.37553,
+        "logfoldchange": 0.118613,
+        "pval": 0.7072665306112073,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Jun",
+        "score": 3.497251,
+        "logfoldchange": 0.499349,
+        "pval": 0.00047007891279659815,
+        "pvals_adj": 0.18616972820230385
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Jund",
+        "score": 1.598982,
+        "logfoldchange": 0.193796,
+        "pval": 0.10982452467747823,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kcnab3",
+        "score": 2.637945,
+        "logfoldchange": 0.384044,
+        "pval": 0.008341007318673719,
+        "pvals_adj": 0.7866527066283591
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kcnc1",
+        "score": 1.901761,
+        "logfoldchange": 0.12093,
+        "pval": 0.0572023783270025,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Pitpna",
+        "score": -9.297692,
+        "logfoldchange": -0.788314,
+        "pval": 1.4352752351409518e-20,
+        "pvals_adj": 2.477141528329769e-16
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Prkcg",
+        "score": -5.794744,
+        "logfoldchange": -0.376459,
+        "pval": 6.842559636338808e-09,
+        "pvals_adj": 5.904786838178574e-05
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ptprn",
+        "score": 1.813223,
+        "logfoldchange": 0.088846,
+        "pval": 0.06979739051007812,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ramp3",
+        "score": -4.833354,
+        "logfoldchange": -0.336721,
+        "pval": 1.3425155858586612e-06,
+        "pvals_adj": 0.005792619124083658
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Scg2",
+        "score": 4.516532,
+        "logfoldchange": 0.358389,
+        "pval": 6.286066257970099e-06,
+        "pvals_adj": 0.014233597988384729
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Serpini1",
+        "score": 0.329266,
+        "logfoldchange": 0.029188,
+        "pval": 0.7419549958658014,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Slc6a17",
+        "score": -0.812046,
+        "logfoldchange": -0.047124,
+        "pval": 0.4167654805241491,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Stmn4",
+        "score": 4.292821,
+        "logfoldchange": 0.254455,
+        "pval": 1.7641738017545364e-05,
+        "pvals_adj": 0.02537322970373462
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Tubb3",
+        "score": -4.124828,
+        "logfoldchange": -0.259949,
+        "pval": 3.710116038672889e-05,
+        "pvals_adj": 0.03557382928414189
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Atf3",
+        "score": 0.903221,
+        "logfoldchange": 3.864068,
+        "pval": 0.3664088658155483,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Atp2a2",
+        "score": -2.09072,
+        "logfoldchange": -0.17585,
+        "pval": 0.03655315814223162,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Atp6v0a1",
+        "score": 1.158367,
+        "logfoldchange": 0.083926,
+        "pval": 0.24671420293522128,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Atp6v0c",
+        "score": -0.028218,
+        "logfoldchange": 0.006006,
+        "pval": 0.9774884918735239,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Atp6v1a",
+        "score": 1.022085,
+        "logfoldchange": 0.101088,
+        "pval": 0.3067405274586614,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Atp6v1b2",
+        "score": 2.203708,
+        "logfoldchange": 0.148722,
+        "pval": 0.027544896757247007,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Cadm3",
+        "score": 1.48725,
+        "logfoldchange": 0.185602,
+        "pval": 0.13694884445303712,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Crem",
+        "score": 2.637152,
+        "logfoldchange": 0.716012,
+        "pval": 0.008360542645438973,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Ddit3",
+        "score": 2.822143,
+        "logfoldchange": 0.714476,
+        "pval": 0.004770385452280646,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Dusp1",
+        "score": 1.166988,
+        "logfoldchange": 0.360437,
+        "pval": 0.24321511756892567,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Ecel1",
+        "score": 2.72669,
+        "logfoldchange": 2.45332,
+        "pval": 0.006397320225139357,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Gabrd",
+        "score": -0.152454,
+        "logfoldchange": -0.142345,
+        "pval": 0.8788291730508854,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Gadd45g",
+        "score": 0.165998,
+        "logfoldchange": 0.028931,
+        "pval": 0.8681584237666424,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Gria2",
+        "score": -1.4472,
+        "logfoldchange": -0.154584,
+        "pval": 0.14784089195152036,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Hcn3",
+        "score": 0.908202,
+        "logfoldchange": 0.16157,
+        "pval": 0.36377128763865785,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Jun",
+        "score": 5.767978,
+        "logfoldchange": 1.598818,
+        "pval": 8.022846207612182e-09,
+        "pvals_adj": 6.858731222887654e-05
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Jund",
+        "score": 2.192868,
+        "logfoldchange": 0.425151,
+        "pval": 0.02831686585020339,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Kcnab3",
+        "score": -0.788228,
+        "logfoldchange": -0.132788,
+        "pval": 0.4305631264895904,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Kcnc1",
+        "score": -2.217661,
+        "logfoldchange": -0.170927,
+        "pval": 0.026577953014369857,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Pitpna",
+        "score": -6.058776,
+        "logfoldchange": -0.93278,
+        "pval": 1.371612662081085e-09,
+        "pvals_adj": 2.345183329626239e-05
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Prkcg",
+        "score": 0.224866,
+        "logfoldchange": 0.040903,
+        "pval": 0.8220833938454042,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Ptprn",
+        "score": 2.333626,
+        "logfoldchange": 0.3248,
+        "pval": 0.019615303645155215,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Ramp3",
+        "score": 0.457244,
+        "logfoldchange": 0.836225,
+        "pval": 0.6474956181414473,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Scg2",
+        "score": 2.460061,
+        "logfoldchange": 0.457394,
+        "pval": 0.013891335924238,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Serpini1",
+        "score": 1.271627,
+        "logfoldchange": 0.225894,
+        "pval": 0.20350553994462517,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Slc6a17",
+        "score": -1.110884,
+        "logfoldchange": -0.119819,
+        "pval": 0.26661845541828133,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Stmn4",
+        "score": 2.875893,
+        "logfoldchange": 0.588379,
+        "pval": 0.004028859616724333,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Tubb3",
+        "score": -0.538375,
+        "logfoldchange": -0.006606,
+        "pval": 0.5903182269976502,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Atf3",
+        "score": 2.447397,
+        "logfoldchange": 6.032524,
+        "pval": 0.014389229955283668,
+        "pvals_adj": 0.7202912319442961
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Atp2a2",
+        "score": -2.668568,
+        "logfoldchange": -0.674878,
+        "pval": 0.007617527916656397,
+        "pvals_adj": 0.6009936891458769
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Atp6v0a1",
+        "score": 1.277212,
+        "logfoldchange": 0.123794,
+        "pval": 0.20152736439344499,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Atp6v0c",
+        "score": 0.898827,
+        "logfoldchange": 0.14147,
+        "pval": 0.36874490534820037,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Atp6v1a",
+        "score": 0.928403,
+        "logfoldchange": 0.217463,
+        "pval": 0.35319875711001014,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Atp6v1b2",
+        "score": 0.984689,
+        "logfoldchange": 0.13425,
+        "pval": 0.32477682980879863,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Cadm3",
+        "score": 4.671866,
+        "logfoldchange": 0.636874,
+        "pval": 2.984753850239963e-06,
+        "pvals_adj": 0.02441480191708919
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Crem",
+        "score": 4.451249,
+        "logfoldchange": 1.555279,
+        "pval": 8.537217506040813e-06,
+        "pvals_adj": 0.02441480191708919
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Ddit3",
+        "score": 1.884625,
+        "logfoldchange": 1.292022,
+        "pval": 0.059480487116888234,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Dusp1",
+        "score": 1.282388,
+        "logfoldchange": 1.278562,
+        "pval": 0.19970660759968295,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Ecel1",
+        "score": 3.548818,
+        "logfoldchange": 3.466879,
+        "pval": 0.0003869646147543434,
+        "pvals_adj": 0.24618066893330515
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Gabrd",
+        "score": 0.539111,
+        "logfoldchange": 0.549072,
+        "pval": 0.5898100928614654,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Gadd45g",
+        "score": -0.417758,
+        "logfoldchange": -0.024525,
+        "pval": 0.6761240063785846,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Gria2",
+        "score": -2.353309,
+        "logfoldchange": -0.441534,
+        "pval": 0.018607170656196697,
+        "pvals_adj": 0.7705665833227926
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Hcn3",
+        "score": 1.648758,
+        "logfoldchange": 0.573734,
+        "pval": 0.09919721586720498,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Jun",
+        "score": 4.490252,
+        "logfoldchange": 2.206653,
+        "pval": 7.113884588229909e-06,
+        "pvals_adj": 0.02441480191708919
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Jund",
+        "score": 3.494103,
+        "logfoldchange": 0.955423,
+        "pval": 0.00047565806580167016,
+        "pvals_adj": 0.24618066893330515
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Kcnab3",
+        "score": -1.050865,
+        "logfoldchange": -0.382534,
+        "pval": 0.2933206462948589,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Kcnc1",
+        "score": -1.969008,
+        "logfoldchange": -0.403898,
+        "pval": 0.048952124698396327,
+        "pvals_adj": 0.9927751335447439
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Pitpna",
+        "score": -4.348104,
+        "logfoldchange": -0.808095,
+        "pval": 1.3731968589292933e-05,
+        "pvals_adj": 0.028473179393252345
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Prkcg",
+        "score": -0.00037,
+        "logfoldchange": -0.062022,
+        "pval": 0.9997050241496245,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Ptprn",
+        "score": 4.596817,
+        "logfoldchange": 0.909283,
+        "pval": 4.2899281452229985e-06,
+        "pvals_adj": 0.02441480191708919
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Ramp3",
+        "score": 0.425799,
+        "logfoldchange": 0.449661,
+        "pval": 0.6702543199667483,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Scg2",
+        "score": 3.609633,
+        "logfoldchange": 1.095166,
+        "pval": 0.0003066304010762566,
+        "pvals_adj": 0.23376386758413523
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Serpini1",
+        "score": -0.009705,
+        "logfoldchange": -0.025144,
+        "pval": 0.9922570052886288,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Slc6a17",
+        "score": 1.816046,
+        "logfoldchange": 0.340648,
+        "pval": 0.06936329902547335,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Stmn4",
+        "score": 3.35944,
+        "logfoldchange": 1.56603,
+        "pval": 0.0007810050082729781,
+        "pvals_adj": 0.2842765456118023
+      },
+      {
+        "target_gene": "Pitpna",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Tubb3",
+        "score": -1.113898,
+        "logfoldchange": -0.140444,
+        "pval": 0.26532281798223545,
+        "pvals_adj": 1.0
+      }
+    ]
+  },
+  "caveats": [
+    "The screen measured mRNA rather than organelle pH, synaptic-vesicle filling, V-ATPase assembly, or lysosomal flux.",
+    "Other V-ATPase subunits had different guide strength and stoichiometric constraints, so weaker signatures are not proof those subunits are biologically dispensable."
+  ],
+  "prior_expectation": {
+    "citations": [
+      {
+        "target_gene": "Atp6v0c",
+        "ref_id": "R001",
+        "ref_slug": "uniprot_mouse_atp6v0c",
+        "source": "UniProtKB",
+        "source_type": "database",
+        "citation": "UniProtKB accession P63082, V-type proton ATPase 16 kDa proteolipid subunit c, Mus musculus.",
+        "url": "https://www.uniprot.org/uniprotkb/P63082",
+        "description": "Curated mouse Atp6v0c record describing the c subunit as a proton-conducting V0 pore component of the V-ATPase and placing it on synaptic-vesicle, clathrin-coated-vesicle, and lysosome membranes."
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "ref_id": "R003",
+        "ref_slug": "hpa_atp6v0c_expression",
+        "source": "Human Protein Atlas",
+        "source_type": "database",
+        "citation": "Human Protein Atlas entry ENSG00000185883 for ATP6V0C.",
+        "url": "https://www.proteinatlas.org/ENSG00000185883",
+        "description": "Expression database reporting human ATP6V0C protein evidence, vesicular localization, detection across brain regions, and detection across mouse brain regions."
+      },
+      {
+        "target_gene": "Pitpna",
+        "ref_id": "R009",
+        "ref_slug": "hpa_pitpna_broad_expression",
+        "source": "Human Protein Atlas",
+        "source_type": "database",
+        "citation": "Human Protein Atlas entry ENSG00000174238 for PITPNA.",
+        "url": "https://www.proteinatlas.org/ENSG00000174238-PITPNA",
+        "description": "Reports PITPNA RNA as detected in all assayed human tissues and all brain regions with low regional specificity, providing expression context for the cell-type-restricted Perturb-seq phenotypes."
+      },
+      {
+        "target_gene": "Pitpna",
+        "ref_id": "R001",
+        "ref_slug": "uniprot_pitpna_pi_pc_transfer",
+        "source": "UniProtKB",
+        "source_type": "database",
+        "citation": "UniProtKB entries P53810 and Q00169 for mouse and human phosphatidylinositol transfer protein alpha.",
+        "url": "https://www.uniprot.org/uniprotkb/P53810/entry",
+        "description": "Curated PITPNA/Pitpna molecular function: transfer of phosphatidylinositol and phosphatidylcholine between membranes."
+      },
+      {
+        "target_gene": "Pitpna",
+        "ref_id": "R003",
+        "ref_slug": "tilley_2004_pitpalpha_structure_function",
+        "source": "Structure",
+        "source_type": "pubmed",
+        "citation": "Tilley SJ, Skippen A, Murray-Rust J, Swigart PM, Stewart A, et al. Structure-function analysis of human phosphatidylinositol transfer protein alpha bound to phosphatidylinositol. Structure. 2004;12(2):317-326. PMID:14962392.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/14962392/",
+        "description": "Defines human PITPalpha PI binding and summarizes its requirement for PLC-mediated signaling, regulated exocytosis, and secretory vesicle formation."
+      },
+      {
+        "target_gene": "Pitpna",
+        "ref_id": "R004",
+        "ref_slug": "morgan_2004_pkc_pitpalpha_plc",
+        "source": "Journal of Biological Chemistry",
+        "source_type": "pubmed",
+        "citation": "Morgan CP, Skippen A, Segui B, Ball A, Allen-Baume V, et al. Phosphorylation of a distinct structural form of phosphatidylinositol transfer protein alpha at Ser166 by protein kinase C disrupts receptor-mediated phospholipase C signaling by inhibiting delivery of phosphatidylinositol to membranes. J Biol Chem. 2004;279(45):47159-47171. PMID:15322105.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/15322105/",
+        "description": "Experimental evidence that PITPalpha supplies phosphatidylinositol for PLC beta and gamma signaling and can be functionally inhibited by PKC phosphorylation."
+      },
+      {
+        "target_gene": "Pitpna",
+        "ref_id": "R005",
+        "ref_slug": "cockcroft_garner_2013_pitp_plc_review",
+        "source": "Advances in Biological Regulation",
+        "source_type": "review",
+        "citation": "Cockcroft S, Garner K. Potential role for phosphatidylinositol transfer protein (PITP) family in lipid transfer during phospholipase C signalling. Adv Biol Regul. 2013;53(3):280-291. PMID:23916246.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/23916246/",
+        "description": "Review framing mammalian PITP family proteins as phosphatidylinositol shuttles that can support phosphoinositide resynthesis during PLC signaling."
+      },
+      {
+        "target_gene": "Pitpna",
+        "ref_id": "R006",
+        "ref_slug": "hamilton_1997_vibrator_pitpna_neurodegeneration",
+        "source": "Neuron",
+        "source_type": "pubmed",
+        "citation": "Hamilton BA, Smith DJ, Mueller KL, Kerrebrock AW, Bronson RT, et al. The vibrator mutation causes neurodegeneration via reduced expression of PITP alpha: positional complementation cloning and extragenic suppression. Neuron. 1997;18(5):711-722. PMID:9182797.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/9182797/",
+        "description": "Identifies the Pitpna vibrator retroposon insertion, its approximately five-fold RNA/protein reduction, and the resulting brainstem/spinal cord neurodegeneration and juvenile death."
+      },
+      {
+        "target_gene": "Pitpna",
+        "ref_id": "R008",
+        "ref_slug": "uniprot_quickgo_response_gene_functions",
+        "source": "UniProtKB and QuickGO",
+        "source_type": "database",
+        "citation": "UniProtKB annotations for Atp6v0c, Cx3cl1, Grn, Jun, Prkcg, Atp2a2, Gabra4, Grin2b, Scg2, and Kctd16; QuickGO terms GO:0001774 and GO:1903979.",
+        "url": "https://www.ebi.ac.uk/QuickGO/term/GO:0001774",
+        "description": "Curated names and GO annotations used to label V-ATPase/vesicle acidification, calcium/PKC/synaptic, and neuron-to-microglia signaling genes changed in the dataset."
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "ref_id": "R001",
+        "ref_slug": "uniprot_mouse_atp6v0c",
+        "source": "UniProtKB",
+        "source_type": "database",
+        "citation": "UniProtKB accession P63082, V-type proton ATPase 16 kDa proteolipid subunit c, Mus musculus.",
+        "url": "https://www.uniprot.org/uniprotkb/P63082",
+        "description": "Curated mouse Atp6v0c record describing the c subunit as a proton-conducting V0 pore component of the V-ATPase and placing it on synaptic-vesicle, clathrin-coated-vesicle, and lysosome membranes."
+      },
+      {
+        "target_gene": "Atp6v0c",
+        "ref_id": "R005",
+        "ref_slug": "wang_2020_complete_human_vatpase",
+        "source": "Mol Cell",
+        "source_type": "pubmed",
+        "citation": "Wang L, Wu D, Robinson CV, Wu H, Fu TM. Structures of a complete human V-ATPase reveal mechanisms of its assembly. Mol Cell. 2020;80(3):501-511.e3. doi:10.1016/j.molcel.2020.09.029.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33065002/",
+        "description": "Human structural study that resolved the assembled V-ATPase and identified ATP6AP1, glycans, and lipids as contributors to V0 assembly and stability."
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "ref_id": "R002",
+        "ref_slug": "quickgo_p21281_annotations",
+        "source": "QuickGO",
+        "source_type": "database",
+        "citation": "QuickGO annotations for UniProtKB:P21281, human ATP6V1B2.",
+        "url": "https://www.ebi.ac.uk/QuickGO/annotations?geneProductId=P21281",
+        "description": "GO annotation source linking ATP6V1B2 to proton transmembrane transporter activity, proton-transporting ATPase activity, vacuolar acidification, synaptic-vesicle lumen acidification, and proton transmembrane transport."
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "ref_id": "R004",
+        "ref_slug": "chembl_atp6v1b2_target",
+        "source": "ChEMBL",
+        "source_type": "database",
+        "citation": "ChEMBL target CHEMBL5641: V-type proton ATPase subunit B, brain isoform.",
+        "url": "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL5641/",
+        "description": "Single-protein druggability record for ATP6V1B2 with GO and Reactome cross-references, including amino-acid regulation of mTORC1 and MITF-M-dependent lysosome/autophagy gene regulation; the queried target had sparse binding/F-actin activity records and no curated mechanism rows."
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "ref_id": "R008",
+        "ref_slug": "carpentieri_2024_vatpase_spectrum",
+        "source": "Human Genetics and Genomics Advances",
+        "source_type": "pubmed",
+        "citation": "Carpentieri G et al. Dominantly acting variants in ATP6V1C1 and ATP6V1B2 cause a multisystem phenotypic spectrum by altering lysosomal and/or autophagosome function. HGG Adv. 2024;5:100349. doi:10.1016/j.xhgg.2024.100349. PMID:39210597.",
+        "url": "https://doi.org/10.1016/j.xhgg.2024.100349",
+        "description": "Recent genotype-function study connecting dominant ATP6V1B2-family phenotypes with altered lysosomal or autophagosome function rather than a single simple loss mechanism."
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "ref_id": "R001",
+        "ref_slug": "ncbi_gene_mouse_atp6v1b2",
+        "source": "NCBI Gene",
+        "source_type": "database",
+        "citation": "NCBI Gene. Atp6v1b2 ATPase, H+ transporting, lysosomal V1 subunit B2, Mus musculus, Gene ID 11966.",
+        "url": "https://www.ncbi.nlm.nih.gov/gene/11966",
+        "description": "Authoritative mouse gene record stating that Atp6v1b2 encodes a protein-coding V1 subunit predicted to enable proton-transporting ATPase activity and involved in synaptic vesicle lumen acidification."
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "ref_id": "R002",
+        "ref_slug": "quickgo_p21281_annotations",
+        "source": "QuickGO",
+        "source_type": "database",
+        "citation": "QuickGO annotations for UniProtKB:P21281, human ATP6V1B2.",
+        "url": "https://www.ebi.ac.uk/QuickGO/annotations?geneProductId=P21281",
+        "description": "GO annotation source linking ATP6V1B2 to proton transmembrane transporter activity, proton-transporting ATPase activity, vacuolar acidification, synaptic-vesicle lumen acidification, and proton transmembrane transport."
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "ref_id": "R005",
+        "ref_slug": "yuan_2014_ddod_atp6v1b2",
+        "source": "Cell Research",
+        "source_type": "pubmed",
+        "citation": "Yuan Y et al. De novo mutation in ATP6V1B2 impairs lysosome acidification and causes dominant deafness-onychodystrophy syndrome. Cell Res. 2014;24:1370-1373. doi:10.1038/cr.2014.77. PMID:24913193.",
+        "url": "https://doi.org/10.1038/cr.2014.77",
+        "description": "Primary DDOD study reporting ATP6V1B2 p.Arg506X haploinsufficiency, abnormal lysosomal acidification, and severe hearing loss after cochlear Atp6v1b2 knockdown in mice."
+      },
+      {
+        "target_gene": "Atp6v1b2",
+        "ref_id": "R007",
+        "ref_slug": "rousseau_2023_atp6v1b2_mouse_seizures",
+        "source": "Genes",
+        "source_type": "pubmed",
+        "citation": "Rousseau J et al. The ATP6V1B2 DDOD/DOORS-Associated p.Arg506* Variant Causes Hyperactivity and Seizures in Mice. Genes (Basel). 2023;14:1538. doi:10.3390/genes14081538. PMID:37628590.",
+        "url": "https://doi.org/10.3390/genes14081538",
+        "description": "Mouse Atp6v1b2 p.Arg506* model showing hyperactivity and seizure susceptibility, supporting a neuronal consequence of disease-associated ATP6V1B2 perturbation."
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 5,
+    "priority": 5
+  },
+  "report_evidence_ids": [
+    "Atp6v0c:E001",
+    "Atp6v0c:E002",
+    "Atp6v0c:E009",
+    "Atp6v1b2:E001",
+    "Atp6v1b2:E002",
+    "Atp6v1b2:E004",
+    "Atp6v1b2:E007",
+    "Pitpna:E001",
+    "Pitpna:E002",
+    "Pitpna:E003",
+    "Pitpna:E004"
+  ],
+  "reference_ids": [
+    "Atp6v0c:R001",
+    "Atp6v0c:R003",
+    "Atp6v0c:R005",
+    "Atp6v1b2:R001",
+    "Atp6v1b2:R002",
+    "Atp6v1b2:R004",
+    "Atp6v1b2:R005",
+    "Atp6v1b2:R007",
+    "Atp6v1b2:R008",
+    "Pitpna:R001",
+    "Pitpna:R003",
+    "Pitpna:R004",
+    "Pitpna:R005",
+    "Pitpna:R006",
+    "Pitpna:R008",
+    "Pitpna:R009"
+  ],
+  "source_urls_or_dois": [
+    {
+      "ref_id": "Atp6v0c:R001",
+      "citation": "UniProtKB accession P63082, V-type proton ATPase 16 kDa proteolipid subunit c, Mus musculus.",
+      "url_or_doi": "https://www.uniprot.org/uniprotkb/P63082"
+    },
+    {
+      "ref_id": "Atp6v0c:R003",
+      "citation": "Human Protein Atlas entry ENSG00000185883 for ATP6V0C.",
+      "url_or_doi": "https://www.proteinatlas.org/ENSG00000185883"
+    },
+    {
+      "ref_id": "Pitpna:R009",
+      "citation": "Human Protein Atlas entry ENSG00000174238 for PITPNA.",
+      "url_or_doi": "https://www.proteinatlas.org/ENSG00000174238-PITPNA"
+    },
+    {
+      "ref_id": "Pitpna:R001",
+      "citation": "UniProtKB entries P53810 and Q00169 for mouse and human phosphatidylinositol transfer protein alpha.",
+      "url_or_doi": "https://www.uniprot.org/uniprotkb/P53810/entry"
+    },
+    {
+      "ref_id": "Pitpna:R003",
+      "citation": "Tilley SJ, Skippen A, Murray-Rust J, Swigart PM, Stewart A, et al. Structure-function analysis of human phosphatidylinositol transfer protein alpha bound to phosphatidylinositol. Structure. 2004;12(2):317-326. PMID:14962392.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/14962392/"
+    },
+    {
+      "ref_id": "Pitpna:R004",
+      "citation": "Morgan CP, Skippen A, Segui B, Ball A, Allen-Baume V, et al. Phosphorylation of a distinct structural form of phosphatidylinositol transfer protein alpha at Ser166 by protein kinase C disrupts receptor-mediated phospholipase C signaling by inhibiting delivery of phosphatidylinositol to membranes. J Biol Chem. 2004;279(45):47159-47171. PMID:15322105.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/15322105/"
+    },
+    {
+      "ref_id": "Pitpna:R005",
+      "citation": "Cockcroft S, Garner K. Potential role for phosphatidylinositol transfer protein (PITP) family in lipid transfer during phospholipase C signalling. Adv Biol Regul. 2013;53(3):280-291. PMID:23916246.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/23916246/"
+    },
+    {
+      "ref_id": "Pitpna:R006",
+      "citation": "Hamilton BA, Smith DJ, Mueller KL, Kerrebrock AW, Bronson RT, et al. The vibrator mutation causes neurodegeneration via reduced expression of PITP alpha: positional complementation cloning and extragenic suppression. Neuron. 1997;18(5):711-722. PMID:9182797.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/9182797/"
+    },
+    {
+      "ref_id": "Pitpna:R008",
+      "citation": "UniProtKB annotations for Atp6v0c, Cx3cl1, Grn, Jun, Prkcg, Atp2a2, Gabra4, Grin2b, Scg2, and Kctd16; QuickGO terms GO:0001774 and GO:1903979.",
+      "url_or_doi": "https://www.ebi.ac.uk/QuickGO/term/GO:0001774"
+    },
+    {
+      "ref_id": "Atp6v0c:R005",
+      "citation": "Wang L, Wu D, Robinson CV, Wu H, Fu TM. Structures of a complete human V-ATPase reveal mechanisms of its assembly. Mol Cell. 2020;80(3):501-511.e3. doi:10.1016/j.molcel.2020.09.029.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/33065002/"
+    },
+    {
+      "ref_id": "Atp6v1b2:R002",
+      "citation": "QuickGO annotations for UniProtKB:P21281, human ATP6V1B2.",
+      "url_or_doi": "https://www.ebi.ac.uk/QuickGO/annotations?geneProductId=P21281"
+    },
+    {
+      "ref_id": "Atp6v1b2:R004",
+      "citation": "ChEMBL target CHEMBL5641: V-type proton ATPase subunit B, brain isoform.",
+      "url_or_doi": "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL5641/"
+    },
+    {
+      "ref_id": "Atp6v1b2:R008",
+      "citation": "Carpentieri G et al. Dominantly acting variants in ATP6V1C1 and ATP6V1B2 cause a multisystem phenotypic spectrum by altering lysosomal and/or autophagosome function. HGG Adv. 2024;5:100349. doi:10.1016/j.xhgg.2024.100349. PMID:39210597.",
+      "url_or_doi": "https://doi.org/10.1016/j.xhgg.2024.100349"
+    },
+    {
+      "ref_id": "Atp6v1b2:R001",
+      "citation": "NCBI Gene. Atp6v1b2 ATPase, H+ transporting, lysosomal V1 subunit B2, Mus musculus, Gene ID 11966.",
+      "url_or_doi": "https://www.ncbi.nlm.nih.gov/gene/11966"
+    },
+    {
+      "ref_id": "Atp6v1b2:R005",
+      "citation": "Yuan Y et al. De novo mutation in ATP6V1B2 impairs lysosome acidification and causes dominant deafness-onychodystrophy syndrome. Cell Res. 2014;24:1370-1373. doi:10.1038/cr.2014.77. PMID:24913193.",
+      "url_or_doi": "https://doi.org/10.1038/cr.2014.77"
+    },
+    {
+      "ref_id": "Atp6v1b2:R007",
+      "citation": "Rousseau J et al. The ATP6V1B2 DDOD/DOORS-Associated p.Arg506* Variant Causes Hyperactivity and Seizures in Mice. Genes (Basel). 2023;14:1538. doi:10.3390/genes14081538. PMID:37628590.",
+      "url_or_doi": "https://doi.org/10.3390/genes14081538"
+    }
+  ],
+  "source_cluster_ids": [
+    "C013"
+  ],
+  "source_claim_ids": [
+    "claim:atp6v0c_f001_9579614d3d0e",
+    "claim:pitpna_f001_56f1df6b1e32",
+    "claim:pitpna_f003_bf7bf18f9bbf",
+    "claim:atp6v0c_f005_34f1939ce9e9",
+    "claim:atp6v1b2_f003_5bf8664b9a5e",
+    "claim:atp6v1b2_f001_0616bae1a143"
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "biological_interpretation": "NALCN-dependent steady-state transcription is restricted to a thalamic Prkcd/Grin2c glutamatergic state rather than appearing as a pan-neuronal leak-channel RNA module.",
+  "caveats": [
+    "The downstream module is small and defines candidate biomarkers, not a resolved NALCN ionic mechanism.",
+    "155 MB Glut shows that target mRNA loss alone is insufficient for this module."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut"
+  ],
+  "exact_observed_result": "Nalcn knockdown in 151 TH Prkcd Grin2c Glut reduced Nalcn, Opn3, Slc6a17, and Tspan33 at FDR<0.05. 155 MB Glut had stronger Nalcn depletion but no significant Opn3, Slc6a17, or Tspan33 response.",
+  "preliminary_scores": {
+    "novelty": 5,
+    "priority": 4,
+    "support": 5
+  },
+  "prior_expectation": "NALCN encodes a sodium leak channel with neuronal excitability relevance; a cell-state-specific RNA output is plausible but the Opn3/Slc6a17/Tspan33 combination remains exploratory.",
+  "reference_ids": [
+    "Nalcn:F001"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    {
+      "finding_id": "F001",
+      "gene": "Nalcn"
+    }
+  ],
+  "source_claim_ids": [
+    "claim:nalcn_f001_38f52a6faffb"
+  ],
+  "source_cluster_ids": [
+    "C001"
+  ],
+  "source_urls_or_dois": [
+    "https://rest.uniprot.org/uniprotkb/Q8BXR5",
+    "https://pubmed.ncbi.nlm.nih.gov/17448995/",
+    "https://pubmed.ncbi.nlm.nih.gov/24904279/"
+  ],
+  "status": "grounded",
+  "story_id": "S035",
+  "support": {
+    "exact_de_rows": [
+      {
+        "gene_target": "Nalcn",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.8968193531036377,
+        "names": "Nalcn",
+        "pvals": 6.918020270797287e-14,
+        "pvals_adj": 1.1939811185369037e-09,
+        "scores": -7.48941707611084
+      },
+      {
+        "gene_target": "Nalcn",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.7529571652412415,
+        "names": "Opn3",
+        "pvals": 1.351302433252025e-09,
+        "pvals_adj": 1.1661064347748349e-05,
+        "scores": -6.061175346374512
+      },
+      {
+        "gene_target": "Nalcn",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.21800777316093445,
+        "names": "Slc6a17",
+        "pvals": 6.683960537311951e-06,
+        "pvals_adj": 0.028839618728366743,
+        "scores": -4.503511905670166
+      },
+      {
+        "gene_target": "Nalcn",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.3696827292442322,
+        "names": "Tspan33",
+        "pvals": 5.4918992219149535e-06,
+        "pvals_adj": 0.028839618728366743,
+        "scores": -4.54506254196167
+      },
+      {
+        "gene_target": "Nalcn",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": -0.9550234079360962,
+        "names": "Nalcn",
+        "pvals": 4.040239133546124e-11,
+        "pvals_adj": 7.047389120644503e-07,
+        "scores": -6.602594375610352
+      },
+      {
+        "gene_target": "Nalcn",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": 0.07066356390714645,
+        "names": "Opn3",
+        "pvals": 0.9394525480466251,
+        "pvals_adj": 1.0,
+        "scores": 0.07595795392990112
+      },
+      {
+        "gene_target": "Nalcn",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": -0.07558615505695343,
+        "names": "Slc6a17",
+        "pvals": 0.33948062884218566,
+        "pvals_adj": 1.0,
+        "scores": -0.955191969871521
+      },
+      {
+        "gene_target": "Nalcn",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": -0.284664124250412,
+        "names": "Tspan33",
+        "pvals": 0.26055346535866675,
+        "pvals_adj": 1.0,
+        "scores": -1.1250839233398438
+      }
+    ]
+  },
+  "targets": [
+    "Nalcn",
+    "Opn3",
+    "Slc6a17",
+    "Tspan33"
+  ],
+  "title": "Nalcn loss depresses a compact thalamic Opn3-Slc6a17-Tspan33 module"
+}

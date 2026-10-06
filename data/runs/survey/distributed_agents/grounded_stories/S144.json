@@ -1,0 +1,123 @@
+{
+  "story_id": "S144",
+  "title": "Naa20 perturbation lowers Cyp46a1 and partially induces sterol-biosynthesis transcripts in inhibitory and hypothalamic neurons",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Naa20 perturbation repeatedly repressed Cyp46a1, including 151 TH logFC -0.3913479745388031 FDR 1.2864940556785837e-13, 155 MB logFC -0.7657643556594849 FDR 1.028870838384272e-10, and 191 MB P MY GABA logFC -1.036651372909546 FDR 2.548633596417313e-06. Sterol biosynthesis genes were induced in subsets, including Cyp51 and Mvk in 145 MH-LH TH Glut and Fdft1, Sc5d, and Srebf2 in 191 MB P MY GABA.",
+  "biological_interpretation": "NatB/Naa20 perturbation couples repression of the brain cholesterol-turnover enzyme Cyp46a1 to a partial compensatory sterol-synthesis response in selected inhibitory, midbrain, and thalamic/hypothalamic neurons.",
+  "targets": [
+    "Naa20",
+    "Cyp46a1",
+    "Cyp51",
+    "Fdft1",
+    "Mvk",
+    "Sc5d",
+    "Sqle",
+    "Srebf2"
+  ],
+  "cell_types": [
+    "052 Pvalb Gaba",
+    "054 CNU-MGE GABA",
+    "066 CNU-HYa HY GABA",
+    "145 MH-LH TH Glut",
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "191 MB P MY GABA"
+  ],
+  "support": {
+    "support_level": 4,
+    "exact_de_rows": [
+      {
+        "gene_target": "Naa20",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cyp46a1",
+        "log2_fold_change": -0.3913479745388031,
+        "pvals_adj": 1.2864940556785837e-13,
+        "wilcoxon_score": -8.216967582702637
+      },
+      {
+        "gene_target": "Naa20",
+        "cell_type": "155 MB Glut",
+        "gene": "Cyp46a1",
+        "log2_fold_change": -0.7657643556594849,
+        "pvals_adj": 1.028870838384272e-10,
+        "wilcoxon_score": -7.576900482177734
+      },
+      {
+        "gene_target": "Naa20",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Cyp46a1",
+        "log2_fold_change": -1.036651372909546,
+        "pvals_adj": 2.548633596417313e-06,
+        "wilcoxon_score": -6.191421031951904
+      },
+      {
+        "gene_target": "Naa20",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Cyp51",
+        "log2_fold_change": 0.5685825943946838,
+        "pvals_adj": 0.02716319796046587,
+        "wilcoxon_score": 3.8357317447662354
+      },
+      {
+        "gene_target": "Naa20",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Mvk",
+        "log2_fold_change": 1.053423523902893,
+        "pvals_adj": 0.0339174193284332,
+        "wilcoxon_score": 3.759092092514038
+      },
+      {
+        "gene_target": "Naa20",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Fdft1",
+        "log2_fold_change": 1.0247750282287598,
+        "pvals_adj": 1.7870383686989844e-05,
+        "wilcoxon_score": 5.723230361938477
+      }
+    ],
+    "report_evidence_summary": [
+      "Naa20:E005"
+    ]
+  },
+  "caveats": [
+    "Naa20 mRNA itself was not FDR-depleted in the full report, so the cholesterol state is downstream perturbation-associated evidence.",
+    "The assay measured transcripts only, not NatB substrate acetylation, CYP46A1 protein, 24S-hydroxycholesterol, or sterol flux."
+  ],
+  "prior_expectation": {
+    "summary": "impaired NAA20/NatB activity causes recessive neurodevelopmental disease; CYP46A1 is a major route for brain cholesterol elimination to 24S-hydroxycholesterol",
+    "citations": [
+      {
+        "ref_id": "Naa20:R004",
+        "ref": "Morrison et al. 2021 PMID:34230638",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/34230638/",
+        "supports": "impaired NAA20/NatB activity causes recessive neurodevelopmental disease"
+      },
+      {
+        "ref_id": "Naa20:R007",
+        "ref": "Moutinho et al. 2016 PMID:27663182",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/27663182/",
+        "supports": "CYP46A1 is a major route for brain cholesterol elimination to 24S-hydroxycholesterol"
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 5,
+    "support": 4,
+    "priority": 4
+  },
+  "report_evidence_ids": [
+    "Naa20:E005"
+  ],
+  "reference_ids": [
+    "Naa20:R004",
+    "Naa20:R007"
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/27663182/",
+    "https://pubmed.ncbi.nlm.nih.gov/34230638/"
+  ],
+  "source_claim_ids": [
+    "claim:naa20_f003_74a7503c8ad9"
+  ]
+}

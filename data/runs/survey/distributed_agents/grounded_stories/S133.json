@@ -1,0 +1,158 @@
+{
+  "story_id": "S133",
+  "title": "Ankrd11 and Setd5 converge on a thalamic synaptic receptor and channel program that opposes Med23/Wdr26",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Ankrd11 was depleted in 151 TH and induced a synaptic/signaling subset containing Lrrc7, Ntng1, Grm1, Plekhg1, Prkcd, and Rgs4. Setd5 produced an overlapping 151 TH response with Adarb1, Rgs4, Prkcd, and Lrrc7 induced and Kat6b repressed. Restricted comparisons placed Setd5 as Ankrd11-positive and Med23/Wdr26 as inverse for several of these markers.",
+  "biological_interpretation": "Two haploinsufficient chromatin neurodevelopmental genes converge on a thalamic membrane, synaptic, and excitability state that is not explained by generic chromatin-regulator or ankyrin-repeat family membership.",
+  "targets": [
+    "Ankrd11",
+    "Setd5",
+    "Med23",
+    "Wdr26",
+    "Adarb1",
+    "Lrrc7",
+    "Grm1",
+    "Grin2b",
+    "Gabbr2",
+    "Kcnc2",
+    "Kcnq2",
+    "Prkcd",
+    "Rgs4"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "191 MB P MY GABA",
+    "052 Pvalb Gaba"
+  ],
+  "support": {
+    "support_level": 4,
+    "exact_de_rows": [
+      {
+        "gene_target": "Ankrd11",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ankrd11",
+        "log2_fold_change": -0.5523678660392761,
+        "pvals_adj": 8.622688928130975e-10,
+        "wilcoxon_score": -7.532021999359131
+      },
+      {
+        "gene_target": "Ankrd11",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Plekhg1",
+        "log2_fold_change": 0.22441355884075165,
+        "pvals_adj": 7.811477826784886e-06,
+        "wilcoxon_score": 6.12528657913208
+      },
+      {
+        "gene_target": "Ankrd11",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lrrc7",
+        "log2_fold_change": 0.17100238800048828,
+        "pvals_adj": 0.00020163476883125372,
+        "wilcoxon_score": 5.400984764099121
+      },
+      {
+        "gene_target": "Ankrd11",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Grm1",
+        "log2_fold_change": 0.21011550724506378,
+        "pvals_adj": 0.00020163476883125372,
+        "wilcoxon_score": 5.406730651855469
+      },
+      {
+        "gene_target": "Setd5",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Adarb1",
+        "log2_fold_change": 0.3503566384315491,
+        "pvals_adj": 2.1951423278383935e-06,
+        "wilcoxon_score": 6.374040603637695
+      },
+      {
+        "gene_target": "Setd5",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Prkcd",
+        "log2_fold_change": 0.34119388461112976,
+        "pvals_adj": 1.8226750560488538e-05,
+        "wilcoxon_score": 5.902985572814941
+      },
+      {
+        "gene_target": "Setd5",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lrrc7",
+        "log2_fold_change": 0.26280707120895386,
+        "pvals_adj": 1.8226750560488538e-05,
+        "wilcoxon_score": 5.875162601470947
+      }
+    ],
+    "report_evidence_summary": [
+      "Ankrd11:E001",
+      "Ankrd11:E002",
+      "Ankrd11:E009",
+      "Setd5:E001",
+      "Setd5:E005",
+      "Setd5:E006",
+      "Setd5:E007"
+    ]
+  },
+  "caveats": [
+    "Setd5 target mRNA was not FDR-depleted in any class.",
+    "Ankrd11-Setd5 and Med23/Wdr26 relationships were restricted-signature contrasts with modest global correlations, so the polarity is a reporter-module polarity rather than proof of direct antagonism."
+  ],
+  "prior_expectation": {
+    "summary": "ANKRD11 mutations cause KBG syndrome with central nervous system involvement; Setd5 haploinsufficiency disturbs developmental gene expression and cognition; SETD5 regulates transcriptional fidelity during brain development and neuronal wiring",
+    "citations": [
+      {
+        "ref_id": "Ankrd11:R002",
+        "ref": "Sirmaci et al. 2011 PMID:21782149",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/21782149/",
+        "supports": "ANKRD11 mutations cause KBG syndrome with central nervous system involvement"
+      },
+      {
+        "ref_id": "Setd5:R003",
+        "ref": "Deliu et al. 2018 DOI:10.1038/s41593-018-0266-2",
+        "url_or_doi": "https://doi.org/10.1038/s41593-018-0266-2",
+        "supports": "Setd5 haploinsufficiency disturbs developmental gene expression and cognition"
+      },
+      {
+        "ref_id": "Setd5:R004",
+        "ref": "Sessa et al. 2019 DOI:10.1016/j.neuron.2019.07.013",
+        "url_or_doi": "https://doi.org/10.1016/j.neuron.2019.07.013",
+        "supports": "SETD5 regulates transcriptional fidelity during brain development and neuronal wiring"
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 4,
+    "priority": 5
+  },
+  "report_evidence_ids": [
+    "Ankrd11:E001",
+    "Ankrd11:E002",
+    "Ankrd11:E009",
+    "Setd5:E001",
+    "Setd5:E005",
+    "Setd5:E006",
+    "Setd5:E007"
+  ],
+  "reference_ids": [
+    "Ankrd11:R002",
+    "Ankrd11:R004",
+    "Setd5:R003",
+    "Setd5:R004",
+    "Setd5:R006"
+  ],
+  "source_urls_or_dois": [
+    "https://doi.org/10.1016/j.neuron.2019.07.013",
+    "https://doi.org/10.1038/s41593-018-0266-2",
+    "https://pubmed.ncbi.nlm.nih.gov/21782149/"
+  ],
+  "source_claim_ids": [
+    "claim:ankrd11_f001_888634ad2452",
+    "claim:setd5_f001_f46c08de95f9",
+    "claim:ankrd11_f005_5c9991163bf0",
+    "claim:setd5_f004_20ba4cc4c814"
+  ]
+}

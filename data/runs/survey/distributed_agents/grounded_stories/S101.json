@@ -1,0 +1,330 @@
+{
+  "biological_interpretation": "E1 and E2 loss in the UFMylation cascade share a selective posterior neuronal response with Ddit3 induction and V-ATPase repression, supporting a pathway-specific UFMylation-defect state rather than generic ER knockdown alone.",
+  "caveats": [
+    "Ufsp2 is less interchangeable with Uba5/Ufc1 than Uba5 and Ufc1 are with each other.",
+    "Several responsive classes lack FDR-confirmed Ufc1 or Ufsp2 transcript depletion despite coherent downstream signatures."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "145 MH-LH TH Glut",
+    "191 MB P MY GABA",
+    "217 P MY Pineal Glut",
+    "066 CNU-HYa HY GABA"
+  ],
+  "exact_observed_result": "Uba5 and Ufc1 perturbations converged strongly in 151 TH Prkcd Grin2c Glut and 155 MB Glut, inducing Ddit3/Eef1a1/Ndufa2-linked stress genes and repressing Atp6v0c and synaptic or RNA-processing transcripts. Ufsp2 produced a related but narrower response, clearest in 155 MB Glut.",
+  "preliminary_scores": {
+    "novelty": 3,
+    "priority": 5,
+    "support": 5
+  },
+  "prior_expectation": "UBA5 and UFC1 are the UFM1 E1 and E2 enzymes, and human UBA5/UFC1 defects cause severe neurodevelopmental disease; the observed Ddit3 and V-ATPase response is a plausible neuronal UFMylation-loss readout.",
+  "reference_ids": [
+    "Uba5:F001",
+    "Uba5:F003",
+    "Ufc1:F001",
+    "Ufsp2:F001"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    {
+      "finding_id": "F001",
+      "gene": "Ufc1"
+    },
+    {
+      "finding_id": "F003",
+      "gene": "Uba5"
+    },
+    {
+      "finding_id": "F001",
+      "gene": "Uba5"
+    },
+    {
+      "finding_id": "F001",
+      "gene": "Ufsp2"
+    }
+  ],
+  "source_claim_ids": [
+    "claim:ufc1_f001_ec85fdd21e94",
+    "claim:uba5_f003_92584fb685fc",
+    "claim:uba5_f001_ca86b7280b27",
+    "claim:ufsp2_f001_723d0dbd1065"
+  ],
+  "source_cluster_ids": [
+    "C003"
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/29868776/",
+    "https://pubmed.ncbi.nlm.nih.gov/27545681/",
+    "https://pubmed.ncbi.nlm.nih.gov/27545674/",
+    "https://pubmed.ncbi.nlm.nih.gov/30412706/"
+  ],
+  "status": "grounded",
+  "story_id": "S101",
+  "support": {
+    "exact_de_rows": [
+      {
+        "gene_target": "Uba5",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.5540753602981567,
+        "names": "Atf4",
+        "pvals": 0.001717110143126211,
+        "pvals_adj": 0.014778165173711813,
+        "scores": 3.135244369506836
+      },
+      {
+        "gene_target": "Uba5",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.4890137314796448,
+        "names": "Atp6v0c",
+        "pvals": 8.861573156024948e-23,
+        "pvals_adj": 1.1764760853833428e-19,
+        "scores": -9.824152946472168
+      },
+      {
+        "gene_target": "Uba5",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 1.0882437229156494,
+        "names": "Ddit3",
+        "pvals": 1.6992204346813329e-18,
+        "pvals_adj": 9.775615160721708e-16,
+        "scores": 8.77564811706543
+      },
+      {
+        "gene_target": "Uba5",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.7264835834503174,
+        "names": "Ndufa2",
+        "pvals": 1.2668464305183646e-14,
+        "pvals_adj": 2.602916969561483e-12,
+        "scores": 7.709123611450195
+      },
+      {
+        "gene_target": "Uba5",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.1993708312511444,
+        "names": "Uba5",
+        "pvals": 0.033431597514204825,
+        "pvals_adj": 0.15808107986237288,
+        "scores": -2.126861333847046
+      },
+      {
+        "gene_target": "Uba5",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": -0.7139981985092163,
+        "names": "Atp6v0c",
+        "pvals": 6.376733428546222e-23,
+        "pvals_adj": 1.1122936119413176e-18,
+        "scores": -9.857257843017578
+      },
+      {
+        "gene_target": "Uba5",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": 0.8446106910705566,
+        "names": "Ddit3",
+        "pvals": 2.8345224146543703e-05,
+        "pvals_adj": 0.0020861845771652397,
+        "scores": 4.186368942260742
+      },
+      {
+        "gene_target": "Uba5",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": 0.9453081488609314,
+        "names": "Ndufa2",
+        "pvals": 7.172682164645328e-15,
+        "pvals_adj": 2.085218249965141e-11,
+        "scores": 7.781399250030518
+      },
+      {
+        "gene_target": "Uba5",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": -0.39452165365219116,
+        "names": "Uba5",
+        "pvals": 0.0057365108106107905,
+        "pvals_adj": 0.11541171634311882,
+        "scores": -2.7624740600585938
+      },
+      {
+        "gene_target": "Ufc1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.3490810692310333,
+        "names": "Atp6v0c",
+        "pvals": 2.0319377573566086e-09,
+        "pvals_adj": 2.1918258596386067e-06,
+        "scores": -5.995233058929443
+      },
+      {
+        "gene_target": "Ufc1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.922637403011322,
+        "names": "Ddit3",
+        "pvals": 6.584972408656582e-10,
+        "pvals_adj": 1.1365003880100394e-06,
+        "scores": 6.175750732421875
+      },
+      {
+        "gene_target": "Ufc1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.5698089599609375,
+        "names": "Eef1a1",
+        "pvals": 1.467375398825352e-11,
+        "pvals_adj": 8.44181066944225e-08,
+        "scores": 6.751091003417969
+      },
+      {
+        "gene_target": "Ufc1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.31980735063552856,
+        "names": "Ndufa2",
+        "pvals": 0.0034846214291574602,
+        "pvals_adj": 0.08118502098366023,
+        "scores": 2.9214000701904297
+      },
+      {
+        "gene_target": "Ufc1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.5508662462234497,
+        "names": "Ufc1",
+        "pvals": 0.0002031507303212072,
+        "pvals_adj": 0.011885350693605813,
+        "scores": -3.7150659561157227
+      },
+      {
+        "gene_target": "Ufc1",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": -0.42975857853889465,
+        "names": "Atp6v0c",
+        "pvals": 1.5080588860697095e-06,
+        "pvals_adj": 0.0065762677874284855,
+        "scores": -4.810164928436279
+      },
+      {
+        "gene_target": "Ufc1",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": 0.9850743412971497,
+        "names": "Ddit3",
+        "pvals": 0.00047857069896958186,
+        "pvals_adj": 0.11757336200178052,
+        "scores": 3.4924726486206055
+      },
+      {
+        "gene_target": "Ufc1",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": 0.6856048703193665,
+        "names": "Ndufa2",
+        "pvals": 4.0630250198805104e-05,
+        "pvals_adj": 0.039372969678764295,
+        "scores": 4.103866100311279
+      },
+      {
+        "gene_target": "Ufc1",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": -0.38277143239974976,
+        "names": "Syt11",
+        "pvals": 2.8912718586011083e-06,
+        "pvals_adj": 0.006955214024995784,
+        "scores": -4.678396224975586
+      },
+      {
+        "gene_target": "Ufc1",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": -0.5398856401443481,
+        "names": "Ufc1",
+        "pvals": 0.023783550308295216,
+        "pvals_adj": 0.708588346658674,
+        "scores": -2.260607957839966
+      },
+      {
+        "gene_target": "Ufsp2",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.22654399275779724,
+        "names": "Atp6v0c",
+        "pvals": 0.0022842440640245326,
+        "pvals_adj": 0.6159963797031157,
+        "scores": -3.0505475997924805
+      },
+      {
+        "gene_target": "Ufsp2",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.44318634271621704,
+        "names": "Ddit3",
+        "pvals": 0.04473233135260718,
+        "pvals_adj": 1.0,
+        "scores": 2.0071628093719482
+      },
+      {
+        "gene_target": "Ufsp2",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.5537900924682617,
+        "names": "Ndufa2",
+        "pvals": 4.333222271014219e-05,
+        "pvals_adj": 0.124645138625724,
+        "scores": 4.088954448699951
+      },
+      {
+        "gene_target": "Ufsp2",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.10278072208166122,
+        "names": "Ufsp2",
+        "pvals": 0.4843491246981946,
+        "pvals_adj": 1.0,
+        "scores": -0.6993247270584106
+      },
+      {
+        "gene_target": "Ufsp2",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": -0.5040662884712219,
+        "names": "Atp6v0c",
+        "pvals": 3.5329770470988127e-07,
+        "pvals_adj": 0.0023302548816738545,
+        "scores": -5.092540264129639
+      },
+      {
+        "gene_target": "Ufsp2",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": 0.5877938866615295,
+        "names": "Ddit3",
+        "pvals": 0.028149093181846333,
+        "pvals_adj": 1.0,
+        "scores": 2.195202350616455
+      },
+      {
+        "gene_target": "Ufsp2",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": 0.7688726186752319,
+        "names": "Ndufa2",
+        "pvals": 1.528579568748884e-05,
+        "pvals_adj": 0.03332876677210848,
+        "scores": 4.32452917098999
+      },
+      {
+        "gene_target": "Ufsp2",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": 0.2046435922384262,
+        "names": "Pink1",
+        "pvals": 0.16186572021629464,
+        "pvals_adj": 1.0,
+        "scores": 1.3988242149353027
+      },
+      {
+        "gene_target": "Ufsp2",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": -0.49117767810821533,
+        "names": "Ufsp2",
+        "pvals": 0.03068050757699373,
+        "pvals_adj": 1.0,
+        "scores": -2.161191940307617
+      }
+    ]
+  },
+  "targets": [
+    "Uba5",
+    "Ufc1",
+    "Ufsp2",
+    "Ddit3",
+    "Atf4",
+    "Atp6v0c",
+    "Ndufa2"
+  ],
+  "title": "Uba5 and Ufc1 loss expose a posterior UFMylation stress state"
+}

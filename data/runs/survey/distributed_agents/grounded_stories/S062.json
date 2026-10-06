@@ -1,0 +1,858 @@
+{
+  "biological_interpretation": "A subset of SETD1A/FIP200 transcriptional output falls near a TSC/mTOR/FIP200 neighborhood rather than being isolated chromatin or autophagy noise. / SETD1A loss has a selective mature-neuron organelle/mitochondrial RNA liability that is spatially gated rather than pan-glutamatergic.",
+  "caveats": [
+    "The result is restricted-signature-based and transcriptomic; no phospho-mTORC1 substrate was measured.",
+    "The Tsc signatures were far larger than the Rb1cc1 signatures, and the correlation was calculated on the top 200 Rb1cc1-ranked genes; several top neighbors lack a direct FIP200 prior and remain exploratory.",
+    "Direct Setd1a transcript reduction was FDR-significant only in 155 MB Glut; 217 P MY Pineal Glut is low-count.",
+    "Exact log2 fold changes, scores, p-values, and FDRs in exact_de_rows were re-read from the Wilcoxon Parquet; the graph and cluster summaries were used only to nominate the target/readout combinations."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "191 MB P MY GABA"
+  ],
+  "exact_observed_result": "Setd1a loss showed a modest mTORC1-neighbor signature in 155 MB Glut, 151 TH Prkcd Grin2c Glut, and 191 MB P MY GABA, with repeated Nprl3 down-regulation and positive restricted-signature similarity to Tsc1/Tsc2; Rb1cc1 signatures in 155 MB Glut and 191 MB P MY GABA also aligned positively with larger Tsc1/Tsc2 signatures. / Setd1a perturbation caused a cell-class-skewed, mostly down-regulated program maximal in 155 MB Glut and 151 TH Prkcd Grin2c Glut, with recurrent repression of organelle and mitochondrial genes, while many telencephalic glutamatergic classes lacked FDR downstream genes. Parquet-verified leading rows: Setd1a->Itfg1 in 155 MB Glut log2FC -1.41, FDR 3.91e-23; Setd1a->Fbxw5 in 155 MB Glut log2FC -1.6, FDR 3.91e-23; Setd1a->Itfg1 in 151 TH Prkcd Grin2c Glut log2FC -0.99, FDR 6.38e-15; Setd1a->Foxred1 in 151 TH Prkcd Grin2c Glut log2FC -1.04, FDR 1.93e-14; Setd1a->Dzip3 in 155 MB Glut log2FC -0.913, FDR 2.90e-14; Setd1a->Nprl3 in 151 TH Prkcd Grin2c Glut log2FC -1.55, FDR 3.00e-13.",
+  "preliminary_scores": {
+    "novelty": 4,
+    "priority": 4,
+    "support": 3
+  },
+  "prior_expectation": {
+    "citations": [
+      {
+        "citation": "Reactome ContentService. mTORC1-mediated signalling, amino-acid regulation of mTORC1, and TSC-complex reactions including R-HSA-166208 and R-HSA-9639288. Accessed 2025-04-29.",
+        "description": "Places GATOR1/NPRL3 and TSC1:TSC2 on inhibitory nutrient- and RHEB-linked branches upstream of mTORC1.",
+        "ref_id": "R011",
+        "ref_slug": "reactome_mtorc1_tsc_gator",
+        "scoped_ref_id": "Setd1a:R011",
+        "source": "Reactome",
+        "source_type": "database",
+        "target_gene": "Setd1a",
+        "url": "https://reactome.org/content/detail/R-HSA-166208"
+      },
+      {
+        "citation": "Reactome pathway R-HSA-1632852, Macroautophagy; RB1CC1-containing ULK1:ATG13:RB1CC1:ATG101 reactions.",
+        "description": "Places RB1CC1 in the ULK autophagy-initiation complex and in AMPK/MTORC1-regulated macroautophagy reactions.",
+        "ref_id": "R002",
+        "ref_slug": "reactome_rb1cc1_macroautophagy",
+        "scoped_ref_id": "Rb1cc1:R002",
+        "source": "Reactome",
+        "source_type": "database",
+        "target_gene": "Rb1cc1",
+        "url": "https://reactome.org/content/detail/R-HSA-1632852"
+      },
+      {
+        "citation": "Gan B, Melkoumian ZK, Wu X, Guan KL, Guan JL. Identification of FIP200 interaction with the TSC1-TSC2 complex and its role in regulation of cell size control. J Cell Biol. 2005;170(3):379-389. PMID: 16043512. doi:10.1083/jcb.200411106.",
+        "description": "Reported FIP200 binding to TSC1 and functional coupling of FIP200 to the TSC1-TSC2/S6 kinase cell-growth axis.",
+        "ref_id": "R007",
+        "ref_slug": "gan_2005_fip200_tsc1_tsc2",
+        "scoped_ref_id": "Rb1cc1:R007",
+        "source": "Journal of Cell Biology",
+        "source_type": "pubmed",
+        "target_gene": "Rb1cc1",
+        "url": "https://doi.org/10.1083/jcb.200411106"
+      },
+      {
+        "citation": "STRING mouse network queries for Rb1cc1 with Ulk1, Ulk2, Atg13, Atg101, Atg5, Map1lc3a, Becn1, Tsc1, Tsc2, Mtor, and Rptor, Mus musculus.",
+        "description": "The mouse functional network connected Rb1cc1 to ULK/autophagy genes, Atg5, Map1lc3a, Becn1, and Tsc2, supporting these genes as pathway-neighbor comparators.",
+        "ref_id": "R008",
+        "ref_slug": "string_mouse_rb1cc1_autophagy_network",
+        "scoped_ref_id": "Rb1cc1:R008",
+        "source": "STRING v API",
+        "source_type": "database",
+        "target_gene": "Rb1cc1",
+        "url": "https://string-db.org/cgi/network?identifier=Rb1cc1&species=10090"
+      },
+      {
+        "citation": "UniProtKB. O15047, Histone-lysine N-methyltransferase SETD1A. Accessed 2025-04-29.",
+        "description": "Curated description of SETD1A H3K4 methyltransferase activity, SET1A/COMPASS subunits, WDR82/WDR5/CXXC1 interactions, and nuclear localization.",
+        "ref_id": "R001",
+        "ref_slug": "uniprot_setd1a_o15047",
+        "scoped_ref_id": "Setd1a:R001",
+        "source": "UniProtKB",
+        "source_type": "database",
+        "target_gene": "Setd1a",
+        "url": "https://rest.uniprot.org/uniprotkb/O15047"
+      },
+      {
+        "citation": "Chen R, Liu Y, Djekidel MN, et al. Cell type-specific mechanism of Setd1a heterozygosity in schizophrenia pathogenesis. Sci Adv. 2022;8:eabm1077.",
+        "description": "Single-cell mouse study showing that Setd1a heterozygosity causes brain-region- and cell-type-variable transcriptional adaptations.",
+        "ref_id": "R006",
+        "ref_slug": "chen_2022_setd1a_cell_type_scz",
+        "scoped_ref_id": "Setd1a:R006",
+        "source": "PubMed",
+        "source_type": "pubmed",
+        "target_gene": "Setd1a",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35245111/"
+      },
+      {
+        "citation": "Human Protein Atlas. SETD1A / ENSG00000099381 gene entry. Accessed 2025-04-29.",
+        "description": "Annotates human SETD1A RNA as low tissue specificity, detected broadly, and low brain-region specificity.",
+        "ref_id": "R007",
+        "ref_slug": "hpa_setd1a_expression",
+        "scoped_ref_id": "Setd1a:R007",
+        "source": "Human Protein Atlas",
+        "source_type": "database",
+        "target_gene": "Setd1a",
+        "url": "https://www.proteinatlas.org/ENSG00000099381-SETD1A"
+      }
+    ],
+    "summary": "References were retained only when they were linked to one of the resolved source findings."
+  },
+  "reference_ids": [
+    "Rb1cc1:R002",
+    "Rb1cc1:R007",
+    "Rb1cc1:R008",
+    "Setd1a:R001",
+    "Setd1a:R006",
+    "Setd1a:R007",
+    "Setd1a:R011"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Rb1cc1:E008",
+    "Rb1cc1:E009",
+    "Setd1a:E001",
+    "Setd1a:E002",
+    "Setd1a:E003",
+    "Setd1a:E004",
+    "Setd1a:E005",
+    "Setd1a:E006",
+    "Setd1a:E007",
+    "Setd1a:E008",
+    "Setd1a:E010",
+    "Setd1a:E012"
+  ],
+  "source_urls_or_dois": [
+    "https://doi.org/10.1083/jcb.200411106",
+    "https://pubmed.ncbi.nlm.nih.gov/35245111/",
+    "https://reactome.org/content/detail/R-HSA-1632852",
+    "https://reactome.org/content/detail/R-HSA-166208",
+    "https://rest.uniprot.org/uniprotkb/O15047",
+    "https://string-db.org/cgi/network?identifier=Rb1cc1&species=10090",
+    "https://www.proteinatlas.org/ENSG00000099381-SETD1A"
+  ],
+  "status": "grounded",
+  "story_id": "S062",
+  "support": {
+    "exact_de_rows": [
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 3.9055213008314254e-23,
+        "gene": "Itfg1",
+        "log2_fold_change": -1.4134424924850464,
+        "p_value": 3.764428040303556e-27,
+        "score": -10.791775703430176,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 3.9055213008314254e-23,
+        "gene": "Fbxw5",
+        "log2_fold_change": -1.6047171354293823,
+        "p_value": 4.4780385264363075e-27,
+        "score": -10.775814056396484,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 6.3844869954091296e-15,
+        "gene": "Itfg1",
+        "log2_fold_change": -0.9904438853263855,
+        "p_value": 3.6992218526039337e-19,
+        "score": -8.945603370666504,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 1.9336127219321194e-14,
+        "gene": "Foxred1",
+        "log2_fold_change": -1.0404287576675415,
+        "p_value": 2.2407007612632473e-18,
+        "score": -8.744467735290527,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 2.90134673561982e-14,
+        "gene": "Dzip3",
+        "log2_fold_change": -0.9128742814064026,
+        "p_value": 4.989990372561751e-18,
+        "score": -8.653599739074707,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 2.999031447598374e-13,
+        "gene": "Nprl3",
+        "log2_fold_change": -1.5456809997558594,
+        "p_value": 5.2129870460600975e-17,
+        "score": -8.381787300109863,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 3.5898682373037864e-13,
+        "gene": "Sfi1",
+        "log2_fold_change": -0.9712803959846497,
+        "p_value": 8.319991279457178e-17,
+        "score": -8.3265962600708,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 7.227810546807563e-13,
+        "gene": "Tafazzin",
+        "log2_fold_change": -0.8431844115257263,
+        "p_value": 2.0939250671555603e-16,
+        "score": -8.216577529907227,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 1.2964546776590511e-12,
+        "gene": "Pigq",
+        "log2_fold_change": -0.8443489074707031,
+        "p_value": 4.507056066953072e-16,
+        "score": -8.124096870422363,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 3.9543769291323235e-12,
+        "gene": "Fbxw5",
+        "log2_fold_change": -0.9820398092269897,
+        "p_value": 1.832957612437487e-15,
+        "score": -7.952154159545898,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 4.562957531934939e-12,
+        "gene": "Nprl3",
+        "log2_fold_change": -1.801110029220581,
+        "p_value": 1.5695548467356322e-15,
+        "score": -7.971345901489258,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 7.898073907882569e-12,
+        "gene": "Letm2",
+        "log2_fold_change": -1.089769959449768,
+        "p_value": 4.1185853856505655e-15,
+        "score": -7.851265907287598,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 1.240990604884954e-11,
+        "gene": "Ufl1",
+        "log2_fold_change": -1.1758244037628174,
+        "p_value": 7.190396922677757e-15,
+        "score": -7.7810869216918945,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 2.4033479553126446e-11,
+        "gene": "Pigq",
+        "log2_fold_change": -1.1103538274765015,
+        "p_value": 9.644806333307638e-15,
+        "score": -7.743853569030762,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 6.786005850183385e-11,
+        "gene": "Ufl1",
+        "log2_fold_change": -1.3636809587478638,
+        "p_value": 3.112311345609533e-14,
+        "score": -7.593561172485352,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 1.5825031028970045e-10,
+        "gene": "Coq2",
+        "log2_fold_change": -1.0928524732589722,
+        "p_value": 1.5587550118343516e-13,
+        "score": -7.382045745849609,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 1.6864407844488013e-10,
+        "gene": "Coq2",
+        "log2_fold_change": -1.2520034313201904,
+        "p_value": 8.701465951980287e-14,
+        "score": -7.45925235748291,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr": 4.3499390186976595e-10,
+        "gene": "Fbxw5",
+        "log2_fold_change": -1.908064603805542,
+        "p_value": 2.544121545618002e-14,
+        "score": -7.619625568389893,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 5.428244784872583e-10,
+        "gene": "Foxred1",
+        "log2_fold_change": -1.0252076387405396,
+        "p_value": 4.655384386587467e-13,
+        "score": -7.234997272491455,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 6.066978089600519e-10,
+        "gene": "Ttc8",
+        "log2_fold_change": -1.0270705223083496,
+        "p_value": 5.912895002190496e-13,
+        "score": -7.202475547790527,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 1.3899406808081798e-09,
+        "gene": "Rmnd1",
+        "log2_fold_change": -1.0000144243240356,
+        "p_value": 1.6912193230761792e-12,
+        "score": -7.057830810546875,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 4.053019288716631e-09,
+        "gene": "Prkn",
+        "log2_fold_change": -1.0246477127075195,
+        "p_value": 5.166372579626043e-12,
+        "score": -6.900928497314453,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 4.358788379623833e-09,
+        "gene": "Rmnd1",
+        "log2_fold_change": -1.2186936140060425,
+        "p_value": 5.722054592832863e-12,
+        "score": -6.886403560638428,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 4.358788379623833e-09,
+        "gene": "Letm2",
+        "log2_fold_change": -1.2002060413360596,
+        "p_value": 5.9973009866979305e-12,
+        "score": -6.879713535308838,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 4.9883328768412705e-09,
+        "gene": "Ndufs2",
+        "log2_fold_change": -0.7414814233779907,
+        "p_value": 7.72143482627497e-12,
+        "score": -6.843624114990234,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 5.983049666903265e-09,
+        "gene": "Prkn",
+        "log2_fold_change": -1.1819759607315063,
+        "p_value": 1.029017313576208e-11,
+        "score": -6.802384376525879,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 9.340395755908474e-09,
+        "gene": "Dzip3",
+        "log2_fold_change": -0.6009291410446167,
+        "p_value": 1.3529746445200292e-11,
+        "score": -6.762856483459473,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 1.1041468896993093e-08,
+        "gene": "Trappc12",
+        "log2_fold_change": -1.2642457485198975,
+        "p_value": 2.1939380071741237e-11,
+        "score": -6.692497253417969,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 1.852542989507145e-08,
+        "gene": "Sfi1",
+        "log2_fold_change": -0.9231861233711243,
+        "p_value": 4.354426564799229e-11,
+        "score": -6.591486930847168,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr": 8.248728137404677e-08,
+        "gene": "Pigq",
+        "log2_fold_change": -1.3897053003311157,
+        "p_value": 9.648763758807671e-12,
+        "score": -6.811646938323975,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr": 9.395060196341686e-08,
+        "gene": "Ufl1",
+        "log2_fold_change": -1.80413818359375,
+        "p_value": 1.6484489758465938e-11,
+        "score": -6.734190464019775,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr": 9.431954822875218e-08,
+        "gene": "Foxred1",
+        "log2_fold_change": -1.459867238998413,
+        "p_value": 2.758204124130079e-11,
+        "score": -6.658934116363525,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 1.3911685876028264e-07,
+        "gene": "Tmem260",
+        "log2_fold_change": -1.3253531455993652,
+        "p_value": 4.1472663277731454e-10,
+        "score": -6.248382091522217,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 1.5298166307341775e-07,
+        "gene": "Ttc8",
+        "log2_fold_change": -0.7408291101455688,
+        "p_value": 2.7478020483666206e-10,
+        "score": -6.3123779296875,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr": 2.3661410143117537e-07,
+        "gene": "Letm2",
+        "log2_fold_change": -1.644676923751831,
+        "p_value": 8.303220309902048e-11,
+        "score": -6.495002269744873,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 5.329503387005373e-07,
+        "gene": "Trappc12",
+        "log2_fold_change": -0.998306393623352,
+        "p_value": 1.2351824293424586e-09,
+        "score": -6.075608730316162,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 1.4347265764482037e-06,
+        "gene": "Cfap74",
+        "log2_fold_change": 0.7823641300201416,
+        "p_value": 3.740813253384852e-09,
+        "score": 5.895264625549316,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 1.655981007905011e-06,
+        "gene": "Tafazzin",
+        "log2_fold_change": -0.6754579544067383,
+        "p_value": 6.07594934964861e-09,
+        "score": -5.8146538734436035,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr": 2.5079516821657345e-06,
+        "gene": "Itfg1",
+        "log2_fold_change": -1.159444808959961,
+        "p_value": 1.1734479738756507e-09,
+        "score": -6.0838303565979,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 3.1216861704211513e-06,
+        "gene": "Pnn",
+        "log2_fold_change": 0.4688616394996643,
+        "p_value": 1.2527548697441988e-08,
+        "score": 5.692387104034424,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr": 3.5460663980638236e-06,
+        "gene": "Rmnd1",
+        "log2_fold_change": -1.5033130645751953,
+        "p_value": 2.2813621697685144e-09,
+        "score": -5.976390361785889,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 1.6374931416773617e-05,
+        "gene": "Tmem260",
+        "log2_fold_change": -0.9254801273345947,
+        "p_value": 6.131916213838921e-08,
+        "score": -5.414911270141602,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 1.9891298288212435e-05,
+        "gene": "Srsf2",
+        "log2_fold_change": 0.5530591607093811,
+        "p_value": 1.0605347364580386e-07,
+        "score": 5.316033840179443,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr": 2.5617077036326823e-05,
+        "gene": "Ndufs2",
+        "log2_fold_change": -0.889390230178833,
+        "p_value": 2.2473748715925977e-08,
+        "score": -5.591792583465576,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 2.8488486833196527e-05,
+        "gene": "Brd9",
+        "log2_fold_change": 0.5711806416511536,
+        "p_value": 1.5679038789123813e-07,
+        "score": 5.244401454925537,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr": 5.9624912041528045e-05,
+        "gene": "Prkn",
+        "log2_fold_change": -1.3453798294067383,
+        "p_value": 6.974489652769687e-08,
+        "score": -5.39182710647583,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr": 9.367096730122931e-05,
+        "gene": "Trappc12",
+        "log2_fold_change": -1.5130982398986816,
+        "p_value": 1.1504797715088405e-07,
+        "score": -5.301193714141846,
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr": 0.000211848952439327,
+        "gene": "Nprl3",
+        "log2_fold_change": -1.4629942178726196,
+        "p_value": 3.569679003215254e-07,
+        "score": -5.090580940246582,
+        "target_gene": "Setd1a"
+      }
+    ],
+    "finding_summaries": [
+      {
+        "claim_id": "claim:setd1a_f006_24adb08987ac",
+        "confidence": "moderate",
+        "direction": "Setd1a signature positively correlated with Tsc1/Tsc2 perturbations; Nprl3 down",
+        "finding_id": "F006",
+        "finding_type": "convergent_module",
+        "summary": "Setd1a loss showed a modest mTORC1-neighbor signature: Nprl3 was repeatedly down, and Tsc1/Tsc2 perturbations were positive restricted-signature neighbors in MB Glut, TH Prkcd Grin2c Glut, and MB P MY GABA.",
+        "target_gene": "Setd1a",
+        "why_it_matters": "NPRL3 and TSC1:TSC2 inhibit mTORC1 through different upstream branches, so the pattern nominates mTORC1 activation as a mechanistic hypothesis that can be assayed orthogonally."
+      },
+      {
+        "claim_id": "claim:rb1cc1_f005_68e59fa6aa21",
+        "confidence": "moderate",
+        "direction": "positive_signature_convergence",
+        "finding_id": "F005",
+        "finding_type": "convergent_module",
+        "summary": "Tsc1 and Tsc2 perturbations, although much stronger globally, aligned with the Rb1cc1 restricted signatures in 155 MB Glut and 191 MB P MY GABA.",
+        "target_gene": "Rb1cc1",
+        "why_it_matters": "This recovers a TSC/mTOR/FIP200 axis in the same cell classes where Rb1cc1 changes ER and neuronal membrane transcripts, supporting a pathway-neighbor relationship rather than an isolated off-pathway signature."
+      },
+      {
+        "claim_id": "claim:setd1a_f001_693f26945149",
+        "confidence": "high",
+        "direction": "cell-class-restricted and mostly down",
+        "finding_id": "F001",
+        "finding_type": "cell_type_selectivity",
+        "summary": "Setd1a perturbation gave a sharply cell-class-skewed, mostly down-regulated transcriptome that was maximal in 155 MB Glut and 151 TH Prkcd Grin2c Glut rather than uniform across brain classes.",
+        "target_gene": "Setd1a",
+        "why_it_matters": "SETD1A is a broadly expressed chromatin enzyme, so the dataset identifies cellular contexts in which partial loss is transcriptionally exposed versus buffered."
+      }
+    ],
+    "parquet_filter": {
+      "cell_types": [
+        "151 TH Prkcd Grin2c Glut",
+        "155 MB Glut",
+        "191 MB P MY GABA"
+      ],
+      "gene_targets": [
+        "Rb1cc1",
+        "Setd1a"
+      ],
+      "names": [
+        "Adam10",
+        "Brd9",
+        "Caml",
+        "Cfap74",
+        "Coq2",
+        "Dzip3",
+        "Fbxw5",
+        "Foxred1",
+        "Gbf1",
+        "Ghsr",
+        "Itfg1",
+        "Letm2",
+        "Naa20",
+        "Ndufs2",
+        "Nprl3",
+        "Pigq",
+        "Pnn",
+        "Pomp",
+        "Prkn",
+        "Prpf6",
+        "Ranbp2",
+        "Rb1cc1",
+        "Rhobtb2",
+        "Rmnd1",
+        "Sec31a",
+        "Setd1a",
+        "Sfi1",
+        "Snrnp70",
+        "Srrm2",
+        "Srsf2",
+        "Tafazzin",
+        "Tmem260",
+        "Trappc12",
+        "Trrap",
+        "Tsc1",
+        "Tsc2",
+        "Ttc8",
+        "U2af2",
+        "Ufl1",
+        "Wac"
+      ]
+    },
+    "resolved_evidence": [
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "High-count thalamic glutamatergic Setd1a response with strong downstream effects despite only nominal target-transcript reduction.",
+        "evidence_id": "E003",
+        "evidence_slug": "setd1a_151_th_prkcd_signature",
+        "genes": "Setd1a|Itfg1|Foxred1|Nprl3|Cfap74",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "5",
+        "scoped_evidence_id": "Setd1a:E003",
+        "statistics": "154 perturbed cells versus 23679 controls; Setd1a logFC -0.247, score -2.31, p=0.021, FDR=0.360; 368 genes FDR<0.05, 299 down and 69 up; Itfg1 logFC -0.990, FDR=6.38e-15; Foxred1 logFC -1.040, FDR=1.93e-14; Nprl3 logFC -1.546, FDR=3.00e-13.",
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "",
+        "description": "Cross-cell-class recurrence of a predominantly down-regulated Setd1a module.",
+        "evidence_id": "E008",
+        "evidence_slug": "setd1a_recurrent_down_genes_across_classes",
+        "genes": "Fbxw5|Itfg1|Coq2|Letm2|Pigq|Ufl1|Nprl3|Rmnd1|Ttc8|Ndufs2|Foxred1|Dzip3|Sfi1|Trappc12|Tafazzin",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "15",
+        "scoped_evidence_id": "Setd1a:E008",
+        "statistics": "Across all Setd1a FDR<0.05 rows, 1063 were down and 182 were up. Fbxw5 was down in 9 FDR-significant classes; Itfg1 and Coq2 in 8; Letm2, Pigq, Ufl1, Nprl3, Rmnd1, Ttc8, Ndufs2, and Dars in 7; Foxred1, Dzip3, Sfi1, Tafazzin, Trap1, Rnft2, Trappc12, Dnajc16, Tmem260, Adat1, and Ercc6l2 in 6.",
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut; 155 MB Glut; 191 MB P MY GABA",
+        "description": "Top same-cell-class signature-neighbor calculations show modest positive Tsc1/Tsc2 similarity but no strong inverse neighbor.",
+        "evidence_id": "E012",
+        "evidence_slug": "setd1a_restricted_signature_neighbors",
+        "genes": "Setd1a|Ranbp2|Snrnp70|Prpf6|Tsc1|Tsc2|Naa20|Trrap|U2af2",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "9",
+        "scoped_evidence_id": "Setd1a:E012",
+        "statistics": "Pearson correlations restricted to Setd1a FDR genes: in 155 MB Glut, Ranbp2 r=0.432, Snrnp70 r=0.346, Prpf6 r=0.301, Tsc2 r=0.288, Tsc1 r=0.288, and the strongest negative neighbor was U2af2 r=-0.148; in 151 TH Prkcd Grin2c Glut, Naa20 r=0.365, Tsc1 r=0.275, Tsc2 r=0.240, and the strongest negative neighbor was Trrap r=-0.242; in 191 MB P MY GABA, Tsc1 r=0.248 and Tsc2 r=0.242.",
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "",
+        "description": "Tsc1 and Tsc2 perturbations produced much larger signatures that selectively overlapped the midbrain Rb1cc1 signatures.",
+        "evidence_id": "E008",
+        "evidence_slug": "tsc1_tsc2_converge_with_rb1cc1_mb",
+        "genes": "Tsc1|Tsc2|Rb1cc1",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "3",
+        "scoped_evidence_id": "Rb1cc1:E008",
+        "statistics": "Restricted to the top 200 absolute-score Rb1cc1 genes, Pearson correlations in 155 MB Glut were Tsc1 r=0.536 and Tsc2 r=0.425; in 191 MB P MY GABA, Tsc1 r=0.338 and Tsc2 r=0.439; in 151 TH Prkcd Grin2c Glut, Tsc1 r=0.187 and Tsc2 r=0.101. Tsc1 had 478, 88, and 321 FDR<0.05 genes in 155, 191, and 151; Tsc2 had 202, 38, and 86.",
+        "target_gene": "Rb1cc1"
+      },
+      {
+        "cell_type": "",
+        "description": "The top noncanonical signature neighbors were recorded as exploratory comparators; only Tsc1 and Tsc2 were carried forward as mechanistically grounded neighbors.",
+        "evidence_id": "E009",
+        "evidence_slug": "rb1cc1_exploratory_signature_neighbors",
+        "genes": "Sec31a|Pomp|Gbf1|Caml|Wac|Adam10|Rhobtb2|Ghsr",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "8",
+        "scoped_evidence_id": "Rb1cc1:E009",
+        "statistics": "Using the same 200-gene restricted correlations, top positive neighbors of Rb1cc1 were Sec31a r=0.562, Tsc1 r=0.536, Pomp r=0.516, Gbf1 r=0.515, and Caml r=0.508 in 155 MB Glut; Wac r=0.515, Adam10 r=0.443, and Tsc2 r=0.439 in 191 MB P MY GABA. The strongest negative neighbors were Rhobtb2 r=-0.429 in 155 MB Glut and Ghsr r=-0.425 in 191 MB P MY GABA.",
+        "target_gene": "Rb1cc1"
+      },
+      {
+        "cell_type": "",
+        "description": "Setd1a itself was measured in every Setd1a perturbation test. Only 155 MB Glut had an FDR-significant target-transcript decrease.",
+        "evidence_id": "E001",
+        "evidence_slug": "setd1a_on_target_all_classes",
+        "genes": "Setd1a",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "1",
+        "scoped_evidence_id": "Setd1a:E001",
+        "statistics": "371818 Setd1a-target rows across 22 cell classes; Setd1a transcript logFC was negative in 20/22 classes, median -0.246, range -0.536 to 0.021; 6 nominal p<0.05 and 1 FDR<0.05 transcript row.",
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "description": "Largest and best on-target Setd1a response, with a dominant down-regulated arm and a smaller up-regulated arm.",
+        "evidence_id": "E002",
+        "evidence_slug": "setd1a_155_mb_glut_signature",
+        "genes": "Setd1a|Itfg1|Fbxw5|Pnn|Srsf2|Brd9",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "6",
+        "scoped_evidence_id": "Setd1a:E002",
+        "statistics": "139 perturbed cells versus 20353 controls; Setd1a logFC -0.487, score -3.55, p=3.91e-4, FDR=0.0202; 465 genes FDR<0.05, 390 down and 75 up; Itfg1 logFC -1.413, score -10.79, FDR=3.91e-23; Fbxw5 logFC -1.605, score -10.78, FDR=3.91e-23; Pnn logFC 0.469, FDR=3.12e-6.",
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "High-count thalamic glutamatergic Setd1a response with strong downstream effects despite only nominal target-transcript reduction.",
+        "evidence_id": "E003",
+        "evidence_slug": "setd1a_151_th_prkcd_signature",
+        "genes": "Setd1a|Itfg1|Foxred1|Nprl3|Cfap74",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "5",
+        "scoped_evidence_id": "Setd1a:E003",
+        "statistics": "154 perturbed cells versus 23679 controls; Setd1a logFC -0.247, score -2.31, p=0.021, FDR=0.360; 368 genes FDR<0.05, 299 down and 69 up; Itfg1 logFC -0.990, FDR=6.38e-15; Foxred1 logFC -1.040, FDR=1.93e-14; Nprl3 logFC -1.546, FDR=3.00e-13.",
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "description": "Brainstem/midbrain GABA class with a mostly down-regulated Setd1a signature.",
+        "evidence_id": "E004",
+        "evidence_slug": "setd1a_191_mb_p_my_gaba_signature",
+        "genes": "Setd1a|Fbxw5|Pigq|Ufl1|Srrm2",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "5",
+        "scoped_evidence_id": "Setd1a:E004",
+        "statistics": "58 perturbed cells versus 10309 controls; Setd1a logFC -0.536, p=0.00456, FDR=0.195; 177 genes FDR<0.05, 154 down and 23 up; Fbxw5 logFC -1.908, FDR=4.35e-10; Pigq logFC -1.390, FDR=8.25e-8; Ufl1 logFC -1.804, FDR=9.40e-8; Srrm2 logFC 0.402, FDR=0.00355.",
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "052 Pvalb Gaba; 054 CNU-MGE GABA; 066 CNU-HYa HY GABA",
+        "description": "Moderate GABA-cell Setd1a signatures that shared the same dominant negative direction.",
+        "evidence_id": "E005",
+        "evidence_slug": "setd1a_gabaic_hypothalamic_signatures",
+        "genes": "Pigq|Ndufs2|Foxred1|Ttc8|Itfg1|Tafazzin|Fbxw5|Nprl3",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "8",
+        "scoped_evidence_id": "Setd1a:E005",
+        "statistics": "052 Pvalb Gaba: 97 perturbed cells, 35 FDR genes, 33 down; Pigq FDR=2.17e-4 and Ndufs2 FDR=2.17e-4. 054 CNU-MGE GABA: 49 perturbed cells, 27 FDR genes, all down; Ttc8 FDR=6.38e-4. 066 CNU-HYa HY GABA: 55 perturbed cells, 63 FDR genes, 58 down; Itfg1 FDR=5.78e-7.",
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "110 CNU-HYa HY MM Glut; 145 MH-LH TH Glut",
+        "description": "Hypothalamic glutamatergic classes with smaller but directionally similar Setd1a responses.",
+        "evidence_id": "E006",
+        "evidence_slug": "setd1a_hypothalamic_glutamate_signatures",
+        "genes": "Fbxw5|Ufl1|Tmem260|Itfg1|Coq2|Prkn",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "6",
+        "scoped_evidence_id": "Setd1a:E006",
+        "statistics": "110 CNU-HYa HY MM Glut: 58 perturbed cells, 74 FDR genes, 70 down; Fbxw5 FDR=1.25e-5, Ufl1 FDR=1.68e-5, Tmem260 FDR=1.68e-5. 145 MH-LH TH Glut: 50 perturbed cells, 8 FDR genes, all down; Fbxw5 FDR=1.49e-4 and Coq2 FDR=0.00301.",
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "217 P MY Pineal Glut",
+        "description": "A low-cell-count pineal glutamatergic signature that recapitulated several recurrent down-regulated markers but has weak direct target-transcript support.",
+        "evidence_id": "E007",
+        "evidence_slug": "setd1a_p_my_pineal_low_count_signature",
+        "genes": "Rmnd1|Fbxw5|Letm2|Pigq|Setd1a",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "5",
+        "scoped_evidence_id": "Setd1a:E007",
+        "statistics": "22 perturbed cells versus 3465 controls; 27 genes FDR<0.05, 23 down; Rmnd1 logFC -3.081, FDR=5.96e-5; Fbxw5 logFC -2.034, FDR=1.20e-4; Setd1a logFC -0.461, p=0.198, FDR=1.0.",
+        "target_gene": "Setd1a"
+      },
+      {
+        "cell_type": "001 L5-6 IT Glut; 005 L4-5 IT CTX Glut; 007 L2-3 IT CTX Glut; 008 L2-3 IT ENT PPP RSP Glut; 009 L2-3 IT PIR AON ENT Glut; 012 MEA LA CA1 DG Glut; 017 CA3 CA2-FC DG Glut; 022 L5 ET CTX Glut; 027 NP-CT-L6b-OB Glut",
+        "description": "Absence of FDR-significant downstream Setd1a signatures in cortical, hippocampal, and related glutamatergic classes.",
+        "evidence_id": "E010",
+        "evidence_slug": "setd1a_telencephalic_glutamate_no_fdr",
+        "genes": "Setd1a",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "1",
+        "scoped_evidence_id": "Setd1a:E010",
+        "statistics": "Nine telencephalic glutamatergic classes had 0 genes at FDR<0.05, with 31-95 perturbed cells per class. 009 L2-3 IT PIR AON ENT Glut had 81 cells and Setd1a logFC -0.283, p=0.014, FDR=1.0. 022 L5 ET CTX Glut had 34 cells and Setd1a logFC -0.513, p=0.0055, FDR=1.0.",
+        "target_gene": "Setd1a"
+      }
+    ],
+    "source_claim_ids": [
+      "claim:setd1a_f006_24adb08987ac",
+      "claim:rb1cc1_f005_68e59fa6aa21",
+      "claim:setd1a_f001_693f26945149"
+    ],
+    "source_cluster_ids": [
+      "C467",
+      "C062"
+    ]
+  },
+  "targets": [
+    "Setd1a",
+    "Tsc1",
+    "Tsc2",
+    "Nprl3",
+    "Rb1cc1",
+    "Sec31a",
+    "Pomp",
+    "Gbf1",
+    "Caml",
+    "Adam10",
+    "Fbxw5",
+    "Itfg1",
+    "Pigq",
+    "Ufl1",
+    "Coq2",
+    "Foxred1",
+    "Rmnd1"
+  ],
+  "title": "Setd1a loss modestly converges with Tsc1/Tsc2 and Nprl3 repression in caudal glutamatergic/GABAergic neurons"
+}

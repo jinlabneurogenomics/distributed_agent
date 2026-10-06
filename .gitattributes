@@ -1,0 +1,12 @@
+# Binary manuscript data and workbooks.
+data/**/*.parquet filter=lfs diff=lfs merge=lfs -text
+data/**/*.xlsx filter=lfs diff=lfs merge=lfs -text
+
+# Text datasets larger than 5 MiB. Keep notebooks in Git for inline rendering.
+data/inputs/literature/final_classified_findings.csv filter=lfs diff=lfs merge=lfs -text
+data/tables/literature/final_classified_findings.csv filter=lfs diff=lfs merge=lfs -text
+data/tables/scaling/single_agent_classifications.csv filter=lfs diff=lfs merge=lfs -text
+data/runs/reports/july/reports.jsonl filter=lfs diff=lfs merge=lfs -text
+data/runs/reports/june/reports.jsonl filter=lfs diff=lfs merge=lfs -text
+data/runs/shuffles/out_of_screen_reports_audits_150.jsonl filter=lfs diff=lfs merge=lfs -text
+data/runs/shuffles/within_screen_reports_audits_150.jsonl filter=lfs diff=lfs merge=lfs -text

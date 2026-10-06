@@ -1,0 +1,143 @@
+{
+  "story_id": "S143",
+  "title": "Zc3h14 loss links thalamic and midbrain glutamatergic responses to Pabpn1/Cstf2 repression and Zcchc18 induction",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Zc3h14 loss produced six FDR rows in 151 TH Prkcd Grin2c Glut, including Zcchc18 logFC 0.515 FDR 7.98e-10, Pabpn1 -0.264 FDR 9.51e-04, and Tra2a 0.427 FDR 0.00402. 155 MB Glut had clearer Zc3h14 target depletion, logFC -0.739 FDR 0.00543, plus Zcchc18 induction, Pabpn1 repression, and Cstf2 repression. 066 CNU-HYa HY GABA and 191 MB P MY GABA gave narrower single-gene FDR responses.",
+  "biological_interpretation": "Zc3h14 knockdown connects a conserved poly(A)-binding protein to a selective neuronal RNA-processing abundance state, with Pabpn1/Cstf2 down-regulation in glutamatergic responders and Zcchc18 as the most reproducible positive marker.",
+  "targets": [
+    "Zc3h14",
+    "Pabpn1",
+    "Cstf2",
+    "Tra2a",
+    "Zcchc18"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "066 CNU-HYa HY GABA",
+    "191 MB P MY GABA"
+  ],
+  "support": {
+    "support_level": 4,
+    "exact_de_rows": [
+      {
+        "gene_target": "Zc3h14",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Zcchc18",
+        "log2_fold_change": 0.515,
+        "pvals_adj": 7.98e-10
+      },
+      {
+        "gene_target": "Zc3h14",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Pabpn1",
+        "log2_fold_change": -0.264,
+        "pvals_adj": 0.000951
+      },
+      {
+        "gene_target": "Zc3h14",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Tra2a",
+        "log2_fold_change": 0.427,
+        "pvals_adj": 0.00402
+      },
+      {
+        "gene_target": "Zc3h14",
+        "cell_type": "155 MB Glut",
+        "gene": "Zc3h14",
+        "log2_fold_change": -0.739,
+        "pvals_adj": 0.00543
+      },
+      {
+        "gene_target": "Zc3h14",
+        "cell_type": "155 MB Glut",
+        "gene": "Zcchc18",
+        "log2_fold_change": 0.558,
+        "pvals_adj": 2.07e-06
+      },
+      {
+        "gene_target": "Zc3h14",
+        "cell_type": "155 MB Glut",
+        "gene": "Pabpn1",
+        "log2_fold_change": -0.28,
+        "pvals_adj": 0.0141
+      },
+      {
+        "gene_target": "Zc3h14",
+        "cell_type": "155 MB Glut",
+        "gene": "Cstf2",
+        "log2_fold_change": -0.592,
+        "pvals_adj": 0.0283
+      },
+      {
+        "gene_target": "Zc3h14",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Zcchc18",
+        "log2_fold_change": 0.566,
+        "pvals_adj": 0.0116
+      }
+    ],
+    "report_evidence_summary": [
+      "Zc3h14:E001",
+      "Zc3h14:E002",
+      "Zc3h14:E003",
+      "Zc3h14:E004",
+      "Zc3h14:E005",
+      "Zc3h14:E006"
+    ]
+  },
+  "caveats": [
+    "Only 155 MB Glut had FDR-significant measured Zc3h14 depletion, so apparent cell-type selectivity remains partly confounded by target engagement and low cell counts."
+  ],
+  "prior_expectation": {
+    "summary": "ZC3H14/dNab2 is an intellectual-disability gene and conserved polyadenosine RNA-binding protein involved in poly(A)-tail control and brain function, which supports the RNA-processing interpretation but not the specific Zcchc18 marker.",
+    "citations": [
+      {
+        "ref_id": "Zc3h14:R001",
+        "ref": "Pak et al. 2011 PMID:21734151",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/21734151/",
+        "supports": "ZC3H14 loss-of-function in intellectual disability"
+      },
+      {
+        "ref_id": "Zc3h14:R002",
+        "ref": "Kelly et al. 2014 PMID:24671764",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/24671764/",
+        "supports": "ZC3H14 in poly(A)-tail-length control"
+      },
+      {
+        "ref_id": "Zc3h14:R003",
+        "ref": "Rha et al. 2017 PMID:28666327",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/28666327/",
+        "supports": "mouse Zc3h14 brain phenotypes"
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 4,
+    "priority": 4
+  },
+  "report_evidence_ids": [
+    "Zc3h14:E001",
+    "Zc3h14:E002",
+    "Zc3h14:E003",
+    "Zc3h14:E004",
+    "Zc3h14:E005",
+    "Zc3h14:E006"
+  ],
+  "reference_ids": [
+    "Zc3h14:R001",
+    "Zc3h14:R002",
+    "Zc3h14:R003",
+    "Zc3h14:R008"
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/21734151/",
+    "https://pubmed.ncbi.nlm.nih.gov/24671764/",
+    "https://pubmed.ncbi.nlm.nih.gov/28666327/"
+  ],
+  "source_claim_ids": [
+    "claim:zc3h14_f001_fd39ad9cc831"
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "story_id": "S124",
+  "title": "Ylpm1 depletion selectively represses nuclear-speckle spliceosome genes in midbrain-linked neurons",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Ylpm1 RNA was depleted broadly, but FDR-supported downstream coupling concentrated in MB Glut, where Srsf6/Srsf5 and other nuclear-speckle/nuclear-body genes were repressed; Inha recurred across MB-linked neuronal classes while several other classes were target-only.",
+  "biological_interpretation": "Ylpm1 loss selectively stresses nuclear-speckle or post-transcriptional machinery in midbrain-derived neurons despite comparable target depletion elsewhere.",
+  "targets": [
+    "Ylpm1",
+    "Srsf6",
+    "Srsf5",
+    "Atxn2l",
+    "Fam193b",
+    "Inha",
+    "Ube2o",
+    "Jakmip2",
+    "Shprh"
+  ],
+  "cell_types": [
+    "155 MB Glut",
+    "191 MB P MY GABA",
+    "054 CNU-MGE GABA",
+    "066 CNU-HYa HY GABA",
+    "151 TH Prkcd Grin2c Glut"
+  ],
+  "support": {
+    "exact_de_rows": [
+      {
+        "target": "Ylpm1",
+        "cell_type": "155 MB Glut",
+        "gene": "Ylpm1",
+        "logfoldchanges": -0.6524162292480469,
+        "pvals": 3.974259213131942e-08,
+        "pvals_adj": 0.0006932300345466046,
+        "score": -5.491991996765137
+      },
+      {
+        "target": "Ylpm1",
+        "cell_type": "155 MB Glut",
+        "gene": "Srsf6",
+        "logfoldchanges": -0.6102951169013977,
+        "pvals": 1.607525244975152e-07,
+        "pvals_adj": 0.0009346687616033859,
+        "score": -5.239798069000244
+      },
+      {
+        "target": "Ylpm1",
+        "cell_type": "155 MB Glut",
+        "gene": "Srsf5",
+        "logfoldchanges": -0.44000953435897827,
+        "pvals": 9.836342826714674e-07,
+        "pvals_adj": 0.0042893831981596015,
+        "score": -4.8948845863342285
+      },
+      {
+        "target": "Ylpm1",
+        "cell_type": "155 MB Glut",
+        "gene": "Shprh",
+        "logfoldchanges": 0.7869046926498413,
+        "pvals": 1.2337946116700495e-07,
+        "pvals_adj": 0.0009346687616033859,
+        "score": 5.288416862487793
+      },
+      {
+        "target": "Ylpm1",
+        "cell_type": "155 MB Glut",
+        "gene": "Jakmip2",
+        "logfoldchanges": 0.8746033310890198,
+        "pvals": 1.0590001339227247e-05,
+        "pvals_adj": 0.02309017417001761,
+        "score": 4.404762268066406
+      },
+      {
+        "target": "Ylpm1",
+        "cell_type": "155 MB Glut",
+        "gene": "Atxn2l",
+        "logfoldchanges": 0.3622097969055176,
+        "pvals": 1.4668311519775937e-05,
+        "pvals_adj": 0.023172691124449852,
+        "score": 4.333611011505127
+      },
+      {
+        "target": "Ylpm1",
+        "cell_type": "155 MB Glut",
+        "gene": "Inha",
+        "logfoldchanges": -0.5011734962463379,
+        "pvals": 1.5941769964650474e-05,
+        "pvals_adj": 0.023172691124449852,
+        "score": -4.315256595611572
+      },
+      {
+        "target": "Ylpm1",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Ylpm1",
+        "logfoldchanges": -0.8334934711456299,
+        "pvals": 6.930229285062358e-08,
+        "pvals_adj": 0.000592465301579981,
+        "score": -5.392970561981201
+      },
+      {
+        "target": "Ylpm1",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Inha",
+        "logfoldchanges": -0.8323805928230286,
+        "pvals": 6.112999396329967e-08,
+        "pvals_adj": 0.000592465301579981,
+        "score": -5.415463924407959
+      },
+      {
+        "target": "Ylpm1",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Ylpm1",
+        "logfoldchanges": -1.1725417375564575,
+        "pvals": 4.142627849777639e-08,
+        "pvals_adj": 0.0007089693302109451,
+        "score": -5.484661102294922
+      }
+    ],
+    "evidence_summary": "Ylpm1:F002 resolves Srsf6/Srsf5 repression in 155 MB Glut; Ylpm1:F001 resolves broad target depletion and target-only 066/151/054 profiles."
+  },
+  "caveats": [
+    "The FDR-supported nuclear-speckle branch is driven primarily by 155 MB Glut.",
+    "The screen did not measure speckle morphology or isoforms."
+  ],
+  "prior_expectation": {
+    "summary": "Ylpm1:F002 resolves Srsf6/Srsf5 repression in 155 MB Glut; Ylpm1:F001 resolves broad target depletion and target-only 066/151/054 profiles.",
+    "citations": [
+      "UniProtKB Q9R0I7",
+      "Human Protein Atlas YLPM1",
+      "QuickGO GO:0016607"
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 4,
+    "priority": 3
+  },
+  "report_evidence_ids": [
+    "Ylpm1:E001",
+    "Ylpm1:E002",
+    "Ylpm1:E003",
+    "Ylpm1:E004",
+    "Ylpm1:E005"
+  ],
+  "reference_ids": [
+    "Ylpm1:R001",
+    "Ylpm1:R002",
+    "Ylpm1:R003",
+    "Ylpm1:R006"
+  ],
+  "source_urls_or_dois": [
+    "https://www.uniprot.org/uniprotkb/Q9R0I7",
+    "https://www.proteinatlas.org/ENSG00000119596-YLPM1",
+    "https://www.ebi.ac.uk/QuickGO/term/GO:0016607"
+  ]
+}

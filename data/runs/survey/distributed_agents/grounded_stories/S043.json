@@ -1,0 +1,275 @@
+{
+  "biological_interpretation": "DDX3X loss is detectable as cell-specific neuronal abundance programs rather than a single translation/Wnt signature; the thalamic response emphasizes NMDA and junctional markers, while the midbrain response exposes a distinct Bicd2/Inha/Ppp2r5b compensation-like state.",
+  "caveats": [
+    "Only two Ddx3x classes had any FDR-significant genes.",
+    "Wnt and translational biology are literature-supported for DDX3X, but the quoted neuronal rows do not directly measure translation, beta-catenin signaling, or RNA granules."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut"
+  ],
+  "exact_observed_result": "Ddx3x had two corrected downstream states: 151 TH Prkcd Grin2c Glut showed FDR-supported Ddx3x reduction with Grin2b, Synpo2, Plekhg1 and Ccdc136 down, whereas 155 MB Glut showed Thy1 down with Inha, Ppp2r5b and Bicd2 up and only nominal Ddx3x target depletion.",
+  "preliminary_scores": {
+    "novelty": 4,
+    "priority": 4,
+    "support": 4
+  },
+  "prior_expectation": {
+    "citations": [
+      "Cruciat CM, Dolde C, de Groot RE, et al. RNA helicase DDX3 is a regulatory subunit of casein kinase 1 in Wnt-\u03b2-catenin signaling. Science. 2013;339(6126):1436-1441.",
+      "Snijders Blok L, Madsen E, Juusola J, et al. Mutations in DDX3X Are a Common Cause of Unexplained Intellectual Disability with Gender-Specific Effects on Wnt Signaling. Am J Hum Genet. 2015;97(2):343-352.",
+      "Lennox AL, Hoye ML, Jiang R, et al. Pathogenic DDX3X Mutations Impair RNA Metabolism and Neurogenesis during Fetal Cortical Development. Neuron. 2020;106(3):404-420.e8.",
+      "Hoye ML, Calviello L, Poff AJ, et al. Aberrant cortical development is driven by impaired cell cycle and translational control in a DDX3X syndrome model. eLife. 2022;11:e78203.",
+      "UniProtKB reviewed entry O00571, DDX3X_HUMAN: ATP-dependent RNA helicase DDX3X.",
+      "STRING functional protein association network for human DDX3X queried in this analysis."
+    ],
+    "summary": "Prior work supports the broad molecular function of the perturbed target or complex, while the atlas result refines the affected brain cell type and RNA-output module."
+  },
+  "reference_ids": [
+    "Ddx3x:R001",
+    "Ddx3x:R002",
+    "Ddx3x:R004",
+    "Ddx3x:R005",
+    "Ddx3x:R006",
+    "Ddx3x:R007"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Ddx3x:E001",
+    "Ddx3x:E002",
+    "Ddx3x:E003",
+    "Ddx3x:E004",
+    "Ddx3x:E006",
+    "Ddx3x:E007"
+  ],
+  "source_claim_ids": [
+    "claim:ddx3x_f002_0470242343c5",
+    "claim:ddx3x_f001_0266caea571b",
+    "claim:ddx3x_f004_2ca231f1d31f"
+  ],
+  "source_cluster_ids": [
+    "C056"
+  ],
+  "source_urls_or_dois": [
+    "https://elifesciences.org/articles/78203",
+    "https://pubmed.ncbi.nlm.nih.gov/23413191/",
+    "https://pubmed.ncbi.nlm.nih.gov/26235985/",
+    "https://pubmed.ncbi.nlm.nih.gov/32135084/",
+    "https://rest.uniprot.org/uniprotkb/O00571",
+    "https://string-db.org/network/9606.ENSP00000494040"
+  ],
+  "status": "grounded",
+  "story_id": "S043",
+  "support": {
+    "exact_de_rows": [
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.002890443300775305,
+        "fdr_significant": true,
+        "gene": "Ddx3x",
+        "log2_fold_change": -0.679421,
+        "p_value": 1.6747455245236139e-07,
+        "score": -5.232233,
+        "target": "Ddx3x"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.01571788346085253,
+        "fdr_significant": true,
+        "gene": "Grin2b",
+        "log2_fold_change": -0.242631,
+        "p_value": 2.7321194960633636e-06,
+        "score": -4.689995,
+        "target": "Ddx3x"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.016380174586195225,
+        "fdr_significant": true,
+        "gene": "Synpo2",
+        "log2_fold_change": -0.419139,
+        "p_value": 3.821467557888623e-06,
+        "score": -4.620863,
+        "target": "Ddx3x"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.016380174586195225,
+        "fdr_significant": true,
+        "gene": "Plekhg1",
+        "log2_fold_change": -0.289654,
+        "p_value": 4.7454008303479994e-06,
+        "score": -4.57574,
+        "target": "Ddx3x"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.0407612312815141,
+        "fdr_significant": true,
+        "gene": "Ccdc136",
+        "log2_fold_change": -0.200833,
+        "p_value": 1.889390174703707e-05,
+        "score": -4.277576,
+        "target": "Ddx3x"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "down",
+        "fdr": 5.3449797539781323e-05,
+        "fdr_significant": true,
+        "gene": "Thy1",
+        "log2_fold_change": -0.414785,
+        "p_value": 3.064254860963213e-09,
+        "score": -5.928118,
+        "target": "Ddx3x"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "up",
+        "fdr": 0.008642184918767478,
+        "fdr_significant": true,
+        "gene": "Inha",
+        "log2_fold_change": 0.383876,
+        "p_value": 9.9090579817319e-07,
+        "score": 4.893436,
+        "target": "Ddx3x"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "up",
+        "fdr": 0.014503152746269916,
+        "fdr_significant": true,
+        "gene": "Ppp2r5b",
+        "log2_fold_change": 0.473995,
+        "p_value": 2.494379306243751e-06,
+        "score": 4.708589,
+        "target": "Ddx3x"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "up",
+        "fdr": 0.027204490090319628,
+        "fdr_significant": true,
+        "gene": "Bicd2",
+        "log2_fold_change": 0.467843,
+        "p_value": 6.238488812777533e-06,
+        "score": 4.518141,
+        "target": "Ddx3x"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "down",
+        "fdr": 0.2228802667802645,
+        "fdr_significant": false,
+        "gene": "Ddx3x",
+        "log2_fold_change": -0.492799,
+        "p_value": 0.00044721718381638813,
+        "score": -3.510528,
+        "target": "Ddx3x"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "up",
+        "fdr": 0.07715035995850932,
+        "fdr_significant": false,
+        "gene": "Ddx5",
+        "log2_fold_change": 0.244341,
+        "p_value": 2.6537990010379862e-05,
+        "score": 4.201306,
+        "target": "Ddx3x"
+      }
+    ],
+    "resolved_evidence": [
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "The strongest FDR-resolved Ddx3x signature occurred in the thalamic Prkcd/Grin2c glutamatergic class and included the target transcript.",
+        "evidence_id": "E002",
+        "evidence_slug": "ddx3x_th_prkcd_fdr_signature",
+        "genes": "Ddx3x|Ypel3|Grin2b|Synpo2|Plekhg1|Tmsb10|Tcea2|Ccdc136",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "8",
+        "statistics": "138 Ddx3x cells versus 23679 controls; 8 genes at FDR<0.05: Ddx3x logFC -0.679 FDR=0.00289; Ypel3 +0.330 FDR=0.0157; Grin2b -0.243 FDR=0.0157; Plekhg1 -0.290 FDR=0.0164; Synpo2 -0.419 FDR=0.0164; Tmsb10 +0.487 FDR=0.0255; Tcea2 -0.495 FDR=0.0255; Ccdc136 -0.201 FDR=0.0408.",
+        "target_gene": "Ddx3x"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "Measured 151 TH Prkcd statistics for selected Ddx3x-responsive and pathway-check genes.",
+        "evidence_id": "E006",
+        "evidence_slug": "th_prkcd_selected_synaptic_wnt_genes",
+        "genes": "Grin2b|Synpo2|Plekhg1|Ccdc136|Vangl1|Tnik|Nrxn1|Dscam|Axin2|Lef1|Tcf7l2",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "11",
+        "statistics": "In 151 TH Prkcd Grin2c Glut, Ddx3x perturbation changed Grin2b logFC -0.243 FDR=0.0157; Synpo2 -0.419 FDR=0.0164; Plekhg1 -0.290 FDR=0.0164; Ccdc136 -0.201 FDR=0.0408; Vangl1 -0.439 p=4.03e-05, FDR=0.0726; Tnik -0.363 p=8.65e-05, FDR=0.136; Nrxn1 -0.212 p=7.78e-04, FDR=0.490; Dscam -0.291 p=8.22e-04, FDR=0.490. Axin2, Lef1, and Tcf7l2 were not nominally significant in the same signature, each p>0.05.",
+        "target_gene": "Ddx3x"
+      },
+      {
+        "cell_type": "",
+        "description": "Across-class on-target expression change for the Ddx3x perturbation.",
+        "evidence_id": "E001",
+        "evidence_slug": "ddx3x_on_target_22_cell_classes",
+        "genes": "Ddx3x",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "1",
+        "statistics": "Ddx3x transcript rows were present in 22 cell classes; 19/22 logFC values were negative. One class passed FDR<0.05: 151 TH Prkcd Grin2c Glut logFC -0.679, score -5.232, p=1.67e-07, FDR=0.00289. Nine classes had nominal p<0.05 for Ddx3x.",
+        "target_gene": "Ddx3x"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "description": "The midbrain glutamatergic class showed the strongest downstream gene, Thy1, but weaker target-transcript FDR support than 151 TH Prkcd Grin2c Glut.",
+        "evidence_id": "E003",
+        "evidence_slug": "ddx3x_mb_glut_fdr_signature",
+        "genes": "Thy1|Inha|Ppp2r5b|Bicd2|Ddx3x|Ddx5|Hnrnpl",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "7",
+        "statistics": "136 Ddx3x cells versus 20353 controls; 4 non-target genes at FDR<0.05: Thy1 logFC -0.415 FDR=5.28e-05; Inha +0.384 FDR=0.00864; Ppp2r5b +0.474 FDR=0.0145; Bicd2 +0.468 FDR=0.0272. Ddx3x itself was nominally reduced but did not pass FDR: logFC -0.493, p=4.47e-04, FDR=0.223; Ddx5 was nominally induced: logFC +0.244, p=2.65e-05, FDR=0.0772.",
+        "target_gene": "Ddx3x"
+      },
+      {
+        "cell_type": "",
+        "description": "Most Ddx3x perturbation profiles lacked conventional FDR-resolved downstream transcriptional changes.",
+        "evidence_id": "E004",
+        "evidence_slug": "ddx3x_response_sparsity_across_cell_classes",
+        "genes": "",
+        "has_cell_type": "0",
+        "has_genes": "0",
+        "n_genes": "0",
+        "statistics": "Only 2/22 Ddx3x-tested classes had any gene at FDR<0.05. Counts at nominal p<0.001 were: 155 MB Glut 45, 151 TH Prkcd Grin2c Glut 32, 191 MB P MY GABA 23, 217 P MY Pineal Glut 15, 110 CNU-HYa HY MM Glut 11, and every other class <=9.",
+        "target_gene": "Ddx3x"
+      },
+      {
+        "cell_type": "",
+        "description": "Several nominal Ddx3x-responsive genes recurred across posterior and GABA/glutamate classes despite most rows not passing per-cell-type FDR.",
+        "evidence_id": "E007",
+        "evidence_slug": "recurrent_nominal_bicd2_ddx5_tcea2_wsb1",
+        "genes": "Bicd2|Ddx5|Tcea2|Wsb1|Ppp2r5b",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "5",
+        "statistics": "At nominal p<0.005, Bicd2 was up in 5 classes: 155 MB Glut logFC +0.468 p=6.24e-06, 217 P MY Pineal Glut +0.732 p=8.59e-05, 191 MB P MY GABA +0.578 p=1.28e-04, 054 CNU-MGE GABA +0.588 p=1.33e-04, and 012 MEA LA CA1 DG Glut +0.587 p=0.00141. Ddx5 was up in 155 MB Glut, 110 CNU-HYa HY MM Glut, and 191 MB P MY GABA with p<=3.60e-04; Tcea2 was down in 151 TH Prkcd Grin2c Glut, 155 MB Glut, and 191 MB P MY GABA with p<=1.56e-04; Wsb1 was up in the same three classes with p<=3.05e-04.",
+        "target_gene": "Ddx3x"
+      }
+    ],
+    "support_note": "Exact log2 fold changes, p-values, and FDRs in exact_de_rows were re-read from the Wilcoxon Parquet for this grounding pass; score-vector correlations and perturbed/control cell counts are resolved from the structured report evidence."
+  },
+  "targets": [
+    "Ddx3x",
+    "Grin2b",
+    "Synpo2",
+    "Plekhg1",
+    "Thy1",
+    "Inha",
+    "Ppp2r5b",
+    "Bicd2",
+    "Ddx5"
+  ],
+  "title": "Ddx3x loss separates thalamic NMDA/junctional repression from a midbrain Thy1-down program"
+}

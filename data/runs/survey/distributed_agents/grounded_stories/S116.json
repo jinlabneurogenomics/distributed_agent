@@ -1,0 +1,493 @@
+{
+  "biological_interpretation": "The ankyrin-G intracellular scaffold maintains a thalamic synaptic/calcium transcriptional state that is not a generic readout of paranodal adhesion or spectrin loss.",
+  "caveats": [
+    "The link from Ank3 RNA loss to axon-initial-segment biology is inferred from known protein function; AIS integrity was not measured.",
+    "Ank1 and Ank2 were weakly engaged, while the Cntn1/Cntnap1/Sptan1 negative comparators were much stronger."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut"
+  ],
+  "exact_observed_result": "Ank3 perturbation in 151 TH Prkcd Grin2c Glut produced 121 FDR<0.05 genes, including reductions of Opn3, Atp2a2, Atp2b1, Erc2, Vgf, Ache, Cacna2d1, Gabra4, Grm1, and Gria4 and induction of Pcsk1n, while Ank1, Cntn1, Cntnap1, and Sptan1 failed to reproduce the state.",
+  "preliminary_scores": {
+    "novelty": 4,
+    "priority": 4,
+    "support": 5
+  },
+  "prior_expectation": {
+    "citations": [
+      {
+        "ref": "Dzhashiashvili et al. 2007",
+        "supports": "ankyrin-G dependence of AIS/node sodium-channel complexes",
+        "url_or_doi": "https://doi.org/10.1083/jcb.200612012"
+      },
+      {
+        "ref": "Ho et al. 2014",
+        "supports": "ankyrin-spectrin hierarchy at nodes of Ranvier",
+        "url_or_doi": "https://doi.org/10.1038/nn.3859"
+      },
+      {
+        "ref": "Huang et al. 2017",
+        "supports": "alpha-II spectrin at AIS and CNS phenotypes",
+        "url_or_doi": "https://www.jneurosci.org/content/37/47/11311"
+      }
+    ],
+    "summary": "Prior expectation is grounded by the listed traceable corpus citations; direct prior support for the exact cell-type/state relationship is partial unless noted in the caveats."
+  },
+  "reference_ids": [
+    "Ank3:R001",
+    "Ank3:R002",
+    "Ank1:R003",
+    "Cntn1:R006",
+    "Cntnap1:R006",
+    "Sptan1:R003",
+    "Sptan1:R004"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Ank3:E001",
+    "Ank3:E002",
+    "Ank3:E003",
+    "Ank1:E005",
+    "Cntn1:E008",
+    "Cntnap1:E002",
+    "Cntnap1:E003",
+    "Cntnap1:E008",
+    "Sptan1:E002",
+    "Sptan1:E008"
+  ],
+  "source_urls_or_dois": [
+    {
+      "ref": "Dzhashiashvili et al. 2007",
+      "supports": "ankyrin-G dependence of AIS/node sodium-channel complexes",
+      "url_or_doi": "https://doi.org/10.1083/jcb.200612012"
+    },
+    {
+      "ref": "Ho et al. 2014",
+      "supports": "ankyrin-spectrin hierarchy at nodes of Ranvier",
+      "url_or_doi": "https://doi.org/10.1038/nn.3859"
+    },
+    {
+      "ref": "Huang et al. 2017",
+      "supports": "alpha-II spectrin at AIS and CNS phenotypes",
+      "url_or_doi": "https://www.jneurosci.org/content/37/47/11311"
+    }
+  ],
+  "status": "grounded",
+  "story_id": "S116",
+  "support": {
+    "exact_de_rows": [
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Ank3",
+        "log2_fold_change": -0.255759,
+        "pval": 6.829773799917585e-08,
+        "pvals_adj": 8.419647572341257e-05,
+        "score": -5.395593,
+        "target": "Ank3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Opn3",
+        "log2_fold_change": -1.052702,
+        "pval": 9.776658067318499e-15,
+        "pvals_adj": 9.236981912788823e-11,
+        "score": -7.742128,
+        "target": "Ank3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Atp2a2",
+        "log2_fold_change": -0.359972,
+        "pval": 1.0703959572152295e-14,
+        "pvals_adj": 9.236981912788823e-11,
+        "score": -7.730601,
+        "target": "Ank3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Atp2b1",
+        "log2_fold_change": -0.337424,
+        "pval": 6.618209411353671e-14,
+        "pvals_adj": 3.807455874351767e-10,
+        "score": -7.49523,
+        "target": "Ank3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Erc2",
+        "log2_fold_change": -0.545327,
+        "pval": 5.078628893936002e-12,
+        "pvals_adj": 1.7530411216088293e-08,
+        "score": -6.903361,
+        "target": "Ank3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Vgf",
+        "log2_fold_change": -0.852204,
+        "pval": 8.338389386084078e-12,
+        "pvals_adj": 2.398537706907085e-08,
+        "score": -6.832609,
+        "target": "Ank3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Ache",
+        "log2_fold_change": -0.688476,
+        "pval": 1.0463189572320208e-11,
+        "pvals_adj": 2.5797741261239212e-08,
+        "score": -6.799983,
+        "target": "Ank3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Cacna2d1",
+        "log2_fold_change": -0.226531,
+        "pval": 3.309580547833735e-06,
+        "pvals_adj": 0.0018425822798407235,
+        "score": -4.650608,
+        "target": "Ank3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Gabra4",
+        "log2_fold_change": -0.191271,
+        "pval": 4.716050286080932e-06,
+        "pvals_adj": 0.0022609531079853004,
+        "score": -4.577038,
+        "target": "Ank3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Grm1",
+        "log2_fold_change": -0.21407,
+        "pval": 2.6771694591282747e-05,
+        "pvals_adj": 0.007700877949182482,
+        "score": -4.199321,
+        "target": "Ank3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Gria4",
+        "log2_fold_change": -0.205465,
+        "pval": 7.539611760520832e-05,
+        "pvals_adj": 0.0166828409454909,
+        "score": -3.958582,
+        "target": "Ank3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Pcsk1n",
+        "log2_fold_change": 0.552346,
+        "pval": 2.5383845361008443e-12,
+        "pvals_adj": 1.0952494677141118e-08,
+        "score": 7.001167,
+        "target": "Ank3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Nsmf",
+        "log2_fold_change": 0.35629,
+        "pval": 1.4282785818579896e-09,
+        "pvals_adj": 2.2409690949351855e-06,
+        "score": 6.05226,
+        "target": "Ank3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Ank1",
+        "log2_fold_change": 0.209084,
+        "pval": 0.04418886732118878,
+        "pvals_adj": 1.0,
+        "score": 2.012295,
+        "target": "Ank1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Atp2a2",
+        "log2_fold_change": 0.01262,
+        "pval": 0.925919046424082,
+        "pvals_adj": 1.0,
+        "score": -0.092981,
+        "target": "Ank1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Opn3",
+        "log2_fold_change": 0.085595,
+        "pval": 0.30487518340343933,
+        "pvals_adj": 1.0,
+        "score": 1.026035,
+        "target": "Ank1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Atp2b1",
+        "log2_fold_change": 0.049373,
+        "pval": 0.33940280628254715,
+        "pvals_adj": 1.0,
+        "score": 0.955346,
+        "target": "Ank1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Pcsk1n",
+        "log2_fold_change": 0.057245,
+        "pval": 0.3142862882485028,
+        "pvals_adj": 1.0,
+        "score": 1.006269,
+        "target": "Ank1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Cntn1",
+        "log2_fold_change": -0.880149,
+        "pval": 2.528379406376044e-33,
+        "pvals_adj": 4.363730017464414e-29,
+        "score": -12.028125,
+        "target": "Cntn1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Atp2a2",
+        "log2_fold_change": -0.056774,
+        "pval": 0.18246361193972294,
+        "pvals_adj": 1.0,
+        "score": -1.333208,
+        "target": "Cntn1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Opn3",
+        "log2_fold_change": -0.034609,
+        "pval": 0.7371060299332601,
+        "pvals_adj": 1.0,
+        "score": -0.335688,
+        "target": "Cntn1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Atp2b1",
+        "log2_fold_change": 0.032726,
+        "pval": 0.5470077192848348,
+        "pvals_adj": 1.0,
+        "score": 0.60225,
+        "target": "Cntn1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Pcsk1n",
+        "log2_fold_change": 0.042211,
+        "pval": 0.4614188617265187,
+        "pvals_adj": 1.0,
+        "score": 0.736512,
+        "target": "Cntn1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Erc2",
+        "log2_fold_change": 0.1101,
+        "pval": 0.1824377871131193,
+        "pvals_adj": 1.0,
+        "score": 1.333287,
+        "target": "Cntn1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Vgf",
+        "log2_fold_change": -0.170103,
+        "pval": 0.06358558330961007,
+        "pvals_adj": 1.0,
+        "score": -1.855075,
+        "target": "Cntn1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Ache",
+        "log2_fold_change": -0.013982,
+        "pval": 0.9215205695175726,
+        "pvals_adj": 1.0,
+        "score": -0.098519,
+        "target": "Cntn1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Cntnap1",
+        "log2_fold_change": -0.821979,
+        "pval": 6.330840212508503e-16,
+        "pvals_adj": 1.0926397122768425e-11,
+        "score": -8.082777,
+        "target": "Cntnap1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Atp2a2",
+        "log2_fold_change": -0.00255,
+        "pval": 0.6453714291356366,
+        "pvals_adj": 1.0,
+        "score": 0.460202,
+        "target": "Cntnap1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Opn3",
+        "log2_fold_change": -0.037925,
+        "pval": 0.6944050992407359,
+        "pvals_adj": 1.0,
+        "score": -0.392884,
+        "target": "Cntnap1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Atp2b1",
+        "log2_fold_change": 0.02797,
+        "pval": 0.7349616207341658,
+        "pvals_adj": 1.0,
+        "score": 0.338533,
+        "target": "Cntnap1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Pcsk1n",
+        "log2_fold_change": 0.033565,
+        "pval": 0.8666800563951524,
+        "pvals_adj": 1.0,
+        "score": 0.167877,
+        "target": "Cntnap1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Erc2",
+        "log2_fold_change": 0.040157,
+        "pval": 0.3324148136997941,
+        "pvals_adj": 1.0,
+        "score": 0.969261,
+        "target": "Cntnap1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Sptan1",
+        "log2_fold_change": -0.529452,
+        "pval": 1.1761648105613128e-17,
+        "pvals_adj": 2.0299428465477698e-13,
+        "score": -8.555247,
+        "target": "Sptan1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Atp2a2",
+        "log2_fold_change": -0.066755,
+        "pval": 0.13042347265031964,
+        "pvals_adj": 1.0,
+        "score": -1.512434,
+        "target": "Sptan1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Opn3",
+        "log2_fold_change": -0.111443,
+        "pval": 0.42464909959030883,
+        "pvals_adj": 1.0,
+        "score": -0.798382,
+        "target": "Sptan1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Atp2b1",
+        "log2_fold_change": -0.043231,
+        "pval": 0.5722220045231543,
+        "pvals_adj": 1.0,
+        "score": -0.564782,
+        "target": "Sptan1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Pcsk1n",
+        "log2_fold_change": 0.039119,
+        "pval": 0.5105973164737259,
+        "pvals_adj": 1.0,
+        "score": 0.657908,
+        "target": "Sptan1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Erc2",
+        "log2_fold_change": -0.086993,
+        "pval": 0.23014587041544332,
+        "pvals_adj": 1.0,
+        "score": -1.199983,
+        "target": "Sptan1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Vgf",
+        "log2_fold_change": -0.130492,
+        "pval": 0.20159785891953996,
+        "pvals_adj": 1.0,
+        "score": -1.277012,
+        "target": "Sptan1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Ache",
+        "log2_fold_change": 0.07806,
+        "pval": 0.3426389475523106,
+        "pvals_adj": 1.0,
+        "score": 0.948964,
+        "target": "Sptan1"
+      }
+    ],
+    "summary": [
+      "Ank3 was directly depleted and drove a broad 151 TH program.",
+      "Cntn1, Cntnap1, and Sptan1 were strongly target-depleted in 151 TH yet remained target-only or buffered, making the non-phenocopy well grounded."
+    ]
+  },
+  "targets": [
+    "Ank3",
+    "Ank1",
+    "Cntn1",
+    "Cntnap1",
+    "Sptan1"
+  ],
+  "title": "Ank3 loss creates a 151 TH synaptic and calcium-receptor downshift"
+}

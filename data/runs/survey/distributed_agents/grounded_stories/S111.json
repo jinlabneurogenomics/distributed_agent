@@ -1,0 +1,142 @@
+{
+  "story_id": "S111",
+  "title": "Zbtb7a perturbation causes broad mixed neuronal remodeling across thalamic, midbrain, hindbrain, pineal, and Pvalb GABA classes",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Zbtb7a perturbation generated very large recurrent signatures, including Pnma3 logFC 1.657666563987732 FDR 1.2175148971272107e-41, Col9a3 1.8136500120162964 FDR 1.4451893654129836e-40, Gpc1 0.6908149123191833 FDR 7.01132855322403e-40, and Ppip5k1 -0.5197629928588867 FDR 3.9366301300544587e-20 in 151 TH; Gpc1, Atp1b2, Stx16, and Cacng7 were also FDR-supported in 155 MB; Gpc1 was induced in 217 P MY Pineal. Zbtb18 shared only a small Pxdn/Clstn2/Man2a2 thalamic subset.",
+  "biological_interpretation": "Zbtb7a perturbation engages a broad mixed neuronal state across selected posterior and inhibitory classes that is much larger than, and only partly overlapping with, Zbtb18/RP58 output.",
+  "targets": [
+    "Zbtb7a",
+    "Zbtb18",
+    "Gpc1",
+    "Pnma3",
+    "Pnck",
+    "Usp11",
+    "Atp1b2",
+    "Stx16",
+    "Ppip5k1",
+    "Cacng7",
+    "Gpr108"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "191 MB P MY GABA",
+    "217 P MY Pineal Glut",
+    "052 Pvalb Gaba"
+  ],
+  "support": {
+    "support_level": 5,
+    "exact_de_rows": [
+      {
+        "gene_target": "Zbtb7a",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Pnma3",
+        "log2_fold_change": 1.657666563987732,
+        "pvals_adj": 1.2175148971272107e-41,
+        "wilcoxon_score": 14.218301773071289
+      },
+      {
+        "gene_target": "Zbtb7a",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gpc1",
+        "log2_fold_change": 0.6908149123191833,
+        "pvals_adj": 7.01132855322403e-40,
+        "wilcoxon_score": 13.853079795837402
+      },
+      {
+        "gene_target": "Zbtb7a",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ppip5k1",
+        "log2_fold_change": -0.5197629928588867,
+        "pvals_adj": 3.9366301300544587e-20,
+        "wilcoxon_score": -9.901381492614746
+      },
+      {
+        "gene_target": "Zbtb7a",
+        "cell_type": "155 MB Glut",
+        "gene": "Gpc1",
+        "log2_fold_change": 1.0947608947753906,
+        "pvals_adj": 2.8960942421790566e-60,
+        "wilcoxon_score": 16.958681106567383
+      },
+      {
+        "gene_target": "Zbtb7a",
+        "cell_type": "155 MB Glut",
+        "gene": "Stx16",
+        "log2_fold_change": -0.6955249309539795,
+        "pvals_adj": 5.331668818420624e-19,
+        "wilcoxon_score": -9.861495018005371
+      },
+      {
+        "gene_target": "Zbtb7a",
+        "cell_type": "155 MB Glut",
+        "gene": "Cacng7",
+        "log2_fold_change": -0.5495494604110718,
+        "pvals_adj": 3.830433671101538e-17,
+        "wilcoxon_score": -9.290393829345703
+      },
+      {
+        "gene_target": "Zbtb7a",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Gpc1",
+        "log2_fold_change": 1.3759691715240479,
+        "pvals_adj": 8.407834284040232e-16,
+        "wilcoxon_score": 9.163738250732422
+      }
+    ],
+    "report_evidence_summary": [
+      "Zbtb7a:E003",
+      "Zbtb7a:E004",
+      "Zbtb18:E007",
+      "Zbtb18:E008"
+    ]
+  },
+  "caveats": [
+    "The measured Zbtb7a mRNA decrease was weak, so the program is perturbation-associated rather than a clean Zbtb7a transcript dose response.",
+    "The Zbtb18 overlap was partial and should not be read as broad ZBTB-family interchangeability."
+  ],
+  "prior_expectation": {
+    "summary": "Zbtb7a can control promoter accessibility and inducible transcription in a context-dependent manner; Zbtb18/RP58 haploinsufficiency can impair adult cognition and excitatory synaptic maturation",
+    "citations": [
+      {
+        "ref_id": "Zbtb7a:R010",
+        "ref": "Ramos Pittol et al. 2018 PMID:29813070",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/29813070/",
+        "supports": "Zbtb7a can control promoter accessibility and inducible transcription in a context-dependent manner"
+      },
+      {
+        "ref_id": "Zbtb18:R007",
+        "ref": "Hirai et al. 2023 DOI:10.1038/s41380-023-01941-3",
+        "url_or_doi": "https://doi.org/10.1038/s41380-023-01941-3",
+        "supports": "Zbtb18/RP58 haploinsufficiency can impair adult cognition and excitatory synaptic maturation"
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 5,
+    "priority": 4
+  },
+  "report_evidence_ids": [
+    "Zbtb7a:E003",
+    "Zbtb7a:E004",
+    "Zbtb18:E007",
+    "Zbtb18:E008"
+  ],
+  "reference_ids": [
+    "Zbtb7a:R003",
+    "Zbtb7a:R004",
+    "Zbtb7a:R010",
+    "Zbtb18:R001",
+    "Zbtb18:R007"
+  ],
+  "source_urls_or_dois": [
+    "https://doi.org/10.1038/s41380-023-01941-3",
+    "https://pubmed.ncbi.nlm.nih.gov/29813070/"
+  ],
+  "source_claim_ids": [
+    "claim:zbtb7a_f001_0b18e5413d1a",
+    "claim:zbtb18_f006_2d49afb857b1"
+  ]
+}

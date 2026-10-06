@@ -1,0 +1,7 @@
+{
+  "seed": 29,
+  "targets": 893,
+  "model": "gpt-rosalind-5.5",
+  "reasoning_effort": "xhigh",
+  "context_window_tokens": 272000
+}

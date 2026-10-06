@@ -1,0 +1,822 @@
+{
+  "story_id": "S114",
+  "title": "Bmal1, Clock, and Rev-erb perturbations converge on a 151 TH clock-output and synaptic branch",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Bmal1 and Clock perturbations lowered core clock outputs such as Dbp and Nr1d2 in responsive thalamic/midbrain classes; Nr1d1 perturbation induced Npas2, Cry2, Dbp, Ciart, and Nfil3 plus neuronal genes in 151 TH; and Nr1d2 loss recurrently induced Nr1d1 with weak reciprocal Nr1d1-to-Nr1d2 compensation.",
+  "biological_interpretation": "The 151 TH circadian feedback loop is recoverable by CRISPRi but asymmetric: BMAL1/CLOCK and REV-ERB perturbations share part of the branch while CRY1, CRY2, and ROR-family perturbations split by marker and polarity.",
+  "targets": [
+    "Bmal1",
+    "Clock",
+    "Nr1d1",
+    "Nr1d2",
+    "Cry1",
+    "Cry2",
+    "Dbp",
+    "Npas2",
+    "Per3",
+    "Ciart",
+    "Erc2",
+    "Cacna2d3",
+    "L1cam"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "005 L4-5 IT CTX Glut",
+    "052 Pvalb Gaba",
+    "217 P MY Pineal Glut"
+  ],
+  "support": {
+    "exact_de_rows": [
+      {
+        "gene_target": "Bmal1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Camkv",
+        "score": -7.162685871124268,
+        "logfoldchanges": -1.0161809921264648,
+        "pvals_adj": 1.3653830017473885e-09
+      },
+      {
+        "gene_target": "Bmal1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Dbp",
+        "score": -10.6480131149292,
+        "logfoldchanges": -1.6010980606079102,
+        "pvals_adj": 3.0742734323340535e-22
+      },
+      {
+        "gene_target": "Bmal1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Erc2",
+        "score": 8.14440631866455,
+        "logfoldchanges": 0.6275475025177002,
+        "pvals_adj": 1.3156473206239553e-12
+      },
+      {
+        "gene_target": "Bmal1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Npas2",
+        "score": 7.588377475738525,
+        "logfoldchanges": 0.8268160223960876,
+        "pvals_adj": 7.986879401178264e-11
+      },
+      {
+        "gene_target": "Bmal1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Nr1d1",
+        "score": -9.597822189331055,
+        "logfoldchanges": -1.0741407871246338,
+        "pvals_adj": 4.69741906327144e-18
+      },
+      {
+        "gene_target": "Bmal1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Nr1d2",
+        "score": -9.779220581054688,
+        "logfoldchanges": -1.0832138061523438,
+        "pvals_adj": 1.193216969614035e-18
+      },
+      {
+        "gene_target": "Nr1d1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Ciart",
+        "score": 4.360784530639648,
+        "logfoldchanges": 0.5949901938438416,
+        "pvals_adj": 0.00333837970528445
+      },
+      {
+        "gene_target": "Nr1d1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Cry2",
+        "score": 5.1514668464660645,
+        "logfoldchanges": 0.3745082914829254,
+        "pvals_adj": 0.00015381734950140546
+      },
+      {
+        "gene_target": "Nr1d1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Dbp",
+        "score": 4.449039459228516,
+        "logfoldchanges": 0.40682271122932434,
+        "pvals_adj": 0.0024292257226718804
+      },
+      {
+        "gene_target": "Nr1d1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Nfil3",
+        "score": 4.301991939544678,
+        "logfoldchanges": 0.7518229484558105,
+        "pvals_adj": 0.004173459956299477
+      },
+      {
+        "gene_target": "Nr1d1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Npas2",
+        "score": 6.382193088531494,
+        "logfoldchanges": 0.6059931516647339,
+        "pvals_adj": 4.304136065377768e-07
+      },
+      {
+        "gene_target": "Nr1d1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Nr1d2",
+        "score": 2.168095111846924,
+        "logfoldchanges": 0.13268379867076874,
+        "pvals_adj": 0.7743809370436348
+      },
+      {
+        "gene_target": "Cry1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Cry1",
+        "score": 0.09546221792697906,
+        "logfoldchanges": 0.06593400985002518,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Cry1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Per2",
+        "score": 1.9932386875152588,
+        "logfoldchanges": 0.6321055889129639,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Cry2",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Cry2",
+        "score": -6.917233467102051,
+        "logfoldchanges": -0.535010814666748,
+        "pvals_adj": 3.974305517670535e-08
+      },
+      {
+        "gene_target": "Cry2",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Dbp",
+        "score": -5.944360256195068,
+        "logfoldchanges": -0.5406139492988586,
+        "pvals_adj": 1.5966795237548307e-05
+      },
+      {
+        "gene_target": "Cry2",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Nr1d1",
+        "score": -7.013704299926758,
+        "logfoldchanges": -0.5594968199729919,
+        "pvals_adj": 3.974305517670535e-08
+      },
+      {
+        "gene_target": "Nr1d2",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Cacna2d3",
+        "score": 4.489596843719482,
+        "logfoldchanges": 0.5355733633041382,
+        "pvals_adj": 0.06157849096689381
+      },
+      {
+        "gene_target": "Nr1d2",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Erc2",
+        "score": 3.413822650909424,
+        "logfoldchanges": 0.2560149133205414,
+        "pvals_adj": 0.7370545824503354
+      },
+      {
+        "gene_target": "Nr1d2",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "L1cam",
+        "score": -3.6400716304779053,
+        "logfoldchanges": -0.23554061353206635,
+        "pvals_adj": 0.5880191205704752
+      },
+      {
+        "gene_target": "Nr1d2",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Nr1d1",
+        "score": 6.137799263000488,
+        "logfoldchanges": 0.519722580909729,
+        "pvals_adj": 1.4441042446044224e-05
+      },
+      {
+        "gene_target": "Nr1d2",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Nr1d2",
+        "score": -3.0101115703582764,
+        "logfoldchanges": -0.2592313289642334,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Clock",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Dbp",
+        "logfoldchanges": -1.03,
+        "pvals_adj": 1.36e-11
+      },
+      {
+        "gene_target": "Clock",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Nr1d2",
+        "logfoldchanges": -0.378,
+        "pvals_adj": 0.000225
+      },
+      {
+        "gene_target": "Clock",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Tef",
+        "logfoldchanges": -0.517,
+        "pvals_adj": 0.000535
+      },
+      {
+        "gene_target": "Clock",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Nr1d1",
+        "logfoldchanges": -0.285,
+        "pvals_adj": 1.0
+      }
+    ],
+    "evidence_records": [
+      {
+        "target_gene": "Bmal1",
+        "evidence_id": "E011",
+        "evidence_slug": "th_bmal1_signature_neighbors",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Nr1d1|Clock|Nr1d2|Rora",
+        "n_genes": "4",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "Among 2,045 other perturbation targets in 151 TH Prkcd Grin2c Glut, all-gene score correlations with Bmal1 ranked Nr1d1 first at r=0.347, Clock second at r=0.202, Nr1d2 third at r=0.167, and Rora last/top negative at r=-0.154.",
+        "description": "Related clock perturbations were the nearest positive and negative score-space neighbors of Bmal1 specifically in the thalamic Prkcd class."
+      },
+      {
+        "target_gene": "Bmal1",
+        "evidence_id": "E013",
+        "evidence_slug": "th_related_fdr_overlap",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Bmal1|Clock|Nr1d1|Rora",
+        "n_genes": "4",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "At FDR<0.05 in 151 TH Prkcd Grin2c Glut, Bmal1 had 103 genes, Clock 3, Nr1d1 116, and Rora 278; Bmal1 shared 2 FDR genes with Clock, 41 with Nr1d1, and 19 with Rora. Across the 103 Bmal1 FDR genes, score correlations were r=0.664 with Nr1d1, r=0.778 with Clock, and r=-0.261 with Rora.",
+        "description": "Overlap and direction among related perturbations in the dominant thalamic response supported convergence with Nr1d1/Clock trends and partial opposition to Rora."
+      },
+      {
+        "target_gene": "Bmal1",
+        "evidence_id": "E001",
+        "evidence_slug": "bmal1_assay_coverage_overall",
+        "cell_type": "",
+        "genes": "Bmal1",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "355,046 gene-level tests for Bmal1 across 21 cell classes; matched Bmal1-perturbed cells per class ranged from 34 to 152, median 62, total 1,450; 116 DE rows were FDR<0.05 and 302 were nominal p<0.001.",
+        "description": "Overall coverage and differential-expression yield for the Bmal1 perturbation against matched Non_target controls."
+      },
+      {
+        "target_gene": "Bmal1",
+        "evidence_id": "E005",
+        "evidence_slug": "th_prkcd_broad_signature",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Dbp|Nr1d2|Nr1d1|Adgrb1|Erc2|Hrh3|Npas2|Grb14|Pdgfa|Camkv",
+        "n_genes": "10",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "152 perturbed cells versus 23,679 controls; 103 genes FDR<0.05. Top hits by FDR included Dbp logFC -1.601 FDR 3.07e-22, Nr1d2 -1.083 FDR 1.19e-18, Nr1d1 -1.074 FDR 4.70e-18, Adgrb1 -0.622 FDR 8.02e-18, Erc2 +0.628 FDR 1.32e-12, Hrh3 -0.707 FDR 4.23e-11, Npas2 +0.827 FDR 7.99e-11, Grb14 +0.704 FDR 8.46e-10, Pdgfa +0.965 FDR 1.37e-09, and Camkv -1.016 FDR 1.37e-09.",
+        "description": "The thalamic Prkcd/Grin2c glutamatergic class carried the dominant broad Bmal1 transcriptional signature."
+      },
+      {
+        "target_gene": "Bmal1",
+        "evidence_id": "E006",
+        "evidence_slug": "th_prkcd_neuronal_module",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Camkv|Hrh3|Camk4|Rims3|Shank3|Cacna1d|Ppp3ca|Ppp3r1|Snap25|Syt7",
+        "n_genes": "10",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "All listed genes were FDR<0.05 in 151 TH Prkcd Grin2c Glut: Camkv logFC -1.016 FDR 1.37e-09, Hrh3 -0.707 FDR 4.23e-11, Camk4 +0.580 FDR 9.13e-07, Rims3 -0.391 FDR 2.24e-04, Syt7 -0.249 FDR 0.00282, Shank3 -0.300 FDR 0.00465, Cacna1d +0.328 FDR 0.0167, Ppp3ca +0.273 FDR 0.00388, Ppp3r1 +0.213 FDR 0.0346, and Snap25 +0.149 FDR 0.0407.",
+        "description": "Beyond clock genes, the strongest Bmal1 signature contained neuronal signaling, synaptic, and calcium-regulated transcripts."
+      },
+      {
+        "target_gene": "Bmal1",
+        "evidence_id": "E007",
+        "evidence_slug": "mb_glut_core_only_signature",
+        "cell_type": "155 MB Glut",
+        "genes": "Nr1d2|Dbp|Nr1d1|Cry1",
+        "n_genes": "4",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "142 perturbed cells versus 20,353 controls; exactly 4 genes were FDR<0.05: Nr1d2 logFC -1.372 FDR 6.52e-22, Dbp -1.288 FDR 1.57e-06, Nr1d1 -1.075 FDR 6.22e-04, and Cry1 +1.123 FDR 0.0411.",
+        "description": "Midbrain glutamatergic neurons showed a statistically strong but clock-restricted Bmal1 response."
+      },
+      {
+        "target_gene": "Bmal1",
+        "evidence_id": "E008",
+        "evidence_slug": "l45_ctx_four_gene_signature",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "genes": "Nr1d2|Nr1d1|Npas2|Camkv|Dbp",
+        "n_genes": "5",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "115 perturbed cells versus 15,039 controls; 4 genes were FDR<0.05: Nr1d2 logFC -1.089 FDR 1.04e-12, Nr1d1 -0.846 FDR 6.89e-04, Npas2 +0.660 FDR 0.0173, and Camkv -0.537 FDR 0.0177; Dbp was nominal with logFC -0.796, p=2.69e-05, FDR 0.0922.",
+        "description": "Layer 4/5 intratelencephalic cortical neurons showed a compact Bmal1 response at clock genes plus Camkv."
+      },
+      {
+        "target_gene": "Bmal1",
+        "evidence_id": "E002",
+        "evidence_slug": "arntl_transcript_not_depleted",
+        "cell_type": "",
+        "genes": "Arntl",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Arntl was measurable in all 21 Bmal1 contrasts but had FDR=1.0 in every cell class; the strongest nominal row was 052 Pvalb Gaba with score 2.44, logFC 0.781, p=0.0149; 15 of 21 Arntl scores were positive.",
+        "description": "The Bmal1/Arntl target transcript itself was not significantly reduced by cells carrying Bmal1 guides."
+      },
+      {
+        "target_gene": "Bmal1",
+        "evidence_id": "E003",
+        "evidence_slug": "recurrent_nr1d_dbp_repression",
+        "cell_type": "",
+        "genes": "Nr1d2|Dbp|Nr1d1",
+        "n_genes": "3",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Nr1d2 was negative in 20/21 classes and FDR<0.05 in 8/21, with 13 nominal p<0.001 hits and minimum FDR 6.52e-22; Dbp was negative in 20/21, FDR<0.05 in 2/21, nominal p<0.001 in 10/21, minimum FDR 3.07e-22; Nr1d1 was FDR<0.05 in 3/21 and nominal p<0.001 in 5/21.",
+        "description": "Bmal1 perturbation recurrently repressed canonical circadian output and feedback genes, especially Nr1d2 and Dbp."
+      },
+      {
+        "target_gene": "Bmal1",
+        "evidence_id": "E009",
+        "evidence_slug": "single_nr1d2_only_classes",
+        "cell_type": "",
+        "genes": "Nr1d2",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Five cell classes had exactly one FDR<0.05 Bmal1 hit and that hit was Nr1d2: 008 L2-3 IT ENT PPP RSP Glut, n=38, logFC -1.364, FDR 1.16e-04; 066 CNU-HYa HY GABA, n=65, logFC -1.122, FDR 2.76e-04; 110 CNU-HYa HY MM Glut, n=60, logFC -0.972, FDR 0.00564; 145 MH-LH TH Glut, n=34, logFC -1.191, FDR 0.00209; 191 MB P MY GABA, n=74, logFC -1.265, FDR 4.49e-10.",
+        "description": "Several cell classes converted the Bmal1 perturbation into a single highly sensitive Nr1d2 response without a broader FDR-significant signature."
+      },
+      {
+        "target_gene": "Clock",
+        "evidence_id": "E002",
+        "evidence_slug": "clock_155_mb_glut_core_module",
+        "cell_type": "155 MB Glut",
+        "genes": "Nr1d2|Dbp|Tef|Per3|Hlf|Cry1|Bhlhe41|Arntl",
+        "n_genes": "8",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "141 Clock cells versus 20353 controls; Nr1d2 logFC=-0.833, FDR=1.30e-13; Dbp logFC=-1.290, FDR=2.05e-6; Tef logFC=-0.661, FDR=0.00151; Per3 logFC=-0.918, FDR=0.0221; Hlf logFC=-0.870, p=3.85e-5, FDR=0.134; Cry1 logFC=0.982, p=1.71e-4, FDR=0.373; Arntl logFC=0.889, p=0.00135, FDR=1.0.",
+        "description": "Clock perturbation in midbrain glutamatergic cells strongly repressed canonical clock-output genes and nominally induced the partner-arm gene Arntl."
+      },
+      {
+        "target_gene": "Clock",
+        "evidence_id": "E003",
+        "evidence_slug": "clock_151_th_prkcd_core_module",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Dbp|Nr1d2|Tef|Per1|Nr1d1|Cry1|Hlf",
+        "n_genes": "7",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "162 Clock cells versus 23679 controls; Dbp logFC=-1.030, FDR=1.36e-11; Nr1d2 logFC=-0.378, FDR=2.25e-4; Tef logFC=-0.517, FDR=5.35e-4; Per1 logFC=-0.341, p=3.14e-5, FDR=0.108; Nr1d1 logFC=-0.285, p=0.00149, FDR=1.0; Cry1 logFC=0.427, p=0.0217, FDR=1.0.",
+        "description": "Clock perturbation in thalamic Prkcd/Grin2c glutamatergic cells produced a multi-gene circadian response headed by Dbp, Nr1d2, and Tef."
+      },
+      {
+        "target_gene": "Clock",
+        "evidence_id": "E009",
+        "evidence_slug": "nr1d2_reciprocal_response_151_155",
+        "cell_type": "",
+        "genes": "Nr1d2|Nr1d1|Dbp|Arntl|Clock",
+        "n_genes": "5",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Nr1d2 perturbation in 151 TH Prkcd Grin2c Glut: 143 cells; Nr1d1 logFC=0.520, FDR=1.44e-5; Dbp logFC=0.338, p=0.00135. Nr1d2 perturbation in 155 MB Glut: 137 cells; Nr1d1 logFC=0.569, p=3.62e-4; Dbp logFC=0.449, p=0.00211; Arntl logFC=0.838, p=0.00339.",
+        "description": "Loss of the downstream REV-ERB\u03b2/Nr1d2 node produced expression changes reciprocal to Clock/Bmal1 loss in the two main Clock-responsive cell types."
+      },
+      {
+        "target_gene": "Clock",
+        "evidence_id": "E010",
+        "evidence_slug": "nr1d2_loss_induces_nr1d1_in_additional_cells",
+        "cell_type": "",
+        "genes": "Nr1d2|Nr1d1|Dbp",
+        "n_genes": "3",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Nr1d2 perturbation upregulated Nr1d1 in 217 P MY Pineal Glut (32 cells, logFC=1.562, FDR=0.00900), 054 CNU-MGE GABA (66 cells, logFC=1.098, p=3.40e-4), 066 CNU-HYa HY GABA (53 cells, logFC=1.009, p=6.18e-4), and 191 MB P MY GABA (57 cells, logFC=0.806, p=0.00651); Dbp was also nominally up in 217 and 066 with p<=0.00167.",
+        "description": "The Nr1d2-to-Nr1d1 reciprocal relationship recurred outside the two highest-confidence Clock cell types."
+      },
+      {
+        "target_gene": "Nr1d1",
+        "evidence_id": "E001",
+        "evidence_slug": "nr1d1_self_transcript_across_cell_types",
+        "cell_type": "",
+        "genes": "Nr1d1",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Nr1d1 was measured in all 23 Nr1d1-perturbation cell-type tests; 22/23 logFC values were positive and 0/23 were FDR < 0.05. In 151 TH Prkcd Grin2c Glut, Nr1d1 logFC was 0.2459 with score 3.172, nominal p=0.00151, FDR=0.1368 in 205 perturbed cells versus 23679 controls.",
+        "description": "Target-transcript rows for the Nr1d1 perturbation show no multiple-testing-significant depletion of the target RNA."
+      },
+      {
+        "target_gene": "Nr1d1",
+        "evidence_id": "E002",
+        "evidence_slug": "nr1d1_151_fdr_signature",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Erc2|Pdgfa|Tspan14|Cacna2d3|Pdzd2|Rasl11b|Npas2|L1cam|Slc8a1|Grb14",
+        "n_genes": "10",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "116 genes reached FDR < 0.05 in 205 perturbed cells versus 23679 controls; 94 had positive scores and 22 had negative scores. Top adjusted results included Erc2 logFC 0.706, FDR=3.33e-25; Pdgfa logFC 1.048, FDR=1.35e-16; Tspan14 logFC 0.623, FDR=1.52e-10; Cacna2d3 logFC 0.715, FDR=5.11e-10; L1cam logFC -0.272, FDR=6.60e-7.",
+        "description": "The only Nr1d1 cell-type stratum with a large FDR-controlled response was the thalamic Prkcd/Grin2c glutamatergic class."
+      },
+      {
+        "target_gene": "Nr1d1",
+        "evidence_id": "E005",
+        "evidence_slug": "nr1d1_other_cell_types_buffered",
+        "cell_type": "",
+        "genes": "",
+        "n_genes": "0",
+        "has_genes": "0",
+        "has_cell_type": "0",
+        "statistics": "The 22 Nr1d1-assayed classes outside 151 TH Prkcd Grin2c Glut had 0 genes at FDR < 0.05. The best non-151 adjusted result was Camkv in 005 L4-5 IT CTX Glut with FDR=0.138; every other non-151 class had minimum FDR >= 0.220, and 15/22 had minimum FDR=1.0.",
+        "description": "Most assayed neuronal classes showed no FDR-controlled transcriptome response to Nr1d1 perturbation."
+      },
+      {
+        "target_gene": "Cry1",
+        "evidence_id": "E001",
+        "evidence_slug": "cry1_per2_up_151",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Per2",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "135 Cry1-perturbed cells versus 23679 non-target controls; Per2 score 4.842, logFC 0.757, nominal p=1.28e-6, FDR=0.0221; rank 1/17259 by nominal p and absolute score.",
+        "description": "Per2 was the strongest and only FDR-significant transcript in the Cry1 signature in 151 TH Prkcd Grin2c Glut."
+      },
+      {
+        "target_gene": "Cry1",
+        "evidence_id": "E002",
+        "evidence_slug": "cry1_sparse_fdr_panel",
+        "cell_type": "",
+        "genes": "",
+        "n_genes": "0",
+        "has_genes": "0",
+        "has_cell_type": "0",
+        "statistics": "371818 Cry1 differential-expression rows across 22 cell types; 1 row had FDR<0.05; 21/22 cell types had 0 FDR<0.05 genes; non-151 minimum FDR values were all >=0.454.",
+        "description": "Genome-wide Cry1 responses were sparse after multiple-testing correction over the assayed cell-type panel."
+      },
+      {
+        "target_gene": "Cry1",
+        "evidence_id": "E008",
+        "evidence_slug": "cry1_cell_count_range",
+        "cell_type": "",
+        "genes": "",
+        "n_genes": "0",
+        "has_genes": "0",
+        "has_cell_type": "0",
+        "statistics": "22 Cry1 cell types; 1358 total Cry1-perturbed cells; per-cell-type Cry1 n=23-135, median 58; non-target controls n=3465-23679; 16428-17443 measured genes per test.",
+        "description": "Cry1 contrasts were based on modest perturbation cell numbers relative to thousands of controls."
+      },
+      {
+        "target_gene": "Cry2",
+        "evidence_id": "E001",
+        "evidence_slug": "cry2_th_prkcd_fdr_clock_genes",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Nr1d1|Cry2|Dbp",
+        "n_genes": "3",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "254 Cry2-perturbed cells versus 23679 matched controls; Nr1d1 score -7.014, logFC -0.559, p=2.32e-12, FDR=3.97e-08; Cry2 score -6.917, logFC -0.535, p=4.61e-12, FDR=3.97e-08; Dbp score -5.944, logFC -0.541, p=2.78e-09, FDR=1.60e-05.",
+        "description": "The only multi-gene FDR-significant Cry2 response occurs in the thalamic Prkcd/Grin2c glutamatergic class and consists of a downregulated clock-output module plus the target transcript."
+      },
+      {
+        "target_gene": "Cry2",
+        "evidence_id": "E002",
+        "evidence_slug": "cry2_fdr_distribution_across_cell_types",
+        "cell_type": "",
+        "genes": "Cry2|Nr1d1|Dbp|Rabggtb",
+        "n_genes": "4",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "371818 Cry2 tests across 22 cell types produced 4 rows at FDR<0.05: 3 in 151 TH Prkcd Grin2c Glut and 1 in 191 MB P MY GABA; the remaining 20 profiled cell types had 0 FDR<0.05 rows.",
+        "description": "FDR-significant Cry2 responses are sparse and concentrated in a single thalamic glutamatergic class."
+      },
+      {
+        "target_gene": "Cry2",
+        "evidence_id": "E003",
+        "evidence_slug": "cry2_ontarget_recurrent_decrease",
+        "cell_type": "",
+        "genes": "Cry2",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "The Cry2 row was present in all 22 Cry2 cell-type tests; logFC was negative in 21 of 22 cell types, two-sided sign-test p=1.10e-05, median logFC=-0.319, median Wilcoxon score=-1.876; 11/22 had nominal p<0.05 and 7/22 had p<0.01, but only 151 TH Prkcd Grin2c Glut passed FDR<0.05 for Cry2 itself.",
+        "description": "The guide produced a recurrent downward shift of the target transcript, but robust multiple-testing-corrected target engagement was confined to one cell type."
+      },
+      {
+        "target_gene": "Nr1d2",
+        "evidence_id": "E002",
+        "evidence_slug": "nr1d1_fdr_significant_hits",
+        "cell_type": "",
+        "genes": "Nr1d1",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Nr1d1 FDR hits after Nr1d2 perturbation: 151 TH Prkcd Grin2c Glut, 143 cells, score 6.137799, logFC 0.519723, p=8.37e-10, FDR=1.44e-05; 052 Pvalb Gaba, 107 cells, score 5.769503, logFC 0.959292, p=7.95e-09, FDR=1.33e-04; 217 P MY Pineal Glut, 32 cells, score 5.012839, logFC 1.561956, p=5.36e-07, FDR=0.008995.",
+        "description": "The only FDR<0.05 genes in the Nr1d2 perturbation slice were Nr1d1 rows in three cell groups."
+      },
+      {
+        "target_gene": "Nr1d2",
+        "evidence_id": "E003",
+        "evidence_slug": "nr1d1_recurrence_after_nr1d2",
+        "cell_type": "",
+        "genes": "Nr1d1",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Nr1d1 was nominally increased after Nr1d2 perturbation in 11/22 cell groups at p<0.05; it ranked as the top positive gene in 151 TH Prkcd Grin2c Glut, 052 Pvalb Gaba, 217 P MY Pineal Glut, 054 CNU-MGE GABA, and 155 MB Glut, and ranked second in 066 CNU-HYa HY GABA.",
+        "description": "Recurrence and rank of Nr1d1 induction beyond the three FDR-significant groups."
+      },
+      {
+        "target_gene": "Nr1d1",
+        "evidence_id": "E003",
+        "evidence_slug": "nr1d1_151_clock_gene_induction",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Npas2|Cry2|Dbp|Ciart|Nfil3|Arntl|Nr1d1|Nr1d2|Clock",
+        "n_genes": "9",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "Clock-associated rows under Nr1d1 perturbation were Npas2 logFC 0.606, FDR=4.30e-7; Cry2 logFC 0.375, FDR=1.54e-4; Dbp logFC 0.407, FDR=0.00243; Ciart logFC 0.595, FDR=0.00334; Nfil3 logFC 0.752, FDR=0.00417; Arntl logFC 0.430, FDR=0.0922; Nr1d2 logFC 0.133, FDR=0.774; Clock logFC 0.162, FDR=0.809.",
+        "description": "Core and clock-output genes show selective, mostly positive changes in the responsive Nr1d1 stratum."
+      },
+      {
+        "target_gene": "Nr1d1",
+        "evidence_id": "E008",
+        "evidence_slug": "nr1d2_perturbation_nr1d1_compensation",
+        "cell_type": "",
+        "genes": "Nr1d1|Nr1d2",
+        "n_genes": "2",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Nr1d2 perturbation significantly increased Nr1d1 in 151 TH Prkcd Grin2c Glut (logFC 0.520, FDR=1.44e-5, 143 perturbed cells), 052 Pvalb Gaba (logFC 0.959, FDR=1.33e-4, 107 perturbed cells), and 217 P MY Pineal Glut (logFC 1.562, FDR=0.00899, 32 perturbed cells). In the reciprocal Nr1d1 perturbation, Nr1d2 was only nominal in 151 TH Prkcd Grin2c Glut (logFC 0.133, nominal p=0.0302, FDR=0.774).",
+        "description": "The Rev-erb paralog perturbation produced a focal, asymmetric increase of Nr1d1 RNA."
+      }
+    ],
+    "source_claim_ids": [
+      "claim:bmal1_f005_6a78913e2d53",
+      "claim:bmal1_f002_168fd3be0cf6",
+      "claim:bmal1_f001_102f6eb39110",
+      "claim:clock_f001_7dfae13639c5",
+      "claim:clock_f004_dce8909b32e4",
+      "claim:nr1d1_f001_efde52cae875",
+      "claim:cry1_f001_a2e5e0edbf28",
+      "claim:cry2_f001_0039f4924363",
+      "claim:nr1d2_f001_d001376ab0d2",
+      "claim:nr1d1_f005_51105ecfc07a"
+    ],
+    "source_cluster_ids": [
+      "C138",
+      "C184"
+    ]
+  },
+  "caveats": [
+    "The culture snapshot has no circadian phase series, so counterintuitive CRY2 and REV-ERB directions should be interpreted as basal endpoint states rather than time-resolved feedback dynamics."
+  ],
+  "prior_expectation": {
+    "summary": "Prior literature and pathway context were taken from the resolved report references; the observed Perturb-seq signal either refines expected gene function by cell type or marks an exploratory response-state neighbor where noted in caveats.",
+    "citations": [
+      {
+        "reference_id": "Bmal1:R002",
+        "citation": "Reactome event R-HSA-9931510. Phosphorylated BMAL1:CLOCK (ARNTL:CLOCK) activates expression of core clock genes.",
+        "url": "https://reactome.org/content/detail/R-HSA-9931510",
+        "supports": "Curated pathway reference for BMAL1:CLOCK and BMAL1:NPAS2 E-box activation of CRY, PER, DBP, NR1D1, and ROR clock-loop events."
+      },
+      {
+        "reference_id": "Bmal1:R003",
+        "citation": "Trott AJ, Menet JS. Regulation of circadian clock transcriptional output by CLOCK:BMAL1. PLoS Genet. 2018;14(1):e1007156. doi:10.1371/journal.pgen.1007156.",
+        "url": "https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1007156",
+        "supports": "Open-access mechanistic analysis showing that CLOCK:BMAL1 initiates core feedback transcription but that DNA binding and chromatin remodeling alone do not uniformly determine transcriptional output."
+      },
+      {
+        "reference_id": "Bmal1:R006",
+        "citation": "Van Drunen R, Dai Y, Wei H, Fekry B, Noori S, Shivshankar S, Bravo R, Zhao Z, Yoo SH, Justice N, Wu JQ, Tong Q, Eckel-Mahan K. Cell-specific regulation of the circadian clock by BMAL1 in the paraventricular nucleus. Cell Reports. 2024;43:114380. doi:10.1016/j.celrep.2024.114380.",
+        "url": "https://doi.org/10.1016/j.celrep.2024.114380",
+        "supports": "Demonstrates that BMAL1 loss in the hypothalamic paraventricular nucleus alters diurnal gene expression in neuronal and non-neuronal cells and affects systemic energy-balance rhythms."
+      },
+      {
+        "reference_id": "Bmal1:R001",
+        "citation": "NCBI Gene. Bmal1 basic helix-loop-helix ARNT like 1, Mus musculus, Gene ID 11865.",
+        "url": "https://www.ncbi.nlm.nih.gov/gene?term=11865",
+        "supports": "Defines mouse Bmal1 as a protein-coding gene also known as Arntl and summarizes CLOCK heterodimerization and E-box activation of Period and Cryptochrome genes."
+      },
+      {
+        "reference_id": "Clock:R001",
+        "citation": "Reactome pathway R-HSA-9909396. Circadian clock.",
+        "url": "https://reactome.org/content/detail/R-HSA-9909396",
+        "supports": "Curated pathway page placing BMAL1:CLOCK/NPAS2, PER/CRY, DBP, REV-ERB, and ROR in the mammalian transcription-translation feedback loop."
+      },
+      {
+        "reference_id": "Clock:R002",
+        "citation": "Trott AJ, Menet JS. Regulation of circadian clock transcriptional output by CLOCK:BMAL1. PLoS Genet. 2018;14(1):e1007156.",
+        "url": "https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1007156",
+        "supports": "Open-access analysis and synthesis of how CLOCK:BMAL1 binds E-boxes and regulates core clock genes and clock-controlled genes such as Dbp."
+      },
+      {
+        "reference_id": "Clock:R003",
+        "citation": "Ikeda R, Tsuchiya Y, Koike N, Umemura Y, Inokawa H, Ono R, et al. REV-ERBalpha and REV-ERBbeta function as key factors regulating Mammalian Circadian Output. Sci Rep. 2019;9:10171.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6629614/",
+        "supports": "REV-ERBalpha/Nr1d1 and REV-ERBbeta/Nr1d2 double-knockout study documenting their role as repressors in the secondary circadian feedback loop and as regulators of circadian output."
+      },
+      {
+        "reference_id": "Nr1d1:R001",
+        "citation": "UniProtKB reviewed entry Q3UV55, Nuclear receptor subfamily 1 group D member 1, Mus musculus.",
+        "url": "https://www.uniprot.org/uniprotkb/Q3UV55/entry",
+        "supports": "Curated mouse Nr1d1 protein record describing REV-ERB\u03b1 as a heme-binding DNA-binding transcriptional regulator of circadian and metabolic programs."
+      },
+      {
+        "reference_id": "Nr1d1:R002",
+        "citation": "Reactome ContentService mouse events for Nr1d1 regulation of Arntl/Bmal1, Clock, Nr1d1, and Npas2.",
+        "url": "https://reactome.org/content/detail/R-MMU-9911570",
+        "supports": "Curated pathway database evidence that Bmal1/Clock activate Nr1d1, ROR factors activate RORE-containing promoters, and heme-bound Nr1d1 corepressor complexes repress Bmal1/Npas2 and autoregulatory targets."
+      },
+      {
+        "reference_id": "Nr1d1:R003",
+        "citation": "Preitner N, Damiola F, Lopez-Molina L, Zakany J, Duboule D, Albrecht U, et al. The orphan nuclear receptor REV-ERBalpha controls circadian transcription within the positive limb of the mammalian circadian oscillator. Cell. 2002;110(2):251-260. PMID:12150932.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/12150932/",
+        "supports": "Primary work placing REV-ERB\u03b1 in the mammalian clock loop as a major cyclic regulator of Bmal1 transcription."
+      },
+      {
+        "reference_id": "Nr1d1:R004",
+        "citation": "Yin L, Lazar MA. The orphan nuclear receptor Rev-erbalpha recruits the N-CoR/histone deacetylase 3 corepressor to regulate the circadian Bmal1 gene. Mol Endocrinol. 2005;19(6):1452-1459. PMID:15761026.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/15761026/",
+        "supports": "Mechanistic demonstration that Rev-erb\u03b1 binds the Bmal1 promoter and recruits the N-CoR/HDAC3 complex to repress transcription."
+      },
+      {
+        "reference_id": "Nr1d1:R005",
+        "citation": "Cho H, Zhao X, Hatori M, Yu RT, Barish GD, Lam MT, et al. Regulation of circadian behaviour and metabolism by REV-ERB-\u03b1 and REV-ERB-\u03b2. Nature. 2012;485(7396):123-127. PMID:22460952.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/22460952/",
+        "supports": "Genome-wide mouse study showing extensive overlap of REV-ERB\u03b1, REV-ERB\u03b2, and BMAL1 cistromes and major circadian and metabolic disruption after dual Rev-erb depletion."
+      },
+      {
+        "reference_id": "Nr1d1:R006",
+        "citation": "Bugge A, Feng D, Everett LJ, Briggs ER, Mullican SE, Wang F, et al. Rev-erb\u03b1 and Rev-erb\u03b2 coordinately protect the circadian clock and normal metabolic function. Genes Dev. 2012;26(7):657-667. PMID:22474260.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/22474260/",
+        "supports": "Paralog study showing that combined Rev-erb\u03b1/Rev-erb\u03b2 depletion has much stronger effects than loss of either subtype alone."
+      },
+      {
+        "reference_id": "Nr1d1:R007",
+        "citation": "Griffin P, Dimitry JM, Sheehan PW, Lananna BV, Guo C, Robinette ML, et al. Circadian clock protein Rev-erb\u03b1 regulates neuroinflammation. Proc Natl Acad Sci U S A. 2019;116(11):5102-5107. PMID:30792350.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30792350/",
+        "supports": "Mouse and primary-glial evidence that Nr1d1 loss promotes microglial activation and inflammatory signaling, while Rev-erb agonism suppresses LPS-induced hippocampal neuroinflammation."
+      },
+      {
+        "reference_id": "Nr1d1:R008",
+        "citation": "ChEMBL target CHEMBL1961783, Homo sapiens nuclear receptor subfamily 1 group D member 1.",
+        "url": "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL1961783/",
+        "supports": "Database target record showing human NR1D1 is represented as a single-protein ligandable target with small-molecule agonist activity assays, while no approved drug mechanism was returned for this target."
+      },
+      {
+        "reference_id": "Nr1d1:R009",
+        "citation": "STRING enrichment query of the 116 FDR-significant Nr1d1 genes in Mus musculus.",
+        "url": "https://string-db.org/",
+        "supports": "Annotation lookup in which the Nr1d1 TH signature was enriched for synapse and cell-junction cellular-component terms and related neuron-projection terms."
+      },
+      {
+        "reference_id": "Cry1:R001",
+        "citation": "UniProtKB reviewed entry P97784, Cryptochrome-1 mouse CRY1.",
+        "url": "https://rest.uniprot.org/uniprotkb/P97784",
+        "supports": "Curated functional annotation of mouse CRY1 as a transcriptional repressor and core circadian-clock component."
+      },
+      {
+        "reference_id": "Cry1:R002",
+        "citation": "Reactome pathway R-HSA-9909396, Circadian clock.",
+        "url": "https://reactome.org/content/detail/R-HSA-9909396",
+        "supports": "Curated pathway placing CRY1 and CRY2 in the PER:CRY negative limb that represses BMAL1:CLOCK/NPAS2 transcriptional output."
+      },
+      {
+        "reference_id": "Cry1:R004",
+        "citation": "Cao X, Yang Y, Selby CP, Liu Z, Sancar A. Molecular mechanism of the repressive phase of the mammalian circadian clock. Proc Natl Acad Sci U S A. 2021;118(2).",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33443219/",
+        "supports": "Mechanistic study of repression of CLOCK-BMAL1-mediated transcription by CRY and PER proteins."
+      },
+      {
+        "reference_id": "Cry2:R001",
+        "citation": "Reactome. Circadian clock, Homo sapiens pathway R-HSA-400253. Accessed 2025-04-29.",
+        "url": "https://reactome.org/content/detail/R-HSA-400253",
+        "supports": "Curated pathway description placing CRY1, CRY2, PER1-3, NR1D1, NR1D2, and DBP downstream of BMAL1:CLOCK/NPAS2 and describing the PER/CRY negative feedback and the NR1D1/ROR secondary loop."
+      },
+      {
+        "reference_id": "Cry2:R007",
+        "citation": "STRING v12.0 mouse network and enrichment API query for Cry2, Nr1d1, and Dbp. Accessed 2025-04-29.",
+        "url": "https://string-db.org/",
+        "supports": "Database query connected Cry2, Nr1d1, and Dbp in the mouse clock network and enriched the three-gene set for GO:0007623 circadian rhythm with FDR 0.0087."
+      },
+      {
+        "reference_id": "Nr1d2:R001",
+        "citation": "UniProtKB Q60674 and Q14995, Nuclear receptor subfamily 1 group D member 2, accessed by UniProt REST.",
+        "url": "https://www.uniprot.org/uniprotkb/Q60674",
+        "supports": "Curated mouse and human NR1D2 function, heme-dependent transcriptional repression, RORA competition, and core clock/metabolic annotations."
+      },
+      {
+        "reference_id": "Nr1d2:R002",
+        "citation": "Reactome pathway R-MMU-383280, Nuclear Receptor transcription pathway.",
+        "url": "https://reactome.org/content/detail/R-MMU-383280",
+        "supports": "Places mouse Nr1d2 in the Nuclear Receptor transcription pathway."
+      },
+      {
+        "reference_id": "Nr1d2:R004",
+        "citation": "Liu AC, Tran HG, Zhang EE, Priest AA, Welsh DK, Kay SA. Redundant function of REV-ERBalpha and beta and non-essential role for Bmal1 cycling in transcriptional regulation of intracellular circadian rhythms. PLoS Genet. 2008;4(2):e1000023.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/18454201/",
+        "supports": "Cell-autonomous evidence that REV-ERB\u03b1 and REV-ERB\u03b2 are functionally redundant and required for rhythmic Bmal1 expression."
+      },
+      {
+        "reference_id": "Nr1d2:R006",
+        "citation": "Bugge A, Feng D, Everett LJ, Briggs ER, Mullican SE, Wang F, Jager J, Lazar MA. Rev-erb\u03b1 and Rev-erb\u03b2 coordinately protect the circadian clock and normal metabolic function. Genes Dev. 2012;26(7):657-667.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/22474260/",
+        "supports": "Shows collaborative REV-ERB\u03b1/\u03b2 control of the cell-autonomous clock and hepatic lipid metabolism, with subtle effects after either subtype alone."
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 5,
+    "priority": 4
+  },
+  "report_evidence_ids": [
+    "Bmal1:E011",
+    "Bmal1:E013",
+    "Bmal1:E001",
+    "Bmal1:E005",
+    "Bmal1:E006",
+    "Bmal1:E007",
+    "Bmal1:E008",
+    "Bmal1:E002",
+    "Bmal1:E003",
+    "Bmal1:E009",
+    "Clock:E002",
+    "Clock:E003",
+    "Clock:E009",
+    "Clock:E010",
+    "Nr1d1:E001",
+    "Nr1d1:E002",
+    "Nr1d1:E005",
+    "Cry1:E001",
+    "Cry1:E002",
+    "Cry1:E008",
+    "Cry2:E001",
+    "Cry2:E002",
+    "Cry2:E003",
+    "Nr1d2:E002",
+    "Nr1d2:E003",
+    "Nr1d1:E003",
+    "Nr1d1:E008"
+  ],
+  "reference_ids": [
+    "Bmal1:R002",
+    "Bmal1:R003",
+    "Bmal1:R006",
+    "Bmal1:R001",
+    "Clock:R001",
+    "Clock:R002",
+    "Clock:R003",
+    "Nr1d1:R001",
+    "Nr1d1:R002",
+    "Nr1d1:R003",
+    "Nr1d1:R004",
+    "Nr1d1:R005",
+    "Nr1d1:R006",
+    "Nr1d1:R007",
+    "Nr1d1:R008",
+    "Nr1d1:R009",
+    "Cry1:R001",
+    "Cry1:R002",
+    "Cry1:R004",
+    "Cry2:R001",
+    "Cry2:R007",
+    "Nr1d2:R001",
+    "Nr1d2:R002",
+    "Nr1d2:R004",
+    "Nr1d2:R006"
+  ],
+  "source_urls_or_dois": [
+    "https://reactome.org/content/detail/R-HSA-9931510",
+    "https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1007156",
+    "https://doi.org/10.1016/j.celrep.2024.114380",
+    "https://www.ncbi.nlm.nih.gov/gene?term=11865",
+    "https://reactome.org/content/detail/R-HSA-9909396",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6629614/",
+    "https://www.uniprot.org/uniprotkb/Q3UV55/entry",
+    "https://reactome.org/content/detail/R-MMU-9911570",
+    "https://pubmed.ncbi.nlm.nih.gov/12150932/",
+    "https://pubmed.ncbi.nlm.nih.gov/15761026/",
+    "https://pubmed.ncbi.nlm.nih.gov/22460952/",
+    "https://pubmed.ncbi.nlm.nih.gov/22474260/",
+    "https://pubmed.ncbi.nlm.nih.gov/30792350/",
+    "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL1961783/",
+    "https://string-db.org/",
+    "https://rest.uniprot.org/uniprotkb/P97784",
+    "https://pubmed.ncbi.nlm.nih.gov/33443219/",
+    "https://reactome.org/content/detail/R-HSA-400253",
+    "https://www.uniprot.org/uniprotkb/Q60674",
+    "https://reactome.org/content/detail/R-MMU-383280",
+    "https://pubmed.ncbi.nlm.nih.gov/18454201/"
+  ]
+}

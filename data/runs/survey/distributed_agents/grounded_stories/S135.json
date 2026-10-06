@@ -1,0 +1,166 @@
+{
+  "story_id": "S135",
+  "title": "Forebrain Acsl4 loss induces an SREBP2 sterol-compensation program that is absent from thalamic and midbrain classes",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Partial Acsl4 depletion induced a small FDR-supported SREBP2/sterol program in forebrain glutamatergic classes, with the genes moving opposite to direct Srebf2 perturbation; high-powered thalamic and midbrain classes depleted Acsl4 without inducing the module.",
+  "biological_interpretation": "Neuronal ACSL4 loss engages a forebrain-enriched lipid feedback loop rather than a knockdown-strength-dictated sterol response.",
+  "targets": [
+    "Acsl4",
+    "Acsl3",
+    "Cyp51",
+    "Dhcr24",
+    "Dhcr7",
+    "Fads2",
+    "Fdft1",
+    "Fdps",
+    "Hmgcr",
+    "Hmgcs1",
+    "Insig1",
+    "Ldlr",
+    "Lpcat3",
+    "Srebf2"
+  ],
+  "cell_types": [
+    "005 L4-5 IT CTX Glut",
+    "007 L2-3 IT CTX Glut",
+    "009 L2-3 IT PIR AON ENT Glut",
+    "012 MEA LA CA1 DG Glut",
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut"
+  ],
+  "support": {
+    "exact_de_rows": [
+      {
+        "target": "Acsl4",
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "gene": "Srebf2",
+        "logfoldchanges": 0.684308648109436,
+        "pvals": 2.7990963616172e-06,
+        "pvals_adj": 0.04689326134617295,
+        "score": 4.685036659240723
+      },
+      {
+        "target": "Acsl4",
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "gene": "Acsl4",
+        "logfoldchanges": -0.6720201969146729,
+        "pvals": 0.0017156429238304788,
+        "pvals_adj": 1.0,
+        "score": -3.135495185852051
+      },
+      {
+        "target": "Acsl4",
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "gene": "Hmgcr",
+        "logfoldchanges": 0.5456714630126953,
+        "pvals": 0.005380486376117547,
+        "pvals_adj": 1.0,
+        "score": 2.7833251953125
+      },
+      {
+        "target": "Acsl4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Acsl4",
+        "logfoldchanges": -0.9946091771125793,
+        "pvals": 2.220683779293731e-20,
+        "pvals_adj": 3.8326781346830503e-16,
+        "score": -9.251160621643066
+      },
+      {
+        "target": "Acsl4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Srebf2",
+        "logfoldchanges": 0.11065123230218887,
+        "pvals": 0.06018543339832734,
+        "pvals_adj": 1.0,
+        "score": 1.8794326782226562
+      },
+      {
+        "target": "Acsl4",
+        "cell_type": "155 MB Glut",
+        "gene": "Acsl4",
+        "logfoldchanges": -1.0419546365737915,
+        "pvals": 4.52141044907382e-10,
+        "pvals_adj": 7.886696246319464e-06,
+        "score": -6.234874248504639
+      },
+      {
+        "target": "Srebf2",
+        "cell_type": "155 MB Glut",
+        "gene": "Srebf2",
+        "logfoldchanges": -1.65208101272583,
+        "pvals": 2.281051000185034e-31,
+        "pvals_adj": 3.978837259622755e-27,
+        "score": -11.650504112243652
+      },
+      {
+        "target": "Srebf2",
+        "cell_type": "155 MB Glut",
+        "gene": "Dhcr24",
+        "logfoldchanges": -0.9505826234817505,
+        "pvals": 1.0567022682469913e-09,
+        "pvals_adj": 9.216028832516135e-06,
+        "score": -6.1006011962890625
+      },
+      {
+        "target": "Srebf2",
+        "cell_type": "155 MB Glut",
+        "gene": "Hmgcr",
+        "logfoldchanges": -0.605687141418457,
+        "pvals": 6.134043522057196e-05,
+        "pvals_adj": 0.13374515144405458,
+        "score": -4.007594108581543
+      },
+      {
+        "target": "Srebf2",
+        "cell_type": "155 MB Glut",
+        "gene": "Insig1",
+        "logfoldchanges": -1.062713861465454,
+        "pvals": 2.175603730234086e-09,
+        "pvals_adj": 1.2649685288824387e-05,
+        "score": -5.984121799468994
+      }
+    ],
+    "evidence_summary": "Acsl4:F001 supports broad but sparse response; Acsl4:F002/F003 support a nominal sterol branch moving opposite direct Srebf2 loss; Acsl4:F004 supports target-only buffering in 151 and 155."
+  },
+  "caveats": [
+    "Only Srebf2 in 007 was a non-Acsl4 FDR row; most sterol genes were nominal.",
+    "No lipidomics, cholesterol, or ferroptosis phenotypes were measured."
+  ],
+  "prior_expectation": {
+    "summary": "Acsl4:F001 supports broad but sparse response; Acsl4:F002/F003 support a nominal sterol branch moving opposite direct Srebf2 loss; Acsl4:F004 supports target-only buffering in 151 and 155.",
+    "citations": [
+      "Doll 2017 PMID:27842070",
+      "Meloni 2002 PMID:11889465",
+      "Meloni 2009 PMID:19166906",
+      "DeBose-Boyd and Ye 2018 DOI:10.1016/j.tibs.2018.01.005"
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 3,
+    "priority": 3
+  },
+  "report_evidence_ids": [
+    "Acsl4:E001",
+    "Acsl4:E002",
+    "Acsl4:E003",
+    "Acsl4:E004",
+    "Acsl4:E006",
+    "Acsl4:E007"
+  ],
+  "reference_ids": [
+    "Acsl4:R001",
+    "Acsl4:R002",
+    "Acsl4:R004",
+    "Acsl4:R005",
+    "Acsl4:R006"
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/27842070/",
+    "https://pubmed.ncbi.nlm.nih.gov/11889465/",
+    "https://pubmed.ncbi.nlm.nih.gov/19166906/",
+    "https://doi.org/10.1016/j.tibs.2018.01.005"
+  ]
+}

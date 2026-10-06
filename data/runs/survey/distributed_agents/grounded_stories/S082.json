@@ -1,0 +1,774 @@
+{
+  "story_id": "S082",
+  "title": "CACNA1G loss creates a thalamic calcium-channel state that is orthogonal to CACNA1C and other Ca2+/calmodulin nodes",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Cacna1g loss in 151 TH Prkcd Grin2c Glut produced a distinct FDR-supported thalamic calcium-channel state led by Ptprn, Iyd, Stmn4, Cpne7, Jun, Zdhhc22, and Lrrc7, and this state did not phenocopy Cacna1c, Cacna2d1, Cacnb4, Calm1/3, Camk2b, Ppp3ca, or Ppp3r1 perturbations.",
+  "biological_interpretation": "A T-type calcium-channel perturbation elicits a selective thalamic RNA program that is separable from broader Ca2+/calmodulin network nodes in the same cell type.",
+  "targets": [
+    "Cacna1g",
+    "Cacna1c",
+    "Cacna2d1",
+    "Cacnb4",
+    "Ppp3ca"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut"
+  ],
+  "support": {
+    "source_findings": [
+      {
+        "target_gene": "Cacna1g",
+        "finding_id": "F001",
+        "finding_type": "cell_type_selectivity",
+        "direction": "Cacna1g down with a mixed downstream signature",
+        "confidence": "high",
+        "literature_status": "extends_known_mechanism",
+        "summary": "Cacna1g loss produced a multi-gene FDR-significant response concentrated in 151 TH Prkcd Grin2c Glut.",
+        "why_it_matters": "The result places the strongest transcriptional consequence of Cav3.1 loss in a thalamic glutamatergic population, matching the known thalamic dependence on Cav3.1 but extending it from excitability to a measured gene-expression state.",
+        "genes": "Cacna1g|Ptprn|Stmn4|Cpne7|Ly6e|Zdhhc22|Jun|Iyd|Lrrc7|Serpine2|Notum|Irag1",
+        "n_genes": "12",
+        "cell_types": "151 TH Prkcd Grin2c Glut",
+        "n_cell_types": "1",
+        "evidence_ids": "E001|E002|E003",
+        "ref_ids": "R001|R003|R004|R009",
+        "main_caveats": "The signature is transcriptomic and bulked within a class label; the DE table does not measure T-type current or burst firing directly."
+      },
+      {
+        "target_gene": "Cacna1c",
+        "finding_id": "F003",
+        "finding_type": "cross_perturbation_contrast",
+        "direction": "divergent",
+        "confidence": "moderate",
+        "literature_status": "refines_known_mechanism",
+        "summary": "Cacna1c, Cacna1g, Cacna2d1, and Cacnb4 were knocked down in the same thalamic class but produced orthogonal transcriptomes, with Cacna1g giving a multi-gene response and Cacna1c/Cacna2d1/Cacnb4 mainly giving self-only signatures.",
+        "why_it_matters": "Voltage-gated calcium-channel membership or auxiliary-subunit proximity is not enough to predict a shared scRNA-seq perturbation signature.",
+        "genes": "Cacna1c|Cacna1g|Cacna2d1|Cacnb4|Ptprn|Stmn4|Cpne7",
+        "n_genes": "7",
+        "comparators": "Cacna1g|Cacna2d1|Cacnb4",
+        "cell_types": "151 TH Prkcd Grin2c Glut",
+        "n_cell_types": "1",
+        "evidence_ids": "E005",
+        "ref_ids": "R001|R006",
+        "main_caveats": "Cacna1g is a T-type pore-forming channel rather than an L-type auxiliary subunit; transcriptomic correlations were based on partial knockdowns, so biophysical convergence could still exist."
+      }
+    ],
+    "evidence_ledger_rows": [
+      {
+        "target_gene": "Cacna1g",
+        "evidence_id": "E001",
+        "evidence_slug": "cacna1g_on_target_screenwide",
+        "genes": "Cacna1g",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Cacna1g rows were present in 23 cell types with 27-264 perturbed cells and 2019-23679 matched controls; target-transcript logFC was negative in 17/23 cell types, nominal p<0.05 in 6/23, and FDR<0.05 in 2/23.",
+        "description": "Screen-wide summary of measured Cacna1g target-transcript engagement."
+      },
+      {
+        "target_gene": "Cacna1g",
+        "evidence_id": "E002",
+        "evidence_slug": "thalamic_151_cacna1g_knockdown",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Cacna1g",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "264 perturbed cells versus 23679 controls; Cacna1g score -6.990, logFC -0.341, p=2.75e-12, FDR=2.37e-8.",
+        "description": "Robust on-target Cacna1g depletion in the thalamic Prkcd/Grin2c glutamatergic class."
+      },
+      {
+        "target_gene": "Cacna1g",
+        "evidence_id": "E003",
+        "evidence_slug": "thalamic_151_downstream_signature",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Ptprn|Stmn4|Cpne7|Ly6e|Zdhhc22|Jun|Iyd|Lrrc7|Serpine2|Notum|Irag1",
+        "n_genes": "11",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "12 genes passed FDR<0.05. Non-target top hits included Ptprn logFC +0.311 FDR 1.60e-8, Stmn4 -0.308 FDR 2.50e-7, Cpne7 -0.347 FDR 6.48e-7, Ly6e -0.528 FDR 1.40e-4, Zdhhc22 -0.367 FDR 3.50e-4, Jun -0.657 FDR 3.50e-4, Iyd +0.867 FDR 3.74e-4, Lrrc7 -0.151 FDR 8.98e-4, Serpine2 +0.488 FDR 0.00579, Notum +0.803 FDR 0.00887, and Irag1 -0.409 FDR 0.0160.",
+        "description": "Multiple-testing-robust downstream transcriptional response to Cacna1g perturbation in the thalamic class."
+      },
+      {
+        "target_gene": "Cacna1c",
+        "evidence_id": "E005",
+        "evidence_slug": "th_calcium_channel_related_contrast",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Cacna1c|Cacna1g|Cacna2d1|Cacnb4|Ptprn|Stmn4|Cpne7",
+        "n_genes": "7",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "In 151 TH Prkcd Grin2c Glut, Cacna1g had 12 FDR<0.05 genes, Cacna2d1 had only Cacna2d1 at FDR=6.02e-7, Cacnb4 had only Cacnb4 at FDR=9.84e-5, and Cacna1c had only Cacna1c at FDR=0.00525. Cacna1c Pearson score correlations over 17259 genes were 0.0715 with Cacna1g, 0.0686 with Cacna2d1, and 0.0313 with Cacnb4.",
+        "description": "Voltage-gated calcium-channel perturbations were active in the same cell class but had largely orthogonal signatures."
+      }
+    ],
+    "exact_de_rows": [
+      {
+        "target_gene": "Cacna1c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cacna1c",
+        "score": -5.120867,
+        "logfoldchange": -0.342909,
+        "pval": 3.041344171251379e-07,
+        "pvals_adj": 0.0052490559051627545
+      },
+      {
+        "target_gene": "Cacna1c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cacna1g",
+        "score": -0.3383,
+        "logfoldchange": -0.006461,
+        "pval": 0.7351370274045232,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacna1c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cacna2d1",
+        "score": -0.658854,
+        "logfoldchange": -0.017912,
+        "pval": 0.5099893309268608,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacna1c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cacnb4",
+        "score": 1.052398,
+        "logfoldchange": 0.055026,
+        "pval": 0.2926170689552876,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacna1c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cpne7",
+        "score": 0.742678,
+        "logfoldchange": 0.064709,
+        "pval": 0.4576766811213401,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacna1c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Iyd",
+        "score": 2.145337,
+        "logfoldchange": 0.414593,
+        "pval": 0.031925889200890234,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacna1c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Jun",
+        "score": -2.771667,
+        "logfoldchange": -0.404552,
+        "pval": 0.005577013208432487,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacna1c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lrrc7",
+        "score": -0.991033,
+        "logfoldchange": -0.036716,
+        "pval": 0.3216695379324658,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacna1c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ppp3ca",
+        "score": 0.344361,
+        "logfoldchange": 0.032246,
+        "pval": 0.7305748649399607,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacna1c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ptprn",
+        "score": 2.008745,
+        "logfoldchange": 0.092796,
+        "pval": 0.044564140553256484,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacna1c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Stmn4",
+        "score": -2.531129,
+        "logfoldchange": -0.122792,
+        "pval": 0.011369590194544928,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacna1c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Zdhhc22",
+        "score": -1.618213,
+        "logfoldchange": -0.12249,
+        "pval": 0.10561671091111414,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacna1g",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cacna1c",
+        "score": 1.727471,
+        "logfoldchange": 0.06978,
+        "pval": 0.08408319549419746,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacna1g",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cacna1g",
+        "score": -6.990162,
+        "logfoldchange": -0.341077,
+        "pval": 2.745688719162382e-12,
+        "pvals_adj": 2.3693920802011774e-08
+      },
+      {
+        "target_gene": "Cacna1g",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cacna2d1",
+        "score": 0.395495,
+        "logfoldchange": 0.02388,
+        "pval": 0.6924776465613358,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacna1g",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cacnb4",
+        "score": -0.432801,
+        "logfoldchange": -0.009245,
+        "pval": 0.665159298935996,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacna1g",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cpne7",
+        "score": -6.405097,
+        "logfoldchange": -0.347193,
+        "pval": 1.5027407982307694e-10,
+        "pvals_adj": 6.483950859166212e-07
+      },
+      {
+        "target_gene": "Cacna1g",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Iyd",
+        "score": 5.225686,
+        "logfoldchange": 0.86701,
+        "pval": 1.7351116678116538e-07,
+        "pvals_adj": 0.00037432865343451667
+      },
+      {
+        "target_gene": "Cacna1g",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Jun",
+        "score": -5.262651,
+        "logfoldchange": -0.657091,
+        "pval": 1.4199275639695557e-07,
+        "pvals_adj": 0.0003500932832364366
+      },
+      {
+        "target_gene": "Cacna1g",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lrrc7",
+        "score": -5.038967,
+        "logfoldchange": -0.15098,
+        "pval": 4.680516773760595e-07,
+        "pvals_adj": 0.0008975670999814901
+      },
+      {
+        "target_gene": "Cacna1g",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ppp3ca",
+        "score": -1.892113,
+        "logfoldchange": -0.075364,
+        "pval": 0.05847586497950397,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacna1g",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ptprn",
+        "score": 7.141244,
+        "logfoldchange": 0.310807,
+        "pval": 9.248969958075806e-13,
+        "pvals_adj": 1.5962797250643035e-08
+      },
+      {
+        "target_gene": "Cacna1g",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Stmn4",
+        "score": -6.591619,
+        "logfoldchange": -0.307999,
+        "pval": 4.3505782421503706e-11,
+        "pvals_adj": 2.502887662709108e-07
+      },
+      {
+        "target_gene": "Cacna1g",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Zdhhc22",
+        "score": -5.287436,
+        "logfoldchange": -0.366572,
+        "pval": 1.2404311059605721e-07,
+        "pvals_adj": 0.0003500932832364366
+      },
+      {
+        "target_gene": "Cacna2d1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cacna1c",
+        "score": -1.023292,
+        "logfoldchange": -0.024389,
+        "pval": 0.3061699100765022,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacna2d1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cacna1g",
+        "score": -1.557782,
+        "logfoldchange": -0.09603,
+        "pval": 0.11928490949336805,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacna2d1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cacna2d1",
+        "score": -6.62443,
+        "logfoldchange": -0.391818,
+        "pval": 3.4859152821007485e-11,
+        "pvals_adj": 6.016341185377682e-07
+      },
+      {
+        "target_gene": "Cacna2d1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cacnb4",
+        "score": -0.957734,
+        "logfoldchange": -0.077855,
+        "pval": 0.3381966747721975,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacna2d1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cpne7",
+        "score": -0.538668,
+        "logfoldchange": 0.010291,
+        "pval": 0.5901161647131334,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacna2d1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Iyd",
+        "score": 0.870235,
+        "logfoldchange": 0.163021,
+        "pval": 0.3841718485910577,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacna2d1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Jun",
+        "score": -1.562417,
+        "logfoldchange": -0.233717,
+        "pval": 0.11818981904636752,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacna2d1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lrrc7",
+        "score": -0.621124,
+        "logfoldchange": -0.007367,
+        "pval": 0.5345183297828813,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacna2d1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ppp3ca",
+        "score": 2.404142,
+        "logfoldchange": 0.174742,
+        "pval": 0.016210461461414756,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacna2d1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ptprn",
+        "score": -0.08956,
+        "logfoldchange": -0.013561,
+        "pval": 0.9286365207206333,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacna2d1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Stmn4",
+        "score": -1.371648,
+        "logfoldchange": -0.077748,
+        "pval": 0.170173008456301,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacna2d1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Zdhhc22",
+        "score": -0.26404,
+        "logfoldchange": 0.02062,
+        "pval": 0.7917487283231216,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacnb4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cacna1c",
+        "score": -0.284261,
+        "logfoldchange": -0.016821,
+        "pval": 0.7762103253724969,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacnb4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cacna1g",
+        "score": 0.892032,
+        "logfoldchange": 0.051217,
+        "pval": 0.3723758083339668,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacnb4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cacna2d1",
+        "score": -1.527428,
+        "logfoldchange": -0.080247,
+        "pval": 0.1266546090338637,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacnb4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cacnb4",
+        "score": -5.825237,
+        "logfoldchange": -0.363266,
+        "pval": 5.7031656347329885e-09,
+        "pvals_adj": 9.843093568985666e-05
+      },
+      {
+        "target_gene": "Cacnb4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cpne7",
+        "score": -1.790881,
+        "logfoldchange": -0.10464,
+        "pval": 0.07331240407578497,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacnb4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Iyd",
+        "score": 0.363467,
+        "logfoldchange": -0.017018,
+        "pval": 0.716255897735856,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacnb4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Jun",
+        "score": -0.682896,
+        "logfoldchange": -0.102571,
+        "pval": 0.4946728061440684,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacnb4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lrrc7",
+        "score": -1.15254,
+        "logfoldchange": -0.056804,
+        "pval": 0.2490990374046138,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacnb4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ppp3ca",
+        "score": 0.951303,
+        "logfoldchange": 0.05121,
+        "pval": 0.3414504034858996,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacnb4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ptprn",
+        "score": 0.450051,
+        "logfoldchange": 0.021763,
+        "pval": 0.6526738729988857,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacnb4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Stmn4",
+        "score": -1.298159,
+        "logfoldchange": -0.069707,
+        "pval": 0.1942326353850956,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cacnb4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Zdhhc22",
+        "score": -2.015299,
+        "logfoldchange": -0.127904,
+        "pval": 0.04387329889559501,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ppp3ca",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cacna1c",
+        "score": -1.068529,
+        "logfoldchange": -0.043099,
+        "pval": 0.28528195023020364,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ppp3ca",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cacna1g",
+        "score": -1.415526,
+        "logfoldchange": -0.055054,
+        "pval": 0.15691436376636975,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ppp3ca",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cacna2d1",
+        "score": -1.695114,
+        "logfoldchange": -0.068922,
+        "pval": 0.09005373883261147,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ppp3ca",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cacnb4",
+        "score": 0.824169,
+        "logfoldchange": 0.062417,
+        "pval": 0.40984339553235205,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ppp3ca",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cpne7",
+        "score": -2.577353,
+        "logfoldchange": -0.140598,
+        "pval": 0.009956026887726161,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ppp3ca",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Iyd",
+        "score": -4.83956,
+        "logfoldchange": -1.084811,
+        "pval": 1.30127079041808e-06,
+        "pvals_adj": 0.011229316285912823
+      },
+      {
+        "target_gene": "Ppp3ca",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Jun",
+        "score": 2.783745,
+        "logfoldchange": 0.313143,
+        "pval": 0.005373524182424096,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ppp3ca",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lrrc7",
+        "score": -1.425175,
+        "logfoldchange": -0.05356,
+        "pval": 0.1541065837812582,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ppp3ca",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ppp3ca",
+        "score": -8.148616,
+        "logfoldchange": -0.483472,
+        "pval": 3.6811469426767293e-16,
+        "pvals_adj": 6.353291508365767e-12
+      },
+      {
+        "target_gene": "Ppp3ca",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ptprn",
+        "score": -2.071491,
+        "logfoldchange": -0.117426,
+        "pval": 0.03831292522860653,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ppp3ca",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Stmn4",
+        "score": 1.921284,
+        "logfoldchange": 0.088261,
+        "pval": 0.0546958803184044,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ppp3ca",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Zdhhc22",
+        "score": 0.235509,
+        "logfoldchange": 0.001557,
+        "pval": 0.8138135837403258,
+        "pvals_adj": 1.0
+      }
+    ]
+  },
+  "caveats": [
+    "The claim rests on transcript abundance and correlation, not calcium currents or channel biophysics.",
+    "Comparator silence can reflect differences in guide engagement as well as true biological separation."
+  ],
+  "prior_expectation": {
+    "citations": [
+      {
+        "target_gene": "Cacna1g",
+        "ref_id": "R001",
+        "ref_slug": "uniprot_cacna1g_o43497",
+        "source": "UniProtKB",
+        "source_type": "database",
+        "citation": "UniProtKB reviewed entry O43497, CAC1G_HUMAN, voltage-dependent T-type calcium channel subunit alpha-1G. Accessed 2025-04-29.",
+        "url": "https://rest.uniprot.org/uniprotkb/O43497",
+        "description": "Curated target-function record describing CACNA1G/Cav3.1 as a low-voltage-activated T-type calcium-current channel that supports pacemaking and neuronal firing patterns."
+      },
+      {
+        "target_gene": "Cacna1g",
+        "ref_id": "R003",
+        "ref_slug": "talley_1999_ttype_distribution",
+        "source": "Journal of Neuroscience",
+        "source_type": "pubmed",
+        "citation": "Talley EM, Cribbs LL, Lee JH, Daud A, Perez-Reyes E, Bayliss DA. Differential distribution of three members of a gene family encoding low voltage-activated (T-type) calcium channels. J Neurosci. 1999;19(6):1895-1911. PMID:10066243.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/10066243/",
+        "description": "In situ hybridization study showing that alpha1G/CACNA1G is strongly represented in thalamic relay and inferior olivary neurons and in the cerebellar Purkinje-cell layer, with complementary distributions for other T-type genes."
+      },
+      {
+        "target_gene": "Cacna1g",
+        "ref_id": "R004",
+        "ref_slug": "kim_2001_cacna1g_thalamic_bursting",
+        "source": "Neuron",
+        "source_type": "pubmed",
+        "citation": "Kim D, Song I, Keum S, Lee T, Jeong MJ, Kim SS, et al. Lack of the burst firing of thalamocortical relay neurons and resistance to absence seizures in mice lacking alpha1G T-type Ca2+ channels. Neuron. 2001;31(1):35-45. PMID:11498049.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/11498049/",
+        "description": "Mouse knockout study demonstrating that alpha1G/Cav3.1 is required for burst-mode firing in thalamocortical relay neurons and for GABA_B-dependent spike-and-wave discharges."
+      },
+      {
+        "target_gene": "Cacna1g",
+        "ref_id": "R009",
+        "ref_slug": "perezreyes_2003_ttype_review",
+        "source": "Physiological Reviews",
+        "source_type": "review",
+        "citation": "Perez-Reyes E. Molecular physiology of low-voltage-activated T-type calcium channels. Physiol Rev. 2003;83(1):117-161. PMID:12506128.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/12506128/",
+        "description": "Review summarizing the molecular physiology of Cav3 low-voltage-activated T-type calcium channels and their role in low-threshold spikes and burst firing."
+      },
+      {
+        "target_gene": "Cacna1c",
+        "ref_id": "R001",
+        "ref_slug": "hofmann_2014_cav12_review",
+        "source": "Physiological Reviews",
+        "source_type": "review",
+        "citation": "Hofmann F, Flockerzi V, Kahl S, Wegener JW. L-type CaV1.2 calcium channels: from in vitro findings to in vivo function. Physiological Reviews. 2014;94(1):303-326.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/24382889/",
+        "description": "Review of CaV1.2 channel structure, auxiliary subunits, regulation, and in vivo functions."
+      },
+      {
+        "target_gene": "Cacna1c",
+        "ref_id": "R006",
+        "ref_slug": "string_2023_database_cacna1c_network",
+        "source": "STRING",
+        "source_type": "database",
+        "citation": "Szklarczyk D, et al. The STRING database in 2023: protein-protein association networks and functional enrichment analyses for any sequenced genome of interest. Nucleic Acids Research. 2023;51(D1):D638-D646.",
+        "url": "https://doi.org/10.1093/nar/gkac1000",
+        "description": "Database source used here to place CACNA1C, CACNA2D1, CACNB4, CALM1, CAMK2B, and PPP3R1 in a calcium-channel functional network."
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 4,
+    "priority": 4
+  },
+  "report_evidence_ids": [
+    "Cacna1c:E005",
+    "Cacna1g:E001",
+    "Cacna1g:E002",
+    "Cacna1g:E003"
+  ],
+  "reference_ids": [
+    "Cacna1c:R001",
+    "Cacna1c:R006",
+    "Cacna1g:R001",
+    "Cacna1g:R003",
+    "Cacna1g:R004",
+    "Cacna1g:R009"
+  ],
+  "source_urls_or_dois": [
+    {
+      "ref_id": "Cacna1g:R001",
+      "citation": "UniProtKB reviewed entry O43497, CAC1G_HUMAN, voltage-dependent T-type calcium channel subunit alpha-1G. Accessed 2025-04-29.",
+      "url_or_doi": "https://rest.uniprot.org/uniprotkb/O43497"
+    },
+    {
+      "ref_id": "Cacna1g:R003",
+      "citation": "Talley EM, Cribbs LL, Lee JH, Daud A, Perez-Reyes E, Bayliss DA. Differential distribution of three members of a gene family encoding low voltage-activated (T-type) calcium channels. J Neurosci. 1999;19(6):1895-1911. PMID:10066243.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/10066243/"
+    },
+    {
+      "ref_id": "Cacna1g:R004",
+      "citation": "Kim D, Song I, Keum S, Lee T, Jeong MJ, Kim SS, et al. Lack of the burst firing of thalamocortical relay neurons and resistance to absence seizures in mice lacking alpha1G T-type Ca2+ channels. Neuron. 2001;31(1):35-45. PMID:11498049.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/11498049/"
+    },
+    {
+      "ref_id": "Cacna1g:R009",
+      "citation": "Perez-Reyes E. Molecular physiology of low-voltage-activated T-type calcium channels. Physiol Rev. 2003;83(1):117-161. PMID:12506128.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/12506128/"
+    },
+    {
+      "ref_id": "Cacna1c:R001",
+      "citation": "Hofmann F, Flockerzi V, Kahl S, Wegener JW. L-type CaV1.2 calcium channels: from in vitro findings to in vivo function. Physiological Reviews. 2014;94(1):303-326.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/24382889/"
+    },
+    {
+      "ref_id": "Cacna1c:R006",
+      "citation": "Szklarczyk D, et al. The STRING database in 2023: protein-protein association networks and functional enrichment analyses for any sequenced genome of interest. Nucleic Acids Research. 2023;51(D1):D638-D646.",
+      "url_or_doi": "https://doi.org/10.1093/nar/gkac1000"
+    }
+  ],
+  "source_cluster_ids": [
+    "C303"
+  ],
+  "source_claim_ids": [
+    "claim:cacna1g_f001_09784d560b53",
+    "claim:cacna1c_f003_64dd1e5cf1a5"
+  ]
+}

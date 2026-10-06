@@ -1,0 +1,170 @@
+{
+  "story_id": "S099",
+  "title": "V-ATPase, CAML, PI4KA, VPS, and DHDDs perturbations enter a shared endomembrane-proteostasis neighborhood with cell-specific inhibitory markers",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Atp6v0c loss recurrently reduced Atp6v0a1 and had positive signature-neighbor links to proteasome, clathrin, Sec31a, Caml, Hspa9, Vps, and V-ATPase perturbations. Caml reproducibly induced Stmn4 in inhibitory classes; Pi4ka repressed Slc12a5 in 191 MB P MY GABA and exposed a low-n Abca2/Dgkd/Rap1gap pineal lead; Dhdds, Vps54, and Vps53 each sat near endomembrane, ER, V-ATPase, or proteasome neighbors with modest correlations.",
+  "biological_interpretation": "The story is a convergence neighborhood rather than a single linear pathway: vesicle acidification, ER glycosylation/lipid synthesis, PI4P synthesis, CAML, and GARP/EARP perturbations repeatedly intersect endomembrane-proteostasis expression states, while individual marker genes remain cell-type-specific.",
+  "targets": [
+    "Atp6v0c",
+    "Caml",
+    "Pi4ka",
+    "Dhdds",
+    "Vps54",
+    "Vps53"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "191 MB P MY GABA",
+    "052 Pvalb Gaba",
+    "066 CNU-HYa HY GABA"
+  ],
+  "support": {
+    "support_level": 3,
+    "exact_de_rows": [
+      {
+        "gene_target": "Atp6v0c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Atp6v0a1",
+        "log2_fold_change": -0.577,
+        "pvals_adj": 2.39e-19,
+        "wilcoxon_score": -9.9
+      },
+      {
+        "gene_target": "Atp6v0c",
+        "cell_type": "155 MB Glut",
+        "gene": "Atp6v0a1",
+        "log2_fold_change": -0.438,
+        "pvals_adj": 6.82e-13,
+        "wilcoxon_score": -8.33
+      },
+      {
+        "gene_target": "Atp6v0c",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Atp6v0a1",
+        "log2_fold_change": -0.45,
+        "pvals_adj": 1.29e-07,
+        "wilcoxon_score": -6.74
+      },
+      {
+        "gene_target": "Pi4ka",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Slc12a5",
+        "log2_fold_change": -0.67,
+        "pvals_adj": 0.0136,
+        "wilcoxon_score": -4.937
+      },
+      {
+        "gene_target": "Caml",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Stmn4",
+        "log2_fold_change": 1.068,
+        "pvals_adj": 0.000183
+      },
+      {
+        "gene_target": "Caml",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Stmn4",
+        "log2_fold_change": 0.833,
+        "pvals_adj": 0.00363
+      }
+    ],
+    "report_evidence_summary": [
+      "Atp6v0c:E008",
+      "Atp6v0c:E011",
+      "Caml:E004",
+      "Caml:E005",
+      "Pi4ka:E004",
+      "Pi4ka:E005",
+      "Pi4ka:E006",
+      "Dhdds:E010",
+      "Dhdds:E012",
+      "Vps54:E006",
+      "Vps54:E007",
+      "Vps53:E003",
+      "Vps53:E010"
+    ]
+  },
+  "caveats": [
+    "Several members are convergence or low-count biomarker findings with modest correlations; the support is for a shared neighborhood, not interchangeability.",
+    "Pi4ka pineal evidence is explicitly low-n and should be treated as a lead set rather than a robust recurrent module."
+  ],
+  "prior_expectation": {
+    "summary": "ATP6V0C is a V0 proton-pore subunit, PI4KA maintains plasma-membrane PI4P and PI(4,5)P2, DHDDS supplies dolichol-phosphate for ER glycosylation, and VPS53/VPS54 participate in endosomal/TGN tethering; these prior functions make endomembrane convergence plausible.",
+    "citations": [
+      {
+        "ref_id": "Atp6v0c:R001",
+        "ref": "UniProtKB P63082",
+        "url_or_doi": "https://www.uniprot.org/uniprotkb/P63082",
+        "supports": "ATP6V0C as a V-ATPase V0 pore component"
+      },
+      {
+        "ref_id": "Pi4ka:R003",
+        "ref": "Bojjireddy et al. 2014 PMID:24415756",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/24415756/",
+        "supports": "PI4KA maintains PI4P and PI(4,5)P2 pools"
+      },
+      {
+        "ref_id": "Dhdds:R002",
+        "ref": "Reactome R-HSA-4419978",
+        "url_or_doi": "https://reactome.org/content/detail/R-HSA-4419978",
+        "supports": "DHDDS in dolichyl-phosphate synthesis"
+      },
+      {
+        "ref_id": "Vps53:R005",
+        "ref": "Schindler et al. 2015 PMID:25799061",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/25799061/",
+        "supports": "EARP endocytic recycling function"
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 3,
+    "support": 3,
+    "priority": 3
+  },
+  "report_evidence_ids": [
+    "Atp6v0c:E008",
+    "Atp6v0c:E011",
+    "Caml:E004",
+    "Caml:E005",
+    "Caml:E006",
+    "Pi4ka:E004",
+    "Pi4ka:E005",
+    "Pi4ka:E006",
+    "Dhdds:E010",
+    "Dhdds:E012",
+    "Vps54:E006",
+    "Vps54:E007",
+    "Vps53:E003",
+    "Vps53:E010"
+  ],
+  "reference_ids": [
+    "Atp6v0c:R001",
+    "Atp6v0c:R002",
+    "Atp6v0c:R005",
+    "Dhdds:R001",
+    "Dhdds:R002",
+    "Pi4ka:R001",
+    "Pi4ka:R003",
+    "Pi4ka:R010",
+    "Vps54:R002",
+    "Vps53:R001",
+    "Vps53:R005"
+  ],
+  "source_urls_or_dois": [
+    "https://www.uniprot.org/uniprotkb/P63082",
+    "https://pubmed.ncbi.nlm.nih.gov/24415756/",
+    "https://reactome.org/content/detail/R-HSA-4419978",
+    "https://pubmed.ncbi.nlm.nih.gov/25799061/"
+  ],
+  "source_claim_ids": [
+    "claim:atp6v0c_f004_8394ee3491c8",
+    "claim:caml_f005_a58ae17327a3",
+    "claim:pi4ka_f002_28ca062d5e1f",
+    "claim:pi4ka_f003_8a24f67cd97a",
+    "claim:dhdds_f004_3d4a9c0edfa4",
+    "claim:vps54_f003_13f197fed0e5",
+    "claim:vps53_f004_504a4280c2a2"
+  ]
+}

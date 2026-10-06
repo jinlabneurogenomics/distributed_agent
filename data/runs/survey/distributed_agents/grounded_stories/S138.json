@@ -1,0 +1,668 @@
+{
+  "biological_interpretation": "A selective ER-associated sterol feedback branch in neurons is more sensitive to MARCHF6 and TXNDC15 than to AMFR/gp78, separates from canonical UPR activation, and can oppose direct Srebf2 loss at the pathway level.",
+  "caveats": [
+    "Txndc15 has weak full-transcriptome correlation with Marchf6 and Srebf2 despite pathway-level agreement.",
+    "Amfr support is only nominal and opposite-skewed, not a corrected sterol repression signature.",
+    "The UPR-negative claim is a transcript marker-panel result."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "191 MB P MY GABA"
+  ],
+  "exact_observed_result": "Marchf6 loss induced Insig1, Dhcr24, Cyp51, Msmo1, Hmgcr, Fdft1, Hmgcs1, Ldlr, Fdps, Sqle, and Srebf2 in 151 TH and 155 MB, while Txndc15 loss induced Hmgcs1, Insig1, Ldlr, Srebf2, Fdft1, and Dhcr24 in 155 MB and a weaker Insig1-led 191 MB P MY GABA sterol response; Amfr showed only nominal opposite sterol skew.",
+  "preliminary_scores": {
+    "novelty": 4,
+    "priority": 4,
+    "support": 5
+  },
+  "prior_expectation": {
+    "citations": [
+      {
+        "ref": "Zelcer et al. 2014",
+        "supports": "MARCH6 control of SQLE, HMGCR, and cholesterol synthesis",
+        "url_or_doi": "https://doi.org/10.1128/MCB.01140-13"
+      },
+      {
+        "ref": "Scott et al. 2020",
+        "supports": "MARCH6 regulation of CYP51A1/LDM and DHCR24",
+        "url_or_doi": "https://doi.org/10.1042/BCJ20190647"
+      },
+      {
+        "ref": "Brown and Goldstein 2009",
+        "supports": "SREBP-SCAP cholesterol feedback",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/18974038/"
+      }
+    ],
+    "summary": "Prior expectation is grounded by the listed traceable corpus citations; direct prior support for the exact cell-type/state relationship is partial unless noted in the caveats."
+  },
+  "reference_ids": [
+    "Marchf6:R001",
+    "Marchf6:R002",
+    "Marchf6:R003",
+    "Marchf6:R004",
+    "Amfr:R001",
+    "Amfr:R005",
+    "Amfr:R007",
+    "Txndc15:R004",
+    "Txndc15:R005"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Marchf6:E001",
+    "Marchf6:E002",
+    "Marchf6:E003",
+    "Amfr:E006",
+    "Amfr:E007",
+    "Txndc15:E003",
+    "Txndc15:E004",
+    "Txndc15:E005",
+    "Txndc15:E006",
+    "Txndc15:E009"
+  ],
+  "source_urls_or_dois": [
+    {
+      "ref": "Zelcer et al. 2014",
+      "supports": "MARCH6 control of SQLE, HMGCR, and cholesterol synthesis",
+      "url_or_doi": "https://doi.org/10.1128/MCB.01140-13"
+    },
+    {
+      "ref": "Scott et al. 2020",
+      "supports": "MARCH6 regulation of CYP51A1/LDM and DHCR24",
+      "url_or_doi": "https://doi.org/10.1042/BCJ20190647"
+    },
+    {
+      "ref": "Brown and Goldstein 2009",
+      "supports": "SREBP-SCAP cholesterol feedback",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/18974038/"
+    }
+  ],
+  "status": "grounded",
+  "story_id": "S138",
+  "support": {
+    "exact_de_rows": [
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Marchf6",
+        "log2_fold_change": -0.687675,
+        "pval": 3.0880283344360097e-10,
+        "pvals_adj": 1.3324070256007773e-06,
+        "score": -6.294293,
+        "target": "Marchf6"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Insig1",
+        "log2_fold_change": 1.002137,
+        "pval": 5.9628338621675414e-12,
+        "pvals_adj": 1.029125496271496e-07,
+        "score": 6.880535,
+        "target": "Marchf6"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Dhcr24",
+        "log2_fold_change": 0.879565,
+        "pval": 8.734491497465351e-11,
+        "pvals_adj": 7.537429437737724e-07,
+        "score": 6.487375,
+        "target": "Marchf6"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Cyp51",
+        "log2_fold_change": 0.728032,
+        "pval": 1.6368846314130952e-10,
+        "pvals_adj": 9.416997284519536e-07,
+        "score": 6.392039,
+        "target": "Marchf6"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Msmo1",
+        "log2_fold_change": 1.011938,
+        "pval": 4.338406523046862e-10,
+        "pvals_adj": 1.4975311636253159e-06,
+        "score": 6.241339,
+        "target": "Marchf6"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Hmgcr",
+        "log2_fold_change": 0.734378,
+        "pval": 1.0191140344994516e-09,
+        "pvals_adj": 2.9314815202376725e-06,
+        "score": 6.106388,
+        "target": "Marchf6"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Fdft1",
+        "log2_fold_change": 1.014276,
+        "pval": 4.185443089450514e-09,
+        "pvals_adj": 1.0319508897260917e-05,
+        "score": 5.876693,
+        "target": "Marchf6"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Hmgcs1",
+        "log2_fold_change": 0.697627,
+        "pval": 5.30230480689371e-09,
+        "pvals_adj": 1.1439059832772317e-05,
+        "score": 5.837396,
+        "target": "Marchf6"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Ldlr",
+        "log2_fold_change": 1.478073,
+        "pval": 9.75513673064126e-08,
+        "pvals_adj": 0.00018707100537126392,
+        "score": 5.331227,
+        "target": "Marchf6"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Fdps",
+        "log2_fold_change": 1.139662,
+        "pval": 1.1907321717626568e-07,
+        "pvals_adj": 0.00020550846552451694,
+        "score": 5.294913,
+        "target": "Marchf6"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Sqle",
+        "log2_fold_change": 0.939331,
+        "pval": 3.0546086103931735e-07,
+        "pvals_adj": 0.0004792680909706889,
+        "score": 5.120046,
+        "target": "Marchf6"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Srebf2",
+        "log2_fold_change": 0.454314,
+        "pval": 7.745740979042274e-06,
+        "pvals_adj": 0.011140311963107549,
+        "score": 4.472094,
+        "target": "Marchf6"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Marchf6",
+        "log2_fold_change": -0.902102,
+        "pval": 4.0113694585528494e-07,
+        "pvals_adj": 0.0008746289683192169,
+        "score": -5.068418,
+        "target": "Marchf6"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Insig1",
+        "log2_fold_change": 1.384404,
+        "pval": 1.468309445764348e-12,
+        "pvals_adj": 2.5611721662467524e-08,
+        "score": 7.07745,
+        "target": "Marchf6"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Dhcr24",
+        "log2_fold_change": 0.907715,
+        "pval": 4.294264259382971e-06,
+        "pvals_adj": 0.007490485147641716,
+        "score": 4.596607,
+        "target": "Marchf6"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Cyp51",
+        "log2_fold_change": 0.921822,
+        "pval": 8.400850429283614e-10,
+        "pvals_adj": 3.663400850949852e-06,
+        "score": 6.137162,
+        "target": "Marchf6"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Msmo1",
+        "log2_fold_change": 1.286329,
+        "pval": 5.453763710519222e-11,
+        "pvals_adj": 4.7565000201293394e-07,
+        "score": 6.557991,
+        "target": "Marchf6"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Hmgcr",
+        "log2_fold_change": 0.971661,
+        "pval": 1.2590449398772242e-07,
+        "pvals_adj": 0.0003137360126611203,
+        "score": 5.284709,
+        "target": "Marchf6"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Fdft1",
+        "log2_fold_change": 1.070826,
+        "pval": 8.221791191533336e-07,
+        "pvals_adj": 0.0015934744861546219,
+        "score": 4.930028,
+        "target": "Marchf6"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Hmgcs1",
+        "log2_fold_change": 0.765943,
+        "pval": 1.4900166301792452e-05,
+        "pvals_adj": 0.02165863340018048,
+        "score": 4.330159,
+        "target": "Marchf6"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Ldlr",
+        "log2_fold_change": 1.870227,
+        "pval": 2.3486252584586784e-10,
+        "pvals_adj": 1.365569012776491e-06,
+        "score": 6.336618,
+        "target": "Marchf6"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Fdps",
+        "log2_fold_change": 1.33608,
+        "pval": 6.6476456931471045e-09,
+        "pvals_adj": 1.932581397092749e-05,
+        "score": 5.799592,
+        "target": "Marchf6"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Sqle",
+        "log2_fold_change": 0.8429,
+        "pval": 0.0009397444310403479,
+        "pvals_adj": 0.6556784844254716,
+        "score": 3.307971,
+        "target": "Marchf6"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Srebf2",
+        "log2_fold_change": 0.840568,
+        "pval": 4.084786472296521e-09,
+        "pvals_adj": 1.4250186087253641e-05,
+        "score": 5.880723,
+        "target": "Marchf6"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Txndc15",
+        "log2_fold_change": -1.069969,
+        "pval": 1.084028293880014e-21,
+        "pvals_adj": 1.8908705530149085e-17,
+        "score": -9.568563,
+        "target": "Txndc15"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Hmgcs1",
+        "log2_fold_change": 0.653012,
+        "pval": 1.3679760269414542e-09,
+        "pvals_adj": 1.172561589376867e-05,
+        "score": 6.059203,
+        "target": "Txndc15"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Insig1",
+        "log2_fold_change": 0.70466,
+        "pval": 2.016674177681936e-09,
+        "pvals_adj": 1.172561589376867e-05,
+        "score": 5.996458,
+        "target": "Txndc15"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Ldlr",
+        "log2_fold_change": 0.854297,
+        "pval": 4.956682052727639e-06,
+        "pvals_adj": 0.02161485126143205,
+        "score": 4.566613,
+        "target": "Txndc15"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Srebf2",
+        "log2_fold_change": 0.39884,
+        "pval": 8.670545747296297e-06,
+        "pvals_adj": 0.03024806589401786,
+        "score": 4.447921,
+        "target": "Txndc15"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Fdft1",
+        "log2_fold_change": 0.536156,
+        "pval": 1.4899818014968514e-05,
+        "pvals_adj": 0.04331625427251596,
+        "score": 4.330164,
+        "target": "Txndc15"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Dhcr24",
+        "log2_fold_change": 0.450561,
+        "pval": 1.7859128827679464e-05,
+        "pvals_adj": 0.044502397734458986,
+        "score": 4.290102,
+        "target": "Txndc15"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Cyp51",
+        "log2_fold_change": 0.276608,
+        "pval": 0.0023872564098057127,
+        "pvals_adj": 1.0,
+        "score": 3.037277,
+        "target": "Txndc15"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Msmo1",
+        "log2_fold_change": 0.489773,
+        "pval": 0.0002601118242031139,
+        "pvals_adj": 0.3490100422749935,
+        "score": 3.652093,
+        "target": "Txndc15"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Hmgcr",
+        "log2_fold_change": 0.154357,
+        "pval": 0.16014945166292593,
+        "pvals_adj": 1.0,
+        "score": 1.404569,
+        "target": "Txndc15"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Fdps",
+        "log2_fold_change": 0.543212,
+        "pval": 0.00318932284142473,
+        "pvals_adj": 1.0,
+        "score": 2.948876,
+        "target": "Txndc15"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Sqle",
+        "log2_fold_change": 0.481742,
+        "pval": 0.001312797679841455,
+        "pvals_adj": 0.9206547650691337,
+        "score": 3.213167,
+        "target": "Txndc15"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": true,
+        "gene": "Txndc15",
+        "log2_fold_change": -1.099627,
+        "pval": 2.1247028406437832e-11,
+        "pvals_adj": 3.63281691693274e-07,
+        "score": -6.697186,
+        "target": "Txndc15"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": true,
+        "gene": "Insig1",
+        "log2_fold_change": 0.809197,
+        "pval": 5.813510411496554e-09,
+        "pvals_adj": 4.969970050788404e-05,
+        "score": 5.822036,
+        "target": "Txndc15"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": false,
+        "gene": "Dhcr24",
+        "log2_fold_change": 0.658133,
+        "pval": 1.701868901008385e-05,
+        "pvals_adj": 0.09699518156480455,
+        "score": 4.300795,
+        "target": "Txndc15"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": false,
+        "gene": "Fdps",
+        "log2_fold_change": 0.760925,
+        "pval": 9.474965594066539e-05,
+        "pvals_adj": 0.31776330695734006,
+        "score": 3.903658,
+        "target": "Txndc15"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": false,
+        "gene": "Msmo1",
+        "log2_fold_change": 0.611679,
+        "pval": 0.00021049950315889406,
+        "pvals_adj": 0.5141600721443959,
+        "score": 3.706071,
+        "target": "Txndc15"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": false,
+        "gene": "Fdft1",
+        "log2_fold_change": 0.576472,
+        "pval": 0.00029537497647542265,
+        "pvals_adj": 0.6312901684720971,
+        "score": 3.619323,
+        "target": "Txndc15"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": false,
+        "gene": "Cyp51",
+        "log2_fold_change": 0.442459,
+        "pval": 0.0007018708489441952,
+        "pvals_adj": 0.9546341002173344,
+        "score": 3.388847,
+        "target": "Txndc15"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": false,
+        "gene": "Ldlr",
+        "log2_fold_change": 0.679618,
+        "pval": 0.0010299850088764555,
+        "pvals_adj": 1.0,
+        "score": 3.282206,
+        "target": "Txndc15"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": false,
+        "gene": "Hmgcs1",
+        "log2_fold_change": 0.479335,
+        "pval": 0.0014469566807382933,
+        "pvals_adj": 1.0,
+        "score": 3.185117,
+        "target": "Txndc15"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": false,
+        "gene": "Sqle",
+        "log2_fold_change": 0.646018,
+        "pval": 0.0019294807002719905,
+        "pvals_adj": 1.0,
+        "score": 3.100878,
+        "target": "Txndc15"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": false,
+        "gene": "Srebf2",
+        "log2_fold_change": 0.365919,
+        "pval": 0.0024823579179229236,
+        "pvals_adj": 1.0,
+        "score": 3.025484,
+        "target": "Txndc15"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": false,
+        "gene": "Hmgcr",
+        "log2_fold_change": 0.372973,
+        "pval": 0.005887207491831331,
+        "pvals_adj": 1.0,
+        "score": 2.753998,
+        "target": "Txndc15"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Amfr",
+        "log2_fold_change": -1.044726,
+        "pval": 4.634064190596452e-12,
+        "pvals_adj": 7.997931386550417e-08,
+        "score": -6.916357,
+        "target": "Amfr"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Srebf2",
+        "log2_fold_change": -0.438991,
+        "pval": 0.00016117279040028643,
+        "pvals_adj": 1.0,
+        "score": -3.773191,
+        "target": "Amfr"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Cyp51",
+        "log2_fold_change": -0.361235,
+        "pval": 0.00144786415437352,
+        "pvals_adj": 1.0,
+        "score": -3.184935,
+        "target": "Amfr"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Dhcr24",
+        "log2_fold_change": -0.460663,
+        "pval": 0.006252350440144248,
+        "pvals_adj": 1.0,
+        "score": -2.734245,
+        "target": "Amfr"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Sqle",
+        "log2_fold_change": -0.614679,
+        "pval": 0.009210503459725388,
+        "pvals_adj": 1.0,
+        "score": -2.60414,
+        "target": "Amfr"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Hspa5",
+        "log2_fold_change": -0.118142,
+        "pval": 0.3964105848926268,
+        "pvals_adj": 1.0,
+        "score": -0.848049,
+        "target": "Amfr"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Ddit3",
+        "log2_fold_change": 0.40427,
+        "pval": 0.010378331686012855,
+        "pvals_adj": 1.0,
+        "score": 2.562962,
+        "target": "Amfr"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Atf4",
+        "log2_fold_change": 0.077775,
+        "pval": 0.9764975344642051,
+        "pvals_adj": 1.0,
+        "score": 0.02946,
+        "target": "Amfr"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Herpud1",
+        "log2_fold_change": 0.110941,
+        "pval": 0.462233821690471,
+        "pvals_adj": 1.0,
+        "score": 0.735174,
+        "target": "Amfr"
+      }
+    ],
+    "summary": [
+      "Marchf6 had high-confidence sterol induction in both 151 TH and 155 MB.",
+      "Txndc15 reproduced a narrower positive sterol module, strongest in 155 MB.",
+      "Amfr had only FDR-negative opposite-direction sterol trends, so it is a caveated peripheral branch."
+    ]
+  },
+  "targets": [
+    "Marchf6",
+    "Txndc15",
+    "Amfr",
+    "Srebf2"
+  ],
+  "title": "Marchf6 and Txndc15 losses induce a narrow neuronal SREBP2 sterol module"
+}

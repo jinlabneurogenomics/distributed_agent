@@ -1,19 +1,6 @@
-# Portable CPU analysis environment for mouse-brain Perturb-seq reports.
-# This is a curated analysis environment, not a lockfile or an exact export of
-# the historical Linux container. Unpinned transitive dependencies may change.
-#
-# Create: CONDA_CHANNEL_PRIORITY=strict conda env create --file environment.yml
-# Activate: conda activate distributed-agent
-# Alternative: micromamba create --file environment.yml --strict-channel-priority
-#
-# Supply the differential-expression Parquet separately and configure its path
-# in the analysis code. This file does not distribute experimental data, private
-# skill bundles, browser/agent infrastructure, API credentials, or network access.
-# Versions reconstructed from installed-package listings and successful install
-# receipts across 2,046 June 2026 tool transcripts. These are direct dependency pins,
-# not a full lockfile: builds, system libraries, and transitive packages vary.
-# Exact pins passed a Linux x86-64 dependency dry run (glibc 2.39), 2026-09-21.
-# A complete installation/import smoke test has not been performed.
+# Scientific tools used for source-report generation.
+# Install the manuscript notebook environment with Pixi (pyproject.toml).
+# Create this optional tool environment with: conda env create -f environment.yml
 name: distributed-agent
 
 channels:

@@ -1,0 +1,124 @@
+{
+  "story_id": "S025",
+  "title": "Gtf2i and Gtf2ird1 expose distinct TH Prkcd/Grin2c programs within the Williams-Beuren interval",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Gtf2i knockdown produced a compact mostly induced 151 TH program with Pnpla6, Plppr3, Rasgrp2, and Kcnk4, while Gtf2ird1 elicited a sparse but different thalamic response with F11r, Sparcl1, Rab30, and Abca3; neither was interchangeable with Baz1b, Fzd9, Limk1, or Clip2.",
+  "biological_interpretation": "Williams-Beuren critical-region transcription factors are dosage-sensitive in the same thalamic subclass but produce gene-specific rather than locus-general transcriptomic states.",
+  "targets": [
+    "Gtf2i",
+    "Gtf2ird1",
+    "Baz1b",
+    "Fzd9",
+    "Limk1",
+    "Clip2"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "022 L5 ET CTX Glut",
+    "054 CNU-MGE GABA"
+  ],
+  "support": {
+    "exact_de_rows": [
+      {
+        "target": "Gtf2i",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gtf2i",
+        "logfoldchanges": -0.8923539519309998,
+        "pvals": 1.0467449998936668e-29,
+        "pvals_adj": 1.8065771953164795e-25,
+        "score": -11.319829940795898
+      },
+      {
+        "target": "Gtf2i",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kcnk4",
+        "logfoldchanges": 1.0715886354446411,
+        "pvals": 3.324462729081716e-18,
+        "pvals_adj": 2.868845112061067e-14,
+        "score": 8.699808120727539
+      },
+      {
+        "target": "Gtf2i",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Pnpla6",
+        "logfoldchanges": 0.6259472370147705,
+        "pvals": 1.068947175512514e-11,
+        "pvals_adj": 4.6122398255426195e-08,
+        "score": 6.796899318695068
+      },
+      {
+        "target": "Gtf2ird1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "F11r",
+        "logfoldchanges": 0.7933163046836853,
+        "pvals": 4.569762045645175e-10,
+        "pvals_adj": 7.886952314579007e-06,
+        "score": 6.233208656311035
+      },
+      {
+        "target": "Gtf2ird1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Sparcl1",
+        "logfoldchanges": 0.41981440782546997,
+        "pvals": 7.341873549592886e-07,
+        "pvals_adj": 0.005808317199613367,
+        "score": 4.952095031738281
+      },
+      {
+        "target": "Gtf2ird1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rab30",
+        "logfoldchanges": 0.5030333399772644,
+        "pvals": 1.0096153658288488e-06,
+        "pvals_adj": 0.005808317199613367,
+        "score": 4.8897552490234375
+      },
+      {
+        "target": "Gtf2ird1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Abca3",
+        "logfoldchanges": 0.2813982665538788,
+        "pvals": 9.465252816280895e-06,
+        "pvals_adj": 0.04084019958904799,
+        "score": 4.429042339324951
+      }
+    ],
+    "evidence_summary": "Gtf2i:F001/F005 and Gtf2ird1:F001/F004 resolve distinct sparse thalamic states with little overlap among WBS-locus comparators."
+  },
+  "caveats": [
+    "The Gtf2ird1 branch has only four FDR<0.05 rows in 151 TH.",
+    "Some Williams-Beuren comparators were weakly engaged in this neuronal class."
+  ],
+  "prior_expectation": {
+    "summary": "Gtf2i:F001/F005 and Gtf2ird1:F001/F004 resolve distinct sparse thalamic states with little overlap among WBS-locus comparators.",
+    "citations": [
+      "Enkhmandakh 2009 PMID:19109438",
+      "Barak 2019 PMID:31011227",
+      "Morris 2023 GeneReviews"
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 3,
+    "support": 4,
+    "priority": 4
+  },
+  "report_evidence_ids": [
+    "Gtf2i:E002",
+    "Gtf2i:E003",
+    "Gtf2i:E006",
+    "Gtf2ird1:E002",
+    "Gtf2ird1:E007"
+  ],
+  "reference_ids": [
+    "Gtf2i:R005",
+    "Gtf2i:R008",
+    "Gtf2ird1:R002",
+    "Gtf2ird1:R004"
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/19109438/",
+    "https://pubmed.ncbi.nlm.nih.gov/31011227/",
+    "https://www.ncbi.nlm.nih.gov/books/NBK1249/"
+  ]
+}

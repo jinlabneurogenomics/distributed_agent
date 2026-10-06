@@ -1,0 +1,119 @@
+{
+  "story_id": "S047",
+  "title": "Phf12 converges with Gatad1 while KDM5, SIN3A, and GATAD2B do not",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "In informative Gatad1-responsive glutamatergic populations, Phf12 converged with the Gatad1 signature, while Kdm5b, Kdm5c, Sin3a, and Gatad2b were near-zero or divergent; Gatad1 also induced Phf12 and nominally Kdm5a. / Phf12 induced a strong mixed Ptcd3/Chpf2/Atp6v0b/Stx16/Sf3b2/Stk16 module and repressed Gls, Grin2c, Snap25, and Tubb3, while Kmt2e and Gatad1 also produced narrow 151/155 responses with recurrent Atp6v0b, Chpf2, Ptcd3, Sfswap, Vps50, Snhg11, or Eno2 induction.",
+  "biological_interpretation": "GATAD1 loss is tied to a selective PHF12-linked chromatin neighborhood rather than to generic KDM5, SIN3A, or NuRD subunit perturbation. / A subset of posterior glutamatergic neurons routes perturbations of PHF12/KMT2E/GATAD1 chromatin machinery into an organellar and RNA-processing response coupled to loss of synaptic transcripts.",
+  "targets": [
+    "Gatad1",
+    "Phf12",
+    "Kdm5b",
+    "Kdm5c",
+    "Sin3a",
+    "Gatad2b",
+    "Gls",
+    "Plppr3",
+    "Kmt2e"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut"
+  ],
+  "support": {
+    "exact_de_rows": [
+      {
+        "target": "Gatad1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Atp6v0b",
+        "logfoldchanges": 0.2465580403804779,
+        "pvals": 1.9617995197394426e-09,
+        "pvals_adj": 1.1286232637061013e-05,
+        "score": 6.000938892364502
+      },
+      {
+        "target": "Gatad1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Chpf2",
+        "logfoldchanges": 0.36425915360450745,
+        "pvals": 3.703138358021895e-07,
+        "pvals_adj": 0.0007989058115137486,
+        "score": 5.083617210388184
+      },
+      {
+        "target": "Gatad1",
+        "cell_type": "155 MB Glut",
+        "gene": "Phf12",
+        "logfoldchanges": 0.5533525347709656,
+        "pvals": 3.1707628510433378e-09,
+        "pvals_adj": 5.530761641074894e-05,
+        "score": 5.92250394821167
+      },
+      {
+        "target": "Phf12",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ptcd3",
+        "logfoldchanges": 0.7327589392662048,
+        "pvals": 2.218640720639808e-25,
+        "pvals_adj": 3.829152019752245e-21,
+        "score": 10.4105806350708
+      },
+      {
+        "target": "Phf12",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gls",
+        "logfoldchanges": -0.2919504940509796,
+        "pvals": 1.1118385349638911e-10,
+        "pvals_adj": 9.594610637470898e-08,
+        "score": -6.4509053230285645
+      },
+      {
+        "target": "Kmt2e",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ptcd3",
+        "logfoldchanges": 0.484005868434906,
+        "pvals": 1.7638877542192924e-08,
+        "pvals_adj": 0.0003044293875007077,
+        "score": 5.633695125579834
+      }
+    ],
+    "evidence_summary": "Gatad1:F003 reports Phf12 as the top Gatad1 neighbor in 151 and 155; Gatad1:F001 and Phf12:F001 resolve the overlapping Atp6v0b/Chpf2/Ptcd3/Gls module."
+  },
+  "caveats": [
+    "Gatad1 self-mRNA did not pass FDR.",
+    "The Kmt2e part of the merged story is sparser than the Gatad1-Phf12 relationship."
+  ],
+  "prior_expectation": {
+    "summary": "Gatad1:F003 reports Phf12 as the top Gatad1 neighbor in 151 and 155; Gatad1:F001 and Phf12:F001 resolve the overlapping Atp6v0b/Chpf2/Ptcd3/Gls module.",
+    "citations": [
+      "Vermeulen 2010 PMID:20850016",
+      "Varier 2016 PMID:26841866",
+      "Yochum 2001 PMID:11390640"
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 4,
+    "priority": 4
+  },
+  "report_evidence_ids": [
+    "Gatad1:E002",
+    "Gatad1:E003",
+    "Gatad1:E007",
+    "Gatad1:E008",
+    "Phf12:E003",
+    "Phf12:E006",
+    "Kmt2e:E003"
+  ],
+  "reference_ids": [
+    "Gatad1:R002",
+    "Gatad1:R003",
+    "Gatad1:R004",
+    "Phf12:R002"
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/20850016/",
+    "https://pubmed.ncbi.nlm.nih.gov/26841866/",
+    "https://pubmed.ncbi.nlm.nih.gov/11390640/"
+  ]
+}

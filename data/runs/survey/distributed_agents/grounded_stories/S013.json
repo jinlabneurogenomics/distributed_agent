@@ -1,0 +1,287 @@
+{
+  "biological_interpretation": "NR2A and NR2B loss are not interchangeable in upper-layer cortical excitatory neurons; the direction of chronic subunit depletion depends on cortical subtype and NMDAR subunit identity.",
+  "caveats": [
+    "Several Grin2b opposite-direction marker rows in L2/3 were nominal rather than FDR-significant, although Vgf and Kcnv1 passed FDR.",
+    "Grin2a mRNA itself was strongly FDR-depleted in 151 TH but did not induce Nptx2, Bdnf, or Ptgs2 there."
+  ],
+  "cell_types": [
+    "005 L4-5 IT CTX Glut",
+    "007 L2-3 IT CTX Glut",
+    "151 TH Prkcd Grin2c Glut"
+  ],
+  "exact_observed_result": "Grin2a perturbation raised Nptx2, Bdnf, Ptgs2, and Cckbr in 007 L2-3 IT CTX Glut and Nptx2 in 005 L4-5 IT CTX Glut; in 007 L2-3 IT CTX Glut, Grin2b perturbation was FDR-supported for Grin2b and Kcnv1 and drove the same Nptx2/Bdnf/Ptgs2/Vgf/Cckbr markers in the opposite direction at nominal-to-FDR levels. 151 TH Prkcd Grin2c Glut buffered strong Grin2a depletion.",
+  "preliminary_scores": {
+    "novelty": 4,
+    "priority": 4,
+    "support": 4
+  },
+  "prior_expectation": "GRIN2A and GRIN2B encode distinct NMDA receptor GluN2 subunits with established synaptic signaling roles; the observed opposite chronic RNA outputs refine rather than simply mirror generic NMDAR activation literature.",
+  "reference_ids": [
+    "Grin2a:F001",
+    "Grin2a:F002",
+    "Grin2a:F003"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    {
+      "finding_id": "F001",
+      "gene": "Grin2a"
+    },
+    {
+      "finding_id": "F002",
+      "gene": "Grin2a"
+    },
+    {
+      "finding_id": "F003",
+      "gene": "Grin2a"
+    }
+  ],
+  "source_claim_ids": [
+    "claim:grin2a_f001_950e734b172b",
+    "claim:grin2a_f002_3fba04f82367",
+    "claim:grin2a_f003_a3ca77080219"
+  ],
+  "source_cluster_ids": [
+    "C049"
+  ],
+  "source_urls_or_dois": [
+    "https://reactome.org/content/detail/R-HSA-9609736"
+  ],
+  "status": "grounded",
+  "story_id": "S013",
+  "support": {
+    "exact_de_rows": [
+      {
+        "gene_target": "Grin2a",
+        "group_name": "005 L4-5 IT CTX Glut",
+        "logfoldchanges": 1.0550882816314697,
+        "names": "Bdnf",
+        "pvals": 0.0037118486615811603,
+        "pvals_adj": 1.0,
+        "scores": 2.901665210723877
+      },
+      {
+        "gene_target": "Grin2a",
+        "group_name": "005 L4-5 IT CTX Glut",
+        "logfoldchanges": 0.4415896236896515,
+        "names": "Cckbr",
+        "pvals": 0.006364029864054001,
+        "pvals_adj": 1.0,
+        "scores": 2.7284107208251953
+      },
+      {
+        "gene_target": "Grin2a",
+        "group_name": "005 L4-5 IT CTX Glut",
+        "logfoldchanges": -0.3488144874572754,
+        "names": "Grin2a",
+        "pvals": 2.796509692959893e-06,
+        "pvals_adj": 0.023940919481429644,
+        "scores": -4.685225963592529
+      },
+      {
+        "gene_target": "Grin2a",
+        "group_name": "005 L4-5 IT CTX Glut",
+        "logfoldchanges": 0.037320077419281006,
+        "names": "Kcnv1",
+        "pvals": 0.7180689698072805,
+        "pvals_adj": 1.0,
+        "scores": 0.36104077100753784
+      },
+      {
+        "gene_target": "Grin2a",
+        "group_name": "005 L4-5 IT CTX Glut",
+        "logfoldchanges": 1.4006551504135132,
+        "names": "Nptx2",
+        "pvals": 4.636276346738515e-10,
+        "pvals_adj": 7.938232360885686e-06,
+        "scores": 6.230945587158203
+      },
+      {
+        "gene_target": "Grin2a",
+        "group_name": "005 L4-5 IT CTX Glut",
+        "logfoldchanges": 0.9829164147377014,
+        "names": "Ptgs2",
+        "pvals": 0.055986054652002605,
+        "pvals_adj": 1.0,
+        "scores": 1.9111441373825073
+      },
+      {
+        "gene_target": "Grin2a",
+        "group_name": "005 L4-5 IT CTX Glut",
+        "logfoldchanges": 0.4084022045135498,
+        "names": "Vgf",
+        "pvals": 0.0011387003257768077,
+        "pvals_adj": 0.9242947960172132,
+        "scores": 3.2538058757781982
+      },
+      {
+        "gene_target": "Grin2a",
+        "group_name": "007 L2-3 IT CTX Glut",
+        "logfoldchanges": 1.24944007396698,
+        "names": "Bdnf",
+        "pvals": 1.6236441153492614e-05,
+        "pvals_adj": 0.027200909864446177,
+        "scores": 4.311208724975586
+      },
+      {
+        "gene_target": "Grin2a",
+        "group_name": "007 L2-3 IT CTX Glut",
+        "logfoldchanges": 0.8322170972824097,
+        "names": "Cckbr",
+        "pvals": 1.3940260442588162e-07,
+        "pvals_adj": 0.0011677059159733974,
+        "scores": 5.26603364944458
+      },
+      {
+        "gene_target": "Grin2a",
+        "group_name": "007 L2-3 IT CTX Glut",
+        "logfoldchanges": -0.40124890208244324,
+        "names": "Grin2a",
+        "pvals": 0.0007645082414574793,
+        "pvals_adj": 0.2742150587332343,
+        "scores": -3.3653347492218018
+      },
+      {
+        "gene_target": "Grin2a",
+        "group_name": "007 L2-3 IT CTX Glut",
+        "logfoldchanges": 0.2817728519439697,
+        "names": "Kcnv1",
+        "pvals": 0.03465499365709313,
+        "pvals_adj": 1.0,
+        "scores": 2.1123669147491455
+      },
+      {
+        "gene_target": "Grin2a",
+        "group_name": "007 L2-3 IT CTX Glut",
+        "logfoldchanges": 1.776586890220642,
+        "names": "Nptx2",
+        "pvals": 3.6335507550847476e-08,
+        "pvals_adj": 0.0006087287579993478,
+        "scores": 5.507795333862305
+      },
+      {
+        "gene_target": "Grin2a",
+        "group_name": "007 L2-3 IT CTX Glut",
+        "logfoldchanges": 1.2643810510635376,
+        "names": "Ptgs2",
+        "pvals": 3.337666192901906e-05,
+        "pvals_adj": 0.03532614975056222,
+        "scores": 4.149112701416016
+      },
+      {
+        "gene_target": "Grin2a",
+        "group_name": "007 L2-3 IT CTX Glut",
+        "logfoldchanges": 0.6499262452125549,
+        "names": "Vgf",
+        "pvals": 0.0016988323722839417,
+        "pvals_adj": 0.39528526017878995,
+        "scores": 3.1383821964263916
+      },
+      {
+        "gene_target": "Grin2a",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.09901051223278046,
+        "names": "Bdnf",
+        "pvals": 0.5164768784660136,
+        "pvals_adj": 1.0,
+        "scores": 0.6487857103347778
+      },
+      {
+        "gene_target": "Grin2a",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.4924977719783783,
+        "names": "Grin2a",
+        "pvals": 1.1602525633040583e-07,
+        "pvals_adj": 0.0020024798990064745,
+        "scores": -5.299649238586426
+      },
+      {
+        "gene_target": "Grin2a",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.2841348350048065,
+        "names": "Nptx2",
+        "pvals": 0.03697010007250595,
+        "pvals_adj": 1.0,
+        "scores": -2.0860941410064697
+      },
+      {
+        "gene_target": "Grin2a",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -1.324216604232788,
+        "names": "Ptgs2",
+        "pvals": 0.9390371181547803,
+        "pvals_adj": 1.0,
+        "scores": -0.07648013532161713
+      },
+      {
+        "gene_target": "Grin2b",
+        "group_name": "007 L2-3 IT CTX Glut",
+        "logfoldchanges": -1.1559494733810425,
+        "names": "Bdnf",
+        "pvals": 0.000933015696134809,
+        "pvals_adj": 0.18407414740691397,
+        "scores": -3.309983253479004
+      },
+      {
+        "gene_target": "Grin2b",
+        "group_name": "007 L2-3 IT CTX Glut",
+        "logfoldchanges": -0.8314669728279114,
+        "names": "Cckbr",
+        "pvals": 0.00022784453558566056,
+        "pvals_adj": 0.0706866574938254,
+        "scores": -3.685957431793213
+      },
+      {
+        "gene_target": "Grin2b",
+        "group_name": "007 L2-3 IT CTX Glut",
+        "logfoldchanges": -0.47054630517959595,
+        "names": "Grin2b",
+        "pvals": 1.2788949642516844e-07,
+        "pvals_adj": 0.0010712663668054235,
+        "scores": -5.281844615936279
+      },
+      {
+        "gene_target": "Grin2b",
+        "group_name": "007 L2-3 IT CTX Glut",
+        "logfoldchanges": -1.1081777811050415,
+        "names": "Kcnv1",
+        "pvals": 1.7260979440654568e-09,
+        "pvals_adj": 2.8917318856928597e-05,
+        "scores": -6.021685600280762
+      },
+      {
+        "gene_target": "Grin2b",
+        "group_name": "007 L2-3 IT CTX Glut",
+        "logfoldchanges": -1.0323882102966309,
+        "names": "Nptx2",
+        "pvals": 0.01247582392903091,
+        "pvals_adj": 0.616541233873318,
+        "scores": -2.49839186668396
+      },
+      {
+        "gene_target": "Grin2b",
+        "group_name": "007 L2-3 IT CTX Glut",
+        "logfoldchanges": -1.453014612197876,
+        "names": "Ptgs2",
+        "pvals": 0.0021663912935685936,
+        "pvals_adj": 0.28577601056027285,
+        "scores": -3.0664196014404297
+      },
+      {
+        "gene_target": "Grin2b",
+        "group_name": "007 L2-3 IT CTX Glut",
+        "logfoldchanges": -0.9872376322746277,
+        "names": "Vgf",
+        "pvals": 2.4319816106930097e-05,
+        "pvals_adj": 0.019401422820923806,
+        "scores": -4.2210211753845215
+      }
+    ]
+  },
+  "targets": [
+    "Grin2a",
+    "Grin2b",
+    "Grin1"
+  ],
+  "title": "Grin2a and Grin2b oppose an L2/3 cortical Nptx2-Bdnf-Ptgs2 program"
+}

@@ -1,0 +1,25 @@
+perturbation,gene,report_module,logFC,FDR
+Smarcb1,Myt1,Neuronal remodeling / re-specification,0.54326737,1.8371677920375033e-15
+Smarcb1,Stmn1,Neuronal remodeling / re-specification,0.51579934,1.2459011183894577e-06
+Smarcb1,Clstn1,Neuronal remodeling / re-specification,0.286186,4.2311496314932004e-07
+Smarcb1,Clstn2,Neuronal remodeling / re-specification,0.3324116,0.00046571603948254746
+Smarcb1,Plxna2,Neuronal remodeling / re-specification,0.41196847,0.007697128889267682
+Smarcb1,Fez2,Neuronal remodeling / re-specification,0.31332487,0.007197095974768378
+Smarcb1,Syt4,Neuronal remodeling / re-specification,0.46093532,3.0636477267915287e-07
+Smarcb1,Nexn,Neuronal remodeling / re-specification,0.6522678,4.9370471201078615e-09
+Smarcb1,Atm,Stress / DNA-damage / quality control,0.5542705,0.0016039092107107094
+Smarcb1,Prkn,Stress / DNA-damage / quality control,0.36525267,0.002025782089236035
+Smarcb1,Gss,Stress / DNA-damage / quality control,0.66007215,3.432390851308041e-06
+Smarcb1,Hsf2,Stress / DNA-damage / quality control,0.34247628,0.008808150660315235
+Smarcb1,Abcc1,Stress / DNA-damage / quality control,0.506608,0.008425815336481714
+Smarcb1,Ubc,Stress / DNA-damage / quality control,0.26925308,0.011504741466694663
+Smarcb1,Grm5,Alternative neuromodulatory state,0.32049733,0.004907780871098311
+Smarcb1,Pth2r,Alternative neuromodulatory state,1.6767242,0.035766398282083806
+Smarcb1,Tafa1,Alternative neuromodulatory state,1.1358978,0.0037108412906980055
+Smarcb1,Kcnj9,Alternative neuromodulatory state,0.20859808,3.7522931367563026e-05
+Smarcc2,Pth2r,Compensatory neuronal remodeling,1.8764523,0.01879713184025056
+Smarcc2,Tafa1,Compensatory neuronal remodeling,1.3743242,0.016819070315187493
+Smarcc2,Grin3a,Compensatory neuronal remodeling,0.750257,0.016819070315187493
+Smarcc2,Syt4,Compensatory neuronal remodeling,0.55385625,1.9962027935392667e-07
+Smarcc2,Rims4,Compensatory neuronal remodeling,0.5468221,0.005439487845938396
+Smarcc2,Grm5,Compensatory neuronal remodeling,0.33198726,0.04775125591096448

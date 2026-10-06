@@ -1,0 +1,415 @@
+{
+  "biological_interpretation": "The response is a KLF9-specific mature thalamic program, not a generic Kruppel-like-factor response and not strong evidence for direct Sin3a/Trrap corepressor control.",
+  "caveats": [
+    "Klf9 RNA was not FDR-depleted, so the signature is guide-defined.",
+    "The Sin3a correlation was weak; it is a follow-up lead, not a direct corepressor mechanism."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut"
+  ],
+  "exact_observed_result": "Klf9 guides produced 19 FDR genes in 151 TH Prkcd Grin2c Glut, led by Wsb1, Rasgrp2, Pld3, Dzip1, Maged2, Hcn3 and Aplp1; Klf7 was weakly inverse rather than similar, Klf13/Klf1/Klf11/Klf12 were FDR-null, and Sin3a was only a weak positive restricted neighbor.",
+  "preliminary_scores": {
+    "novelty": 3,
+    "priority": 3,
+    "support": 4
+  },
+  "prior_expectation": {
+    "citations": [
+      "Denver and Williamson 2009 doi:10.1210/en.2009-0050",
+      "Scobie et al. 2009 doi:10.1523/JNEUROSCI.2260-09.2009",
+      "Moore et al. 2009 doi:10.1126/science.1175737"
+    ],
+    "expectation": "KLF9 is a T3/glucocorticoid-inducible neuronal zinc-finger factor, while KLF paralogs can have distinct axon-growth effects."
+  },
+  "reference_ids": [
+    "Klf13:R003",
+    "Klf13:R005",
+    "Klf13:R006",
+    "Klf7:R005",
+    "Klf7:R007",
+    "Klf9:R001",
+    "Klf9:R002",
+    "Klf9:R003",
+    "Klf9:R004",
+    "Klf9:R005",
+    "Klf9:R006",
+    "Klf9:R007",
+    "Klf9:R008"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Klf13:E005",
+    "Klf13:E006",
+    "Klf7:E007",
+    "Klf7:E009",
+    "Klf9:E002",
+    "Klf9:E003",
+    "Klf9:E004",
+    "Klf9:E005",
+    "Klf9:E006",
+    "Klf9:E009",
+    "Klf9:E010",
+    "Klf9:E012"
+  ],
+  "source_claims": [
+    {
+      "claim_id": "claim:klf9_f001_a9a6b2c8568e",
+      "finding_id": "F001",
+      "gene": "Klf9",
+      "role": "member"
+    },
+    {
+      "claim_id": "claim:klf7_f004_a85064613aa1",
+      "finding_id": "F004",
+      "gene": "Klf7",
+      "role": "peripheral"
+    },
+    {
+      "claim_id": "claim:klf9_f005_b7f251d30750",
+      "finding_id": "F005",
+      "gene": "Klf9",
+      "role": "peripheral"
+    },
+    {
+      "claim_id": "claim:klf9_f004_eb11a1d72df5",
+      "finding_id": "F004",
+      "gene": "Klf9",
+      "role": "member"
+    },
+    {
+      "claim_id": "claim:klf13_f003_bdff3ef2a6fa",
+      "finding_id": "F003",
+      "gene": "Klf13",
+      "role": "peripheral"
+    }
+  ],
+  "source_references": [
+    {
+      "citation": "UniProtKB entry O35739, KLF9_MOUSE, Krueppel-like factor 9, Mus musculus.",
+      "description": "Curated protein record identifying mouse KLF9 as a nuclear GC-box-binding C2H2 zinc-finger transcription factor.",
+      "ref_id": "R001",
+      "ref_slug": "uniprot_mouse_klf9",
+      "source": "UniProtKB",
+      "source_type": "database",
+      "target_gene": "Klf9",
+      "url": "https://www.uniprot.org/uniprotkb/O35739/entry"
+    },
+    {
+      "citation": "Denver RJ, Williamson KE. Identification of a thyroid hormone response element in the mouse Kruppel-like factor 9 gene to explain its postnatal expression in the brain. Endocrinology. 2009;150(8):3935-3943. doi:10.1210/en.2009-0050.",
+      "description": "Shows that mouse Klf9 is directly induced by T3 through an upstream thyroid-hormone response element and is T3-dependent in hippocampus and cerebellum.",
+      "ref_id": "R002",
+      "ref_slug": "denver_williamson_2009_t3re",
+      "source": "Endocrinology",
+      "source_type": "pubmed",
+      "target_gene": "Klf9",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19359381/"
+    },
+    {
+      "citation": "Scobie KN, Hall BJ, Wilke SA, Klemenhagen KC, Fujii-Kuriyama Y, Ghosh A, Hen R, Sahay A. Kruppel-like factor 9 is necessary for late-phase neuronal maturation in the developing dentate gyrus and during adult hippocampal neurogenesis. J Neurosci. 2009;29(31):9875-9887. doi:10.1523/JNEUROSCI.2260-09.2009.",
+      "description": "Establishes Klf9 as an activity-induced regulator required for late-phase dentate granule-neuron maturation, dendritic spines, electrophysiology and adult-born neuron differentiation.",
+      "ref_id": "R003",
+      "ref_slug": "scobie_2009_neuronal_maturation",
+      "source": "Journal of Neuroscience",
+      "source_type": "pubmed",
+      "target_gene": "Klf9",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19657039/"
+    },
+    {
+      "citation": "Bagamasbad P, et al. Molecular basis for glucocorticoid induction of the Kruppel-like factor 9 gene in hippocampal neurons. Endocrinology. 2012;153(11):5334-5345. doi:10.1210/en.2012-1303.",
+      "description": "Demonstrates direct glucocorticoid regulation of Klf9 in mouse hippocampal neurons through upstream GR/MR response elements.",
+      "ref_id": "R004",
+      "ref_slug": "bagamasbad_2012_glucocorticoid_klf9",
+      "source": "Endocrinology",
+      "source_type": "pubmed",
+      "target_gene": "Klf9",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22962255/"
+    },
+    {
+      "citation": "Besnard A, Langberg T, Levinson S, et al. Targeting Kruppel-like Factor 9 in excitatory neurons protects against chronic stress-induced impairments in dendritic spines and fear responses. Cell Rep. 2018;23(11):3183-3196. doi:10.1016/j.celrep.2018.05.040.",
+      "description": "Links Klf9 in excitatory forebrain neurons to chronic-stress effects on dendritic spines and fear behavior.",
+      "ref_id": "R005",
+      "ref_slug": "besnard_2018_stress_klf9",
+      "source": "Cell Reports",
+      "source_type": "pubmed",
+      "target_gene": "Klf9",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29898391/"
+    },
+    {
+      "citation": "Moore DL, Blackmore MG, Hu Y, Kaestner KH, Bixby JL, et al. KLF family members regulate intrinsic axon regeneration ability. Science. 2009;326(5950):298-301.",
+      "description": "Establishes that KLF-family transcription factors can have distinct growth-promoting or growth-suppressive effects on CNS axon regeneration.",
+      "ref_id": "R005",
+      "ref_slug": "moore_2009_klf_family_axon_regeneration",
+      "source": "Science",
+      "source_type": "pubmed",
+      "target_gene": "Klf7",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19815778/"
+    },
+    {
+      "citation": "Apara A, Galvao J, Wang Y, Blackmore M, Trillo A, et al. KLF9 and JNK3 interact to suppress axon regeneration in the adult CNS. Journal of Neuroscience. 2017;37(40):9632-9644.",
+      "description": "Identifies KLF9 as an axon-growth suppressor whose knockdown promotes optic-nerve regeneration and whose repressive effect requires JNK3.",
+      "ref_id": "R007",
+      "ref_slug": "apara_2017_klf9_jnk3_axon_suppression",
+      "source": "Journal of Neuroscience",
+      "source_type": "pubmed",
+      "target_gene": "Klf7",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28871032/"
+    },
+    {
+      "citation": "STRING interaction-partner query for Mus musculus Klf9, required score 400, retrieved during this analysis.",
+      "description": "Placed Sin3a, Pgr, Mapk10/Jnk3 and Thra among predicted or curated mouse Klf9 functional partners; the Klf9-Sin3a combined score was 0.867.",
+      "ref_id": "R008",
+      "ref_slug": "string_mouse_klf9_partners",
+      "source": "STRING",
+      "source_type": "database",
+      "target_gene": "Klf9",
+      "url": "https://string-db.org/"
+    },
+    {
+      "citation": "Moore DL, Blackmore MG, Hu Y, et al. KLF family members regulate intrinsic axon regeneration ability. Science. 2009;326(5950):298-301. doi:10.1126/science.1175737.",
+      "description": "Reports that KLF family members can either suppress or enhance CNS axon growth, motivating paralog-by-paralog comparisons rather than assuming interchangeability.",
+      "ref_id": "R006",
+      "ref_slug": "moore_2009_klf_axon_regeneration",
+      "source": "Science",
+      "source_type": "pubmed",
+      "target_gene": "Klf9",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19815778/"
+    },
+    {
+      "citation": "Avila-Mendoza J, Subramani A, Denver RJ. Kruppel-Like Factors 9 and 13 block axon growth by transcriptional repression of key components of the cAMP signaling pathway. Front Mol Neurosci. 2020;13:602638. doi:10.3389/fnmol.2020.602638.",
+      "description": "Shows that the closely related paralogs KLF9 and KLF13 repress cAMP signaling and inhibit neurite or axon growth in hippocampal models.",
+      "ref_id": "R007",
+      "ref_slug": "avila_mendoza_2020_klf9_klf13_camp",
+      "source": "Frontiers in Molecular Neuroscience",
+      "source_type": "pubmed",
+      "target_gene": "Klf9",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33281552/"
+    },
+    {
+      "citation": "\u00c1vila-Mendoza J, Subramani AS, Denver RJ. Kr\u00fcppel-Like Factors 9 and 13 Block Axon Growth by Transcriptional Repression of Key Components of the cAMP Signaling Pathway. Front Mol Neurosci. 2020;13:602638. doi:10.3389/fnmol.2020.602638.",
+      "description": "Reports that KLF9 and KLF13 repress cAMP-pathway genes and block cAMP-dependent neurite and axon growth in neuronal models.",
+      "ref_id": "R003",
+      "ref_slug": "avila_mendoza_2020_klf9_klf13_camp_axon",
+      "source": "PubMed",
+      "source_type": "pubmed",
+      "target_gene": "Klf13",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33281552/"
+    },
+    {
+      "citation": "Bernhardt C, Sock E, Fr\u00f6b F, Hillg\u00e4rtner S, Nemer M, Wegner M. KLF9 and KLF13 transcription factors boost myelin gene expression in oligodendrocytes as partners of SOX10 and MYRF. Nucleic Acids Res. 2022;50(20):11509-11528. doi:10.1093/nar/gkac953.",
+      "description": "Describes overlapping and partly redundant KLF9/KLF13 myelin-gene regulation with SOX10 and MYRF in oligodendrocytes.",
+      "ref_id": "R005",
+      "ref_slug": "bernhardt_2022_klf9_klf13_oligodendrocyte_myelin",
+      "source": "PubMed",
+      "source_type": "pubmed",
+      "target_gene": "Klf13",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36318265/"
+    },
+    {
+      "citation": "Simmen FA, Alhallak I, Simmen RCM. Kr\u00fcppel-like Factor-9 and Kr\u00fcppel-like Factor-13: Highly Related, Multi-Functional, Transcriptional Repressors and Activators of Oncogenesis. Cancers. 2023;15(23):5667. doi:10.3390/cancers15235667.",
+      "description": "Review summarizing KLF9/KLF13 paralogy, conserved zinc-finger DNA binding, and context-dependent target-cell differences.",
+      "ref_id": "R006",
+      "ref_slug": "simmen_2023_klf9_klf13_review",
+      "source": "Cancers",
+      "source_type": "review",
+      "target_gene": "Klf13",
+      "url": "https://www.mdpi.com/2072-6694/15/23/5667"
+    }
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/19359381/",
+    "https://pubmed.ncbi.nlm.nih.gov/19657039/",
+    "https://pubmed.ncbi.nlm.nih.gov/19815778/",
+    "https://pubmed.ncbi.nlm.nih.gov/22962255/",
+    "https://pubmed.ncbi.nlm.nih.gov/28871032/",
+    "https://pubmed.ncbi.nlm.nih.gov/29898391/",
+    "https://pubmed.ncbi.nlm.nih.gov/33281552/",
+    "https://pubmed.ncbi.nlm.nih.gov/36318265/",
+    "https://string-db.org/",
+    "https://www.mdpi.com/2072-6694/15/23/5667",
+    "https://www.uniprot.org/uniprotkb/O35739/entry"
+  ],
+  "status": "grounded",
+  "story_id": "S141",
+  "support": [
+    {
+      "exact_de_rows": [
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Klf9",
+          "gene_target": "Klf9",
+          "log2fc": -0.13821908831596375,
+          "pval": 0.14076808986781053,
+          "score": -1.472936749458313
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.3118974849128214e-07,
+          "gene": "Wsb1",
+          "gene_target": "Klf9",
+          "log2fc": 0.315861314535141,
+          "pval": 7.601236948333168e-12,
+          "score": 6.845870018005371
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 2.160170638040397e-06,
+          "gene": "Rasgrp2",
+          "gene_target": "Klf9",
+          "log2fc": 0.7591104507446289,
+          "pval": 2.503239629225792e-10,
+          "score": 6.326783657073975
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 5.596984654942104e-06,
+          "gene": "Pld3",
+          "gene_target": "Klf9",
+          "log2fc": 0.5603617429733276,
+          "pval": 9.72881045531393e-10,
+          "score": 6.113796710968018
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.3374365045738018e-05,
+          "gene": "Dzip1",
+          "gene_target": "Klf9",
+          "log2fc": 0.4136185944080353,
+          "pval": 3.0996848127326076e-09,
+          "score": 5.926229953765869
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 3.485754408511018e-05,
+          "gene": "Maged2",
+          "gene_target": "Klf9",
+          "log2fc": 0.522952139377594,
+          "pval": 1.009836725334903e-08,
+          "score": 5.729068279266357
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.00038761188897167904,
+          "gene": "Hcn3",
+          "gene_target": "Klf9",
+          "log2fc": 0.921046257019043,
+          "pval": 1.7966829548487353e-07,
+          "score": 5.2192301750183105
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.005333650874649069,
+          "gene": "Aplp1",
+          "gene_target": "Klf9",
+          "log2fc": 0.2907674312591553,
+          "pval": 4.374004023472508e-06,
+          "score": 4.592770099639893
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.0012105536008716836,
+          "gene": "Cuta",
+          "gene_target": "Klf9",
+          "log2fc": -0.5122535824775696,
+          "pval": 7.715446786945084e-07,
+          "score": -4.9424309730529785
+        }
+      ],
+      "finding": "Klf9 151 module"
+    },
+    {
+      "exact_de_rows": [
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Klf7",
+          "gene_target": "Klf7",
+          "log2fc": -0.059056300669908524,
+          "pval": 0.6199122420504827,
+          "score": -0.49597471952438354
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Wsb1",
+          "gene_target": "Klf7",
+          "log2fc": -0.08672060072422028,
+          "pval": 0.1488256462982949,
+          "score": -1.4436919689178467
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.7476471851159603,
+          "gene": "Rasgrp2",
+          "gene_target": "Klf7",
+          "log2fc": -0.4924984276294708,
+          "pval": 0.0013428971979022406,
+          "score": -3.206651210784912
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Pld3",
+          "gene_target": "Klf7",
+          "log2fc": -0.12794046103954315,
+          "pval": 0.28258427639381245,
+          "score": -1.0745320320129395
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Klf13",
+          "gene_target": "Klf13",
+          "log2fc": -0.270973265171051,
+          "pval": 0.03393098326986364,
+          "score": -2.1208908557891846
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Wsb1",
+          "gene_target": "Klf13",
+          "log2fc": -0.010125244036316872,
+          "pval": 0.9775725714627777,
+          "score": 0.028112316504120827
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Rasgrp2",
+          "gene_target": "Klf13",
+          "log2fc": 0.26473912596702576,
+          "pval": 0.02276771849446204,
+          "score": 2.2773101329803467
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Pld3",
+          "gene_target": "Klf13",
+          "log2fc": 0.10629940778017044,
+          "pval": 0.31625017977699177,
+          "score": 1.0021934509277344
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Dzip1",
+          "gene_target": "Klf13",
+          "log2fc": 0.12002373486757278,
+          "pval": 0.07107021459661975,
+          "score": 1.8050285577774048
+        }
+      ],
+      "finding": "Klf-family boundary rows"
+    }
+  ],
+  "targets": [
+    "Klf9",
+    "Klf7",
+    "Klf13",
+    "Sin3a",
+    "Trrap"
+  ],
+  "title": "Klf9 drives a factor-specific 151 TH zinc-finger program weakly linked to Sin3a"
+}

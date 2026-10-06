@@ -1,0 +1,868 @@
+{
+  "story_id": "S049",
+  "title": "Celf2 loss collapses Celf-family RNA regulators in 151 TH neurons and broadly induces Snhg11 as a compact readout",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Celf2 depletion was followed in 151 TH Prkcd Grin2c Glut by Celf1, Celf3, and Celf5 repression plus mixed synaptic output changes, while Snhg11 was FDR-significantly up in most measured Celf2 cell types, including compact Pvalb and midbrain signatures.",
+  "biological_interpretation": "CELF2 maintains a local CELF-family RNA-regulatory state in thalamic neurons, and Snhg11 is a compact abundance reporter of CELF2 loss across classes with otherwise different response sizes.",
+  "targets": [
+    "Celf2",
+    "Celf1",
+    "Celf3",
+    "Celf5",
+    "Snhg11",
+    "Kcnc2",
+    "Syt7",
+    "Vamp1"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "052 Pvalb Gaba",
+    "155 MB Glut",
+    "191 MB P MY GABA",
+    "217 P MY Pineal Glut"
+  ],
+  "support": {
+    "source_findings": [
+      {
+        "target_gene": "Celf2",
+        "finding_id": "F001",
+        "finding_type": "cell_type_selectivity",
+        "direction": "Celf1/Celf2/Celf3/Celf5 down with mixed downstream up and down genes",
+        "confidence": "high",
+        "literature_status": "extends_known_mechanism",
+        "summary": "The decisive Celf2 loss-of-function signature is concentrated in 151 TH Prkcd Grin2c Glut and includes same-direction depletion of Celf1, Celf3, and Celf5.",
+        "why_it_matters": "A cell class with validated Celf2 transcript reduction also lost multiple CELF-family paralog transcripts, so the strongest phenotype is better interpreted as a local collapse of a CELF-family RNA-regulatory state than as an isolated Celf2 mRNA change.",
+        "genes": "Celf1|Celf2|Celf3|Celf5|Snhg11|Cep170|Kcnc2|Syt7|Vamp1",
+        "n_genes": "9",
+        "cell_types": "151 TH Prkcd Grin2c Glut",
+        "n_cell_types": "1",
+        "evidence_ids": "E002|E003",
+        "ref_ids": "R001|R002",
+        "main_caveats": "The assay measures steady-state gene abundance, not alternative splicing, RNA binding, or CELF protein levels; paralog down-regulation may be direct, indirect, or substate-associated."
+      },
+      {
+        "target_gene": "Celf2",
+        "finding_id": "F003",
+        "finding_type": "biomarker_candidate",
+        "direction": "up",
+        "confidence": "moderate",
+        "literature_status": "novel_no_direct_literature",
+        "summary": "Snhg11 is a broad positive transcriptomic readout of Celf2 perturbation across most measured neuronal classes.",
+        "why_it_matters": "A single uniformly upregulated lncRNA-like feature recurred in 18 of 22 cell types and could be a compact QC or biomarker readout of Celf2 guide response even where the rest of the signature is small.",
+        "genes": "Snhg11",
+        "n_genes": "1",
+        "n_cell_types": "0",
+        "evidence_ids": "E006",
+        "main_caveats": "No direct Snhg11-Celf2 mechanism was established; recurrence could reflect a shared stress, substate, or perturbation-response axis rather than a direct CELF2 target."
+      },
+      {
+        "target_gene": "Celf2",
+        "finding_id": "F004",
+        "finding_type": "buffered_response",
+        "direction": "buffered overall; Arhgef1 and Tmem132a up where significant and Tmem181a down in 191/308",
+        "confidence": "moderate",
+        "literature_status": "refines_cell_type_context",
+        "summary": "Several non-151 classes show compact or nearly absent downstream programs, with Pvalb and midbrain/hindbrain responses centering on an Arhgef1/Tmem132a/Tmem181a module.",
+        "why_it_matters": "Celf2 is not sufficient to drive a broad expression collapse in every neuronal class; some inhibitory and midbrain contexts reduce the response to a handful of recurrent genes, while the pineal class had no FDR hits and the lowest perturbation count.",
+        "genes": "Arhgef1|Tmem132a|Tmem181a|Snhg11",
+        "n_genes": "4",
+        "comparators": "151 TH Prkcd Grin2c Glut",
+        "cell_types": "052 Pvalb Gaba|155 MB Glut|191 MB P MY GABA|308 CB GABA|217 P MY Pineal Glut",
+        "n_cell_types": "5",
+        "evidence_ids": "E005|E007",
+        "ref_ids": "R006",
+        "main_caveats": "Most compact-response classes lacked FDR-significant Celf2 transcript knockdown; the 217 P MY Pineal Glut negative result is especially underpowered with 31 perturbed cells."
+      }
+    ],
+    "evidence_ledger_rows": [
+      {
+        "target_gene": "Celf2",
+        "evidence_id": "E002",
+        "evidence_slug": "celf2_151_th_prkcd_broad_signature",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Celf2|Snhg11|Cep170|Kcnc2|Syt7|Vamp1|Kctd17|Cacna1g",
+        "n_genes": "8",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "173 perturbed cells versus 23,679 controls; 507 genes at FDR<0.05 (263 up, 244 down); Celf2 logFC -0.185 FDR 0.00472; Snhg11 logFC 0.411 FDR 1.30e-52; Cep170 0.851 FDR 3.97e-29; Kcnc2 -0.505 FDR 2.05e-25; Syt7 -0.641 FDR 3.76e-25; Vamp1 0.791 FDR 9.03e-18.",
+        "description": "The largest Celf2 differential-expression signature occurred in the TH Prkcd Grin2c glutamatergic class."
+      },
+      {
+        "target_gene": "Celf2",
+        "evidence_id": "E003",
+        "evidence_slug": "celf2_151_celf_family_co_depletion",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Celf1|Celf2|Celf3|Celf5",
+        "n_genes": "4",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "Celf3 logFC -0.466 FDR 3.79e-09; Celf5 logFC -0.647 FDR 9.42e-08; Celf1 logFC -0.481 FDR 4.13e-04; Celf2 logFC -0.185 FDR 0.00472.",
+        "description": "Other measured CELF-family transcripts were significantly down in the same cell type in which the target Celf2 transcript passed FDR correction."
+      },
+      {
+        "target_gene": "Celf2",
+        "evidence_id": "E006",
+        "evidence_slug": "celf2_snhg11_recurrence",
+        "genes": "Snhg11",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Snhg11 was FDR<0.05 and upregulated in 18/22 cell types; significant logFC values ranged from 0.182 to 0.469, with the strongest FDR 1.30e-52 in 151 TH Prkcd Grin2c Glut.",
+        "description": "Snhg11 was the most recurrent positive abundance readout of Celf2 perturbation."
+      },
+      {
+        "target_gene": "Celf2",
+        "evidence_id": "E005",
+        "evidence_slug": "celf2_pvalb_mb_compact_arhgef1_tmem132a",
+        "genes": "Arhgef1|Tmem132a|Tmem181a|Snhg11|Nxf1|Cep170",
+        "n_genes": "6",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "052 Pvalb Gaba: 14 FDR<0.05 genes, led by Arhgef1 logFC 0.941 FDR 7.07e-16 and Tmem132a 0.750 FDR 3.15e-07. 155 MB Glut: 10 FDR<0.05 genes, including Tmem132a 0.849 FDR 7.07e-12 and Arhgef1 0.590 FDR 1.47e-05. 191 MB P MY GABA: 4 FDR<0.05 genes with Arhgef1 0.905 FDR 4.15e-10, Tmem132a 0.596 FDR 0.00239, and Tmem181a -0.539 FDR 0.0112. 308 CB GABA had Tmem181a -0.498 FDR 0.0325.",
+        "description": "In several inhibitory or midbrain classes the Celf2 response was much smaller than in 151 but retained a recurring Arhgef1/Tmem132a/Tmem181a pattern."
+      },
+      {
+        "target_gene": "Celf2",
+        "evidence_id": "E007",
+        "evidence_slug": "celf2_buffered_or_low_power_classes",
+        "genes": "Celf2",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "155 MB Glut had 142 perturbed cells and 10 FDR<0.05 genes; 052 Pvalb Gaba had 111 cells and 14 FDR<0.05 genes; 308 CB GABA had 79 cells and 2 FDR<0.05 genes; 217 P MY Pineal Glut had 31 cells and 0 FDR<0.05 genes. By comparison 151 TH Prkcd Grin2c Glut had 173 cells and 507 FDR<0.05 genes.",
+        "description": "Several measured cell classes had high or moderate cell counts but compact Celf2 differential-expression signatures, while the no-hit pineal class also had the lowest perturbed-cell count."
+      }
+    ],
+    "exact_de_rows": [
+      {
+        "target_gene": "Celf2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Arhgef1",
+        "score": 9.182391,
+        "logfoldchange": 0.94093,
+        "pval": 4.2162309967703837e-20,
+        "pvals_adj": 7.067246396786517e-16
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Celf1",
+        "score": 0.862869,
+        "logfoldchange": 0.160284,
+        "pval": 0.38820952611787085,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Celf2",
+        "score": -2.785144,
+        "logfoldchange": -0.288695,
+        "pval": 0.005350388468993848,
+        "pvals_adj": 0.9643356077126332
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Celf3",
+        "score": -1.192924,
+        "logfoldchange": -0.122504,
+        "pval": 0.2328992943352095,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Celf5",
+        "score": -1.853678,
+        "logfoldchange": -0.272989,
+        "pval": 0.06378526796244782,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Kcnc2",
+        "score": -2.553114,
+        "logfoldchange": -0.168517,
+        "pval": 0.010676462137135691,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Nxf1",
+        "score": 5.289067,
+        "logfoldchange": 0.480671,
+        "pval": 1.2294181448236203e-07,
+        "pvals_adj": 0.000515726083921469
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Snhg11",
+        "score": 5.288876,
+        "logfoldchange": 0.182335,
+        "pval": 1.2307029803638446e-07,
+        "pvals_adj": 0.000515726083921469
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Syt7",
+        "score": -0.133887,
+        "logfoldchange": -0.054568,
+        "pval": 0.893491708779516,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Tmem132a",
+        "score": 6.613143,
+        "logfoldchange": 0.749509,
+        "pval": 3.762443891270441e-11,
+        "pvals_adj": 3.153304225273757e-07
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Tmem181a",
+        "score": -3.453482,
+        "logfoldchange": -0.328019,
+        "pval": 0.0005533989794788091,
+        "pvals_adj": 0.31301060684542925
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Vamp1",
+        "score": 1.432395,
+        "logfoldchange": 0.125182,
+        "pval": 0.1520309640583003,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Arhgef1",
+        "score": 7.864423,
+        "logfoldchange": 0.639531,
+        "pval": 3.708029711683337e-15,
+        "pvals_adj": 4.571206056710194e-12
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Celf1",
+        "score": -4.630895,
+        "logfoldchange": -0.480817,
+        "pval": 3.6408845971084423e-06,
+        "pvals_adj": 0.0004134080740887803
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Celf2",
+        "score": -3.979839,
+        "logfoldchange": -0.184993,
+        "pval": 6.896204679558533e-05,
+        "pvals_adj": 0.004723079228750029
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Celf3",
+        "score": -6.840372,
+        "logfoldchange": -0.465627,
+        "pval": 7.898789929620986e-12,
+        "pvals_adj": 3.786811538759128e-09
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Celf5",
+        "score": -6.33666,
+        "logfoldchange": -0.646679,
+        "pval": 2.347986007573095e-10,
+        "pvals_adj": 9.424160582489313e-08
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kcnc2",
+        "score": -11.212011,
+        "logfoldchange": -0.504537,
+        "pval": 3.5601060798012834e-29,
+        "pvals_adj": 2.0481290277096783e-25
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Nxf1",
+        "score": 6.589832,
+        "logfoldchange": 0.505788,
+        "pval": 4.403241688304028e-11,
+        "pvals_adj": 1.9486038025240826e-08
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Snhg11",
+        "score": 15.888996,
+        "logfoldchange": 0.411486,
+        "pval": 7.552772008325882e-57,
+        "pvals_adj": 1.3035329209169641e-52
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Syt7",
+        "score": -11.13246,
+        "logfoldchange": -0.640512,
+        "pval": 8.71955822572312e-29,
+        "pvals_adj": 3.762271385443883e-25
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Tmem132a",
+        "score": 5.022596,
+        "logfoldchange": 0.666913,
+        "pval": 5.097770269783541e-07,
+        "pvals_adj": 8.798241708619414e-05
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Tmem181a",
+        "score": -4.272911,
+        "logfoldchange": -0.555467,
+        "pval": 1.929377188707268e-05,
+        "pvals_adj": 0.0016733226582863689
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Vamp1",
+        "score": 9.477067,
+        "logfoldchange": 0.790705,
+        "pval": 2.615304191650233e-21,
+        "pvals_adj": 9.027507008738273e-18
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "155 MB Glut",
+        "gene": "Arhgef1",
+        "score": 5.960107,
+        "logfoldchange": 0.5898,
+        "pval": 2.5207287865877034e-09,
+        "pvals_adj": 1.465635740814977e-05
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "155 MB Glut",
+        "gene": "Celf1",
+        "score": -3.005385,
+        "logfoldchange": -0.580658,
+        "pval": 0.0026524510639168537,
+        "pvals_adj": 0.8412127983254851
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "155 MB Glut",
+        "gene": "Celf2",
+        "score": -2.098861,
+        "logfoldchange": -0.264045,
+        "pval": 0.03582915112660643,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "155 MB Glut",
+        "gene": "Celf3",
+        "score": -0.127927,
+        "logfoldchange": 0.004526,
+        "pval": 0.8982070871381781,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "155 MB Glut",
+        "gene": "Celf5",
+        "score": -1.895613,
+        "logfoldchange": -0.179528,
+        "pval": 0.058011205721918035,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "155 MB Glut",
+        "gene": "Kcnc2",
+        "score": -3.650497,
+        "logfoldchange": -0.475378,
+        "pval": 0.0002617330744028163,
+        "pvals_adj": 0.24028473772675396
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "155 MB Glut",
+        "gene": "Nxf1",
+        "score": 3.625803,
+        "logfoldchange": 0.265585,
+        "pval": 0.00028806494706421816,
+        "pvals_adj": 0.25123584358205786
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "155 MB Glut",
+        "gene": "Snhg11",
+        "score": 10.421844,
+        "logfoldchange": 0.347507,
+        "pval": 1.9709248617057755e-25,
+        "pvals_adj": 3.4378842362733845e-21
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "155 MB Glut",
+        "gene": "Syt7",
+        "score": -1.227827,
+        "logfoldchange": -0.141565,
+        "pval": 0.21951174785192606,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "155 MB Glut",
+        "gene": "Tmem132a",
+        "score": 8.052527,
+        "logfoldchange": 0.849186,
+        "pval": 8.110146384048807e-16,
+        "pvals_adj": 7.073264168848167e-12
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "155 MB Glut",
+        "gene": "Tmem181a",
+        "score": -3.952821,
+        "logfoldchange": -0.381283,
+        "pval": 7.723511924308272e-05,
+        "pvals_adj": 0.10363170653516092
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "155 MB Glut",
+        "gene": "Vamp1",
+        "score": 2.534463,
+        "logfoldchange": 0.257387,
+        "pval": 0.011261973956398086,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Arhgef1",
+        "score": 7.625752,
+        "logfoldchange": 0.904611,
+        "pval": 2.4261463817869852e-14,
+        "pvals_adj": 4.1482250835793873e-10
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Celf1",
+        "score": 1.062337,
+        "logfoldchange": 0.219941,
+        "pval": 0.28808278487209704,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Celf2",
+        "score": -1.198641,
+        "logfoldchange": -0.189421,
+        "pval": 0.2306675308836943,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Celf3",
+        "score": -2.180357,
+        "logfoldchange": -0.336663,
+        "pval": 0.029231042677148628,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Celf5",
+        "score": -0.766378,
+        "logfoldchange": -0.110484,
+        "pval": 0.44345134334941627,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Kcnc2",
+        "score": -0.383463,
+        "logfoldchange": -0.081562,
+        "pval": 0.701376563132752,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Nxf1",
+        "score": 1.901559,
+        "logfoldchange": 0.218814,
+        "pval": 0.05722882317633651,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Snhg11",
+        "score": 6.11264,
+        "logfoldchange": 0.243703,
+        "pval": 9.799592526983866e-10,
+        "pvals_adj": 8.377671651318506e-06
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Syt7",
+        "score": -0.037006,
+        "logfoldchange": 0.020724,
+        "pval": 0.9704800204370483,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Tmem132a",
+        "score": 5.059578,
+        "logfoldchange": 0.59618,
+        "pval": 4.2018518731112496e-07,
+        "pvals_adj": 0.002394775444215205
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Tmem181a",
+        "score": -4.698534,
+        "logfoldchange": -0.538931,
+        "pval": 2.6203512386416997e-06,
+        "pvals_adj": 0.011200691369573945
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Vamp1",
+        "score": 1.533194,
+        "logfoldchange": 0.242737,
+        "pval": 0.12522795995176264,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Arhgef1",
+        "score": 3.705898,
+        "logfoldchange": 0.618372,
+        "pval": 0.0002106432573423285,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Celf1",
+        "score": -2.790773,
+        "logfoldchange": -1.315254,
+        "pval": 0.005258233273060463,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Celf2",
+        "score": -0.69108,
+        "logfoldchange": -0.166611,
+        "pval": 0.4895152376851525,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Celf3",
+        "score": 1.578322,
+        "logfoldchange": 0.512174,
+        "pval": 0.11449163321648913,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Celf5",
+        "score": 0.808777,
+        "logfoldchange": 0.261647,
+        "pval": 0.4186432870339467,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Kcnc2",
+        "score": -1.851251,
+        "logfoldchange": -0.691643,
+        "pval": 0.06413346632001916,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Nxf1",
+        "score": 0.842916,
+        "logfoldchange": 0.116762,
+        "pval": 0.3992755988895137,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Snhg11",
+        "score": 4.066139,
+        "logfoldchange": 0.279836,
+        "pval": 4.779848023759967e-05,
+        "pvals_adj": 0.8016761105450217
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Syt7",
+        "score": 0.232803,
+        "logfoldchange": 0.144841,
+        "pval": 0.8159145914278605,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Tmem132a",
+        "score": 2.874689,
+        "logfoldchange": 0.652076,
+        "pval": 0.004044253276910948,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Tmem181a",
+        "score": -0.698229,
+        "logfoldchange": -0.192512,
+        "pval": 0.4850337051899062,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Vamp1",
+        "score": -2.096208,
+        "logfoldchange": -0.358301,
+        "pval": 0.036063776259754564,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "308 CB GABA",
+        "gene": "Arhgef1",
+        "score": 2.708426,
+        "logfoldchange": 0.450698,
+        "pval": 0.0067603231908041055,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "308 CB GABA",
+        "gene": "Celf1",
+        "score": -1.028561,
+        "logfoldchange": -0.156884,
+        "pval": 0.30368591881004414,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "308 CB GABA",
+        "gene": "Celf2",
+        "score": -1.699195,
+        "logfoldchange": -0.156465,
+        "pval": 0.0892824651255324,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "308 CB GABA",
+        "gene": "Celf3",
+        "score": -1.452306,
+        "logfoldchange": -0.311754,
+        "pval": 0.14641666643330156,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "308 CB GABA",
+        "gene": "Celf5",
+        "score": 0.173129,
+        "logfoldchange": -0.160182,
+        "pval": 0.8625496390503868,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "308 CB GABA",
+        "gene": "Kcnc2",
+        "score": 0.331193,
+        "logfoldchange": 0.31805,
+        "pval": 0.7404986688779593,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "308 CB GABA",
+        "gene": "Nxf1",
+        "score": 2.221114,
+        "logfoldchange": 0.32158,
+        "pval": 0.026343246444120075,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "308 CB GABA",
+        "gene": "Snhg11",
+        "score": 6.703197,
+        "logfoldchange": 0.281752,
+        "pval": 2.03907714157534e-11,
+        "pvals_adj": 3.455216216399414e-07
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "308 CB GABA",
+        "gene": "Syt7",
+        "score": -2.083458,
+        "logfoldchange": -0.242851,
+        "pval": 0.03720944947103819,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "308 CB GABA",
+        "gene": "Tmem132a",
+        "score": 1.484476,
+        "logfoldchange": 0.605404,
+        "pval": 0.13768271045432626,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "308 CB GABA",
+        "gene": "Tmem181a",
+        "score": -4.619997,
+        "logfoldchange": -0.498466,
+        "pval": 3.837462984272049e-06,
+        "pvals_adj": 0.032512905134244936
+      },
+      {
+        "target_gene": "Celf2",
+        "cell_type": "308 CB GABA",
+        "gene": "Vamp1",
+        "score": 1.704326,
+        "logfoldchange": 0.232782,
+        "pval": 0.08832015633821916,
+        "pvals_adj": 1.0
+      }
+    ]
+  },
+  "caveats": [
+    "Snhg11 is a reporter, not an established effector of CELF2 biology.",
+    "The Perturb-seq assay does not measure the splicing or translational outputs expected for CELF-family RBPs."
+  ],
+  "prior_expectation": {
+    "citations": [
+      {
+        "target_gene": "Celf2",
+        "ref_id": "R001",
+        "ref_slug": "dasgupta_ladd_2012_celf_review",
+        "source": "WIREs RNA",
+        "source_type": "review",
+        "citation": "Dasgupta T, Ladd AN. The importance of CELF control: molecular and biological roles of the CUG-BP, Elav-like family of RNA-binding proteins. WIREs RNA. 2012. doi:10.1002/wrna.107.",
+        "url": "https://doi.org/10.1002/wrna.107",
+        "description": "Review describing CELF proteins as RNA-binding regulators of nuclear and cytoplasmic RNA processing, including alternative splicing, RNA editing, deadenylation, mRNA decay, and translation."
+      },
+      {
+        "target_gene": "Celf2",
+        "ref_id": "R002",
+        "ref_slug": "macpherson_2021_celf2_npc_fate",
+        "source": "Cell Reports",
+        "source_type": "pubmed",
+        "citation": "MacPherson MJ et al. Nucleocytoplasmic transport of the RNA-binding protein CELF2 regulates neural stem cell fates. Cell Reports. 2021;35:109226. doi:10.1016/j.celrep.2021.109226.",
+        "url": "https://doi.org/10.1016/j.celrep.2021.109226",
+        "description": "Shows that CELF2 compartment switching in neural progenitors controls translation of cell-fate and neurodevelopmental-disorder mRNAs; de novo CELF2 variants cause cortical malformations and perturb mouse NPC fate decisions."
+      },
+      {
+        "target_gene": "Celf2",
+        "ref_id": "R006",
+        "ref_slug": "hpa_celf2_expression",
+        "source": "Human Protein Atlas",
+        "source_type": "database",
+        "citation": "Human Protein Atlas entry for CELF2, ENSG00000048740, accessed for this report.",
+        "url": "https://www.proteinatlas.org/ENSG00000048740-CELF2",
+        "description": "Annotates CELF2 as an RNA-binding mRNA-processing protein with protein-level evidence and detection in human brain excitatory and inhibitory neurons, with low regional specificity across mouse brain RNA data."
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 5,
+    "priority": 4
+  },
+  "report_evidence_ids": [
+    "Celf2:E002",
+    "Celf2:E003",
+    "Celf2:E005",
+    "Celf2:E006",
+    "Celf2:E007"
+  ],
+  "reference_ids": [
+    "Celf2:R001",
+    "Celf2:R002",
+    "Celf2:R006"
+  ],
+  "source_urls_or_dois": [
+    {
+      "ref_id": "Celf2:R001",
+      "citation": "Dasgupta T, Ladd AN. The importance of CELF control: molecular and biological roles of the CUG-BP, Elav-like family of RNA-binding proteins. WIREs RNA. 2012. doi:10.1002/wrna.107.",
+      "url_or_doi": "https://doi.org/10.1002/wrna.107"
+    },
+    {
+      "ref_id": "Celf2:R002",
+      "citation": "MacPherson MJ et al. Nucleocytoplasmic transport of the RNA-binding protein CELF2 regulates neural stem cell fates. Cell Reports. 2021;35:109226. doi:10.1016/j.celrep.2021.109226.",
+      "url_or_doi": "https://doi.org/10.1016/j.celrep.2021.109226"
+    },
+    {
+      "ref_id": "Celf2:R006",
+      "citation": "Human Protein Atlas entry for CELF2, ENSG00000048740, accessed for this report.",
+      "url_or_doi": "https://www.proteinatlas.org/ENSG00000048740-CELF2"
+    }
+  ],
+  "source_cluster_ids": [
+    "C157"
+  ],
+  "source_claim_ids": [
+    "claim:celf2_f001_32066eb1e208",
+    "claim:celf2_f003_5f90b29b1272",
+    "claim:celf2_f004_c0a6d3586f44"
+  ]
+}

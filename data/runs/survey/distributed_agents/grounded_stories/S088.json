@@ -1,0 +1,121 @@
+{
+  "story_id": "S088",
+  "title": "Fto loss converges with spliceosome perturbations through Rsrp1/Dazap1 RNA-processing markers",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Fto produced only 10 FDR rows across 371818 tested rows and the densest response was in 151 TH Prkcd Grin2c Glut, where Rsrp1 fell with logFC -0.391 and FDR 3.32e-05. In 155 MB Glut, Rsrp1 was the single BH-significant Fto row with logFC -0.605 and FDR 1.79e-09, and the restricted Fto signature correlated with Prpf6 and Ddx23 but opposed Fus.",
+  "biological_interpretation": "Fto knockdown does not produce a broad m6A-regulator transcriptome at this assay layer; instead it exposes a sparse, state-restricted RNA-processing readout centered on Rsrp1 and Dazap1 and related to spliceosome perturbations in MB glutamatergic neurons.",
+  "targets": [
+    "Fto",
+    "Ddx23",
+    "Prpf6",
+    "Fus"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "008 L2-3 IT ENT PPP RSP Glut",
+    "191 MB P MY GABA"
+  ],
+  "support": {
+    "support_level": 4,
+    "exact_de_rows": [
+      {
+        "gene_target": "Fto",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rsrp1",
+        "log2_fold_change": -0.391,
+        "pvals_adj": 3.32e-05,
+        "wilcoxon_score": -6.0
+      },
+      {
+        "gene_target": "Fto",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Amy1",
+        "log2_fold_change": 0.452,
+        "pvals_adj": 0.00399,
+        "wilcoxon_score": 5.04
+      },
+      {
+        "gene_target": "Fto",
+        "cell_type": "155 MB Glut",
+        "gene": "Rsrp1",
+        "log2_fold_change": -0.605,
+        "pvals_adj": 1.79e-09,
+        "wilcoxon_score": -7.44
+      },
+      {
+        "gene_target": "Fto",
+        "cell_type": "008 L2-3 IT ENT PPP RSP Glut",
+        "gene": "Rsrp1",
+        "log2_fold_change": -0.614,
+        "pvals_adj": 0.0211,
+        "wilcoxon_score": -4.84
+      },
+      {
+        "gene_target": "Fto",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Dazap1",
+        "log2_fold_change": 0.612,
+        "pvals_adj": 0.0132,
+        "wilcoxon_score": 4.94
+      }
+    ],
+    "report_evidence_summary": [
+      "Fto:E001",
+      "Fto:E002",
+      "Fto:E003",
+      "Fto:E004",
+      "Fto:E005",
+      "Fto:E008",
+      "Fto:E009"
+    ]
+  },
+  "caveats": [
+    "All measured Fto self-test FDR values were 1.0, so Rsrp1/Dazap1 are downstream reporter candidates rather than proof of a scalar relationship to captured Fto mRNA depletion."
+  ],
+  "prior_expectation": {
+    "summary": "FTO is an RNA m6A demethylase with CNS functions, while RSRP1 is a spliceosome-associated arginine/serine-rich factor; the observed Fto/Rsrp1 relationship is an abundance-level bridge from m6A biology to selected splicing-factor states.",
+    "citations": [
+      {
+        "ref_id": "Fto:R001",
+        "ref": "Jia et al. 2011 PMID:22002720",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/22002720/",
+        "supports": "FTO demethylates m6A in RNA"
+      },
+      {
+        "ref_id": "Fto:R003",
+        "ref": "Li et al. 2021 PMID:34042961",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/34042961/",
+        "supports": "RSRP1 as a spliceosome-associated factor"
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 4,
+    "priority": 3
+  },
+  "report_evidence_ids": [
+    "Fto:E001",
+    "Fto:E002",
+    "Fto:E003",
+    "Fto:E004",
+    "Fto:E005",
+    "Fto:E008",
+    "Fto:E009"
+  ],
+  "reference_ids": [
+    "Fto:R001",
+    "Fto:R002",
+    "Fto:R003"
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/22002720/",
+    "https://pubmed.ncbi.nlm.nih.gov/34042961/"
+  ],
+  "source_claim_ids": [
+    "claim:fto_f001_6c55c828bc59",
+    "claim:fto_f004_c2d8a8e35867"
+  ]
+}

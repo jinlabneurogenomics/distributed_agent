@@ -1,0 +1,351 @@
+{
+  "biological_interpretation": "PUR-alpha loss acutely remodels a structural and neurofilament-like RNA state in specific glutamatergic neurons, with Igip as a recurrent downregulated neighboring transcript that could reflect either PURA biology or local cis-locus effects.",
+  "caveats": [
+    "Igip lies close to Pura in the mouse genome, so Igip repression cannot be assigned unambiguously to a trans PURA pathway from this dataset.",
+    "Isolated Pvalb and hypothalamic outputs did not have FDR-significant Pura target depletion and remain exploratory."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "052 Pvalb Gaba",
+    "066 CNU-HYa HY GABA",
+    "145 MH-LH TH Glut"
+  ],
+  "exact_observed_result": "Pura was FDR-depleted only in 151 TH Prkcd Grin2c Glut and 155 MB Glut, the two classes with multi-gene corrected programs. Both shared Igip down, Ogt down and Nefl up; 151 TH additionally induced Cntnap1, Kcna6, Lingo1 and Tubb2a and lowered Fbxo33 and Setd7, whereas 155 MB included Pcsk1n down and Nlgn2/Ubqln2/Dgkz up.",
+  "preliminary_scores": {
+    "novelty": 4,
+    "priority": 4,
+    "support": 5
+  },
+  "prior_expectation": {
+    "citations": [
+      "Khalili K, Del Valle L, Muralidharan V, et al. Puralpha is essential for postnatal brain development and developmentally coupled cellular proliferation as revealed by genetic inactivation in the mouse. Mol Cell Biol. 2003;23(19):6857-6875.",
+      "Molitor L, Bacher S, Burczyk S, Niessing D. The Molecular Function of PURA and Its Implications in Neurological Diseases. Front Genet. 2021;12:638217."
+    ],
+    "summary": "Prior work supports the broad molecular function of the perturbed target or complex, while the atlas result refines the affected brain cell type and RNA-output module."
+  },
+  "reference_ids": [
+    "Pura:R003",
+    "Pura:R005"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Pura:E001",
+    "Pura:E002",
+    "Pura:E003",
+    "Pura:E004",
+    "Pura:E005"
+  ],
+  "source_claim_ids": [
+    "claim:pura_f001_1e2a8ff93d20"
+  ],
+  "source_cluster_ids": [
+    "C328"
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/12972605/",
+    "https://pubmed.ncbi.nlm.nih.gov/33777106/"
+  ],
+  "status": "grounded",
+  "story_id": "S142",
+  "support": {
+    "exact_de_rows": [
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 3.903084137868338e-05,
+        "fdr_significant": true,
+        "gene": "Pura",
+        "log2_fold_change": -0.466285,
+        "p_value": 1.1307387849436057e-08,
+        "score": -5.709853,
+        "target": "Pura"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 7.196522393810609e-08,
+        "fdr_significant": true,
+        "gene": "Igip",
+        "log2_fold_change": -0.579071,
+        "p_value": 4.485686288794193e-12,
+        "score": -6.920968,
+        "target": "Pura"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "up",
+        "fdr": 3.903084137868338e-05,
+        "fdr_significant": true,
+        "gene": "Nefl",
+        "log2_fold_change": 0.509549,
+        "p_value": 6.97525313055137e-09,
+        "score": 5.791519,
+        "target": "Pura"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "up",
+        "fdr": 3.903084137868338e-05,
+        "fdr_significant": true,
+        "gene": "Tubb2a",
+        "log2_fold_change": 0.330082,
+        "p_value": 1.104269757847703e-08,
+        "score": 5.713883,
+        "target": "Pura"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "up",
+        "fdr": 0.00013572066839910536,
+        "fdr_significant": true,
+        "gene": "Cntnap1",
+        "log2_fold_change": 0.341949,
+        "p_value": 4.7182572014290063e-08,
+        "score": 5.461614,
+        "target": "Pura"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "up",
+        "fdr": 0.0003052190045678687,
+        "fdr_significant": true,
+        "gene": "Kcna6",
+        "log2_fold_change": 0.368319,
+        "p_value": 1.2379240002173248e-07,
+        "score": 5.287806,
+        "target": "Pura"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "up",
+        "fdr": 0.0008172769959121563,
+        "fdr_significant": true,
+        "gene": "Lingo1",
+        "log2_fold_change": 0.229212,
+        "p_value": 3.986668524557974e-07,
+        "score": 5.069593,
+        "target": "Pura"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.0008172769959121563,
+        "fdr_significant": true,
+        "gene": "Fbxo33",
+        "log2_fold_change": -0.575174,
+        "p_value": 4.2618303280661715e-07,
+        "score": -5.056875,
+        "target": "Pura"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.005132596398407304,
+        "fdr_significant": true,
+        "gene": "Setd7",
+        "log2_fold_change": -0.453936,
+        "p_value": 3.2712532813303405e-06,
+        "score": -4.653009,
+        "target": "Pura"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.014427576508124606,
+        "fdr_significant": true,
+        "gene": "Ogt",
+        "log2_fold_change": -0.132068,
+        "p_value": 1.1008544551480665e-05,
+        "score": -4.396352,
+        "target": "Pura"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "down",
+        "fdr": 7.536624050732378e-06,
+        "fdr_significant": true,
+        "gene": "Pura",
+        "log2_fold_change": -0.551508,
+        "p_value": 8.641431004680821e-10,
+        "score": -6.132674,
+        "target": "Pura"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "down",
+        "fdr": 7.536624050732378e-06,
+        "fdr_significant": true,
+        "gene": "Igip",
+        "log2_fold_change": -0.61143,
+        "p_value": 7.770916632267833e-10,
+        "score": -6.149538,
+        "target": "Pura"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "up",
+        "fdr": 1.1833737395234112e-05,
+        "fdr_significant": true,
+        "gene": "Nefl",
+        "log2_fold_change": 0.567588,
+        "p_value": 2.0352698610160143e-09,
+        "score": 5.994967,
+        "target": "Pura"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "down",
+        "fdr": 0.010389156753431442,
+        "fdr_significant": true,
+        "gene": "Ogt",
+        "log2_fold_change": -0.234297,
+        "p_value": 2.9780303713327534e-06,
+        "score": -4.672329,
+        "target": "Pura"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "down",
+        "fdr": 0.010389156753431442,
+        "fdr_significant": true,
+        "gene": "Pcsk1n",
+        "log2_fold_change": -0.340817,
+        "p_value": 2.6889133301796333e-06,
+        "score": -4.693255,
+        "target": "Pura"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "up",
+        "fdr": 0.01468096713114095,
+        "fdr_significant": true,
+        "gene": "Nlgn2",
+        "log2_fold_change": 0.305229,
+        "p_value": 5.891576558962716e-06,
+        "score": 4.530243,
+        "target": "Pura"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "up",
+        "fdr": 0.02759593495385849,
+        "fdr_significant": true,
+        "gene": "Ubqln2",
+        "log2_fold_change": 0.395609,
+        "p_value": 1.4238572182808373e-05,
+        "score": 4.340149,
+        "target": "Pura"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "down",
+        "fdr": 0.03718265980144213,
+        "fdr_significant": true,
+        "gene": "Gaa",
+        "log2_fold_change": -0.340667,
+        "p_value": 2.2364653462152432e-05,
+        "score": -4.239873,
+        "target": "Pura"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "down",
+        "fdr": 0.03718265980144213,
+        "fdr_significant": true,
+        "gene": "Sbds",
+        "log2_fold_change": -0.610625,
+        "p_value": 2.344833215707524e-05,
+        "score": -4.229239,
+        "target": "Pura"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "up",
+        "fdr": 0.0421952000756371,
+        "fdr_significant": true,
+        "gene": "Dgkz",
+        "log2_fold_change": 0.369641,
+        "p_value": 2.902840112983118e-05,
+        "score": 4.180958,
+        "target": "Pura"
+      }
+    ],
+    "resolved_evidence": [
+      {
+        "cell_type": "",
+        "description": "Global on-target summary for cells carrying Pura guides.",
+        "evidence_id": "E001",
+        "evidence_slug": "pura_on_target_global",
+        "genes": "Pura",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "1",
+        "statistics": "Pura was tested in 23 cell types; summed matched perturbation cells=2246, range 21-220 per cell type; the measured Pura transcript had negative logFC in 23/23 tests and FDR<0.05 only in 151 TH Prkcd Grin2c Glut and 155 MB Glut.",
+        "target_gene": "Pura"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "The strongest Pura response occurred in thalamic Prkcd/Grin2c glutamatergic neurons.",
+        "evidence_id": "E002",
+        "evidence_slug": "pura_151_th_prkcd_grin2c_signature",
+        "genes": "Pura|Igip|Snhg11|Nefl|Tubb2a|Cntnap1|Kcna6|Lingo1|Fbxo33|Setd7|Ogt",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "11",
+        "statistics": "220 perturbed cells versus 23679 controls; 22 genes at FDR<0.05, 31 at FDR<0.1 and 66 at nominal p<0.001. Pura logFC -0.466 FDR 3.90e-05; Igip -0.579 FDR 7.20e-08; Snhg11 -0.138 FDR 7.20e-08; Nefl +0.510 FDR 3.90e-05; Tubb2a +0.330 FDR 3.90e-05; Cntnap1 +0.342 FDR 1.36e-04; Kcna6 +0.368 FDR 3.05e-04; Lingo1 +0.229 FDR 8.17e-04; Fbxo33 -0.575 FDR 8.17e-04; Setd7 -0.454 FDR 0.00513; Ogt -0.132 FDR 0.0144.",
+        "target_gene": "Pura"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "description": "The midbrain glutamatergic Pura response shared Igip, Nefl and Ogt with the thalamic response.",
+        "evidence_id": "E003",
+        "evidence_slug": "pura_155_mb_glut_signature",
+        "genes": "Pura|Igip|Nefl|Ogt|Pcsk1n|Maged1|Nlgn2|Serinc1|Ubqln2|Gaa|Sbds|Dgkz",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "12",
+        "statistics": "186 perturbed cells versus 20353 controls; 12 genes at FDR<0.05, 24 at FDR<0.1 and 53 at nominal p<0.001. Pura logFC -0.552 FDR 7.54e-06; Igip -0.611 FDR 7.54e-06; Nefl +0.568 FDR 1.18e-05; Ogt -0.234 FDR 0.0104; Pcsk1n -0.341 FDR 0.0104; Nlgn2 +0.305 FDR 0.0147; Ubqln2 +0.396 FDR 0.0276; Gaa -0.341 FDR 0.0372; Sbds -0.611 FDR 0.0372; Dgkz +0.370 FDR 0.0422.",
+        "target_gene": "Pura"
+      },
+      {
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "description": "A high-cell-count cortical excitatory class with nominal Pura lowering but no FDR-significant transcriptional response.",
+        "evidence_id": "E004",
+        "evidence_slug": "pura_l45_buffered_high_count",
+        "genes": "Pura",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "1",
+        "statistics": "164 perturbed cells versus 15039 controls; Pura logFC -0.391, score -3.918, nominal p 8.94e-05, FDR 0.512; no genes at FDR<0.05 and 14 genes at nominal p<0.001.",
+        "target_gene": "Pura"
+      },
+      {
+        "cell_type": "",
+        "description": "Several cell types showed nominal on-target transcript reduction without a genome-wide significant Pura program.",
+        "evidence_id": "E005",
+        "evidence_slug": "pura_nominal_target_no_fdr_responses",
+        "genes": "Pura",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "1",
+        "statistics": "145 MH-LH TH Glut: 74 perturbed cells, Pura logFC -0.509 p 1.06e-04 FDR 0.589 with 0 FDR<0.05 genes; 217 P MY Pineal Glut: 48 perturbed cells, Pura logFC -0.703 p 4.49e-05 FDR 0.391 with 0 FDR<0.05 genes; 191 MB P MY GABA: 113 perturbed cells, Pura logFC -0.488 p 2.85e-05 FDR 0.108 with 0 FDR<0.05 genes.",
+        "target_gene": "Pura"
+      }
+    ],
+    "support_note": "Exact log2 fold changes, p-values, and FDRs in exact_de_rows were re-read from the Wilcoxon Parquet for this grounding pass; score-vector correlations and perturbed/control cell counts are resolved from the structured report evidence."
+  },
+  "targets": [
+    "Pura",
+    "Igip",
+    "Nefl",
+    "Nefh",
+    "Cntnap1",
+    "Lingo1",
+    "Setd7",
+    "Fbxo33",
+    "Pcsk1n",
+    "Cystm1"
+  ],
+  "title": "Pura loss produces a robust thalamic and midbrain Igip/Nefl remodeling program"
+}

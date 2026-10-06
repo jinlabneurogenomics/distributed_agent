@@ -1,0 +1,22 @@
+# Direct n_degs forecast: Mc3r in 151 TH Prkcd Grin2c Glut
+
+## Prediction
+
+`Mc3r` -> `0` DEGs at BH-adjusted Wilcoxon `p < 0.05`.
+
+## Evidence used
+
+- **Canonical Mc3r biology bundle, biology-only view.** Mc3r encodes a seven-pass melanocortin GPCR coupled to Gs/adenylyl-cyclase/cAMP signaling. A P16 disruptive edit should stop new functional receptor synthesis and the pre-edit surface pool is plausibly depleted over the 21-28 day P16-to-P37/P44 interval because agonist-stimulated MC3R can internalize and enter a lysosomal route. The timing evidence is incomplete: no matched postmitotic mouse thalamic MC3R half-life or edit-to-functional-failure measurement was available.
+- **Exact focal-population reach.** In the matched non-target nuclei for `151 TH Prkcd Grin2c Glut`, the Mc3r transcript was extremely sparse: 289 / 23,679 nuclei expressed Mc3r, `pct_cells_expressing = 1.22049`, `mean_raw_umi = 0.015879`, and `pseudobulk_cpm = 0.995196`. This superseded qualitative claims that Mc3r can be seen somewhere in adult thalamic systems and strongly limited the expected aggregate signal in this broad thalamic class.
+- **Focal training-count table.** The declared table has 1,674 training perturbations for this exact class. Its median was 0 DEGs; the 75th percentile was 1; 1,205 / 1,674 perturbations were zero; 1,571 / 1,674 were at most 10. Large counts were concentrated in a small tail of core-machinery or stress-like perturbations such as `Uba5`, `Tpr`, `Sin3a`, `Rnpc3`, `Zbtb7a`, `U2af2`, and proteasome/spliceosome factors, not in ligand-gated GPCRs.
+- **Typed training analog nomination.** Deterministic annotation nomination against the actual 1,674-gene training universe placed the available direct melanocortin-receptor analogs first: `Mc1r` and `Mc2r`, both with `n_degs = 0`. The top 20 training-available nominees by typed biology/community inspection priority were dominated by peptide GPCRs and cAMP machinery and had 18 zeros plus two singleton responses: `Mc1r 0`, `Mc2r 0`, `Mchr1 0`, `Ghsr 0`, `Galr1 0`, `Oprm1 0`, `Oprd1 0`, `Oprk1 0`, `Oprl1 0`, `Gnas 0`, `Glp1r 0`, `Adcy1 0`, `Adcy5 0`, `Prkaca 1`, `Gnao1 1`, `Adcy3 0`, `Pde4d 0`, `Fshr 0`, `Gipr 0`, `Pth1r 0`.
+- **Profile analysis from the expression Parquet.** Symmetric profile comparison of the nominator's first 40 available Mc3r analogs in `151 TH Prkcd Grin2c Glut` found 36/40 with no BH<0.05 features, 3/40 with only 1-9 features, and one 10-49 feature case (`Creb1`, which had 10 in the count table). A narrower 37-node receptor/cAMP cohort had 32/37 zero-feature profiles and only five singleton responses. Cohort top-tail overlap medians were approximately 0.025 in each direction, so the weak nonzero rows did not form a recurrent GPCR/cAMP transcriptomic module.
+- **Same-experiment corpus context.** Adcy1, Adcy3, and Adcy5 reports in the selected atlas corpus independently summarized, from the same experiment representation, that single membrane adenylyl-cyclase perturbations were flat or family-wide buffered in recovered neuronal groups. Null-cause records for Gnas, Htr receptors, Grm5, Lepr, Crhr1, and Mc1r framed related receptor or G-protein zeros as ligand-state, rare-cell, or nontranscriptional readout mismatches rather than failed target engagement.
+
+## Synthesis
+
+Mc3r has a plausible molecular loss-of-function over the assay window, so I did not treat it as an inert or uneditable locus. The decisive feature for this endpoint was reach: only about 1.2% of the broad focal non-target population visibly expressed Mc3r, making any direct loss state rare inside the aggregate Wilcoxon contrast. Its best task-available analogs were not stress regulators or chromatin/RNA-processing nodes from the high-DEG tail; they were peptide GPCRs and GPCR-to-cAMP transducers whose exact focal `n_degs` values were zero or singleton.
+
+The receptor/cAMP training profiles also argued against a hidden transferable positive signature: null Adcy and Gnas surfaces in this assay show that loss of a neuromodulatory GPCR input or a single cAMP component usually changes acute signaling, physiology, or ligand-evoked transcription more than basal nuclear RNA at 3-4 weeks. The Mc3r-specific whole-animal phenotypes are feeding-state and circuit phenotypes from germline or adult contexts, and they do not outweigh the focal dilution and the training GPCR nulls.
+
+I therefore placed Mc3r in the bulk zero class of `151 TH Prkcd Grin2c Glut` rather than assigning a small nonzero count for rare-cell uncertainty.

@@ -1,0 +1,228 @@
+{
+  "biological_interpretation": "KCC2/SLC12A5 loss can be read as a pro-excitability perturbation in a single thalamic glutamatergic state, but the WNK-SPAK/NKCC1/KCC2 regulatory pathway is not represented as a shared steady-state RNA signature under the sampled conditions.",
+  "caveats": [
+    "The WNK/SPAK/NKCC1 comparator perturbations were weakly engaged in 151 TH Prkcd Grin2c Glut, so their failure to phenocopy Slc12a5 is a boundary on the mRNA assay, not proof that chloride-transporter signaling is absent.",
+    "Fos, Dusp1, and Nr4a1 are general activity-responsive genes, not KCC2-specific markers."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "052 Pvalb Gaba",
+    "066 CNU-HYa HY GABA",
+    "155 MB Glut"
+  ],
+  "exact_observed_result": "Slc12a5 perturbation induced Nr4a1, Dusp1, Fos, Syngap1, and Chml in 151 TH Prkcd Grin2c Glut, while stronger Slc12a5 mRNA depletion in 155 MB Glut, 066 CNU-HYa HY GABA, and 052 Pvalb Gaba stayed target-only; Slc12a2, Stk39, Wnk1, and Wnk3 did not reproduce the thalamic Slc12a5 module.",
+  "preliminary_scores": {
+    "novelty": 4,
+    "priority": 4,
+    "support": 4
+  },
+  "prior_expectation": "KCC2 is the neuronal K-Cl cotransporter that maintains low intracellular chloride, and SLC12A5 loss of function is linked to epilepsy; WNK-SPAK/OSR1 regulation of cation-chloride cotransporters is expected to act heavily through phosphorylation and chloride flux rather than necessarily through cotransporter mRNA abundance.",
+  "reference_ids": [
+    "Slc12a2:F003",
+    "Slc12a5:F001",
+    "Stk39:F004",
+    "Wnk3:F004"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    {
+      "finding_id": "F001",
+      "gene": "Slc12a5"
+    },
+    {
+      "finding_id": "F003",
+      "gene": "Slc12a2"
+    },
+    {
+      "finding_id": "F004",
+      "gene": "Stk39"
+    },
+    {
+      "finding_id": "F004",
+      "gene": "Wnk3"
+    }
+  ],
+  "source_claim_ids": [
+    "claim:slc12a5_f001_1ab9154928f6",
+    "claim:slc12a2_f003_f06aebe90acb",
+    "claim:stk39_f004_428a11950ce1",
+    "claim:wnk3_f004_af290a577b51"
+  ],
+  "source_cluster_ids": [
+    "C015"
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/11395011/",
+    "https://pubmed.ncbi.nlm.nih.gov/26333769/",
+    "https://pubmed.ncbi.nlm.nih.gov/36302178/",
+    "https://doi.org/10.1073/pnas.0508307102",
+    "https://pubmed.ncbi.nlm.nih.gov/31911626/"
+  ],
+  "status": "grounded",
+  "story_id": "S002",
+  "support": {
+    "exact_de_rows": [
+      {
+        "gene_target": "Slc12a2",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.14717623591423035,
+        "names": "Slc12a2",
+        "pvals": 0.2496350208581175,
+        "pvals_adj": 1.0,
+        "scores": -1.1512362957000732
+      },
+      {
+        "gene_target": "Slc12a5",
+        "group_name": "052 Pvalb Gaba",
+        "logfoldchanges": -0.535154402256012,
+        "names": "Slc12a5",
+        "pvals": 1.91635535686743e-07,
+        "pvals_adj": 0.003212194849181186,
+        "scores": -5.207273483276367
+      },
+      {
+        "gene_target": "Slc12a5",
+        "group_name": "066 CNU-HYa HY GABA",
+        "logfoldchanges": -0.8364959359169006,
+        "names": "Slc12a5",
+        "pvals": 1.8243471775807462e-07,
+        "pvals_adj": 0.003122187759711689,
+        "scores": -5.216399192810059
+      },
+      {
+        "gene_target": "Slc12a5",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.5044642686843872,
+        "names": "Chml",
+        "pvals": 2.383522736677384e-07,
+        "pvals_adj": 0.0006856203152052496,
+        "scores": 5.166630268096924
+      },
+      {
+        "gene_target": "Slc12a5",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.5282086133956909,
+        "names": "Clint1",
+        "pvals": 2.073631950147458e-05,
+        "pvals_adj": 0.035788813827594974,
+        "scores": -4.256811141967773
+      },
+      {
+        "gene_target": "Slc12a5",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.7647197842597961,
+        "names": "Dusp1",
+        "pvals": 4.9845951748581985e-11,
+        "pvals_adj": 4.3014564061438824e-07,
+        "scores": 6.571395397186279
+      },
+      {
+        "gene_target": "Slc12a5",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.9677921533584595,
+        "names": "Fos",
+        "pvals": 9.897668374037475e-08,
+        "pvals_adj": 0.0005694128615583759,
+        "scores": 5.328592777252197
+      },
+      {
+        "gene_target": "Slc12a5",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.887877345085144,
+        "names": "Nr4a1",
+        "pvals": 2.8026463420639077e-11,
+        "pvals_adj": 4.3014564061438824e-07,
+        "scores": 6.6565842628479
+      },
+      {
+        "gene_target": "Slc12a5",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.38061854243278503,
+        "names": "Slc12a5",
+        "pvals": 2.0441661142575062e-07,
+        "pvals_adj": 0.0006856203152052496,
+        "scores": -5.195275783538818
+      },
+      {
+        "gene_target": "Slc12a5",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.28051578998565674,
+        "names": "Syngap1",
+        "pvals": 1.7121703867829845e-07,
+        "pvals_adj": 0.0006856203152052496,
+        "scores": 5.228147506713867
+      },
+      {
+        "gene_target": "Slc12a5",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": -0.8113678693771362,
+        "names": "Slc12a5",
+        "pvals": 1.7770136914662463e-17,
+        "pvals_adj": 3.099644982024573e-13,
+        "scores": -8.507514953613281
+      },
+      {
+        "gene_target": "Stk39",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.47070086002349854,
+        "names": "Stk39",
+        "pvals": 0.002172563590098698,
+        "pvals_adj": 1.0,
+        "scores": -3.0655689239501953
+      },
+      {
+        "gene_target": "Wnk1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.27380672097206116,
+        "names": "Wnk1",
+        "pvals": 0.0024458005867395213,
+        "pvals_adj": 1.0,
+        "scores": -3.0299675464630127
+      },
+      {
+        "gene_target": "Wnk3",
+        "group_name": "052 Pvalb Gaba",
+        "logfoldchanges": -1.280056118965149,
+        "names": "Stim1",
+        "pvals": 2.704768714241038e-06,
+        "pvals_adj": 0.022668666594054143,
+        "scores": -4.692053318023682
+      },
+      {
+        "gene_target": "Wnk3",
+        "group_name": "052 Pvalb Gaba",
+        "logfoldchanges": 0.459029883146286,
+        "names": "Syt3",
+        "pvals": 2.6948370159615214e-06,
+        "pvals_adj": 0.022668666594054143,
+        "scores": 4.692805290222168
+      },
+      {
+        "gene_target": "Wnk3",
+        "group_name": "052 Pvalb Gaba",
+        "logfoldchanges": -0.3424534201622009,
+        "names": "Wnk3",
+        "pvals": 0.5374783446029181,
+        "pvals_adj": 1.0,
+        "scores": -0.6166306734085083
+      },
+      {
+        "gene_target": "Wnk3",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.3303024470806122,
+        "names": "Wnk3",
+        "pvals": 0.5774478536067699,
+        "pvals_adj": 1.0,
+        "scores": 0.5571164488792419
+      }
+    ]
+  },
+  "targets": [
+    "Slc12a5",
+    "Slc12a2",
+    "Stk39",
+    "Wnk1",
+    "Wnk3"
+  ],
+  "title": "KCC2 loss selectively triggers a thalamic immediate-early response"
+}

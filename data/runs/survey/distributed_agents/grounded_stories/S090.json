@@ -1,0 +1,433 @@
+{
+  "biological_interpretation": "Direct loss of proteasome core, 19S ATPase, or maturation activity is not a benign compensatory proteasome upshift; in vulnerable neurons it pairs proteasome recovery signatures with loss of ion-channel, receptor, and mature neuronal expression.",
+  "caveats": [
+    "Pomp, Psmc1, and Psmc5 target-transcript depletion was often not FDR-confirmed, so downstream signatures should not be scaled as mRNA knockdown dose responses.",
+    "This is a broad proteasome-stress axis and should not be used to nominate a single safe proteasome subunit to inhibit."
+  ],
+  "cell_types": [
+    "052 Pvalb Gaba",
+    "066 CNU-HYa HY GABA",
+    "110 CNU-HYa HY MM Glut",
+    "155 MB Glut",
+    "191 MB P MY GABA",
+    "001 L5-6 IT Glut",
+    "005 L4-5 IT CTX Glut",
+    "151 TH Prkcd Grin2c Glut",
+    "054 CNU-MGE GABA"
+  ],
+  "exact_observed_result": "Psmb4, Psmc1, Psmc5, and Pomp perturbations produced overlapping neuronal proteasome-stress states: responsive classes up-regulated proteasome and proteostasis genes such as Psme4, Psmc6, Psmd4, and Nfe2l1-linked targets while repeatedly repressing synaptic and excitability genes including Atp1a3, Gria2, and related neuronal-state transcripts.",
+  "preliminary_scores": {
+    "novelty": 2,
+    "priority": 5,
+    "support": 5
+  },
+  "prior_expectation": "Core proteasome and assembly perturbations are expected to activate NFE2L1/Nrf1-mediated proteasome recovery; the neuronal loss of synaptic and ion-homeostasis transcripts adds a cell-state liability arm.",
+  "reference_ids": [
+    "Atp6v0c:F004",
+    "Pomp:F001",
+    "Pomp:F002",
+    "Pomp:F004",
+    "Psmb4:F002",
+    "Psmc1:F001",
+    "Psmc1:F002",
+    "Psmc5:F001",
+    "Psmc5:F003",
+    "Psmc5:F004"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    {
+      "finding_id": "F002",
+      "gene": "Psmb4"
+    },
+    {
+      "finding_id": "F002",
+      "gene": "Psmc1"
+    },
+    {
+      "finding_id": "F003",
+      "gene": "Psmc5"
+    },
+    {
+      "finding_id": "F002",
+      "gene": "Pomp"
+    },
+    {
+      "finding_id": "F004",
+      "gene": "Atp6v0c"
+    },
+    {
+      "finding_id": "F001",
+      "gene": "Pomp"
+    },
+    {
+      "finding_id": "F001",
+      "gene": "Psmc1"
+    },
+    {
+      "finding_id": "F001",
+      "gene": "Psmc5"
+    },
+    {
+      "finding_id": "F004",
+      "gene": "Pomp"
+    },
+    {
+      "finding_id": "F004",
+      "gene": "Psmc5"
+    }
+  ],
+  "source_claim_ids": [
+    "claim:psmb4_f002_124c9082905b",
+    "claim:psmc1_f002_2ae8731b711c",
+    "claim:psmc5_f003_d0e7f3080a7b",
+    "claim:pomp_f002_df4d533e4ccb",
+    "claim:atp6v0c_f004_8394ee3491c8",
+    "claim:pomp_f001_ab552b59898e",
+    "claim:psmc1_f001_aa2bac3f8181",
+    "claim:psmc5_f001_9af686611121",
+    "claim:pomp_f004_52db7db1b395",
+    "claim:psmc5_f004_44cdbbd2a1cc"
+  ],
+  "source_cluster_ids": [
+    "C050",
+    "C373",
+    "C255"
+  ],
+  "source_urls_or_dois": [
+    "https://reactome.org/content/detail/R-HSA-9907900",
+    "https://doi.org/10.1016/j.molcel.2010.02.029",
+    "https://pubmed.ncbi.nlm.nih.gov/18701681/",
+    "https://pubmed.ncbi.nlm.nih.gov/17948026/"
+  ],
+  "status": "grounded",
+  "story_id": "S090",
+  "support": {
+    "exact_de_rows": [
+      {
+        "gene_target": "Pomp",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": -1.0748300552368164,
+        "names": "Atp1a3",
+        "pvals": 2.919154723510102e-15,
+        "pvals_adj": 2.9781768604693493e-11,
+        "scores": -7.894314289093018
+      },
+      {
+        "gene_target": "Pomp",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": 1.6741917133331299,
+        "names": "Ddit3",
+        "pvals": 2.5264823318615854e-07,
+        "pvals_adj": 3.0392711251490782e-05,
+        "scores": 5.155727386474609
+      },
+      {
+        "gene_target": "Pomp",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": -0.9974641799926758,
+        "names": "Gria2",
+        "pvals": 4.2425356993781574e-09,
+        "pvals_adj": 1.1562898469414562e-06,
+        "scores": -5.874448299407959
+      },
+      {
+        "gene_target": "Pomp",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": -0.2948051691055298,
+        "names": "Nfe2l1",
+        "pvals": 0.0173231044814504,
+        "pvals_adj": 0.16158658367376436,
+        "scores": -2.379777193069458
+      },
+      {
+        "gene_target": "Pomp",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": 0.23976069688796997,
+        "names": "Pomp",
+        "pvals": 0.4679031258991244,
+        "pvals_adj": 1.0,
+        "scores": 0.7258950471878052
+      },
+      {
+        "gene_target": "Pomp",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": 0.07239244133234024,
+        "names": "Psmb4",
+        "pvals": 0.7019025992392676,
+        "pvals_adj": 1.0,
+        "scores": 0.3827534317970276
+      },
+      {
+        "gene_target": "Pomp",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": 0.38506174087524414,
+        "names": "Psmc1",
+        "pvals": 0.021754515772261385,
+        "pvals_adj": 0.18935330270237294,
+        "scores": 2.2946269512176514
+      },
+      {
+        "gene_target": "Pomp",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": 0.5296535491943359,
+        "names": "Psmc5",
+        "pvals": 7.20501792153751e-05,
+        "pvals_adj": 0.0026825508936030307,
+        "scores": 3.969412088394165
+      },
+      {
+        "gene_target": "Psmb4",
+        "group_name": "052 Pvalb Gaba",
+        "logfoldchanges": -1.0009267330169678,
+        "names": "Atp1a3",
+        "pvals": 2.704963025715898e-06,
+        "pvals_adj": 0.0003487737710542299,
+        "scores": -4.692038536071777
+      },
+      {
+        "gene_target": "Psmb4",
+        "group_name": "052 Pvalb Gaba",
+        "logfoldchanges": 0.8938229084014893,
+        "names": "Ddit3",
+        "pvals": 0.00024032307919987967,
+        "pvals_adj": 0.00987834840357088,
+        "scores": 3.6723575592041016
+      },
+      {
+        "gene_target": "Psmb4",
+        "group_name": "052 Pvalb Gaba",
+        "logfoldchanges": -0.8859125971794128,
+        "names": "Gria2",
+        "pvals": 1.677788448664673e-08,
+        "pvals_adj": 1.204679405603427e-05,
+        "scores": -5.642314910888672
+      },
+      {
+        "gene_target": "Psmb4",
+        "group_name": "052 Pvalb Gaba",
+        "logfoldchanges": -0.24604304134845734,
+        "names": "Nfe2l1",
+        "pvals": 0.022775414804370692,
+        "pvals_adj": 0.22656469017855285,
+        "scores": -2.2771811485290527
+      },
+      {
+        "gene_target": "Psmb4",
+        "group_name": "052 Pvalb Gaba",
+        "logfoldchanges": -0.186818465590477,
+        "names": "Psmb4",
+        "pvals": 0.9013759085316597,
+        "pvals_adj": 1.0,
+        "scores": -0.1239234209060669
+      },
+      {
+        "gene_target": "Psmb4",
+        "group_name": "052 Pvalb Gaba",
+        "logfoldchanges": 0.7663525938987732,
+        "names": "Psmc6",
+        "pvals": 1.283953781956712e-09,
+        "pvals_adj": 2.391292588128712e-06,
+        "scores": 6.069392204284668
+      },
+      {
+        "gene_target": "Psmb4",
+        "group_name": "052 Pvalb Gaba",
+        "logfoldchanges": 0.9597024321556091,
+        "names": "Psmd4",
+        "pvals": 1.976151762550072e-07,
+        "pvals_adj": 5.3426219103006944e-05,
+        "scores": 5.20156717300415
+      },
+      {
+        "gene_target": "Psmb4",
+        "group_name": "052 Pvalb Gaba",
+        "logfoldchanges": 0.7126075625419617,
+        "names": "Psme4",
+        "pvals": 1.3869175406795569e-06,
+        "pvals_adj": 0.0002277888376883561,
+        "scores": 4.826875686645508
+      },
+      {
+        "gene_target": "Psmb4",
+        "group_name": "066 CNU-HYa HY GABA",
+        "logfoldchanges": -1.716133952140808,
+        "names": "Atp1a3",
+        "pvals": 2.4256988706691616e-09,
+        "pvals_adj": 1.9988101980605088e-05,
+        "scores": -5.966383457183838
+      },
+      {
+        "gene_target": "Psmb4",
+        "group_name": "066 CNU-HYa HY GABA",
+        "logfoldchanges": 1.403832197189331,
+        "names": "Ddit3",
+        "pvals": 0.002609521289276275,
+        "pvals_adj": 0.05436798171290111,
+        "scores": 3.0103437900543213
+      },
+      {
+        "gene_target": "Psmb4",
+        "group_name": "066 CNU-HYa HY GABA",
+        "logfoldchanges": -1.3761903047561646,
+        "names": "Gria2",
+        "pvals": 0.00030375794983102924,
+        "pvals_adj": 0.012867607805465928,
+        "scores": -3.6120738983154297
+      },
+      {
+        "gene_target": "Psmb4",
+        "group_name": "066 CNU-HYa HY GABA",
+        "logfoldchanges": -0.5076814293861389,
+        "names": "Nfe2l1",
+        "pvals": 0.008590192414108185,
+        "pvals_adj": 0.11836759498796093,
+        "scores": -2.6279468536376953
+      },
+      {
+        "gene_target": "Psmb4",
+        "group_name": "066 CNU-HYa HY GABA",
+        "logfoldchanges": -0.5789036154747009,
+        "names": "Psmb4",
+        "pvals": 0.6638420673427141,
+        "pvals_adj": 1.0,
+        "scores": -0.43461477756500244
+      },
+      {
+        "gene_target": "Psmb4",
+        "group_name": "066 CNU-HYa HY GABA",
+        "logfoldchanges": 0.6553602814674377,
+        "names": "Psmc6",
+        "pvals": 0.0009689117803775974,
+        "pvals_adj": 0.027344381691584346,
+        "scores": 3.2994015216827393
+      },
+      {
+        "gene_target": "Psmb4",
+        "group_name": "066 CNU-HYa HY GABA",
+        "logfoldchanges": 0.7754696011543274,
+        "names": "Psmd4",
+        "pvals": 0.0012240555465751067,
+        "pvals_adj": 0.03217893490643069,
+        "scores": 3.2332146167755127
+      },
+      {
+        "gene_target": "Psmb4",
+        "group_name": "066 CNU-HYa HY GABA",
+        "logfoldchanges": 0.9482285976409912,
+        "names": "Psme4",
+        "pvals": 5.417790562135465e-05,
+        "pvals_adj": 0.0044576955615570355,
+        "scores": 4.036831855773926
+      },
+      {
+        "gene_target": "Psmc1",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": -1.4317320585250854,
+        "names": "Atp1a3",
+        "pvals": 1.85244477975385e-27,
+        "pvals_adj": 1.6156097146623204e-23,
+        "scores": -10.85673999786377
+      },
+      {
+        "gene_target": "Psmc1",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": -1.556200385093689,
+        "names": "Atp1b1",
+        "pvals": 1.1374951324788283e-29,
+        "pvals_adj": 1.9841327595828202e-25,
+        "scores": -11.312539100646973
+      },
+      {
+        "gene_target": "Psmc1",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": 2.121591091156006,
+        "names": "Ddit3",
+        "pvals": 1.7940424035194978e-11,
+        "pvals_adj": 1.3188975852982552e-09,
+        "scores": 6.721872329711914
+      },
+      {
+        "gene_target": "Psmc1",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": 0.2335900068283081,
+        "names": "Psmc1",
+        "pvals": 0.15190556994390836,
+        "pvals_adj": 0.4538526958440881,
+        "scores": 1.432832956314087
+      },
+      {
+        "gene_target": "Psmc1",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": 0.9205223917961121,
+        "names": "Psmd4",
+        "pvals": 2.4020817301352325e-09,
+        "pvals_adj": 1.0145160198244277e-07,
+        "scores": 5.96798038482666
+      },
+      {
+        "gene_target": "Psmc5",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": -1.2474701404571533,
+        "names": "Atp1a3",
+        "pvals": 4.6252179401999524e-17,
+        "pvals_adj": 8.067767653090777e-13,
+        "scores": -8.395853996276855
+      },
+      {
+        "gene_target": "Psmc5",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": -1.0940418243408203,
+        "names": "Atp1b1",
+        "pvals": 7.15356529005378e-12,
+        "pvals_adj": 1.782566276491544e-08,
+        "scores": -6.85455322265625
+      },
+      {
+        "gene_target": "Psmc5",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": 0.89091956615448,
+        "names": "Psma5",
+        "pvals": 5.198756884577081e-05,
+        "pvals_adj": 0.0024376859230558607,
+        "scores": 4.046506881713867
+      },
+      {
+        "gene_target": "Psmc5",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": -0.24799995124340057,
+        "names": "Psmc5",
+        "pvals": 0.13550722048120703,
+        "pvals_adj": 0.592748125140844,
+        "scores": -1.4927325248718262
+      },
+      {
+        "gene_target": "Psmc5",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": 0.6671744585037231,
+        "names": "Psmd4",
+        "pvals": 0.00027397795442182695,
+        "pvals_adj": 0.008553811611815438,
+        "scores": 3.638737440109253
+      }
+    ]
+  },
+  "targets": [
+    "Psmb4",
+    "Psmc1",
+    "Psmc5",
+    "Pomp",
+    "Atp6v0c",
+    "Psme4",
+    "Psmc6",
+    "Psmd4",
+    "Atp1a3",
+    "Gria2",
+    "Scn1a",
+    "Ddit3",
+    "Nfe2l1",
+    "Nfe2l2",
+    "Vcp"
+  ],
+  "title": "Proteasome subunit loss couples proteasome compensation to neuronal-state repression"
+}

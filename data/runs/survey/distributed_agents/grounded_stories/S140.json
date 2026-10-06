@@ -1,0 +1,41 @@
+{
+  "story_id": "S140",
+  "title": "Gabrd knockdown produces a narrow thalamic Cttnbp2-positive delta-GABA-A response",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Gabrd knockdown in 151 TH Prkcd/Grin2c had strong target depletion and exactly one FDR<0.05 non-target row, Cttnbp2 up. In 052 Pvalb Gaba, Gabrd was also FDR-depleted but produced no corrected downstream gene.",
+  "biological_interpretation": "The delta-GABA-A receptor perturbation is transcriptionally narrow and thalamus-centered; it does not trigger broad receptor-subunit or stress compensation and should mainly be followed as a Cttnbp2-positive thalamic marker response.",
+  "targets": ["Gabrd", "Gabra4", "Gabrb2", "Gabra1", "Cttnbp2", "Col24a1", "Fbxw7", "Gpr88"],
+  "cell_types": ["151 TH Prkcd Grin2c Glut", "052 Pvalb Gaba"],
+  "support": [
+    {
+      "evidence_id": "Gabrd:E001;Gabrd:E002;Gabrd:E003;Gabra4:E005;Gabra4:E007",
+      "description": "Gabrd has a strong thalamic self row plus a single Cttnbp2 non-target hit; Pvalb is target-engaged but buffered.",
+      "exact_de_rows": [
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Gabrd", "gene": "Gabrd", "logfoldchanges": -0.9566, "pvals": 1.48e-32, "pvals_adj": 2.56e-28},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Gabrd", "gene": "Cttnbp2", "logfoldchanges": 0.1932, "pvals": 1.56e-06, "pvals_adj": 0.0135},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Gabrd", "gene": "Fbxw7", "logfoldchanges": null, "pvals": null, "pvals_adj": 0.139},
+        {"cell_type": "052 Pvalb Gaba", "gene_target": "Gabrd", "gene": "Gabrd", "logfoldchanges": -0.7584, "pvals": 1.36e-08, "pvals_adj": 0.000228},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Gabrb2", "gene": "Gabrb2", "logfoldchanges": -1.070548, "pvals": null, "pvals_adj": 3.15e-36},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Gabra1", "gene": "Gabra1", "logfoldchanges": null, "pvals": null, "pvals_adj": 4.26e-18}
+      ]
+    }
+  ],
+  "caveats": [
+    "The Gabra4 signature-neighbor correlations to Gabrd/Gabrb2/Gabra1 were small, with unrelated Uba5 and Atp2b1 also near the top.",
+    "The dataset measures mRNA after partial knockdown, not tonic chloride current, receptor stoichiometry, gaboxadol sensitivity, or seizure behavior.",
+    "Cttnbp2 has no direct validated causal link to delta-GABA-A receptor physiology in this evidence."
+  ],
+  "prior_expectation": {
+    "summary": "GABRD is a delta subunit of extrasynaptic GABA-A chloride channels; delta-containing receptors mediate tonic inhibition in thalamic neurons and PV interneurons, but immediate receptor biology is expected to be electrophysiological rather than a broad mRNA program.",
+    "citations": [
+      {"reference_id": "Gabrd:R001", "citation": "UniProtKB GABRD entries P22933 and O14764.", "url_or_doi": "https://www.uniprot.org/uniprotkb/P22933/entry"},
+      {"reference_id": "Gabrd:R004", "citation": "Cope et al., Journal of Neuroscience, 2005.", "url_or_doi": "https://doi.org/10.1523/JNEUROSCI.3362-05.2005"},
+      {"reference_id": "Gabra4:R003", "citation": "Sente et al., Nature, 2022.", "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/35355020/"}
+    ]
+  },
+  "preliminary_scores": {"novelty": 4, "support": 3, "priority": 3},
+  "report_evidence_ids": ["Gabrd:E001", "Gabrd:E002", "Gabrd:E003", "Gabrd:E007", "Gabra4:E005", "Gabra4:E006", "Gabra4:E007", "Gabra4:E008"],
+  "reference_ids": ["Gabrd:R001", "Gabrd:R004", "Gabrd:R005", "Gabrd:R006", "Gabra4:R003", "Gabra4:R004", "Gabra4:R005"],
+  "source_urls_or_dois": ["https://www.uniprot.org/uniprotkb/P22933/entry", "https://doi.org/10.1523/JNEUROSCI.3362-05.2005", "https://doi.org/10.1523/JNEUROSCI.3340-09.2009", "https://doi.org/10.1152/jn.00495.2024", "https://pubmed.ncbi.nlm.nih.gov/35355020/"]
+}

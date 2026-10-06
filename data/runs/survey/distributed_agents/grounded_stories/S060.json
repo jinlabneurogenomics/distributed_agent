@@ -1,0 +1,2122 @@
+{
+  "story_id": "S060",
+  "title": "Tcf7l2 aligns with Ctnnb1 and opposes Apc at the beta-catenin/TCF node in 151 TH neurons",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "In 151 TH Prkcd Grin2c Glut, Apc perturbation induced Wnt feedback genes Axin2, Nkd1, and Notum and repressed neuronal markers such as Grin2c, Gls, Cck, and Chgb; Ctnnb1 knockdown produced a large response with the opposite beta-catenin/TCF direction for many targets, while Tcf7l2 overlapped only part of the Apc signature and changed Cck and Spock3 in the direction opposite to Apc.",
+  "biological_interpretation": "The signatures place Apc, Ctnnb1, and Tcf7l2 at the Wnt/beta-catenin/TCF node in a thalamic neuronal context, but the neuronal outputs include synaptic and subtype markers rather than only canonical Axin2/Nkd1 feedback.",
+  "targets": [
+    "Apc",
+    "Tcf7l2",
+    "Ctnnb1",
+    "Axin2",
+    "Nkd1",
+    "Ramp3",
+    "Kcnc2",
+    "Pcsk2",
+    "Grin2b",
+    "Snap25",
+    "Zfp612",
+    "Notum",
+    "Cdh2",
+    "Chgb",
+    "Gabra4",
+    "Gabrb2",
+    "Gria2",
+    "Cck",
+    "Spock3",
+    "Gabbr2",
+    "Prkcd",
+    "Robo1",
+    "Lef1"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "145 MH-LH TH Glut"
+  ],
+  "support": {
+    "source_findings": [
+      {
+        "target_gene": "Apc",
+        "finding_id": "F005",
+        "finding_type": "cross_perturbation_contrast",
+        "direction": "partially_opposing",
+        "confidence": "moderate",
+        "literature_status": "refines_cell_type_context",
+        "summary": "Apc and Tcf7l2 perturbations converged on a thalamic gene set but usually with opposite signs, indicating that APC/Wnt activation intersects rather than simply phenocopies Tcf7l2 loss.",
+        "why_it_matters": "TCF7L2 is a thalamic differentiation regulator; the Apc signature changed Cck, Spock3, Nexn and other genes that were also Tcf7l2-responsive, but the mostly opposite directions argue that Apc perturbation is an upstream signaling distortion superimposed on a Tcf7l2-dependent identity program.",
+        "genes": "Tcf7l2|Cck|Spock3|Nexn",
+        "n_genes": "4",
+        "comparators": "Tcf7l2",
+        "cell_types": "151 TH Prkcd Grin2c Glut",
+        "n_cell_types": "1",
+        "evidence_ids": "E004|E008",
+        "ref_ids": "R007",
+        "main_caveats": "Only 29 genes were corrected hits in both Apc and Tcf7l2 contrasts; the mechanistic relationship could be indirect and stage-dependent."
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "finding_id": "F001",
+        "finding_type": "cell_type_selectivity",
+        "direction": "strongest response in 151; smaller down-module in 145; target-only in 066 and 155",
+        "confidence": "high",
+        "literature_status": "refines_cell_type_context",
+        "summary": "Ctnnb1 loss produced a broad corrected transcriptome almost exclusively in 151 TH Prkcd Grin2c Glut, with a much smaller concordant response in 145 MH-LH TH Glut.",
+        "why_it_matters": "The result separates target RNA reduction from downstream pathway penetrance and makes cell type a first-order modifier of CTNNB1 biology in this brain dataset.",
+        "genes": "Ctnnb1|Plekhg1|Gabra4|Ramp3|Pdp1|L1cam|Synpo2|Nin",
+        "n_genes": "8",
+        "cell_types": "151 TH Prkcd Grin2c Glut|145 MH-LH TH Glut|066 CNU-HYa HY GABA|155 MB Glut",
+        "n_cell_types": "4",
+        "evidence_ids": "E001|E002|E003|E004|E005",
+        "ref_ids": "R004|R005",
+        "main_caveats": "Nineteen measured cell types lacked FDR-significant target RNA; low or unverified target engagement can mimic resistance."
+      },
+      {
+        "target_gene": "Apc",
+        "finding_id": "F001",
+        "finding_type": "convergent_module",
+        "direction": "Wnt feedback up; selected glutamatergic and peptide/neurosecretory genes down",
+        "confidence": "high",
+        "literature_status": "supports_known_mechanism_with_cell_type_refinement",
+        "summary": "Apc perturbation in 151 TH Prkcd Grin2c Glut activated a canonical Wnt negative-feedback module while repressing selected glutamatergic and peptide/neurosecretory markers.",
+        "why_it_matters": "Axin2, Nkd1 and Notum induction makes the strongest Perturb-seq response interpretable as beta-catenin pathway activation rather than an unstructured stress signature; the concurrent fall in Grin2c, Grin2d, Gls, Cck and Chgb shows that the Wnt response is coupled to thalamic neuronal-state genes.",
+        "genes": "Axin2|Nkd1|Notum|Gls|Grin2c|Grin2d|Cck|Chgb",
+        "n_genes": "8",
+        "cell_types": "151 TH Prkcd Grin2c Glut",
+        "n_cell_types": "1",
+        "evidence_ids": "E002|E003|E004",
+        "ref_ids": "R001|R004|R005|R006|R008",
+        "main_caveats": "The assay is RNA-only; nuclear beta-catenin, APC protein abundance, and Wnt transcriptional reporter activity were not measured directly."
+      },
+      {
+        "target_gene": "Zfp612",
+        "finding_id": "F001",
+        "finding_type": "pathway_uncoupling",
+        "direction": "Notum up after Zfp612; Axin2 and Nkd1 unchanged after Zfp612; Apc upregulates Notum/Axin2/Nkd1 and Ctnnb1 downregulates Notum",
+        "confidence": "moderate",
+        "literature_status": "extends_known_mechanism",
+        "summary": "Zfp612 perturbation produced a strong Notum induction in 151 TH Prkcd Grin2c Glut, but this was uncoupled from a broader Apc/β-catenin feedback program.",
+        "why_it_matters": "NOTUM is a secreted Wnt antagonist, and Apc and Ctnnb1 perturbations validate Notum as Wnt-responsive in the same cell class; selective Notum induction therefore points to a focused Wnt-modulatory output rather than global canonical Wnt activation.",
+        "genes": "Zfp612|Notum|Apc|Ctnnb1|Axin2|Nkd1",
+        "n_genes": "6",
+        "comparators": "Apc|Ctnnb1",
+        "cell_types": "151 TH Prkcd Grin2c Glut",
+        "n_cell_types": "1",
+        "evidence_ids": "E002|E003|E004",
+        "ref_ids": "R003|R004|R005",
+        "main_caveats": "The Notum evidence is single-gene and transcriptomic; Zfp612 binding at Notum was not measured; mature Zfp612 RNA knockdown was not significant."
+      },
+      {
+        "target_gene": "Tcf7l2",
+        "finding_id": "F001",
+        "finding_type": "cell_type_selectivity",
+        "direction": "dominant_response_in_151_TH_Prkcd_Grin2c_Glut",
+        "confidence": "high",
+        "literature_status": "refines_cell_type_context",
+        "summary": "Tcf7l2 perturbation produced an almost all-or-none response concentrated in 151 TH Prkcd Grin2c Glut cells.",
+        "why_it_matters": "The dataset resolves the Tcf7l2 effect to a narrow thalamic glutamatergic context rather than a pan-neuronal Wnt response.",
+        "genes": "Tcf7l2|Hp1bp3|Ramp3|Cck|Spock3|Kcnc2|Pcsk2",
+        "n_genes": "7",
+        "cell_types": "151 TH Prkcd Grin2c Glut|009 L2-3 IT PIR AON ENT Glut",
+        "n_cell_types": "2",
+        "evidence_ids": "E001|E002|E003",
+        "ref_ids": "R004|R005|R006",
+        "main_caveats": "The 009 cortical response was a single-gene Hp1bp3 hit and does not constitute a module; direct Tcf7l2 transcript depletion was not FDR-significant."
+      },
+      {
+        "target_gene": "Cdk8",
+        "finding_id": "F003",
+        "finding_type": "disease_mechanism_refinement",
+        "direction": "Cdk8_uncoupled_from_Ctnnb1_Tcf7l2_down_module",
+        "confidence": "moderate",
+        "literature_status": "refines_cell_type_context",
+        "summary": "In 151 TH Prkcd Grin2c Glut, a Ctnnb1/Tcf7l2 down-regulated thalamic module overlapped Med13 but was uncoupled from Cdk8.",
+        "why_it_matters": "Prior cancer literature makes CDK8 a beta-catenin cofactor, but the neuronal Ctnnb1/Tcf7l2 module in this dataset does not require a Cdk8-like signature, arguing for context-specific beta-catenin cofactor usage.",
+        "genes": "Cdk8|Med13|Ctnnb1|Tcf7l2|Plekhg1|Ramp3|Pcp4|Grin2b|Prkcd",
+        "n_genes": "9",
+        "comparators": "Med13|Ctnnb1|Tcf7l2",
+        "cell_types": "151 TH Prkcd Grin2c Glut",
+        "n_cell_types": "1",
+        "evidence_ids": "E004|E007|E008",
+        "ref_ids": "R005",
+        "main_caveats": "Mouse thalamic neurons and colon cancer cells are an indirect context match, and Cdk8 target engagement was weak."
+      }
+    ],
+    "evidence_ledger_rows": [
+      {
+        "target_gene": "Apc",
+        "evidence_id": "E004",
+        "evidence_slug": "apc_151_neuronal_marker_repression",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Gls|Grin2c|Grin2d|Cck|Chgb",
+        "n_genes": "5",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "Gls logFC -0.498, FDR 1.17e-12; Grin2c logFC -0.588, FDR 1.92e-08; Grin2d logFC -0.819, FDR 9.53e-07; Cck logFC -0.597, FDR 4.64e-08; Chgb logFC -0.460, FDR 1.45e-06.",
+        "description": "Alongside Wnt feedback induction, Apc perturbation repressed neurotransmission and peptide-hormone-associated genes, including the Grin2c marker embedded in the cell-type label."
+      },
+      {
+        "target_gene": "Apc",
+        "evidence_id": "E008",
+        "evidence_slug": "tcf7l2_partial_opposition_in_151",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Tcf7l2|Cck|Spock3|Nexn",
+        "n_genes": "4",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "Tcf7l2 perturbation: 111 perturbed cells and 106 FDR<0.05 genes; 29 genes overlapped the 303 Apc-significant genes and 27 of those 29 changed in the opposite direction; Pearson r across the Apc-significant genes was -0.214; Tcf7l2 increased Cck logFC 0.706, FDR 3.47e-12, whereas Apc decreased Cck logFC -0.597, FDR 4.64e-08; Tcf7l2 decreased Spock3 logFC -0.690, FDR 1.04e-11, whereas Apc increased Spock3 logFC 0.490, FDR 2.13e-11.",
+        "description": "The Tcf7l2 response in the same thalamic class overlapped Apc-responsive genes but did not simply reproduce the full Apc signature."
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "evidence_id": "E001",
+        "evidence_slug": "ctnnb1_target_transcript_all_cell_types",
+        "genes": "Ctnnb1",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Ctnnb1 was tested in 23 cell types; Ctnnb1 logFC was negative in 23/23, nominal p<0.05 in 14/23, and FDR<0.05 in 4/23. n_pert_matched ranged from 27 to 200 and n_ctrl_matched from 2019 to 23679.",
+        "description": "Direct target-transcript row summary for the Ctnnb1 perturbation across all measured cell types."
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "evidence_id": "E002",
+        "evidence_slug": "ctnnb1_151_broad_signature",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Ctnnb1|Plekhg1|Gabra4|Ramp3|Chgb|Dagla|Ptpru",
+        "n_genes": "7",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "171 perturbed cells versus 23679 controls; 383 genes at FDR<0.05, including 283 down and 100 up. Ctnnb1 logFC -0.593 FDR 1.83e-10; Plekhg1 logFC -1.157 FDR 3.55e-25; Gabra4 logFC -0.758 FDR 7.85e-22; Ramp3 logFC -1.367 FDR 3.00e-21; Chgb logFC 0.696 FDR 1.76e-13.",
+        "description": "The strongest downstream Ctnnb1 response occurred in 151 TH Prkcd Grin2c Glut."
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "evidence_id": "E003",
+        "evidence_slug": "ctnnb1_145_focused_down_signature",
+        "cell_type": "145 MH-LH TH Glut",
+        "genes": "Ctnnb1|Pdp1|Slc1a2|Gabra4|L1cam|Ptprm|Synpo2|Nin",
+        "n_genes": "8",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "54 perturbed cells versus 6961 controls; 8 genes at FDR<0.05 and all had negative logFC. Ctnnb1 logFC -1.220 FDR 2.12e-6; Pdp1 logFC -0.958 FDR 0.00134; Gabra4 logFC -0.809 FDR 0.00838; L1cam logFC -0.532 FDR 0.00863; Nin logFC -0.891 FDR 0.0225. Scores over the 383 FDR genes from 151 correlated with 151 at r=0.710.",
+        "description": "A smaller habenular/thalamic glutamatergic response recapitulated a subset of the 151 down-signature."
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "evidence_id": "E004",
+        "evidence_slug": "ctnnb1_066_target_only",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "genes": "Ctnnb1|Tbc1d9",
+        "n_genes": "2",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "101 perturbed cells versus 10110 controls; Ctnnb1 logFC -0.744 FDR 0.00128; 0 non-target genes at FDR<0.05. The strongest non-target row was Tbc1d9, logFC 0.539, nominal p=3.40e-4, FDR=1.0.",
+        "description": "A GABAergic class with significant target RNA reduction but no FDR-resolved downstream transcriptome."
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "evidence_id": "E005",
+        "evidence_slug": "ctnnb1_155_target_only",
+        "cell_type": "155 MB Glut",
+        "genes": "Ctnnb1|Tef",
+        "n_genes": "2",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "200 perturbed cells versus 20353 controls; Ctnnb1 logFC -0.617 FDR 0.00133; 0 non-target genes at FDR<0.05. The strongest non-target row was Tef, logFC -0.382, nominal p=1.90e-5, FDR=0.166.",
+        "description": "A midbrain glutamatergic class with significant target RNA reduction but no FDR-significant downstream gene."
+      },
+      {
+        "target_gene": "Apc",
+        "evidence_id": "E002",
+        "evidence_slug": "apc_151_th_prkcd_broad_signature",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "n_genes": "0",
+        "has_genes": "0",
+        "has_cell_type": "1",
+        "statistics": "187 perturbed cells versus 23679 controls; 17259 genes tested; 303 genes at FDR<0.05, with 150 positive and 153 negative logFC; minimum FDR=9.18e-17.",
+        "description": "The thalamic Prkcd/Grin2c glutamatergic class carried the broadest corrected Apc response."
+      },
+      {
+        "target_gene": "Apc",
+        "evidence_id": "E003",
+        "evidence_slug": "apc_151_wnt_feedback_genes",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Axin2|Nkd1|Notum",
+        "n_genes": "3",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "Axin2 logFC 1.248, FDR 2.43e-16; Nkd1 logFC 2.455, FDR 2.14e-13; Notum logFC 1.562, FDR 4.39e-09.",
+        "description": "Apc perturbation induced canonical Wnt negative-feedback targets in the strongest responding cell type."
+      },
+      {
+        "target_gene": "Apc",
+        "evidence_id": "E004",
+        "evidence_slug": "apc_151_neuronal_marker_repression",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Gls|Grin2c|Grin2d|Cck|Chgb",
+        "n_genes": "5",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "Gls logFC -0.498, FDR 1.17e-12; Grin2c logFC -0.588, FDR 1.92e-08; Grin2d logFC -0.819, FDR 9.53e-07; Cck logFC -0.597, FDR 4.64e-08; Chgb logFC -0.460, FDR 1.45e-06.",
+        "description": "Alongside Wnt feedback induction, Apc perturbation repressed neurotransmission and peptide-hormone-associated genes, including the Grin2c marker embedded in the cell-type label."
+      },
+      {
+        "target_gene": "Zfp612",
+        "evidence_id": "E002",
+        "evidence_slug": "zfp612_notum_th_prkcd_grin2c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Notum|Zfp612",
+        "n_genes": "2",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "252 Zfp612-perturbed cells versus 23679 controls; Notum score 6.821, logFC 1.014, p=9.02e-12, FDR=1.56e-7; Notum ranked 2/2046 by positive score and 3/2046 by absolute score among all perturbations in this cell type.",
+        "description": "Zfp612-targeting cells in the thalamic Prkcd/Grin2c glutamatergic class selectively upregulated Notum."
+      },
+      {
+        "target_gene": "Zfp612",
+        "evidence_id": "E003",
+        "evidence_slug": "wnt_comparators_notum_151",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Apc|Ctnnb1|Notum|Axin2|Nkd1",
+        "n_genes": "5",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "Apc perturbation, 187 cells: Notum logFC 1.562 FDR 4.39e-9, Axin2 logFC 1.248 FDR 2.43e-16, Nkd1 logFC 2.455 FDR 2.14e-13. Ctnnb1 perturbation, 171 cells: Notum logFC -1.187, p=1.80e-5, FDR=0.00162.",
+        "description": "Canonical Wnt-pathway perturbations in the same cell class controlled the expected Wnt feedback genes and moved Notum in opposite directions."
+      },
+      {
+        "target_gene": "Zfp612",
+        "evidence_id": "E004",
+        "evidence_slug": "zfp612_notum_without_axin2_nkd1_151",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Notum|Axin2|Nkd1|Ctnnb1",
+        "n_genes": "4",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "Under Zfp612 perturbation, Notum FDR=1.56e-7, whereas Axin2 logFC -0.093 p=0.399 FDR=1.000, Nkd1 logFC -0.104 p=0.721 FDR=1.000, and Ctnnb1 logFC -0.103 p=0.0161 FDR=1.000.",
+        "description": "The significant Notum induction was not accompanied by significant Axin2 or Nkd1 induction."
+      },
+      {
+        "target_gene": "Tcf7l2",
+        "evidence_id": "E001",
+        "evidence_slug": "tcf7l2_hits_across_22_cell_types",
+        "genes": "Tcf7l2|Hp1bp3",
+        "n_genes": "2",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Tcf7l2 was tested in 22 cell types; 107 total genes reached per-cell-type FDR<0.05, with 106/107 in 151 TH Prkcd Grin2c Glut and the remaining singleton Hp1bp3 in 009 L2-3 IT PIR AON ENT Glut; 20/22 cell types had zero FDR<0.05 genes.",
+        "description": "Cell-type distribution of significant Wilcoxon differential-expression hits for the Tcf7l2 perturbation."
+      },
+      {
+        "target_gene": "Tcf7l2",
+        "evidence_id": "E002",
+        "evidence_slug": "tcf7l2_151_th_core_signature",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Ramp3|Cck|Spock3|Kcnc2|Pcsk2|Plekhg1|Mmp15|Macroh2a1",
+        "n_genes": "8",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "111 perturbed cells versus 23679 controls; 106 genes at FDR<0.05 and 140 at FDR<0.1; among FDR<0.05 genes 67 decreased and 39 increased. Ramp3 logFC -1.285 FDR 3.11e-17; Cck logFC 0.706 FDR 3.47e-12; Spock3 logFC -0.690 FDR 1.04e-11; Kcnc2 logFC -0.429 FDR 2.13e-10; Pcsk2 logFC -0.701 FDR 5.21e-10.",
+        "description": "The dominant Tcf7l2 perturbation response is a bidirectional thalamic glutamatergic transcriptional signature."
+      },
+      {
+        "target_gene": "Tcf7l2",
+        "evidence_id": "E003",
+        "evidence_slug": "tcf7l2_target_transcript_measurement",
+        "genes": "Tcf7l2",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "The Tcf7l2 transcript row was not FDR-significant in any of 22 cell types; the lowest self FDR was in 151 TH Prkcd Grin2c Glut: logFC -0.210, Wilcoxon score -2.267, nominal p 0.0234, FDR 0.637.",
+        "description": "Direct measurement of the targeted transcript shows weak transcript-level engagement in the DE table."
+      },
+      {
+        "target_gene": "Cdk8",
+        "evidence_id": "E004",
+        "evidence_slug": "med13_151_th_prkcd_grin2b_module",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Med13|Prkcd|Grin2b|Plekhg1|Pcp4|Lrrtm1|Atp2a2|Grm1|Ramp3|Scnm1",
+        "n_genes": "10",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "154 Med13 cells versus 23,679 controls; 11 genes at FDR<0.05, including Prkcd logFC -0.427 FDR=2.46e-04, Grin2b -0.249 FDR=0.00110, Plekhg1 -0.317 FDR=0.00195, Pcp4 -0.324 FDR=0.00276, Lrrtm1 -0.382 FDR=0.00276, Atp2a2 -0.236 FDR=0.00276, Grm1 -0.229 FDR=0.00702, Ramp3 -0.304 FDR=0.00814, and Scnm1 +0.634 FDR=0.0434.",
+        "description": "Med13 produced a corrected thalamic neuronal module that was absent from Cdk8."
+      },
+      {
+        "target_gene": "Cdk8",
+        "evidence_id": "E007",
+        "evidence_slug": "ctnnb1_tcf7l2_151_th_strong_signatures",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Ctnnb1|Tcf7l2|Plekhg1|Ramp3|Pcp4|Grin2b|Prkcd",
+        "n_genes": "7",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "Ctnnb1 perturbation, n=171, had 383 FDR<0.05 genes in 151 TH; top shared module genes included Plekhg1 logFC -1.157 FDR=3.55e-25, Ramp3 -1.367 FDR=3.00e-21, Pcp4 -0.651 FDR=9.48e-11, Grin2b -0.379 FDR=3.14e-09, and Prkcd -0.678 FDR=1.97e-09. Tcf7l2 perturbation, n=111, had 106 FDR<0.05 genes, including Ramp3 FDR=3.11e-17, Plekhg1 FDR=3.20e-09, Pcp4 FDR=1.37e-06, Grin2b FDR=5.15e-04, and Prkcd FDR=7.74e-04.",
+        "description": "Ctnnb1 and Tcf7l2 produced strong, overlapping signatures in the same thalamic class where Cdk8 was nearly null."
+      },
+      {
+        "target_gene": "Cdk8",
+        "evidence_id": "E008",
+        "evidence_slug": "151_th_signature_overlap_uncouples_cdk8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Cdk8|Med13|Ctnnb1|Tcf7l2",
+        "n_genes": "4",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "All-gene Pearson score correlations in 151 TH: Med13-Ctnnb1 r=0.168, Med13-Tcf7l2 r=0.062, Cdk8-Ctnnb1 r=-0.036, Cdk8-Tcf7l2 r=-0.053, Cdk8-Med13 r=-0.047. Top-50 nominal gene overlap: Med13 with Ctnnb1=13, Med13 with Tcf7l2=7, Cdk8 with Med13=0, Cdk8 with Ctnnb1=1, Cdk8 with Tcf7l2=1.",
+        "description": "The thalamic Cdk8 vector failed to align with Med13, Ctnnb1, or Tcf7l2 despite shared candidate genes in the comparator signatures."
+      }
+    ],
+    "exact_de_rows": [
+      {
+        "target_gene": "Apc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Apc",
+        "score": 0.882125,
+        "logfoldchange": 0.077503,
+        "pval": 0.37770893427915175,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Apc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Axin2",
+        "score": 9.182255,
+        "logfoldchange": 1.247567,
+        "pval": 4.221567375352711e-20,
+        "pvals_adj": 2.428667711040415e-16
+      },
+      {
+        "target_gene": "Apc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cck",
+        "score": -6.504449,
+        "logfoldchange": -0.596844,
+        "pval": 7.797869886389213e-11,
+        "pvals_adj": 4.640808150661773e-08
+      },
+      {
+        "target_gene": "Apc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cdh2",
+        "score": 2.930862,
+        "logfoldchange": 0.183001,
+        "pval": 0.003380230718070317,
+        "pvals_adj": 0.13109977969252942
+      },
+      {
+        "target_gene": "Apc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cdk8",
+        "score": -0.773872,
+        "logfoldchange": -0.078823,
+        "pval": 0.4390062189483088,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Apc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Chgb",
+        "score": -5.893542,
+        "logfoldchange": -0.459806,
+        "pval": 3.78003638217587e-09,
+        "pvals_adj": 1.4497699537771854e-06
+      },
+      {
+        "target_gene": "Apc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ctnnb1",
+        "score": 3.012523,
+        "logfoldchange": 0.201455,
+        "pval": 0.00259085661875517,
+        "pvals_adj": 0.10774842020023007
+      },
+      {
+        "target_gene": "Apc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gabbr2",
+        "score": -3.076011,
+        "logfoldchange": -0.105234,
+        "pval": 0.0020979018751363047,
+        "pvals_adj": 0.0942326504299327
+      },
+      {
+        "target_gene": "Apc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gabra4",
+        "score": 4.187659,
+        "logfoldchange": 0.185583,
+        "pval": 2.818469606286399e-05,
+        "pvals_adj": 0.003021364405894221
+      },
+      {
+        "target_gene": "Apc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gabrb2",
+        "score": 0.197256,
+        "logfoldchange": -0.004022,
+        "pval": 0.8436269916136203,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Apc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gls",
+        "score": -8.136604,
+        "logfoldchange": -0.497759,
+        "pval": 4.0651836425410386e-16,
+        "pvals_adj": 1.1693500747769297e-12
+      },
+      {
+        "target_gene": "Apc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gria2",
+        "score": 2.672052,
+        "logfoldchange": 0.10569,
+        "pval": 0.007538898961206846,
+        "pvals_adj": 0.22572628870780187
+      },
+      {
+        "target_gene": "Apc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Grin2b",
+        "score": 4.730267,
+        "logfoldchange": 0.174163,
+        "pval": 2.2422515858702532e-06,
+        "pvals_adj": 0.0003989589703147907
+      },
+      {
+        "target_gene": "Apc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Grin2c",
+        "score": -6.646481,
+        "logfoldchange": -0.588384,
+        "pval": 3.0018291797932184e-11,
+        "pvals_adj": 1.9188359190389318e-08
+      },
+      {
+        "target_gene": "Apc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kcnc2",
+        "score": 4.147364,
+        "logfoldchange": 0.149735,
+        "pval": 3.363258980214396e-05,
+        "pvals_adj": 0.0035394199231414793
+      },
+      {
+        "target_gene": "Apc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lef1",
+        "score": 3.228401,
+        "logfoldchange": 0.182366,
+        "pval": 0.0012448451739278084,
+        "pvals_adj": 0.0655023867585977
+      },
+      {
+        "target_gene": "Apc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Nexn",
+        "score": 7.002824,
+        "logfoldchange": 0.825072,
+        "pval": 2.5085329102450512e-12,
+        "pvals_adj": 2.546751146936432e-09
+      },
+      {
+        "target_gene": "Apc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Nkd1",
+        "score": 8.361172,
+        "logfoldchange": 2.454777,
+        "pval": 6.209840363521782e-17,
+        "pvals_adj": 2.1435126966804486e-13
+      },
+      {
+        "target_gene": "Apc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Notum",
+        "score": 6.910241,
+        "logfoldchange": 1.562177,
+        "pval": 4.838319208408041e-12,
+        "pvals_adj": 4.39497637989023e-09
+      },
+      {
+        "target_gene": "Apc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Pcsk2",
+        "score": 5.627662,
+        "logfoldchange": 0.353505,
+        "pval": 1.8266856732838365e-08,
+        "pvals_adj": 6.0628400067703335e-06
+      },
+      {
+        "target_gene": "Apc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Prkcd",
+        "score": -2.848087,
+        "logfoldchange": -0.087438,
+        "pval": 0.0043982900670503445,
+        "pvals_adj": 0.15619359725765822
+      },
+      {
+        "target_gene": "Apc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ramp3",
+        "score": 4.343133,
+        "logfoldchange": 0.259809,
+        "pval": 1.4046487163963459e-05,
+        "pvals_adj": 0.0017850279737103571
+      },
+      {
+        "target_gene": "Apc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Robo1",
+        "score": 3.537602,
+        "logfoldchange": 0.341195,
+        "pval": 0.0004037779030141099,
+        "pvals_adj": 0.028692669780381316
+      },
+      {
+        "target_gene": "Apc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Snap25",
+        "score": -0.805734,
+        "logfoldchange": -0.034269,
+        "pval": 0.42039651118864685,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Apc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Spock3",
+        "score": 7.740813,
+        "logfoldchange": 0.490164,
+        "pval": 9.878300418259804e-15,
+        "pvals_adj": 2.1311198364843246e-11
+      },
+      {
+        "target_gene": "Apc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Tcf7l2",
+        "score": -3.564519,
+        "logfoldchange": -0.270499,
+        "pval": 0.00036452413414378416,
+        "pvals_adj": 0.026213841796614876
+      },
+      {
+        "target_gene": "Apc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Zfp612",
+        "score": -0.347291,
+        "logfoldchange": -0.049449,
+        "pval": 0.7283726846467926,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cdk8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Apc",
+        "score": 1.553398,
+        "logfoldchange": 0.131163,
+        "pval": 0.12032818019205176,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cdk8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Axin2",
+        "score": -0.38826,
+        "logfoldchange": -0.072612,
+        "pval": 0.6978236226423686,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cdk8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cck",
+        "score": 2.098059,
+        "logfoldchange": 0.12173,
+        "pval": 0.0358998998967245,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cdk8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cdh2",
+        "score": -0.236064,
+        "logfoldchange": -0.007912,
+        "pval": 0.8133827930174637,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cdk8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cdk8",
+        "score": -2.520714,
+        "logfoldchange": -0.243057,
+        "pval": 0.011711688811327482,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cdk8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Chgb",
+        "score": 1.351124,
+        "logfoldchange": 0.072132,
+        "pval": 0.17665583669335538,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cdk8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ctnnb1",
+        "score": 3.859073,
+        "logfoldchange": 0.235747,
+        "pval": 0.00011381812171028306,
+        "pvals_adj": 0.6547956541992584
+      },
+      {
+        "target_gene": "Cdk8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gabbr2",
+        "score": 1.848368,
+        "logfoldchange": 0.057928,
+        "pval": 0.06454919402047701,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cdk8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gabra4",
+        "score": 0.635544,
+        "logfoldchange": 0.046494,
+        "pval": 0.5250737317639471,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cdk8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gabrb2",
+        "score": 1.48843,
+        "logfoldchange": 0.075537,
+        "pval": 0.1366375406510503,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cdk8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gls",
+        "score": -0.441414,
+        "logfoldchange": -0.013447,
+        "pval": 0.6589133730111532,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cdk8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gria2",
+        "score": 0.219587,
+        "logfoldchange": 0.021398,
+        "pval": 0.8261927419569388,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cdk8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Grin2b",
+        "score": 1.018993,
+        "logfoldchange": 0.033346,
+        "pval": 0.30820616025959424,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cdk8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Grin2c",
+        "score": 0.546413,
+        "logfoldchange": 0.082875,
+        "pval": 0.5847823729366333,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cdk8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kcnc2",
+        "score": 1.586305,
+        "logfoldchange": 0.063595,
+        "pval": 0.11267022321662731,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cdk8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lef1",
+        "score": 0.838165,
+        "logfoldchange": 0.065008,
+        "pval": 0.4019381075210017,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cdk8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Nexn",
+        "score": 0.422534,
+        "logfoldchange": 0.071451,
+        "pval": 0.6726352698004787,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cdk8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Nkd1",
+        "score": -0.490782,
+        "logfoldchange": -0.117722,
+        "pval": 0.6235803843215882,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cdk8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Notum",
+        "score": -0.020646,
+        "logfoldchange": -0.070622,
+        "pval": 0.983527707701139,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cdk8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Pcsk2",
+        "score": 1.902415,
+        "logfoldchange": 0.093459,
+        "pval": 0.05711689554460116,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cdk8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Prkcd",
+        "score": 2.124799,
+        "logfoldchange": 0.144055,
+        "pval": 0.03360336201109084,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cdk8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ramp3",
+        "score": 1.765519,
+        "logfoldchange": 0.132827,
+        "pval": 0.07747658854633277,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cdk8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Robo1",
+        "score": 0.491613,
+        "logfoldchange": 0.038814,
+        "pval": 0.6229929100816405,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cdk8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Snap25",
+        "score": 2.312326,
+        "logfoldchange": 0.076622,
+        "pval": 0.020759734126763223,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cdk8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Spock3",
+        "score": 1.485091,
+        "logfoldchange": 0.091455,
+        "pval": 0.1375196110558837,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cdk8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Tcf7l2",
+        "score": -0.450567,
+        "logfoldchange": -0.01762,
+        "pval": 0.6523014268770814,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Cdk8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Zfp612",
+        "score": 1.346607,
+        "logfoldchange": 0.138919,
+        "pval": 0.17810671667444444,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Apc",
+        "score": -1.850354,
+        "logfoldchange": -0.216922,
+        "pval": 0.06426257326393897,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Axin2",
+        "score": -3.769006,
+        "logfoldchange": -0.809433,
+        "pval": 0.00016389919298797148,
+        "pvals_adj": 0.13691319086250198
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Cck",
+        "score": 0.928448,
+        "logfoldchange": 0.226881,
+        "pval": 0.35317499129112584,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Cdh2",
+        "score": -2.05427,
+        "logfoldchange": -0.290914,
+        "pval": 0.03994958696912802,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Cdk8",
+        "score": 0.897588,
+        "logfoldchange": 0.135891,
+        "pval": 0.3694053088460947,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Chgb",
+        "score": 0.268673,
+        "logfoldchange": 0.067782,
+        "pval": 0.7881816081133851,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Ctnnb1",
+        "score": -6.430909,
+        "logfoldchange": -1.219567,
+        "pval": 1.268433837948021e-10,
+        "pvals_adj": 2.1191724130597588e-06
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Gabbr2",
+        "score": -1.401509,
+        "logfoldchange": -0.208466,
+        "pval": 0.16106183631530901,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Gabra4",
+        "score": -4.780188,
+        "logfoldchange": -0.808981,
+        "pval": 1.7513182612601957e-06,
+        "pvals_adj": 0.008375118259206426
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Gabrb2",
+        "score": -2.632324,
+        "logfoldchange": -0.294038,
+        "pval": 0.008480293111220675,
+        "pvals_adj": 0.7798424371458961
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Gls",
+        "score": 0.047792,
+        "logfoldchange": 0.051064,
+        "pval": 0.9618822065765013,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Gria2",
+        "score": 1.725765,
+        "logfoldchange": 0.174595,
+        "pval": 0.0843897520874761,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Grin2b",
+        "score": -0.936509,
+        "logfoldchange": -0.087499,
+        "pval": 0.3490110196859344,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Grin2c",
+        "score": -0.084082,
+        "logfoldchange": 0.018762,
+        "pval": 0.9329908686789334,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Kcnc2",
+        "score": -1.420161,
+        "logfoldchange": -0.191525,
+        "pval": 0.15556094926373984,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Lef1",
+        "score": -3.801283,
+        "logfoldchange": -1.127586,
+        "pval": 0.0001439489092702424,
+        "pvals_adj": 0.13079432460983095
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Nexn",
+        "score": -2.563588,
+        "logfoldchange": -1.050637,
+        "pval": 0.010359656019216306,
+        "pvals_adj": 0.8481933286625969
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Nkd1",
+        "score": -3.562897,
+        "logfoldchange": -1.789301,
+        "pval": 0.0003667841234144278,
+        "pvals_adj": 0.1976729790285434
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Notum",
+        "score": -0.979276,
+        "logfoldchange": -1.600792,
+        "pval": 0.327443781775577,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Pcsk2",
+        "score": -3.506269,
+        "logfoldchange": -0.494312,
+        "pval": 0.00045443567506631876,
+        "pvals_adj": 0.2300683885858481
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Prkcd",
+        "score": -0.880387,
+        "logfoldchange": -0.572951,
+        "pval": 0.37864975941078205,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Ramp3",
+        "score": -2.917152,
+        "logfoldchange": -1.422867,
+        "pval": 0.0035324342289900375,
+        "pvals_adj": 0.5931138965160017
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Robo1",
+        "score": -2.415592,
+        "logfoldchange": -0.545802,
+        "pval": 0.01570966809852529,
+        "pvals_adj": 0.9968597947622403
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Snap25",
+        "score": -1.208757,
+        "logfoldchange": -0.06522,
+        "pval": 0.22675619298911442,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Spock3",
+        "score": -0.807772,
+        "logfoldchange": -0.195945,
+        "pval": 0.4192219932508221,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Tcf7l2",
+        "score": 0.36284,
+        "logfoldchange": 0.000338,
+        "pval": 0.7167247078010054,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Zfp612",
+        "score": 0.91064,
+        "logfoldchange": 0.121773,
+        "pval": 0.3624848865634509,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Apc",
+        "score": 0.801775,
+        "logfoldchange": 0.02962,
+        "pval": 0.4226830711535082,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Axin2",
+        "score": -5.854839,
+        "logfoldchange": -0.942871,
+        "pval": 4.774717519347332e-09,
+        "pvals_adj": 1.209737937386848e-06
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cck",
+        "score": 0.703648,
+        "logfoldchange": 0.009987,
+        "pval": 0.4816519239074547,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cdh2",
+        "score": -4.98728,
+        "logfoldchange": -0.44681,
+        "pval": 6.123523799348906e-07,
+        "pvals_adj": 9.032982671193399e-05
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cdk8",
+        "score": 0.015879,
+        "logfoldchange": -0.002319,
+        "pval": 0.9873310139540878,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Chgb",
+        "score": 8.246308,
+        "logfoldchange": 0.696056,
+        "pval": 1.6336224119131723e-16,
+        "pvals_adj": 1.76216807545059e-13
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ctnnb1",
+        "score": -7.298302,
+        "logfoldchange": -0.592808,
+        "pval": 2.9142219222566914e-13,
+        "pvals_adj": 1.825852512718514e-10
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gabbr2",
+        "score": -5.74979,
+        "logfoldchange": -0.304188,
+        "pval": 8.935437835226372e-09,
+        "pvals_adj": 2.084009751326648e-06
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gabra4",
+        "score": -10.495103,
+        "logfoldchange": -0.75827,
+        "pval": 9.097898923718282e-26,
+        "pvals_adj": 7.851031876222692e-22
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gabrb2",
+        "score": -7.501952,
+        "logfoldchange": -0.413462,
+        "pval": 6.287448680893493e-14,
+        "pvals_adj": 5.167384608740038e-11
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gls",
+        "score": 3.172868,
+        "logfoldchange": 0.134159,
+        "pval": 0.0015094115943292967,
+        "pvals_adj": 0.06293100297817797
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gria2",
+        "score": 4.968157,
+        "logfoldchange": 0.226979,
+        "pval": 6.75920568038195e-07,
+        "pvals_adj": 9.803120238463199e-05
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Grin2b",
+        "score": -6.863447,
+        "logfoldchange": -0.37894,
+        "pval": 6.721862060903847e-12,
+        "pvals_adj": 3.1354761434902565e-09
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Grin2c",
+        "score": 3.02716,
+        "logfoldchange": 0.168746,
+        "pval": 0.002468631902824165,
+        "pvals_adj": 0.09158634731391588
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kcnc2",
+        "score": -7.363556,
+        "logfoldchange": -0.355662,
+        "pval": 1.7907413061829925e-13,
+        "pvals_adj": 1.188707853977395e-10
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lef1",
+        "score": -8.270068,
+        "logfoldchange": -0.623593,
+        "pval": 1.3388199169638471e-16,
+        "pvals_adj": 1.6241295713381565e-13
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Nexn",
+        "score": -4.0803,
+        "logfoldchange": -0.527205,
+        "pval": 4.497765692726009e-05,
+        "pvals_adj": 0.003679001805249203
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Nkd1",
+        "score": -3.183079,
+        "logfoldchange": -1.208847,
+        "pval": 0.0014571805547331147,
+        "pvals_adj": 0.06149016917882354
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Notum",
+        "score": -4.291279,
+        "logfoldchange": -1.187146,
+        "pval": 1.7764706666521874e-05,
+        "pvals_adj": 0.0016222278960714338
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Pcsk2",
+        "score": -7.244234,
+        "logfoldchange": -0.593296,
+        "pval": 4.3489188872042054e-13,
+        "pvals_adj": 2.501933035808579e-10
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Prkcd",
+        "score": -6.938583,
+        "logfoldchange": -0.677504,
+        "pval": 3.9605237893824045e-12,
+        "pvals_adj": 1.9746780948356888e-09
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ramp3",
+        "score": -10.329074,
+        "logfoldchange": -1.367185,
+        "pval": 5.206094081873525e-25,
+        "pvals_adj": 2.995065925301839e-21
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Robo1",
+        "score": -2.525094,
+        "logfoldchange": -0.256778,
+        "pval": 0.011566731462289802,
+        "pvals_adj": 0.27764259939538616
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Snap25",
+        "score": 0.024808,
+        "logfoldchange": -0.004019,
+        "pval": 0.9802084089179863,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Spock3",
+        "score": -8.352835,
+        "logfoldchange": -0.576161,
+        "pval": 6.66437359074939e-17,
+        "pvals_adj": 9.58503531689531e-14
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Tcf7l2",
+        "score": 1.292231,
+        "logfoldchange": 0.054508,
+        "pval": 0.19627699268465537,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Zfp612",
+        "score": -1.908041,
+        "logfoldchange": -0.220104,
+        "pval": 0.05638587295346852,
+        "pvals_adj": 0.6797920261269114
+      },
+      {
+        "target_gene": "Tcf7l2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Apc",
+        "score": -0.866479,
+        "logfoldchange": -0.08523,
+        "pval": 0.3862275771147472,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Tcf7l2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Axin2",
+        "score": 1.632372,
+        "logfoldchange": 0.30419,
+        "pval": 0.1026011745022949,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Tcf7l2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cck",
+        "score": 8.138087,
+        "logfoldchange": 0.706134,
+        "pval": 4.015700112348057e-16,
+        "pvals_adj": 3.4653484119507556e-12
+      },
+      {
+        "target_gene": "Tcf7l2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cdh2",
+        "score": -3.863016,
+        "logfoldchange": -0.357784,
+        "pval": 0.00011199549071280829,
+        "pvals_adj": 0.025102989275485172
+      },
+      {
+        "target_gene": "Tcf7l2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cdk8",
+        "score": 0.705203,
+        "logfoldchange": 0.074358,
+        "pval": 0.4806837186011358,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Tcf7l2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Chgb",
+        "score": 3.785232,
+        "logfoldchange": 0.418477,
+        "pval": 0.00015356507371940966,
+        "pvals_adj": 0.030818367527015014
+      },
+      {
+        "target_gene": "Tcf7l2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ctnnb1",
+        "score": 1.940946,
+        "logfoldchange": 0.131127,
+        "pval": 0.05226488929312655,
+        "pvals_adj": 0.8575073499041321
+      },
+      {
+        "target_gene": "Tcf7l2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gabbr2",
+        "score": -4.057823,
+        "logfoldchange": -0.231395,
+        "pval": 4.95322893775465e-05,
+        "pvals_adj": 0.012759369886075747
+      },
+      {
+        "target_gene": "Tcf7l2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gabra4",
+        "score": -3.551624,
+        "logfoldchange": -0.240357,
+        "pval": 0.0003828620018997831,
+        "pvals_adj": 0.06091095784670653
+      },
+      {
+        "target_gene": "Tcf7l2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gabrb2",
+        "score": -2.5661,
+        "logfoldchange": -0.186303,
+        "pval": 0.010284924681026852,
+        "pvals_adj": 0.428020576475841
+      },
+      {
+        "target_gene": "Tcf7l2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gls",
+        "score": 2.966747,
+        "logfoldchange": 0.191158,
+        "pval": 0.003009687289309169,
+        "pvals_adj": 0.22389738330252995
+      },
+      {
+        "target_gene": "Tcf7l2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gria2",
+        "score": 2.401305,
+        "logfoldchange": 0.122122,
+        "pval": 0.01633669142785522,
+        "pvals_adj": 0.5280055381148937
+      },
+      {
+        "target_gene": "Tcf7l2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Grin2b",
+        "score": -4.91189,
+        "logfoldchange": -0.229184,
+        "pval": 9.020279583927075e-07,
+        "pvals_adj": 0.0005145672288935645
+      },
+      {
+        "target_gene": "Tcf7l2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Grin2c",
+        "score": -0.410122,
+        "logfoldchange": -0.010466,
+        "pval": 0.681716150298551,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Tcf7l2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kcnc2",
+        "score": -7.533796,
+        "logfoldchange": -0.428849,
+        "pval": 4.928614198268834e-14,
+        "pvals_adj": 2.1265738111980452e-10
+      },
+      {
+        "target_gene": "Tcf7l2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lef1",
+        "score": -4.464565,
+        "logfoldchange": -0.304918,
+        "pval": 8.023148341553423e-06,
+        "pvals_adj": 0.0028259493311606227
+      },
+      {
+        "target_gene": "Tcf7l2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Nexn",
+        "score": -6.22809,
+        "logfoldchange": -1.139307,
+        "pval": 4.721570565695048e-10,
+        "pvals_adj": 8.107438260655489e-07
+      },
+      {
+        "target_gene": "Tcf7l2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Nkd1",
+        "score": -0.127294,
+        "logfoldchange": -0.017759,
+        "pval": 0.8987073785957058,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Tcf7l2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Notum",
+        "score": 2.164061,
+        "logfoldchange": 0.582977,
+        "pval": 0.030459705871939025,
+        "pvals_adj": 0.712336129598639
+      },
+      {
+        "target_gene": "Tcf7l2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Pcsk2",
+        "score": -7.386249,
+        "logfoldchange": -0.700998,
+        "pval": 1.5102937911707658e-13,
+        "pvals_adj": 5.213232108363249e-10
+      },
+      {
+        "target_gene": "Tcf7l2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Prkcd",
+        "score": -4.820093,
+        "logfoldchange": -0.441609,
+        "pval": 1.4349104901343294e-06,
+        "pvals_adj": 0.0007739100046633872
+      },
+      {
+        "target_gene": "Tcf7l2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ramp3",
+        "score": -9.515967,
+        "logfoldchange": -1.285226,
+        "pval": 1.8002947104274125e-21,
+        "pvals_adj": 3.1071286407266714e-17
+      },
+      {
+        "target_gene": "Tcf7l2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Robo1",
+        "score": -3.72421,
+        "logfoldchange": -0.498234,
+        "pval": 0.0001959276312607085,
+        "pvals_adj": 0.0371595053618524
+      },
+      {
+        "target_gene": "Tcf7l2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Snap25",
+        "score": 5.424939,
+        "logfoldchange": 0.274468,
+        "pval": 5.7974252507767904e-08,
+        "pvals_adj": 5.266198021218769e-05
+      },
+      {
+        "target_gene": "Tcf7l2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Spock3",
+        "score": -7.953712,
+        "logfoldchange": -0.690024,
+        "pval": 1.8100414524163317e-15,
+        "pvals_adj": 1.0413168475751155e-11
+      },
+      {
+        "target_gene": "Tcf7l2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Tcf7l2",
+        "score": -2.266918,
+        "logfoldchange": -0.209507,
+        "pval": 0.023395211761459755,
+        "pvals_adj": 0.6374713915346278
+      },
+      {
+        "target_gene": "Tcf7l2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Zfp612",
+        "score": 1.252283,
+        "logfoldchange": 0.17051,
+        "pval": 0.2104669233622427,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Zfp612",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Apc",
+        "score": -0.088542,
+        "logfoldchange": -0.002774,
+        "pval": 0.9294455777004762,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Zfp612",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Axin2",
+        "score": -0.843642,
+        "logfoldchange": -0.093385,
+        "pval": 0.398869656227399,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Zfp612",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cck",
+        "score": 0.597755,
+        "logfoldchange": 0.033778,
+        "pval": 0.5500032651880102,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Zfp612",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cdh2",
+        "score": 0.379589,
+        "logfoldchange": 0.031463,
+        "pval": 0.7042503322367375,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Zfp612",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cdk8",
+        "score": 0.318231,
+        "logfoldchange": 0.021065,
+        "pval": 0.750309653930356,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Zfp612",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Chgb",
+        "score": 0.228405,
+        "logfoldchange": -0.011723,
+        "pval": 0.8193311544741659,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Zfp612",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ctnnb1",
+        "score": -2.405514,
+        "logfoldchange": -0.10293,
+        "pval": 0.016149746804622122,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Zfp612",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gabbr2",
+        "score": -0.680257,
+        "logfoldchange": -0.0438,
+        "pval": 0.49634193431742024,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Zfp612",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gabra4",
+        "score": -0.547095,
+        "logfoldchange": -0.007353,
+        "pval": 0.5843136407704465,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Zfp612",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gabrb2",
+        "score": -0.152889,
+        "logfoldchange": -0.017688,
+        "pval": 0.8784858311981375,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Zfp612",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gls",
+        "score": 1.555565,
+        "logfoldchange": 0.0736,
+        "pval": 0.11981151576257967,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Zfp612",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gria2",
+        "score": 0.202605,
+        "logfoldchange": 0.01236,
+        "pval": 0.8394435655808252,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Zfp612",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Grin2b",
+        "score": -1.150836,
+        "logfoldchange": -0.050929,
+        "pval": 0.24979974403713645,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Zfp612",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Grin2c",
+        "score": 2.459754,
+        "logfoldchange": 0.110642,
+        "pval": 0.013903234557435829,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Zfp612",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kcnc2",
+        "score": -2.512903,
+        "logfoldchange": -0.094863,
+        "pval": 0.0119742218206679,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Zfp612",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lef1",
+        "score": -0.548616,
+        "logfoldchange": -0.039369,
+        "pval": 0.5832687004796215,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Zfp612",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Nexn",
+        "score": -0.232407,
+        "logfoldchange": -0.017034,
+        "pval": 0.8162221916086889,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Zfp612",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Nkd1",
+        "score": -0.357048,
+        "logfoldchange": -0.104042,
+        "pval": 0.7210558510286562,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Zfp612",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Notum",
+        "score": 6.821368,
+        "logfoldchange": 1.01358,
+        "pval": 9.017748161988694e-12,
+        "pvals_adj": 1.5563731552776287e-07
+      },
+      {
+        "target_gene": "Zfp612",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Pcsk2",
+        "score": -1.241844,
+        "logfoldchange": -0.064976,
+        "pval": 0.21429404802504837,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Zfp612",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Prkcd",
+        "score": -0.363167,
+        "logfoldchange": -0.029199,
+        "pval": 0.7164802217198383,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Zfp612",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ramp3",
+        "score": -0.226893,
+        "logfoldchange": -0.032757,
+        "pval": 0.8205071067163012,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Zfp612",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Robo1",
+        "score": 0.867219,
+        "logfoldchange": 0.074989,
+        "pval": 0.38582214604470444,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Zfp612",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Snap25",
+        "score": 0.881331,
+        "logfoldchange": 0.021499,
+        "pval": 0.3781386276426254,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Zfp612",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Spock3",
+        "score": -2.761173,
+        "logfoldchange": -0.127274,
+        "pval": 0.0057594169139977,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Zfp612",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Tcf7l2",
+        "score": 0.63098,
+        "logfoldchange": 0.032004,
+        "pval": 0.5280533344707259,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Zfp612",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Zfp612",
+        "score": 0.58785,
+        "logfoldchange": 0.086369,
+        "pval": 0.5566326619525219,
+        "pvals_adj": 1.0
+      }
+    ]
+  },
+  "caveats": [
+    "Tcf7l2 was a partial antagonist of the Apc state rather than a perfect inverse.",
+    "The Cdk8 and Zfp612 branches were comparator evidence, not equal drivers of the Wnt-node claim."
+  ],
+  "prior_expectation": {
+    "citations": [
+      {
+        "target_gene": "Apc",
+        "ref_id": "R007",
+        "ref_slug": "lipiec_2020_tcf7l2_thalamus",
+        "source": "Development",
+        "source_type": "pubmed",
+        "citation": "Lipiec MA, Bem J, Koziński K, Chakraborty C, Urban-Ciećko J, Zajkowski T, Dąbrowski M, Szewczyk ŁM, Toval A, Ferran JL, Nagalski A, Wiśniewska MB. TCF7L2 regulates postmitotic differentiation programmes and excitability patterns in the thalamus. Development. 2020;147(16):dev190181. PMID: 32675279.",
+        "url": "https://doi.org/10.1242/dev.190181",
+        "description": "Mouse knockout study showing that TCF7L2 regulates thalamic and habenular differentiation, migration/axon-guidance programs, and postnatal electrophysiological-gene induction."
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "ref_id": "R004",
+        "ref_slug": "maguschak_ressler_2012_beta_catenin_synapse",
+        "source": "Neuropharmacology",
+        "source_type": "review",
+        "citation": "Maguschak KA, Ressler KJ. The dynamic role of beta-catenin in synaptic plasticity. Neuropharmacology. 2012;62(1):78-88.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/21903109/",
+        "description": "Review summarizing beta-catenin regulation of synaptic remodeling, cadherin association, and memory-related plasticity."
+      },
+      {
+        "target_gene": "Ctnnb1",
+        "ref_id": "R005",
+        "ref_slug": "tai_2007_ncadherin_endocytosis",
+        "source": "Neuron",
+        "source_type": "pubmed",
+        "citation": "Tai CY, Mysore SP, Chiu C, Schuman EM. Activity-regulated N-cadherin endocytosis. Neuron. 2007;54(5):771-785.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/17553425/",
+        "description": "Primary neuronal study showing that beta-catenin regulates N-cadherin endocytosis in response to NMDAR stimulation."
+      },
+      {
+        "target_gene": "Apc",
+        "ref_id": "R001",
+        "ref_slug": "reactome_apc_mutants",
+        "source": "Reactome",
+        "source_type": "database",
+        "citation": "Reactome. Signaling by APC mutants, R-HSA-4839744. Reactome ContentService; accessed 2025-04-29.",
+        "url": "https://reactome.org/content/detail/R-HSA-4839744",
+        "description": "Curated pathway entry describing APC as a central destruction-complex component that binds AXIN, GSK3, CK1, PP2A and beta-catenin and limits beta-catenin signaling."
+      },
+      {
+        "target_gene": "Apc",
+        "ref_id": "R004",
+        "ref_slug": "jho_2002_axin2_wnt_target",
+        "source": "Molecular and Cellular Biology",
+        "source_type": "pubmed",
+        "citation": "Jho EH, Zhang T, Domon C, Joo CK, Freund JN, Costantini F. Wnt/beta-catenin/Tcf signaling induces the transcription of Axin2, a negative regulator of the signaling pathway. Mol Cell Biol. 2002;22(4):1172-1183. PMID: 11809808.",
+        "url": "https://doi.org/10.1128/MCB.22.4.1172-1183.2002",
+        "description": "Establishes Axin2 as a Wnt/beta-catenin/TCF-induced negative regulator and feedback readout."
+      },
+      {
+        "target_gene": "Apc",
+        "ref_id": "R005",
+        "ref_slug": "larraguibel_2015_nkd1_feedback",
+        "source": "Molecular Biology of the Cell",
+        "source_type": "pubmed",
+        "citation": "Larraguibel J, Weiss AR, Pasula DJ, Dhaliwal RS, Kondra R, Van Raay TJ. Wnt ligand-dependent activation of the negative feedback regulator Nkd1. Mol Biol Cell. 2015;26(12):2375-2384. PMID: 25904337.",
+        "url": "https://doi.org/10.1091/mbc.E14-12-1648",
+        "description": "Describes Nkd1 as an obligate Wnt-induced negative-feedback regulator."
+      },
+      {
+        "target_gene": "Apc",
+        "ref_id": "R006",
+        "ref_slug": "kakugawa_2015_notum_wnt_antagonist",
+        "source": "Nature",
+        "source_type": "pubmed",
+        "citation": "Kakugawa S, Langton PF, Zebisch M, Howell S, Chang TH, Liu Y, Feizi T, Bineva G, O'Reilly N, Snijders AP, Jones EY, Vincent JP. Notum deacylates Wnt proteins to suppress signalling activity. Nature. 2015;519(7542):187-192. PMID: 25731175.",
+        "url": "https://doi.org/10.1038/nature14259",
+        "description": "Defines Notum as a secreted Wnt feedback antagonist that inactivates Wnt proteins by deacylation."
+      },
+      {
+        "target_gene": "Apc",
+        "ref_id": "R008",
+        "ref_slug": "alexander_2020_apc_cko_excitatory_beta_catenin",
+        "source": "Frontiers in Synaptic Neuroscience",
+        "source_type": "pubmed",
+        "citation": "Alexander JM, Pirone A, Jacob MH. Excessive β-Catenin in Excitatory Neurons Results in Reduced Social and Increased Repetitive Behaviors and Altered Expression of Multiple Genes Linked to Human Autism. Front Synaptic Neurosci. 2020;12:14. PMID: 32296324.",
+        "url": "https://doi.org/10.3389/fnsyn.2020.00014",
+        "description": "Mouse forebrain excitatory-neuron APC conditional knockout study reporting increased beta-catenin and canonical Wnt target gene expression with behavioral and transcriptional phenotypes."
+      },
+      {
+        "target_gene": "Zfp612",
+        "ref_id": "R003",
+        "ref_slug": "groner_2010_krab_kap1_repression",
+        "source": "PLoS Genetics",
+        "source_type": "pubmed",
+        "citation": "Groner AC, Meylan S, Ciuffi A, Zangger N, Ambrosini G, Dénervaud N, Bucher P, Trono D. KRAB-zinc finger proteins and KAP1 can mediate long-range transcriptional repression through heterochromatin spreading. PLoS Genet. 2010;6:e1000869.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/20221260/",
+        "description": "Shows the canonical KRAB-ZFP/KAP1 repression mechanism that motivates interpreting upregulated genes as candidate derepressed outputs, but not as direct targets without binding data."
+      },
+      {
+        "target_gene": "Zfp612",
+        "ref_id": "R004",
+        "ref_slug": "kakugawa_2015_notum_wnt_deacylase",
+        "source": "Nature",
+        "source_type": "pubmed",
+        "citation": "Kakugawa S, Langton PF, Zebisch M, Howell S, Chang TH, Liu Y, Feizi T, Bineva G, O'Reilly N, Snijders AP, Jones EY, Vincent JP. Notum deacylates Wnt proteins to suppress signalling activity. Nature. 2015;519:187-192.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25731175/",
+        "description": "Identifies NOTUM as a secreted carboxylesterase that removes an essential palmitoleate from Wnt proteins and suppresses Wnt signaling."
+      },
+      {
+        "target_gene": "Zfp612",
+        "ref_id": "R005",
+        "ref_slug": "flanagan_2021_apc_notum",
+        "source": "Nature",
+        "source_type": "pubmed",
+        "citation": "Flanagan DJ, Pentinmikko N, Luopajärvi K, Willis NJ, Gilroy K, Raven AP, McGarry L, Englund JI, Webb AT, Scharaw S, Nasreddin N, et al. NOTUM from Apc-mutant cells biases clonal competition to initiate cancer. Nature. 2021;594:430-435.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34079124/",
+        "description": "Shows that Apc-mutant, Wnt-activated intestinal clones become enriched for Notum and use secreted NOTUM to alter local Wnt signaling."
+      },
+      {
+        "target_gene": "Tcf7l2",
+        "ref_id": "R004",
+        "ref_slug": "nagalski_2013_lef1_tcf7l2_brain",
+        "source": "Brain Structure and Function",
+        "source_type": "pubmed",
+        "citation": "Nagalski A, Irimia M, Szewczyk L, Ferran JL, Misztal K, Kuznicki J, Wisniewska MB. Postnatal isoform switch and protein localization of LEF1 and TCF7L2 transcription factors in cortical, thalamic, and mesencephalic regions of the adult mouse brain. Brain Struct Funct. 2013;218:1531-1549.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/23152144/",
+        "description": "Mapped LEF1 and TCF7L2 protein localization and isoform usage in adult mouse thalamic and midbrain regions."
+      },
+      {
+        "target_gene": "Tcf7l2",
+        "ref_id": "R005",
+        "ref_slug": "lipiec_2020_tcf7l2_terminal_selector",
+        "source": "Development",
+        "source_type": "pubmed",
+        "citation": "Lipiec MA, Bem J, Koziński K, Chakraborty C, Urban-Ciećko J, Zajkowski T, Dąbrowski M, Szewczyk ŁM, Toval A, Ferran JL, Nagalski A, Wiśniewska MB. TCF7L2 regulates postmitotic differentiation programmes and excitability patterns in the thalamus. Development. 2020;147:dev190181.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/32675279/",
+        "description": "Mouse knockout work showing that TCF7L2 regulates thalamic postmitotic programs, direct electrophysiological-feature genes, and thalamic firing modes."
+      },
+      {
+        "target_gene": "Tcf7l2",
+        "ref_id": "R006",
+        "ref_slug": "lee_2017_tcf7l2_forebrain_identity",
+        "source": "Developmental Biology",
+        "source_type": "pubmed",
+        "citation": "Lee M, Yoon J, Song H, Lee B, Lam DT, Yoon J, Baek K, Clevers H, Jeong Y. Tcf7l2 plays crucial roles in forebrain development through regulation of thalamic and habenular neuron identity and connectivity. Dev Biol. 2017;424:62-76.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28219675/",
+        "description": "Mouse developmental study linking Tcf7l2 loss to thalamic and habenular identity switches and axon-guidance defects, including Robo1/Robo2 downregulation."
+      },
+      {
+        "target_gene": "Cdk8",
+        "ref_id": "R005",
+        "ref_slug": "firestein_2008_cdk8_beta_catenin_crc",
+        "source": "Nature",
+        "source_type": "pubmed",
+        "citation": "Firestein R, Bass AJ, Kim SY, et al. CDK8 is a colorectal cancer oncogene that regulates beta-catenin activity. Nature. 2008;455(7212):547-551. doi:10.1038/nature07179. PMID:18794900.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/18794900/",
+        "description": "Primary loss-of-function screens showing that CDK8 suppression inhibited colon cancer cells with beta-catenin hyperactivity and that CDK8 kinase activity was needed for beta-catenin-driven transformation."
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 3,
+    "support": 4,
+    "priority": 4
+  },
+  "report_evidence_ids": [
+    "Apc:E002",
+    "Apc:E003",
+    "Apc:E004",
+    "Apc:E008",
+    "Cdk8:E004",
+    "Cdk8:E007",
+    "Cdk8:E008",
+    "Ctnnb1:E001",
+    "Ctnnb1:E002",
+    "Ctnnb1:E003",
+    "Ctnnb1:E004",
+    "Ctnnb1:E005",
+    "Tcf7l2:E001",
+    "Tcf7l2:E002",
+    "Tcf7l2:E003",
+    "Zfp612:E002",
+    "Zfp612:E003",
+    "Zfp612:E004"
+  ],
+  "reference_ids": [
+    "Apc:R001",
+    "Apc:R004",
+    "Apc:R005",
+    "Apc:R006",
+    "Apc:R007",
+    "Apc:R008",
+    "Cdk8:R005",
+    "Ctnnb1:R004",
+    "Ctnnb1:R005",
+    "Tcf7l2:R004",
+    "Tcf7l2:R005",
+    "Tcf7l2:R006",
+    "Zfp612:R003",
+    "Zfp612:R004",
+    "Zfp612:R005"
+  ],
+  "source_urls_or_dois": [
+    {
+      "ref_id": "Apc:R007",
+      "citation": "Lipiec MA, Bem J, Koziński K, Chakraborty C, Urban-Ciećko J, Zajkowski T, Dąbrowski M, Szewczyk ŁM, Toval A, Ferran JL, Nagalski A, Wiśniewska MB. TCF7L2 regulates postmitotic differentiation programmes and excitability patterns in the thalamus. Development. 2020;147(16):dev190181. PMID: 32675279.",
+      "url_or_doi": "https://doi.org/10.1242/dev.190181"
+    },
+    {
+      "ref_id": "Ctnnb1:R004",
+      "citation": "Maguschak KA, Ressler KJ. The dynamic role of beta-catenin in synaptic plasticity. Neuropharmacology. 2012;62(1):78-88.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/21903109/"
+    },
+    {
+      "ref_id": "Ctnnb1:R005",
+      "citation": "Tai CY, Mysore SP, Chiu C, Schuman EM. Activity-regulated N-cadherin endocytosis. Neuron. 2007;54(5):771-785.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/17553425/"
+    },
+    {
+      "ref_id": "Apc:R001",
+      "citation": "Reactome. Signaling by APC mutants, R-HSA-4839744. Reactome ContentService; accessed 2025-04-29.",
+      "url_or_doi": "https://reactome.org/content/detail/R-HSA-4839744"
+    },
+    {
+      "ref_id": "Apc:R004",
+      "citation": "Jho EH, Zhang T, Domon C, Joo CK, Freund JN, Costantini F. Wnt/beta-catenin/Tcf signaling induces the transcription of Axin2, a negative regulator of the signaling pathway. Mol Cell Biol. 2002;22(4):1172-1183. PMID: 11809808.",
+      "url_or_doi": "https://doi.org/10.1128/MCB.22.4.1172-1183.2002"
+    },
+    {
+      "ref_id": "Apc:R005",
+      "citation": "Larraguibel J, Weiss AR, Pasula DJ, Dhaliwal RS, Kondra R, Van Raay TJ. Wnt ligand-dependent activation of the negative feedback regulator Nkd1. Mol Biol Cell. 2015;26(12):2375-2384. PMID: 25904337.",
+      "url_or_doi": "https://doi.org/10.1091/mbc.E14-12-1648"
+    },
+    {
+      "ref_id": "Apc:R006",
+      "citation": "Kakugawa S, Langton PF, Zebisch M, Howell S, Chang TH, Liu Y, Feizi T, Bineva G, O'Reilly N, Snijders AP, Jones EY, Vincent JP. Notum deacylates Wnt proteins to suppress signalling activity. Nature. 2015;519(7542):187-192. PMID: 25731175.",
+      "url_or_doi": "https://doi.org/10.1038/nature14259"
+    },
+    {
+      "ref_id": "Apc:R008",
+      "citation": "Alexander JM, Pirone A, Jacob MH. Excessive β-Catenin in Excitatory Neurons Results in Reduced Social and Increased Repetitive Behaviors and Altered Expression of Multiple Genes Linked to Human Autism. Front Synaptic Neurosci. 2020;12:14. PMID: 32296324.",
+      "url_or_doi": "https://doi.org/10.3389/fnsyn.2020.00014"
+    },
+    {
+      "ref_id": "Zfp612:R003",
+      "citation": "Groner AC, Meylan S, Ciuffi A, Zangger N, Ambrosini G, Dénervaud N, Bucher P, Trono D. KRAB-zinc finger proteins and KAP1 can mediate long-range transcriptional repression through heterochromatin spreading. PLoS Genet. 2010;6:e1000869.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/20221260/"
+    },
+    {
+      "ref_id": "Zfp612:R004",
+      "citation": "Kakugawa S, Langton PF, Zebisch M, Howell S, Chang TH, Liu Y, Feizi T, Bineva G, O'Reilly N, Snijders AP, Jones EY, Vincent JP. Notum deacylates Wnt proteins to suppress signalling activity. Nature. 2015;519:187-192.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/25731175/"
+    },
+    {
+      "ref_id": "Zfp612:R005",
+      "citation": "Flanagan DJ, Pentinmikko N, Luopajärvi K, Willis NJ, Gilroy K, Raven AP, McGarry L, Englund JI, Webb AT, Scharaw S, Nasreddin N, et al. NOTUM from Apc-mutant cells biases clonal competition to initiate cancer. Nature. 2021;594:430-435.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/34079124/"
+    },
+    {
+      "ref_id": "Tcf7l2:R004",
+      "citation": "Nagalski A, Irimia M, Szewczyk L, Ferran JL, Misztal K, Kuznicki J, Wisniewska MB. Postnatal isoform switch and protein localization of LEF1 and TCF7L2 transcription factors in cortical, thalamic, and mesencephalic regions of the adult mouse brain. Brain Struct Funct. 2013;218:1531-1549.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/23152144/"
+    },
+    {
+      "ref_id": "Tcf7l2:R005",
+      "citation": "Lipiec MA, Bem J, Koziński K, Chakraborty C, Urban-Ciećko J, Zajkowski T, Dąbrowski M, Szewczyk ŁM, Toval A, Ferran JL, Nagalski A, Wiśniewska MB. TCF7L2 regulates postmitotic differentiation programmes and excitability patterns in the thalamus. Development. 2020;147:dev190181.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/32675279/"
+    },
+    {
+      "ref_id": "Tcf7l2:R006",
+      "citation": "Lee M, Yoon J, Song H, Lee B, Lam DT, Yoon J, Baek K, Clevers H, Jeong Y. Tcf7l2 plays crucial roles in forebrain development through regulation of thalamic and habenular neuron identity and connectivity. Dev Biol. 2017;424:62-76.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/28219675/"
+    },
+    {
+      "ref_id": "Cdk8:R005",
+      "citation": "Firestein R, Bass AJ, Kim SY, et al. CDK8 is a colorectal cancer oncogene that regulates beta-catenin activity. Nature. 2008;455(7212):547-551. doi:10.1038/nature07179. PMID:18794900.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/18794900/"
+    }
+  ],
+  "source_cluster_ids": [
+    "C298",
+    "C154",
+    "C074"
+  ],
+  "source_claim_ids": [
+    "claim:apc_f005_4a5d60c3cb40",
+    "claim:ctnnb1_f001_f53e5f3f5f74",
+    "claim:apc_f001_eb6aaecf14b7",
+    "claim:zfp612_f001_2f368fa11c08",
+    "claim:tcf7l2_f001_468e45135b49",
+    "claim:cdk8_f003_165c7c4b2df7"
+  ]
+}

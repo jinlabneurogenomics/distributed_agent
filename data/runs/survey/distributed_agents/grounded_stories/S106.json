@@ -1,0 +1,589 @@
+{
+  "biological_interpretation": "Mature cortical Ski loss acts through a restricted neuronal regulon rather than simply derepressing a generic SMAD/TGF-beta program.",
+  "caveats": [
+    "Cell counts and target-transcript knockdown differ by class; the thalamic response contains only two FDR genes.",
+    "The DE table cannot distinguish true biological buffering from poor guide activity or sparse target expression; protein-level perturbation was not measured.",
+    "The Smad2 signature was weak, which compresses all correlation estimates; comparisons were transcriptomic and not phospho-SMAD assays.",
+    "Exact log2 fold changes, scores, p-values, and FDRs in exact_de_rows were re-read from the Wilcoxon Parquet; the graph and cluster summaries were used only to nominate the target/readout combinations."
+  ],
+  "cell_types": [
+    "007 L2-3 IT CTX Glut",
+    "001 L5-6 IT Glut",
+    "005 L4-5 IT CTX Glut",
+    "027 NP-CT-L6b-OB Glut"
+  ],
+  "exact_observed_result": "Partial Ski perturbation yielded a mixed, FDR-supported neuronal RNA phenotype dominated by L2/3 IT CTX Glut markers including Wscd2, Chd3, Rfx3, Pde4a, Plk5, Ttyh3, and Acsl3, whereas Tgif1, Smad2, and receptor-level TGF-beta perturbations did not recapitulate a canonical SMAD module. Parquet-verified leading rows: Ski->Wscd2 in 007 L2-3 IT CTX Glut log2FC 0.656, FDR 9.42e-04; Ski->Chd3 in 007 L2-3 IT CTX Glut log2FC 0.546, FDR 0.00297; Ski->Rfx3 in 007 L2-3 IT CTX Glut log2FC 0.567, FDR 0.00402; Ski->Begain in 007 L2-3 IT CTX Glut log2FC 0.388, FDR 0.00712; Ski->Pde4a in 007 L2-3 IT CTX Glut log2FC 0.66, FDR 0.00813; Ski->Slc27a1 in 007 L2-3 IT CTX Glut log2FC 0.601, FDR 0.00813.",
+  "preliminary_scores": {
+    "novelty": 4,
+    "priority": 3,
+    "support": 4
+  },
+  "prior_expectation": {
+    "citations": [
+      {
+        "citation": "UniProtKB reviewed entries P12755 (human SKI) and Q60698 (mouse Ski).",
+        "description": "Curates SKI/Ski as a nuclear protein that represses TGF-beta signaling, binds SMAD proteins, and is linked to Shprintzen-Goldberg syndrome.",
+        "ref_id": "R001",
+        "ref_slug": "uniprot_ski_function",
+        "scoped_ref_id": "Ski:R001",
+        "source": "UniProtKB",
+        "source_type": "database",
+        "target_gene": "Ski",
+        "url": "https://www.uniprot.org/uniprotkb/Q60698/entry"
+      },
+      {
+        "citation": "Reactome pathway annotations for SKI: Signaling by BMP and Downregulation of SMAD2/3:SMAD4 transcriptional activity.",
+        "description": "Places SKI in curated SMAD2/3:SMAD4 downregulation and BMP signaling reactions.",
+        "ref_id": "R002",
+        "ref_slug": "reactome_ski_smad_bmp",
+        "scoped_ref_id": "Ski:R002",
+        "source": "Reactome",
+        "source_type": "database",
+        "target_gene": "Ski",
+        "url": "https://reactome.org/content/detail/R-HSA-2173795"
+      },
+      {
+        "citation": "STRING human SKI interaction network, queried for high-confidence interaction partners in 2026.",
+        "description": "Returns high-confidence SKI links to SMAD4, SMAD2, SMAD3, NCOR1, SKIL, SMAD1, SIN3A, HDAC3, and other SMAD-corepressor proteins.",
+        "ref_id": "R003",
+        "ref_slug": "string_ski_smad_corepressor_network",
+        "scoped_ref_id": "Ski:R003",
+        "source": "STRING",
+        "source_type": "database",
+        "target_gene": "Ski",
+        "url": "https://string-db.org/network/9606.ENSP00000367797"
+      },
+      {
+        "citation": "Luo K, Stroschein SL, Wang W, Chen D, Martens E, Zhou S, Zhou Q. The Ski oncoprotein interacts with the Smad proteins to repress TGFbeta signaling. Genes Dev. 1999;13:2196-2206.",
+        "description": "Demonstrated direct SKI interaction with SMAD2, SMAD3, and SMAD4 on TGF-beta-responsive promoters and repression through N-CoR/HDAC corepressor recruitment.",
+        "ref_id": "R004",
+        "ref_slug": "luo_1999_ski_smad_ncor",
+        "scoped_ref_id": "Ski:R004",
+        "source": "Genes & Development",
+        "source_type": "pubmed",
+        "target_gene": "Ski",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/10485843/"
+      },
+      {
+        "citation": "Doyle AJ, Doyle JJ, Bessling SL, Maragh S, Lindsay ME, Schepers D, et al. Mutations in the TGF-\u03b2 repressor SKI cause Shprintzen-Goldberg syndrome with aortic aneurysm. Nat Genet. 2012;44:1249-1254.",
+        "description": "Identified causal SKI variants in Shprintzen-Goldberg syndrome and found enhanced TGF-beta signaling in patient fibroblasts.",
+        "ref_id": "R005",
+        "ref_slug": "doyle_2012_ski_sgs",
+        "scoped_ref_id": "Ski:R005",
+        "source": "Nature Genetics",
+        "source_type": "pubmed",
+        "target_gene": "Ski",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/23023332/"
+      },
+      {
+        "citation": "Carmignac V, Thevenon J, Ad\u00e8s L, Callewaert B, Julia S, Thauvin-Robinet C, et al. In-frame mutations in exon 1 of SKI cause dominant Shprintzen-Goldberg syndrome. Am J Hum Genet. 2012;91:950-957.",
+        "description": "Showed recurrent Shprintzen-Goldberg mutations cluster in the exon-1 R-SMAD-binding domain of SKI.",
+        "ref_id": "R006",
+        "ref_slug": "carmignac_2012_ski_exon1_sgs",
+        "scoped_ref_id": "Ski:R006",
+        "source": "American Journal of Human Genetics",
+        "source_type": "pubmed",
+        "target_gene": "Ski",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/23103230/"
+      },
+      {
+        "citation": "Berk M, Desai SY, Heyman HC, Colmenares C. Mice lacking the ski proto-oncogene have defects in neurulation, craniofacial patterning, and skeletal muscle development. Genes Dev. 1997;11:2029-2039.",
+        "description": "Established that Ski loss in mice causes developmental defects in neurulation, craniofacial patterning, and skeletal muscle.",
+        "ref_id": "R007",
+        "ref_slug": "berk_1997_ski_null_mouse",
+        "scoped_ref_id": "Ski:R007",
+        "source": "Genes & Development",
+        "source_type": "pubmed",
+        "target_gene": "Ski",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/9284043/"
+      },
+      {
+        "citation": "Bonnon C, Atanasoski S. c-Ski in health and disease. Cell Tissue Res. 2012;347:51-64.",
+        "description": "Reviews c-Ski as an evolutionarily conserved, context-dependent regulator of TGF-beta and other signaling pathways in development and cancer.",
+        "ref_id": "R008",
+        "ref_slug": "bonnon_2012_cski_review",
+        "scoped_ref_id": "Ski:R008",
+        "source": "Cell and Tissue Research",
+        "source_type": "review",
+        "target_gene": "Ski",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/21647564/"
+      },
+      {
+        "citation": "UniProtKB reviewed entry Q15583, Homeobox protein TGIF1, Homo sapiens.",
+        "description": "Curated TGIF1 function, subunit interactions with SMAD2/3, CTBP and HDAC1, nuclear localization, and holoprosencephaly 4 annotation.",
+        "ref_id": "R001",
+        "ref_slug": "uniprot_tgif1_q15583",
+        "scoped_ref_id": "Tgif1:R001",
+        "source": "UniProtKB",
+        "source_type": "database",
+        "target_gene": "Tgif1",
+        "url": "https://rest.uniprot.org/uniprotkb/Q15583"
+      },
+      {
+        "citation": "Wotton D, Lo RS, Lee S, Massagu\u00e9 J. A Smad Transcriptional Corepressor. Cell. 1999;97(1):29-39. doi:10.1016/S0092-8674(00)80712-6.",
+        "description": "Primary biochemical study identifying TGIF as a Smad2-binding transcriptional repressor recruited by TGF\u03b2-activated Smad complexes.",
+        "ref_id": "R004",
+        "ref_slug": "wotton_1999_smad_corepressor",
+        "scoped_ref_id": "Tgif1:R004",
+        "source": "Cell",
+        "source_type": "pubmed",
+        "target_gene": "Tgif1",
+        "url": "https://doi.org/10.1016/S0092-8674(00)80712-6"
+      },
+      {
+        "citation": "Reactome SMAD2 pathway membership for UniProt Q15796/R-HSA-3006353.",
+        "description": "Places SMAD2 in TGF-beta receptor activation of SMADs, activin and NODAL signaling, and downregulation of SMAD2/3:SMAD4 activity.",
+        "ref_id": "R002",
+        "ref_slug": "reactome_smad2_pathways",
+        "scoped_ref_id": "Smad2:R002",
+        "source": "Reactome ContentService",
+        "source_type": "database",
+        "target_gene": "Smad2",
+        "url": "https://reactome.org/ContentService/data/pathways/low/entity/R-HSA-3006353"
+      },
+      {
+        "citation": "Szklarczyk D et al. The STRING database in 2023. Nucleic Acids Res. 2023.",
+        "description": "High-confidence human STRING query linked SMAD2 to SMAD3, SMAD4, TGFBR1, TGFBR2, ACVR2A, ACVR2B, SKI, and TGIF1.",
+        "ref_id": "R003",
+        "ref_slug": "string_smad2_tgfb_network",
+        "scoped_ref_id": "Smad2:R003",
+        "source": "STRING",
+        "source_type": "database",
+        "target_gene": "Smad2",
+        "url": "https://string-db.org/"
+      },
+      {
+        "citation": "Massagu\u00e9 J. TGF\u03b2 signalling in context. Nat Rev Mol Cell Biol. 2012;13:616-630. doi:10.1038/nrm3434.",
+        "description": "Review explaining why TGF\u03b2/SMAD transcriptional responses depend on signal-transduction context, cofactors, and chromatin state.",
+        "ref_id": "R004",
+        "ref_slug": "massague_2012_tgfb_context",
+        "scoped_ref_id": "Smad2:R004",
+        "source": "Nature Reviews Molecular Cell Biology",
+        "source_type": "review",
+        "target_gene": "Smad2",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/22992590/"
+      }
+    ],
+    "summary": "References were retained only when they were linked to one of the resolved source findings."
+  },
+  "reference_ids": [
+    "Ski:R001",
+    "Ski:R002",
+    "Ski:R003",
+    "Ski:R004",
+    "Ski:R005",
+    "Ski:R006",
+    "Ski:R007",
+    "Ski:R008",
+    "Smad2:R002",
+    "Smad2:R003",
+    "Smad2:R004",
+    "Tgif1:R001",
+    "Tgif1:R004"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Ski:E002",
+    "Ski:E003",
+    "Ski:E004",
+    "Smad2:E007",
+    "Smad2:E008",
+    "Smad2:E009",
+    "Tgif1:E001",
+    "Tgif1:E002",
+    "Tgif1:E003",
+    "Tgif1:E004"
+  ],
+  "source_urls_or_dois": [
+    "https://doi.org/10.1016/S0092-8674(00)80712-6",
+    "https://pubmed.ncbi.nlm.nih.gov/10485843/",
+    "https://pubmed.ncbi.nlm.nih.gov/21647564/",
+    "https://pubmed.ncbi.nlm.nih.gov/22992590/",
+    "https://pubmed.ncbi.nlm.nih.gov/23023332/",
+    "https://pubmed.ncbi.nlm.nih.gov/23103230/",
+    "https://pubmed.ncbi.nlm.nih.gov/9284043/",
+    "https://reactome.org/ContentService/data/pathways/low/entity/R-HSA-3006353",
+    "https://reactome.org/content/detail/R-HSA-2173795",
+    "https://rest.uniprot.org/uniprotkb/Q15583",
+    "https://string-db.org/",
+    "https://string-db.org/network/9606.ENSP00000367797",
+    "https://www.uniprot.org/uniprotkb/Q60698/entry"
+  ],
+  "status": "grounded",
+  "story_id": "S106",
+  "support": {
+    "exact_de_rows": [
+      {
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "fdr": 0.00094181171303366,
+        "gene": "Wscd2",
+        "log2_fold_change": 0.6556739211082458,
+        "p_value": 5.621749615195249e-08,
+        "score": 5.4304327964782715,
+        "target_gene": "Ski"
+      },
+      {
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "fdr": 0.0029651574502470466,
+        "gene": "Chd3",
+        "log2_fold_change": 0.5459697842597961,
+        "p_value": 3.5398525043240575e-07,
+        "score": 5.092171669006348,
+        "target_gene": "Ski"
+      },
+      {
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "fdr": 0.00401569405221146,
+        "gene": "Rfx3",
+        "log2_fold_change": 0.56676185131073,
+        "p_value": 7.190999914423913e-07,
+        "score": 4.956132888793945,
+        "target_gene": "Ski"
+      },
+      {
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "fdr": 0.007116079679416045,
+        "gene": "Begain",
+        "log2_fold_change": 0.387700617313385,
+        "p_value": 1.6990580026063499e-06,
+        "score": 4.786274433135986,
+        "target_gene": "Ski"
+      },
+      {
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "fdr": 0.008131503084153502,
+        "gene": "Pde4a",
+        "log2_fold_change": 0.660011351108551,
+        "p_value": 3.2360373418838495e-06,
+        "score": 4.655240058898926,
+        "target_gene": "Ski"
+      },
+      {
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "fdr": 0.008131503084153502,
+        "gene": "Slc27a1",
+        "log2_fold_change": 0.6005551218986511,
+        "p_value": 3.3717355426458057e-06,
+        "score": 4.6467695236206055,
+        "target_gene": "Ski"
+      },
+      {
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "fdr": 0.008131503084153502,
+        "gene": "Nav1",
+        "log2_fold_change": 0.48082295060157776,
+        "p_value": 3.3976315638437606e-06,
+        "score": 4.645190238952637,
+        "target_gene": "Ski"
+      },
+      {
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "fdr": 0.019798839959392675,
+        "gene": "Plk5",
+        "log2_fold_change": -1.130904197692871,
+        "p_value": 9.454469030928276e-06,
+        "score": -4.429287910461426,
+        "target_gene": "Ski"
+      },
+      {
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "fdr": 0.0305889035757251,
+        "gene": "Igsf11",
+        "log2_fold_change": 0.6936933994293213,
+        "p_value": 1.6432885583568667e-05,
+        "score": 4.308549404144287,
+        "target_gene": "Ski"
+      },
+      {
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "fdr": 0.03400681485289806,
+        "gene": "Ttyh3",
+        "log2_fold_change": -0.37996989488601685,
+        "p_value": 2.1623540593764766e-05,
+        "score": -4.24743127822876,
+        "target_gene": "Ski"
+      },
+      {
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "fdr": 0.03400681485289806,
+        "gene": "Plch2",
+        "log2_fold_change": 0.5444468855857849,
+        "p_value": 2.2328834440510874e-05,
+        "score": 4.240232467651367,
+        "target_gene": "Ski"
+      },
+      {
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "fdr": 0.03843716138355249,
+        "gene": "Tjp1",
+        "log2_fold_change": 0.45823824405670166,
+        "p_value": 2.9090948644628764e-05,
+        "score": 4.1804680824279785,
+        "target_gene": "Ski"
+      },
+      {
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "fdr": 0.03843716138355249,
+        "gene": "Acsl3",
+        "log2_fold_change": -0.4770461916923523,
+        "p_value": 2.9826484688484594e-05,
+        "score": -4.1747870445251465,
+        "target_gene": "Ski"
+      },
+      {
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "fdr": 0.044464515337176894,
+        "gene": "Macroh2a1",
+        "log2_fold_change": 0.4186900854110718,
+        "p_value": 3.715771591478998e-05,
+        "score": 4.124477386474609,
+        "target_gene": "Ski"
+      }
+    ],
+    "finding_summaries": [
+      {
+        "claim_id": "claim:ski_f001_c0d171238731",
+        "confidence": "high",
+        "direction": "cell-type-restricted positive and mixed transcriptional response",
+        "finding_id": "F001",
+        "finding_type": "cell_type_selectivity",
+        "summary": "Adjusted-significant Ski responses are concentrated in L2/3 intratelencephalic cortical glutamatergic neurons, with only a two-gene secondary response in TH Prkcd Grin2c glutamatergic neurons.",
+        "target_gene": "Ski",
+        "why_it_matters": "The perturbation is not a uniform neuronal TGF-beta/SMAD phenotype; most interpretable downstream signal comes from a single cortical IT class."
+      },
+      {
+        "claim_id": "claim:tgif1_f001_64e8a241302a",
+        "confidence": "moderate",
+        "direction": "no_significant_response",
+        "finding_id": "F001",
+        "finding_type": "negative_result",
+        "summary": "Tgif1 targeting produced no FDR-significant transcriptomic response and no significant target-transcript depletion in any of 23 assayed mouse-brain cell types.",
+        "target_gene": "Tgif1",
+        "why_it_matters": "TGIF1 is a transcriptional corepressor, so the absence of a DE program primarily argues that Tgif1 was unengaged, redundant, or not rate-limiting in these assays rather than revealing a strong TGIF1-regulated state."
+      },
+      {
+        "claim_id": "claim:smad2_f004_fa38530699de",
+        "confidence": "moderate",
+        "direction": "uncorrelated",
+        "finding_id": "F004",
+        "finding_type": "cross_perturbation_contrast",
+        "summary": "Smad2 signatures were nearly orthogonal to perturbations of curated SMAD2 complex members, receptors, and transcriptional repressors, and unbiased nearest neighbors were also weak.",
+        "target_gene": "Smad2",
+        "why_it_matters": "Physical or pathway proximity to SMAD2 did not imply exchangeable CRISPR transcriptomes in these neuronal classes, preventing the Smad2 hit list from being generalized to the TGF\u03b2 receptor module."
+      }
+    ],
+    "parquet_filter": {
+      "cell_types": [
+        "007 L2-3 IT CTX Glut",
+        "001 L5-6 IT Glut",
+        "005 L4-5 IT CTX Glut",
+        "027 NP-CT-L6b-OB Glut"
+      ],
+      "gene_targets": [
+        "Ski",
+        "Smad2",
+        "Tgif1"
+      ],
+      "names": [
+        "Ache",
+        "Acsl3",
+        "Acvr2a",
+        "Acvr2b",
+        "Begain",
+        "Cck",
+        "Chd3",
+        "Chp1",
+        "Cpne7",
+        "Ctbp1",
+        "Ctbp2",
+        "Dusp7",
+        "Esrrg",
+        "F11r",
+        "Hdac1",
+        "Hdac2",
+        "Igsf11",
+        "L1cam",
+        "Macroh2a1",
+        "Nav1",
+        "Nop10",
+        "Pde4a",
+        "Plch2",
+        "Plk5",
+        "Rara",
+        "Rfx3",
+        "Rxra",
+        "Serpine1",
+        "Ski",
+        "Slc27a1",
+        "Slc38a6",
+        "Smad2",
+        "Smad3",
+        "Smad4",
+        "Tgfbr1",
+        "Tgfbr2",
+        "Tgif1",
+        "Tjp1",
+        "Ttyh3",
+        "Wdr3",
+        "Wscd2",
+        "Xpo1",
+        "Yars",
+        "Ywhae",
+        "Zfp106"
+      ]
+    },
+    "resolved_evidence": [
+      {
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "description": "The strongest cell-type-specific Ski perturbation signature.",
+        "evidence_id": "E002",
+        "evidence_slug": "ski_l23_it_ctx_fdr_signature",
+        "genes": "Wscd2|Chd3|Rfx3|Begain|Pde4a|Slc27a1|Nav1|Plk5|Igsf11|Plch2|Ttyh3|Tjp1|Acsl3|Macroh2a1",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "14",
+        "scoped_evidence_id": "Ski:E002",
+        "statistics": "123 perturbed cells versus 7553 controls; 14 genes at FDR<0.05. Top adjusted hits: Wscd2 logFC 0.656 FDR 9.42e-4, Chd3 0.546 FDR 0.00297, Rfx3 0.567 FDR 0.00402, Begain 0.388 FDR 0.00712; downregulated FDR hits included Plk5 logFC -1.131 FDR 0.0198, Ttyh3 -0.380 FDR 0.0340, and Acsl3 -0.477 FDR 0.0384.",
+        "target_gene": "Ski"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "A sparse but adjusted-significant Ski response in thalamic Prkcd/Grin2c glutamatergic neurons.",
+        "evidence_id": "E003",
+        "evidence_slug": "ski_th_prkcd_two_gene_signature",
+        "genes": "Cck|L1cam",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "2",
+        "scoped_evidence_id": "Ski:E003",
+        "statistics": "335 perturbed cells versus 23679 controls; only Cck logFC 0.212 FDR 0.00675 and L1cam logFC 0.140 FDR 0.0277 reached FDR<0.05; the next gene Spock2 had FDR 0.0801.",
+        "target_gene": "Ski"
+      },
+      {
+        "cell_type": "",
+        "description": "Global distribution of adjusted-significant differential expression after Ski perturbation.",
+        "evidence_id": "E004",
+        "evidence_slug": "ski_fdr_genes_concentrated_in_two_cell_types",
+        "genes": "",
+        "has_cell_type": "0",
+        "has_genes": "0",
+        "n_genes": "0",
+        "scoped_evidence_id": "Ski:E004",
+        "statistics": "Across the 23 Ski signatures, 16 total rows passed FDR<0.05: 14 in 007 L2-3 IT CTX Glut, 2 in 151 TH Prkcd Grin2c Glut, and 0 in each of the other 21 cell types.",
+        "target_gene": "Ski"
+      },
+      {
+        "cell_type": "",
+        "description": "The measured Tgif1 target transcript did not provide statistical evidence of transcript knockdown in any assayed cell type.",
+        "evidence_id": "E001",
+        "evidence_slug": "tgif1_on_target_transcript_all_cell_types",
+        "genes": "Tgif1",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "1",
+        "scoped_evidence_id": "Tgif1:E001",
+        "statistics": "23/23 cell types; 388,046 Tgif1 DE rows; 21-217 Tgif1-targeting cells versus 2,019-23,679 matched controls. The Tgif1 transcript row had scores from -0.074 to 0.426, nominal p values from 0.670 to 0.993, and FDR=1.0 in every cell type.",
+        "target_gene": "Tgif1"
+      },
+      {
+        "cell_type": "",
+        "description": "Tgif1 perturbation produced no conventionally significant differential-expression hit after multiple-testing correction.",
+        "evidence_id": "E002",
+        "evidence_slug": "tgif1_no_fdr_hits_global",
+        "genes": "Dusp7|Nop10|Zfp106|Wdr3|Slc38a6",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "5",
+        "scoped_evidence_id": "Tgif1:E002",
+        "statistics": "0/388,046 rows had pvals_adj<0.05. Best adjusted values: Dusp7 in 017 CA3 CA2-FC DG Glut, score -4.409, p=1.04e-5, FDR=0.177; Nop10 in 155 MB Glut, score 4.296, p=1.74e-5, FDR=0.304; Zfp106 in 191 MB P MY GABA, score -4.180, p=2.92e-5, FDR=0.500; Wdr3 in 308 CB GABA, score 4.146, p=3.43e-5, FDR=0.573.",
+        "target_gene": "Tgif1"
+      },
+      {
+        "cell_type": "017 CA3 CA2-FC DG Glut",
+        "description": "017 CA3 CA2-FC DG Glut contained the lowest adjusted p value in the entire Tgif1 subset, but it was still not FDR-significant.",
+        "evidence_id": "E003",
+        "evidence_slug": "tgif1_strongest_nominal_cell_type_017",
+        "genes": "Dusp7",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "1",
+        "scoped_evidence_id": "Tgif1:E003",
+        "statistics": "95 perturbed cells versus 8,620 controls; Dusp7 logFC -0.898, score -4.409, p=1.04e-5, FDR=0.177.",
+        "target_gene": "Tgif1"
+      },
+      {
+        "cell_type": "",
+        "description": "Two of the largest Tgif1 cell-type contrasts remained negative after FDR correction.",
+        "evidence_id": "E004",
+        "evidence_slug": "tgif1_high_cell_count_negative_groups",
+        "genes": "Yars|Nop10|Tgif1",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "3",
+        "scoped_evidence_id": "Tgif1:E004",
+        "statistics": "151 TH Prkcd Grin2c Glut: 217 perturbed cells versus 23,679 controls, min FDR=1.0, best nominal Yars p=2.06e-4, Tgif1 p=0.843. 155 MB Glut: 213 perturbed cells versus 20,353 controls, min FDR=0.304 at Nop10 p=1.74e-5, Tgif1 p=0.838.",
+        "target_gene": "Tgif1"
+      },
+      {
+        "cell_type": "",
+        "description": "Smad2 signatures were not linearly similar to close pathway-neighbor perturbations.",
+        "evidence_id": "E007",
+        "evidence_slug": "smad2_related_tgfb_targets_low_correlation",
+        "genes": "Smad2|Smad3|Smad4|Tgfbr1|Tgfbr2|Acvr2a|Acvr2b|Ski|Tgif1",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "9",
+        "scoped_evidence_id": "Smad2:E007",
+        "statistics": "Pearson correlations of full score vectors were computed between Smad2 and 19 TGF\u03b2/BMP-related perturbations in each of 21 matched cell types. Mean correlations were Smad3 0.004, Smad4 0.010, Tgfbr1 0.007, Tgfbr2 0.015, Acvr2a -0.0001, Acvr2b 0.019, Ski -0.006, and Tgif1 0.011; the largest absolute correlation among all 399 comparisons was 0.174.",
+        "target_gene": "Smad2"
+      },
+      {
+        "cell_type": "",
+        "description": "The two Smad2 FDR hits were not FDR-significant downstream of nearby pathway perturbations in the same cell classes.",
+        "evidence_id": "E008",
+        "evidence_slug": "smad2_fdr_hits_not_reproduced_by_tgfb_neighbors",
+        "genes": "Ache|Cpne7",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "2",
+        "scoped_evidence_id": "Smad2:E008",
+        "statistics": "In 155 MB Glut, no queried related TGF\u03b2/BMP perturbation changed Ache at FDR<0.05; the smallest nominal p was Tgfbr2 with score 2.634, logFC 0.105, p=0.00843, FDR=1.0. In 151 TH Prkcd Grin2c Glut, no related perturbation changed Cpne7 at FDR<0.05; the smallest nominal p was Tgif1 with score -3.254, logFC -0.154, p=0.00114, FDR=1.0.",
+        "target_gene": "Smad2"
+      },
+      {
+        "cell_type": "",
+        "description": "Unbiased perturbation neighbors did not define a strong Smad2-like or anti-Smad2-like module.",
+        "evidence_id": "E009",
+        "evidence_slug": "smad2_unbiased_signature_neighbors_weak",
+        "genes": "Xpo1|Chp1|Ywhae|Esrrg",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "4",
+        "scoped_evidence_id": "Smad2:E009",
+        "statistics": "Genome-wide Pearson nearest-neighbor correlations were weak in the two FDR-positive Smad2 classes: in 151 TH Prkcd Grin2c Glut, top positive Xpo1 r=0.100 and top negative Chp1 r=-0.122; in 155 MB Glut, top positive Ywhae r=0.075 and top negative Esrrg r=-0.051.",
+        "target_gene": "Smad2"
+      }
+    ],
+    "source_claim_ids": [
+      "claim:ski_f001_c0d171238731",
+      "claim:tgif1_f001_64e8a241302a",
+      "claim:smad2_f004_fa38530699de"
+    ],
+    "source_cluster_ids": [
+      "C052"
+    ]
+  },
+  "targets": [
+    "Ski",
+    "Wscd2",
+    "Chd3",
+    "Rfx3",
+    "Pde4a",
+    "Plk5",
+    "Ttyh3",
+    "Acsl3",
+    "Smad2",
+    "Tgif1"
+  ],
+  "title": "Ski loss exposes a narrow L2/3 intratelencephalic cortical marker program instead of a broad TGF-beta/SMAD response"
+}

@@ -1,0 +1,115 @@
+{
+  "story_id": "S045",
+  "title": "Zmym2 loss selectively induces a Notum/Echdc2/F11r/Atp2a3 thalamic response",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Zmym2 perturbation produced exactly 22 FDR<0.05 genes, all in 151 TH Prkcd Grin2c Glut; the leading induced rows were Echdc2, F11r, Atp2a3, Ebf4, Marcksl1, Plppr3, Npr1, and Notum.",
+  "biological_interpretation": "ZMYM2 suppression is associated with a narrow thalamic neuronal expression state rather than a uniform neuronal stress program, but the missing target-transcript depletion makes the state a perturbation-associated marker set requiring validation.",
+  "targets": [
+    "Zmym2",
+    "Notum",
+    "Echdc2",
+    "F11r",
+    "Atp2a3",
+    "Ebf4",
+    "Marcksl1",
+    "Plppr3"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut"
+  ],
+  "support": {
+    "support_level": 3,
+    "exact_de_rows": [
+      {
+        "gene_target": "Zmym2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Echdc2",
+        "log2_fold_change": 1.343473196029663,
+        "pvals_adj": 1.3019322794384653e-11,
+        "wilcoxon_score": 8.061385154724121
+      },
+      {
+        "gene_target": "Zmym2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "F11r",
+        "log2_fold_change": 1.068920612335205,
+        "pvals_adj": 4.306643551426936e-10,
+        "wilcoxon_score": 7.532164573669434
+      },
+      {
+        "gene_target": "Zmym2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Atp2a3",
+        "log2_fold_change": 2.262136936187744,
+        "pvals_adj": 7.147432465530327e-10,
+        "wilcoxon_score": 7.412181854248047
+      },
+      {
+        "gene_target": "Zmym2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ebf4",
+        "log2_fold_change": 1.3458870649337769,
+        "pvals_adj": 3.5777977708697896e-08,
+        "wilcoxon_score": 6.833408832550049
+      },
+      {
+        "gene_target": "Zmym2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Notum",
+        "log2_fold_change": 0.932840883731842,
+        "pvals_adj": 4.104028774626252e-05,
+        "wilcoxon_score": 5.60027551651001
+      }
+    ],
+    "report_evidence_summary": [
+      "Zmym2:E001",
+      "Zmym2:E002",
+      "Zmym2:E003",
+      "Zmym2:E005"
+    ]
+  },
+  "caveats": [
+    "The measured Zmym2 transcript was not FDR-depleted in any profiled class.",
+    "No prior ZMYM2-Notum/Atp2a3 neuronal mechanism was resolved in the supplied references."
+  ],
+  "prior_expectation": {
+    "summary": "ZMYM2 participates in chromatin corepressor complexes; heterozygous ZMYM2 loss-of-function mutations cause syndromic congenital anomalies",
+    "citations": [
+      {
+        "ref_id": "Zmym2:R002",
+        "ref": "Owen et al. 2023 DOI:10.7554/eLife.86669.3",
+        "url_or_doi": "https://elifesciences.org/articles/86669",
+        "supports": "ZMYM2 participates in chromatin corepressor complexes"
+      },
+      {
+        "ref_id": "Zmym2:R003",
+        "ref": "Connaughton et al. 2020 DOI:10.1016/j.ajhg.2020.08.013",
+        "url_or_doi": "https://doi.org/10.1016/j.ajhg.2020.08.013",
+        "supports": "heterozygous ZMYM2 loss-of-function mutations cause syndromic congenital anomalies"
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 5,
+    "support": 3,
+    "priority": 3
+  },
+  "report_evidence_ids": [
+    "Zmym2:E001",
+    "Zmym2:E002",
+    "Zmym2:E003",
+    "Zmym2:E005"
+  ],
+  "reference_ids": [
+    "Zmym2:R002",
+    "Zmym2:R003"
+  ],
+  "source_urls_or_dois": [
+    "https://doi.org/10.1016/j.ajhg.2020.08.013",
+    "https://elifesciences.org/articles/86669"
+  ],
+  "source_claim_ids": [
+    "claim:zmym2_f001_68cfb73bad6e"
+  ]
+}

@@ -1,0 +1,346 @@
+{
+  "biological_interpretation": "CHD2 perturbation has a thalamic RNA-processing/ion-channel output distinct from other CHD-family chromatin remodelers.",
+  "caveats": [
+    "The Chd2 mRNA itself was not detectably depleted, and 217 P MY Pineal Glut had only 34 perturbed cells.",
+    "Chd2 had weak measured target engagement; the contrast establishes non-phenocopying in this assay but not necessarily biochemical independence.",
+    "Exact log2 fold changes, scores, p-values, and FDRs in exact_de_rows were re-read from the Wilcoxon Parquet; the graph and cluster summaries were used only to nominate the target/readout combinations."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut"
+  ],
+  "exact_observed_result": "Chd2 produced its stringent response in 151 TH Prkcd Grin2c Glut, with Ddx5, Snrnp70, Sf3b1, Snrpn, Kcnc2, Kcnj9, Kcnt1, P2rx4, Tmem38a, and Tmem63b nominating RNA-processing and excitability outputs; the same thalamic signature did not phenocopy Chd4, Chd7, or Chd8. Parquet-verified leading rows: Chd2->Snhg11 in 151 TH Prkcd Grin2c Glut log2FC -0.26, FDR 7.39e-18; Chd2->Plekhg1 in 151 TH Prkcd Grin2c Glut log2FC -0.438, FDR 3.60e-13; Chd2->Ptpn3 in 151 TH Prkcd Grin2c Glut log2FC -0.381, FDR 6.66e-09; Chd2->Ddx5 in 151 TH Prkcd Grin2c Glut log2FC -0.311, FDR 6.06e-06; Chd2->Kcnc2 in 151 TH Prkcd Grin2c Glut log2FC -0.223, FDR 1.91e-04; Chd2->Igsf8 in 151 TH Prkcd Grin2c Glut log2FC 0.382, FDR 0.0018.",
+  "preliminary_scores": {
+    "novelty": 4,
+    "priority": 4,
+    "support": 4
+  },
+  "prior_expectation": {
+    "citations": [
+      {
+        "citation": "Carvill GL et al. Targeted resequencing in epileptic encephalopathies identifies de novo mutations in CHD2 and SYNGAP1. Nat Genet. 2013;45(7):825-830. doi:10.1038/ng.2646.",
+        "description": "Human genetics study identifying de novo CHD2 mutations as causes of epileptic encephalopathy.",
+        "ref_id": "R003",
+        "ref_slug": "carvill_2013_chd2_epileptic_encephalopathy",
+        "scoped_ref_id": "Chd2:R003",
+        "source": "PubMed",
+        "source_type": "pubmed",
+        "target_gene": "Chd2",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/23708187/"
+      },
+      {
+        "citation": "Kim YJ et al. Chd2 Is Necessary for Neural Circuit Development and Long-Term Memory. Neuron. 2018;100(5):1180-1193.e6. doi:10.1016/j.neuron.2018.09.049.",
+        "description": "Mouse haploinsufficiency study linking Chd2 loss to broad transcriptional changes, altered neuronal excitability, interneuron deficits, and memory impairment.",
+        "ref_id": "R004",
+        "ref_slug": "kim_2018_chd2_mouse_neural_circuit",
+        "scoped_ref_id": "Chd2:R004",
+        "source": "PubMed",
+        "source_type": "pubmed",
+        "target_gene": "Chd2",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30344048/"
+      },
+      {
+        "citation": "Lewis EMA et al. Regulation of human cortical interneuron development by the chromatin remodeling protein CHD2. Sci Rep. 2022;12(1):15636. doi:10.1038/s41598-022-19654-y.",
+        "description": "Human embryonic-stem-cell cortical interneuron model showing CHD2 binding at neurogenesis and neuronal-function genes and effects of CHD2 haploinsufficiency on H3K27ac and gene expression.",
+        "ref_id": "R005",
+        "ref_slug": "lewis_2022_chd2_human_cortical_interneurons",
+        "scoped_ref_id": "Chd2:R005",
+        "source": "PubMed",
+        "source_type": "pubmed",
+        "target_gene": "Chd2",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36115870/"
+      },
+      {
+        "citation": "Open Targets Platform target ENSG00000173575, CHD2 associated diseases. Accessed 2025-04-29.",
+        "description": "Disease-prioritization database that ranked developmental and epileptic encephalopathy 94 as the top CHD2-associated disease in the queried target profile.",
+        "ref_id": "R007",
+        "ref_slug": "opentargets_chd2_disease_associations",
+        "scoped_ref_id": "Chd2:R007",
+        "source": "Open Targets Platform",
+        "source_type": "database",
+        "target_gene": "Chd2",
+        "url": "https://platform.opentargets.org/target/ENSG00000173575/associations"
+      },
+      {
+        "citation": "Reactome pathways R-HSA-9937848, CHD chromatin remodelers, and R-HSA-9943411, CHD1 and CHD2 subfamily. Accessed 2025-04-29.",
+        "description": "Curated pathway context separating CHD1/CHD2 subfamily I from other CHD chromatin remodelers, including CHD4 and CHD8.",
+        "ref_id": "R002",
+        "ref_slug": "reactome_chd_chromatin_remodelers",
+        "scoped_ref_id": "Chd2:R002",
+        "source": "Reactome",
+        "source_type": "database",
+        "target_gene": "Chd2",
+        "url": "https://reactome.org/content/detail/R-HSA-9943411"
+      }
+    ],
+    "summary": "References were retained only when they were linked to one of the resolved source findings."
+  },
+  "reference_ids": [
+    "Chd2:R002",
+    "Chd2:R003",
+    "Chd2:R004",
+    "Chd2:R005",
+    "Chd2:R007"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Chd2:E002",
+    "Chd2:E003",
+    "Chd2:E004",
+    "Chd2:E007"
+  ],
+  "source_urls_or_dois": [
+    "https://platform.opentargets.org/target/ENSG00000173575/associations",
+    "https://pubmed.ncbi.nlm.nih.gov/23708187/",
+    "https://pubmed.ncbi.nlm.nih.gov/30344048/",
+    "https://pubmed.ncbi.nlm.nih.gov/36115870/",
+    "https://reactome.org/content/detail/R-HSA-9943411"
+  ],
+  "status": "grounded",
+  "story_id": "S084",
+  "support": {
+    "exact_de_rows": [
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 7.394528710426084e-18,
+        "gene": "Snhg11",
+        "log2_fold_change": -0.2597029209136963,
+        "p_value": 4.284447946246065e-22,
+        "score": -9.664081573486328,
+        "target_gene": "Chd2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 3.595165300697134e-13,
+        "gene": "Plekhg1",
+        "log2_fold_change": -0.4377194344997406,
+        "p_value": 4.166133959901656e-17,
+        "score": -8.408125877380371,
+        "target_gene": "Chd2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 6.661930586910569e-09,
+        "gene": "Ptpn3",
+        "log2_fold_change": -0.380787193775177,
+        "p_value": 1.15799245383462e-12,
+        "score": -7.110290050506592,
+        "target_gene": "Chd2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 6.055808602763089e-06,
+        "gene": "Ddx5",
+        "log2_fold_change": -0.3110664188861847,
+        "p_value": 1.4035132053451737e-09,
+        "score": -6.0550761222839355,
+        "target_gene": "Chd2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.00019086425018030346,
+        "gene": "Kcnc2",
+        "log2_fold_change": -0.2228875607252121,
+        "p_value": 5.529412195964525e-08,
+        "score": -5.433387756347656,
+        "target_gene": "Chd2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.0017986177767217403,
+        "gene": "Igsf8",
+        "log2_fold_change": 0.38206005096435547,
+        "p_value": 8.337066002534285e-07,
+        "score": 4.92730712890625,
+        "target_gene": "Chd2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.002047443574870508,
+        "gene": "Kcnj9",
+        "log2_fold_change": -0.3028170168399811,
+        "p_value": 1.067674382863119e-06,
+        "score": -4.878736972808838,
+        "target_gene": "Chd2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.00571957607835948,
+        "gene": "P2rx4",
+        "log2_fold_change": 0.49610793590545654,
+        "p_value": 4.639554151285284e-06,
+        "score": 4.5804595947265625,
+        "target_gene": "Chd2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.009677231692469567,
+        "gene": "Snrnp70",
+        "log2_fold_change": -0.23128275573253632,
+        "p_value": 1.0934670195845425e-05,
+        "score": -4.39781379699707,
+        "target_gene": "Chd2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.018208135749745436,
+        "gene": "Kcnt1",
+        "log2_fold_change": -0.4511779248714447,
+        "p_value": 2.462368689311828e-05,
+        "score": -4.218221664428711,
+        "target_gene": "Chd2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.048621856079539,
+        "gene": "Sf3b1",
+        "log2_fold_change": -0.1767866462469101,
+        "p_value": 9.057045128168491e-05,
+        "score": -3.9145567417144775,
+        "target_gene": "Chd2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.04985490931067124,
+        "gene": "Snrpn",
+        "log2_fold_change": -0.11799358576536179,
+        "p_value": 9.82135069565341e-05,
+        "score": -3.894963502883911,
+        "target_gene": "Chd2"
+      }
+    ],
+    "finding_summaries": [
+      {
+        "claim_id": "claim:chd2_f001_a8687a884262",
+        "confidence": "moderate",
+        "direction": "strongest_in_151_TH_Prkcd_Grin2c_Glut",
+        "finding_id": "F001",
+        "finding_type": "cell_type_selectivity",
+        "summary": "The stringent Chd2 response is concentrated in 151 TH Prkcd Grin2c Glut rather than being a broad pan-neuronal phenotype.",
+        "target_gene": "Chd2",
+        "why_it_matters": "This localizes the strongest observed consequence of a CHD2-family neurodevelopmental-disorder gene to a thalamic glutamatergic state in this dataset, extending literature that has emphasized cortical and GABAergic interneuron development."
+      },
+      {
+        "claim_id": "claim:chd2_f005_fa530b03573b",
+        "confidence": "moderate",
+        "direction": "divergent",
+        "finding_id": "F005",
+        "finding_type": "cross_perturbation_contrast",
+        "summary": "Chd2 did not phenocopy Chd4, Chd7, or Chd8 in the responsive thalamic glutamatergic class.",
+        "target_gene": "Chd2",
+        "why_it_matters": "Broad CHD-family membership was a poor predictor of the Chd2 signature in this cell state, consistent with curated separation of CHD subfamilies rather than interchangeability among CHD-family ATPases."
+      }
+    ],
+    "parquet_filter": {
+      "cell_types": [
+        "151 TH Prkcd Grin2c Glut"
+      ],
+      "gene_targets": [
+        "Chd2"
+      ],
+      "names": [
+        "Chd2",
+        "Chd4",
+        "Chd7",
+        "Chd8",
+        "Ddx5",
+        "Elp1",
+        "Flywch1",
+        "Igsf8",
+        "Kcnc2",
+        "Kcnj9",
+        "Kcnt1",
+        "Nalcn",
+        "P2rx4",
+        "Plekhg1",
+        "Ptpn3",
+        "Sf3b1",
+        "Snhg11",
+        "Snrnp70",
+        "Snrpn",
+        "Thy1",
+        "Xpo1"
+      ]
+    },
+    "resolved_evidence": [
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "The thalamic Prkcd/Grin2c glutamatergic class carried the largest stringent Chd2-associated expression response.",
+        "evidence_id": "E002",
+        "evidence_slug": "chd2_151_th_prkcd_grin2c_glut_signature",
+        "genes": "Snhg11|Plekhg1|Ptpn3|Ddx5|Kcnc2|Igsf8|Kcnj9|P2rx4",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "8",
+        "scoped_evidence_id": "Chd2:E002",
+        "statistics": "153 perturbed cells versus 23,679 controls; 34 genes at FDR<0.05 and 42 at FDR<0.10. Top FDR genes included Snhg11 logFC=-0.260 FDR=7.39e-18, Plekhg1 -0.438 FDR=3.60e-13, Ptpn3 -0.381 FDR=6.66e-09, Ddx5 -0.311 FDR=6.06e-06.",
+        "target_gene": "Chd2"
+      },
+      {
+        "cell_type": "",
+        "description": "Most cell types had either no stringent Chd2 response or an isolated single-gene response.",
+        "evidence_id": "E003",
+        "evidence_slug": "chd2_other_cell_type_fdr_counts",
+        "genes": "Snhg11|Flywch1|Thy1|Snrpn",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "4",
+        "scoped_evidence_id": "Chd2:E003",
+        "statistics": "At FDR<0.05 outside 151 TH Prkcd Grin2c Glut: 155 MB Glut had 3 genes, 217 P MY Pineal Glut had 2 genes, 052 Pvalb Gaba had 1 gene, 191 MB P MY GABA had 1 gene, and the remaining 18 of 23 cell types had 0 genes.",
+        "target_gene": "Chd2"
+      },
+      {
+        "cell_type": "",
+        "description": "Snhg11 was the most recurrent Chd2-associated transcript across matched cell-type tests.",
+        "evidence_id": "E004",
+        "evidence_slug": "snhg11_recurrent_downstream_readout",
+        "genes": "Snhg11",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "1",
+        "scoped_evidence_id": "Chd2:E004",
+        "statistics": "Snhg11 reached FDR<0.05 in five cell types: 151 TH Prkcd Grin2c Glut logFC=-0.260 FDR=7.39e-18; 155 MB Glut -0.224 FDR=3.24e-09; 052 Pvalb Gaba -0.237 FDR=2.19e-07; 191 MB P MY GABA -0.246 FDR=0.0119; 217 P MY Pineal Glut -0.327 FDR=0.0194.",
+        "target_gene": "Chd2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "The thalamic Prkcd/Grin2c glutamatergic class carried the largest stringent Chd2-associated expression response.",
+        "evidence_id": "E002",
+        "evidence_slug": "chd2_151_th_prkcd_grin2c_glut_signature",
+        "genes": "Snhg11|Plekhg1|Ptpn3|Ddx5|Kcnc2|Igsf8|Kcnj9|P2rx4",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "8",
+        "scoped_evidence_id": "Chd2:E002",
+        "statistics": "153 perturbed cells versus 23,679 controls; 34 genes at FDR<0.05 and 42 at FDR<0.10. Top FDR genes included Snhg11 logFC=-0.260 FDR=7.39e-18, Plekhg1 -0.438 FDR=3.60e-13, Ptpn3 -0.381 FDR=6.66e-09, Ddx5 -0.311 FDR=6.06e-06.",
+        "target_gene": "Chd2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "Other assayed CHD-family perturbations were active in the same cell class but did not phenocopy the Chd2 transcriptomic signature.",
+        "evidence_id": "E007",
+        "evidence_slug": "chd_family_contrast_151",
+        "genes": "Chd2|Chd4|Chd7|Chd8|Snhg11|Kcnj9|Kcnt1|Snrnp70",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "8",
+        "scoped_evidence_id": "Chd2:E007",
+        "statistics": "Against the Chd2 score vector over 17,259 shared genes, correlations were Chd4 r=-0.005, Chd8 r=-0.003, and Chd7 r=0.057. FDR<0.05 overlaps with the 34 Chd2 genes were 2 genes for Chd4 and 2 genes for Chd8; Chd4, Chd8, and Chd7 had 100, 61, and 0 FDR genes respectively. Chd8 showed on-target Chd8 logFC=-0.532 FDR=1.02e-09, whereas Chd2 showed Chd2 logFC=-0.052 FDR=1.0.",
+        "target_gene": "Chd2"
+      }
+    ],
+    "source_claim_ids": [
+      "claim:chd2_f001_a8687a884262",
+      "claim:chd2_f005_fa530b03573b"
+    ],
+    "source_cluster_ids": [
+      "C431"
+    ]
+  },
+  "targets": [
+    "Chd2",
+    "Chd4",
+    "Chd7",
+    "Chd8"
+  ],
+  "title": "CHD2 loss rewires RNA-processing and ion-channel transcripts in TH Prkcd/Grin2c neurons without phenocopying CHD4, CHD7, or CHD8"
+}

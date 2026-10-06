@@ -1,0 +1,310 @@
+{
+  "story_id": "S136",
+  "title": "Polr3b loss drives a Rap and adhesion-associated thalamic program distinct from Bdp1 tRNA stress",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Polr3b assignment in 151 TH Prkcd Grin2c Glut reduced Rap1gap, Adgrb1, Pcp4, Ggt7, Slco3a1, Mgat5, and Gas2 while increasing Rap2a, whereas Bdp1 in the same cell type induced Ddit3 and aminoacyl-tRNA synthetase genes with no FDR-gene overlap.",
+  "biological_interpretation": "POLR3B is not interchangeable with the TFIIIB/BDP1 initiation arm and exposes a Pol III-associated Rap/adhesion output in thalamic neurons.",
+  "targets": [
+    "Polr3b",
+    "Bdp1",
+    "Rap1gap",
+    "Rap2a",
+    "Adgrb1",
+    "Pcp4",
+    "Ggt7",
+    "Slco3a1",
+    "Mgat5",
+    "Gas2"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut"
+  ],
+  "support": {
+    "exact_de_rows": [
+      {
+        "gene_target": "Polr3b",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Adgrb1",
+        "score": -5.0284810066223145,
+        "logfoldchanges": -0.5472221970558167,
+        "pvals_adj": 0.004266260325374128
+      },
+      {
+        "gene_target": "Polr3b",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Gas2",
+        "score": -4.267353534698486,
+        "logfoldchanges": -0.8805729150772095,
+        "pvals_adj": 0.042674085430731125
+      },
+      {
+        "gene_target": "Polr3b",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Ggt7",
+        "score": -4.467566013336182,
+        "logfoldchanges": -0.4728253185749054,
+        "pvals_adj": 0.027708093572150018
+      },
+      {
+        "gene_target": "Polr3b",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Mgat5",
+        "score": -4.269789218902588,
+        "logfoldchanges": -0.5801587700843811,
+        "pvals_adj": 0.042674085430731125
+      },
+      {
+        "gene_target": "Polr3b",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Pcp4",
+        "score": -4.473160743713379,
+        "logfoldchanges": -0.7626920342445374,
+        "pvals_adj": 0.027708093572150018
+      },
+      {
+        "gene_target": "Polr3b",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Rap1gap",
+        "score": -5.111996650695801,
+        "logfoldchanges": -0.4360696077346802,
+        "pvals_adj": 0.004266260325374128
+      },
+      {
+        "gene_target": "Polr3b",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Rap2a",
+        "score": 4.366189956665039,
+        "logfoldchanges": 0.9575505256652832,
+        "pvals_adj": 0.03636829125009535
+      },
+      {
+        "gene_target": "Polr3b",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Slco3a1",
+        "score": -4.464458465576172,
+        "logfoldchanges": -0.7308526635169983,
+        "pvals_adj": 0.027708093572150018
+      },
+      {
+        "gene_target": "Bdp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Aars",
+        "score": 4.639671325683594,
+        "logfoldchanges": 0.6244029998779297,
+        "pvals_adj": 0.012045523855059687
+      },
+      {
+        "gene_target": "Bdp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Cars",
+        "score": 4.554296970367432,
+        "logfoldchanges": 0.6826738119125366,
+        "pvals_adj": 0.01511918319514977
+      },
+      {
+        "gene_target": "Bdp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Ddit3",
+        "score": 5.075687885284424,
+        "logfoldchanges": 1.031280755996704,
+        "pvals_adj": 0.0057181256528629695
+      },
+      {
+        "gene_target": "Bdp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Iars",
+        "score": 4.6879072189331055,
+        "logfoldchanges": 0.7343322038650513,
+        "pvals_adj": 0.012045523855059687
+      },
+      {
+        "gene_target": "Bdp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Kcnc2",
+        "score": -4.454539775848389,
+        "logfoldchanges": -0.23439903557300568,
+        "pvals_adj": 0.02072889195533439
+      },
+      {
+        "gene_target": "Bdp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Lars",
+        "score": 4.667627334594727,
+        "logfoldchanges": 0.6626774668693542,
+        "pvals_adj": 0.012045523855059687
+      },
+      {
+        "gene_target": "Bdp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Mars1",
+        "score": 4.972009181976318,
+        "logfoldchanges": 0.6053118705749512,
+        "pvals_adj": 0.0057181256528629695
+      },
+      {
+        "gene_target": "Bdp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Yars",
+        "score": 4.265933513641357,
+        "logfoldchanges": 0.7055141925811768,
+        "pvals_adj": 0.042946485550350896
+      }
+    ],
+    "evidence_records": [
+      {
+        "target_gene": "Polr3b",
+        "evidence_id": "E002",
+        "evidence_slug": "polr3b_de_gene_counts_by_cell_type",
+        "cell_type": "",
+        "genes": "Polr3b",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "FDR<0.05 genes: 151 TH Prkcd Grin2c Glut=8, 155 MB Glut=2, all other 19 sampled subclasses=0. FDR<0.1 genes: 151=15, 155=2, 191 MB P MY GABA=2, other 18=0. FDR<0.2 genes: 151=27, 155=3, 191=2, 054 CNU-MGE GABA=1.",
+        "description": "Multiple-testing-significant Polr3b responses were concentrated in a small number of neuronal subclasses."
+      },
+      {
+        "target_gene": "Polr3b",
+        "evidence_id": "E003",
+        "evidence_slug": "polr3b_151_th_fdr05_core_hits",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Rap1gap|Adgrb1|Pcp4|Ggt7|Slco3a1|Rap2a|Mgat5|Gas2",
+        "n_genes": "8",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "72 Polr3b cells versus 23679 controls. Rap1gap score -5.112 logFC -0.436 FDR 0.00427; Adgrb1 -5.028 -0.547 FDR 0.00427; Pcp4 -4.473 -0.763 FDR 0.0277; Ggt7 -4.468 -0.473 FDR 0.0277; Slco3a1 -4.464 -0.731 FDR 0.0277; Rap2a +4.366 +0.958 FDR 0.0364; Mgat5 -4.270 -0.580 FDR 0.0427; Gas2 -4.267 -0.881 FDR 0.0427.",
+        "description": "The strongest Polr3b response was a mostly downregulated module in 151 TH Prkcd Grin2c Glut neurons, with Rap2a as the only positive FDR<0.05 member."
+      },
+      {
+        "target_gene": "Polr3b",
+        "evidence_id": "E004",
+        "evidence_slug": "polr3b_151_th_extended_nominal_synaptic_hits",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Lrrc7|Plekhg1|Nup98|Rtn4r|Rbms1|Patj|Atp2b1|Grin2c",
+        "n_genes": "8",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "Lrrc7 logFC -0.384 FDR 0.06197; Plekhg1 -0.459 FDR 0.06197; Nup98 +0.637 FDR 0.06228; Rtn4r -0.621 FDR 0.08615; Rbms1 -0.634 FDR 0.09329; Patj -0.425 FDR 0.09329; Atp2b1 -0.409 FDR 0.09329; Grin2c -0.683 FDR 0.10053.",
+        "description": "Additional near-threshold 151 TH genes extended the top Polr3b response into synaptic, calcium, and neuronal identity genes."
+      },
+      {
+        "target_gene": "Polr3b",
+        "evidence_id": "E012",
+        "evidence_slug": "polr3b_sampled_groups_are_neuronal",
+        "cell_type": "",
+        "genes": "",
+        "n_genes": "0",
+        "has_genes": "0",
+        "has_cell_type": "0",
+        "statistics": "Polr3b was quantified in 21 group_name classes, all annotated as Glut or GABA neuronal subclasses; no Polr3b rows were present for oligodendrocyte-lineage, astrocyte or microglial labels.",
+        "description": "The Polr3b analysis space was neuronal, so disease links to hypomyelination could not be evaluated directly in oligodendrocytes."
+      },
+      {
+        "target_gene": "Bdp1",
+        "evidence_id": "E005",
+        "evidence_slug": "bdp1_polr3b_thalamic_divergence",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Bdp1|Polr3b|Ddit3|Mars1|Aars|Cars|Iars|Lars|Yars|Kcnc2|Rap1gap|Adgrb1|Pcp4|Ggt7|Slco3a1|Rap2a|Mgat5|Gas2",
+        "n_genes": "18",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "Polr3b in 151 TH Prkcd Grin2c Glut had 72 perturbed cells and 8 FDR<0.05 genes: Rap1gap, Adgrb1, Pcp4, Ggt7, Slco3a1, Rap2a, Mgat5 and Gas2. The Bdp1 and Polr3b FDR gene sets had 0/8 overlap; the score-vector Pearson correlation across 17259 matched genes was r=0.156; their top 25 nominal genes had no overlap.",
+        "description": "The only assayed RNA polymerase III core subunit related to Bdp1 produced a different thalamic transcriptomic program."
+      },
+      {
+        "target_gene": "Bdp1",
+        "evidence_id": "E008",
+        "evidence_slug": "rna_poliii_related_targets_available",
+        "cell_type": "",
+        "genes": "Bdp1|Polr3b",
+        "n_genes": "2",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Exact filtering for Bdp1 and candidate RNA polymerase III or TFIIIB neighbors Brf1, Brf2, Tbp, Polr3a, Polr3b, Polr3c, Polr3d, Polr3e, Polr3f, Polr3g, Polr3gl, Polr3h, Polr3k, Polr3l, Maf1 and Gtf3c1-Gtf3c6 returned only Bdp1 and Polr3b in the parquet.",
+        "description": "Polr3b was the only exact RNA polymerase III pathway neighbor available for direct comparison in this dataset extract."
+      }
+    ],
+    "source_claim_ids": [
+      "claim:polr3b_f001_b95fadac074a",
+      "claim:bdp1_f003_da2a7a5660d1"
+    ],
+    "source_cluster_ids": [
+      "C160"
+    ]
+  },
+  "caveats": [
+    "Polr3b mRNA itself was not significantly depleted, and most POLR3-related disease subunits were absent as direct screened comparators."
+  ],
+  "prior_expectation": {
+    "summary": "Prior literature and pathway context were taken from the resolved report references; the observed Perturb-seq signal either refines expected gene function by cell type or marks an exploratory response-state neighbor where noted in caveats.",
+    "citations": [
+      {
+        "reference_id": "Polr3b:R004",
+        "citation": "Open Targets Platform target ENSG00000013503, POLR3B associated diseases.",
+        "url": "https://platform.opentargets.org/target/ENSG00000013503",
+        "supports": "Summarizes human genetic associations of POLR3B with hypomyelinating leukodystrophy and related POLR3B disorders."
+      },
+      {
+        "reference_id": "Polr3b:R006",
+        "citation": "Tetreault M, Choquet K, Orcesi S, et al. Recessive mutations in POLR3B, encoding the second largest subunit of Pol III, cause a rare hypomyelinating leukodystrophy. Am J Hum Genet. 2011.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/22036172/",
+        "supports": "First-line human genetics evidence that recessive POLR3B mutations cause childhood-onset hypomyelinating leukodystrophy with cerebellar dysfunction, oligodontia and hypogonadotropic hypogonadism."
+      },
+      {
+        "reference_id": "Polr3b:R007",
+        "citation": "Coulombe B, Derksen A, La Piana R. POLR3-related leukodystrophy: How do mutations affecting RNA polymerase III subunits cause hypomyelination? Faculty Reviews. 2021.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33659930/",
+        "supports": "Review linking POLR3A, POLR3B, POLR3K and POLR1C variants to POLR3-related leukodystrophy and summarizing Pol III roles in small non-coding RNA synthesis and complex biogenesis."
+      },
+      {
+        "reference_id": "Bdp1:R001",
+        "citation": "UniProtKB entries A6H8Y1 BDP1_HUMAN and Q571C7 BDP1_MOUSE.",
+        "url": "https://rest.uniprot.org/uniprotkb/A6H8Y1",
+        "supports": "Curated BDP1 function, homology to mouse Bdp1, nuclear localization, TFIIIB subunit membership, and links to RNA polymerase III promoter-initiation pathways."
+      },
+      {
+        "reference_id": "Bdp1:R002",
+        "citation": "Reactome RNA Polymerase III Transcription Initiation From Type 1/2/3 Promoter pathways: R-HSA-76061, R-HSA-76066 and R-HSA-76071.",
+        "url": "https://reactome.org/content/detail/R-HSA-76066",
+        "supports": "Places BDP1 in RNA polymerase III transcription initiation at all three promoter classes."
+      },
+      {
+        "reference_id": "Bdp1:R003",
+        "citation": "Gouge J, Guthertz N, Kramm K, Dergai O, Abascal-Palacios G, Satia K, Cousin P, Hernandez N, Grohmann D, Vannini A. Molecular mechanisms of Bdp1 in TFIIIB assembly and RNA polymerase III transcription initiation. Nat Commun. 2017;8:130. doi:10.1038/s41467-017-00126-1. PMID:28743884.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28743884/",
+        "supports": "Structural and biochemical evidence that Bdp1 assembles with Brf1 or Brf2 and TBP to form TFIIIB and helps recruit Pol III and open the pre-initiation complex."
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 5,
+    "support": 4,
+    "priority": 4
+  },
+  "report_evidence_ids": [
+    "Polr3b:E002",
+    "Polr3b:E003",
+    "Polr3b:E004",
+    "Polr3b:E012",
+    "Bdp1:E005",
+    "Bdp1:E008"
+  ],
+  "reference_ids": [
+    "Polr3b:R004",
+    "Polr3b:R006",
+    "Polr3b:R007",
+    "Bdp1:R001",
+    "Bdp1:R002",
+    "Bdp1:R003"
+  ],
+  "source_urls_or_dois": [
+    "https://platform.opentargets.org/target/ENSG00000013503",
+    "https://pubmed.ncbi.nlm.nih.gov/22036172/",
+    "https://pubmed.ncbi.nlm.nih.gov/33659930/",
+    "https://rest.uniprot.org/uniprotkb/A6H8Y1",
+    "https://reactome.org/content/detail/R-HSA-76066",
+    "https://pubmed.ncbi.nlm.nih.gov/28743884/"
+  ]
+}

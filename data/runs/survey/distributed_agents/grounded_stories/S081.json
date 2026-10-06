@@ -1,0 +1,359 @@
+{
+  "story_id": "S081",
+  "title": "WAC loss represses mature synaptic effectors while inducing splicing and ubiquitin-linked transcripts",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Wac loss repeatedly downregulated mature neuronal and synaptic genes, with strong 151 TH loss of Ache, C1qtnf4, Eno2, Gabra1, Gabrd, Lynx1, Lgi3, Pvalb, and Septin5 alongside upregulation of Luc7l2, Clk1, Jmjd1c, Rbm4, and other nuclear RNA-processing genes.",
+  "biological_interpretation": "WAC dosage supports a mature neuronal effector program in selected posterior and inhibitory neurons and its loss enters a mixed RNA-processing/proteostasis state rather than an isolated CTLH output.",
+  "targets": [
+    "Wac",
+    "Ddx23",
+    "Clk1",
+    "Jmjd1c",
+    "Luc7l2",
+    "Luc7l3",
+    "Prpf6",
+    "Rbm25",
+    "Rbm4",
+    "Pomp",
+    "Psmb4",
+    "Psmc1",
+    "Psmc5"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "052 Pvalb Gaba",
+    "066 CNU-HYa HY GABA",
+    "191 MB P MY GABA"
+  ],
+  "support": {
+    "exact_de_rows": [
+      {
+        "gene_target": "Wac",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Lgi3",
+        "logfoldchanges": -1.034,
+        "pvals_adj": 2.54e-16
+      },
+      {
+        "gene_target": "Wac",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Eno2",
+        "logfoldchanges": -0.454,
+        "pvals_adj": 1.9e-10
+      },
+      {
+        "gene_target": "Wac",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Grid2ip",
+        "logfoldchanges": -0.631,
+        "pvals_adj": 3.24e-10
+      },
+      {
+        "gene_target": "Wac",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Gabrb2",
+        "logfoldchanges": -0.412,
+        "pvals_adj": 1.48e-09
+      },
+      {
+        "gene_target": "Wac",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Ache",
+        "logfoldchanges": -0.877,
+        "pvals_adj": 4.45e-09
+      },
+      {
+        "gene_target": "Wac",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Slc17a6",
+        "logfoldchanges": -0.402,
+        "pvals_adj": 3.5e-07
+      },
+      {
+        "gene_target": "Wac",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Gabra1",
+        "logfoldchanges": -0.66,
+        "pvals_adj": 6.27e-08
+      },
+      {
+        "gene_target": "Wac",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Luc7l2",
+        "logfoldchanges": 0.368,
+        "pvals_adj": 5.03e-08
+      },
+      {
+        "gene_target": "Wac",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Clk1",
+        "logfoldchanges": 0.289,
+        "pvals_adj": 1.95e-07
+      },
+      {
+        "gene_target": "Wac",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Jmjd1c",
+        "logfoldchanges": 0.421,
+        "pvals_adj": 4.57e-06
+      },
+      {
+        "gene_target": "Wac",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Rbm4",
+        "logfoldchanges": 0.382,
+        "pvals_adj": 2.6e-05
+      },
+      {
+        "gene_target": "Wac",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Ube2b",
+        "logfoldchanges": 0.275,
+        "pvals_adj": 5.67e-05
+      },
+      {
+        "gene_target": "Wac",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Luc7l3",
+        "logfoldchanges": 0.191,
+        "pvals_adj": 0.00127
+      },
+      {
+        "gene_target": "Wac",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Rbm25",
+        "logfoldchanges": 0.231,
+        "pvals_adj": 0.00787
+      }
+    ],
+    "evidence_records": [
+      {
+        "target_gene": "Wac",
+        "evidence_id": "E001",
+        "evidence_slug": "wac_target_transcript_weak_self_depletion",
+        "cell_type": "",
+        "genes": "Wac",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Wac transcript row present in 22 cell classes; 18/22 logFC estimates were negative; median logFC -0.281, range -0.692 to 0.231; 7/22 nominal p<0.05; 0/22 FDR<0.05; minimum p=7.13e-4 and minimum FDR=0.214 in 066 CNU-HYa HY GABA.",
+        "description": "On-target depletion measured from the Wac feature itself was negative in most classes but did not survive per-class multiple testing."
+      },
+      {
+        "target_gene": "Wac",
+        "evidence_id": "E002",
+        "evidence_slug": "wac_fdr_burden_three_class_concentration",
+        "cell_type": "",
+        "genes": "",
+        "n_genes": "0",
+        "has_genes": "0",
+        "has_cell_type": "0",
+        "statistics": "709 Wac rows passed FDR<0.05 across 535 unique genes; 607/709 significant rows, 85.6%, occurred in 151 TH Prkcd Grin2c Glut, 155 MB Glut, and 052 Pvalb Gaba; seven of 22 Wac-assayed classes had zero FDR<0.05 rows.",
+        "description": "The downstream Wac response was highly concentrated in a small set of cell classes."
+      },
+      {
+        "target_gene": "Wac",
+        "evidence_id": "E003",
+        "evidence_slug": "wac_151_th_prkcd_grin2c_glut_strongest_signature",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Lgi3|Eno2|Grid2ip|Gabrb2|Ache|Slc17a6|Gabra1|Adarb1",
+        "n_genes": "8",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "124 perturbed cells versus 23679 controls; 384 FDR<0.05 rows with 216 down and 168 up; Lgi3 logFC -1.034 FDR 2.54e-16, Eno2 -0.454 FDR 1.90e-10, Grid2ip -0.631 FDR 3.24e-10, Gabrb2 -0.412 FDR 1.48e-9, Ache -0.877 FDR 4.45e-9, Slc17a6 -0.402 FDR 3.50e-7, Gabra1 -0.660 FDR 6.27e-8, Adarb1 +0.440 FDR 1.48e-9.",
+        "description": "The largest Wac response occurred in thalamic Prkcd/Grin2c glutamatergic neurons and included many decreased neuronal and synaptic genes."
+      },
+      {
+        "target_gene": "Wac",
+        "evidence_id": "E004",
+        "evidence_slug": "wac_155_mb_glut_signature",
+        "cell_type": "155 MB Glut",
+        "genes": "Ache|Ttyh1|Nap1l5|Lgi3|Eno2|Jmjd1c|Clk1|Ube2b",
+        "n_genes": "8",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "131 perturbed cells versus 20353 controls; 125 FDR<0.05 rows with 67 down and 58 up; Ache logFC -0.712 FDR 1.98e-9, Ttyh1 -0.703 FDR 7.48e-9, Nap1l5 -0.564 FDR 1.03e-6, Lgi3 -0.643 FDR 3.45e-5, Eno2 -0.316 FDR 0.00119, Jmjd1c +0.451 FDR 9.33e-4, Clk1 +0.290 FDR 0.00104, Ube2b +0.295 FDR 0.0105.",
+        "description": "Midbrain glutamatergic neurons carried the second-largest Wac response, again with Ache and Lgi3 downregulation plus nuclear-gene induction."
+      },
+      {
+        "target_gene": "Wac",
+        "evidence_id": "E005",
+        "evidence_slug": "wac_052_pvalb_gaba_signature",
+        "cell_type": "052 Pvalb Gaba",
+        "genes": "Kcnab3|C1qtnf4|Pvalb|Lgi3|Enah|Gabra1|Clk1|Ube2b",
+        "n_genes": "8",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "85 perturbed cells versus 13710 controls; 98 FDR<0.05 rows with 62 down and 36 up; Kcnab3 logFC -0.699 FDR 1.32e-6, C1qtnf4 -0.686 FDR 1.95e-6, Pvalb -0.721 FDR 1.02e-5, Lgi3 -0.763 FDR 3.92e-5, Enah +0.665 FDR 4.25e-5, Gabra1 -0.440 FDR 0.00133, Clk1 +0.297 FDR 0.00284, Ube2b +0.318 FDR 0.00806.",
+        "description": "Pvalb interneurons showed a smaller but coherent Wac response with reduced Pvalb-class and synaptic transcripts."
+      },
+      {
+        "target_gene": "Wac",
+        "evidence_id": "E011",
+        "evidence_slug": "wac_fdr_null_classes",
+        "cell_type": "",
+        "genes": "",
+        "n_genes": "0",
+        "has_genes": "0",
+        "has_cell_type": "0",
+        "statistics": "Seven classes had zero Wac FDR<0.05 rows: 001 L5-6 IT Glut with 24 perturbed cells, 008 L2-3 IT ENT PPP RSP Glut with 29, 017 CA3 CA2-FC DG Glut with 58, 022 L5 ET CTX Glut with 44, 053 Sst Gaba with 40, 059 CNU-LGE LSX GABA with 45, and 217 P MY Pineal Glut with 24.",
+        "description": "Several Wac-assayed classes were transcriptionally null by the FDR threshold, often with low perturbed-cell counts."
+      },
+      {
+        "target_gene": "Wac",
+        "evidence_id": "E006",
+        "evidence_slug": "wac_recurrent_directional_genes",
+        "cell_type": "",
+        "genes": "Eno2|Septin5|Ache|C1qtnf4|Clk1|Lgi3|Lynx1|Mt3|Coro6|Omg|Sfxn3|Sparcl1|Slc4a3|Pcsk1n|Nrip2",
+        "n_genes": "15",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Genes significant in the most classes were Eno2 down in 8 classes, Septin5 down in 7, Ache down in 7, C1qtnf4 down in 6, Clk1 up in 6, Lgi3 down in 5, and Lynx1, Mt3, Coro6, Omg, Sfxn3, Sparcl1, Slc4a3, Pcsk1n and Nrip2 down in at least 4 classes.",
+        "description": "A recurrent Wac-loss gene module was dominated by downregulated neuronal genes plus recurrent upregulation of Clk1."
+      },
+      {
+        "target_gene": "Wac",
+        "evidence_id": "E007",
+        "evidence_slug": "wac_nuclear_splicing_gene_induction",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Luc7l2|Luc7l3|Sf3b1|Rbm25|Rbm4|Srsf11|Clk1|Jmjd1c|Ube2b",
+        "n_genes": "9",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "In 151 TH Prkcd Grin2c Glut, Luc7l2 logFC +0.368 FDR 5.03e-8, Clk1 +0.289 FDR 1.95e-7, Jmjd1c +0.421 FDR 4.57e-6, Rbm4 +0.382 FDR 2.60e-5, Ube2b +0.275 FDR 5.67e-5, Sf3b1 +0.230 FDR 5.33e-4, Srsf11 +0.246 FDR 9.63e-4, Luc7l3 +0.191 FDR 0.00127, and Rbm25 +0.231 FDR 0.00787.",
+        "description": "The strongest Wac cell class upregulated multiple RNA-processing or nuclear genes while synaptic genes were downregulated."
+      },
+      {
+        "target_gene": "Ddx23",
+        "evidence_id": "E011",
+        "evidence_slug": "ddx23_proteasome_signature_neighbors",
+        "cell_type": "066 CNU-HYa HY GABA; 151 TH Prkcd Grin2c Glut; 155 MB Glut; 191 MB P MY GABA",
+        "genes": "Ddx23|Psmc1|Psmc5|Psmb4|Pomp",
+        "n_genes": "5",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "Proteasome-perturbation score-vector correlations with Ddx23 were r=0.376 for Psmc1, 0.376 for Psmc5, and 0.364 for Psmb4 in 155 MB Glut; r=0.311 for Psmc5, 0.294 for Psmb4, and 0.285 for Psmc1 in 151 TH Prkcd Grin2c Glut; r=0.320 for Psmc1, 0.309 for Pomp, and 0.296 for Psmb4 in 066 CNU-HYa HY GABA; and r=0.332 for Psmc1, 0.308 for Psmb4, and 0.292 for Psmc5 in 191 MB P MY GABA.",
+        "description": "Unbiased nearest-neighbor analysis linked Ddx23 to proteasome-subunit perturbation signatures, especially in the same cell types where Prpf6 was also near Ddx23."
+      }
+    ],
+    "source_claim_ids": [
+      "claim:wac_f001_523cdcbda113",
+      "claim:wac_f003_8c4c1c76a7d0",
+      "claim:ddx23_f007_368bbb85dc8f"
+    ],
+    "source_cluster_ids": [
+      "C190",
+      "C255"
+    ]
+  },
+  "caveats": [
+    "The Ddx23 and proteasome relationships are neighbor-scan evidence with moderate correlations, so they should be treated as response-state convergence rather than direct pathway identity."
+  ],
+  "prior_expectation": {
+    "summary": "Prior literature and pathway context were taken from the resolved report references; the observed Perturb-seq signal either refines expected gene function by cell type or marks an exploratory response-state neighbor where noted in caveats.",
+    "citations": [
+      {
+        "reference_id": "Wac:R001",
+        "citation": "UniProtKB entry Q9BTA9, WW domain-containing adapter protein with coiled-coil, human WAC.",
+        "url": "https://www.uniprot.org/uniprotkb/Q9BTA9",
+        "supports": "Curated WAC function, subunit, GO, and disease annotations, including RNF20/RNF40, RNA polymerase II, DNA-damage, autophagy, mTORC1, and DeSanto-Shinawi syndrome annotations."
+      },
+      {
+        "reference_id": "Wac:R008",
+        "citation": "Human Protein Atlas entry ENSG00000095787, WAC, accessed 2025-04-29.",
+        "url": "https://www.proteinatlas.org/ENSG00000095787",
+        "supports": "Annotates WAC as evidence at protein level, detected in all tissues, low tissue specificity, detected in all brain regions, and low RNA brain regional specificity."
+      },
+      {
+        "reference_id": "Wac:R002",
+        "citation": "Zhang F, Yu X. WAC, a functional partner of RNF20/40, regulates histone H2B ubiquitination and gene transcription. Molecular Cell. 2011;41(4):384-397. doi:10.1016/j.molcel.2011.01.024.",
+        "url": "https://doi.org/10.1016/j.molcel.2011.01.024",
+        "supports": "Primary report that WAC interacts with RNF20/RNF40 and RNA polymerase II and is needed for histone H2B ubiquitination during transcription."
+      },
+      {
+        "reference_id": "Wac:R006",
+        "citation": "Reactome pathway R-HSA-8866654, E3 ubiquitin ligases ubiquitinate target proteins.",
+        "url": "https://reactome.org/PathwayBrowser/#/R-HSA-8866654",
+        "supports": "Places WAC in the RNF20:RNF40, PAF1C, UBE2A/B, ubiquitin, histone H2B nucleoplasmic complex reaction."
+      },
+      {
+        "reference_id": "Ddx23:R001",
+        "citation": "Reactome events R-HSA-9770132 and R-HSA-9769567 for DDX23 in human spliceosomal B-complex and U5 snRNP/U4-U6-U5 tri-snRNP biology, accessed 2025-04-29.",
+        "url": "https://reactome.org/content/detail/R-HSA-9770142",
+        "supports": "Places DDX23 in the U4/U6.U5 tri-snRNP and spliceosomal B-complex transition, including the U1-to-U6 5-prime splice-site handoff."
+      },
+      {
+        "reference_id": "Ddx23:R002",
+        "citation": "STRING high-confidence human DDX23 interaction partners, queried for species 9606 with required_score 700 on 2025-04-29.",
+        "url": "https://string-db.org/cgi/network?identifier=DDX23&species=9606",
+        "supports": "Reports PRPF8, PRPF3, EFTUD2, TXNL4A, SNRNP200, PRPF6, and Sm proteins among the strongest DDX23 functional interaction partners."
+      },
+      {
+        "reference_id": "Ddx23:R003",
+        "citation": "Mathew R, Hartmuth K, M\u00f6hlmann S, Urlaub H, Ficner R, L\u00fchrmann R. Phosphorylation of human PRP28 by SRPK2 is required for integration of the U4/U6-U5 tri-snRNP into the spliceosome. Nat Struct Mol Biol. 2008;15(5):435-443. PMID:18425142.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/18425142/",
+        "supports": "Experimental RNAi work connecting human PRP28/DDX23 phosphorylation to tri-snRNP association and spliceosomal B-complex formation."
+      },
+      {
+        "reference_id": "Ddx23:R004",
+        "citation": "Burns W, Bird LM, Heron D, Keren B, Ramachandra D, Thiffault I, Del Viso F, et al. Syndromic neurodevelopmental disorder associated with de novo variants in DDX23. Am J Med Genet A. 2021;185(10):2863-2872. doi:10.1002/ajmg.a.62359. PMID:34050707.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34050707/",
+        "supports": "Clinical cohort reporting nine unrelated individuals with de novo DDX23 missense variants and syndromic neurodevelopmental phenotypes."
+      },
+      {
+        "reference_id": "Ddx23:R005",
+        "citation": "Ensembl homology API for mus_musculus Ddx23 to human orthologues, accessed 2025-04-29.",
+        "url": "https://rest.ensembl.org/homology/symbol/mus_musculus/Ddx23?target_species=human;type=orthologues",
+        "supports": "Identifies mouse Ddx23 ENSMUSG00000003360 and human DDX23 ENSG00000174243 as one-to-one orthologues with about 98.5% protein identity."
+      },
+      {
+        "reference_id": "Ddx23:R006",
+        "citation": "ChEMBL target search for DDX23, accessed 2025-04-29.",
+        "url": "https://www.ebi.ac.uk/chembl/",
+        "supports": "A DDX23 text search returned zero ChEMBL target records, providing a narrow negative check for established small-molecule target annotation."
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 5,
+    "priority": 5
+  },
+  "report_evidence_ids": [
+    "Wac:E001",
+    "Wac:E002",
+    "Wac:E003",
+    "Wac:E004",
+    "Wac:E005",
+    "Wac:E011",
+    "Wac:E006",
+    "Wac:E007",
+    "Ddx23:E011"
+  ],
+  "reference_ids": [
+    "Wac:R001",
+    "Wac:R008",
+    "Wac:R002",
+    "Wac:R006",
+    "Ddx23:R001",
+    "Ddx23:R002",
+    "Ddx23:R003",
+    "Ddx23:R004",
+    "Ddx23:R005",
+    "Ddx23:R006"
+  ],
+  "source_urls_or_dois": [
+    "https://www.uniprot.org/uniprotkb/Q9BTA9",
+    "https://www.proteinatlas.org/ENSG00000095787",
+    "https://doi.org/10.1016/j.molcel.2011.01.024",
+    "https://reactome.org/PathwayBrowser/#/R-HSA-8866654",
+    "https://reactome.org/content/detail/R-HSA-9770142",
+    "https://string-db.org/cgi/network?identifier=DDX23&species=9606",
+    "https://pubmed.ncbi.nlm.nih.gov/18425142/",
+    "https://pubmed.ncbi.nlm.nih.gov/34050707/",
+    "https://rest.ensembl.org/homology/symbol/mus_musculus/Ddx23?target_species=human;type=orthologues",
+    "https://www.ebi.ac.uk/chembl/"
+  ]
+}

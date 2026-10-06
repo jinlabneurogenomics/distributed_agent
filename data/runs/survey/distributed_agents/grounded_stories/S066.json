@@ -1,0 +1,150 @@
+{
+  "story_id": "S066",
+  "title": "TBL1XR1 and GSK3B perturbations define distinct Wnt-adjacent thalamic states instead of a canonical beta-catenin cascade",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Tbl1xr1 generated a compact 151 TH Prkcd Grin2c Glut signature with Vangl1 logFC -0.422 FDR 0.00483, Prkcg -0.235 FDR 0.00483, Rasa4 -0.550 FDR 0.0288, and Kctd16 0.354 FDR 0.0288. Ctnnb1 and Tcf7l2 perturbations in the same cell type had much larger signatures but near-zero Pearson correlations with Tbl1xr1. Gsk3b was depleted in the same 151 TH class yet did not induce canonical Axin2/Lef1 output like Apc perturbation.",
+  "biological_interpretation": "TBL1XR1 and GSK3B sit near Wnt/beta-catenin biology in the literature, but in differentiated thalamic neurons their knockdown states are sparse and target-specific rather than a simple canonical beta-catenin transcriptional cascade.",
+  "targets": [
+    "Tbl1xr1",
+    "Gsk3b",
+    "Ctnnb1",
+    "Tcf7l2"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut"
+  ],
+  "support": {
+    "support_level": 4,
+    "exact_de_rows": [
+      {
+        "gene_target": "Tbl1xr1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Vangl1",
+        "log2_fold_change": -0.422,
+        "pvals_adj": 0.00483,
+        "wilcoxon_score": -5.027
+      },
+      {
+        "gene_target": "Tbl1xr1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Prkcg",
+        "log2_fold_change": -0.235,
+        "pvals_adj": 0.00483,
+        "wilcoxon_score": -5.005
+      },
+      {
+        "gene_target": "Tbl1xr1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rasa4",
+        "log2_fold_change": -0.55,
+        "pvals_adj": 0.0288,
+        "wilcoxon_score": -4.441
+      },
+      {
+        "gene_target": "Tbl1xr1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kctd16",
+        "log2_fold_change": 0.354,
+        "pvals_adj": 0.0288,
+        "wilcoxon_score": 4.543
+      },
+      {
+        "gene_target": "Gsk3b",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gsk3b",
+        "log2_fold_change": -0.699,
+        "pvals_adj": 2.02e-05,
+        "wilcoxon_score": -6.084
+      },
+      {
+        "gene_target": "Gsk3b",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Nrbp2",
+        "log2_fold_change": -0.384,
+        "pvals_adj": 0.004
+      },
+      {
+        "gene_target": "Gsk3b",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Axin2",
+        "log2_fold_change": -0.0245,
+        "pvals_adj": 1.0
+      }
+    ],
+    "report_evidence_summary": [
+      "Tbl1xr1:E001",
+      "Tbl1xr1:E004",
+      "Tbl1xr1:E005",
+      "Tbl1xr1:E006",
+      "Tbl1xr1:E007",
+      "Tbl1xr1:E008",
+      "Gsk3b:E001",
+      "Gsk3b:E002",
+      "Gsk3b:E007",
+      "Gsk3b:E009"
+    ]
+  },
+  "caveats": [
+    "Gsk3a was not in the perturbation panel, so redundancy could explain the muted Wnt response after single Gsk3b knockdown."
+  ],
+  "prior_expectation": {
+    "summary": "TBL1XR1 is part of the N-CoR/TBL1 corepressor context and has published beta-catenin/Wnt links; GSK3B is a Wnt, insulin, cytoskeletal, and mTOR-related kinase, so the absence of a full canonical Wnt phenocopy is a divergence from a simple pathway expectation.",
+    "citations": [
+      {
+        "ref_id": "Tbl1xr1:R004",
+        "ref": "Yoon et al. 2003 DOI:10.1093/emboj/cdg120",
+        "url_or_doi": "https://doi.org/10.1093/emboj/cdg120",
+        "supports": "TBLR1 in an N-CoR complex"
+      },
+      {
+        "ref_id": "Tbl1xr1:R006",
+        "ref": "Li and Wang 2008 DOI:10.1038/ncb1684",
+        "url_or_doi": "https://doi.org/10.1038/ncb1684",
+        "supports": "TBL1/TBLR1 links to Wnt-beta-catenin transcription"
+      },
+      {
+        "ref_id": "Gsk3b:R003",
+        "ref": "Doble et al. 2007 DOI:10.1016/j.devcel.2007.04.001",
+        "url_or_doi": "https://doi.org/10.1016/j.devcel.2007.04.001",
+        "supports": "GSK3A/B redundancy can buffer beta-catenin control"
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 4,
+    "priority": 3
+  },
+  "report_evidence_ids": [
+    "Tbl1xr1:E001",
+    "Tbl1xr1:E004",
+    "Tbl1xr1:E005",
+    "Tbl1xr1:E006",
+    "Tbl1xr1:E007",
+    "Tbl1xr1:E008",
+    "Gsk3b:E001",
+    "Gsk3b:E002",
+    "Gsk3b:E007",
+    "Gsk3b:E009"
+  ],
+  "reference_ids": [
+    "Tbl1xr1:R001",
+    "Tbl1xr1:R004",
+    "Tbl1xr1:R006",
+    "Tbl1xr1:R009",
+    "Gsk3b:R001",
+    "Gsk3b:R003"
+  ],
+  "source_urls_or_dois": [
+    "https://doi.org/10.1093/emboj/cdg120",
+    "https://doi.org/10.1038/ncb1684",
+    "https://doi.org/10.1016/j.devcel.2007.04.001"
+  ],
+  "source_claim_ids": [
+    "claim:tbl1xr1_f001_187c66427539",
+    "claim:tbl1xr1_f002_5b3c4db9c121",
+    "claim:gsk3b_f001_4c3822fc3e9d",
+    "claim:gsk3b_f003_f747a5856cdb"
+  ]
+}

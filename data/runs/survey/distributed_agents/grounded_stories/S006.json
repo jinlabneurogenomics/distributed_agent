@@ -1,0 +1,172 @@
+{
+  "biological_interpretation": "The CRISPR endpoint captures a narrow striatal-lineage GABA PDE10A loss state rather than a pan-cAMP response or a simple replay of acute PDE10A-inhibitor immediate-early/neuropeptide induction.",
+  "caveats": [
+    "059 CNU-LGE LSX GABA does not split D1 from D2 medium spiny neurons.",
+    "The assay measured mRNA at a chronic genetic endpoint, not PDE10A protein, cAMP, cGMP, or acute inhibitor pharmacodynamics."
+  ],
+  "cell_types": [
+    "059 CNU-LGE LSX GABA"
+  ],
+  "exact_observed_result": "In 059 CNU-LGE LSX GABA, Pde10a knockdown reduced Pde10a itself and up-regulated Scg2 at FDR<0.05, with Crem and Vgf moving upward only nominally; Fos, Arc, Egr1, Penk, and Tac1 were not significantly induced.",
+  "preliminary_scores": {
+    "novelty": 3,
+    "priority": 3,
+    "support": 4
+  },
+  "prior_expectation": {
+    "citations": [
+      {
+        "ref": "Russwurm et al. 2015",
+        "supports": "PDE10A striatal synaptic cAMP/PKA complex",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/25762721/"
+      },
+      {
+        "ref": "Strick et al. 2010",
+        "supports": "acute PDE10A inhibitor striatal transcription",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/19765598/"
+      },
+      {
+        "ref": "Wilson et al. 2015",
+        "supports": "MP-10 c-Fos induction in striatal neurons",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/26256420/"
+      }
+    ],
+    "summary": "Prior expectation is grounded by the listed traceable corpus citations; direct prior support for the exact cell-type/state relationship is partial unless noted in the caveats."
+  },
+  "reference_ids": [
+    "Pde10a:R001",
+    "Pde10a:R002",
+    "Pde10a:R003",
+    "Pde10a:R004",
+    "Pde10a:R005"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Pde10a:E001",
+    "Pde10a:E002",
+    "Pde10a:E003",
+    "Pde10a:E004",
+    "Pde10a:E005"
+  ],
+  "source_urls_or_dois": [
+    {
+      "ref": "Russwurm et al. 2015",
+      "supports": "PDE10A striatal synaptic cAMP/PKA complex",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/25762721/"
+    },
+    {
+      "ref": "Strick et al. 2010",
+      "supports": "acute PDE10A inhibitor striatal transcription",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/19765598/"
+    },
+    {
+      "ref": "Wilson et al. 2015",
+      "supports": "MP-10 c-Fos induction in striatal neurons",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/26256420/"
+    }
+  ],
+  "status": "grounded",
+  "story_id": "S006",
+  "support": {
+    "exact_de_rows": [
+      {
+        "cell_type": "059 CNU-LGE LSX GABA",
+        "fdr_lt_0_05": false,
+        "gene": "Arc",
+        "log2_fold_change": -0.332331,
+        "pval": 0.6994067570906302,
+        "pvals_adj": 1.0,
+        "score": -0.386121,
+        "target": "Pde10a"
+      },
+      {
+        "cell_type": "059 CNU-LGE LSX GABA",
+        "fdr_lt_0_05": false,
+        "gene": "Crem",
+        "log2_fold_change": 1.210491,
+        "pval": 1.1541493825726655e-05,
+        "pvals_adj": 0.06362825546123105,
+        "score": 4.386074,
+        "target": "Pde10a"
+      },
+      {
+        "cell_type": "059 CNU-LGE LSX GABA",
+        "fdr_lt_0_05": false,
+        "gene": "Egr1",
+        "log2_fold_change": -0.149171,
+        "pval": 0.7495356013133738,
+        "pvals_adj": 1.0,
+        "score": -0.319252,
+        "target": "Pde10a"
+      },
+      {
+        "cell_type": "059 CNU-LGE LSX GABA",
+        "fdr_lt_0_05": false,
+        "gene": "Fos",
+        "log2_fold_change": -0.241288,
+        "pval": 0.9206724102089853,
+        "pvals_adj": 1.0,
+        "score": -0.099587,
+        "target": "Pde10a"
+      },
+      {
+        "cell_type": "059 CNU-LGE LSX GABA",
+        "fdr_lt_0_05": true,
+        "gene": "Pde10a",
+        "log2_fold_change": -0.941892,
+        "pval": 2.892400915119792e-07,
+        "pvals_adj": 0.004783741873516624,
+        "score": -5.130326,
+        "target": "Pde10a"
+      },
+      {
+        "cell_type": "059 CNU-LGE LSX GABA",
+        "fdr_lt_0_05": false,
+        "gene": "Penk",
+        "log2_fold_change": 0.367725,
+        "pval": 0.25094009385541294,
+        "pvals_adj": 1.0,
+        "score": 1.148069,
+        "target": "Pde10a"
+      },
+      {
+        "cell_type": "059 CNU-LGE LSX GABA",
+        "fdr_lt_0_05": true,
+        "gene": "Scg2",
+        "log2_fold_change": 1.087969,
+        "pval": 1.5781501993983815e-06,
+        "pvals_adj": 0.013050513073924916,
+        "score": 4.801076,
+        "target": "Pde10a"
+      },
+      {
+        "cell_type": "059 CNU-LGE LSX GABA",
+        "fdr_lt_0_05": false,
+        "gene": "Tac1",
+        "log2_fold_change": 0.02351,
+        "pval": 0.9171561102016219,
+        "pvals_adj": 1.0,
+        "score": -0.104017,
+        "target": "Pde10a"
+      },
+      {
+        "cell_type": "059 CNU-LGE LSX GABA",
+        "fdr_lt_0_05": false,
+        "gene": "Vgf",
+        "log2_fold_change": 0.76005,
+        "pval": 0.00028877619464446545,
+        "pvals_adj": 0.29850434270155085,
+        "score": 3.625166,
+        "target": "Pde10a"
+      }
+    ],
+    "summary": [
+      "059 CNU-LGE LSX GABA was the only clearly target-engaged Pde10a class.",
+      "Scg2 was the only non-target 5% FDR hit; acute striatal markers were absent at corrected significance."
+    ]
+  },
+  "targets": [
+    "Pde10a"
+  ],
+  "title": "Pde10a loss is a striatal-lineage GABA cAMP perturbation distinct from other PDEs"
+}

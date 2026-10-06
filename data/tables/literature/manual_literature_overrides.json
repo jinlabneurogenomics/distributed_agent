@@ -1,0 +1,72 @@
+[
+  {
+    "override_id": "human_260801_sin3a_f004_conditional_e2f_complex",
+    "review_key": "EXT:U0851:F004",
+    "candidate_id": "U0851:F004",
+    "gene_target": "Sin3a",
+    "finding_id": "F004",
+    "claim_scope": "program_response",
+    "summary_override": "Sin3a loss induced a coherent E2F-linked centriole, centrosome, and cilium transcriptional program across responding neuronal groups.",
+    "relation": "specific_incomplete",
+    "dataset_informativity": "informative",
+    "confidence": "high",
+    "documented_expectation": "mSin3A loss derepresses broad E2F-associated transcriptional networks. Separately, SIN3B/HDAC is recruited by repressive E2F4-p130/p107 complexes, while Multicilin forms an E2F4/5-DP1 activator complex that selectively induces centriole-assembly genes such as PLK4, CEP152, and STIL. These sources make the observed program biologically specific, but they do not establish that SIN3A loss activates this selective centriole arm without the Multicilin activator context.",
+    "missing_or_conflicting_link": "No cited study demonstrates SIN3A loss causing Multicilin-independent release or activation of the E2F4/5-bound centriole program. The apparent chain changes E2F complex composition and regulatory sign between the SIN3 corepressor literature and the Multicilin-dependent centriole literature.",
+    "rationale": "Generic E2F derepression is not a complete directional prediction of this selective program: activator E2F1-3, repressive E2F4/5-SIN3/DREAM complexes, and the Multicilin-E2F4/5-DP1 activator have different targets and regulatory signs. The finding is therefore a strong specific extension of documented SIN3/E2F and E2F/centriole biology, but the consequential SIN3A-loss-to-selective-centriole edge remains inferred. Centriole, centrosome, and ciliary-basal-body genes are parts of the same measured organelle program; their relationship is not the missing edge.",
+    "dataset_support_summary": "Sin3a loss induced 21 of 25 genes in the measured E2F module (99.8th-percentile enrichment; directional P=0.049) and 82 of 99 genes in the centriole/centrosome/cilium module (directional P<0.001). Cep152 was induced in three groups (+1.44, +1.31, and +1.22), with Plk4 +0.73 and Stil +0.60, while the documented Multicilin arm was not transcriptionally recovered: Mcidas median -0.43 and significant in 0/21 classes, Ccno -0.68, Deup1 absent, Foxj1 -0.07, E2f4 -0.05, and E2f5 +0.22.",
+    "supporting_reference_keys": [
+      "current:R005",
+      "PMID:11959842",
+      "PMID:24934224",
+      "PMID:24797070",
+      "PMID:24071582",
+      "PMID:18649360",
+      "PMID:26772748"
+    ],
+    "supporting_references": [
+      {
+        "reference_key": "current:R005",
+        "citation": "Dannenberg JH, David G, Zhong S, van der Torre J, Wong WH, DePinho RA. mSin3A corepressor regulates diverse transcriptional networks governing normal and neoplastic growth and survival. Genes Dev. 2005;19(13):1581-1595. PMID:15998811; PMCID:PMC1172064.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/15998811/",
+        "supported_edge": "Direct mSin3A loss deregulated broad E2F-associated transcriptional networks, but this study did not establish a selective centriole program."
+      },
+      {
+        "reference_key": "PMID:11959842",
+        "citation": "Rayman JB, Takahashi Y, Indjeian VB, et al. E2F mediates cell cycle-dependent transcriptional repression in vivo by recruitment of an HDAC1/mSin3B corepressor complex. Genes Dev. 2002;16(8):933-947. PMID:11959842; PMCID:PMC152357.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/11959842/",
+        "supported_edge": "E2F4-p130/p107 recruits an HDAC1/mSin3B corepressor complex, establishing the repressive SIN3-E2F4 regulatory state."
+      },
+      {
+        "reference_key": "PMID:24934224",
+        "citation": "Ma L, Quigley I, Omran H, Kintner C. Multicilin drives centriole biogenesis via E2f proteins. Genes Dev. 2014;28(13):1461-1471. PMID:24934224; PMCID:PMC4083089.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/24934224/",
+        "supported_edge": "Multicilin converts E2F4/5-DP1 into a selective activator of centriole-assembly genes, defining the cofactor context not recovered in the Sin3a response."
+      },
+      {
+        "reference_key": "PMID:24797070",
+        "citation": "Lee MY, Moreno CS, Saavedra HI. E2F activators signal and maintain centrosome amplification in breast cancer cells. Mol Cell Biol. 2014;34(14):2581-2599. PMID:24797070; PMCID:PMC4097658.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/24797070/",
+        "supported_edge": "Activator E2Fs can drive centrosome amplification, but this E2F1-3 context does not establish the SIN3A-E2F4/5 route."
+      },
+      {
+        "reference_key": "PMID:24071582",
+        "citation": "Fischer M, Quaas M, Wintsche A, Muller GA, Engeland K. Polo-like kinase 4 transcription is activated via CRE and NRF1 elements, repressed by DREAM through CDE/CHR sites and deregulated by HPV E7 protein. Nucleic Acids Res. 2014;42(1):163-180. PMID:24071582; PMCID:PMC3874167.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/24071582/",
+        "supported_edge": "DREAM repression directly controls PLK4 transcription, supporting E2F-family regulation of a centriole gene without demonstrating SIN3A-dependent release."
+      },
+      {
+        "reference_key": "PMID:18649360",
+        "citation": "Erez A, Chaussepied M, Castiel A, et al. The mitotic checkpoint gene, SIL is regulated by E2F1. Int J Cancer. 2008;123(7):1721-1725. PMID:18649360; PMCID:PMC2693309.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/18649360/",
+        "supported_edge": "E2F1 directly regulates SIL/STIL, supporting activator-E2F control of a centriole gene without supplying the missing SIN3A-E2F4/5 edge."
+      },
+      {
+        "reference_key": "PMID:26772748",
+        "citation": "Goeres-Miller A, et al. The E2F-DP1 Transcription Factor Complex Regulates Centriole Duplication in Caenorhabditis elegans. G3 (Bethesda). 2016;6(3):709-720. PMID:26772748; PMCID:PMC4777132.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/26772748/",
+        "supported_edge": "E2F-DP1 regulates centriole duplication in C. elegans, supporting the program-level connection but not its Multicilin-independent activation after SIN3A loss."
+      }
+    ],
+    "adjudication_date": "2026-08-01"
+  }
+]

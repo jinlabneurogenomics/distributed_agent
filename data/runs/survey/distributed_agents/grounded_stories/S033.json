@@ -1,0 +1,165 @@
+{
+  "story_id": "S033",
+  "title": "Pten loss aligns with Tsc1/Tsc2 loss and opposes Mtor/Pik3ca while remodeling Akt3 and Pik3r1 transcripts",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Pten perturbation produced FDR-supported thalamic and midbrain responses marked by Ypel3, Pcsk1n, and Pink1 repression with Epha10 and Haghl induction, and its restricted signature aligned with Tsc1/Tsc2 while opposing Mtor/Rptor/Pik3ca. The related Depdc5 and Tsc1/Tsc2 perturbations induced a 151 TH sterol arm, whereas Mtor and Rptor were much subtler direct negative comparators.",
+  "biological_interpretation": "The atlas recovers the expected PI3K-AKT-TSC-mTOR polarity as a transcriptomic epistasis pattern: upstream inhibitory lesions such as Pten, Tsc1/Tsc2, and Depdc5 point toward an mTORC1-like state and Mtor/Rptor depletion points against it. The readout is distal RNA remodeling rather than a direct measurement of PIP3, phospho-AKT, or phospho-S6.",
+  "targets": [
+    "Pten",
+    "Tsc1",
+    "Tsc2",
+    "Mtor",
+    "Rptor",
+    "Depdc5",
+    "Gsk3b",
+    "Inpp5k",
+    "Pik3cb"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "191 MB P MY GABA"
+  ],
+  "support": {
+    "support_level": 4,
+    "exact_de_rows": [
+      {
+        "gene_target": "Pten",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ypel3",
+        "log2_fold_change": -0.652,
+        "pvals_adj": 9.51e-07
+      },
+      {
+        "gene_target": "Pten",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Scn2b",
+        "log2_fold_change": -0.437,
+        "pvals_adj": 0.00236
+      },
+      {
+        "gene_target": "Pten",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Akt3",
+        "log2_fold_change": -0.414,
+        "pvals_adj": 0.0144
+      },
+      {
+        "gene_target": "Pten",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Pink1",
+        "log2_fold_change": -0.485,
+        "pvals_adj": 0.0495
+      },
+      {
+        "gene_target": "Pten",
+        "cell_type": "155 MB Glut",
+        "gene": "Pcsk1n",
+        "log2_fold_change": -0.497,
+        "pvals_adj": 2e-05
+      },
+      {
+        "gene_target": "Pten",
+        "cell_type": "155 MB Glut",
+        "gene": "Epha10",
+        "log2_fold_change": 0.569,
+        "pvals_adj": 0.00435
+      },
+      {
+        "gene_target": "Gsk3b",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gsk3b",
+        "log2_fold_change": -0.699,
+        "pvals_adj": 2.02e-05,
+        "wilcoxon_score": -6.084
+      }
+    ],
+    "report_evidence_summary": [
+      "Pten:E001",
+      "Pten:E002",
+      "Pten:E003",
+      "Pten:E004",
+      "Pten:E007",
+      "Tsc1:E010",
+      "Tsc1:E011",
+      "Depdc5:E001",
+      "Mtor:E006",
+      "Inpp5k:E004"
+    ]
+  },
+  "caveats": [
+    "Rptor and Mtor RNA perturbations are negative transcriptional comparators, not rapalog or genetic rescue assays.",
+    "Pik3cb was weak in the same neuronal strata despite literature in PTEN-deficient tumors, so the screen does not justify treating p110beta loss as a neuronal PTEN proxy."
+  ],
+  "prior_expectation": {
+    "summary": "PTEN is a negative regulator of PI3K-AKT signaling, AKT inhibits the TSC complex, and TSC1/TSC2 restrain Rheb-mTORC1; the observed Pten-to-Tsc1/Tsc2 alignment has the expected pathway polarity.",
+    "citations": [
+      {
+        "ref_id": "Pten:R001",
+        "ref": "Reactome R-HSA-199418",
+        "url_or_doi": "https://reactome.org/content/detail/R-HSA-199418",
+        "supports": "PTEN/AKT pathway context"
+      },
+      {
+        "ref_id": "Pten:R005",
+        "ref": "Inoki et al. 2002 DOI:10.1038/ncb839",
+        "url_or_doi": "https://doi.org/10.1038/ncb839",
+        "supports": "AKT inhibition of TSC2"
+      },
+      {
+        "ref_id": "Tsc1:R002",
+        "ref": "Dibble et al. 2012 PMID:22795129",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/22795129/",
+        "supports": "TSC1-TSC2-TBC1D7 mTORC1 control"
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 3,
+    "support": 4,
+    "priority": 5
+  },
+  "report_evidence_ids": [
+    "Pten:E001",
+    "Pten:E002",
+    "Pten:E003",
+    "Pten:E004",
+    "Pten:E007",
+    "Gsk3b:E002",
+    "Gsk3b:E008",
+    "Tsc1:E010",
+    "Tsc1:E011",
+    "Depdc5:E001",
+    "Depdc5:E002",
+    "Mtor:E006",
+    "Inpp5k:E004"
+  ],
+  "reference_ids": [
+    "Pten:R001",
+    "Pten:R002",
+    "Pten:R005",
+    "Pten:R006",
+    "Tsc1:R001",
+    "Tsc1:R002",
+    "Mtor:R001",
+    "Gsk3b:R004"
+  ],
+  "source_urls_or_dois": [
+    "https://reactome.org/content/detail/R-HSA-199418",
+    "https://doi.org/10.1038/ncb839",
+    "https://pubmed.ncbi.nlm.nih.gov/22795129/",
+    "https://doi.org/10.1016/j.cell.2006.06.055"
+  ],
+  "source_claim_ids": [
+    "claim:pten_f002_1bf39d11506f",
+    "claim:gsk3b_f004_02d8a61e5189",
+    "claim:tsc1_f005_53fab732496c",
+    "claim:depdc5_f001_019420c35805",
+    "claim:mtor_f004_f4c71ad225b7",
+    "claim:inpp5k_f003_3563204edb1b",
+    "claim:pten_f001_73b7d364db10",
+    "claim:cntnap2_f005_274b0d6d9bc8",
+    "claim:pik3cb_f003_7ad7f6b242d3"
+  ]
+}

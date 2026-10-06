@@ -1,0 +1,327 @@
+{
+  "7": [
+    [
+      "Psmb4",
+      "Pomp",
+      [
+        0.984
+      ],
+      "180-gene recurrent panel"
+    ],
+    [
+      "Pomp",
+      "Psmb4",
+      [
+        0.963,
+        0.942,
+        0.941
+      ],
+      "155 MB, 066 HY GABA, 052 Pvalb"
+    ],
+    [
+      "Hspa8",
+      "Hspa9",
+      [
+        0.334
+      ],
+      "151 TH Prkcd Grin2c Glut"
+    ],
+    [
+      "Hspa8",
+      "Psmb4",
+      [
+        0.289
+      ],
+      "151 TH Prkcd Grin2c Glut"
+    ],
+    [
+      "Hspa9",
+      "Hspa5",
+      [
+        0.82
+      ],
+      "151 TH Prkcd Grin2c Glut"
+    ],
+    [
+      "Hspa9",
+      "Dnm1l",
+      [
+        0.78,
+        0.87
+      ],
+      "151 TH and 155 MB"
+    ],
+    [
+      "Hspa9",
+      "Opa1",
+      [
+        0.77,
+        0.83
+      ],
+      "151 TH and 155 MB"
+    ],
+    [
+      "Hspa9",
+      "Hspa8",
+      [
+        0.69,
+        0.83
+      ],
+      "151 TH and 155 MB"
+    ],
+    [
+      "Hspa9",
+      "Psmb4",
+      [
+        0.68,
+        0.81
+      ],
+      "151 TH and 155 MB"
+    ],
+    [
+      "Lonp1",
+      "Opa1",
+      [
+        0.176,
+        0.2,
+        0.186
+      ],
+      "155 MB, 191 MB P MY, Pineal"
+    ],
+    [
+      "Lonp1",
+      "Hspa9",
+      [
+        0.213,
+        0.189
+      ],
+      "155 MB and 191 MB P MY"
+    ],
+    [
+      "Lonp1",
+      "Dnm1l",
+      [
+        0.153,
+        0.198
+      ],
+      "155 MB and 191 MB P MY"
+    ],
+    [
+      "Opa1",
+      "Hspa9",
+      [
+        0.93
+      ],
+      "reported mean across five responsive groups"
+    ],
+    [
+      "Opa1",
+      "Lonp1",
+      [
+        0.89
+      ],
+      "reported mean across five responsive groups"
+    ],
+    [
+      "Opa1",
+      "Dnm1l",
+      [
+        0.87
+      ],
+      "reported mean across five responsive groups"
+    ],
+    [
+      "Dnm1l",
+      "Hspa9",
+      [
+        0.963,
+        0.932,
+        0.909
+      ],
+      "151 TH, 191 MB P MY, 155 MB"
+    ],
+    [
+      "Dnm1l",
+      "Opa1",
+      [
+        0.935,
+        0.874,
+        0.921
+      ],
+      "151 TH, 191 MB P MY, 155 MB"
+    ],
+    [
+      "Dnm1l",
+      "Hspa5",
+      [
+        0.909
+      ],
+      "151 TH Prkcd Grin2c Glut"
+    ],
+    [
+      "Dnm1l",
+      "Lonp1",
+      [
+        0.868,
+        0.85,
+        0.887
+      ],
+      "151 TH, 191 MB P MY, 155 MB"
+    ],
+    [
+      "Dnm1l",
+      "Hspa8",
+      [
+        0.886,
+        0.859
+      ],
+      "191 MB P MY and 155 MB"
+    ]
+  ],
+  "15": [
+    [
+      "Psmb4",
+      "Pomp",
+      "155 MB",
+      0.951
+    ],
+    [
+      "Pomp",
+      "Psmb4",
+      "155 MB",
+      0.963
+    ],
+    [
+      "Pomp",
+      "Psmb4",
+      "066 HY GABA",
+      0.942
+    ],
+    [
+      "Pomp",
+      "Psmb4",
+      "052 Pvalb",
+      0.941
+    ],
+    [
+      "Hspa8",
+      "Hspa9",
+      "151 TH",
+      0.334
+    ],
+    [
+      "Hspa8",
+      "Psmb4",
+      "151 TH",
+      0.289
+    ],
+    [
+      "Hspa9",
+      "Dnm1l",
+      "151 TH",
+      0.78
+    ],
+    [
+      "Hspa9",
+      "Dnm1l",
+      "155 MB",
+      0.87
+    ],
+    [
+      "Hspa9",
+      "Hspa8",
+      "151 TH",
+      0.69
+    ],
+    [
+      "Hspa9",
+      "Hspa8",
+      "155 MB",
+      0.83
+    ],
+    [
+      "Hspa9",
+      "Psmb4",
+      "151 TH",
+      0.68
+    ],
+    [
+      "Hspa9",
+      "Psmb4",
+      "155 MB",
+      0.81
+    ],
+    [
+      "Lonp1",
+      "Hspa9",
+      "155 MB",
+      0.213
+    ],
+    [
+      "Lonp1",
+      "Hspa9",
+      "191 MB/P/MY",
+      0.189
+    ],
+    [
+      "Lonp1",
+      "Dnm1l",
+      "155 MB",
+      0.153
+    ],
+    [
+      "Lonp1",
+      "Dnm1l",
+      "191 MB/P/MY",
+      0.198
+    ],
+    [
+      "Dnm1l",
+      "Hspa9",
+      "151 TH",
+      0.963
+    ],
+    [
+      "Dnm1l",
+      "Hspa9",
+      "191 MB/P/MY",
+      0.932
+    ],
+    [
+      "Dnm1l",
+      "Hspa9",
+      "155 MB",
+      0.909
+    ],
+    [
+      "Dnm1l",
+      "Hspa8",
+      "191 MB/P/MY",
+      0.886
+    ],
+    [
+      "Dnm1l",
+      "Hspa8",
+      "155 MB",
+      0.859
+    ],
+    [
+      "Dnm1l",
+      "Lonp1",
+      "151 TH",
+      0.868
+    ],
+    [
+      "Dnm1l",
+      "Lonp1",
+      "191 MB/P/MY",
+      0.85
+    ],
+    [
+      "Dnm1l",
+      "Lonp1",
+      "155 MB",
+      0.887
+    ]
+  ]
+}

@@ -1,0 +1,1955 @@
+{
+  "story_id": "S038",
+  "title": "BAF-core subunit loss converges on a 151 TH synaptic-output module, while ARID1B and SMARCA ATPases are buffered",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Arid1a, Smarcb1, Smarcc2, and Smarce1 perturbations converged in 151 TH Prkcd Grin2c Glut on same-direction BAF-output genes including Ptpn3, Begain, Reep2, Prkcd, Kcnq2, Lrrc7, Nexn, and Clstn2, whereas Arid1b and the Smarca ATPases were weak or not concordant in the same comparison.",
+  "biological_interpretation": "A mature thalamic neuron state depends on selected cBAF/core output subunits, but acute loss of every SWI/SNF paralog is not equivalent in this neuronal RNA readout.",
+  "targets": [
+    "Arid1a",
+    "Smarcb1",
+    "Smarcc2",
+    "Smarce1",
+    "Begain",
+    "Ptpn3",
+    "Reep2",
+    "Prkcd",
+    "Kcnq2",
+    "Lrrc7"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut"
+  ],
+  "support": {
+    "source_findings": [
+      {
+        "target_gene": "Smarcb1",
+        "finding_id": "F001",
+        "finding_type": "cell_type_selectivity",
+        "direction": "Smarcb1 down; 149 genes down and 137 genes up at FDR<0.05 in the selective 151 response",
+        "confidence": "high",
+        "literature_status": "refines_cell_type_context",
+        "summary": "Smarcb1 loss produced a broad, FDR-resolved transcriptional response almost exclusively in 151 TH Prkcd Grin2c Glut.",
+        "why_it_matters": "A ubiquitous chromatin-remodeling subunit did not yield a uniform pan-neuronal phenotype; the main interpretable effect is a specific state in one TH/Prkcd/Grin2c glutamatergic class.",
+        "genes": "Smarcb1|Ptpn3|Reep2|Tiam1|C1qtnf4|Rsrp1|Myt1|Prkcd",
+        "n_genes": "8",
+        "comparators": "155 MB Glut|145 MH-LH TH Glut|other Smarcb1 cell-type contrasts",
+        "cell_types": "151 TH Prkcd Grin2c Glut",
+        "n_cell_types": "1",
+        "evidence_ids": "E001|E002|E004",
+        "ref_ids": "R001|R004|R005",
+        "main_caveats": "The Smarcb1 transcript itself was only FDR 0.0936 in 151 and protein depletion was not measured."
+      },
+      {
+        "target_gene": "Arid1a",
+        "finding_id": "F001",
+        "finding_type": "cell_type_selectivity",
+        "direction": "Arid1a down with mixed downstream response, 7 up and 15 down among FDR genes",
+        "confidence": "high",
+        "literature_status": "refines_cell_type_context",
+        "summary": "A multiple-testing-corrected Arid1a loss signature was concentrated in 151 TH Prkcd Grin2c Glut.",
+        "why_it_matters": "This identifies the thalamic Prkcd/Grin2c glutamatergic group as the main interpretable Arid1a-responsive state in the dataset instead of treating Arid1a loss as pan-neuronal.",
+        "genes": "Arid1a|Clstn2|Begain|Kcnq2|Ptpn3|Lrrc7|Rasa4|Lef1|Ndrg4|Slc25a23|Ppp2r5d",
+        "n_genes": "11",
+        "cell_types": "151 TH Prkcd Grin2c Glut",
+        "n_cell_types": "1",
+        "evidence_ids": "E001|E002|E003",
+        "ref_ids": "R001|R002|R003",
+        "main_caveats": "151 TH Prkcd Grin2c Glut also had the largest Arid1a perturbed-cell count, so selectivity and statistical power are partly confounded."
+      },
+      {
+        "target_gene": "Arid1a",
+        "finding_id": "F004",
+        "finding_type": "convergent_module",
+        "direction": "same_direction_core_convergence",
+        "confidence": "high",
+        "literature_status": "supports_known_mechanism",
+        "summary": "Arid1a converged with Smarcc2, Smarcb1, and Smarce1 perturbations in 151 TH Prkcd Grin2c Glut.",
+        "why_it_matters": "The nearest-neighbor pattern links the Arid1a phenotype to canonical BAF core assembly rather than to an arbitrary chromatin-stress response.",
+        "genes": "Arid1a|Smarcc2|Smarcb1|Smarce1|Nexn|Clstn2|Begain|Ptprz1|Ptpn3",
+        "n_genes": "9",
+        "comparators": "Smarcc2|Smarcb1|Smarce1",
+        "cell_types": "151 TH Prkcd Grin2c Glut",
+        "n_cell_types": "1",
+        "evidence_ids": "E006|E007",
+        "ref_ids": "R001|R002|R007",
+        "main_caveats": "Full-rank correlations are modest in absolute value, although Smarcc2/Smarcb1/Smarce1 were ranked first to third among all perturbations and the corrected Arid1a genes were directionally concordant with Smarcc2 and Smarcb1."
+      },
+      {
+        "target_gene": "Smarcc2",
+        "finding_id": "F001",
+        "finding_type": "cell_type_selectivity",
+        "direction": "selective_response_in_151",
+        "confidence": "high",
+        "literature_status": "refines_cell_type_context",
+        "summary": "Smarcc2 perturbation produced a broad, FDR-significant transcriptional program almost exclusively in 151 TH Prkcd Grin2c Glut.",
+        "why_it_matters": "A nuclear BAF core perturbation was not interpreted as a uniformly pan-neuronal stressor; the dataset localizes the high-confidence response to one excitatory thalamic Prkcd/Grin2c class despite directional target-transcript suppression in all tested classes.",
+        "genes": "Smarcc2",
+        "n_genes": "1",
+        "comparators": "066 CNU-HYa HY GABA|145 MH-LH TH Glut|155 MB Glut",
+        "cell_types": "151 TH Prkcd Grin2c Glut",
+        "n_cell_types": "1",
+        "evidence_ids": "E001|E002|E003",
+        "ref_ids": "R007",
+        "main_caveats": "The assay measures RNA, not chromatin occupancy or protein loss; several non-151 groups had lower perturbation cell counts."
+      }
+    ],
+    "evidence_ledger_rows": [
+      {
+        "target_gene": "Smarcb1",
+        "evidence_id": "E001",
+        "evidence_slug": "smarcb1_target_transcript_all_cell_types",
+        "genes": "Smarcb1",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Smarcb1 guide results were present in 23 cell types; Smarcb1 mRNA logFC was negative in 22/23, median logFC -0.331, range -0.663 to +0.038; 9/23 tests had nominal p<0.05, 6/23 had p<0.01, and only 151 TH Prkcd Grin2c Glut reached p_adj<0.10 for the Smarcb1 transcript itself.",
+        "description": "Direct quantification of on-target transcript depletion where Smarcb1 was measured."
+      },
+      {
+        "target_gene": "Smarcb1",
+        "evidence_id": "E002",
+        "evidence_slug": "th_prkcd_grin2c_broad_smarcb1_signature",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Smarcb1|Ptpn3|Reep2|Tiam1|C1qtnf4|Rsrp1|Myt1|Prkcd|Nexn|Stxbp2",
+        "n_genes": "10",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "246 perturbed cells versus 23679 controls; Smarcb1 logFC -0.331, p=0.00205, p_adj=0.0936. The DE signature contained 286 genes at FDR<0.05: Ptpn3 logFC -0.952 p_adj 1.30e-31, Reep2 -0.610 p_adj 5.54e-26, Tiam1 -0.722 p_adj 2.88e-18, C1qtnf4 -0.543 p_adj 1.19e-17, Rsrp1 -0.303 p_adj 5.28e-16, Myt1 +0.543 p_adj 1.84e-15, Prkcd -0.537 p_adj 2.45e-12, Nexn +0.652 p_adj 4.94e-09, Stxbp2 -0.782 p_adj 1.09e-08.",
+        "description": "The dominant Smarcb1 loss-of-function response occurred in 151 TH Prkcd Grin2c Glut."
+      },
+      {
+        "target_gene": "Smarcb1",
+        "evidence_id": "E004",
+        "evidence_slug": "smarcb1_fdr_burden_by_cell_type",
+        "genes": "Smarcb1",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "At FDR<0.05, the 23 Smarcb1 cell-type contrasts contained 286 significant genes in 151 TH Prkcd Grin2c Glut, 3 in 155 MB Glut, 1 in 145 MH-LH TH Glut, and 0 in each of the remaining 20 cell types. At FDR<0.10 the counts were 391 in 151 TH Prkcd Grin2c Glut, 6 in 155 MB Glut, 2 in 001 L5-6 IT Glut, 1 in 145 MH-LH TH Glut, and 0 in the remaining 19 cell types.",
+        "description": "Cell-type distribution of downstream Smarcb1 differential-expression burden."
+      },
+      {
+        "target_gene": "Arid1a",
+        "evidence_id": "E001",
+        "evidence_slug": "arid1a_on_target_across_23_groups",
+        "genes": "Arid1a",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Arid1a transcript score was negative in 23/23 cell groups; 6 groups had score < -3; 4 had nominal p < 0.001. Strongest corrected cell group was 151 TH Prkcd Grin2c Glut: logFC -0.462, score -4.927, p 8.34e-7, FDR 0.0030.",
+        "description": "Measured target-transcript engagement for Arid1a across all assayed mouse brain cell groups."
+      },
+      {
+        "target_gene": "Arid1a",
+        "evidence_id": "E002",
+        "evidence_slug": "arid1a_151_corrected_signature_size",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Arid1a",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "316 Arid1a cells versus 23679 controls; 17259 genes tested; 22 genes at FDR < 0.05, including Arid1a; 7 positive and 15 negative scores among those 22; 34 genes at FDR < 0.1.",
+        "description": "Only the 151 TH Prkcd Grin2c Glut contrast produced a multi-gene FDR-corrected Arid1a perturbation signature."
+      },
+      {
+        "target_gene": "Arid1a",
+        "evidence_id": "E003",
+        "evidence_slug": "arid1a_151_strongest_fdr_genes",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Clstn2|Begain|Kcnq2|Ptpn3|Lrrc7|Rasa4|Lef1|Ndrg4|Slc25a23|Ppp2r5d|Ptprz1|Prkcb|L1cam",
+        "n_genes": "13",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "Top positive FDR genes included Clstn2 score 6.226 logFC 0.385 FDR 4.82e-6, Ndrg4 score 4.779 logFC 0.109 FDR 0.00463, Slc25a23 score 4.642 logFC 0.240 FDR 0.00597, and Ppp2r5d score 4.530 logFC 0.210 FDR 0.00843. Top negative genes included Begain score -6.202 logFC -0.455 FDR 4.82e-6, Kcnq2 score -5.565 logFC -0.219 FDR 0.000151, Ptpn3 score -4.918 logFC -0.187 FDR 0.00302, Lrrc7 score -4.766 logFC -0.128 FDR 0.00463, Rasa4 score -4.704 logFC -0.412 FDR 0.00550, and Lef1 score -4.644 logFC -0.174 FDR 0.00597.",
+        "description": "Highest-magnitude corrected genes in the Arid1a 151 TH Prkcd Grin2c Glut signature."
+      },
+      {
+        "target_gene": "Arid1a",
+        "evidence_id": "E006",
+        "evidence_slug": "arid1a_151_full_rank_signature_neighbors",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Arid1a|Smarcc2|Smarcb1|Smarce1|Arid1b|Smarca4|Arid2|Smarca2",
+        "n_genes": "8",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "Across 17259 genes and 2045 non-Arid1a perturbations, Wilcoxon-score correlations to Arid1a ranked Smarcc2 first with r=0.2745, Smarcb1 second with r=0.2383, Smarce1 third with r=0.1992, Arid1b fifth with r=0.1002, Smarca4 tenth with r=0.0675, Arid2 1774th with r=-0.0120, and Smarca2 fourth from the bottom with r=-0.0609.",
+        "description": "Genome-wide perturbation-neighbor analysis in the cell type with the robust Arid1a response."
+      },
+      {
+        "target_gene": "Arid1a",
+        "evidence_id": "E007",
+        "evidence_slug": "arid1a_151_fdr_genes_overlap_cBAF_core",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Smarcc2|Smarcb1|Smarce1|Nexn|Clstn2|Mmp15|Bhlhe41|Rasa4|Itm2c|Lef1|Lrrc7|Slc12a8|L1cam|Prkcb|Begain|Ptprz1|Ptpn3",
+        "n_genes": "17",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "Among the 21 non-Arid1a FDR < 0.05 genes from the Arid1a signature, Smarcc2 changed all 21 in the same direction and 13 were also FDR < 0.05 under Smarcc2; Smarcb1 changed all 21 in the same direction and 12 were also FDR < 0.05 under Smarcb1; Smarce1 changed 19/21 in the same direction.",
+        "description": "Direct same-direction overlap between the Arid1a corrected genes and core cBAF-related perturbation signatures in 151 TH Prkcd Grin2c Glut."
+      },
+      {
+        "target_gene": "Smarcc2",
+        "evidence_id": "E001",
+        "evidence_slug": "smarcc2_151_strong_response",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Smarcc2",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "162 Smarcc2-perturbed cells versus 23,679 non-targeting controls; Smarcc2 logFC -0.472, Wilcoxon score -7.971, nominal p 1.58e-15, FDR 6.80e-12; 185 genes passed FDR<0.05, 114 down and 71 up.",
+        "description": "The only Smarcc2 contrast with a broad FDR-significant transcriptional response was in 151 TH Prkcd Grin2c Glut."
+      },
+      {
+        "target_gene": "Smarcc2",
+        "evidence_id": "E002",
+        "evidence_slug": "smarcc2_on_target_across_cell_types",
+        "genes": "Smarcc2",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Smarcc2 transcript rows were measured in 22 cell types; logFC was negative in 22/22, nominal p<0.05 in 18/22, and FDR<0.05 in 4/22. The FDR-significant target rows were 066 CNU-HYa HY GABA: 60 cells, logFC -0.668, FDR 1.86e-2; 145 MH-LH TH Glut: 75 cells, logFC -0.453, FDR 6.18e-3; 151 TH Prkcd Grin2c Glut: 162 cells, logFC -0.472, FDR 6.80e-12; 155 MB Glut: 140 cells, logFC -0.473, FDR 1.56e-3.",
+        "description": "Target-transcript suppression was directionally consistent across all tested cell types but passed transcript-wide FDR in only four."
+      },
+      {
+        "target_gene": "Smarcc2",
+        "evidence_id": "E003",
+        "evidence_slug": "smarcc2_buffered_fdr_counts",
+        "genes": "Smarcc2|Syt4|Nap1l3|Rell2",
+        "n_genes": "4",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Of 22 Smarcc2-tested cell types, 18 had zero FDR<0.05 genes. In the remaining three non-151 cell types, Smarcc2 itself was the only FDR<0.05 gene; the best non-target FDR values were 0.189 in 066 CNU-HYa HY GABA, 0.306 in 145 MH-LH TH Glut, and 0.418 in 155 MB Glut.",
+        "description": "Most contexts were transcriptionally buffered after Smarcc2 targeting, including three with FDR-significant target-transcript depletion."
+      }
+    ],
+    "exact_de_rows": [
+      {
+        "target_gene": "Arid1a",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Arid1a",
+        "score": -4.927203,
+        "logfoldchange": -0.462164,
+        "pval": 8.341529741878063e-07,
+        "pvals_adj": 0.0030244214480081247
+      },
+      {
+        "target_gene": "Arid1a",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Arid1b",
+        "score": 1.723727,
+        "logfoldchange": 0.115478,
+        "pval": 0.08475709006312596,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Arid1a",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Begain",
+        "score": -6.201615,
+        "logfoldchange": -0.454636,
+        "pval": 5.588663079617823e-10,
+        "pvals_adj": 4.8227368045562005e-06
+      },
+      {
+        "target_gene": "Arid1a",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Bicra",
+        "score": -0.224339,
+        "logfoldchange": -0.09875,
+        "pval": 0.8224939162222279,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Arid1a",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Clstn2",
+        "score": 6.225818,
+        "logfoldchange": 0.385385,
+        "pval": 4.790510591942362e-10,
+        "pvals_adj": 4.8227368045562005e-06
+      },
+      {
+        "target_gene": "Arid1a",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kcnq2",
+        "score": -5.565286,
+        "logfoldchange": -0.219342,
+        "pval": 2.6172344102797875e-08,
+        "pvals_adj": 0.00015056949562339617
+      },
+      {
+        "target_gene": "Arid1a",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lef1",
+        "score": -4.643561,
+        "logfoldchange": -0.174364,
+        "pval": 3.4245414019120064e-06,
+        "pvals_adj": 0.005964585043365862
+      },
+      {
+        "target_gene": "Arid1a",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lrrc7",
+        "score": -4.766119,
+        "logfoldchange": -0.127803,
+        "pval": 1.878081373338465e-06,
+        "pvals_adj": 0.00463054377463551
+      },
+      {
+        "target_gene": "Arid1a",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Nexn",
+        "score": 4.283041,
+        "logfoldchange": 0.348549,
+        "pval": 1.8435603624864515e-05,
+        "pvals_adj": 0.018716475468325687
+      },
+      {
+        "target_gene": "Arid1a",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Prkcd",
+        "score": -0.775095,
+        "logfoldchange": -0.051955,
+        "pval": 0.43828377031826415,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Arid1a",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ptpn3",
+        "score": -4.917584,
+        "logfoldchange": -0.186727,
+        "pval": 8.761867570566443e-07,
+        "pvals_adj": 0.0030244214480081247
+      },
+      {
+        "target_gene": "Arid1a",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rasa4",
+        "score": -4.704205,
+        "logfoldchange": -0.412048,
+        "pval": 2.5485743842307727e-06,
+        "pvals_adj": 0.005498230662179864
+      },
+      {
+        "target_gene": "Arid1a",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Reep2",
+        "score": -3.42131,
+        "logfoldchange": -0.126866,
+        "pval": 0.0006232016307178487,
+        "pvals_adj": 0.18733196481697373
+      },
+      {
+        "target_gene": "Arid1a",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarca2",
+        "score": -0.511274,
+        "logfoldchange": -0.059882,
+        "pval": 0.6091590884911187,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Arid1a",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarca4",
+        "score": 1.467604,
+        "logfoldchange": 0.073948,
+        "pval": 0.14221188594171824,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Arid1a",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarcb1",
+        "score": -0.582668,
+        "logfoldchange": -0.06075,
+        "pval": 0.560116956142607,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Arid1a",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarcc2",
+        "score": -0.616693,
+        "logfoldchange": 0.000193,
+        "pval": 0.5374373777239578,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Arid1a",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarcd1",
+        "score": -0.982343,
+        "logfoldchange": -0.080302,
+        "pval": 0.32593093094075787,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Arid1a",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarce1",
+        "score": -0.254709,
+        "logfoldchange": -0.041342,
+        "pval": 0.7989477057762597,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Arid1b",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Arid1a",
+        "score": -0.994889,
+        "logfoldchange": -0.115094,
+        "pval": 0.3197902413209269,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Arid1b",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Arid1b",
+        "score": -5.433003,
+        "logfoldchange": -0.534752,
+        "pval": 5.5413402639843226e-08,
+        "pvals_adj": 0.0009563799161610543
+      },
+      {
+        "target_gene": "Arid1b",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Begain",
+        "score": -3.097049,
+        "logfoldchange": -0.317304,
+        "pval": 0.001954577838158553,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Arid1b",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Bicra",
+        "score": 0.961106,
+        "logfoldchange": 0.248489,
+        "pval": 0.3364989535376085,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Arid1b",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Clstn2",
+        "score": 1.910731,
+        "logfoldchange": 0.151476,
+        "pval": 0.05603918102351453,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Arid1b",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kcnq2",
+        "score": -0.723654,
+        "logfoldchange": -0.015528,
+        "pval": 0.4692782538285183,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Arid1b",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lef1",
+        "score": -2.65231,
+        "logfoldchange": -0.178085,
+        "pval": 0.007994318061656822,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Arid1b",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lrrc7",
+        "score": -0.459284,
+        "logfoldchange": -0.008667,
+        "pval": 0.646030253534311,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Arid1b",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Nexn",
+        "score": 2.091427,
+        "logfoldchange": 0.228628,
+        "pval": 0.036489820488911,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Arid1b",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Prkcd",
+        "score": -0.82287,
+        "logfoldchange": -0.031517,
+        "pval": 0.41058182883193794,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Arid1b",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ptpn3",
+        "score": -3.618901,
+        "logfoldchange": -0.227942,
+        "pval": 0.00029585670411754394,
+        "pvals_adj": 0.7777130073503302
+      },
+      {
+        "target_gene": "Arid1b",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rasa4",
+        "score": 0.24117,
+        "logfoldchange": 0.013573,
+        "pval": 0.8094234088865262,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Arid1b",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Reep2",
+        "score": -3.662979,
+        "logfoldchange": -0.145185,
+        "pval": 0.0002492986485894105,
+        "pvals_adj": 0.7777130073503302
+      },
+      {
+        "target_gene": "Arid1b",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarca2",
+        "score": -0.596522,
+        "logfoldchange": -0.045661,
+        "pval": 0.5508263768387087,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Arid1b",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarca4",
+        "score": 0.212523,
+        "logfoldchange": 0.016291,
+        "pval": 0.8316988673798551,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Arid1b",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarcb1",
+        "score": 0.806912,
+        "logfoldchange": 0.093041,
+        "pval": 0.41971705441438656,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Arid1b",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarcc2",
+        "score": -0.003474,
+        "logfoldchange": 0.003087,
+        "pval": 0.997228013431401,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Arid1b",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarcd1",
+        "score": 1.184644,
+        "logfoldchange": 0.13696,
+        "pval": 0.23615804685191655,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Arid1b",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarce1",
+        "score": -2.176608,
+        "logfoldchange": -0.33652,
+        "pval": 0.029509837373097078,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Bicra",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Arid1a",
+        "score": 1.385893,
+        "logfoldchange": 0.139083,
+        "pval": 0.16577949261060565,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Bicra",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Arid1b",
+        "score": -0.590187,
+        "logfoldchange": -0.05308,
+        "pval": 0.5550652604701625,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Bicra",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Begain",
+        "score": -1.103595,
+        "logfoldchange": -0.108194,
+        "pval": 0.26976868503878504,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Bicra",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Bicra",
+        "score": 0.403577,
+        "logfoldchange": 0.110486,
+        "pval": 0.6865234426857121,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Bicra",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Clstn2",
+        "score": -1.19697,
+        "logfoldchange": -0.112987,
+        "pval": 0.23131827464472565,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Bicra",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kcnq2",
+        "score": -1.028967,
+        "logfoldchange": -0.025913,
+        "pval": 0.3034951922636687,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Bicra",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lef1",
+        "score": -0.061621,
+        "logfoldchange": -0.071326,
+        "pval": 0.9508645526532826,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Bicra",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lrrc7",
+        "score": -1.770287,
+        "logfoldchange": -0.096313,
+        "pval": 0.07667935507315257,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Bicra",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Nexn",
+        "score": 0.158921,
+        "logfoldchange": 0.031737,
+        "pval": 0.8737311685145128,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Bicra",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Prkcd",
+        "score": -2.229088,
+        "logfoldchange": -0.283265,
+        "pval": 0.025808068986310898,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Bicra",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ptpn3",
+        "score": 0.393836,
+        "logfoldchange": -0.010818,
+        "pval": 0.693701796289949,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Bicra",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rasa4",
+        "score": -0.347974,
+        "logfoldchange": -0.046577,
+        "pval": 0.7278595874336877,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Bicra",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Reep2",
+        "score": -0.929772,
+        "logfoldchange": -0.033057,
+        "pval": 0.3524892099043144,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Bicra",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarca2",
+        "score": 0.376418,
+        "logfoldchange": 0.034121,
+        "pval": 0.7066061567426214,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Bicra",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarca4",
+        "score": -0.145077,
+        "logfoldchange": 0.000148,
+        "pval": 0.8846503749110629,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Bicra",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarcb1",
+        "score": 0.323961,
+        "logfoldchange": 0.031574,
+        "pval": 0.7459677998881953,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Bicra",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarcc2",
+        "score": 1.883475,
+        "logfoldchange": 0.072949,
+        "pval": 0.059635962815043936,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Bicra",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarcd1",
+        "score": 1.429288,
+        "logfoldchange": 0.133266,
+        "pval": 0.15292152213321375,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Bicra",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarce1",
+        "score": -0.662454,
+        "logfoldchange": -0.042016,
+        "pval": 0.5076805855910788,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Arid1a",
+        "score": -0.847491,
+        "logfoldchange": -0.125259,
+        "pval": 0.39672136277474046,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Arid1b",
+        "score": 0.622407,
+        "logfoldchange": 0.022674,
+        "pval": 0.533674479346111,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Begain",
+        "score": 2.236297,
+        "logfoldchange": 0.229052,
+        "pval": 0.0253323065908586,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Bicra",
+        "score": 0.384879,
+        "logfoldchange": 0.240671,
+        "pval": 0.7003269087812384,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Clstn2",
+        "score": -1.096557,
+        "logfoldchange": -0.076568,
+        "pval": 0.2728351679448504,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kcnq2",
+        "score": -0.345185,
+        "logfoldchange": -0.014553,
+        "pval": 0.7299554103378759,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lef1",
+        "score": -1.061428,
+        "logfoldchange": -0.049351,
+        "pval": 0.288495425836813,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lrrc7",
+        "score": 0.475339,
+        "logfoldchange": 0.02536,
+        "pval": 0.634545482033598,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Nexn",
+        "score": -1.437501,
+        "logfoldchange": -0.228967,
+        "pval": 0.1505755807764273,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Prkcd",
+        "score": -0.556703,
+        "logfoldchange": -0.026363,
+        "pval": 0.5777304884270863,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ptpn3",
+        "score": 0.039452,
+        "logfoldchange": -0.03652,
+        "pval": 0.9685301071940432,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rasa4",
+        "score": 0.694255,
+        "logfoldchange": 0.069579,
+        "pval": 0.48752221141610397,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Reep2",
+        "score": 0.603476,
+        "logfoldchange": 0.027236,
+        "pval": 0.5461919616449404,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarca2",
+        "score": -6.188027,
+        "logfoldchange": -0.68975,
+        "pval": 6.092174165321752e-10,
+        "pvals_adj": 1.0514483391928812e-05
+      },
+      {
+        "target_gene": "Smarca2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarca4",
+        "score": 1.645424,
+        "logfoldchange": 0.156274,
+        "pval": 0.0998824693191492,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarcb1",
+        "score": 1.042492,
+        "logfoldchange": 0.122533,
+        "pval": 0.297183822348304,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarcc2",
+        "score": -0.052681,
+        "logfoldchange": 0.012562,
+        "pval": 0.957985777444423,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarcd1",
+        "score": -0.656033,
+        "logfoldchange": -0.096907,
+        "pval": 0.511802661718746,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarce1",
+        "score": -0.103482,
+        "logfoldchange": 0.032046,
+        "pval": 0.9175803386547262,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Arid1a",
+        "score": -0.110947,
+        "logfoldchange": -0.010352,
+        "pval": 0.911658091432141,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Arid1b",
+        "score": 0.764459,
+        "logfoldchange": 0.078454,
+        "pval": 0.4445938098860688,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Begain",
+        "score": -0.924748,
+        "logfoldchange": -0.114485,
+        "pval": 0.3550967977236722,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Bicra",
+        "score": -0.408225,
+        "logfoldchange": -0.202475,
+        "pval": 0.6831083474529993,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Clstn2",
+        "score": -1.061864,
+        "logfoldchange": -0.048535,
+        "pval": 0.28829765880628155,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kcnq2",
+        "score": -0.10589,
+        "logfoldchange": 0.015127,
+        "pval": 0.9156696034060805,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lef1",
+        "score": 0.16076,
+        "logfoldchange": 0.01839,
+        "pval": 0.8722822648549611,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lrrc7",
+        "score": -0.062643,
+        "logfoldchange": -0.029165,
+        "pval": 0.9500505857292156,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Nexn",
+        "score": 1.240801,
+        "logfoldchange": 0.158752,
+        "pval": 0.21467922971437414,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Prkcd",
+        "score": -1.177349,
+        "logfoldchange": -0.15161,
+        "pval": 0.23905616862160728,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ptpn3",
+        "score": -1.492889,
+        "logfoldchange": -0.0523,
+        "pval": 0.13546626815097426,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rasa4",
+        "score": -3.350473,
+        "logfoldchange": -0.455942,
+        "pval": 0.0008067378954233635,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Reep2",
+        "score": -1.942973,
+        "logfoldchange": -0.148949,
+        "pval": 0.05201943970812528,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarca2",
+        "score": -1.547065,
+        "logfoldchange": -0.148635,
+        "pval": 0.12184755662544654,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarca4",
+        "score": -2.785265,
+        "logfoldchange": -0.189214,
+        "pval": 0.005348397672520905,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarcb1",
+        "score": 0.536058,
+        "logfoldchange": 0.070963,
+        "pval": 0.5919181363648728,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarcc2",
+        "score": 0.0321,
+        "logfoldchange": 0.036263,
+        "pval": 0.974392190834954,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarcd1",
+        "score": 0.728116,
+        "logfoldchange": 0.052828,
+        "pval": 0.4665424735309691,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarca4",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarce1",
+        "score": 0.423132,
+        "logfoldchange": 0.09103,
+        "pval": 0.6721992182916829,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarcb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Arid1a",
+        "score": 3.232438,
+        "logfoldchange": 0.287453,
+        "pval": 0.0012273858690189626,
+        "pvals_adj": 0.06514577113757575
+      },
+      {
+        "target_gene": "Smarcb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Arid1b",
+        "score": 3.266043,
+        "logfoldchange": 0.237938,
+        "pval": 0.0010906179579281779,
+        "pvals_adj": 0.06071927527704007
+      },
+      {
+        "target_gene": "Smarcb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Begain",
+        "score": -7.982244,
+        "logfoldchange": -0.765419,
+        "pval": 1.4369735344086412e-15,
+        "pvals_adj": 3.100090778794842e-12
+      },
+      {
+        "target_gene": "Smarcb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Bicra",
+        "score": -0.608241,
+        "logfoldchange": -0.191802,
+        "pval": 0.5430276146083804,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarcb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Clstn2",
+        "score": 4.783001,
+        "logfoldchange": 0.332412,
+        "pval": 1.7269729721816466e-06,
+        "pvals_adj": 0.00046571603948254746
+      },
+      {
+        "target_gene": "Smarcb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kcnq2",
+        "score": -2.048039,
+        "logfoldchange": -0.096113,
+        "pval": 0.040556192810723424,
+        "pvals_adj": 0.5363733158412849
+      },
+      {
+        "target_gene": "Smarcb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lef1",
+        "score": -6.133511,
+        "logfoldchange": -0.33292,
+        "pval": 8.596072713594152e-10,
+        "pvals_adj": 7.743347815531981e-07
+      },
+      {
+        "target_gene": "Smarcb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lrrc7",
+        "score": -5.436584,
+        "logfoldchange": -0.173763,
+        "pval": 5.4311623717964766e-08,
+        "pvals_adj": 2.425742058811962e-05
+      },
+      {
+        "target_gene": "Smarcb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Nexn",
+        "score": 6.98441,
+        "logfoldchange": 0.652268,
+        "pval": 2.8605638334247997e-12,
+        "pvals_adj": 4.9370471201078615e-09
+      },
+      {
+        "target_gene": "Smarcb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Prkcd",
+        "score": -8.027493,
+        "logfoldchange": -0.53727,
+        "pval": 9.948468609262773e-16,
+        "pvals_adj": 2.4528659961038028e-12
+      },
+      {
+        "target_gene": "Smarcb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ptpn3",
+        "score": -12.499504,
+        "logfoldchange": -0.951671,
+        "pval": 7.51179984201063e-36,
+        "pvals_adj": 1.2964615347326146e-31
+      },
+      {
+        "target_gene": "Smarcb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rasa4",
+        "score": -5.425872,
+        "logfoldchange": -0.512549,
+        "pval": 5.767239204236509e-08,
+        "pvals_adj": 2.4884195356479475e-05
+      },
+      {
+        "target_gene": "Smarcb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Reep2",
+        "score": -11.362646,
+        "logfoldchange": -0.610057,
+        "pval": 6.417070899150844e-30,
+        "pvals_adj": 5.537611332422221e-26
+      },
+      {
+        "target_gene": "Smarcb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarca2",
+        "score": -3.114255,
+        "logfoldchange": -0.207362,
+        "pval": 0.0018441001838224262,
+        "pvals_adj": 0.0872845792993073
+      },
+      {
+        "target_gene": "Smarcb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarca4",
+        "score": 2.486045,
+        "logfoldchange": 0.140371,
+        "pval": 0.012917150814199679,
+        "pvals_adj": 0.28351104279588923
+      },
+      {
+        "target_gene": "Smarcb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarcb1",
+        "score": -3.083012,
+        "logfoldchange": -0.331195,
+        "pval": 0.002049167089970597,
+        "pvals_adj": 0.09356236721111781
+      },
+      {
+        "target_gene": "Smarcb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarcc2",
+        "score": -2.022916,
+        "logfoldchange": -0.079149,
+        "pval": 0.04308184382561732,
+        "pvals_adj": 0.5544739318317146
+      },
+      {
+        "target_gene": "Smarcb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarcd1",
+        "score": -0.401029,
+        "logfoldchange": -0.030738,
+        "pval": 0.6883986017412415,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarcb1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarce1",
+        "score": 0.694695,
+        "logfoldchange": 0.076955,
+        "pval": 0.4872467641544561,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarcc2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Arid1a",
+        "score": 2.216002,
+        "logfoldchange": 0.229871,
+        "pval": 0.02669136232392768,
+        "pvals_adj": 0.535287916660929
+      },
+      {
+        "target_gene": "Smarcc2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Arid1b",
+        "score": 1.827651,
+        "logfoldchange": 0.196913,
+        "pval": 0.06760196733066556,
+        "pvals_adj": 0.8251360354738027
+      },
+      {
+        "target_gene": "Smarcc2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Begain",
+        "score": -6.460185,
+        "logfoldchange": -0.741269,
+        "pval": 1.0457507409962641e-10,
+        "pvals_adj": 1.8048612038854521e-07
+      },
+      {
+        "target_gene": "Smarcc2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Bicra",
+        "score": -0.410424,
+        "logfoldchange": -0.162994,
+        "pval": 0.6814947946598624,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarcc2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Clstn2",
+        "score": 4.926963,
+        "logfoldchange": 0.418015,
+        "pval": 8.351744820226601e-07,
+        "pvals_adj": 0.00039080137702013216
+      },
+      {
+        "target_gene": "Smarcc2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kcnq2",
+        "score": -3.042601,
+        "logfoldchange": -0.174974,
+        "pval": 0.002345433591140086,
+        "pvals_adj": 0.13493279449828915
+      },
+      {
+        "target_gene": "Smarcc2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lef1",
+        "score": -4.40882,
+        "logfoldchange": -0.268248,
+        "pval": 1.0393537994383428e-05,
+        "pvals_adj": 0.0028932592297590902
+      },
+      {
+        "target_gene": "Smarcc2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lrrc7",
+        "score": -4.634132,
+        "logfoldchange": -0.202606,
+        "pval": 3.5843818135804064e-06,
+        "pvals_adj": 0.0012657613190369635
+      },
+      {
+        "target_gene": "Smarcc2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Nexn",
+        "score": 5.960719,
+        "logfoldchange": 0.644086,
+        "pval": 2.511314042514196e-09,
+        "pvals_adj": 2.7089230662345316e-06
+      },
+      {
+        "target_gene": "Smarcc2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Prkcd",
+        "score": -7.522416,
+        "logfoldchange": -0.574747,
+        "pval": 5.3773058250532435e-14,
+        "pvals_adj": 1.5467820205765654e-10
+      },
+      {
+        "target_gene": "Smarcc2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ptpn3",
+        "score": -10.99618,
+        "logfoldchange": -0.982082,
+        "pval": 3.986659628222535e-28,
+        "pvals_adj": 6.880575852349274e-24
+      },
+      {
+        "target_gene": "Smarcc2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rasa4",
+        "score": -3.983407,
+        "logfoldchange": -0.501825,
+        "pval": 6.793414617964928e-05,
+        "pvals_adj": 0.011542342285417109
+      },
+      {
+        "target_gene": "Smarcc2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Reep2",
+        "score": -10.183876,
+        "logfoldchange": -0.680946,
+        "pval": 2.3404791481450114e-24,
+        "pvals_adj": 2.0197164808917375e-20
+      },
+      {
+        "target_gene": "Smarcc2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarca2",
+        "score": -0.857222,
+        "logfoldchange": -0.115803,
+        "pval": 0.3913219283768167,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarcc2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarca4",
+        "score": 1.881155,
+        "logfoldchange": 0.150013,
+        "pval": 0.05995079382578627,
+        "pvals_adj": 0.7880356059704838
+      },
+      {
+        "target_gene": "Smarcc2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarcb1",
+        "score": 1.469294,
+        "logfoldchange": 0.236104,
+        "pval": 0.14175318225220324,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarcc2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarcc2",
+        "score": -7.970864,
+        "logfoldchange": -0.47218,
+        "pval": 1.5756880641186954e-15,
+        "pvals_adj": 6.798700074656141e-12
+      },
+      {
+        "target_gene": "Smarcc2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarcd1",
+        "score": -0.562003,
+        "logfoldchange": -0.054838,
+        "pval": 0.574113986443267,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarcc2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarce1",
+        "score": 0.158767,
+        "logfoldchange": 0.010406,
+        "pval": 0.8738528081240104,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarcd1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Arid1a",
+        "score": -0.170045,
+        "logfoldchange": -0.009711,
+        "pval": 0.8649744010151387,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarcd1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Arid1b",
+        "score": -0.302269,
+        "logfoldchange": -0.023172,
+        "pval": 0.7624467485920983,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarcd1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Begain",
+        "score": -1.035346,
+        "logfoldchange": -0.094922,
+        "pval": 0.3005074897428123,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarcd1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Bicra",
+        "score": 1.031119,
+        "logfoldchange": 0.281172,
+        "pval": 0.3024849292187024,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarcd1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Clstn2",
+        "score": -0.920937,
+        "logfoldchange": -0.034175,
+        "pval": 0.3570834160759083,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarcd1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kcnq2",
+        "score": 0.980926,
+        "logfoldchange": 0.047465,
+        "pval": 0.32662917570690264,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarcd1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lef1",
+        "score": 2.117683,
+        "logfoldchange": 0.105688,
+        "pval": 0.03420191993361188,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarcd1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lrrc7",
+        "score": -1.3727,
+        "logfoldchange": -0.059864,
+        "pval": 0.16984572104275464,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarcd1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Nexn",
+        "score": -0.950235,
+        "logfoldchange": -0.127291,
+        "pval": 0.34199305006082525,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarcd1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Prkcd",
+        "score": -1.700273,
+        "logfoldchange": -0.052283,
+        "pval": 0.08907965909598094,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarcd1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ptpn3",
+        "score": -4.500046,
+        "logfoldchange": -0.237499,
+        "pval": 6.7938705288731115e-06,
+        "pvals_adj": 0.05862770572891052
+      },
+      {
+        "target_gene": "Smarcd1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rasa4",
+        "score": -0.172636,
+        "logfoldchange": -0.013356,
+        "pval": 0.8629376414346475,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarcd1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Reep2",
+        "score": 0.816067,
+        "logfoldchange": 0.041867,
+        "pval": 0.41446203172929175,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarcd1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarca2",
+        "score": -0.962748,
+        "logfoldchange": -0.057632,
+        "pval": 0.33567423150681275,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarcd1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarca4",
+        "score": -0.143692,
+        "logfoldchange": -0.002933,
+        "pval": 0.8857440418364778,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarcd1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarcb1",
+        "score": 1.77683,
+        "logfoldchange": 0.20594,
+        "pval": 0.07559626828003632,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarcd1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarcc2",
+        "score": 0.126654,
+        "logfoldchange": 0.028892,
+        "pval": 0.8992141076843608,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarcd1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarcd1",
+        "score": -3.002157,
+        "logfoldchange": -0.272835,
+        "pval": 0.0026807417846524927,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarcd1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarce1",
+        "score": 0.521346,
+        "logfoldchange": 0.038533,
+        "pval": 0.6021254534570012,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarce1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Arid1a",
+        "score": 1.006033,
+        "logfoldchange": 0.081245,
+        "pval": 0.31439973168575663,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarce1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Arid1b",
+        "score": 1.376359,
+        "logfoldchange": 0.09648,
+        "pval": 0.16871058034560515,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarce1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Begain",
+        "score": -5.207323,
+        "logfoldchange": -0.413471,
+        "pval": 1.9158431404669465e-07,
+        "pvals_adj": 0.0006613107352263806
+      },
+      {
+        "target_gene": "Smarce1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Bicra",
+        "score": -0.189281,
+        "logfoldchange": -0.049183,
+        "pval": 0.8498728247293528,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarce1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Clstn2",
+        "score": 2.510674,
+        "logfoldchange": 0.153447,
+        "pval": 0.012050090644704243,
+        "pvals_adj": 0.8285757547288866
+      },
+      {
+        "target_gene": "Smarce1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kcnq2",
+        "score": -1.023305,
+        "logfoldchange": -0.061509,
+        "pval": 0.30616361952250504,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarce1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lef1",
+        "score": -2.69955,
+        "logfoldchange": -0.138952,
+        "pval": 0.00694333669536986,
+        "pvals_adj": 0.6973724936307921
+      },
+      {
+        "target_gene": "Smarce1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lrrc7",
+        "score": -4.340128,
+        "logfoldchange": -0.127789,
+        "pval": 1.423999190899307e-05,
+        "pvals_adj": 0.030721002544663926
+      },
+      {
+        "target_gene": "Smarce1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Nexn",
+        "score": 1.960236,
+        "logfoldchange": 0.193789,
+        "pval": 0.04996819324427178,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarce1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Prkcd",
+        "score": -6.446649,
+        "logfoldchange": -0.35726,
+        "pval": 1.1435014947062503e-10,
+        "pvals_adj": 6.578564099045058e-07
+      },
+      {
+        "target_gene": "Smarce1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ptpn3",
+        "score": -6.815998,
+        "logfoldchange": -0.340162,
+        "pval": 9.361176045064164e-12,
+        "pvals_adj": 1.2277468090084693e-07
+      },
+      {
+        "target_gene": "Smarce1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rasa4",
+        "score": -4.193213,
+        "logfoldchange": -0.378043,
+        "pval": 2.7503082191474615e-05,
+        "pvals_adj": 0.04746756955426604
+      },
+      {
+        "target_gene": "Smarce1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Reep2",
+        "score": -6.755571,
+        "logfoldchange": -0.247435,
+        "pval": 1.4227322660738967e-11,
+        "pvals_adj": 1.2277468090084693e-07
+      },
+      {
+        "target_gene": "Smarce1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarca2",
+        "score": -0.884344,
+        "logfoldchange": -0.020995,
+        "pval": 0.37651037866545534,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarce1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarca4",
+        "score": 1.385325,
+        "logfoldchange": 0.074168,
+        "pval": 0.16595311444795569,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarce1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarcb1",
+        "score": 0.304028,
+        "logfoldchange": 0.041254,
+        "pval": 0.7611066505337101,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarce1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarcc2",
+        "score": -1.082481,
+        "logfoldchange": -0.04266,
+        "pval": 0.279038780801672,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarce1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarcd1",
+        "score": 0.946729,
+        "logfoldchange": 0.074776,
+        "pval": 0.3437767869154279,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Smarce1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Smarce1",
+        "score": -2.538295,
+        "logfoldchange": -0.299892,
+        "pval": 0.011139419195681783,
+        "pvals_adj": 0.8113361849978734
+      }
+    ]
+  },
+  "caveats": [
+    "Smarcb1 mRNA depletion in 151 TH Prkcd Grin2c Glut reached p_adj 0.0936 rather than the 5% FDR threshold.",
+    "The data measure acute RNA changes after partial guide perturbation and not BAF complex occupancy."
+  ],
+  "prior_expectation": {
+    "citations": [
+      {
+        "target_gene": "Smarcb1",
+        "ref_id": "R001",
+        "ref_slug": "uniprot_q12824_smarcb1",
+        "source": "UniProtKB",
+        "source_type": "database",
+        "citation": "UniProtKB entry Q12824, SNF5_HUMAN / SMARCB1.",
+        "url": "https://www.uniprot.org/uniprotkb/Q12824",
+        "description": "Curated SMARCB1 function, subunit membership in SWI/SNF BAF/PBAF/nBAF complexes, and disease annotations including rhabdoid tumor predisposition, schwannomatosis, and Coffin-Siris syndrome."
+      },
+      {
+        "target_gene": "Smarcb1",
+        "ref_id": "R004",
+        "ref_slug": "lessard_2007_neural_baf_switch",
+        "source": "Neuron",
+        "source_type": "pubmed",
+        "citation": "Lessard J, Wu JI, Ranish JA, Wan M, Winslow MM, Staahl BT, et al. An essential switch in subunit composition of a chromatin remodeling complex during neural development. Neuron. 2007;55(2):201-215.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/17640523/",
+        "description": "Demonstrated subunit switching between neural progenitor and neuron-specific BAF complexes during neural development."
+      },
+      {
+        "target_gene": "Smarcb1",
+        "ref_id": "R005",
+        "ref_slug": "wu_2007_nbaf_dendrites",
+        "source": "Neuron",
+        "source_type": "pubmed",
+        "citation": "Wu JI, Lessard J, Olave IA, Qiu Z, Ghosh A, Graef IA, Crabtree GR. Regulation of dendritic development by neuron-specific chromatin remodeling complexes. Neuron. 2007;56(1):94-108.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/17920018/",
+        "description": "Showed that neuron-specific BAF complexes regulate dendritic outgrowth genes and are functionally specialized in postmitotic neurons."
+      },
+      {
+        "target_gene": "Arid1a",
+        "ref_id": "R001",
+        "ref_slug": "uniprot_arid1a_o14497",
+        "source": "UniProtKB",
+        "source_type": "database",
+        "citation": "UniProtKB reviewed entry O14497, ARID1A_HUMAN, AT-rich interactive domain-containing protein 1A.",
+        "url": "https://rest.uniprot.org/uniprotkb/O14497",
+        "description": "Defines ARID1A as a nuclear SWI/SNF chromatin-remodeling component in BAF, npBAF, and nBAF complexes, with ARID1A and ARID1B as mutually exclusive alternatives in some assemblies."
+      },
+      {
+        "target_gene": "Arid1a",
+        "ref_id": "R002",
+        "ref_slug": "reactome_arid1a_baf_pathways",
+        "source": "Reactome",
+        "source_type": "database",
+        "citation": "Reactome ContentService records for ARID1A in canonical BAF formation and neuronal progenitor / neuronal BAF formation.",
+        "url": "https://reactome.org/content/detail/R-HSA-9933937",
+        "description": "Places ARID1A in cBAF assembly, separates ARID1A/ARID1B-cBAF from ARID2-containing pBAF and ncBAF, and lists SMARCB1, SMARCC1/2, SMARCE1, SMARCD1, and SMARCA ATPase modules as BAF assembly partners."
+      },
+      {
+        "target_gene": "Arid1a",
+        "ref_id": "R003",
+        "ref_slug": "staahl_crabtree_2013_npBAF_nBAF",
+        "source": "Current Opinion in Neurobiology",
+        "source_type": "review",
+        "citation": "Staahl BT, Crabtree GR. Creating a neural specific chromatin landscape by npBAF and nBAF complexes. Curr Opin Neurobiol. 2013;23(6):903-13. doi:10.1016/j.conb.2013.09.003",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/24090879/",
+        "description": "Reviews neural progenitor and neuron-specific BAF complex switching and argues that neural BAF subunits are required for normal neural development, learning, and memory."
+      },
+      {
+        "target_gene": "Arid1a",
+        "ref_id": "R001",
+        "ref_slug": "uniprot_arid1a_o14497",
+        "source": "UniProtKB",
+        "source_type": "database",
+        "citation": "UniProtKB reviewed entry O14497, ARID1A_HUMAN, AT-rich interactive domain-containing protein 1A.",
+        "url": "https://rest.uniprot.org/uniprotkb/O14497",
+        "description": "Defines ARID1A as a nuclear SWI/SNF chromatin-remodeling component in BAF, npBAF, and nBAF complexes, with ARID1A and ARID1B as mutually exclusive alternatives in some assemblies."
+      },
+      {
+        "target_gene": "Arid1a",
+        "ref_id": "R002",
+        "ref_slug": "reactome_arid1a_baf_pathways",
+        "source": "Reactome",
+        "source_type": "database",
+        "citation": "Reactome ContentService records for ARID1A in canonical BAF formation and neuronal progenitor / neuronal BAF formation.",
+        "url": "https://reactome.org/content/detail/R-HSA-9933937",
+        "description": "Places ARID1A in cBAF assembly, separates ARID1A/ARID1B-cBAF from ARID2-containing pBAF and ncBAF, and lists SMARCB1, SMARCC1/2, SMARCE1, SMARCD1, and SMARCA ATPase modules as BAF assembly partners."
+      },
+      {
+        "target_gene": "Arid1a",
+        "ref_id": "R007",
+        "ref_slug": "opentargets_arid1a",
+        "source": "Open Targets Platform",
+        "source_type": "database",
+        "citation": "Open Targets Platform target profile for ARID1A, ENSG00000117713.",
+        "url": "https://platform.opentargets.org/target/ENSG00000117713",
+        "description": "Reports ARID1A as a high-confidence mouse one-to-one ortholog, a target associated with Coffin-Siris / ARID1A intellectual disability and multiple cancers, and with no approved or advanced clinical small-molecule, antibody, or degrader tractability flags."
+      },
+      {
+        "target_gene": "Smarcc2",
+        "ref_id": "R007",
+        "ref_slug": "hpa_smarcc2_expression",
+        "source": "Human Protein Atlas",
+        "source_type": "database",
+        "citation": "Human Protein Atlas. SMARCC2 gene summary ENSG00000139613, queried 2025-04-29.",
+        "url": "https://www.proteinatlas.org/ENSG00000139613",
+        "description": "Annotates human SMARCC2 as a nucleoplasmic chromatin regulator with low brain-regional and low single-nuclei brain cell-type RNA specificity."
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 4,
+    "priority": 4
+  },
+  "report_evidence_ids": [
+    "Arid1a:E001",
+    "Arid1a:E002",
+    "Arid1a:E003",
+    "Arid1a:E006",
+    "Arid1a:E007",
+    "Smarcb1:E001",
+    "Smarcb1:E002",
+    "Smarcb1:E004",
+    "Smarcc2:E001",
+    "Smarcc2:E002",
+    "Smarcc2:E003"
+  ],
+  "reference_ids": [
+    "Arid1a:R001",
+    "Arid1a:R002",
+    "Arid1a:R003",
+    "Arid1a:R007",
+    "Smarcb1:R001",
+    "Smarcb1:R004",
+    "Smarcb1:R005",
+    "Smarcc2:R007"
+  ],
+  "source_urls_or_dois": [
+    {
+      "ref_id": "Smarcb1:R001",
+      "citation": "UniProtKB entry Q12824, SNF5_HUMAN / SMARCB1.",
+      "url_or_doi": "https://www.uniprot.org/uniprotkb/Q12824"
+    },
+    {
+      "ref_id": "Smarcb1:R004",
+      "citation": "Lessard J, Wu JI, Ranish JA, Wan M, Winslow MM, Staahl BT, et al. An essential switch in subunit composition of a chromatin remodeling complex during neural development. Neuron. 2007;55(2):201-215.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/17640523/"
+    },
+    {
+      "ref_id": "Smarcb1:R005",
+      "citation": "Wu JI, Lessard J, Olave IA, Qiu Z, Ghosh A, Graef IA, Crabtree GR. Regulation of dendritic development by neuron-specific chromatin remodeling complexes. Neuron. 2007;56(1):94-108.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/17920018/"
+    },
+    {
+      "ref_id": "Arid1a:R001",
+      "citation": "UniProtKB reviewed entry O14497, ARID1A_HUMAN, AT-rich interactive domain-containing protein 1A.",
+      "url_or_doi": "https://rest.uniprot.org/uniprotkb/O14497"
+    },
+    {
+      "ref_id": "Arid1a:R002",
+      "citation": "Reactome ContentService records for ARID1A in canonical BAF formation and neuronal progenitor / neuronal BAF formation.",
+      "url_or_doi": "https://reactome.org/content/detail/R-HSA-9933937"
+    },
+    {
+      "ref_id": "Arid1a:R003",
+      "citation": "Staahl BT, Crabtree GR. Creating a neural specific chromatin landscape by npBAF and nBAF complexes. Curr Opin Neurobiol. 2013;23(6):903-13. doi:10.1016/j.conb.2013.09.003",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/24090879/"
+    },
+    {
+      "ref_id": "Arid1a:R007",
+      "citation": "Open Targets Platform target profile for ARID1A, ENSG00000117713.",
+      "url_or_doi": "https://platform.opentargets.org/target/ENSG00000117713"
+    },
+    {
+      "ref_id": "Smarcc2:R007",
+      "citation": "Human Protein Atlas. SMARCC2 gene summary ENSG00000139613, queried 2025-04-29.",
+      "url_or_doi": "https://www.proteinatlas.org/ENSG00000139613"
+    }
+  ],
+  "source_cluster_ids": [
+    "C034"
+  ],
+  "source_claim_ids": [
+    "claim:smarcb1_f001_c6f7ae8350ff",
+    "claim:arid1a_f001_10421e45af88",
+    "claim:arid1a_f004_30e461243b83",
+    "claim:smarcc2_f001_5c74ad83dd74"
+  ]
+}

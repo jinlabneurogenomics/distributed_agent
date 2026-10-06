@@ -1,0 +1,632 @@
+{
+  "biological_interpretation": "A cortical NMDAR/SAPAP4 perturbation layer feeds regulated neuropeptide output, and Dlgap4 is closer to Grin1/Grin2b-like receptor-state changes than to a pan-PSD scaffold collapse.",
+  "caveats": [
+    "L5 ET had significant Vgf/Adamts2 responses but the Grin2b target row itself was FDR 0.105; the L2/3 result used only 55 perturbed cells.",
+    "Only one or two non-target genes passed FDR in each engaged class.",
+    "Global score correlations were small and hypothesis-generating.",
+    "Exact log2 fold changes, scores, p-values, and FDRs in exact_de_rows were re-read from the Wilcoxon Parquet; the graph and cluster summaries were used only to nominate the target/readout combinations."
+  ],
+  "cell_types": [
+    "005 L4-5 IT CTX Glut",
+    "007 L2-3 IT CTX Glut",
+    "022 L5 ET CTX Glut",
+    "151 TH Prkcd Grin2c Glut"
+  ],
+  "exact_observed_result": "Grin2b loss produced its largest FDR-supported downstream program in cortical glutamatergic projection neurons with recurrent Vgf down-regulation; Dlgap4 loss also down-regulated Vgf, with Scg2 joining in L5 ET neurons. Parquet-verified leading rows: Grin2b->Grin2b in 151 TH Prkcd Grin2c Glut log2FC -0.453, FDR 2.83e-21; Dlgap4->Dlgap4 in 151 TH Prkcd Grin2c Glut log2FC -0.373, FDR 1.41e-09; Grin2b->Kcnv1 in 007 L2-3 IT CTX Glut log2FC -1.11, FDR 2.89e-05; Grin2b->Grin2b in 005 L4-5 IT CTX Glut log2FC -0.376, FDR 4.53e-04; Grin2b->Vgf in 005 L4-5 IT CTX Glut log2FC -0.752, FDR 5.52e-04; Grin2b->Kcnv1 in 005 L4-5 IT CTX Glut log2FC -0.728, FDR 5.78e-04.",
+  "preliminary_scores": {
+    "novelty": 4,
+    "priority": 4,
+    "support": 4
+  },
+  "prior_expectation": {
+    "citations": [
+      {
+        "citation": "UniProtKB reviewed entry Q01097, NMDE2_MOUSE, Glutamate receptor ionotropic NMDA 2B.",
+        "description": "Curated molecular function, subunit, localization, and tissue annotations for mouse Grin2b/GluN2B.",
+        "ref_id": "R001",
+        "ref_slug": "uniprot_mouse_grin2b_q01097",
+        "scoped_ref_id": "Grin2b:R001",
+        "source": "UniProtKB",
+        "source_type": "database",
+        "target_gene": "Grin2b",
+        "url": "https://rest.uniprot.org/uniprotkb/Q01097"
+      },
+      {
+        "citation": "Reactome ContentService search for GRIN2B; human GRIN2B reference entity Q13224 and reactions forming GRIN1:GRIN2B di- and tri-heterotetrameric NMDA receptors.",
+        "description": "Places GRIN2B in NMDA-receptor assembly and BDNF:NTRK2:FYN-mediated GRIN2B phosphorylation reactions.",
+        "ref_id": "R002",
+        "ref_slug": "reactome_grin2b_nmda_assembly",
+        "scoped_ref_id": "Grin2b:R002",
+        "source": "Reactome",
+        "source_type": "database",
+        "target_gene": "Grin2b",
+        "url": "https://reactome.org/"
+      },
+      {
+        "citation": "Paoletti P, Bellone C, Zhou Q. NMDA receptor subunit diversity: impact on receptor properties, synaptic plasticity and disease. Nat Rev Neurosci. 2013.",
+        "description": "Review establishing that GluN2 subunit identity shapes NMDAR biophysical, pharmacologic, and signaling behavior rather than acting as a simple interchangeable receptor component.",
+        "ref_id": "R003",
+        "ref_slug": "paoletti_2013_nmda_subunit_diversity",
+        "scoped_ref_id": "Grin2b:R003",
+        "source": "Nature Reviews Neuroscience",
+        "source_type": "review",
+        "target_gene": "Grin2b",
+        "url": "https://doi.org/10.1038/nrn3504"
+      },
+      {
+        "citation": "UniProtKB reviewed entries B1AZP2 and Q9Y2H0, Disks large-associated protein 4/SAPAP4.",
+        "description": "Curated DLGAP4/SAPAP4 function and subunit annotations, including DLG4/PSD-95 interaction.",
+        "ref_id": "R001",
+        "ref_slug": "uniprot_dlgap4_sapap4",
+        "scoped_ref_id": "Dlgap4:R001",
+        "source": "UniProtKB",
+        "source_type": "database",
+        "target_gene": "Dlgap4",
+        "url": "https://rest.uniprot.org/uniprotkb/B1AZP2"
+      },
+      {
+        "citation": "Welch JM, Wang D, Feng G. Differential mRNA expression and protein localization of the SAP90/PSD-95-associated proteins (SAPAPs) in the nervous system of the mouse. J Comp Neurol. 2004;472(1):24-39. doi:10.1002/cne.20060.",
+        "description": "Adult mouse mapping of SAPAP mRNAs and proteins at synapses.",
+        "ref_id": "R002",
+        "ref_slug": "welch_2004_sapap_mouse_localization",
+        "scoped_ref_id": "Dlgap4:R002",
+        "source": "Journal of Comparative Neurology",
+        "source_type": "pubmed",
+        "target_gene": "Dlgap4",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/15024750/"
+      },
+      {
+        "citation": "Bai Y, Wang H, Li C. SAPAP Scaffold Proteins: From Synaptic Function to Neuropsychiatric Disorders. Cells. 2022;11(23):3815. doi:10.3390/cells11233815.",
+        "description": "Review of SAPAP/DLGAP proteins in PSD95-SAPAP-SHANK scaffolds and neuropsychiatric disease.",
+        "ref_id": "R003",
+        "ref_slug": "bai_2022_sapap_review",
+        "scoped_ref_id": "Dlgap4:R003",
+        "source": "Cells",
+        "source_type": "review",
+        "target_gene": "Dlgap4",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36497075/"
+      },
+      {
+        "citation": "STRING mouse network and enrichment query for Dlgap4, Dlg4, Shank3, Grin1, Grin2b, Grid1, Vgf, and Scg2; species 10090.",
+        "description": "Database network support for a Dlgap4-Dlg4-Shank3-NMDA postsynaptic neighborhood.",
+        "ref_id": "R006",
+        "ref_slug": "string_dlgap4_psd_network",
+        "scoped_ref_id": "Dlgap4:R006",
+        "source": "STRING API",
+        "source_type": "database",
+        "target_gene": "Dlgap4",
+        "url": "https://string-db.org"
+      }
+    ],
+    "summary": "References were retained only when they were linked to one of the resolved source findings."
+  },
+  "reference_ids": [
+    "Dlgap4:R001",
+    "Dlgap4:R002",
+    "Dlgap4:R003",
+    "Dlgap4:R006",
+    "Grin2b:R001",
+    "Grin2b:R002",
+    "Grin2b:R003"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Dlgap4:E001",
+    "Dlgap4:E002",
+    "Dlgap4:E004",
+    "Dlgap4:E006",
+    "Dlgap4:E007",
+    "Dlgap4:E008",
+    "Grin2b:E001",
+    "Grin2b:E002",
+    "Grin2b:E003",
+    "Grin2b:E004"
+  ],
+  "source_urls_or_dois": [
+    "https://doi.org/10.1038/nrn3504",
+    "https://pubmed.ncbi.nlm.nih.gov/15024750/",
+    "https://pubmed.ncbi.nlm.nih.gov/36497075/",
+    "https://reactome.org/",
+    "https://rest.uniprot.org/uniprotkb/B1AZP2",
+    "https://rest.uniprot.org/uniprotkb/Q01097",
+    "https://string-db.org"
+  ],
+  "status": "grounded",
+  "story_id": "S128",
+  "support": {
+    "exact_de_rows": [
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 2.8294123099744844e-21,
+        "gene": "Grin2b",
+        "log2_fold_change": -0.4527101516723633,
+        "p_value": 1.639383689654374e-25,
+        "score": -10.43934440612793,
+        "target_gene": "Grin2b"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 1.4070424141212077e-09,
+        "gene": "Dlgap4",
+        "log2_fold_change": -0.3732890188694,
+        "p_value": 8.152514132459631e-14,
+        "score": -7.467834949493408,
+        "target_gene": "Dlgap4"
+      },
+      {
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "fdr": 2.8917318856928597e-05,
+        "gene": "Kcnv1",
+        "log2_fold_change": -1.1081777811050415,
+        "p_value": 1.7260979440654568e-09,
+        "score": -6.021685600280762,
+        "target_gene": "Grin2b"
+      },
+      {
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "fdr": 0.00045278242235878547,
+        "gene": "Grin2b",
+        "log2_fold_change": -0.37551215291023254,
+        "p_value": 2.6444482090806303e-08,
+        "score": -5.563481330871582,
+        "target_gene": "Grin2b"
+      },
+      {
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "fdr": 0.0005520925230530538,
+        "gene": "Vgf",
+        "log2_fold_change": -0.7517294883728027,
+        "p_value": 6.448925628466929e-08,
+        "score": -5.405884742736816,
+        "target_gene": "Grin2b"
+      },
+      {
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "fdr": 0.0005780929581562205,
+        "gene": "Kcnv1",
+        "log2_fold_change": -0.7276603579521179,
+        "p_value": 1.0128950323961344e-07,
+        "score": -5.324395179748535,
+        "target_gene": "Grin2b"
+      },
+      {
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "fdr": 0.0010712663668054235,
+        "gene": "Grin2b",
+        "log2_fold_change": -0.47054630517959595,
+        "p_value": 1.2788949642516844e-07,
+        "score": -5.281844615936279,
+        "target_gene": "Grin2b"
+      },
+      {
+        "cell_type": "022 L5 ET CTX Glut",
+        "fdr": 0.004383007077797243,
+        "gene": "Scg2",
+        "log2_fold_change": -1.1447972059249878,
+        "p_value": 2.576875229465132e-07,
+        "score": -5.1520256996154785,
+        "target_gene": "Dlgap4"
+      },
+      {
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "fdr": 0.006760330563557216,
+        "gene": "Zfp821",
+        "log2_fold_change": -0.89830482006073,
+        "p_value": 1.5327544441110582e-06,
+        "score": -4.806917190551758,
+        "target_gene": "Grin2b"
+      },
+      {
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "fdr": 0.006760330563557216,
+        "gene": "Slc1a2",
+        "log2_fold_change": -0.8384307622909546,
+        "p_value": 1.6744510669953556e-06,
+        "score": -4.789202690124512,
+        "target_gene": "Grin2b"
+      },
+      {
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "fdr": 0.006760330563557216,
+        "gene": "Tspoap1",
+        "log2_fold_change": -0.570779025554657,
+        "p_value": 2.017647753702983e-06,
+        "score": -4.751648426055908,
+        "target_gene": "Grin2b"
+      },
+      {
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "fdr": 0.01100725293006564,
+        "gene": "Rph3a",
+        "log2_fold_change": -0.6150874495506287,
+        "p_value": 3.061876833909539e-06,
+        "score": -4.666625022888184,
+        "target_gene": "Grin2b"
+      },
+      {
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "fdr": 0.01100725293006564,
+        "gene": "Nr4a1",
+        "log2_fold_change": -0.7678300142288208,
+        "p_value": 3.214359575419238e-06,
+        "score": -4.6566243171691895,
+        "target_gene": "Grin2b"
+      },
+      {
+        "cell_type": "022 L5 ET CTX Glut",
+        "fdr": 0.011073749293744857,
+        "gene": "Vgf",
+        "log2_fold_change": -0.566187858581543,
+        "p_value": 1.3021046850190908e-06,
+        "score": -4.839432239532471,
+        "target_gene": "Dlgap4"
+      },
+      {
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "fdr": 0.011786210668053403,
+        "gene": "Unc13b",
+        "log2_fold_change": -1.1910536289215088,
+        "p_value": 4.466562954613816e-06,
+        "score": -4.588399887084961,
+        "target_gene": "Grin2b"
+      },
+      {
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "fdr": 0.011786210668053403,
+        "gene": "Adamts2",
+        "log2_fold_change": 2.101623058319092,
+        "p_value": 5.694834549775296e-06,
+        "score": 4.537413597106934,
+        "target_gene": "Grin2b"
+      },
+      {
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "fdr": 0.011786210668053403,
+        "gene": "Tacc1",
+        "log2_fold_change": -0.6728296279907227,
+        "p_value": 6.115717896210593e-06,
+        "score": -4.522348880767822,
+        "target_gene": "Grin2b"
+      },
+      {
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "fdr": 0.016144925501316663,
+        "gene": "Camk2n1",
+        "log2_fold_change": -0.4706076383590698,
+        "p_value": 1.2528146094258736e-05,
+        "score": -4.368188381195068,
+        "target_gene": "Grin2b"
+      },
+      {
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "fdr": 0.017256449621335285,
+        "gene": "Rims1",
+        "log2_fold_change": -0.6048204898834229,
+        "p_value": 1.545076967229925e-05,
+        "score": -4.32216215133667,
+        "target_gene": "Grin2b"
+      },
+      {
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "fdr": 0.019401422820923806,
+        "gene": "Vgf",
+        "log2_fold_change": -0.9872376322746277,
+        "p_value": 2.4319816106930097e-05,
+        "score": -4.2210211753845215,
+        "target_gene": "Grin2b"
+      },
+      {
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "fdr": 0.021675132335161208,
+        "gene": "Diras2",
+        "log2_fold_change": -1.3542762994766235,
+        "p_value": 3.7815809945440526e-05,
+        "score": -4.120434761047363,
+        "target_gene": "Grin2b"
+      },
+      {
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "fdr": 0.0231393508290273,
+        "gene": "Erc2",
+        "log2_fold_change": -0.5086460113525391,
+        "p_value": 4.3402209046448584e-05,
+        "score": -4.0885796546936035,
+        "target_gene": "Grin2b"
+      },
+      {
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "fdr": 0.0231393508290273,
+        "gene": "Rph3a",
+        "log2_fold_change": -0.9423026442527771,
+        "p_value": 4.419860481877118e-05,
+        "score": -4.084359169006348,
+        "target_gene": "Grin2b"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.02886872832387693,
+        "gene": "Vgf",
+        "log2_fold_change": -0.40939265489578247,
+        "p_value": 3.3453535342577123e-06,
+        "score": -4.648390293121338,
+        "target_gene": "Dlgap4"
+      },
+      {
+        "cell_type": "022 L5 ET CTX Glut",
+        "fdr": 0.02899275273627376,
+        "gene": "Dlgap4",
+        "log2_fold_change": -0.41022467613220215,
+        "p_value": 5.11366089769071e-06,
+        "score": -4.560070037841797,
+        "target_gene": "Dlgap4"
+      },
+      {
+        "cell_type": "022 L5 ET CTX Glut",
+        "fdr": 0.03466564846842974,
+        "gene": "Adamts2",
+        "log2_fold_change": 1.0980761051177979,
+        "p_value": 4.249157236705934e-06,
+        "score": 4.5988078117370605,
+        "target_gene": "Grin2b"
+      },
+      {
+        "cell_type": "022 L5 ET CTX Glut",
+        "fdr": 0.03466564846842974,
+        "gene": "Vgf",
+        "log2_fold_change": -0.7546103000640869,
+        "p_value": 5.179465934156071e-06,
+        "score": -4.557384014129639,
+        "target_gene": "Grin2b"
+      },
+      {
+        "cell_type": "022 L5 ET CTX Glut",
+        "fdr": 0.03466564846842974,
+        "gene": "Brd9",
+        "log2_fold_change": 0.4532761573791504,
+        "p_value": 6.114230431259288e-06,
+        "score": 4.522400379180908,
+        "target_gene": "Grin2b"
+      },
+      {
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "fdr": 0.045954995611824645,
+        "gene": "Diras2",
+        "log2_fold_change": -0.7301984429359436,
+        "p_value": 1.6103841471261995e-05,
+        "score": -4.313021659851074,
+        "target_gene": "Grin2b"
+      },
+      {
+        "cell_type": "022 L5 ET CTX Glut",
+        "fdr": 0.049539986696640115,
+        "gene": "Arpp21",
+        "log2_fold_change": 0.20922423899173737,
+        "p_value": 1.1650299652334674e-05,
+        "score": 4.384031295776367,
+        "target_gene": "Grin2b"
+      }
+    ],
+    "finding_summaries": [
+      {
+        "claim_id": "claim:grin2b_f001_358938acd237",
+        "confidence": "high",
+        "direction": "largest_downstream_response_in_cortical_glutamatergic_cells",
+        "finding_id": "F001",
+        "finding_type": "cell_type_selectivity",
+        "summary": "Grin2b loss produced a disproportionately large downstream response in cortical glutamatergic projection neurons, especially L2/3 IT cells.",
+        "target_gene": "Grin2b",
+        "why_it_matters": "The target was depleted in many classes, but the interpretable secondary program was concentrated in cortical excitatory neurons, arguing that GluN2B-dependent transcriptional coupling is highly cell-state dependent."
+      },
+      {
+        "claim_id": "claim:dlgap4_f001_6f76746e6865",
+        "confidence": "high",
+        "direction": "Dlgap4 down with sparse Vgf or Vgf/Scg2 down",
+        "finding_id": "F001",
+        "finding_type": "cell_type_selectivity",
+        "summary": "Robust Dlgap4 knockdown resolved into two glutamatergic cell classes rather than a pan-neuronal postsynaptic-density response.",
+        "target_gene": "Dlgap4",
+        "why_it_matters": "The transcriptome gave FDR-supported target engagement only in 151 TH Prkcd Grin2c Glut and 022 L5 ET CTX Glut, refining the known broad postsynaptic role of SAPAP4."
+      },
+      {
+        "claim_id": "claim:dlgap4_f005_57ee53961e57",
+        "confidence": "exploratory",
+        "direction": "exploratory NMDA-neighbor convergence with direct-scaffold divergence",
+        "finding_id": "F005",
+        "finding_type": "cross_perturbation_contrast",
+        "summary": "Dlgap4 signatures align more with NMDA receptor perturbations than with direct PSD95-SAPAP-SHANK scaffold perturbations.",
+        "target_gene": "Dlgap4",
+        "why_it_matters": "Grin1 or Grin2b appeared among the top Dlgap4 positive neighbors, whereas Dlg4, Shank3, and Grid1 were weaker neighbors despite physical scaffold membership."
+      }
+    ],
+    "parquet_filter": {
+      "cell_types": [
+        "005 L4-5 IT CTX Glut",
+        "007 L2-3 IT CTX Glut",
+        "022 L5 ET CTX Glut",
+        "151 TH Prkcd Grin2c Glut"
+      ],
+      "gene_targets": [
+        "Dlgap4",
+        "Grin2b"
+      ],
+      "names": [
+        "Adamts2",
+        "Arpp21",
+        "Brd9",
+        "Camk2n1",
+        "Diras2",
+        "Dlg4",
+        "Dlgap4",
+        "Erc2",
+        "Fezf1",
+        "Gabrb2",
+        "Grid1",
+        "Grin1",
+        "Grin2b",
+        "Kcnv1",
+        "Klf13",
+        "Nkx6-2",
+        "Nobox",
+        "Nr4a1",
+        "Rims1",
+        "Rora",
+        "Rph3a",
+        "Scg2",
+        "Shank3",
+        "Slc1a2",
+        "Tacc1",
+        "Tspoap1",
+        "Unc13b",
+        "Vgf",
+        "Zfp821"
+      ]
+    },
+    "resolved_evidence": [
+      {
+        "cell_type": "",
+        "description": "Across the Grin2b subset, most cell types showed at least nominal depletion of the target transcript, but FDR-level target engagement was restricted to five cell types.",
+        "evidence_id": "E001",
+        "evidence_slug": "grin2b_global_on_target",
+        "genes": "Grin2b",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "1",
+        "scoped_evidence_id": "Grin2b:E001",
+        "statistics": "Grin2b was measured in all 22 Grin2b-perturbed cell types; logFC was negative in 21/22, the Grin2b row was nominal at p<0.05 in 17/22, and target FDR<0.05 in 5/22.",
+        "target_gene": "Grin2b"
+      },
+      {
+        "cell_type": "007 L2-3 IT CTX Glut",
+        "description": "L2/3 IT cortical glutamatergic cells carried the largest Grin2b transcriptomic response, dominated by down-regulated synaptic and activity-linked genes plus a smaller up-regulated set.",
+        "evidence_id": "E002",
+        "evidence_slug": "grin2b_l23_it_ctx_signature",
+        "genes": "Grin2b|Kcnv1|Slc1a2|Tspoap1|Zfp821|Adamts2|Vgf|Unc13b|Tacc1|Rims1|Erc2|Camk2n1",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "12",
+        "scoped_evidence_id": "Grin2b:E002",
+        "statistics": "55 perturbed cells versus 7553 controls; 47 genes at FDR<0.05; Grin2b logFC -0.471, score -5.282, FDR 0.00107; Kcnv1 logFC -1.108, FDR 2.89e-05; Vgf logFC -0.987, FDR 0.0194; Adamts2 logFC 2.102, FDR 0.0118.",
+        "target_gene": "Grin2b"
+      },
+      {
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "description": "Layer 4/5 IT cortical glutamatergic cells showed a compact, entirely negative Grin2b response overlapping the L2/3 signature at Vgf, Kcnv1, Rph3a, and Diras2.",
+        "evidence_id": "E003",
+        "evidence_slug": "grin2b_l45_it_ctx_signature",
+        "genes": "Grin2b|Vgf|Kcnv1|Rph3a|Nr4a1|Diras2",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "6",
+        "scoped_evidence_id": "Grin2b:E003",
+        "statistics": "120 perturbed cells versus 15039 controls; 6 genes at FDR<0.05 and all six were down; Grin2b logFC -0.376, FDR 4.53e-04; Vgf logFC -0.752, FDR 5.52e-04; Kcnv1 logFC -0.728, FDR 5.78e-04; Nr4a1 logFC -0.768, FDR 0.0110; Rph3a logFC -0.615, FDR 0.0110; Diras2 logFC -0.730, FDR 0.0460.",
+        "target_gene": "Grin2b"
+      },
+      {
+        "cell_type": "022 L5 ET CTX Glut",
+        "description": "L5 ET cortical glutamatergic cells had a small downstream response that recapitulated Vgf down-regulation and Adamts2 up-regulation even though the Grin2b target row missed FDR<0.05.",
+        "evidence_id": "E004",
+        "evidence_slug": "grin2b_l5_et_ctx_signature",
+        "genes": "Adamts2|Brd9|Arpp21|Vgf|Grin2b",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "5",
+        "scoped_evidence_id": "Grin2b:E004",
+        "statistics": "84 perturbed cells versus 8644 controls; 4 genes at FDR<0.05; Adamts2 logFC 1.098, FDR 0.0347; Brd9 logFC 0.453, FDR 0.0347; Arpp21 logFC 0.209, FDR 0.0495; Vgf logFC -0.755, FDR 0.0347; Grin2b logFC -0.325, nominal p=3.13e-05 but FDR 0.105.",
+        "target_gene": "Grin2b"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "Strongest on-target Dlgap4 response, with one FDR-significant downstream gene.",
+        "evidence_id": "E001",
+        "evidence_slug": "dlg4ap4_151_th_prkcd_vgf",
+        "genes": "Dlgap4|Vgf",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "2",
+        "scoped_evidence_id": "Dlgap4:E001",
+        "statistics": "262 perturbed cells vs 23679 controls; Dlgap4 logFC -0.3733, score -7.4678, p=8.15e-14, FDR=1.41e-09; Vgf logFC -0.4094, score -4.6484, p=3.35e-06, FDR=0.0289.",
+        "target_gene": "Dlgap4"
+      },
+      {
+        "cell_type": "022 L5 ET CTX Glut",
+        "description": "L5 extratelencephalic neurons showed on-target Dlgap4 depletion and two FDR-significant non-target decreases.",
+        "evidence_id": "E002",
+        "evidence_slug": "dlg4ap4_022_l5et_granins",
+        "genes": "Dlgap4|Scg2|Vgf",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "3",
+        "scoped_evidence_id": "Dlgap4:E002",
+        "statistics": "93 perturbed cells vs 8644 controls; Scg2 logFC -1.1448, p=2.58e-07, FDR=0.00438; Vgf logFC -0.5662, p=1.30e-06, FDR=0.0111; Dlgap4 logFC -0.4102, p=5.11e-06, FDR=0.0290.",
+        "target_gene": "Dlgap4"
+      },
+      {
+        "cell_type": "",
+        "description": "Screen-wide summary of measured Dlgap4 transcript engagement.",
+        "evidence_id": "E004",
+        "evidence_slug": "dlg4ap4_on_target_recurrence_23_celltypes",
+        "genes": "Dlgap4",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "1",
+        "scoped_evidence_id": "Dlgap4:E004",
+        "statistics": "Dlgap4 was measured in all 23 cell-type tests; perturbed-cell counts ranged from 22 to 262. Dlgap4 logFC was negative in 21/23 tests, nominal p<0.05 in 12/23, and FDR<0.05 in 2/23.",
+        "target_gene": "Dlgap4"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "In the strongest thalamic class, Grin1 was a nearer Dlgap4 signature neighbor than direct scaffold perturbations.",
+        "evidence_id": "E006",
+        "evidence_slug": "dlg4ap4_151_signature_neighbors",
+        "genes": "Dlgap4|Rora|Klf13|Grin1|Gabrb2|Dlg4|Shank3|Grid1",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "8",
+        "scoped_evidence_id": "Dlgap4:E006",
+        "statistics": "Score correlations across 17259 genes: top non-self positives Rora r=0.1794, Klf13 r=0.1718, Grin1 r=0.1609; strongest negative Gabrb2 r=-0.1489; Shank3 r=0.0707, Dlg4 r=0.0448, Grid1 r=0.0383.",
+        "target_gene": "Dlgap4"
+      },
+      {
+        "cell_type": "",
+        "description": "Grin2b was a recurrent positive Dlgap4 signature neighbor in cortical glutamatergic classes.",
+        "evidence_id": "E007",
+        "evidence_slug": "dlg4ap4_l5_grin2b_signature_neighbor",
+        "genes": "Dlgap4|Nobox|Grin2b|Fezf1|Nkx6-2|Dlg4|Shank3",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "7",
+        "scoped_evidence_id": "Dlgap4:E007",
+        "statistics": "In 022 L5 ET CTX Glut, Nobox r=0.1411, Grin2b r=0.1395, and Fezf1 r=0.1291 were the top three non-self positive neighbors across 17009 genes; Nkx6-2 was top negative at r=-0.0961; Dlg4 r=0.0483 and Shank3 r=-0.0014. In 005 L4-5 IT CTX Glut, Grin2b was the fourth non-self positive neighbor at r=0.0916.",
+        "target_gene": "Dlgap4"
+      },
+      {
+        "cell_type": "",
+        "description": "The Dlgap4-associated Vgf decrease in L5 ET neurons aligned with Grin2b more than with direct scaffold perturbations.",
+        "evidence_id": "E008",
+        "evidence_slug": "grin2b_vgf_vs_direct_scaffold_comparison",
+        "genes": "Vgf|Scg2|Grin2b|Dlg4|Grid1|Shank3",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "6",
+        "scoped_evidence_id": "Dlgap4:E008",
+        "statistics": "Grin2b downregulated Vgf in 022 L5 ET CTX Glut, logFC -0.7546, FDR=0.0347, and in 005 L4-5 IT CTX Glut, logFC -0.7517, FDR=0.000552. Dlg4, Grid1, and Shank3 perturbations had Vgf FDR=1.0 in both classes.",
+        "target_gene": "Dlgap4"
+      }
+    ],
+    "source_claim_ids": [
+      "claim:grin2b_f001_358938acd237",
+      "claim:dlgap4_f001_6f76746e6865",
+      "claim:dlgap4_f005_57ee53961e57"
+    ],
+    "source_cluster_ids": [
+      "C029"
+    ]
+  },
+  "targets": [
+    "Grin2b",
+    "Dlgap4",
+    "Vgf",
+    "Scg2"
+  ],
+  "title": "Grin2b and Dlgap4 losses selectively lower Vgf in cortical glutamatergic projection neurons"
+}

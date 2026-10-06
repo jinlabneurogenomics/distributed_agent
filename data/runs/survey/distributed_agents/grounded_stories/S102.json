@@ -1,0 +1,154 @@
+{
+  "story_id": "S102",
+  "title": "Acute Tbr1 loss drives a small cortical projection-neuron synaptic/membrane program without reactivating neonatal layer-6 fate targets",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Tbr1 was FDR-active in cortical and projection-like glutamatergic classes with recurrent Cpne6 up-regulation and Dkk3 or Epb41/Nptx1 decreases; NP-CT-L6b-OB Glut instead showed an all-up response including Cacna1g, Cpne6, Gaa, and C1qtnf4.",
+  "biological_interpretation": "TBR1 retains a mature, context-specific cortical synaptic/membrane regulon that is separable from neonatal layer-6 target wiring and from silent T-box paralogs.",
+  "targets": [
+    "Tbr1",
+    "Cpne6",
+    "Dkk3",
+    "Epb41",
+    "Nptx1",
+    "Cacna1g",
+    "C1qtnf4",
+    "Fezf2",
+    "Foxp2",
+    "Sox5"
+  ],
+  "cell_types": [
+    "001 L5-6 IT Glut",
+    "005 L4-5 IT CTX Glut",
+    "009 L2-3 IT PIR AON ENT Glut",
+    "027 NP-CT-L6b-OB Glut"
+  ],
+  "support": {
+    "exact_de_rows": [
+      {
+        "target": "Tbr1",
+        "cell_type": "001 L5-6 IT Glut",
+        "gene": "Dkk3",
+        "logfoldchanges": -1.1769840717315674,
+        "pvals": 1.367303195495402e-07,
+        "pvals_adj": 0.002286541133826961,
+        "score": -5.269587993621826
+      },
+      {
+        "target": "Tbr1",
+        "cell_type": "001 L5-6 IT Glut",
+        "gene": "Epb41",
+        "logfoldchanges": -1.540134072303772,
+        "pvals": 9.825302917940557e-07,
+        "pvals_adj": 0.007242971070334282,
+        "score": -4.895105361938477
+      },
+      {
+        "target": "Tbr1",
+        "cell_type": "001 L5-6 IT Glut",
+        "gene": "Cpne6",
+        "logfoldchanges": 0.9127074480056763,
+        "pvals": 2.4894533023363744e-06,
+        "pvals_adj": 0.007482984282452497,
+        "score": 4.708991527557373
+      },
+      {
+        "target": "Tbr1",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Cpne6",
+        "logfoldchanges": 0.6059973835945129,
+        "pvals": 5.5394174653822024e-06,
+        "pvals_adj": 0.023711476460568516,
+        "score": 4.543247222900391
+      },
+      {
+        "target": "Tbr1",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Dkk3",
+        "logfoldchanges": -0.7199240922927856,
+        "pvals": 1.4725226811299053e-05,
+        "pvals_adj": 0.03601790478043748,
+        "score": -4.332758903503418
+      },
+      {
+        "target": "Tbr1",
+        "cell_type": "027 NP-CT-L6b-OB Glut",
+        "gene": "Cacna1g",
+        "logfoldchanges": 1.4319649934768677,
+        "pvals": 6.719609167041239e-10,
+        "pvals_adj": 1.1215027699791827e-05,
+        "score": 6.172552585601807
+      },
+      {
+        "target": "Tbr1",
+        "cell_type": "027 NP-CT-L6b-OB Glut",
+        "gene": "Cpne6",
+        "logfoldchanges": 1.245001196861267,
+        "pvals": 7.163799476971971e-09,
+        "pvals_adj": 5.9781906635331096e-05,
+        "score": 5.787038803100586
+      },
+      {
+        "target": "Tbr1",
+        "cell_type": "027 NP-CT-L6b-OB Glut",
+        "gene": "C1qtnf4",
+        "logfoldchanges": 0.47989964485168457,
+        "pvals": 5.96662266898927e-06,
+        "pvals_adj": 0.02489573308635773,
+        "score": 4.527568817138672
+      },
+      {
+        "target": "Satb2",
+        "cell_type": "001 L5-6 IT Glut",
+        "gene": "Dkk3",
+        "logfoldchanges": -0.425631046295166,
+        "pvals": 0.07746897301921107,
+        "pvals_adj": 1.0,
+        "score": -1.7655643224716187
+      }
+    ],
+    "evidence_summary": "Tbr1:F001 resolves 21 FDR rows in three cortical/projection-like classes; Satb2:F004, Tbx1:F004, and Tbx21:F003 resolve non-phenocopy by related transcription factors."
+  },
+  "caveats": [
+    "Tbr1 programs are small.",
+    "Neonatal layer-6 targets are a developmental comparator, not a matched adult perturbation."
+  ],
+  "prior_expectation": {
+    "summary": "Tbr1:F001 resolves 21 FDR rows in three cortical/projection-like classes; Satb2:F004, Tbx1:F004, and Tbx21:F003 resolve non-phenocopy by related transcription factors.",
+    "citations": [
+      "Hevner 2001 PMID:11239428",
+      "Bedogni 2010 PMID:20615956",
+      "Fazel Darbandi 2018 PMID:30318412",
+      "Hsueh 2000 PMID:10749215",
+      "Deriziotis 2014 PMID:25232744"
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 3,
+    "support": 4,
+    "priority": 4
+  },
+  "report_evidence_ids": [
+    "Tbr1:E002",
+    "Tbr1:E003",
+    "Tbr1:E004",
+    "Satb2:E005",
+    "Tbr1:E009",
+    "Tbx1:E006",
+    "Tbx21:E004"
+  ],
+  "reference_ids": [
+    "Tbr1:R001",
+    "Tbr1:R002",
+    "Tbr1:R005",
+    "Tbr1:R007",
+    "Tbr1:R008"
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/11239428/",
+    "https://pubmed.ncbi.nlm.nih.gov/20615956/",
+    "https://pubmed.ncbi.nlm.nih.gov/30318412/",
+    "https://pubmed.ncbi.nlm.nih.gov/10749215/",
+    "https://pubmed.ncbi.nlm.nih.gov/25232744/"
+  ]
+}

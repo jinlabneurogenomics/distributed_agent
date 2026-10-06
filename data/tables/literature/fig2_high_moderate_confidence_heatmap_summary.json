@@ -1,0 +1,62 @@
+{
+  "selected_findings": 2804,
+  "findings_by_confidence": {
+    "high": 1519,
+    "moderate": 1285
+  },
+  "findings_by_flag": {
+    "Agree": 446,
+    "Disagree": 102,
+    "Inferred": 840,
+    "No Literature": 1402,
+    "Unassessed": 14
+  },
+  "findings_contributing_at_least_one_plotted_block": 2455,
+  "findings_without_a_plotted_block": 349,
+  "unplaced_findings_by_confidence": {
+    "high": 166,
+    "moderate": 151
+  },
+  "raw_explicit_cell_placements_by_confidence": {
+    "high": 3891,
+    "moderate": 2259
+  },
+  "plotted_positive_deg_placements_by_confidence": {
+    "high": 3818,
+    "moderate": 1658
+  },
+  "zero_deg_placements_excluded_by_confidence": {
+    "high": 73,
+    "moderate": 592
+  },
+  "noncanonical_cell_labels_excluded_by_confidence": {
+    "moderate": 9
+  },
+  "noncanonical_cell_labels": {
+    "21 measured neuronal cell groups": 1,
+    "22 measured neuronal groups": 1,
+    "App-matched neuronal groups": 1,
+    "all 19 measured Usp9x groups": 1,
+    "all 21 measured neuronal groups": 1,
+    "all 22 recovered Ndufa4 cell groups": 1,
+    "all Kcnab2-matched features": 1,
+    "all_matched_gene_by_cell_entries": 1,
+    "screen-wide matched Sv2a groups": 1
+  },
+  "finding_filter": "Reader-facing phenotype_confidence in {high, moderate}; low findings excluded.",
+  "flag_rule": "Each block takes its most decisive flag: Disagree > Agree > Inferred > No Literature > Unassessed.",
+  "placement_rule": "Explicit reader-view cell placement intersected with target×cell blocks having at least one DEG at FDR < 0.1.",
+  "universe_pairs": 4174,
+  "universe_targets": 1092,
+  "covered_pairs": 2547,
+  "covered_pairs_percent": 61.0,
+  "covered_targets": 964,
+  "covered_targets_percent": 88.3,
+  "blocks_by_displayed_flag": {
+    "Agree": 775,
+    "Disagree": 198,
+    "Inferred": 702,
+    "No Literature": 872,
+    "Unassessed": 0
+  }
+}

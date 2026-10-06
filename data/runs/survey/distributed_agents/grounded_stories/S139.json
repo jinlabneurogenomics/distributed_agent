@@ -1,0 +1,223 @@
+{
+  "biological_interpretation": "ADARB1 has an editing-independent or GRIA2-independent effect on FLNB expression in a limited neuronal subset.",
+  "caveats": [
+    "The dataset measures mRNA abundance, not Flnb editing; recurrent down-regulation does not prove that FLNB editing directly controls Flnb transcript stability in neurons.",
+    "Exact log2 fold changes, scores, p-values, and FDRs in exact_de_rows were re-read from the Wilcoxon Parquet; the graph and cluster summaries were used only to nominate the target/readout combinations."
+  ],
+  "cell_types": [
+    "052 Pvalb Gaba",
+    "066 CNU-HYa HY GABA",
+    "145 MH-LH TH Glut",
+    "151 TH Prkcd Grin2c Glut"
+  ],
+  "exact_observed_result": "Adarb1 perturbation produced a recurring Flnb abundance decrease, strongest in selected posterior, hypothalamic, thalamic, and GABAergic classes, and this decrease was not reproduced by Adar or Gria2 perturbation in matched engaged classes. Parquet-verified leading rows: Adarb1->Flnb in 151 TH Prkcd Grin2c Glut log2FC -1.48, FDR 6.67e-44; Adarb1->Flnb in 145 MH-LH TH Glut log2FC -1.2, FDR 6.89e-15; Adarb1->Flnb in 066 CNU-HYa HY GABA log2FC -0.913, FDR 6.36e-11; Adarb1->Adarb1 in 151 TH Prkcd Grin2c Glut log2FC -0.555, FDR 2.04e-09; Adarb1->Flnb in 052 Pvalb Gaba log2FC -0.797, FDR 2.44e-08; Adarb1->Flna in 151 TH Prkcd Grin2c Glut log2FC -0.833, FDR 9.40e-07.",
+  "preliminary_scores": {
+    "novelty": 4,
+    "priority": 4,
+    "support": 4
+  },
+  "prior_expectation": {
+    "citations": [
+      {
+        "citation": "Altaf F, Vesely C, Sheikh AM, Munir R, Shah STA, Tariq A. Modulation of ADAR mRNA expression in patients with congenital heart defects. PLoS ONE. 2019;14:e0200968.",
+        "description": "Accessible study and literature synthesis noting ADAR2-mediated Q/R editing of FLNA and FLNB and testing FLNB editing and expression in ADAR2-deficient mouse heart.",
+        "ref_id": "R006",
+        "ref_slug": "altaf_2019_flnb_adar2",
+        "scoped_ref_id": "Adarb1:R006",
+        "source": "PLoS ONE",
+        "source_type": "pmc",
+        "target_gene": "Adarb1",
+        "url": "https://doi.org/10.1371/journal.pone.0200968"
+      }
+    ],
+    "summary": "References were retained only when they were linked to one of the resolved source findings."
+  },
+  "reference_ids": [
+    "Adarb1:R006"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Adarb1:E002",
+    "Adarb1:E004",
+    "Adarb1:E005"
+  ],
+  "source_urls_or_dois": [
+    "https://doi.org/10.1371/journal.pone.0200968"
+  ],
+  "status": "grounded",
+  "story_id": "S139",
+  "support": {
+    "exact_de_rows": [
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 6.673745707366206e-44,
+        "gene": "Flnb",
+        "log2_fold_change": -1.4789625406265259,
+        "p_value": 3.8668206195991695e-48,
+        "score": -14.578181266784668,
+        "target_gene": "Adarb1"
+      },
+      {
+        "cell_type": "145 MH-LH TH Glut",
+        "fdr": 6.886094847180044e-15,
+        "gene": "Flnb",
+        "log2_fold_change": -1.1978853940963745,
+        "p_value": 4.1216824368109435e-19,
+        "score": -8.933652877807617,
+        "target_gene": "Adarb1"
+      },
+      {
+        "cell_type": "066 CNU-HYa HY GABA",
+        "fdr": 6.359273052873413e-11,
+        "gene": "Flnb",
+        "log2_fold_change": -0.9134328365325928,
+        "p_value": 3.715830929574274e-15,
+        "score": -7.86415958404541,
+        "target_gene": "Adarb1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 2.0418986812962326e-09,
+        "gene": "Adarb1",
+        "log2_fold_change": -0.5552091002464294,
+        "p_value": 2.366184230020549e-13,
+        "score": -7.3262858390808105,
+        "target_gene": "Adarb1"
+      },
+      {
+        "cell_type": "052 Pvalb Gaba",
+        "fdr": 2.4399080082821103e-08,
+        "gene": "Flnb",
+        "log2_fold_change": -0.7969350814819336,
+        "p_value": 1.4556186661986101e-12,
+        "score": -7.078653335571289,
+        "target_gene": "Adarb1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 9.403116520487126e-07,
+        "gene": "Flna",
+        "log2_fold_change": -0.8333216309547424,
+        "p_value": 1.6344718443398446e-10,
+        "score": -6.392264366149902,
+        "target_gene": "Adarb1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.003195646704557525,
+        "gene": "Zfp941",
+        "log2_fold_change": -0.6705015897750854,
+        "p_value": 7.4063310842054e-07,
+        "score": -4.950394153594971,
+        "target_gene": "Adarb1"
+      },
+      {
+        "cell_type": "066 CNU-HYa HY GABA",
+        "fdr": 0.01885163392300856,
+        "gene": "Adarb1",
+        "log2_fold_change": -0.816135585308075,
+        "p_value": 2.2030657850892324e-06,
+        "score": -4.73384428024292,
+        "target_gene": "Adarb1"
+      },
+      {
+        "cell_type": "052 Pvalb Gaba",
+        "fdr": 0.040058302789745356,
+        "gene": "Adarb1",
+        "log2_fold_change": -0.6163999438285828,
+        "p_value": 4.7796566984542845e-06,
+        "score": -4.5742340087890625,
+        "target_gene": "Adarb1"
+      }
+    ],
+    "finding_summaries": [
+      {
+        "claim_id": "claim:adarb1_f001_f58e9eecaac4",
+        "confidence": "high",
+        "direction": "down",
+        "finding_id": "F001",
+        "finding_type": "biomarker_candidate",
+        "summary": "Flnb is a recurrently down-regulated abundance marker of Adarb1 perturbation across neuronal classes.",
+        "target_gene": "Adarb1",
+        "why_it_matters": "The dominant RNA-seq response points to a filamin/actin-associated transcript rather than to the classical glutamate- or serotonin-receptor substrates, suggesting that Flnb abundance is the most sensitive measured downstream readout of ADAR2 loss in this atlas."
+      }
+    ],
+    "parquet_filter": {
+      "cell_types": [
+        "052 Pvalb Gaba",
+        "066 CNU-HYa HY GABA",
+        "145 MH-LH TH Glut",
+        "151 TH Prkcd Grin2c Glut"
+      ],
+      "gene_targets": [
+        "Adarb1"
+      ],
+      "names": [
+        "Adar",
+        "Adarb1",
+        "Fam20c",
+        "Flna",
+        "Flnb",
+        "Gria2",
+        "Zfp941"
+      ]
+    },
+    "resolved_evidence": [
+      {
+        "cell_type": "",
+        "description": "Flnb was the most recurrent abundance response to Adarb1 perturbation.",
+        "evidence_id": "E002",
+        "evidence_slug": "flnb_recurrent_down",
+        "genes": "Flnb",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "1",
+        "scoped_evidence_id": "Adarb1:E002",
+        "statistics": "Flnb logFC was <0 in 22/22 Adarb1 tests; 21/22 nominal p<0.05; 12/22 FDR<0.05; 13/22 FDR<0.1; mean logFC -0.842; strongest FDR 6.67e-44.",
+        "target_gene": "Adarb1"
+      },
+      {
+        "cell_type": "",
+        "description": "Large Flnb decreases were concentrated in thalamic, midbrain, pons/medulla, hypothalamic, and Pvalb GABA classes.",
+        "evidence_id": "E004",
+        "evidence_slug": "hindbrain_midbrain_hypothalamic_flnb",
+        "genes": "Flnb",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "1",
+        "scoped_evidence_id": "Adarb1:E004",
+        "statistics": "Flnb was strongly down in 155 MB Glut, logFC -1.654 FDR 1.57e-38; 191 MB P MY GABA, -1.477 FDR 7.81e-16; 145 MH-LH TH Glut, -1.198 FDR 6.89e-15; 217 P MY Pineal Glut, -1.557 FDR 3.18e-11 with 35 perturbed cells; 066 CNU-HYa HY GABA, -0.913 FDR 6.36e-11; and 052 Pvalb Gaba, -0.797 FDR 2.44e-08.",
+        "target_gene": "Adarb1"
+      },
+      {
+        "cell_type": "",
+        "description": "The Flnb response extended beyond the strongest posterior brain groups to cortical, hippocampal, basal-ganglia, hypothalamic, and cerebellar groups.",
+        "evidence_id": "E005",
+        "evidence_slug": "moderate_flnb_down_additional_classes",
+        "genes": "Flnb",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "1",
+        "scoped_evidence_id": "Adarb1:E005",
+        "statistics": "Additional Flnb decreases were significant in 005 L4-5 IT CTX Glut, logFC -0.693 FDR 2.52e-05; 054 CNU-MGE GABA, -0.850 FDR 1.38e-04; 110 CNU-HYa HY MM Glut, -0.912 FDR 1.57e-04; 012 MEA LA CA1 DG Glut, -0.890 FDR 0.0276; and 308 CB GABA, -0.738 FDR 0.0218; 007 L2-3 IT CTX Glut was nominal at FDR 0.0799.",
+        "target_gene": "Adarb1"
+      }
+    ],
+    "source_claim_ids": [
+      "claim:adarb1_f001_f58e9eecaac4"
+    ],
+    "source_cluster_ids": [
+      "C215"
+    ]
+  },
+  "targets": [
+    "Adarb1",
+    "Adar",
+    "Gria2",
+    "Flnb",
+    "Flna",
+    "Fam20c",
+    "Zfp941"
+  ],
+  "title": "Adarb1 perturbation selectively lowers Flnb across posterior, hypothalamic, and GABAergic neuronal contexts"
+}

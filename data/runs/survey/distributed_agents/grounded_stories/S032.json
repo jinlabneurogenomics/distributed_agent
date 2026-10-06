@@ -1,0 +1,211 @@
+{
+  "biological_interpretation": "Loss of the PP2A A-alpha scaffold does not produce one uniform cholesterol response; the sterol module is induced in specific midbrain/hypothalamic contexts while the SREBP2/HMGCR arm is depressed in thalamic and cortical neurons.",
+  "caveats": [
+    "The data are transcript-level and do not measure PP2A holoenzyme composition, phosphoproteins, or sterol abundance."
+  ],
+  "cell_types": [
+    "005 L4-5 IT CTX Glut",
+    "008 L2-3 IT ENT PPP RSP Glut",
+    "066 CNU-HYa HY GABA",
+    "110 CNU-HYa HY MM Glut",
+    "151 TH Prkcd Grin2c Glut"
+  ],
+  "exact_observed_result": "Ppp2r1a perturbation induced cholesterol-biosynthesis genes in selected subcortical classes, including Msmo1, Insig1, Dhcr24 and Sc5d in 155 MB Glut and Insig1, Sc5d, Dhcr24 and Msmo1 in 110 CNU-HYa HY MM Glut. In contrast, the largest thalamic and cortical signatures repressed Srebf2 and Hmgcr at FDR < 0.05.",
+  "preliminary_scores": {
+    "novelty": 5,
+    "priority": 4,
+    "support": 4
+  },
+  "prior_expectation": {
+    "citations": [
+      "Reactome. Cholesterol biosynthesis, R-HSA-191273, stable identifier R-HSA-191273.13."
+    ],
+    "summary": "Prior work supports the broad molecular function of the perturbed target or complex, while the atlas result refines the affected brain cell type and RNA-output module."
+  },
+  "reference_ids": [
+    "Ppp2r1a:R005"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Ppp2r1a:E007",
+    "Ppp2r1a:E008"
+  ],
+  "source_claim_ids": [
+    "claim:ppp2r1a_f004_987d75e23233"
+  ],
+  "source_cluster_ids": [
+    "C468"
+  ],
+  "source_urls_or_dois": [
+    "https://reactome.org/content/detail/R-HSA-191273"
+  ],
+  "status": "grounded",
+  "story_id": "S032",
+  "support": {
+    "exact_de_rows": [
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "up",
+        "fdr": 2.9516728054550457e-09,
+        "fdr_significant": true,
+        "gene": "Msmo1",
+        "log2_fold_change": 1.013903,
+        "p_value": 4.907327372481587e-12,
+        "score": 6.908231,
+        "target": "Ppp2r1a"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "up",
+        "fdr": 4.715495481673382e-07,
+        "fdr_significant": true,
+        "gene": "Insig1",
+        "log2_fold_change": 0.938771,
+        "p_value": 1.108383390177198e-09,
+        "score": 6.092965,
+        "target": "Ppp2r1a"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "up",
+        "fdr": 7.788173314603549e-07,
+        "fdr_significant": true,
+        "gene": "Dhcr24",
+        "log2_fold_change": 0.818617,
+        "p_value": 1.919918893125911e-09,
+        "score": 6.004441,
+        "target": "Ppp2r1a"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "up",
+        "fdr": 1.0994553853858547e-06,
+        "fdr_significant": true,
+        "gene": "Sc5d",
+        "log2_fold_change": 0.753651,
+        "p_value": 3.0255035543496546e-09,
+        "score": 5.930208,
+        "target": "Ppp2r1a"
+      },
+      {
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "direction": "up",
+        "fdr": 1.6862462915038457e-05,
+        "fdr_significant": true,
+        "gene": "Insig1",
+        "log2_fold_change": 0.938843,
+        "p_value": 1.0804863521024234e-08,
+        "score": 5.717585,
+        "target": "Ppp2r1a"
+      },
+      {
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "direction": "up",
+        "fdr": 0.00014203548766403252,
+        "fdr_significant": true,
+        "gene": "Sc5d",
+        "log2_fold_change": 0.812014,
+        "p_value": 1.2894351687153053e-07,
+        "score": 5.280341,
+        "target": "Ppp2r1a"
+      },
+      {
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "direction": "up",
+        "fdr": 0.0002666674574957527,
+        "fdr_significant": true,
+        "gene": "Dhcr24",
+        "log2_fold_change": 0.76304,
+        "p_value": 2.951407754656784e-07,
+        "score": 5.126524,
+        "target": "Ppp2r1a"
+      },
+      {
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "direction": "up",
+        "fdr": 0.0006801019976194537,
+        "fdr_significant": true,
+        "gene": "Msmo1",
+        "log2_fold_change": 0.827383,
+        "p_value": 9.111869252197493e-07,
+        "score": 4.909909,
+        "target": "Ppp2r1a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 9.465497102246367e-08,
+        "fdr_significant": true,
+        "gene": "Srebf2",
+        "log2_fold_change": -0.530917,
+        "p_value": 8.500794083366284e-10,
+        "score": -6.135283,
+        "target": "Ppp2r1a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.029078633579344197,
+        "fdr_significant": true,
+        "gene": "Hmgcr",
+        "log2_fold_change": -0.320088,
+        "p_value": 0.001794353367054961,
+        "score": -3.122314,
+        "target": "Ppp2r1a"
+      },
+      {
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "direction": "down",
+        "fdr": 0.041356762452513914,
+        "fdr_significant": true,
+        "gene": "Srebf2",
+        "log2_fold_change": -0.279083,
+        "p_value": 0.001224616199242177,
+        "score": -3.233084,
+        "target": "Ppp2r1a"
+      },
+      {
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "direction": "down",
+        "fdr": 3.171604900355269e-05,
+        "fdr_significant": true,
+        "gene": "Hmgcr",
+        "log2_fold_change": -0.592733,
+        "p_value": 1.7967858622500942e-07,
+        "score": -5.21922,
+        "target": "Ppp2r1a"
+      }
+    ],
+    "resolved_evidence": [
+      {
+        "cell_type": "",
+        "description": "Upregulation of sterol/cholesterol-associated genes in a subset of Ppp2r1a-responsive neuronal classes.",
+        "evidence_id": "E007",
+        "evidence_slug": "sterol_genes_up_in_midbrain_and_hypothalamic_classes",
+        "genes": "Insig1|Msmo1|Dhcr24|Dhcr7|Nsdhl|Sc5d|Sqle|Ldlr|Lss|Fdft1|Fdps|Cyp51|Hmgcs1",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "13",
+        "statistics": "Selected FDR<0.05 examples: in 155 MB Glut, Msmo1 logFC 1.01 FDR 2.95e-09, Insig1 0.94 FDR 4.72e-07, Dhcr24 0.82 FDR 7.79e-07, Sc5d 0.75 FDR 1.10e-06; in 110 CNU-HYa HY MM Glut, Insig1 0.94 FDR 1.69e-05, Sc5d 0.81 FDR 1.42e-04, Dhcr24 0.76 FDR 2.67e-04, Msmo1 0.83 FDR 6.80e-04; in 191 MB P MY GABA, Nsdhl 1.45 FDR 9.91e-06.",
+        "target_gene": "Ppp2r1a"
+      },
+      {
+        "cell_type": "",
+        "description": "Repression of upstream cholesterol-control genes in cortical/thalamic contexts, opposite to the sterol-gene induction seen in several midbrain and hypothalamic contexts.",
+        "evidence_id": "E008",
+        "evidence_slug": "cortical_thalamic_srebf2_hmgcr_repression",
+        "genes": "Srebf2|Hmgcr",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "2",
+        "statistics": "151 TH Prkcd Grin2c Glut: Srebf2 logFC -0.53 FDR 9.47e-08 and Hmgcr -0.32 FDR 0.0291. 005 L4-5 IT CTX Glut: Hmgcr -0.59 FDR 3.17e-05 and Srebf2 -0.28 FDR 0.0414.",
+        "target_gene": "Ppp2r1a"
+      }
+    ],
+    "support_note": "Exact log2 fold changes, p-values, and FDRs in exact_de_rows were re-read from the Wilcoxon Parquet for this grounding pass; score-vector correlations and perturbed/control cell counts are resolved from the structured report evidence."
+  },
+  "targets": [
+    "Ppp2r1a"
+  ],
+  "title": "Ppp2r1a loss gates a cell-restricted sterol branch with opposite Srebf2/Hmgcr behavior"
+}

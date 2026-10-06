@@ -1,0 +1,296 @@
+{
+  "story_id": "S103",
+  "title": "THRA loss selectively suppresses Hr, Adgrb1, and Hcn2 in thalamic glutamatergic neurons",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Thra perturbation depleted Thra and reduced Hr and Adgrb1 in 151 TH Prkcd Grin2c Glut, with Hcn2 and Rogdi at FDR<0.10, while Ncoa1 and Ar perturbations failed to phenocopy the branch in the same thalamic setting.",
+  "biological_interpretation": "Mature thalamic glutamatergic neurons carry a THRA-dependent receptor-output branch that does not require acute Ncoa1-like coactivator phenocopy and is separate from ligand-dependent steroid receptor silence.",
+  "targets": [
+    "Thra",
+    "Hr",
+    "Adgrb1",
+    "Hcn2",
+    "Rogdi",
+    "Ncoa1",
+    "Nr3c1"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "046 CTX-CGE GABA",
+    "052 Pvalb Gaba",
+    "053 Sst Gaba",
+    "059 CNU-LGE LSX GABA"
+  ],
+  "support": {
+    "exact_de_rows": [
+      {
+        "gene_target": "Thra",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Adgrb1",
+        "score": -4.638009071350098,
+        "logfoldchanges": -0.20491115748882294,
+        "pvals_adj": 0.02023797680488143
+      },
+      {
+        "gene_target": "Thra",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Hcn2",
+        "score": -4.300384521484375,
+        "logfoldchanges": -0.26935622096061707,
+        "pvals_adj": 0.07356730084610617
+      },
+      {
+        "gene_target": "Thra",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Hr",
+        "score": -6.421507358551025,
+        "logfoldchanges": -0.7516253590583801,
+        "pvals_adj": 2.3287853100385077e-06
+      },
+      {
+        "gene_target": "Thra",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Rogdi",
+        "score": 4.186027526855469,
+        "logfoldchanges": 0.2575518488883972,
+        "pvals_adj": 0.09798938478084557
+      },
+      {
+        "gene_target": "Thra",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Thra",
+        "score": -4.694100379943848,
+        "logfoldchanges": -0.5552009344100952,
+        "pvals_adj": 0.02023797680488143
+      },
+      {
+        "gene_target": "Thra",
+        "group_name": "155 MB Glut",
+        "names": "Adgrb1",
+        "score": -1.2156636714935303,
+        "logfoldchanges": -0.020778296515345573,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Thra",
+        "group_name": "155 MB Glut",
+        "names": "Hcn2",
+        "score": -0.6727721691131592,
+        "logfoldchanges": -0.09317974001169205,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Thra",
+        "group_name": "155 MB Glut",
+        "names": "Hr",
+        "score": -1.7135597467422485,
+        "logfoldchanges": -0.5831495523452759,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Thra",
+        "group_name": "155 MB Glut",
+        "names": "Rogdi",
+        "score": 0.6778173446655273,
+        "logfoldchanges": 0.07309451699256897,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Thra",
+        "group_name": "155 MB Glut",
+        "names": "Thra",
+        "score": -5.257862091064453,
+        "logfoldchanges": -0.6667369604110718,
+        "pvals_adj": 0.0025421375488333853
+      },
+      {
+        "gene_target": "Ncoa1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Adgrb1",
+        "score": -0.1513994187116623,
+        "logfoldchanges": -0.04076917842030525,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Ncoa1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Hr",
+        "score": -0.2957662045955658,
+        "logfoldchanges": -0.32143041491508484,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Ncoa1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Ncoa1",
+        "score": -1.695051908493042,
+        "logfoldchanges": -0.34238144755363464,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Ncoa1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Thra",
+        "score": 1.6634972095489502,
+        "logfoldchanges": 0.29121407866477966,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Ar",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Ar",
+        "score": -2.4480226039886475,
+        "logfoldchanges": -0.49480581283569336,
+        "pvals_adj": 1.0
+      }
+    ],
+    "evidence_records": [
+      {
+        "target_gene": "Thra",
+        "evidence_id": "E001",
+        "evidence_slug": "thra_on_target_all_measured_cell_types",
+        "cell_type": "",
+        "genes": "Thra",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "388,046 Thra-perturbation DE rows across 23 cell types; sum of group-level matched perturbed cells = 2,070; Thra row present in all 23 cell types; Thra score < 0 in 22/23; median Thra logFC -0.566; median score -3.54; 17/23 nominal p < 0.05; 2/23 FDR < 0.05.",
+        "description": "Global measured on-target transcript engagement for the Thra perturbation."
+      },
+      {
+        "target_gene": "Thra",
+        "evidence_id": "E002",
+        "evidence_slug": "thra_151_th_prkcd_grin2c_signature",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Hr|Thra|Adgrb1|Hcn2|Rogdi|Scube2|Abca2",
+        "n_genes": "7",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "241 perturbed cells versus 23,679 controls; Hr logFC -0.752, score -6.42, p 1.35e-10, FDR 2.33e-6; Thra logFC -0.555, FDR 0.0202; Adgrb1 logFC -0.205, FDR 0.0202; Hcn2 logFC -0.269, FDR 0.0736; Rogdi logFC 0.258, FDR 0.0980; Scube2 FDR 0.134; Abca2 FDR 0.185.",
+        "description": "The only Thra cell type with several non-target genes below FDR 0.1."
+      },
+      {
+        "target_gene": "Ncoa1",
+        "evidence_id": "E005",
+        "evidence_slug": "thra_positive_nuclear_receptor_comparator",
+        "cell_type": "",
+        "genes": "Thra|Hr|Adgrb1",
+        "n_genes": "3",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Thra perturbation in 151 TH Prkcd Grin2c Glut had Hr logFC -0.752, FDR 2.329e-6; Thra logFC -0.555, FDR 0.0202; and Adgrb1 logFC -0.205, FDR 0.0202. Thra perturbation in 155 MB Glut had Thra logFC -0.667, FDR 0.00254.",
+        "description": "The same Perturb-seq result table contains clear thyroid-hormone-receptor perturbation effects in selected cell classes."
+      },
+      {
+        "target_gene": "Ncoa1",
+        "evidence_id": "E006",
+        "evidence_slug": "ncoa1_does_not_phenocopy_thra",
+        "cell_type": "",
+        "genes": "Ncoa1|Thra|Hr|Adgrb1",
+        "n_genes": "4",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "In 151 TH Prkcd Grin2c Glut, Ncoa1 perturbation had Ncoa1 logFC -0.151, p=0.0455, FDR=1; Hr logFC -0.165, p=0.1889, FDR=1; Adgrb1 logFC -0.103, p=0.1594, FDR=1; Thra logFC -0.00485, p=0.960, FDR=1. Score correlations between Ncoa1 and Thra signatures were r=0.017 in 151 TH Prkcd Grin2c Glut and r=0.030 in 155 MB Glut.",
+        "description": "Ncoa1 knockdown did not reproduce the robust Thra perturbation signature in Thra-responsive classes."
+      },
+      {
+        "target_gene": "Ar",
+        "evidence_id": "E002",
+        "evidence_slug": "ar_self_transcript_weak_engagement",
+        "cell_type": "",
+        "genes": "Ar",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Ar transcript row present in 22/22 Ar signatures; Ar scores were negative in 19/22 and logFC values were negative in 21/22; all Ar self-row pvals_adj=1.0; nominal Ar lowering occurred in 005 L4-5 IT CTX Glut, logFC -1.235 p=0.0455, 007 L2-3 IT CTX Glut, logFC -1.018 p=0.0251, and 151 TH Prkcd Grin2c Glut, logFC -0.495 p=0.0144.",
+        "description": "On-target Ar transcript depletion was directionally negative in most cell types but was only nominal in three and never significant after correction."
+      },
+      {
+        "target_gene": "Ar",
+        "evidence_id": "E007",
+        "evidence_slug": "nuclear_receptor_contrast_in_151_th_prkcd_grin2c_glut",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Ar|Rora|Nr1d1|Esrra|Thra|Nr2c2",
+        "n_genes": "6",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "In 151 TH Prkcd Grin2c Glut, Ar had n=179 and 0 FDR<0.05 genes; Rora had n=139 and 278 FDR<0.05 genes with minimum FDR 9.68e-18; Nr1d1 had n=205 and 116 genes with minimum FDR 3.33e-25; Esrra had n=275 and 57 genes with minimum FDR 1.56e-09; Thra had n=241 and 3 genes with minimum FDR 2.33e-06; Nr2c2 had n=172 and 3 genes with minimum FDR 7.45e-05.",
+        "description": "The highest-count Ar cell type was capable of yielding strong nuclear-receptor perturbation signatures for other gene targets."
+      }
+    ],
+    "source_claim_ids": [
+      "claim:thra_f001_6f2ba2e5a615",
+      "claim:ncoa1_f004_c083b266856a",
+      "claim:ar_f002_7f7688f60066"
+    ],
+    "source_cluster_ids": [
+      "C033"
+    ]
+  },
+  "caveats": [
+    "The strongest non-target rows beyond Hr and Adgrb1 are q<0.10 rather than q<0.05, and several nominally engaged classes were buffered."
+  ],
+  "prior_expectation": {
+    "summary": "Prior literature and pathway context were taken from the resolved report references; the observed Perturb-seq signal either refines expected gene function by cell type or marks an exploratory response-state neighbor where noted in caveats.",
+    "citations": [
+      {
+        "reference_id": "Thra:R001",
+        "citation": "UniProtKB reviewed entry P63058, THA_MOUSE, thyroid hormone receptor alpha.",
+        "url": "https://rest.uniprot.org/uniprotkb/P63058",
+        "supports": "Curated mouse THRA function: high-affinity T3/T4 nuclear receptor, transcriptional activator/repressor, isoforms, nuclear localization, and dimer/coactivator interactions including RXRB and NCOA3."
+      },
+      {
+        "reference_id": "Thra:R005",
+        "citation": "Thompson CC. Thyroid Hormone-Responsive Genes in Developing Cerebellum Include a Novel Synaptotagmin and a hairless Homolog. J Neurosci. 1996;16(24):7832-7840. doi:10.1523/JNEUROSCI.16-24-07832.1996.",
+        "url": "https://www.jneurosci.org/content/16/24/7832",
+        "supports": "Identified rat hr/hairless as a rapidly thyroid-hormone-induced developing-brain gene."
+      },
+      {
+        "reference_id": "Ncoa1:R001",
+        "citation": "UniProtKB entry Q15788, NCOA1_HUMAN, Nuclear receptor coactivator 1.",
+        "url": "https://www.uniprot.org/uniprotkb/Q15788",
+        "supports": "Curated NCOA1 function, localization, nuclear-receptor and STAT coactivation annotations, GO terms, and Reactome cross-references."
+      },
+      {
+        "reference_id": "Ar:R001",
+        "citation": "UniProtKB/Swiss-Prot entry P19091, ANDR_MOUSE, Androgen receptor, Mus musculus.",
+        "url": "https://www.uniprot.org/uniprotkb/P19091",
+        "supports": "Curated mouse AR function source describing AR as a ligand-activated steroid-hormone transcription factor that binds DNA and is regulated by cofactors."
+      },
+      {
+        "reference_id": "Ar:R005",
+        "citation": "UniProtKB/Swiss-Prot reviewed Mus musculus entries for Esrra, Nr1d1, Rora, Thra, Nr2c2, Pgr, Nr3c2, Esr1, Esr2, and Nr3c1.",
+        "url": "https://rest.uniprot.org/uniprotkb/search?query=organism_id:10090%20reviewed:true%20nuclear%20receptor",
+        "supports": "Curated database context identifying the comparator perturbations as reviewed mouse nuclear-receptor or steroid-receptor proteins."
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 4,
+    "priority": 4
+  },
+  "report_evidence_ids": [
+    "Thra:E001",
+    "Thra:E002",
+    "Ncoa1:E005",
+    "Ncoa1:E006",
+    "Ar:E002",
+    "Ar:E007"
+  ],
+  "reference_ids": [
+    "Thra:R001",
+    "Thra:R005",
+    "Ncoa1:R001",
+    "Ar:R001",
+    "Ar:R005"
+  ],
+  "source_urls_or_dois": [
+    "https://rest.uniprot.org/uniprotkb/P63058",
+    "https://www.jneurosci.org/content/16/24/7832",
+    "https://www.uniprot.org/uniprotkb/Q15788",
+    "https://www.uniprot.org/uniprotkb/P19091",
+    "https://rest.uniprot.org/uniprotkb/search?query=organism_id:10090%20reviewed:true%20nuclear%20receptor"
+  ]
+}

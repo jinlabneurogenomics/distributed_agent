@@ -1,0 +1,10 @@
+target_name: Exoc6b
+predicted_n_degs: 1
+
+The target bundle places Exoc6b in the reachable but likely weak-response regime for the focal population. Exoc6b is detected directly in non-target nuclei from `151 TH Prkcd Grin2c Glut` with mean raw UMI 1.99, pseudobulk 124.89 cpm, and 19,493 of 23,679 nuclei expressing it, so lack of target RNA is not the limiting factor. The biology card identifies EXOC6B as a Sec15-family exocyst component in dynamic exocyst assemblies and judges pre-edit functional stock as likely substantially depleted over the P16-to-P37/P44 interval, but the same card also records no postnatal mouse-neuronal loss series and unresolved buffering by the paralog Exoc6.
+
+The 1,674-row focal training count table is highly sparse: 1,205 targets have zero BH-significant genes, 276 have one, and the median is zero. No other `Exoc*` complex target was available in this table, so the useful observed comparators were upstream or adjacent exocytosis and synaptic-vesicle factors rather than exact exocyst subunits. In the exact focal Parquet, the selected direct exocytosis / membrane-fusion comparators were all quiet or self-only: `Cdc42=1`, `Cplx1=1`, `Cplx2=0`, `Dnm1=1`, `Myo5a=1`, `Rab27a=0`, `Rala=0`, `Stx1b=0`, `Stxbp1=1`, `Unc13a=0`, `Unc13b=0`, `Unc13c=0`, and `Vamp1=1` significant genes. The one-DEG calls in that group were the perturbed transcript itself, not a broader downstream state.
+
+Broader vesicle-traffic hits were not treated as scale-matched: `Vps35` and `Vps54` had 17 and 31 DEGs, while `Rab7` had 501, consistent with larger endolysosomal/retromer stress rather than a redundant plasma-membrane exocyst branch. `Vps41` was another endolysosomal comparator but had 0 DEGs. Thus the high-count tail in vesicle trafficking did not justify moving Exoc6b toward a many-gene prediction.
+
+I therefore forecast a downstream-quiet perturbation, with the single expected DEG coming from detectable Exoc6b self-transcript loss rather than a resolved exocyst-to-thalamic response program. The exact integer prediction is 1.

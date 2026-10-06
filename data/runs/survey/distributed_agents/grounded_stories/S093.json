@@ -1,0 +1,776 @@
+{
+  "story_id": "S093",
+  "title": "Kdm5c, Nsd1, and Zmynd8 converge on a 151 TH chromatin-response hotspot with distinct repression outputs",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Kdm5c, Nsd1, and Zmynd8 each produced FDR-supported 151 TH Prkcd Grin2c Glut responses with an overlapping chromatin-linked hotspot including Ptgds, Capn3, Ache, Zfp532, Hexim2, Gabbr2, Nrxn1, Grm1, and Lrrc7, while Zmynd8 remained directionally distinct from related NuRD or ZMYND perturbations.",
+  "biological_interpretation": "The result points to a thalamic chromatin-response hotspot shared by multiple disease-relevant regulators rather than a generic collapse shared by every chromatin perturbation.",
+  "targets": [
+    "Kdm5c",
+    "Nsd1",
+    "Zmynd8",
+    "Ptgds",
+    "Capn3",
+    "Ache",
+    "Zfp532",
+    "Hexim2",
+    "Gabbr2",
+    "Nrxn1",
+    "Grm1",
+    "Lrrc7"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut"
+  ],
+  "support": {
+    "source_findings": [
+      {
+        "target_gene": "Kdm5c",
+        "finding_id": "F001",
+        "finding_type": "cell_type_selectivity",
+        "direction": "selective_up_dominant_response_in_151",
+        "confidence": "high",
+        "literature_status": "refines_cell_type_context",
+        "summary": "Kdm5c yielded an FDR-resolved response only in 151 TH Prkcd Grin2c Glut, despite target transcript measurement across 22 classes.",
+        "why_it_matters": "A broadly expressed chromatin regulator behaved as a cell-context-dependent vulnerability rather than a pan-neuronal transcriptional requirement.",
+        "genes": "Kdm5c|Ptgds|Capn3|Zfp532|Zmynd8|Ache",
+        "n_genes": "6",
+        "comparators": "21 Kdm5c-tested non-151 cell classes",
+        "cell_types": "151 TH Prkcd Grin2c Glut",
+        "n_cell_types": "1",
+        "evidence_ids": "E001|E002|E003",
+        "ref_ids": "R005",
+        "main_caveats": "The 151 class had the largest Kdm5c perturbed-cell count, and Kdm5c RNA depletion itself was only nominal in that class."
+      },
+      {
+        "target_gene": "Nsd1",
+        "finding_id": "F001",
+        "finding_type": "cell_type_selectivity",
+        "direction": "cell_type_restricted_up_dominant_response",
+        "confidence": "high",
+        "literature_status": "refines_cell_type_context",
+        "summary": "Nsd1 loss produced an FDR-supported multi-gene response almost exclusively in 151 TH Prkcd Grin2c Glut cells.",
+        "why_it_matters": "NSD1 is a chromatin writer with developmental brain functions, but the acute mouse-brain Perturb-seq effect was concentrated in one thalamic glutamatergic class rather than being pan-neuronal.",
+        "genes": "Nsd1|Ddo|Pygm|Capn3|Ptgds|Myo5c|Ptprz1|Trpc3",
+        "n_genes": "8",
+        "cell_types": "151 TH Prkcd Grin2c Glut|005 L4-5 IT CTX Glut",
+        "n_cell_types": "2",
+        "evidence_ids": "E001|E002|E003|E004",
+        "ref_ids": "R001|R005|R006",
+        "main_caveats": "The cell-class specificity is robust in this dataset, but Perturb-seq measures an acute RNA phenotype and not H3K36me2 or DNA methylation."
+      },
+      {
+        "target_gene": "Zmynd8",
+        "finding_id": "F001",
+        "finding_type": "cell_type_selectivity",
+        "direction": "strong_in_151_sparse_elsewhere",
+        "confidence": "high",
+        "literature_status": "refines_cell_type_context",
+        "summary": "Zmynd8 perturbation produced a dominant, FDR-significant transcriptional program in 151 TH Prkcd Grin2c Glut and only sparse effects elsewhere.",
+        "why_it_matters": "A chromatin reader with broad brain relevance did not act as a uniformly active transcriptome regulator across all sampled neuronal classes; the largest measurable effect was confined to a thalamic glutamatergic class.",
+        "genes": "Ptgds|Msra|Lhcgr|Capn3|Spag5|Myo5c|Zfp821|Hexim2|Pnck",
+        "n_genes": "9",
+        "cell_types": "151 TH Prkcd Grin2c Glut|155 MB Glut|005 L4-5 IT CTX Glut|027 NP-CT-L6b-OB Glut",
+        "n_cell_types": "4",
+        "evidence_ids": "E001|E002|E004|E005",
+        "ref_ids": "R004|R007",
+        "main_caveats": "The target transcript was up, not down, in the dominant cell type, and most nonresponsive cell types had fewer than 100 perturbed cells."
+      },
+      {
+        "target_gene": "Zmynd8",
+        "finding_id": "F004",
+        "finding_type": "cross_perturbation_contrast",
+        "direction": "Kdm5c_convergent_NuRD_comparators_divergent",
+        "confidence": "moderate",
+        "literature_status": "refines_cell_type_context",
+        "summary": "Kdm5c was the closest Zmynd8 signature neighbor in 151 TH Prkcd Grin2c Glut, whereas Chd4, Gatad2b, Mbd2, and Zmynd11 did not phenocopy Zmynd8.",
+        "why_it_matters": "The dataset aligned Zmynd8 more with a documented KDM5C axis than with the available NuRD paralog/core perturbations, refining which chromatin relationship is active in the responsive thalamic neurons.",
+        "genes": "Zmynd8|Kdm5c|Zfp532|Ptgds|Capn3|Msra|Chd4|Gatad2b|Mbd2|Zmynd11",
+        "n_genes": "10",
+        "comparators": "Kdm5c|Chd4|Gatad2b|Mbd2|Zmynd11",
+        "cell_types": "151 TH Prkcd Grin2c Glut",
+        "n_cell_types": "1",
+        "evidence_ids": "E008|E009",
+        "ref_ids": "R001|R002|R005|R006",
+        "main_caveats": "The Kdm5c Pearson correlation was the top all-target value but still modest at 0.186; Gatad2a itself was a measured transcript but not an assayed perturbation target."
+      }
+    ],
+    "evidence_ledger_rows": [
+      {
+        "target_gene": "Kdm5c",
+        "evidence_id": "E001",
+        "evidence_slug": "kdm5c_target_transcript_all_cell_types",
+        "genes": "Kdm5c",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "22 cell types; Kdm5c transcript negative in 16/22; median logFC -0.239; nominal p<0.05 in 3/22; minimum target-row FDR 1.0; n_pert range 35-184, median 65.5.",
+        "description": "On-target transcript readout for rows where Kdm5c itself was measured."
+      },
+      {
+        "target_gene": "Kdm5c",
+        "evidence_id": "E002",
+        "evidence_slug": "kdm5c_th_prkcd_grin2c_fdr_signature",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Ptgds|Capn3|Man2a2|Zfp532|Col9a3|Usp11|Zmynd8|Hexim2|Ank1|Msra|Dusp27|Catsperz|Kcnk4|Slc12a8|Medag|Zfp2|Spag5|Ache",
+        "n_genes": "18",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "184 perturbed cells versus 23679 controls; 18 genes with FDR<0.05, 17 up and 1 down; Ptgds logFC 1.570 FDR 8.54e-14; Capn3 logFC 1.687 FDR 4.01e-6; Zfp2 logFC -0.559 FDR 0.0209; Kdm5c row logFC -0.292 nominal p=0.044 FDR 1.0.",
+        "description": "The single FDR-resolved Kdm5c response across the assayed cell classes."
+      },
+      {
+        "target_gene": "Kdm5c",
+        "evidence_id": "E003",
+        "evidence_slug": "kdm5c_no_fdr_hits_outside_th",
+        "genes": "Prrt1",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "0 FDR<0.05 genes in the other 21 Kdm5c cell types; best non-151 adjusted p value was Prrt1 in 110 CNU-HYa HY MM Glut with FDR 0.061; next minima were 0.113 in 005 L4-5 IT CTX Glut and 0.160 in 052 Pvalb Gaba.",
+        "description": "Negative differential-expression result outside the 151 TH Prkcd Grin2c Glut class."
+      },
+      {
+        "target_gene": "Nsd1",
+        "evidence_id": "E001",
+        "evidence_slug": "nsd1_self_knockdown_151",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Nsd1",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "136 perturbed cells versus 23679 controls; Nsd1 logFC -0.3406, score -4.1702, p=3.04e-05, FDR=0.0276.",
+        "description": "The Nsd1 target transcript was significantly depleted only in the 151 TH Prkcd Grin2c Glut test."
+      },
+      {
+        "target_gene": "Nsd1",
+        "evidence_id": "E002",
+        "evidence_slug": "nsd1_downstream_signature_151",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Ddo|Pygm|Capn3|Ptgds|Myo5c|Ptprz1|Trpc3|Nsd1",
+        "n_genes": "8",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "23 genes at FDR<0.05; 20 positive and 3 negative scores. Top rows: Ddo logFC 1.6667 FDR 6.39e-07; Pygm logFC 2.5396 FDR 1.10e-05; Capn3 logFC 1.5522 FDR 2.81e-05; Ptgds logFC 0.8140 FDR 4.96e-05; Ptprz1 logFC -0.6022 FDR 0.00218; Trpc3 logFC -0.2809 FDR 0.0471.",
+        "description": "The robust Nsd1 response in 151 TH Prkcd Grin2c Glut was small but FDR-supported and biased toward up-regulated transcripts."
+      },
+      {
+        "target_gene": "Nsd1",
+        "evidence_id": "E003",
+        "evidence_slug": "nsd1_fdr_distribution_across_cell_types",
+        "n_genes": "0",
+        "has_genes": "0",
+        "has_cell_type": "0",
+        "statistics": "338323 Nsd1 rows across 20 cell-type tests; 24 total rows at FDR<0.05; 23/24 were in 151 TH Prkcd Grin2c Glut and 1/24 was in 005 L4-5 IT CTX Glut; 18/20 cell types had zero FDR<0.05 genes.",
+        "description": "FDR-supported Nsd1 effects were highly concentrated in one thalamic glutamatergic class."
+      },
+      {
+        "target_gene": "Nsd1",
+        "evidence_id": "E004",
+        "evidence_slug": "isolated_myo5c_005",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "genes": "Myo5c|Nsd1",
+        "n_genes": "2",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "100 perturbed cells versus 15039 controls; Myo5c logFC 1.5900, score 5.0635, p=4.12e-07, FDR=0.00705; Nsd1 logFC -0.0730, p=0.178, FDR=1.0; no other gene was FDR<0.05.",
+        "description": "The only non-151 FDR hit was an isolated Myo5c increase without detectable depletion of the Nsd1 transcript."
+      },
+      {
+        "target_gene": "Zmynd8",
+        "evidence_id": "E001",
+        "evidence_slug": "zmynd8_coverage_on_target_transcript",
+        "genes": "Zmynd8",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Zmynd8 perturbations were tested in 22 cell types with 2,028 matched perturbed cells in total; n_pert_matched ranged from 38 to 240 per cell type. The Zmynd8 transcript row was present in all 22 signatures; only 151 TH Prkcd Grin2c Glut passed FDR, with Zmynd8 logFC 0.496, score 5.515, p=3.48e-08, FDR=3.34e-05; the other 21 Zmynd8 rows all had FDR=1.0.",
+        "description": "Coverage and direct target-transcript readout for the assayed Zmynd8 perturbation across the dataset."
+      },
+      {
+        "target_gene": "Zmynd8",
+        "evidence_id": "E002",
+        "evidence_slug": "zmynd8_151_th_prkcd_dominant_signature",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Ptgds|Msra|Lhcgr|Capn3|Spag5|Abhd12b|Atp2a1|Myo5c|Gabbr2|Nrxn1|Grm1|Trim9",
+        "n_genes": "12",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "240 perturbed cells versus 23,679 controls; 74 genes at FDR<0.05, comprising 57 positive and 17 negative scores. Top positives: Ptgds logFC 1.735 FDR 3.09e-19, Msra 0.989 FDR 6.37e-19, Lhcgr 4.930 FDR 3.35e-16, Capn3 2.045 FDR 1.03e-15, Spag5 1.539 FDR 2.39e-14. Top negatives: Gabbr2 -0.289 FDR 3.88e-07, Nrxn1 -0.291 FDR 2.39e-05, Grm1 -0.205 FDR 6.82e-05, Trim9 -0.278 FDR 1.59e-04.",
+        "description": "The dominant Zmynd8 transcriptional response is concentrated in the thalamic Prkcd/Grin2c glutamatergic class."
+      },
+      {
+        "target_gene": "Zmynd8",
+        "evidence_id": "E004",
+        "evidence_slug": "zmynd8_non151_sparse_fdr_effects",
+        "genes": "Myo5c|Zfp821|Spag5|Hexim2|Pnck",
+        "n_genes": "5",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Outside 151 TH Prkcd Grin2c Glut, only three cell types had FDR<0.05 genes: 005 L4-5 IT CTX Glut had Myo5c logFC 1.436 FDR 0.00558; 027 NP-CT-L6b-OB Glut had Zfp821 logFC 0.734 FDR 0.0118; 155 MB Glut had Spag5 logFC 1.147 FDR 1.24e-06, Hexim2 0.798 FDR 0.0295, and Pnck 0.406 FDR 0.0331. 145 MH-LH TH Glut had Spag5 logFC 1.633 at FDR 0.0866, below the 0.1 but not 0.05 threshold.",
+        "description": "FDR-significant Zmynd8 effects outside the dominant thalamic cell type were rare and mostly positive singleton or three-gene responses."
+      },
+      {
+        "target_gene": "Zmynd8",
+        "evidence_id": "E005",
+        "evidence_slug": "zmynd8_zero_fdr_cell_types",
+        "n_genes": "0",
+        "has_genes": "0",
+        "has_cell_type": "0",
+        "statistics": "18 of 22 Zmynd8-tested cell types had zero genes at FDR<0.05. Examples with over 100 perturbed cells but no FDR<0.05 genes were 052 Pvalb Gaba with 134 perturbed cells, 066 CNU-HYa HY GABA with 106, and 022 L5 ET CTX Glut with 104.",
+        "description": "Most assayed cell classes were either buffered or not detectably engaged at the transcriptome level."
+      },
+      {
+        "target_gene": "Zmynd8",
+        "evidence_id": "E008",
+        "evidence_slug": "zmynd8_kdm5c_signature_neighbor_151",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Kdm5c|Ptgds|Capn3|Zfp532|Zmynd8|Hexim2|Msra|Spag5",
+        "n_genes": "8",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "Across all 2,045 other perturbations in 151 TH Prkcd Grin2c Glut, Kdm5c was the top positive Pearson neighbor of Zmynd8 with r=0.186. Kdm5c perturbation had 18 FDR<0.05 genes; 14 overlapped the 74-gene Zmynd8 FDR set, including Ptgds, Capn3, Man2a2, Zfp532, Usp11, Hexim2, Ank1, Msra, Dusp27, Catsperz, Kcnk4, Medag, and Spag5. Zmynd8 itself was induced by Kdm5c perturbation with logFC 0.499 and FDR 0.00221.",
+        "description": "The closest Zmynd8 signature neighbor in the dominant cell type was Kdm5c, a chromatin regulator with a compact, highly overlapping positive signature."
+      },
+      {
+        "target_gene": "Zmynd8",
+        "evidence_id": "E009",
+        "evidence_slug": "zmynd8_nurd_zmynd11_divergence_151",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Chd4|Gatad2b|Mbd2|Zmynd11",
+        "n_genes": "4",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "Pearson correlations to the 151 TH Prkcd Grin2c Glut Zmynd8 score vector were low for related chromatin perturbations: Chd4 r=0.062 with 100 FDR<0.05 genes, Gatad2b r=0.053 with 1 FDR<0.05 gene, Mbd2 r=0.046 with 0 FDR<0.05 genes, and Zmynd11 r=-0.011 with 0 FDR<0.05 genes.",
+        "description": "NuRD-associated and same-family perturbations present in the guide library did not phenocopy the Zmynd8 signature in the main responsive cell type."
+      }
+    ],
+    "exact_de_rows": [
+      {
+        "target_gene": "Kdm5c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ache",
+        "score": 4.105051,
+        "logfoldchange": 0.329577,
+        "pval": 4.042262877375158e-05,
+        "pvals_adj": 0.03875856388923214
+      },
+      {
+        "target_gene": "Kdm5c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Capn3",
+        "score": 6.230556,
+        "logfoldchange": 1.687373,
+        "pval": 4.6478160903874655e-10,
+        "pvals_adj": 4.0108328951998636e-06
+      },
+      {
+        "target_gene": "Kdm5c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gabbr2",
+        "score": -1.056409,
+        "logfoldchange": -0.074385,
+        "pval": 0.29078136738208515,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Kdm5c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Grm1",
+        "score": -1.111183,
+        "logfoldchange": -0.047758,
+        "pval": 0.2664897567849538,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Kdm5c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Hexim2",
+        "score": 4.782181,
+        "logfoldchange": 1.226418,
+        "pval": 1.7340343200349393e-06,
+        "pvals_adj": 0.003740962291185377
+      },
+      {
+        "target_gene": "Kdm5c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kdm5c",
+        "score": -2.01229,
+        "logfoldchange": -0.29242,
+        "pval": 0.04418939218919038,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Kdm5c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lrrc7",
+        "score": 1.438997,
+        "logfoldchange": 0.058036,
+        "pval": 0.1501514721518821,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Kdm5c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Nrxn1",
+        "score": 0.858994,
+        "logfoldchange": 0.093214,
+        "pval": 0.39034360283040004,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Kdm5c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Nsd1",
+        "score": 1.665477,
+        "logfoldchange": 0.105312,
+        "pval": 0.09581769176232412,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Kdm5c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ptgds",
+        "score": 8.654569,
+        "logfoldchange": 1.57031,
+        "pval": 4.947778324284859e-18,
+        "pvals_adj": 8.539370609883239e-14
+      },
+      {
+        "target_gene": "Kdm5c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Zfp532",
+        "score": 5.515922,
+        "logfoldchange": 0.465985,
+        "pval": 3.469562238788537e-08,
+        "pvals_adj": 0.00014970293669812842
+      },
+      {
+        "target_gene": "Kdm5c",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Zmynd8",
+        "score": 4.912994,
+        "logfoldchange": 0.499321,
+        "pval": 8.969602540294773e-07,
+        "pvals_adj": 0.0022115195748992496
+      },
+      {
+        "target_gene": "Nsd1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ache",
+        "score": -0.746901,
+        "logfoldchange": -0.071689,
+        "pval": 0.4551233020555161,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Nsd1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Capn3",
+        "score": 5.850993,
+        "logfoldchange": 1.552208,
+        "pval": 4.886478122014693e-09,
+        "pvals_adj": 2.8111908635950527e-05
+      },
+      {
+        "target_gene": "Nsd1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gabbr2",
+        "score": 1.968718,
+        "logfoldchange": 0.093,
+        "pval": 0.0489854402925926,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Nsd1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Grm1",
+        "score": -0.874888,
+        "logfoldchange": 0.000209,
+        "pval": 0.38163487064086576,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Nsd1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Hexim2",
+        "score": 3.364479,
+        "logfoldchange": 0.925743,
+        "pval": 0.0007668836129928112,
+        "pvals_adj": 0.357720115584944
+      },
+      {
+        "target_gene": "Nsd1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kdm5c",
+        "score": 0.330099,
+        "logfoldchange": 0.059809,
+        "pval": 0.7413250090329986,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Nsd1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lrrc7",
+        "score": -0.765651,
+        "logfoldchange": -0.042234,
+        "pval": 0.44388383029147016,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Nsd1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Nrxn1",
+        "score": -0.22853,
+        "logfoldchange": 0.000731,
+        "pval": 0.8192340700014312,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Nsd1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Nsd1",
+        "score": -4.170208,
+        "logfoldchange": -0.340593,
+        "pval": 3.043226367446729e-05,
+        "pvals_adj": 0.027643707303033206
+      },
+      {
+        "target_gene": "Nsd1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ptgds",
+        "score": 5.707214,
+        "logfoldchange": 0.814007,
+        "pval": 1.1484052768608566e-08,
+        "pvals_adj": 4.955081668335381e-05
+      },
+      {
+        "target_gene": "Nsd1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Zfp532",
+        "score": 4.084812,
+        "logfoldchange": 0.427861,
+        "pval": 4.411254784272806e-05,
+        "pvals_adj": 0.036254212534173505
+      },
+      {
+        "target_gene": "Nsd1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Zmynd8",
+        "score": 1.673962,
+        "logfoldchange": 0.214898,
+        "pval": 0.09413808180082425,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Zmynd8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ache",
+        "score": 0.885301,
+        "logfoldchange": 0.067463,
+        "pval": 0.37599405618221593,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Zmynd8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Capn3",
+        "score": 8.993732,
+        "logfoldchange": 2.045294,
+        "pval": 2.389746341063773e-19,
+        "pvals_adj": 1.0311158025104915e-15
+      },
+      {
+        "target_gene": "Zmynd8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gabbr2",
+        "score": -6.302773,
+        "logfoldchange": -0.288511,
+        "pval": 2.9236733769676003e-10,
+        "pvals_adj": 3.881513754852601e-07
+      },
+      {
+        "target_gene": "Zmynd8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Grm1",
+        "score": -5.369215,
+        "logfoldchange": -0.205256,
+        "pval": 7.907978611635346e-08,
+        "pvals_adj": 6.824190142910721e-05
+      },
+      {
+        "target_gene": "Zmynd8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Hexim2",
+        "score": 4.299268,
+        "logfoldchange": 0.993229,
+        "pval": 1.7136317624329402e-05,
+        "pvals_adj": 0.006721720588143208
+      },
+      {
+        "target_gene": "Zmynd8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kdm5c",
+        "score": 0.258571,
+        "logfoldchange": 0.003553,
+        "pval": 0.7959666099142428,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Zmynd8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lrrc7",
+        "score": -4.691453,
+        "logfoldchange": -0.160602,
+        "pval": 2.71271862187787e-06,
+        "pvals_adj": 0.0014630878342184424
+      },
+      {
+        "target_gene": "Zmynd8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Nrxn1",
+        "score": -5.594291,
+        "logfoldchange": -0.290683,
+        "pval": 2.21525030345598e-08,
+        "pvals_adj": 2.3895628117091726e-05
+      },
+      {
+        "target_gene": "Zmynd8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Nsd1",
+        "score": 1.567762,
+        "logfoldchange": 0.09138,
+        "pval": 0.11693664680633861,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Zmynd8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ptgds",
+        "score": 9.984062,
+        "logfoldchange": 1.735171,
+        "pval": 1.7898624587473878e-23,
+        "pvals_adj": 3.0891236175521166e-19
+      },
+      {
+        "target_gene": "Zmynd8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Zfp532",
+        "score": 4.972371,
+        "logfoldchange": 0.416152,
+        "pval": 6.613908642654549e-07,
+        "pvals_adj": 0.00043903634332144177
+      },
+      {
+        "target_gene": "Zmynd8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Zmynd8",
+        "score": 5.515429,
+        "logfoldchange": 0.495509,
+        "pval": 3.479293176733076e-08,
+        "pvals_adj": 3.336062274290898e-05
+      }
+    ]
+  },
+  "caveats": [
+    "The shared module is transcriptomic and does not identify direct chromatin targets.",
+    "Zmynd8-neighbor comparisons are correlation based."
+  ],
+  "prior_expectation": {
+    "citations": [
+      {
+        "target_gene": "Kdm5c",
+        "ref_id": "R005",
+        "ref_slug": "hpa_kdm5c_expression",
+        "source": "Human Protein Atlas",
+        "source_type": "database",
+        "citation": "Human Protein Atlas. KDM5C ENSG00000126012 entry.",
+        "url": "https://www.proteinatlas.org/ENSG00000126012-KDM5C",
+        "description": "Database entry classifying KDM5C as a lysine demethylase with RNA detected broadly across human single-nucleus brain categories."
+      },
+      {
+        "target_gene": "Nsd1",
+        "ref_id": "R001",
+        "ref_slug": "uniprot_nsd1_q96l73",
+        "source": "UniProtKB",
+        "source_type": "database",
+        "citation": "UniProtKB reviewed entry Q96L73, NSD1_HUMAN.",
+        "url": "https://rest.uniprot.org/uniprotkb/Q96L73",
+        "description": "Curated NSD1 function, catalytic activity, chromatin localization, PWWP/PHD/SET domains, and disease annotations."
+      },
+      {
+        "target_gene": "Nsd1",
+        "ref_id": "R005",
+        "ref_slug": "hamagami_2023_nsd1_mca_neurons",
+        "source": "Molecular Cell",
+        "source_type": "pubmed",
+        "citation": "Hamagami N et al. NSD1 deposits histone H3 lysine 36 dimethylation to pattern non-CG DNA methylation in neurons. Molecular Cell. 2023;83(9):1412-1428.e7. doi:10.1016/j.molcel.2023.04.001.",
+        "url": "https://doi.org/10.1016/j.molcel.2023.04.001",
+        "description": "Showed in mouse neurons that NSD1-deposited H3K36me2 helps recruit DNMT3A and pattern neuronal non-CG DNA methylation."
+      },
+      {
+        "target_gene": "Nsd1",
+        "ref_id": "R006",
+        "ref_slug": "zheng_2023_nsd1_neuronal_identities",
+        "source": "Cell Reports",
+        "source_type": "pubmed",
+        "citation": "Zheng Y, Zhao C, Song Q, Xu L, Zhang B, Hu G, Kong X, Li S, Li X, Shen Y, Zhuang L, Wu M, Liu Y, Zhou Y. Histone methylation mediated by NSD1 is required for the establishment and maintenance of neuronal identities. Cell Reports. 2023;42(12):113496. PMID:37995181.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37995181/",
+        "description": "Reported that Nsd1 loss in mouse neocortex perturbs neuronal area and layer identities, connecting Nsd1 chromatin activity to neural cell identity."
+      },
+      {
+        "target_gene": "Zmynd8",
+        "ref_id": "R004",
+        "ref_slug": "dias_2022_zmynd8_neurodevelopmental_disorder",
+        "source": "Genetics in Medicine",
+        "source_type": "pubmed",
+        "citation": "Dias KR et al. De Novo ZMYND8 variants result in an autosomal dominant neurodevelopmental disorder with cardiac malformations. Genetics in Medicine. 2022;24(9):1952-1966. PMID:35916866.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35916866/",
+        "description": "Links human de novo ZMYND8 variants to syndromic intellectual disability, shows that PWWP- and MYND-domain missense variants disrupt DBN1 and GATAD2A interactions, reports broad brain expression, and supports a cognitive role using neuronal knockdown in Drosophila."
+      },
+      {
+        "target_gene": "Zmynd8",
+        "ref_id": "R007",
+        "ref_slug": "opentargets_zmynd8_profile",
+        "source": "Open Targets Platform",
+        "source_type": "database",
+        "citation": "Open Targets Platform profile for ZMYND8, ENSG00000101040.",
+        "url": "https://platform.opentargets.org/target/ENSG00000101040",
+        "description": "Lists ZMYND8 as a protein-coding target with strongest associated-disease entries including neurodevelopmental disorder and intellectual disability, and flags protein-degrader tractability evidence but not approved drugs."
+      },
+      {
+        "target_gene": "Zmynd8",
+        "ref_id": "R001",
+        "ref_slug": "uniprot_zmynd8_q9ulu4",
+        "source": "UniProtKB",
+        "source_type": "database",
+        "citation": "UniProtKB entry Q9ULU4, MYND-type zinc finger-containing chromatin reader ZMYND8, Homo sapiens.",
+        "url": "https://rest.uniprot.org/uniprotkb/Q9ULU4",
+        "description": "Curates ZMYND8 as a chromatin reader with H3/H4 histone-reader activity, nuclear/chromatin localization, interactions with CHD4, GATAD2A, HDAC1/2, KDM5C, CCNT1/CDK9, DBN1, and ZNF532/ZNF687, and roles in transcriptional repression, P-TEFb-mediated elongation, DNA-damage repair, and neuronal differentiation."
+      },
+      {
+        "target_gene": "Zmynd8",
+        "ref_id": "R002",
+        "ref_slug": "spruijt_2016_zmynd8_nurd_gatad2a",
+        "source": "Cell Reports",
+        "source_type": "pubmed",
+        "citation": "Spruijt CG et al. ZMYND8 Co-localizes with NuRD on Target Genes and Regulates Poly(ADP-Ribose)-Dependent Recruitment of GATAD2A/NuRD to Sites of DNA Damage. Cell Reports. 2016;17(3):783-798. PMID:27732854.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/27732854/",
+        "description": "Shows that ZMYND8 directly engages GATAD2A-containing NuRD through its MYND domain, that GATAD2A and GATAD2B define distinct NuRD subcomplexes, and that ZMYND8 recruits GATAD2A/NuRD to DNA-damage sites."
+      },
+      {
+        "target_gene": "Zmynd8",
+        "ref_id": "R005",
+        "ref_slug": "mukherjee_2020_zmynd8_kdm5c_ezh2",
+        "source": "Cell Death & Disease",
+        "source_type": "pubmed",
+        "citation": "Mukherjee S et al. Suppression of poised oncogenes by ZMYND8 promotes chemo-sensitization. Cell Death & Disease. 2020;11:1073. PMID:33323928.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33323928/",
+        "description": "Reports that ZMYND8 can repress poised oncogenic programs through association with KDM5C and EZH2 in breast-cancer models, providing prior evidence for a ZMYND8-KDM5C functional axis."
+      },
+      {
+        "target_gene": "Zmynd8",
+        "ref_id": "R006",
+        "ref_slug": "reactome_gatad2a_nurd_zmynd8_znf_complex",
+        "source": "Reactome",
+        "source_type": "database",
+        "citation": "Reactome reaction R-HSA-9940948: GATAD2A NuRD binds ZMYND8:ZNF532:ZNF592:ZNF687.",
+        "url": "https://reactome.org/content/detail/R-HSA-9940948",
+        "description": "Curates ZMYND8, ZNF532, ZNF592, and ZNF687 as a nucleoplasmic complex that binds GATAD2A-containing NuRD and notes that the GATAD2A PPPLΦ motif is absent from GATAD2B."
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 4,
+    "priority": 4
+  },
+  "report_evidence_ids": [
+    "Kdm5c:E001",
+    "Kdm5c:E002",
+    "Kdm5c:E003",
+    "Nsd1:E001",
+    "Nsd1:E002",
+    "Nsd1:E003",
+    "Nsd1:E004",
+    "Zmynd8:E001",
+    "Zmynd8:E002",
+    "Zmynd8:E004",
+    "Zmynd8:E005",
+    "Zmynd8:E008",
+    "Zmynd8:E009"
+  ],
+  "reference_ids": [
+    "Kdm5c:R005",
+    "Nsd1:R001",
+    "Nsd1:R005",
+    "Nsd1:R006",
+    "Zmynd8:R001",
+    "Zmynd8:R002",
+    "Zmynd8:R004",
+    "Zmynd8:R005",
+    "Zmynd8:R006",
+    "Zmynd8:R007"
+  ],
+  "source_urls_or_dois": [
+    {
+      "ref_id": "Kdm5c:R005",
+      "citation": "Human Protein Atlas. KDM5C ENSG00000126012 entry.",
+      "url_or_doi": "https://www.proteinatlas.org/ENSG00000126012-KDM5C"
+    },
+    {
+      "ref_id": "Nsd1:R001",
+      "citation": "UniProtKB reviewed entry Q96L73, NSD1_HUMAN.",
+      "url_or_doi": "https://rest.uniprot.org/uniprotkb/Q96L73"
+    },
+    {
+      "ref_id": "Nsd1:R005",
+      "citation": "Hamagami N et al. NSD1 deposits histone H3 lysine 36 dimethylation to pattern non-CG DNA methylation in neurons. Molecular Cell. 2023;83(9):1412-1428.e7. doi:10.1016/j.molcel.2023.04.001.",
+      "url_or_doi": "https://doi.org/10.1016/j.molcel.2023.04.001"
+    },
+    {
+      "ref_id": "Nsd1:R006",
+      "citation": "Zheng Y, Zhao C, Song Q, Xu L, Zhang B, Hu G, Kong X, Li S, Li X, Shen Y, Zhuang L, Wu M, Liu Y, Zhou Y. Histone methylation mediated by NSD1 is required for the establishment and maintenance of neuronal identities. Cell Reports. 2023;42(12):113496. PMID:37995181.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/37995181/"
+    },
+    {
+      "ref_id": "Zmynd8:R004",
+      "citation": "Dias KR et al. De Novo ZMYND8 variants result in an autosomal dominant neurodevelopmental disorder with cardiac malformations. Genetics in Medicine. 2022;24(9):1952-1966. PMID:35916866.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/35916866/"
+    },
+    {
+      "ref_id": "Zmynd8:R007",
+      "citation": "Open Targets Platform profile for ZMYND8, ENSG00000101040.",
+      "url_or_doi": "https://platform.opentargets.org/target/ENSG00000101040"
+    },
+    {
+      "ref_id": "Zmynd8:R001",
+      "citation": "UniProtKB entry Q9ULU4, MYND-type zinc finger-containing chromatin reader ZMYND8, Homo sapiens.",
+      "url_or_doi": "https://rest.uniprot.org/uniprotkb/Q9ULU4"
+    },
+    {
+      "ref_id": "Zmynd8:R002",
+      "citation": "Spruijt CG et al. ZMYND8 Co-localizes with NuRD on Target Genes and Regulates Poly(ADP-Ribose)-Dependent Recruitment of GATAD2A/NuRD to Sites of DNA Damage. Cell Reports. 2016;17(3):783-798. PMID:27732854.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/27732854/"
+    },
+    {
+      "ref_id": "Zmynd8:R005",
+      "citation": "Mukherjee S et al. Suppression of poised oncogenes by ZMYND8 promotes chemo-sensitization. Cell Death & Disease. 2020;11:1073. PMID:33323928.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/33323928/"
+    },
+    {
+      "ref_id": "Zmynd8:R006",
+      "citation": "Reactome reaction R-HSA-9940948: GATAD2A NuRD binds ZMYND8:ZNF532:ZNF592:ZNF687.",
+      "url_or_doi": "https://reactome.org/content/detail/R-HSA-9940948"
+    }
+  ],
+  "source_cluster_ids": [
+    "C065"
+  ],
+  "source_claim_ids": [
+    "claim:kdm5c_f001_cea18b8c48e8",
+    "claim:nsd1_f001_80a2f04c6a05",
+    "claim:zmynd8_f001_47e9860abc63",
+    "claim:zmynd8_f004_218501527344"
+  ]
+}

@@ -1,0 +1,1462 @@
+{
+  "story_id": "S115",
+  "title": "Rora loss produces a thalamic excitability and synaptic liability program distinct from weak Rorb/Rorc paralog responses",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Rora loss drove a strong 151 TH Prkcd Grin2c Glut program marked by repression of Prkcg, Adgrb1, Grin2c, Kcnc2, Gabra4, Gabrd, Gria2, and Sema7a with a smaller induced component, while Rorb and Rorc were weak or inactive in the same thalamic context.",
+  "biological_interpretation": "ROR-alpha has a selective thalamic excitability and synaptic-output role in this acute neuronal assay that is not recapitulated by lowering the ROR paralogs Rorb or Rorc.",
+  "targets": [
+    "Rora",
+    "Rorb",
+    "Rorc",
+    "Prkcg",
+    "Adgrb1",
+    "Grin2c",
+    "Kcnc2",
+    "Gabra4",
+    "Gabrd",
+    "Gria2",
+    "Sema7a",
+    "Nr1d1",
+    "Cry2"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "052 Pvalb Gaba"
+  ],
+  "support": {
+    "source_findings": [
+      {
+        "target_gene": "Rora",
+        "finding_id": "F001",
+        "finding_type": "cell_type_selectivity",
+        "direction": "151 selective response; no FDR-significant genes in 21 other Rora tests",
+        "confidence": "high",
+        "literature_status": "extends_known_mechanism",
+        "summary": "Rora perturbation produced a strong FDR-significant program only in 151 TH Prkcd Grin2c Glut, while 21 other assayed cell classes were transcriptionally quiet at FDR<0.05.",
+        "why_it_matters": "RORA is broadly expressed in neurons, but the dataset points to a sharply restricted thalamic Prkcd/Grin2c glutamatergic dependency that extends prior RORalpha thalamic-development biology into a perturbational thalamic single-cell context.",
+        "genes": "Rora|Prkcg|Adgrb1|Rasa4|Ypel4|Agrn",
+        "n_genes": "6",
+        "cell_types": "151 TH Prkcd Grin2c Glut|052 Pvalb Gaba",
+        "n_cell_types": "2",
+        "evidence_ids": "E001|E002|E003|E004",
+        "ref_ids": "R001|R005",
+        "main_caveats": "Direct Rora mRNA reduction was nominal rather than FDR-significant, and some silent classes had small n_pert counts."
+      },
+      {
+        "target_gene": "Rora",
+        "finding_id": "F004",
+        "finding_type": "cross_perturbation_contrast",
+        "direction": "Rora_specific",
+        "confidence": "moderate",
+        "literature_status": "contradicts_expected_relationship",
+        "summary": "Rora was not interchangeable with its ROR-family paralogs Rorb or Rorc in the responsive thalamic class.",
+        "why_it_matters": "RORA, RORB, and RORC share RORE DNA-recognition logic, yet only Rora created a broad 151 TH Prkcd Grin2c Glut signature; this argues that the hit is a RORA-specific dependency rather than a generic consequence of perturbing any ROR nuclear receptor.",
+        "genes": "Rora|Rorb|Rorc",
+        "n_genes": "3",
+        "comparators": "Rorb|Rorc",
+        "cell_types": "151 TH Prkcd Grin2c Glut",
+        "n_cell_types": "1",
+        "evidence_ids": "E008",
+        "ref_ids": "R002|R008",
+        "main_caveats": "Rorb target engagement was only nominal and Rorc target engagement was not detected, so lack of response could partly reflect ineffective or low-expression perturbation."
+      },
+      {
+        "target_gene": "Rorc",
+        "finding_id": "F002",
+        "finding_type": "cross_perturbation_contrast",
+        "direction": "Rora_active_Rorc_inactive",
+        "confidence": "moderate",
+        "literature_status": "refines_cell_type_context",
+        "summary": "Rorc did not phenocopy the ROR-family paralog Rora in 151 TH Prkcd Grin2c Glut cells.",
+        "why_it_matters": "The thalamic class produced a strong Rora program despite a same-family Rorc perturbation with more perturbed cells, arguing against simple interchangeability of ROR-family factors in this neuronal context.",
+        "genes": "Rora|Rorb|Rorc|Prkcg|Adgrb1|Nr1d1",
+        "n_genes": "6",
+        "comparators": "Rora|Rorb|Nr1d1|Nr1d2",
+        "cell_types": "151 TH Prkcd Grin2c Glut",
+        "n_cell_types": "1",
+        "evidence_ids": "E006|E007",
+        "ref_ids": "R001|R002|R004|R010",
+        "main_caveats": "Rorc target engagement was poor; the contrast may combine biology with different guide efficacy or baseline expression."
+      },
+      {
+        "target_gene": "Rora",
+        "finding_id": "F003",
+        "finding_type": "pathway_uncoupling",
+        "direction": "partial_downstream_clock_downregulation",
+        "confidence": "moderate",
+        "literature_status": "refines_cell_type_context",
+        "summary": "Rora loss engaged only a narrow slice of the curated circadian circuit in 151 cells: Nr1d1 and Cry2 fell, but Arntl/Bmal1, Dbp, Clock, Nr1d2, Tef, Cry1, Per2, and Per3 did not pass FDR.",
+        "why_it_matters": "Canonical RORA biology predicts RORE-mediated clock regulation, including BMAL1 activation; the thalamic Perturb-seq result shows that the clock edge most visible after Rora perturbation is Nr1d1/Cry2 loss rather than wholesale BMAL1-CLOCK oscillator collapse.",
+        "genes": "Rora|Nr1d1|Cry2|Arntl|Bmal1|Npas2|Per1|Dbp|Clock|Nr1d2|Tef|Hlf|Cry1|Per2|Per3",
+        "n_genes": "15",
+        "cell_types": "151 TH Prkcd Grin2c Glut",
+        "n_cell_types": "1",
+        "evidence_ids": "E007",
+        "ref_ids": "R001|R003|R004|R007",
+        "main_caveats": "The experiment is not a circadian time course, and absence of FDR signal for Arntl or Dbp at one sampling context does not exclude rhythmic regulation."
+      },
+      {
+        "target_gene": "Rorb",
+        "finding_id": "F002",
+        "finding_type": "cell_type_selectivity",
+        "direction": "Rorb_down_nominal_downstream_buffered",
+        "confidence": "moderate",
+        "literature_status": "refines_cell_type_context",
+        "summary": "Rorb mRNA depletion was concentrated in L4-5 IT cortical neurons but did not produce significant downstream genes.",
+        "why_it_matters": "The engaged cell class corresponds to the best-established cortical RORβ context, yet the weak downstream program suggests that acute postnatal perturbation does not replay developmental layer-4 RORβ biology in this dataset.",
+        "genes": "Rorb|Acin1|Camk4|Lnpk|Cacna2d3",
+        "n_genes": "5",
+        "cell_types": "005 L4-5 IT CTX Glut",
+        "n_cell_types": "1",
+        "evidence_ids": "E002|E003",
+        "ref_ids": "R007|R008",
+        "main_caveats": "Rorb target transcript FDR was 0.404 and Acin1/Camk4 were the only rows at FDR 0.136; no row crossed 5% FDR."
+      },
+      {
+        "target_gene": "Rorc",
+        "finding_id": "F004",
+        "finding_type": "pathway_uncoupling",
+        "direction": "no_coordinated_clock_or_metabolic_change",
+        "confidence": "moderate",
+        "literature_status": "refines_cell_type_context",
+        "summary": "RORE-linked clock and lipid/steroid genes showed only nominal, uncoordinated tails after Rorc perturbation.",
+        "why_it_matters": "RORC can regulate peripheral circadian and metabolic transcription, but those known target families were not detectably organized by Rorc in the assayed brain cell types.",
+        "genes": "Rorc|Nr1d1|Nr1d2|Arntl|Clock|Cry1|Cry2|Per1|Per2|Per3|Srebf1|Srebf2|Cyp51|Apoe|Sult4a1|Cyp46a1",
+        "n_genes": "16",
+        "comparators": "Nr1d1|Nr1d2|Rora|Rorb",
+        "n_cell_types": "0",
+        "evidence_ids": "E010|E007",
+        "ref_ids": "R001|R002|R004",
+        "main_caveats": "The dataset measured an acute perturbation in broad brain classes, whereas much RORC clock and metabolic biology was defined in peripheral tissues or synchronized bulk assays."
+      }
+    ],
+    "evidence_ledger_rows": [
+      {
+        "target_gene": "Rora",
+        "evidence_id": "E001",
+        "evidence_slug": "rora_target_transcript_all_cell_types",
+        "genes": "Rora",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Rora target transcript was measured in all 22 Rora-perturbed cell-type tests; matched perturbation counts ranged from 28 to 139 cells and controls from 3465 to 23679 cells. The Rora logFC was negative in 17/22 tests, nominal p<0.05 in 2/22 tests, and FDR<0.05 in 0/22 tests.",
+        "description": "Across measured contexts, direct Rora transcript depletion was generally weak and did not pass FDR despite guide assignment to Rora."
+      },
+      {
+        "target_gene": "Rora",
+        "evidence_id": "E002",
+        "evidence_slug": "rora_151_global_signature",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Rora|Prkcg|Adgrb1|Rasa4|Ypel4|Agrn|Slc29a1",
+        "n_genes": "7",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "139 perturbed cells versus 23679 controls; 17259 genes tested; 278 genes FDR<0.05, 363 genes FDR<0.1, and 1254 genes nominal p<0.05. The FDR<0.05 genes comprised 176 negative-score and 102 positive-score genes; Rora itself had score -2.696, logFC -0.342, p=0.00702, FDR=0.218.",
+        "description": "The only Rora perturbation with a large FDR-significant response occurred in the thalamic Prkcd/Grin2c glutamatergic class."
+      },
+      {
+        "target_gene": "Rora",
+        "evidence_id": "E003",
+        "evidence_slug": "rora_no_fdr_hits_outside_151",
+        "genes": "Rora|Car4|Ambra1|Dzip3",
+        "n_genes": "4",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "The 21 non-151 Rora tests each had 0 genes at FDR<0.05. The smallest outside-151 FDR values were Car4 in 005 L4-5 IT CTX Glut, FDR=0.0762; Ambra1 in 066 CNU-HYa HY GABA, FDR=0.0926; and Dzip3 in 046 CTX-CGE GABA, FDR=0.134.",
+        "description": "No other assayed cell class crossed the dataset FDR threshold for Rora."
+      },
+      {
+        "target_gene": "Rora",
+        "evidence_id": "E004",
+        "evidence_slug": "rora_pvalb_nominal_target_buffered",
+        "cell_type": "052 Pvalb Gaba",
+        "genes": "Rora",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "91 perturbed cells versus 13710 controls; Rora score -2.396, logFC -0.755, p=0.0166, FDR=1.0; 0 genes FDR<0.05 and minimum non-target FDR=1.0.",
+        "description": "Pvalb GABA cells showed nominal Rora transcript reduction but no FDR-significant downstream response."
+      },
+      {
+        "target_gene": "Rora",
+        "evidence_id": "E008",
+        "evidence_slug": "rora_vs_rorb_rorc_151_contrast",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Rora|Rorb|Rorc",
+        "n_genes": "3",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "Rora had 278 genes FDR<0.05 with 139 perturbed cells. Rorb had 162 perturbed cells, its own transcript logFC -0.373 with p=0.0129 and FDR=1.0, 0 genes FDR<0.05, and Pearson score-correlation to Rora of 0.0366 across 17259 genes. Rorc had 195 perturbed cells, its own transcript p=0.903 and FDR=1.0, 0 genes FDR<0.05, and Pearson correlation to Rora of 0.00725.",
+        "description": "The Rorb and Rorc perturbations did not reproduce the large Rora response in the same thalamic class."
+      },
+      {
+        "target_gene": "Rorc",
+        "evidence_id": "E006",
+        "evidence_slug": "ror_paralog_151_th_contrast",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Rora|Rorb|Rorc|Prkcg|Adgrb1|Nr1d1",
+        "n_genes": "6",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "Rora perturbation: 139 cells, 278 genes at FDR<0.05, min FDR=9.68e-18; top down genes included Prkcg FDR=9.68e-18, Adgrb1 FDR=1.35e-17, and Nr1d1 FDR=5.32e-9. Rorb: 162 cells, 0 genes at FDR<0.05. Rorc: 195 cells, 0 genes at FDR<0.05 and Rorc self p=0.903, FDR=1.0.",
+        "description": "The same thalamic Prkcd/Grin2c glutamatergic class supported a strong Rora response but not a Rorc or Rorb response."
+      },
+      {
+        "target_gene": "Rorc",
+        "evidence_id": "E007",
+        "evidence_slug": "rorc_related_signature_correlations",
+        "genes": "Rora|Rorb|Rorc|Nr1d1|Nr1d2",
+        "n_genes": "5",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "In 151 TH Prkcd Grin2c Glut, Pearson score correlations with Rorc were Rora r=0.007, Rorb r=0.009, Nr1d1 r=-0.046, and Nr1d2 r=-0.016. Across all shared cell types, the largest absolute Rorc correlation to Rora, Rorb, Nr1d1, or Nr1d2 was |r|=0.095.",
+        "description": "Rorc signatures were effectively uncorrelated with assayed ROR paralogs and REV-ERB neighbors."
+      },
+      {
+        "target_gene": "Rora",
+        "evidence_id": "E007",
+        "evidence_slug": "rora_151_core_clock_transcripts",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Rora|Nr1d1|Cry2|Arntl|Npas2|Per1|Dbp|Clock|Nr1d2|Tef|Hlf|Cry1|Per2|Per3",
+        "n_genes": "14",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "In the Rora 151 signature: Nr1d1 logFC -0.848 FDR=5.32e-09 and Cry2 logFC -0.437 FDR=0.00249 were significant; Arntl logFC -0.383 p=0.0596 FDR=0.750, Npas2 logFC -0.315 p=0.0110 FDR=0.293, Per1 logFC -0.221 p=0.0130 FDR=0.330, and Dbp, Clock, Nr1d2, Tef, Hlf, Cry1, Per2, and Per3 all had FDR=1.0.",
+        "description": "The Rora clock response in 151 cells was selective for a small subset of clock-family transcripts rather than a uniform collapse of the core oscillator."
+      },
+      {
+        "target_gene": "Rorb",
+        "evidence_id": "E002",
+        "evidence_slug": "rorb_target_transcript_engagement",
+        "genes": "Rorb",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Best on-target row: 005 L4-5 IT CTX Glut, 118 perturbed versus 15,039 controls, score -3.9734, logFC -0.9010, P=7.085e-05, FDR=0.4044. Next: 151 TH Prkcd Grin2c Glut, 162 versus 23,679, logFC -0.3727, P=0.01294, FDR=1.0. Median target-row P across tested classes=0.732.",
+        "description": "Target-transcript rows for Rorb show nominal depletion in L4-5 IT cortical neurons and weaker nominal depletion in one thalamic glutamatergic class, with no on-target row passing FDR."
+      },
+      {
+        "target_gene": "Rorb",
+        "evidence_id": "E003",
+        "evidence_slug": "rorb_l45_top_nominal_genes",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "genes": "Acin1|Camk4|Rorb|Lnpk|Cacna2d3",
+        "n_genes": "5",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "118 perturbed versus 15,039 controls; Acin1 logFC 0.3402 P=1.25e-05 FDR=0.1363; Camk4 logFC -0.3668 P=1.59e-05 FDR=0.1363; Rorb logFC -0.9010 P=7.09e-05 FDR=0.4044; Lnpk logFC 0.3055 FDR=0.8137; Cacna2d3 logFC -0.4686 FDR=0.8137.",
+        "description": "The L4-5 IT cortical Rorb signature had the clearest target-transcript decrease but only nominally ranked downstream genes."
+      },
+      {
+        "target_gene": "Rorc",
+        "evidence_id": "E007",
+        "evidence_slug": "rorc_related_signature_correlations",
+        "genes": "Rora|Rorb|Rorc|Nr1d1|Nr1d2",
+        "n_genes": "5",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "In 151 TH Prkcd Grin2c Glut, Pearson score correlations with Rorc were Rora r=0.007, Rorb r=0.009, Nr1d1 r=-0.046, and Nr1d2 r=-0.016. Across all shared cell types, the largest absolute Rorc correlation to Rora, Rorb, Nr1d1, or Nr1d2 was |r|=0.095.",
+        "description": "Rorc signatures were effectively uncorrelated with assayed ROR paralogs and REV-ERB neighbors."
+      },
+      {
+        "target_gene": "Rorc",
+        "evidence_id": "E010",
+        "evidence_slug": "rorc_clock_metabolic_module_absent",
+        "genes": "Nr1d1|Nr1d2|Arntl|Clock|Cry1|Cry2|Per1|Per2|Per3|Srebf1|Srebf2|Cyp51|Apoe|Sult4a1|Cyp46a1",
+        "n_genes": "15",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Clock set: 198 rows for Nr1d1, Nr1d2, Arntl, Clock, Cry1, Cry2, Per1, Per2, and Per3; minimum nominal p=0.018120 and minimum FDR=1.0. Metabolic/lipid set: 132 rows for Srebf1, Srebf2, Cyp51, Apoe, Sult4a1, and Cyp46a1; minimum nominal p=0.012651 and minimum FDR=1.0.",
+        "description": "Genes representing RORE-linked clock and lipid/steroid metabolism functions showed only unadjusted, uncoordinated tails after Rorc perturbation."
+      }
+    ],
+    "exact_de_rows": [
+      {
+        "target_gene": "Rora",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Adgrb1",
+        "score": -0.206067,
+        "logfoldchange": -0.009279,
+        "pval": 0.8367384695961703,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Agrn",
+        "score": 0.19131,
+        "logfoldchange": 0.056623,
+        "pval": 0.8482824585891527,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Cry2",
+        "score": -1.108951,
+        "logfoldchange": -0.177503,
+        "pval": 0.26745150119529926,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Gabra4",
+        "score": 0.29536,
+        "logfoldchange": 0.00408,
+        "pval": 0.7677186916213895,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Gabrd",
+        "score": -2.242993,
+        "logfoldchange": -0.250978,
+        "pval": 0.024897266383935603,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Gria2",
+        "score": 0.495923,
+        "logfoldchange": 0.024612,
+        "pval": 0.6199485323863769,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Grin2c",
+        "score": 0.352315,
+        "logfoldchange": 0.356076,
+        "pval": 0.7246019338680605,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Kcnc2",
+        "score": -0.008646,
+        "logfoldchange": -0.050823,
+        "pval": 0.9931019530885897,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Kcnk9",
+        "score": 0.700275,
+        "logfoldchange": 0.286234,
+        "pval": 0.4837558802059826,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Nr1d1",
+        "score": -2.861551,
+        "logfoldchange": -0.687252,
+        "pval": 0.004215739629110292,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Plekhd1",
+        "score": -0.191825,
+        "logfoldchange": -0.257629,
+        "pval": 0.8478791978475491,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Prkcg",
+        "score": -1.513693,
+        "logfoldchange": -0.383451,
+        "pval": 0.13010365573942653,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Rasa4",
+        "score": -2.048132,
+        "logfoldchange": -0.573309,
+        "pval": 0.04054706283182616,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Rims2",
+        "score": -0.703284,
+        "logfoldchange": -0.115368,
+        "pval": 0.4818788066886496,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Rora",
+        "score": -2.396197,
+        "logfoldchange": -0.754788,
+        "pval": 0.016566183116910178,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Rorb",
+        "score": 0.653311,
+        "logfoldchange": 0.590298,
+        "pval": 0.5135554875136226,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Rorc",
+        "score": 0.858481,
+        "logfoldchange": 1.370009,
+        "pval": 0.3906268770852551,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Sema7a",
+        "score": -0.71676,
+        "logfoldchange": -0.090655,
+        "pval": 0.47352193757711225,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Timp3",
+        "score": -0.113118,
+        "logfoldchange": -0.320499,
+        "pval": 0.9099371499624913,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Uchl1",
+        "score": -1.316958,
+        "logfoldchange": -0.182773,
+        "pval": 0.18785269925318693,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Adgrb1",
+        "score": -9.530885,
+        "logfoldchange": -0.70167,
+        "pval": 1.5594819198100783e-21,
+        "pvals_adj": 1.345754922700107e-17
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Agrn",
+        "score": 6.899238,
+        "logfoldchange": 0.419974,
+        "pval": 5.228237907836756e-12,
+        "pvals_adj": 6.941089080873429e-09
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cry2",
+        "score": -4.310762,
+        "logfoldchange": -0.437385,
+        "pval": 1.626927148725712e-05,
+        "pvals_adj": 0.002492049687198699
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gabra4",
+        "score": -4.927178,
+        "logfoldchange": -0.290549,
+        "pval": 8.342555153573706e-07,
+        "pvals_adj": 0.00018699241479938776
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gabrd",
+        "score": -4.702726,
+        "logfoldchange": -0.279229,
+        "pval": 2.567111902994747e-06,
+        "pvals_adj": 0.0005034748219748448
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gria2",
+        "score": -3.668136,
+        "logfoldchange": -0.184217,
+        "pval": 0.00024432515229682716,
+        "pvals_adj": 0.01991756342519797
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Grin2c",
+        "score": -5.922029,
+        "logfoldchange": -0.62604,
+        "pval": 3.179930577780588e-09,
+        "pvals_adj": 1.715075682559849e-06
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kcnc2",
+        "score": -7.352746,
+        "logfoldchange": -0.355006,
+        "pval": 1.9417650672064842e-13,
+        "pvals_adj": 3.723658143879635e-10
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kcnk9",
+        "score": 5.439181,
+        "logfoldchange": 0.574531,
+        "pval": 5.352600794565867e-08,
+        "pvals_adj": 1.9245945231960895e-05
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Nr1d1",
+        "score": -6.948323,
+        "logfoldchange": -0.847729,
+        "pval": 3.696527125441736e-12,
+        "pvals_adj": 5.3165301381665755e-09
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Plekhd1",
+        "score": -8.408052,
+        "logfoldchange": -1.512853,
+        "pval": 4.1687634640202877e-17,
+        "pvals_adj": 1.4389737725105228e-13
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Prkcg",
+        "score": -9.636468,
+        "logfoldchange": -0.764072,
+        "pval": 5.608481014011723e-22,
+        "pvals_adj": 9.679677382082832e-18
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rasa4",
+        "score": -9.129011,
+        "logfoldchange": -1.543516,
+        "pval": 6.912756503628694e-20,
+        "pvals_adj": 3.976908816537588e-16
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rims2",
+        "score": 4.379736,
+        "logfoldchange": 0.323843,
+        "pval": 1.1882307428118716e-05,
+        "pvals_adj": 0.0019346862632254804
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rora",
+        "score": -2.695883,
+        "logfoldchange": -0.342187,
+        "pval": 0.007020237480638244,
+        "pvals_adj": 0.21829120853696254
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rorb",
+        "score": 2.573239,
+        "logfoldchange": 0.355574,
+        "pval": 0.010075156514819465,
+        "pvals_adj": 0.2738379941563293
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rorc",
+        "score": 0.042603,
+        "logfoldchange": -0.201092,
+        "pval": 0.9660180284774362,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Sema7a",
+        "score": -3.825997,
+        "logfoldchange": -0.446847,
+        "pval": 0.00013024410919841903,
+        "pvals_adj": 0.013069087678229733
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Timp3",
+        "score": 6.40758,
+        "logfoldchange": 0.79784,
+        "pval": 1.4784692250101276e-10,
+        "pvals_adj": 1.0959438779498518e-07
+      },
+      {
+        "target_gene": "Rora",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Uchl1",
+        "score": 6.346624,
+        "logfoldchange": 0.303507,
+        "pval": 2.2009146798933258e-10,
+        "pvals_adj": 1.5194234584111563e-07
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Adgrb1",
+        "score": -0.252177,
+        "logfoldchange": -0.035494,
+        "pval": 0.8009043204088704,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Agrn",
+        "score": -0.455976,
+        "logfoldchange": -0.086361,
+        "pval": 0.6484074843803238,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Cry2",
+        "score": 0.072203,
+        "logfoldchange": -0.01428,
+        "pval": 0.9424404199491363,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Gabra4",
+        "score": -1.146355,
+        "logfoldchange": -0.100672,
+        "pval": 0.251648413322767,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Gabrd",
+        "score": -1.520771,
+        "logfoldchange": -0.190044,
+        "pval": 0.12831737926362452,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Gria2",
+        "score": 0.62447,
+        "logfoldchange": 0.023786,
+        "pval": 0.5323187949631041,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Grin2c",
+        "score": -0.048431,
+        "logfoldchange": 0.095656,
+        "pval": 0.9613727710414541,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Kcnc2",
+        "score": -0.540112,
+        "logfoldchange": -0.065651,
+        "pval": 0.5891197460283795,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Kcnk9",
+        "score": 0.49655,
+        "logfoldchange": 0.012409,
+        "pval": 0.6195067466205323,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Nr1d1",
+        "score": -1.120545,
+        "logfoldchange": -0.135291,
+        "pval": 0.26248177071022527,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Plekhd1",
+        "score": 0.240518,
+        "logfoldchange": 0.74711,
+        "pval": 0.8099287131486531,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Prkcg",
+        "score": 1.419526,
+        "logfoldchange": 0.248996,
+        "pval": 0.15574568464334357,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Rasa4",
+        "score": -1.221092,
+        "logfoldchange": -0.367343,
+        "pval": 0.22205111967625335,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Rims2",
+        "score": -0.460084,
+        "logfoldchange": -0.050086,
+        "pval": 0.6454561186268628,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Rora",
+        "score": 0.310746,
+        "logfoldchange": 0.143387,
+        "pval": 0.7559936605293697,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Rorb",
+        "score": -3.97341,
+        "logfoldchange": -0.901024,
+        "pval": 7.08509033038095e-05,
+        "pvals_adj": 0.4043697221226088
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Rorc",
+        "score": -0.082246,
+        "logfoldchange": -21.209217,
+        "pval": 0.9344510418890305,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Sema7a",
+        "score": 1.046145,
+        "logfoldchange": 0.124292,
+        "pval": 0.29549407296978536,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Timp3",
+        "score": 0.101139,
+        "logfoldchange": 0.384416,
+        "pval": 0.9194401146466933,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Uchl1",
+        "score": 0.005998,
+        "logfoldchange": 0.015885,
+        "pval": 0.9952139747505403,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Adgrb1",
+        "score": 0.547433,
+        "logfoldchange": 0.041434,
+        "pval": 0.5840814766746792,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Agrn",
+        "score": 1.074184,
+        "logfoldchange": 0.067115,
+        "pval": 0.2827401481220706,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cry2",
+        "score": -3.059479,
+        "logfoldchange": -0.264319,
+        "pval": 0.002217223173482901,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gabra4",
+        "score": 1.366362,
+        "logfoldchange": 0.057969,
+        "pval": 0.17182521700141618,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gabrd",
+        "score": 0.057073,
+        "logfoldchange": 0.031787,
+        "pval": 0.9544873895816246,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gria2",
+        "score": 0.797441,
+        "logfoldchange": 0.018063,
+        "pval": 0.42519500062752613,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Grin2c",
+        "score": -1.403011,
+        "logfoldchange": -0.074875,
+        "pval": 0.16061341157561193,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kcnc2",
+        "score": 0.054197,
+        "logfoldchange": 0.009601,
+        "pval": 0.9567778437339354,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kcnk9",
+        "score": 1.659268,
+        "logfoldchange": 0.165924,
+        "pval": 0.09706176497860415,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Nr1d1",
+        "score": 0.272837,
+        "logfoldchange": 0.039921,
+        "pval": 0.7849783453209178,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Plekhd1",
+        "score": -0.575588,
+        "logfoldchange": -0.064951,
+        "pval": 0.5648935964971766,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Prkcg",
+        "score": 0.462434,
+        "logfoldchange": 0.004166,
+        "pval": 0.6437702405766457,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rasa4",
+        "score": 1.307818,
+        "logfoldchange": 0.130244,
+        "pval": 0.1909350461865359,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rims2",
+        "score": 1.107729,
+        "logfoldchange": 0.080029,
+        "pval": 0.26797888235915746,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rora",
+        "score": 0.788466,
+        "logfoldchange": 0.073831,
+        "pval": 0.4304240383764216,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rorb",
+        "score": -2.485552,
+        "logfoldchange": -0.372696,
+        "pval": 0.01293507634361763,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rorc",
+        "score": 0.159757,
+        "logfoldchange": 1.181959,
+        "pval": 0.873072208309581,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Sema7a",
+        "score": 0.916798,
+        "logfoldchange": 0.091837,
+        "pval": 0.359248553091686,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Timp3",
+        "score": -0.557982,
+        "logfoldchange": -0.091137,
+        "pval": 0.5768563906907042,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorb",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Uchl1",
+        "score": 0.568647,
+        "logfoldchange": 0.008195,
+        "pval": 0.5695959570393909,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Adgrb1",
+        "score": 1.936074,
+        "logfoldchange": 0.116662,
+        "pval": 0.052858686104938324,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Agrn",
+        "score": 0.496013,
+        "logfoldchange": 0.005005,
+        "pval": 0.6198854246855225,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cry2",
+        "score": 0.26008,
+        "logfoldchange": 0.037354,
+        "pval": 0.794801867213939,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gabra4",
+        "score": -1.771781,
+        "logfoldchange": -0.061655,
+        "pval": 0.07643090175078537,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gabrd",
+        "score": 0.944439,
+        "logfoldchange": 0.103848,
+        "pval": 0.3449451638065849,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gria2",
+        "score": -1.525598,
+        "logfoldchange": -0.068468,
+        "pval": 0.12711002561189513,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Grin2c",
+        "score": 0.096101,
+        "logfoldchange": 0.047712,
+        "pval": 0.9234405637877046,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kcnc2",
+        "score": 0.680979,
+        "logfoldchange": 0.018753,
+        "pval": 0.4958849353635848,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kcnk9",
+        "score": -1.53625,
+        "logfoldchange": -0.160627,
+        "pval": 0.1244770047484564,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Nr1d1",
+        "score": 2.202252,
+        "logfoldchange": 0.164111,
+        "pval": 0.027647505265217382,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Plekhd1",
+        "score": -1.283776,
+        "logfoldchange": -0.127691,
+        "pval": 0.1992203837316905,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Prkcg",
+        "score": -0.447592,
+        "logfoldchange": -0.034277,
+        "pval": 0.654447687695606,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rasa4",
+        "score": 1.209929,
+        "logfoldchange": 0.128443,
+        "pval": 0.22630602906973696,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rims2",
+        "score": -0.516561,
+        "logfoldchange": -0.046903,
+        "pval": 0.6054626194213313,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rora",
+        "score": 1.201619,
+        "logfoldchange": 0.09189,
+        "pval": 0.2295111013334441,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rorb",
+        "score": -1.001582,
+        "logfoldchange": -0.121263,
+        "pval": 0.3165453547356235,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rorc",
+        "score": -0.122069,
+        "logfoldchange": -21.268398,
+        "pval": 0.9028442784110885,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Sema7a",
+        "score": 0.560548,
+        "logfoldchange": 0.066084,
+        "pval": 0.5751059445245799,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Timp3",
+        "score": -0.486962,
+        "logfoldchange": -0.082815,
+        "pval": 0.6262853415134408,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Rorc",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Uchl1",
+        "score": 1.085878,
+        "logfoldchange": 0.046406,
+        "pval": 0.2775330393884614,
+        "pvals_adj": 1.0
+      }
+    ]
+  },
+  "caveats": [
+    "Rora touched only a narrow clock-linked branch, so the phenotype is not a full circadian oscillator collapse.",
+    "Rorb and Rorc were weakly engaged, making paralog non-interchangeability suggestive rather than a clean knockout comparison."
+  ],
+  "prior_expectation": {
+    "citations": [
+      {
+        "target_gene": "Rora",
+        "ref_id": "R001",
+        "ref_slug": "uniprot_rora_p35398",
+        "source": "UniProtKB",
+        "source_type": "database",
+        "citation": "UniProtKB reviewed entry P35398, RORA_HUMAN, nuclear receptor ROR-alpha.",
+        "url": "https://www.uniprot.org/uniprotkb/P35398",
+        "description": "Curated RORA protein function: a nuclear receptor binding RORE motifs as a monomer, regulating circadian genes, development, immunity, and metabolism."
+      },
+      {
+        "target_gene": "Rora",
+        "ref_id": "R005",
+        "ref_slug": "vitalis_2018_rora_thalamocortical",
+        "source": "Cerebral Cortex",
+        "source_type": "pubmed",
+        "citation": "Vitalis T, Dauphinot L, Gressens P, Potier MC, Mariani J, Gaspar P. RORalpha Coordinates Thalamic and Cortical Maturation to Instruct Barrel Cortex Development. Cereb Cortex. 2018;28(11):3994-4007.",
+        "url": "https://doi.org/10.1093/cercor/bhx262",
+        "description": "Mouse staggerer and conditional-deletion study showing that RORalpha is required in thalamus for thalamocortical axon clustering and in cortex for layer IV dendritic maturation."
+      },
+      {
+        "target_gene": "Rora",
+        "ref_id": "R002",
+        "ref_slug": "jetten_2009_ror_review",
+        "source": "Nuclear Receptor Signaling",
+        "source_type": "review",
+        "citation": "Jetten AM. Retinoid-related orphan receptors (RORs): critical roles in development, immunity, circadian rhythm, and cellular metabolism. Nucl Recept Signal. 2009;7:e003.",
+        "url": "https://doi.org/10.1621/nrs.07003",
+        "description": "Review of RORA, RORB, and RORC mechanisms, tissue functions, circadian roles, and ligandability."
+      },
+      {
+        "target_gene": "Rora",
+        "ref_id": "R008",
+        "ref_slug": "string_2023_enrichment",
+        "source": "STRING",
+        "source_type": "database",
+        "citation": "Szklarczyk D, Kirsch R, Koutrouli M, et al. The STRING database in 2023: protein-protein association networks and functional enrichment analyses for any sequenced genome of interest. Nucleic Acids Res. 2023;51(D1):D638-D646.",
+        "url": "https://string-db.org/",
+        "description": "Functional association and enrichment database used to annotate the Rora 151 FDR gene set as synapse-, postsynapse-, cell-junction-, and ion-channel-enriched."
+      },
+      {
+        "target_gene": "Rorc",
+        "ref_id": "R001",
+        "ref_slug": "uniprot_p51449_rorc_function",
+        "source": "UniProtKB",
+        "source_type": "database",
+        "citation": "UniProtKB/Swiss-Prot entry P51449, Nuclear receptor ROR-gamma, RORG_HUMAN.",
+        "url": "https://rest.uniprot.org/uniprotkb/P51449",
+        "description": "Curated functional summary describing RORC as a monomeric RORE-binding nuclear receptor involved in immunity, peripheral circadian regulation, lipid/steroid/xenobiotic/glucose metabolism, and RORgammat-dependent Th17 biology."
+      },
+      {
+        "target_gene": "Rorc",
+        "ref_id": "R002",
+        "ref_slug": "reactome_rora_b_c_nr1d1",
+        "source": "Reactome",
+        "source_type": "database",
+        "citation": "Reactome pathway R-HSA-9933387, RORA,B,C and NR1D1 (REV-ERBA) regulate gene expression.",
+        "url": "https://reactome.org/PathwayBrowser/#/R-HSA-9933387",
+        "description": "Places ROR paralogs and NR1D1 in a shared nuclear-receptor gene-regulatory pathway."
+      },
+      {
+        "target_gene": "Rorc",
+        "ref_id": "R004",
+        "ref_slug": "jetten_2009_ror_review",
+        "source": "Nuclear Receptor Signaling",
+        "source_type": "review",
+        "citation": "Jetten AM. Retinoid-related orphan receptors (RORs): critical roles in development, immunity, circadian rhythm, and cellular metabolism. Nucl Recept Signal. 2009;7:e003. doi:10.1621/nrs.07003.",
+        "url": "https://doi.org/10.1621/nrs.07003",
+        "description": "Review summarizing RORA, RORB, and RORC mechanisms and their distinct roles in cerebellar development, retinal maturation, lymphoid development, Th17 specification, metabolism, and circadian clock control."
+      },
+      {
+        "target_gene": "Rorc",
+        "ref_id": "R010",
+        "ref_slug": "string_rorc_network",
+        "source": "STRING",
+        "source_type": "database",
+        "citation": "STRING human protein network for RORC, version accessed by API.",
+        "url": "https://string-db.org/network/9606.ENSP00000327025",
+        "description": "Places RORC near FOXP3, RORB, RORA, IL17A, ARNTL, and nuclear receptor cofactors in a functional protein-association network."
+      },
+      {
+        "target_gene": "Rora",
+        "ref_id": "R001",
+        "ref_slug": "uniprot_rora_p35398",
+        "source": "UniProtKB",
+        "source_type": "database",
+        "citation": "UniProtKB reviewed entry P35398, RORA_HUMAN, nuclear receptor ROR-alpha.",
+        "url": "https://www.uniprot.org/uniprotkb/P35398",
+        "description": "Curated RORA protein function: a nuclear receptor binding RORE motifs as a monomer, regulating circadian genes, development, immunity, and metabolism."
+      },
+      {
+        "target_gene": "Rora",
+        "ref_id": "R003",
+        "ref_slug": "sato_2004_rora_circadian_clock",
+        "source": "Neuron",
+        "source_type": "pubmed",
+        "citation": "Sato TK, Panda S, Miraglia LJ, et al. A functional genomics strategy reveals Rora as a component of the mammalian circadian clock. Neuron. 2004;43(4):527-537.",
+        "url": "https://doi.org/10.1016/j.neuron.2004.07.018",
+        "description": "Identified Rora as an activator of Bmal1 transcription in the suprachiasmatic clock and contrasted Rora with Rev-erb alpha repression."
+      },
+      {
+        "target_gene": "Rora",
+        "ref_id": "R004",
+        "ref_slug": "akashi_2005_rora_bmal1",
+        "source": "Nature Structural & Molecular Biology",
+        "source_type": "pubmed",
+        "citation": "Akashi M, Takumi T. The orphan nuclear receptor RORalpha regulates circadian transcription of the mammalian core-clock Bmal1. Nat Struct Mol Biol. 2005;12(5):441-448.",
+        "url": "https://doi.org/10.1038/nsmb925",
+        "description": "Showed that RORalpha directly activates Bmal1 through conserved ROR response elements and supports cell-autonomous Bmal1 oscillation."
+      },
+      {
+        "target_gene": "Rora",
+        "ref_id": "R007",
+        "ref_slug": "reactome_rora_nr1d1_circadian",
+        "source": "Reactome",
+        "source_type": "database",
+        "citation": "Reactome pathways: Circadian Clock, R-HSA-9909396; RORA,B,C and NR1D1 regulate gene expression, R-HSA-9933387; Expression of BMAL, CLOCK, and NPAS2, R-HSA-9931509.",
+        "url": "https://reactome.org/content/detail/R-HSA-9933387",
+        "description": "Curated pathway membership placing RORA/RORC, RORB, NR1D1, BMAL1/ARNTL, CLOCK, and NPAS2 in RORE-governed circadian transcription."
+      },
+      {
+        "target_gene": "Rorb",
+        "ref_id": "R007",
+        "ref_slug": "jabaudon_2012_rorbeta_barrel_clusters",
+        "source": "Cerebral Cortex",
+        "source_type": "pubmed",
+        "citation": "Jabaudon D et al. RORβ induces barrel-like neuronal clusters in the developing neocortex. Cereb Cortex. 2012;22(5):996-1006. doi:10.1093/cercor/bhr182.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/21799210/",
+        "description": "Mouse developmental study showing that RORβ levels can drive barrel-like clustering of neocortical neurons."
+      },
+      {
+        "target_gene": "Rorb",
+        "ref_id": "R008",
+        "ref_slug": "clark_2020_rorbeta_layer4",
+        "source": "eLife",
+        "source_type": "pubmed",
+        "citation": "Clark EA et al. Cortical RORβ is required for layer 4 transcriptional identity and barrel integrity. eLife. 2020;9:e52370. doi:10.7554/eLife.52370.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/32851975/",
+        "description": "Conditional mouse study showing cortical RORβ is required for layer-4 aggregation into barrels, thalamocortical afferent segregation, gene expression, and chromatin accessibility."
+      },
+      {
+        "target_gene": "Rorc",
+        "ref_id": "R001",
+        "ref_slug": "uniprot_p51449_rorc_function",
+        "source": "UniProtKB",
+        "source_type": "database",
+        "citation": "UniProtKB/Swiss-Prot entry P51449, Nuclear receptor ROR-gamma, RORG_HUMAN.",
+        "url": "https://rest.uniprot.org/uniprotkb/P51449",
+        "description": "Curated functional summary describing RORC as a monomeric RORE-binding nuclear receptor involved in immunity, peripheral circadian regulation, lipid/steroid/xenobiotic/glucose metabolism, and RORgammat-dependent Th17 biology."
+      },
+      {
+        "target_gene": "Rorc",
+        "ref_id": "R002",
+        "ref_slug": "reactome_rora_b_c_nr1d1",
+        "source": "Reactome",
+        "source_type": "database",
+        "citation": "Reactome pathway R-HSA-9933387, RORA,B,C and NR1D1 (REV-ERBA) regulate gene expression.",
+        "url": "https://reactome.org/PathwayBrowser/#/R-HSA-9933387",
+        "description": "Places ROR paralogs and NR1D1 in a shared nuclear-receptor gene-regulatory pathway."
+      },
+      {
+        "target_gene": "Rorc",
+        "ref_id": "R004",
+        "ref_slug": "jetten_2009_ror_review",
+        "source": "Nuclear Receptor Signaling",
+        "source_type": "review",
+        "citation": "Jetten AM. Retinoid-related orphan receptors (RORs): critical roles in development, immunity, circadian rhythm, and cellular metabolism. Nucl Recept Signal. 2009;7:e003. doi:10.1621/nrs.07003.",
+        "url": "https://doi.org/10.1621/nrs.07003",
+        "description": "Review summarizing RORA, RORB, and RORC mechanisms and their distinct roles in cerebellar development, retinal maturation, lymphoid development, Th17 specification, metabolism, and circadian clock control."
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 4,
+    "priority": 4
+  },
+  "report_evidence_ids": [
+    "Rora:E001",
+    "Rora:E002",
+    "Rora:E003",
+    "Rora:E004",
+    "Rora:E007",
+    "Rora:E008",
+    "Rorb:E002",
+    "Rorb:E003",
+    "Rorc:E006",
+    "Rorc:E007",
+    "Rorc:E010"
+  ],
+  "reference_ids": [
+    "Rora:R001",
+    "Rora:R002",
+    "Rora:R003",
+    "Rora:R004",
+    "Rora:R005",
+    "Rora:R007",
+    "Rora:R008",
+    "Rorb:R007",
+    "Rorb:R008",
+    "Rorc:R001",
+    "Rorc:R002",
+    "Rorc:R004",
+    "Rorc:R010"
+  ],
+  "source_urls_or_dois": [
+    {
+      "ref_id": "Rora:R001",
+      "citation": "UniProtKB reviewed entry P35398, RORA_HUMAN, nuclear receptor ROR-alpha.",
+      "url_or_doi": "https://www.uniprot.org/uniprotkb/P35398"
+    },
+    {
+      "ref_id": "Rora:R005",
+      "citation": "Vitalis T, Dauphinot L, Gressens P, Potier MC, Mariani J, Gaspar P. RORalpha Coordinates Thalamic and Cortical Maturation to Instruct Barrel Cortex Development. Cereb Cortex. 2018;28(11):3994-4007.",
+      "url_or_doi": "https://doi.org/10.1093/cercor/bhx262"
+    },
+    {
+      "ref_id": "Rora:R002",
+      "citation": "Jetten AM. Retinoid-related orphan receptors (RORs): critical roles in development, immunity, circadian rhythm, and cellular metabolism. Nucl Recept Signal. 2009;7:e003.",
+      "url_or_doi": "https://doi.org/10.1621/nrs.07003"
+    },
+    {
+      "ref_id": "Rora:R008",
+      "citation": "Szklarczyk D, Kirsch R, Koutrouli M, et al. The STRING database in 2023: protein-protein association networks and functional enrichment analyses for any sequenced genome of interest. Nucleic Acids Res. 2023;51(D1):D638-D646.",
+      "url_or_doi": "https://string-db.org/"
+    },
+    {
+      "ref_id": "Rorc:R001",
+      "citation": "UniProtKB/Swiss-Prot entry P51449, Nuclear receptor ROR-gamma, RORG_HUMAN.",
+      "url_or_doi": "https://rest.uniprot.org/uniprotkb/P51449"
+    },
+    {
+      "ref_id": "Rorc:R002",
+      "citation": "Reactome pathway R-HSA-9933387, RORA,B,C and NR1D1 (REV-ERBA) regulate gene expression.",
+      "url_or_doi": "https://reactome.org/PathwayBrowser/#/R-HSA-9933387"
+    },
+    {
+      "ref_id": "Rorc:R010",
+      "citation": "STRING human protein network for RORC, version accessed by API.",
+      "url_or_doi": "https://string-db.org/network/9606.ENSP00000327025"
+    },
+    {
+      "ref_id": "Rora:R003",
+      "citation": "Sato TK, Panda S, Miraglia LJ, et al. A functional genomics strategy reveals Rora as a component of the mammalian circadian clock. Neuron. 2004;43(4):527-537.",
+      "url_or_doi": "https://doi.org/10.1016/j.neuron.2004.07.018"
+    },
+    {
+      "ref_id": "Rora:R004",
+      "citation": "Akashi M, Takumi T. The orphan nuclear receptor RORalpha regulates circadian transcription of the mammalian core-clock Bmal1. Nat Struct Mol Biol. 2005;12(5):441-448.",
+      "url_or_doi": "https://doi.org/10.1038/nsmb925"
+    },
+    {
+      "ref_id": "Rora:R007",
+      "citation": "Reactome pathways: Circadian Clock, R-HSA-9909396; RORA,B,C and NR1D1 regulate gene expression, R-HSA-9933387; Expression of BMAL, CLOCK, and NPAS2, R-HSA-9931509.",
+      "url_or_doi": "https://reactome.org/content/detail/R-HSA-9933387"
+    },
+    {
+      "ref_id": "Rorb:R007",
+      "citation": "Jabaudon D et al. RORβ induces barrel-like neuronal clusters in the developing neocortex. Cereb Cortex. 2012;22(5):996-1006. doi:10.1093/cercor/bhr182.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/21799210/"
+    },
+    {
+      "ref_id": "Rorb:R008",
+      "citation": "Clark EA et al. Cortical RORβ is required for layer 4 transcriptional identity and barrel integrity. eLife. 2020;9:e52370. doi:10.7554/eLife.52370.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/32851975/"
+    }
+  ],
+  "source_cluster_ids": [
+    "C138",
+    "C184"
+  ],
+  "source_claim_ids": [
+    "claim:rora_f001_65ecc1a80787",
+    "claim:rora_f004_a75535a8eb91",
+    "claim:rorc_f002_bfd1ba559c21",
+    "claim:rora_f003_790451bf8c65",
+    "claim:rorb_f002_2a1235c10c40",
+    "claim:rorc_f004_edcba771ee83"
+  ]
+}

@@ -1,0 +1,363 @@
+{
+  "biological_interpretation": "Acute clathrin loss reads out as a selected neuronal stress and neurotransmission-liability state closer to endomembrane/proteostasis disruption than to a single linear AP-2/dynamin knockdown.",
+  "caveats": [
+    "The L4/5 IT signature lacked detectable Cltc mRNA depletion and should be treated as lower-confidence than the 155 MB and 066 CNU-HYa responses.",
+    "Several responsive classes had low perturbed-cell counts."
+  ],
+  "cell_types": [
+    "155 MB Glut",
+    "052 Pvalb Gaba",
+    "066 CNU-HYa HY GABA",
+    "191 MB P MY GABA",
+    "005 L4-5 IT CTX Glut"
+  ],
+  "exact_observed_result": "Responsive Cltc-depleted classes recurrently induced Jun and Stmn4, with the strongest 155 MB Glut response also down-regulating Gria4, Scn8a, Rph3a, and nominal Snap25; top restricted neighbors were Vps, v-ATPase, proteasome, and Sec31a perturbations rather than most AP-2 or dynamin comparators.",
+  "preliminary_scores": {
+    "novelty": 4,
+    "priority": 4,
+    "support": 5
+  },
+  "prior_expectation": {
+    "citations": [
+      {
+        "ref": "Kasprowicz et al. 2008",
+        "supports": "clathrin heavy-chain inactivation disrupts synaptic-vesicle recycling",
+        "url_or_doi": "https://doi.org/10.1083/jcb.200804162"
+      },
+      {
+        "ref": "Pannone et al. 2023",
+        "supports": "pathogenic CLTC substitution reduces transferrin uptake and synaptic transmission",
+        "url_or_doi": "https://doi.org/10.3389/fnmol.2023.1170061"
+      }
+    ],
+    "summary": "Prior expectation is grounded by the listed traceable corpus citations; direct prior support for the exact cell-type/state relationship is partial unless noted in the caveats."
+  },
+  "reference_ids": [
+    "Cltc:R001",
+    "Cltc:R002",
+    "Cltc:R003",
+    "Cltc:R004",
+    "Cltc:R005",
+    "Cltc:R007"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Cltc:E001",
+    "Cltc:E002",
+    "Cltc:E003",
+    "Cltc:E004",
+    "Cltc:E005",
+    "Cltc:E006",
+    "Cltc:E007",
+    "Cltc:E009",
+    "Cltc:E011",
+    "Cltc:E012"
+  ],
+  "source_urls_or_dois": [
+    {
+      "ref": "Kasprowicz et al. 2008",
+      "supports": "clathrin heavy-chain inactivation disrupts synaptic-vesicle recycling",
+      "url_or_doi": "https://doi.org/10.1083/jcb.200804162"
+    },
+    {
+      "ref": "Pannone et al. 2023",
+      "supports": "pathogenic CLTC substitution reduces transferrin uptake and synaptic transmission",
+      "url_or_doi": "https://doi.org/10.3389/fnmol.2023.1170061"
+    }
+  ],
+  "status": "grounded",
+  "story_id": "S094",
+  "support": {
+    "exact_de_rows": [
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Cltc",
+        "log2_fold_change": -1.02584,
+        "pval": 8.737038932420446e-08,
+        "pvals_adj": 0.00030480034019641963,
+        "score": -5.351205,
+        "target": "Cltc"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Jun",
+        "log2_fold_change": 2.152314,
+        "pval": 8.472138485847017e-13,
+        "pvals_adj": 1.4777951160862953e-08,
+        "score": 7.153292,
+        "target": "Cltc"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Stmn4",
+        "log2_fold_change": 1.331034,
+        "pval": 8.369553386733333e-11,
+        "pvals_adj": 7.299505986239477e-07,
+        "score": 6.493804,
+        "target": "Cltc"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Ddit3",
+        "log2_fold_change": 1.382118,
+        "pval": 0.0031232329204517635,
+        "pvals_adj": 0.32172486086395896,
+        "score": 2.955341,
+        "target": "Cltc"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Bcl2l11",
+        "log2_fold_change": 1.983304,
+        "pval": 0.15333990690509564,
+        "pvals_adj": 1.0,
+        "score": 1.427833,
+        "target": "Cltc"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Gria4",
+        "log2_fold_change": -0.737014,
+        "pval": 1.845909921350399e-06,
+        "pvals_adj": 0.004599743822587858,
+        "score": -4.769601,
+        "target": "Cltc"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Scn8a",
+        "log2_fold_change": -0.556847,
+        "pval": 1.3691459610631023e-05,
+        "pvals_adj": 0.011158736050806674,
+        "score": -4.348752,
+        "target": "Cltc"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Rph3a",
+        "log2_fold_change": -0.840453,
+        "pval": 0.00018054691544494025,
+        "pvals_adj": 0.06560999679387693,
+        "score": -3.744787,
+        "target": "Cltc"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Vamp1",
+        "log2_fold_change": -0.620877,
+        "pval": 0.00019518283204476906,
+        "pvals_adj": 0.06937067677371171,
+        "score": -3.725171,
+        "target": "Cltc"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Snap25",
+        "log2_fold_change": -0.327996,
+        "pval": 0.00023767915022979917,
+        "pvals_adj": 0.07795084682047163,
+        "score": -3.675183,
+        "target": "Cltc"
+      },
+      {
+        "cell_type": "066 CNU-HYa HY GABA",
+        "fdr_lt_0_05": true,
+        "gene": "Cltc",
+        "log2_fold_change": -1.111513,
+        "pval": 2.143460457274522e-06,
+        "pvals_adj": 0.012227727421932056,
+        "score": -4.739406,
+        "target": "Cltc"
+      },
+      {
+        "cell_type": "066 CNU-HYa HY GABA",
+        "fdr_lt_0_05": true,
+        "gene": "Jun",
+        "log2_fold_change": 1.96344,
+        "pval": 4.081058115440411e-06,
+        "pvals_adj": 0.017460807146911797,
+        "score": 4.607211,
+        "target": "Cltc"
+      },
+      {
+        "cell_type": "066 CNU-HYa HY GABA",
+        "fdr_lt_0_05": true,
+        "gene": "Stmn4",
+        "log2_fold_change": 1.483927,
+        "pval": 1.2775367808976436e-07,
+        "pvals_adj": 0.0010931882234141135,
+        "score": 5.28204,
+        "target": "Cltc"
+      },
+      {
+        "cell_type": "066 CNU-HYa HY GABA",
+        "fdr_lt_0_05": false,
+        "gene": "Ddit3",
+        "log2_fold_change": 2.091552,
+        "pval": 6.39701949521624e-05,
+        "pvals_adj": 0.060947827900684065,
+        "score": 3.997666,
+        "target": "Cltc"
+      },
+      {
+        "cell_type": "066 CNU-HYa HY GABA",
+        "fdr_lt_0_05": true,
+        "gene": "Unc13a",
+        "log2_fold_change": -1.01025,
+        "pval": 7.816022549781325e-06,
+        "pvals_adj": 0.02272372775954402,
+        "score": -4.470162,
+        "target": "Cltc"
+      },
+      {
+        "cell_type": "052 Pvalb Gaba",
+        "fdr_lt_0_05": false,
+        "gene": "Cltc",
+        "log2_fold_change": -0.672818,
+        "pval": 7.895337633686872e-05,
+        "pvals_adj": 0.06617082470792968,
+        "score": -3.947555,
+        "target": "Cltc"
+      },
+      {
+        "cell_type": "052 Pvalb Gaba",
+        "fdr_lt_0_05": true,
+        "gene": "Jun",
+        "log2_fold_change": 1.746897,
+        "pval": 1.6349873326859786e-05,
+        "pvals_adj": 0.038142628939960906,
+        "score": 4.309669,
+        "target": "Cltc"
+      },
+      {
+        "cell_type": "052 Pvalb Gaba",
+        "fdr_lt_0_05": true,
+        "gene": "Gabrd",
+        "log2_fold_change": -0.934641,
+        "pval": 3.4514286964824962e-06,
+        "pvals_adj": 0.01157056956208792,
+        "score": -4.641946,
+        "target": "Cltc"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": false,
+        "gene": "Cltc",
+        "log2_fold_change": -0.70078,
+        "pval": 0.0027726714804425243,
+        "pvals_adj": 0.5322764553678624,
+        "score": -2.991878,
+        "target": "Cltc"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": true,
+        "gene": "Stmn4",
+        "log2_fold_change": 1.465784,
+        "pval": 1.1980930260199518e-06,
+        "pvals_adj": 0.008128553288516275,
+        "score": 4.855953,
+        "target": "Cltc"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": true,
+        "gene": "Ecel1",
+        "log2_fold_change": 4.239219,
+        "pval": 4.09345861277455e-08,
+        "pvals_adj": 0.0006998995536121926,
+        "score": 5.486772,
+        "target": "Cltc"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "fdr_lt_0_05": false,
+        "gene": "Ddit3",
+        "log2_fold_change": 1.803016,
+        "pval": 2.359397666093497e-05,
+        "pvals_adj": 0.06723496882477768,
+        "score": 4.227846,
+        "target": "Cltc"
+      },
+      {
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Cltc",
+        "log2_fold_change": -0.159255,
+        "pval": 0.17084761296074402,
+        "pvals_adj": 1.0,
+        "score": -1.369485,
+        "target": "Cltc"
+      },
+      {
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Rph3a",
+        "log2_fold_change": -1.27577,
+        "pval": 2.8285717405285517e-08,
+        "pvals_adj": 0.0004843080534132986,
+        "score": -5.551729,
+        "target": "Cltc"
+      },
+      {
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Snap25",
+        "log2_fold_change": -0.348735,
+        "pval": 2.523274065135911e-06,
+        "pvals_adj": 0.01588329090766667,
+        "score": -4.70624,
+        "target": "Cltc"
+      },
+      {
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Gria3",
+        "log2_fold_change": -0.763491,
+        "pval": 3.136568817371653e-05,
+        "pvals_adj": 0.033565207056898395,
+        "score": -4.163317,
+        "target": "Cltc"
+      },
+      {
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Grm3",
+        "log2_fold_change": -0.91059,
+        "pval": 1.0316200908769343e-05,
+        "pvals_adj": 0.019625999106660963,
+        "score": -4.410438,
+        "target": "Cltc"
+      },
+      {
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Stmn4",
+        "log2_fold_change": 0.77331,
+        "pval": 3.0637290442959015e-06,
+        "pvals_adj": 0.01588329090766667,
+        "score": 4.666501,
+        "target": "Cltc"
+      }
+    ],
+    "summary": [
+      "Stmn4 and Jun each recurred at FDR<0.05 in four cell types.",
+      "The 155 MB Glut class combined FDR-level Cltc depletion with stress induction and synaptic/ion-channel repression.",
+      "Restricted Cltc signatures repeatedly aligned with Vps/proteasome/v-ATPase/Sec31a perturbations more than with AP-2/dynamin/Synj1 neighbors."
+    ]
+  },
+  "targets": [
+    "Cltc"
+  ],
+  "title": "Cltc loss induces Jun/Stmn4 stress remodeling and represses vesicle and ion-channel genes"
+}

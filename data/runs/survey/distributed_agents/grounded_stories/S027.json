@@ -1,0 +1,1127 @@
+{
+  "story_id": "S027",
+  "title": "Actb loss recurrently induces Actg1 and Flna compensation in selected neuronal classes",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Actb perturbation recurrently induced Actg1 and Flna, with a 9-gene all-up signature in 151 TH Prkcd Grin2c Glut and a 5-gene all-up signature in 027 NP-CT-L6b-OB Glut; Actg1 perturbation did not reciprocally produce a broad Actb-like state and had only Flna as a non-self FDR hit in 027 NP-CT-L6b-OB Glut.",
+  "biological_interpretation": "Beta-actin loss elicits asymmetric gamma-actin and Filamin-A compensation plus selected adhesion/actomyosin remodeling, fitting prior evidence that cytoplasmic actin isoforms are closely related but nonredundant.",
+  "targets": [
+    "Actb",
+    "Actg1",
+    "Flna"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "027 NP-CT-L6b-OB Glut",
+    "001 L5-6 IT Glut",
+    "005 L4-5 IT CTX Glut",
+    "007 L2-3 IT CTX Glut",
+    "008 L2-3 IT ENT PPP RSP Glut"
+  ],
+  "support": {
+    "source_findings": [
+      {
+        "target_gene": "Actb",
+        "finding_id": "F001",
+        "finding_type": "homeostatic_compensation",
+        "direction": "up",
+        "confidence": "high",
+        "literature_status": "supports_known_mechanism",
+        "summary": "Actb perturbation recurrently up-regulates a compact Actg1-Flna cytoskeletal compensation program rather than a mixed up/down stress response.",
+        "why_it_matters": "ACTG1 is the closest cytoplasmic-actin paralog and FLNA is an actin crosslinker; their repeated induction suggests an attempt to maintain or remodel actin architecture after beta-actin perturbation.",
+        "genes": "Actg1|Flna",
+        "n_genes": "2",
+        "cell_types": "001 L5-6 IT Glut|005 L4-5 IT CTX Glut|007 L2-3 IT CTX Glut|009 L2-3 IT PIR AON ENT Glut|012 MEA LA CA1 DG Glut|017 CA3 CA2-FC DG Glut|022 L5 ET CTX Glut|027 NP-CT-L6b-OB Glut|059 CNU-LGE LSX GABA|066 CNU-HYa HY GABA|110 CNU-HYa HY MM Glut|145 MH-LH TH Glut|151 TH Prkcd Grin2c Glut|155 MB Glut|191 MB P MY GABA|217 P MY Pineal Glut",
+        "n_cell_types": "16",
+        "evidence_ids": "E002|E003|E004|E005|E006|E007",
+        "ref_ids": "R001|R002|R004|R005|R007",
+        "main_caveats": "The Actb transcript itself was not measured, so recurrence is inferred from downstream response rather than quantified knockdown."
+      },
+      {
+        "target_gene": "Actb",
+        "finding_id": "F003",
+        "finding_type": "cross_perturbation_contrast",
+        "direction": "nonreciprocal",
+        "confidence": "moderate",
+        "literature_status": "extends_known_mechanism",
+        "summary": "Actb and Actg1 are nonreciprocal: Actb perturbation induces Actg1 and Flna, but Actg1 perturbation mainly depletes Actg1 itself and does not phenocopy the Actb signature.",
+        "why_it_matters": "The result argues against treating the two cytoplasmic actin paralogs as interchangeable in neuronal perturbation screens.",
+        "genes": "Actb|Actg1|Flna",
+        "n_genes": "3",
+        "comparators": "Actg1",
+        "n_cell_types": "0",
+        "evidence_ids": "E003|E004|E009|E012",
+        "ref_ids": "R004|R005|R006",
+        "main_caveats": "Actb-versus-Actg1 comparisons use downstream signatures because Actb itself was absent from response-gene rows; Actg1 self-depletion was only FDR-significant in 8/22 shared cell types."
+      },
+      {
+        "target_gene": "Actb",
+        "finding_id": "F006",
+        "finding_type": "pathway_uncoupling",
+        "direction": "weak_similarity",
+        "confidence": "exploratory",
+        "literature_status": "novel_no_direct_literature",
+        "summary": "Even in the four strongest Actb contexts, top positive and negative whole-signature neighbors are weak, so the Actb state is not simply reproduced by another perturbation in the library.",
+        "why_it_matters": "The Actb response should be interpreted through its measured compensation genes rather than assigned wholesale to a neighboring guide or generic cytoskeletal perturbation signature.",
+        "n_genes": "0",
+        "comparators": "Xpo1|Tsc1|Calm2|Pex1|Tnrc6a|Sec31a|Nefl|Atp6v0c",
+        "cell_types": "005 L4-5 IT CTX Glut|027 NP-CT-L6b-OB Glut|151 TH Prkcd Grin2c Glut|155 MB Glut",
+        "n_cell_types": "4",
+        "evidence_ids": "E012",
+        "ref_ids": "R002|R004",
+        "main_caveats": "This is a correlation result over four selected high-signal cell types; weak similarity may reflect limited guide efficiency for some comparator perturbations."
+      }
+    ],
+    "evidence_ledger_rows": [
+      {
+        "target_gene": "Actb",
+        "evidence_id": "E002",
+        "evidence_slug": "actb_overall_sparse_positive_fdr",
+        "n_genes": "0",
+        "has_genes": "0",
+        "has_cell_type": "0",
+        "statistics": "32/371818 rows were FDR < 0.05 across 16/22 Actb cell types; 32/32 significant rows had positive logFC and 0 had negative logFC; per-cell-type n_pert_matched ranged from 30 to 202.",
+        "description": "Actb perturbation produced a sparse, entirely up-regulated set of FDR-significant transcript changes."
+      },
+      {
+        "target_gene": "Actb",
+        "evidence_id": "E003",
+        "evidence_slug": "actb_recurrent_actg1_up",
+        "genes": "Actg1",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Actg1 was nominally up in 20/22 Actb cell types and FDR-significant in 9/22; significant logFC ranged 0.466 to 0.869, with FDR 3.33e-19 to 3.97e-2.",
+        "description": "Gamma-cytoplasmic actin was the most recurrent paralogous response to Actb perturbation."
+      },
+      {
+        "target_gene": "Actb",
+        "evidence_id": "E004",
+        "evidence_slug": "actb_recurrent_flna_up",
+        "genes": "Flna",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Flna was nominally up in 17/22 Actb cell types and FDR-significant in 13/22; significant logFC ranged 0.669 to 1.731, with FDR 7.93e-15 to 3.65e-2; it ranked first by signed score in 10/22 cell types.",
+        "description": "Filamin-A was the broadest high-confidence up-regulated actin-associated response gene."
+      },
+      {
+        "target_gene": "Actb",
+        "evidence_id": "E005",
+        "evidence_slug": "actb_th_prkcd_broad_signature",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Actg1|Flna|Nptx2|Myh10|Atp2a2|Vcl|Irag1|Tnnt1|Wdr1",
+        "n_genes": "9",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "202 perturbed cells versus 23679 controls; 9 genes at FDR < 0.05: Actg1 logFC 0.695 FDR 1.32e-16; Flna 0.802 FDR 2.54e-13; Nptx2 0.865 FDR 1.46e-11; Myh10 0.270 FDR 5.84e-6; Atp2a2 0.188 FDR 5.00e-4; Vcl 0.715 FDR 9.77e-4; Irag1 0.487 FDR 0.00175; Tnnt1 0.578 FDR 0.00227; Wdr1 0.426 FDR 0.0240.",
+        "description": "The Prkcd/Grin2c thalamic glutamatergic class had the broadest Actb response."
+      },
+      {
+        "target_gene": "Actb",
+        "evidence_id": "E006",
+        "evidence_slug": "actb_np_ctl6b_ob_signature",
+        "cell_type": "027 NP-CT-L6b-OB Glut",
+        "genes": "Flna|Actg1|Rsu1|Fads2|Fads1",
+        "n_genes": "5",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "83 perturbed cells versus 8476 controls; 5 genes at FDR < 0.05: Flna logFC 1.415 FDR 7.93e-15; Actg1 0.651 FDR 0.00376; Rsu1 1.024 FDR 0.0144; Fads2 1.470 FDR 0.0300; Fads1 0.758 FDR 0.0335.",
+        "description": "The NP/CT/L6b/OB glutamatergic class had a multi-gene response centered on Flna and Actg1."
+      },
+      {
+        "target_gene": "Actb",
+        "evidence_id": "E007",
+        "evidence_slug": "actb_paired_flna_actg1_non_telencephalic",
+        "genes": "Actg1|Flna",
+        "n_genes": "2",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Three additional classes had both Actg1 and Flna at FDR < 0.05: 155 MB Glut, Actg1 logFC 0.869 FDR 3.33e-19 and Flna 0.669 FDR 0.0212; 066 CNU-HYa HY GABA, Actg1 0.715 FDR 8.78e-4 and Flna 1.072 FDR 0.00186; 110 CNU-HYa HY MM Glut, Actg1 0.578 FDR 0.0273 and Flna 0.973 FDR 4.20e-5.",
+        "description": "Several non-telencephalic glutamatergic or GABAergic classes induced both cytoplasmic actin and filamin transcripts."
+      },
+      {
+        "target_gene": "Actb",
+        "evidence_id": "E003",
+        "evidence_slug": "actb_recurrent_actg1_up",
+        "genes": "Actg1",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Actg1 was nominally up in 20/22 Actb cell types and FDR-significant in 9/22; significant logFC ranged 0.466 to 0.869, with FDR 3.33e-19 to 3.97e-2.",
+        "description": "Gamma-cytoplasmic actin was the most recurrent paralogous response to Actb perturbation."
+      },
+      {
+        "target_gene": "Actb",
+        "evidence_id": "E004",
+        "evidence_slug": "actb_recurrent_flna_up",
+        "genes": "Flna",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Flna was nominally up in 17/22 Actb cell types and FDR-significant in 13/22; significant logFC ranged 0.669 to 1.731, with FDR 7.93e-15 to 3.65e-2; it ranked first by signed score in 10/22 cell types.",
+        "description": "Filamin-A was the broadest high-confidence up-regulated actin-associated response gene."
+      },
+      {
+        "target_gene": "Actb",
+        "evidence_id": "E009",
+        "evidence_slug": "actg1_perturbation_nonreciprocal",
+        "genes": "Actg1|Flna",
+        "n_genes": "2",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "In Actg1-targeted cells, Actg1 itself was FDR-significantly depleted in 8/22 shared cell types, but the only FDR-significant non-self row among Actg1 perturbations was Flna in 027 NP-CT-L6b-OB Glut with logFC 0.779 and FDR 0.0132; Actb-versus-Actg1 signed-score correlations across the 22 matched cell types ranged from -0.015 to 0.091.",
+        "description": "The Actg1 perturbation signatures did not reciprocate the Actb-induced Actg1/Flna program."
+      },
+      {
+        "target_gene": "Actb",
+        "evidence_id": "E012",
+        "evidence_slug": "actb_full_signature_neighbors_weak",
+        "n_genes": "0",
+        "has_genes": "0",
+        "has_cell_type": "0",
+        "statistics": "In the four Actb cell types with the most FDR rows, the nearest full-transcriptome positive and negative perturbation-score correlations were weak: 151 maximum +0.061 and minimum -0.059; 027 maximum +0.116 and minimum -0.085; 155 maximum +0.101 and minimum -0.094; 005 maximum +0.126 and minimum -0.128.",
+        "description": "No other perturbation closely phenocopied Actb across the whole signed-score vector in the strongest Actb contexts."
+      },
+      {
+        "target_gene": "Actb",
+        "evidence_id": "E012",
+        "evidence_slug": "actb_full_signature_neighbors_weak",
+        "n_genes": "0",
+        "has_genes": "0",
+        "has_cell_type": "0",
+        "statistics": "In the four Actb cell types with the most FDR rows, the nearest full-transcriptome positive and negative perturbation-score correlations were weak: 151 maximum +0.061 and minimum -0.059; 027 maximum +0.116 and minimum -0.085; 155 maximum +0.101 and minimum -0.094; 005 maximum +0.126 and minimum -0.128.",
+        "description": "No other perturbation closely phenocopied Actb across the whole signed-score vector in the strongest Actb contexts."
+      }
+    ],
+    "exact_de_rows": [
+      {
+        "target_gene": "Actb",
+        "cell_type": "027 NP-CT-L6b-OB Glut",
+        "gene": "Actg1",
+        "score": 5.046204,
+        "logfoldchange": 0.651152,
+        "pval": 4.506738723242277e-07,
+        "pvals_adj": 0.00376087346454568
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "027 NP-CT-L6b-OB Glut",
+        "gene": "Atp2a2",
+        "score": -0.371133,
+        "logfoldchange": -0.019975,
+        "pval": 0.7105386840254985,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "027 NP-CT-L6b-OB Glut",
+        "gene": "Fads1",
+        "score": 4.416654,
+        "logfoldchange": 0.757717,
+        "pval": 1.002407595422426e-05,
+        "pvals_adj": 0.03346036553520058
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "027 NP-CT-L6b-OB Glut",
+        "gene": "Fads2",
+        "score": 4.487675,
+        "logfoldchange": 1.46959,
+        "pval": 7.2004710411094005e-06,
+        "pvals_adj": 0.030043965419028974
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "027 NP-CT-L6b-OB Glut",
+        "gene": "Flna",
+        "score": 8.917921,
+        "logfoldchange": 1.414566,
+        "pval": 4.751231524412988e-19,
+        "pvals_adj": 7.929805414245278e-15
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "027 NP-CT-L6b-OB Glut",
+        "gene": "Irag1",
+        "score": 2.691761,
+        "logfoldchange": 4.695297,
+        "pval": 0.007107581203366537,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "027 NP-CT-L6b-OB Glut",
+        "gene": "Myh10",
+        "score": -0.043747,
+        "logfoldchange": 0.030573,
+        "pval": 0.965106313748709,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "027 NP-CT-L6b-OB Glut",
+        "gene": "Nptx2",
+        "score": 0.434811,
+        "logfoldchange": 0.475206,
+        "pval": 0.6636996571315914,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "027 NP-CT-L6b-OB Glut",
+        "gene": "Rsu1",
+        "score": 4.70152,
+        "logfoldchange": 1.023522,
+        "pval": 2.582315534889225e-06,
+        "pvals_adj": 0.014366282092433723
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "027 NP-CT-L6b-OB Glut",
+        "gene": "Tnnt1",
+        "score": -0.046648,
+        "logfoldchange": -0.235552,
+        "pval": 0.9627935626525271,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "027 NP-CT-L6b-OB Glut",
+        "gene": "Vcl",
+        "score": 1.829929,
+        "logfoldchange": 0.795021,
+        "pval": 0.06726056865883938,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "027 NP-CT-L6b-OB Glut",
+        "gene": "Wdr1",
+        "score": 2.299536,
+        "logfoldchange": 0.314531,
+        "pval": 0.021474501806754843,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Actg1",
+        "score": 5.446744,
+        "logfoldchange": 0.714715,
+        "pval": 5.1300086506712146e-08,
+        "pvals_adj": 0.0008779496804758717
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Atp2a2",
+        "score": -0.149095,
+        "logfoldchange": 0.041612,
+        "pval": 0.8814784126773455,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Fads1",
+        "score": -0.336894,
+        "logfoldchange": -0.074481,
+        "pval": 0.736196822123631,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Fads2",
+        "score": 0.845775,
+        "logfoldchange": 0.314991,
+        "pval": 0.39767846634061244,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Flna",
+        "score": 5.183737,
+        "logfoldchange": 1.071623,
+        "pval": 2.174837200505592e-07,
+        "pvals_adj": 0.001861008192472635
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Irag1",
+        "score": 0.257523,
+        "logfoldchange": 0.564733,
+        "pval": 0.7967750709550009,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Myh10",
+        "score": -1.296386,
+        "logfoldchange": -0.065631,
+        "pval": 0.19484239439897288,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Nptx2",
+        "score": -0.076337,
+        "logfoldchange": -0.061042,
+        "pval": 0.93915101912466,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Rsu1",
+        "score": 0.200304,
+        "logfoldchange": 0.048986,
+        "pval": 0.841242598183065,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Tnnt1",
+        "score": 0.281231,
+        "logfoldchange": 0.636794,
+        "pval": 0.7785330699240645,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Vcl",
+        "score": 1.143732,
+        "logfoldchange": 0.207058,
+        "pval": 0.25273482946450976,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Wdr1",
+        "score": 3.972323,
+        "logfoldchange": 0.611345,
+        "pval": 7.117519814176569e-05,
+        "pvals_adj": 0.3092580890987583
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "gene": "Actg1",
+        "score": 4.658854,
+        "logfoldchange": 0.577627,
+        "pval": 3.1797534389074873e-06,
+        "pvals_adj": 0.027293413642862415
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "gene": "Atp2a2",
+        "score": -0.488234,
+        "logfoldchange": -0.025744,
+        "pval": 0.6253840015844836,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "gene": "Fads1",
+        "score": -0.727327,
+        "logfoldchange": -0.188732,
+        "pval": 0.4670254014180122,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "gene": "Fads2",
+        "score": -0.616695,
+        "logfoldchange": -0.231272,
+        "pval": 0.5374359068510155,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "gene": "Flna",
+        "score": 5.964931,
+        "logfoldchange": 0.973263,
+        "pval": 2.447381276769195e-09,
+        "pvals_adj": 4.2014194378296765e-05
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "gene": "Irag1",
+        "score": 0.057147,
+        "logfoldchange": 0.986395,
+        "pval": 0.9544280976473416,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "gene": "Myh10",
+        "score": 0.530081,
+        "logfoldchange": 0.034067,
+        "pval": 0.5960558287357617,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "gene": "Nptx2",
+        "score": 1.897446,
+        "logfoldchange": 0.852747,
+        "pval": 0.05776909728626667,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "gene": "Rsu1",
+        "score": 0.190316,
+        "logfoldchange": 0.056387,
+        "pval": 0.8490618020675865,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "gene": "Tnnt1",
+        "score": 0.034807,
+        "logfoldchange": 0.864024,
+        "pval": 0.9722336985298324,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "gene": "Vcl",
+        "score": 0.180486,
+        "logfoldchange": 0.037652,
+        "pval": 0.8567710418713106,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "gene": "Wdr1",
+        "score": 3.746812,
+        "logfoldchange": 0.561127,
+        "pval": 0.00017909632760592512,
+        "pvals_adj": 0.5668081849417859
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Actg1",
+        "score": 9.364086,
+        "logfoldchange": 0.694835,
+        "pval": 7.6711050618927e-21,
+        "pvals_adj": 1.3239560226320611e-16
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Atp2a2",
+        "score": 5.258966,
+        "logfoldchange": 0.188493,
+        "pval": 1.4486778976818477e-07,
+        "pvals_adj": 0.0005000546367218201
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Fads1",
+        "score": 0.572039,
+        "logfoldchange": 0.06942,
+        "pval": 0.5672956789720895,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Fads2",
+        "score": 0.046635,
+        "logfoldchange": 0.247706,
+        "pval": 0.9628043650733594,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Flna",
+        "score": 8.448795,
+        "logfoldchange": 0.801681,
+        "pval": 2.9432324733789136e-17,
+        "pvals_adj": 2.5398624629023336e-13
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Irag1",
+        "score": 4.959136,
+        "logfoldchange": 0.487117,
+        "pval": 7.080760844724598e-07,
+        "pvals_adj": 0.0017458121631300264
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Myh10",
+        "score": 6.061047,
+        "logfoldchange": 0.269723,
+        "pval": 1.3523827064017266e-09,
+        "pvals_adj": 5.83519328244685e-06
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Nptx2",
+        "score": 7.911538,
+        "logfoldchange": 0.864912,
+        "pval": 2.542281547930699e-15,
+        "pvals_adj": 1.4625745745245308e-11
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rsu1",
+        "score": 2.400237,
+        "logfoldchange": 0.261697,
+        "pval": 0.01638444035511027,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Tnnt1",
+        "score": 4.881553,
+        "logfoldchange": 0.57759,
+        "pval": 1.0525381196255001e-06,
+        "pvals_adj": 0.0022707194258270633
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Vcl",
+        "score": 5.100034,
+        "logfoldchange": 0.714692,
+        "pval": 3.395929770607446e-07,
+        "pvals_adj": 0.0009768391985152318
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Wdr1",
+        "score": 4.368351,
+        "logfoldchange": 0.426383,
+        "pval": 1.2518849914989647e-05,
+        "pvals_adj": 0.02400698118697848
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "155 MB Glut",
+        "gene": "Actg1",
+        "score": 9.977768,
+        "logfoldchange": 0.869301,
+        "pval": 1.9070792306121822e-23,
+        "pvals_adj": 3.3265183019568295e-19
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "155 MB Glut",
+        "gene": "Atp2a2",
+        "score": 2.283473,
+        "logfoldchange": 0.120386,
+        "pval": 0.022402503773748195,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "155 MB Glut",
+        "gene": "Fads1",
+        "score": 0.451724,
+        "logfoldchange": 0.060222,
+        "pval": 0.6514676133961004,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "155 MB Glut",
+        "gene": "Fads2",
+        "score": -1.618176,
+        "logfoldchange": -0.771644,
+        "pval": 0.10562464776860472,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "155 MB Glut",
+        "gene": "Flna",
+        "score": 4.714119,
+        "logfoldchange": 0.66889,
+        "pval": 2.427580650188861e-06,
+        "pvals_adj": 0.02117214464062215
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "155 MB Glut",
+        "gene": "Irag1",
+        "score": 2.487307,
+        "logfoldchange": 2.275876,
+        "pval": 0.012871437752843237,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "155 MB Glut",
+        "gene": "Myh10",
+        "score": 1.535651,
+        "logfoldchange": 0.061584,
+        "pval": 0.124623896457974,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "155 MB Glut",
+        "gene": "Nptx2",
+        "score": 2.356613,
+        "logfoldchange": 0.602641,
+        "pval": 0.018442476751121796,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "155 MB Glut",
+        "gene": "Rsu1",
+        "score": 0.503322,
+        "logfoldchange": 0.09088,
+        "pval": 0.6147376049012414,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "155 MB Glut",
+        "gene": "Tnnt1",
+        "score": 0.1097,
+        "logfoldchange": 0.510951,
+        "pval": 0.9126476244972596,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "155 MB Glut",
+        "gene": "Vcl",
+        "score": 3.16194,
+        "logfoldchange": 0.469662,
+        "pval": 0.0015672205203477215,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actb",
+        "cell_type": "155 MB Glut",
+        "gene": "Wdr1",
+        "score": 4.437228,
+        "logfoldchange": 0.552994,
+        "pval": 9.112490288099826e-06,
+        "pvals_adj": 0.05298305603177508
+      },
+      {
+        "target_gene": "Actg1",
+        "cell_type": "027 NP-CT-L6b-OB Glut",
+        "gene": "Actg1",
+        "score": -3.636757,
+        "logfoldchange": -0.592522,
+        "pval": 0.0002760921283895594,
+        "pvals_adj": 0.9215955245643493
+      },
+      {
+        "target_gene": "Actg1",
+        "cell_type": "027 NP-CT-L6b-OB Glut",
+        "gene": "Atp2a2",
+        "score": -1.881417,
+        "logfoldchange": -0.206809,
+        "pval": 0.059915248837029006,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actg1",
+        "cell_type": "027 NP-CT-L6b-OB Glut",
+        "gene": "Fads1",
+        "score": -0.148221,
+        "logfoldchange": -0.064562,
+        "pval": 0.8821683938429068,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actg1",
+        "cell_type": "027 NP-CT-L6b-OB Glut",
+        "gene": "Fads2",
+        "score": -0.659714,
+        "logfoldchange": -0.287936,
+        "pval": 0.5094374267116142,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actg1",
+        "cell_type": "027 NP-CT-L6b-OB Glut",
+        "gene": "Flna",
+        "score": 4.937027,
+        "logfoldchange": 0.779132,
+        "pval": 7.932239537543799e-07,
+        "pvals_adj": 0.013238907788160599
+      },
+      {
+        "target_gene": "Actg1",
+        "cell_type": "027 NP-CT-L6b-OB Glut",
+        "gene": "Irag1",
+        "score": -0.148968,
+        "logfoldchange": -22.64636,
+        "pval": 0.8815791507753932,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actg1",
+        "cell_type": "027 NP-CT-L6b-OB Glut",
+        "gene": "Myh10",
+        "score": 1.673343,
+        "logfoldchange": 0.146729,
+        "pval": 0.09425984609822806,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actg1",
+        "cell_type": "027 NP-CT-L6b-OB Glut",
+        "gene": "Nptx2",
+        "score": 1.755434,
+        "logfoldchange": 0.612768,
+        "pval": 0.07918516672290178,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actg1",
+        "cell_type": "027 NP-CT-L6b-OB Glut",
+        "gene": "Rsu1",
+        "score": -0.864381,
+        "logfoldchange": -0.241528,
+        "pval": 0.38737856041434293,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actg1",
+        "cell_type": "027 NP-CT-L6b-OB Glut",
+        "gene": "Tnnt1",
+        "score": -0.027955,
+        "logfoldchange": -0.120211,
+        "pval": 0.9776982245333782,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actg1",
+        "cell_type": "027 NP-CT-L6b-OB Glut",
+        "gene": "Vcl",
+        "score": 0.693502,
+        "logfoldchange": 0.239771,
+        "pval": 0.48799436238236593,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actg1",
+        "cell_type": "027 NP-CT-L6b-OB Glut",
+        "gene": "Wdr1",
+        "score": 1.564697,
+        "logfoldchange": 0.257438,
+        "pval": 0.11765394001809203,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actg1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Actg1",
+        "score": -9.149754,
+        "logfoldchange": -0.824166,
+        "pval": 5.70637222241604e-20,
+        "pvals_adj": 9.848627818667844e-16
+      },
+      {
+        "target_gene": "Actg1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Atp2a2",
+        "score": 1.750056,
+        "logfoldchange": 0.067777,
+        "pval": 0.08010866552024158,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actg1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Fads1",
+        "score": 0.124161,
+        "logfoldchange": -0.030218,
+        "pval": 0.901187641832395,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actg1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Fads2",
+        "score": -0.243756,
+        "logfoldchange": -0.186229,
+        "pval": 0.8074194835077972,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actg1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Flna",
+        "score": 2.116896,
+        "logfoldchange": 0.178724,
+        "pval": 0.034268671208534905,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actg1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Irag1",
+        "score": 3.79408,
+        "logfoldchange": 0.338164,
+        "pval": 0.00014819208698999003,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actg1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Myh10",
+        "score": 3.149125,
+        "logfoldchange": 0.11866,
+        "pval": 0.0016376033471995136,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actg1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Nptx2",
+        "score": 2.99793,
+        "logfoldchange": 0.332188,
+        "pval": 0.0027182022616196724,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actg1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rsu1",
+        "score": 0.288455,
+        "logfoldchange": 0.016242,
+        "pval": 0.7729986046370348,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actg1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Tnnt1",
+        "score": 2.895197,
+        "logfoldchange": 0.327961,
+        "pval": 0.0037892014131185978,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actg1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Vcl",
+        "score": 1.032122,
+        "logfoldchange": 0.114782,
+        "pval": 0.30201483166837484,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Actg1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Wdr1",
+        "score": 0.585317,
+        "logfoldchange": 0.063794,
+        "pval": 0.5583346671794553,
+        "pvals_adj": 1.0
+      }
+    ]
+  },
+  "caveats": [
+    "Actb itself was absent from response-gene rows, so knockdown cannot be quantified from the Parquet.",
+    "The compensation is inferred from mRNA abundance and does not directly assay actin polymerization or protein stoichiometry."
+  ],
+  "prior_expectation": {
+    "citations": [
+      {
+        "target_gene": "Actb",
+        "ref_id": "R001",
+        "ref_slug": "uniprot_actb",
+        "source": "UniProtKB P60709",
+        "source_type": "database",
+        "citation": "UniProtKB reviewed entry P60709, ACTB_HUMAN, Actin, cytoplasmic 1.",
+        "url": "https://rest.uniprot.org/uniprotkb/P60709",
+        "description": "Curated ACTB function, protein-complex, localization, and human disease annotations."
+      },
+      {
+        "target_gene": "Actb",
+        "ref_id": "R002",
+        "ref_slug": "string_mouse_actb_module",
+        "source": "STRING API",
+        "source_type": "database",
+        "citation": "STRING mouse protein-network and enrichment lookup for Actb, Actg1, Flna, Wdr1, Myh10, Rsu1, Vcl, and Tpm1.",
+        "url": "https://string-db.org/",
+        "description": "Provided mouse functional-network scores among the Actb-response genes and enrichment for actin cytoskeleton, actin filament, postsynaptic actin cytoskeleton, anchoring junction, and cell junction compartments."
+      },
+      {
+        "target_gene": "Actb",
+        "ref_id": "R004",
+        "ref_slug": "vedula_2017_actin_isoforms",
+        "source": "eLife",
+        "source_type": "pubmed",
+        "citation": "Vedula P, Kurosaka S, Leu NA, Wolf YI, Shabalina SA, Wang J, Sterling S, Dong DW, Kashina A. Diverse functions of homologous actin isoforms are defined by their nucleotide, rather than their amino acid sequence. eLife. 2017;6:e31661. PMID:29244021.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29244021/",
+        "description": "Mouse genome-editing study showing that beta- and gamma-cytoplasmic actins are nearly identical proteins encoded by nonredundant genes."
+      },
+      {
+        "target_gene": "Actb",
+        "ref_id": "R005",
+        "ref_slug": "patrinostro_2018_actb_beta_actin",
+        "source": "Proceedings of the National Academy of Sciences of the United States of America",
+        "source_type": "pubmed",
+        "citation": "Patrinostro X, Roy P, Lindsay A, Chamberlain CM, Sundby LJ, Starker CG, Voytas DF, Ervasti JM, Perrin BJ. Essential nucleotide- and protein-dependent functions of Actb/β-actin. Proc Natl Acad Sci U S A. 2018;115(31):7973-7978. PMID:30012594.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30012594/",
+        "description": "Defined essential, nonredundant features of Actb/beta-actin relative to the closely related gamma-actin locus."
+      },
+      {
+        "target_gene": "Actb",
+        "ref_id": "R007",
+        "ref_slug": "uniprot_flna",
+        "source": "UniProtKB P21333",
+        "source_type": "database",
+        "citation": "UniProtKB reviewed entry P21333, FLNA_HUMAN, Filamin-A.",
+        "url": "https://rest.uniprot.org/uniprotkb/P21333",
+        "description": "Curated source for FLNA actin-crosslinking, membrane/scaffold functions, and periventricular nodular heterotopia disease annotation."
+      },
+      {
+        "target_gene": "Actb",
+        "ref_id": "R004",
+        "ref_slug": "vedula_2017_actin_isoforms",
+        "source": "eLife",
+        "source_type": "pubmed",
+        "citation": "Vedula P, Kurosaka S, Leu NA, Wolf YI, Shabalina SA, Wang J, Sterling S, Dong DW, Kashina A. Diverse functions of homologous actin isoforms are defined by their nucleotide, rather than their amino acid sequence. eLife. 2017;6:e31661. PMID:29244021.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29244021/",
+        "description": "Mouse genome-editing study showing that beta- and gamma-cytoplasmic actins are nearly identical proteins encoded by nonredundant genes."
+      },
+      {
+        "target_gene": "Actb",
+        "ref_id": "R005",
+        "ref_slug": "patrinostro_2018_actb_beta_actin",
+        "source": "Proceedings of the National Academy of Sciences of the United States of America",
+        "source_type": "pubmed",
+        "citation": "Patrinostro X, Roy P, Lindsay A, Chamberlain CM, Sundby LJ, Starker CG, Voytas DF, Ervasti JM, Perrin BJ. Essential nucleotide- and protein-dependent functions of Actb/β-actin. Proc Natl Acad Sci U S A. 2018;115(31):7973-7978. PMID:30012594.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30012594/",
+        "description": "Defined essential, nonredundant features of Actb/beta-actin relative to the closely related gamma-actin locus."
+      },
+      {
+        "target_gene": "Actb",
+        "ref_id": "R006",
+        "ref_slug": "riviere_2012_baraitser_winter",
+        "source": "Nature Genetics",
+        "source_type": "pubmed",
+        "citation": "Rivière JB, van Bon BW, Hoischen A, Kholmanskikh SS, O'Roak BJ, Gilissen C, et al. De novo mutations in the actin genes ACTB and ACTG1 cause Baraitser-Winter syndrome. Nat Genet. 2012;44(4):440-444, S1-S2. PMID:22366783.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/22366783/",
+        "description": "Identified ACTB and ACTG1 de novo variants as causes of a developmental syndrome with neuronal migration defects."
+      },
+      {
+        "target_gene": "Actb",
+        "ref_id": "R002",
+        "ref_slug": "string_mouse_actb_module",
+        "source": "STRING API",
+        "source_type": "database",
+        "citation": "STRING mouse protein-network and enrichment lookup for Actb, Actg1, Flna, Wdr1, Myh10, Rsu1, Vcl, and Tpm1.",
+        "url": "https://string-db.org/",
+        "description": "Provided mouse functional-network scores among the Actb-response genes and enrichment for actin cytoskeleton, actin filament, postsynaptic actin cytoskeleton, anchoring junction, and cell junction compartments."
+      },
+      {
+        "target_gene": "Actb",
+        "ref_id": "R004",
+        "ref_slug": "vedula_2017_actin_isoforms",
+        "source": "eLife",
+        "source_type": "pubmed",
+        "citation": "Vedula P, Kurosaka S, Leu NA, Wolf YI, Shabalina SA, Wang J, Sterling S, Dong DW, Kashina A. Diverse functions of homologous actin isoforms are defined by their nucleotide, rather than their amino acid sequence. eLife. 2017;6:e31661. PMID:29244021.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29244021/",
+        "description": "Mouse genome-editing study showing that beta- and gamma-cytoplasmic actins are nearly identical proteins encoded by nonredundant genes."
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 3,
+    "support": 5,
+    "priority": 3
+  },
+  "report_evidence_ids": [
+    "Actb:E002",
+    "Actb:E003",
+    "Actb:E004",
+    "Actb:E005",
+    "Actb:E006",
+    "Actb:E007",
+    "Actb:E009",
+    "Actb:E012"
+  ],
+  "reference_ids": [
+    "Actb:R001",
+    "Actb:R002",
+    "Actb:R004",
+    "Actb:R005",
+    "Actb:R006",
+    "Actb:R007"
+  ],
+  "source_urls_or_dois": [
+    {
+      "ref_id": "Actb:R001",
+      "citation": "UniProtKB reviewed entry P60709, ACTB_HUMAN, Actin, cytoplasmic 1.",
+      "url_or_doi": "https://rest.uniprot.org/uniprotkb/P60709"
+    },
+    {
+      "ref_id": "Actb:R002",
+      "citation": "STRING mouse protein-network and enrichment lookup for Actb, Actg1, Flna, Wdr1, Myh10, Rsu1, Vcl, and Tpm1.",
+      "url_or_doi": "https://string-db.org/"
+    },
+    {
+      "ref_id": "Actb:R004",
+      "citation": "Vedula P, Kurosaka S, Leu NA, Wolf YI, Shabalina SA, Wang J, Sterling S, Dong DW, Kashina A. Diverse functions of homologous actin isoforms are defined by their nucleotide, rather than their amino acid sequence. eLife. 2017;6:e31661. PMID:29244021.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/29244021/"
+    },
+    {
+      "ref_id": "Actb:R005",
+      "citation": "Patrinostro X, Roy P, Lindsay A, Chamberlain CM, Sundby LJ, Starker CG, Voytas DF, Ervasti JM, Perrin BJ. Essential nucleotide- and protein-dependent functions of Actb/β-actin. Proc Natl Acad Sci U S A. 2018;115(31):7973-7978. PMID:30012594.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/30012594/"
+    },
+    {
+      "ref_id": "Actb:R007",
+      "citation": "UniProtKB reviewed entry P21333, FLNA_HUMAN, Filamin-A.",
+      "url_or_doi": "https://rest.uniprot.org/uniprotkb/P21333"
+    },
+    {
+      "ref_id": "Actb:R006",
+      "citation": "Rivière JB, van Bon BW, Hoischen A, Kholmanskikh SS, O'Roak BJ, Gilissen C, et al. De novo mutations in the actin genes ACTB and ACTG1 cause Baraitser-Winter syndrome. Nat Genet. 2012;44(4):440-444, S1-S2. PMID:22366783.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/22366783/"
+    }
+  ],
+  "source_cluster_ids": [
+    "C286"
+  ],
+  "source_claim_ids": [
+    "claim:actb_f001_a22d996f6077",
+    "claim:actb_f003_5dfd6d1cb80c",
+    "claim:actb_f006_27f84c44f374"
+  ]
+}

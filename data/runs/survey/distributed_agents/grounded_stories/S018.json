@@ -1,0 +1,365 @@
+{
+  "biological_interpretation": "Basal CREB1 perturbation triggers paralogous CREM compensation rather than an acute pCREB-like activity transcriptome.",
+  "caveats": [
+    "The parquet reports gene-level Crem expression and cannot distinguish activating CREM isoforms from ICER repressor isoforms; no direct Crem or Atf1 perturbation was available for reciprocity.",
+    "The dataset measures guide-assigned basal transcriptomes, not synchronized neuronal depolarization or cAMP pulses; weak or transient immediate-early responses could be missed.",
+    "Exact log2 fold changes, scores, p-values, and FDRs in exact_de_rows were re-read from the Wilcoxon Parquet; the graph and cluster summaries were used only to nominate the target/readout combinations."
+  ],
+  "cell_types": [
+    "066 CNU-HYa HY GABA",
+    "110 CNU-HYa HY MM Glut",
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut"
+  ],
+  "exact_observed_result": "Creb1 perturbation induced a CREB-family state in thalamic, hypothalamic, and midbrain neurons dominated by recurrent Crem up-regulation, while upstream Prkaca, Adcy3, NMDA-receptor, and CaMKII perturbations did not recreate the signature and classic Arc/Bdnf/Fos/Egr/Npas4 immediate-early targets were not significantly induced. Parquet-verified leading rows: Creb1->Crem in 155 MB Glut log2FC 1.52, FDR 6.42e-10; Creb1->Crem in 151 TH Prkcd Grin2c Glut log2FC 1.09, FDR 3.82e-07; Creb1->Tmem181a in 151 TH Prkcd Grin2c Glut log2FC -0.915, FDR 3.55e-04; Creb1->Crem in 110 CNU-HYa HY MM Glut log2FC 1.38, FDR 0.00619; Creb1->Txndc12 in 151 TH Prkcd Grin2c Glut log2FC -1.07, FDR 0.00742; Creb1->Chkb in 151 TH Prkcd Grin2c Glut log2FC -0.636, FDR 0.00869.",
+  "preliminary_scores": {
+    "novelty": 3,
+    "priority": 4,
+    "support": 5
+  },
+  "prior_expectation": {
+    "citations": [
+      {
+        "citation": "Hummler E, Cole TJ, Blendy JA, Ganss R, Aguzzi A, Schmid W, Beermann F, Sch\u00fctz G. Targeted mutation of the CREB gene: compensation within the CREB/ATF family of transcription factors. Proc Natl Acad Sci U S A. 1994;91(12):5647-5651. PMID:8202542.",
+        "description": "Mouse Creb disruption study reporting CREM mRNA and protein overexpression across examined tissues with no change in ATF1 levels.",
+        "ref_id": "R001",
+        "ref_slug": "hummler_1994_creb_atf_compensation",
+        "scoped_ref_id": "Creb1:R001",
+        "source": "Proceedings of the National Academy of Sciences of the United States of America",
+        "source_type": "pubmed",
+        "target_gene": "Creb1",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/8202542/"
+      },
+      {
+        "citation": "Borlikova G, Endo S. Inducible cAMP early repressor (ICER) and brain functions. Mol Neurobiol. 2009;40(1):73-86. PMID:19434522.",
+        "description": "Review defining ICER as a CREM-derived endogenous repressor of CRE-mediated transcription in the CREB/CREM/ATF1 family and discussing brain plasticity functions.",
+        "ref_id": "R003",
+        "ref_slug": "borlikova_endo_2009_icer_brain_review",
+        "scoped_ref_id": "Creb1:R003",
+        "source": "Molecular Neurobiology",
+        "source_type": "review",
+        "target_gene": "Creb1",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/19434522/"
+      },
+      {
+        "citation": "Gonzalez GA, Montminy MR. Cyclic AMP stimulates somatostatin gene transcription by phosphorylation of CREB at serine 133. Cell. 1989;59(4):675-680. PMID:2573431.",
+        "description": "Primary study establishing that PKA-dependent CREB Ser133 phosphorylation is required for cAMP-responsive transcriptional activation.",
+        "ref_id": "R005",
+        "ref_slug": "gonzalez_montminy_1989_creb_ser133",
+        "scoped_ref_id": "Creb1:R005",
+        "source": "Cell",
+        "source_type": "pubmed",
+        "target_gene": "Creb1",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/2573431/"
+      },
+      {
+        "citation": "Wu GY, Deisseroth K, Tsien RW. Activity-dependent CREB phosphorylation: convergence of a fast, sensitive calmodulin kinase pathway and a slow, less sensitive mitogen-activated protein kinase pathway. Proc Natl Acad Sci U S A. 2001;98(5):2808-2813. PMID:11226322.",
+        "description": "Neuronal study showing CaMK- and MAPK-dependent convergence on CREB phosphorylation after activity-dependent calcium signals.",
+        "ref_id": "R006",
+        "ref_slug": "wu_2001_activity_dependent_creb_phosphorylation",
+        "scoped_ref_id": "Creb1:R006",
+        "source": "Proceedings of the National Academy of Sciences of the United States of America",
+        "source_type": "pubmed",
+        "target_gene": "Creb1",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/11226322/"
+      }
+    ],
+    "summary": "References were retained only when they were linked to one of the resolved source findings."
+  },
+  "reference_ids": [
+    "Creb1:R001",
+    "Creb1:R003",
+    "Creb1:R005",
+    "Creb1:R006"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Creb1:E002",
+    "Creb1:E003",
+    "Creb1:E005",
+    "Creb1:E007"
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/11226322/",
+    "https://pubmed.ncbi.nlm.nih.gov/19434522/",
+    "https://pubmed.ncbi.nlm.nih.gov/2573431/",
+    "https://pubmed.ncbi.nlm.nih.gov/8202542/"
+  ],
+  "status": "grounded",
+  "story_id": "S018",
+  "support": {
+    "exact_de_rows": [
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 6.419697779280247e-10,
+        "gene": "Crem",
+        "log2_fold_change": 1.5211538076400757,
+        "p_value": 3.680386274884049e-14,
+        "score": 7.571817398071289,
+        "target_gene": "Creb1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 3.815575760191745e-07,
+        "gene": "Crem",
+        "log2_fold_change": 1.0923712253570557,
+        "p_value": 2.2107745293422243e-11,
+        "score": 6.691379070281982,
+        "target_gene": "Creb1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.00035461109541494153,
+        "gene": "Tmem181a",
+        "log2_fold_change": -0.9154039025306702,
+        "p_value": 4.1092890134415844e-08,
+        "score": -5.48608922958374,
+        "target_gene": "Creb1"
+      },
+      {
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "fdr": 0.006192415077456433,
+        "gene": "Crem",
+        "log2_fold_change": 1.3806184530258179,
+        "p_value": 3.6071620419738066e-07,
+        "score": 5.088600158691406,
+        "target_gene": "Creb1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.007416388034274009,
+        "gene": "Txndc12",
+        "log2_fold_change": -1.0689938068389893,
+        "p_value": 1.2891340229921797e-06,
+        "score": -4.841421604156494,
+        "target_gene": "Creb1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.008689634412273271,
+        "gene": "Chkb",
+        "log2_fold_change": -0.6356485486030579,
+        "p_value": 2.013936940094622e-06,
+        "score": -4.752020835876465,
+        "target_gene": "Creb1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.013585361495935816,
+        "gene": "Creb1",
+        "log2_fold_change": 0.7047384977340698,
+        "p_value": 3.935732515190862e-06,
+        "score": 4.614747524261475,
+        "target_gene": "Creb1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.013925666684943633,
+        "gene": "Nceh1",
+        "log2_fold_change": -0.40469589829444885,
+        "p_value": 4.841184315989443e-06,
+        "score": -4.571554660797119,
+        "target_gene": "Creb1"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 0.018556054966627156,
+        "gene": "Camk2b",
+        "log2_fold_change": -0.3943929970264435,
+        "p_value": 2.127621964871542e-06,
+        "score": -4.740908145904541,
+        "target_gene": "Creb1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.03012111561588965,
+        "gene": "Ppox",
+        "log2_fold_change": -0.7449929714202881,
+        "p_value": 1.2216687485441076e-05,
+        "score": -4.373684406280518,
+        "target_gene": "Creb1"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 0.031197270317630962,
+        "gene": "Mmab",
+        "log2_fold_change": 1.4519668817520142,
+        "p_value": 5.365579943409556e-06,
+        "score": 4.549961090087891,
+        "target_gene": "Creb1"
+      },
+      {
+        "cell_type": "066 CNU-HYa HY GABA",
+        "fdr": 0.033201691102133106,
+        "gene": "Crem",
+        "log2_fold_change": 1.3282991647720337,
+        "p_value": 1.9400310331969795e-06,
+        "score": 4.759572982788086,
+        "target_gene": "Creb1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.048960336531213275,
+        "gene": "Rnf139",
+        "log2_fold_change": -0.7968679070472717,
+        "p_value": 2.2884818655513615e-05,
+        "score": -4.234708786010742,
+        "target_gene": "Creb1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.048960336531213275,
+        "gene": "Vwc2l",
+        "log2_fold_change": 0.7301895022392273,
+        "p_value": 2.754737381916562e-05,
+        "score": 4.192848205566406,
+        "target_gene": "Creb1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.048960336531213275,
+        "gene": "Sez6l2",
+        "log2_fold_change": -0.3200964331626892,
+        "p_value": 2.8368003088946796e-05,
+        "score": -4.186186790466309,
+        "target_gene": "Creb1"
+      }
+    ],
+    "finding_summaries": [
+      {
+        "claim_id": "claim:creb1_f001_0c34830ca0a7",
+        "confidence": "high",
+        "direction": "Crem_up_after_Creb1_perturbation",
+        "finding_id": "F001",
+        "finding_type": "homeostatic_compensation",
+        "summary": "Creb1 perturbation recurrently induces the CREB-family gene Crem, with Crem becoming the top positive gene in five responsive neuronal classes.",
+        "target_gene": "Creb1",
+        "why_it_matters": "A paralog-family feedback signal is the dominant dataset-grounded output of Creb1 perturbation and matches the known ability of CREM to compensate for CREB loss, while raising the possibility that the measured Crem reads include repressive ICER isoforms."
+      },
+      {
+        "claim_id": "claim:creb1_f004_4352a9361d29",
+        "confidence": "moderate",
+        "direction": "no_FDR_significant_response",
+        "finding_id": "F004",
+        "finding_type": "negative_result",
+        "summary": "Classic activity-dependent CREB targets are not significant in the Creb1 perturbation signatures.",
+        "target_gene": "Creb1",
+        "why_it_matters": "The absence of Arc, Bdnf, Fos/Jun, Egr, Npas4, Nr4a1, Per1, and Vgf responses separates this perturbation state from the canonical stimulated pCREB immediate-early program."
+      }
+    ],
+    "parquet_filter": {
+      "cell_types": [
+        "066 CNU-HYa HY GABA",
+        "110 CNU-HYa HY MM Glut",
+        "151 TH Prkcd Grin2c Glut",
+        "155 MB Glut"
+      ],
+      "gene_targets": [
+        "Creb1"
+      ],
+      "names": [
+        "Adcy3",
+        "Arc",
+        "Bdnf",
+        "Camk2b",
+        "Chkb",
+        "Creb1",
+        "Crem",
+        "Egr1",
+        "Egr2",
+        "Egr3",
+        "Fos",
+        "Fosb",
+        "Fosl2",
+        "Grin2a",
+        "Grin2b",
+        "Jun",
+        "Junb",
+        "Mmab",
+        "Nceh1",
+        "Npas4",
+        "Nr4a1",
+        "Per1",
+        "Ppox",
+        "Prkaca",
+        "Rnf139",
+        "Sez6l2",
+        "Tmem181a",
+        "Txndc12",
+        "Vgf",
+        "Vwc2l"
+      ]
+    },
+    "resolved_evidence": [
+      {
+        "cell_type": "",
+        "description": "Recurrent, FDR-significant induction of the Creb1 paralog-family gene Crem after Creb1 perturbation.",
+        "evidence_id": "E002",
+        "evidence_slug": "crem_rank1_recurrent_up",
+        "genes": "Crem",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "1",
+        "scoped_evidence_id": "Creb1:E002",
+        "statistics": "Crem was the rank-1 positive gene by score in 5 Creb1-perturbed classes: 066 CNU-HYa HY GABA logFC 1.328 score 4.760 FDR 0.0332; 110 CNU-HYa HY MM Glut logFC 1.381 score 5.089 FDR 0.00619; 151 TH Prkcd Grin2c Glut logFC 1.092 score 6.691 FDR 3.82e-7; 155 MB Glut logFC 1.521 score 7.572 FDR 6.42e-10; 191 MB P MY GABA logFC 1.568 score 5.923 FDR 5.40e-5.",
+        "target_gene": "Creb1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "The thalamic Prkcd/Grin2c glutamatergic class had the largest FDR-significant Creb1 perturbation program.",
+        "evidence_id": "E003",
+        "evidence_slug": "th_prkcd_grin2c_broadest_signature",
+        "genes": "Crem|Creb1|Vwc2l|Tmem181a|Txndc12|Chkb|Nceh1|Ppox|Rnf139|Sez6l2",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "10",
+        "scoped_evidence_id": "Creb1:E003",
+        "statistics": "126 perturbed cells versus 23679 controls; 10 genes at FDR<0.05. Up: Crem logFC 1.092 FDR 3.82e-7, Creb1 logFC 0.705 FDR 0.0136, Vwc2l logFC 0.730 FDR 0.0490. Down: Tmem181a logFC -0.915 FDR 3.55e-4, Txndc12 -1.069 FDR 0.00742, Chkb -0.636 FDR 0.00869, Nceh1 -0.405 FDR 0.0139, Ppox -0.745 FDR 0.0301, Rnf139 -0.797 FDR 0.0490, Sez6l2 -0.320 FDR 0.0490.",
+        "target_gene": "Creb1"
+      },
+      {
+        "cell_type": "",
+        "description": "Three responsive classes showed a sparse, Crem-dominated signature rather than a broad downstream program.",
+        "evidence_id": "E005",
+        "evidence_slug": "three_crem_only_fdr_contexts",
+        "genes": "Crem",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "1",
+        "scoped_evidence_id": "Creb1:E005",
+        "statistics": "Creb1 perturbation produced exactly one FDR<0.05 gene, Crem, in 066 CNU-HYa HY GABA with 48 cells, 110 CNU-HYa HY MM Glut with 47 cells, and 191 MB P MY GABA with 55 cells; Crem logFC/FDR were 1.328/0.0332, 1.381/0.00619, and 1.568/5.40e-5, respectively.",
+        "target_gene": "Creb1"
+      },
+      {
+        "cell_type": "",
+        "description": "Classic inducible neuronal CREB targets were not significant outputs of the basal Creb1 perturbation signatures.",
+        "evidence_id": "E007",
+        "evidence_slug": "canonical_activity_genes_no_fdr",
+        "genes": "Arc|Fos|Fosb|Fosl2|Jun|Junb|Bdnf|Npas4|Nr4a1|Egr1|Egr2|Egr3|Per1|Vgf",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "14",
+        "scoped_evidence_id": "Creb1:E007",
+        "statistics": "Across 14 canonical activity/CREB-responsive genes tested in 21 Creb1-perturbed cell types each, 0/294 rows reached FDR<0.05; the largest absolute scores were Nr4a1 2.630 with min FDR 1.0, Arc 2.194 with min FDR 1.0, Fos 2.111 with min FDR 1.0, and Bdnf 1.278 with min FDR 1.0.",
+        "target_gene": "Creb1"
+      }
+    ],
+    "source_claim_ids": [
+      "claim:creb1_f001_0c34830ca0a7",
+      "claim:creb1_f004_4352a9361d29"
+    ],
+    "source_cluster_ids": [
+      "C073"
+    ]
+  },
+  "targets": [
+    "Creb1",
+    "Crem",
+    "Prkaca",
+    "Adcy3",
+    "Grin2a",
+    "Grin2b",
+    "Camk2b"
+  ],
+  "title": "Creb1 perturbation selectively induces Crem compensation outside the upstream cAMP/NMDAR/CaMKII axis"
+}

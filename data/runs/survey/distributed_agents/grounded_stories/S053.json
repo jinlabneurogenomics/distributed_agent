@@ -1,0 +1,315 @@
+{
+  "biological_interpretation": "The recurrent module marks a TRRAP-neighborhood chromatin state in postmitotic neurons rather than an acute MYC loss signature or a canonical MYC/E2F proliferation program.",
+  "caveats": [
+    "Trrap mRNA itself was not reduced at FDR in any cell type.",
+    "The imprinted-gene interpretation is transcript-level only; allele-specific expression and methylation were not measured."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "191 MB P MY GABA",
+    "005 L4-5 IT CTX Glut",
+    "052 Pvalb Gaba",
+    "066 CNU-HYa HY GABA",
+    "110 CNU-HYa HY MM Glut"
+  ],
+  "exact_observed_result": "Trrap guides generated 455 FDR genes in 151 TH, 162 in 155 MB and 54 in 191 MB P MY GABA, dominated by repression of Snrpn, Snhg11, Peg3, Mest and Nap1l5 plus smaller Leng8/Rnpc3/Kpna1 induction; Myc produced no FDR genes and was near-zero correlated with Trrap and Max.",
+  "preliminary_scores": {
+    "novelty": 5,
+    "priority": 4,
+    "support": 4
+  },
+  "prior_expectation": {
+    "citations": [
+      "McMahon et al. 1998 PMID:9708738",
+      "Tapias et al. 2014 Trrap cortical progenitor cell-cycle evidence",
+      "Cogn\u00e9 et al. 2019 TRRAP neurodevelopmental disease evidence"
+    ],
+    "expectation": "TRRAP is a SAGA/NuA4 HAT scaffold and MYC cofactor; imprinted-gene repression in mature neurons is the unexpected component."
+  },
+  "reference_ids": [
+    "Myc:R002",
+    "Myc:R003",
+    "Myc:R005",
+    "Trrap:R001",
+    "Trrap:R002",
+    "Trrap:R003"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Myc:E005",
+    "Myc:E006",
+    "Myc:E007",
+    "Trrap:E002",
+    "Trrap:E003",
+    "Trrap:E004",
+    "Trrap:E005",
+    "Trrap:E006"
+  ],
+  "source_claims": [
+    {
+      "claim_id": "claim:trrap_f001_fe118d2cf790",
+      "finding_id": "F001",
+      "gene": "Trrap",
+      "role": "member"
+    },
+    {
+      "claim_id": "claim:myc_f002_7ea1836fe976",
+      "finding_id": "F002",
+      "gene": "Myc",
+      "role": "peripheral"
+    }
+  ],
+  "source_references": [
+    {
+      "citation": "UniProtKB. Q80YV3: Transformation/transcription domain-associated protein, Mus musculus Trrap.",
+      "description": "Annotates Trrap as a nuclear scaffold in NuA4, PCAF, TFTC-HAT, STAGA, and related chromatin complexes.",
+      "ref_id": "R001",
+      "ref_slug": "uniprot_mouse_trrap_q80yv3",
+      "source": "UniProtKB",
+      "source_type": "database",
+      "target_gene": "Trrap",
+      "url": "https://rest.uniprot.org/uniprotkb/Q80YV3"
+    },
+    {
+      "citation": "Reactome. Human TRRAP events including R-HSA-3321975 NuA4 complex acetylates histone H2A, HIST1H4 and R-HSA-3301237 KAT2 complexes acetylate histone H3.",
+      "description": "Places TRRAP-containing complexes in NuA4 H2A/H4 acetylation and KAT2/SAGA histone H3 acetylation reactions.",
+      "ref_id": "R002",
+      "ref_slug": "reactome_trrap_hat_complexes",
+      "source": "Reactome",
+      "source_type": "database",
+      "target_gene": "Trrap",
+      "url": "https://reactome.org"
+    },
+    {
+      "citation": "STRING database interaction partners for Mus musculus Trrap.",
+      "description": "Identifies high-scoring mouse Trrap partners including Kat2a, Kat5, Ruvbl1, Ruvbl2, Dmap1, Tada3, and Myc.",
+      "ref_id": "R003",
+      "ref_slug": "string_mouse_trrap_network",
+      "source": "STRING",
+      "source_type": "database",
+      "target_gene": "Trrap",
+      "url": "https://string-db.org/network/10090.ENSMUSP00000098035"
+    },
+    {
+      "citation": "Blackwood EM, Eisenman RN. Max: a helix-loop-helix zipper protein that forms a sequence-specific DNA-binding complex with Myc. Science. 1991;251(4998):1211-1217.",
+      "description": "Primary biochemical evidence that MAX binds MYC-family proteins and enables sequence-specific DNA binding.",
+      "ref_id": "R002",
+      "ref_slug": "blackwood_eisenman_1991_max_myc",
+      "source": "Science",
+      "source_type": "pubmed",
+      "target_gene": "Myc",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/2006410/"
+    },
+    {
+      "citation": "McMahon SB, Van Buskirk HA, Dugan KA, Copeland TD, Cole MD. The novel ATM-related protein TRRAP is an essential cofactor for the c-Myc and E2F oncoproteins. Cell. 1998;94(3):363-374.",
+      "description": "Identified TRRAP as a MYC N-terminal and E2F-1 cofactor needed for oncogenic transcription-factor function.",
+      "ref_id": "R003",
+      "ref_slug": "mcmahon_1998_trrap_myc_e2f",
+      "source": "Cell",
+      "source_type": "pubmed",
+      "target_gene": "Myc",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9708738/"
+    },
+    {
+      "citation": "STRING functional network API query for human MYC, MAX, TRRAP, MNT, MGA, and MYCN; retrieved 2025-04-29.",
+      "description": "The queried high-confidence network connected MYC with MAX and TRRAP at score 0.999 and MAX with MYCN, MGA, and MNT at scores 0.996, 0.995, and 0.943, respectively.",
+      "ref_id": "R005",
+      "ref_slug": "string_myc_network_query",
+      "source": "STRING",
+      "source_type": "database",
+      "target_gene": "Myc",
+      "url": "https://string-db.org/"
+    }
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/2006410/",
+    "https://pubmed.ncbi.nlm.nih.gov/9708738/",
+    "https://reactome.org",
+    "https://rest.uniprot.org/uniprotkb/Q80YV3",
+    "https://string-db.org/",
+    "https://string-db.org/network/10090.ENSMUSP00000098035"
+  ],
+  "status": "grounded",
+  "story_id": "S053",
+  "support": [
+    {
+      "exact_de_rows": [
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Trrap",
+          "gene_target": "Trrap",
+          "log2fc": 0.062397606670856476,
+          "pval": 0.29935315154902997,
+          "score": 1.0378215312957764
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 4.9412352902529947e-23,
+          "gene": "Snrpn",
+          "gene_target": "Trrap",
+          "log2fc": -0.48478856682777405,
+          "pval": 2.8629904920638474e-27,
+          "score": -10.816899299621582
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 7.48340077060639e-23,
+          "gene": "Snhg11",
+          "gene_target": "Trrap",
+          "log2fc": -0.4744810461997986,
+          "pval": 8.671882230264082e-27,
+          "score": -10.714827537536621
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 4.460252774837232e-22,
+          "gene": "Peg3",
+          "gene_target": "Trrap",
+          "log2fc": -0.7197116613388062,
+          "pval": 7.752916347709425e-26,
+          "score": -10.510199546813965
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 8.456190987270991e-13,
+          "gene": "Mest",
+          "gene_target": "Trrap",
+          "log2fc": -1.4418342113494873,
+          "pval": 2.4892262029652624e-16,
+          "score": -8.195804595947266
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 2.302392118930787e-10,
+          "gene": "Leng8",
+          "gene_target": "Trrap",
+          "log2fc": 0.3122214078903198,
+          "pval": 1.734231273312488e-13,
+          "score": 7.367833614349365
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 3.505553496782992e-08,
+          "gene": "Kpna1",
+          "gene_target": "Trrap",
+          "log2fc": 0.4557472765445709,
+          "pval": 5.484092033903516e-11,
+          "score": 6.557163238525391
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 4.785658709097074e-09,
+          "gene": "Rnpc3",
+          "gene_target": "Trrap",
+          "log2fc": 0.5248044729232788,
+          "pval": 6.377550860955599e-12,
+          "score": 6.870950698852539
+        },
+        {
+          "cell_type": "155 MB Glut",
+          "fdr": 7.27628408369023e-18,
+          "gene": "Snrpn",
+          "gene_target": "Trrap",
+          "log2fc": -0.6486594080924988,
+          "pval": 4.1714636723558047e-22,
+          "score": -9.666817665100098
+        },
+        {
+          "cell_type": "155 MB Glut",
+          "fdr": 3.5029072777901456e-14,
+          "gene": "Snhg11",
+          "gene_target": "Trrap",
+          "log2fc": -0.43013501167297363,
+          "pval": 6.024606910147588e-18,
+          "score": -8.632080078125
+        },
+        {
+          "cell_type": "155 MB Glut",
+          "fdr": 7.544667680846466e-11,
+          "gene": "Nap1l5",
+          "gene_target": "Trrap",
+          "log2fc": -0.7626013159751892,
+          "pval": 1.730130752931598e-14,
+          "score": -7.669243812561035
+        },
+        {
+          "cell_type": "155 MB Glut",
+          "fdr": 0.0006039357969104312,
+          "gene": "Leng8",
+          "gene_target": "Trrap",
+          "log2fc": 0.2851451337337494,
+          "pval": 1.049773543078809e-06,
+          "score": 4.882071018218994
+        },
+        {
+          "cell_type": "155 MB Glut",
+          "fdr": 1.7312504146578057e-08,
+          "gene": "Kpna1",
+          "gene_target": "Trrap",
+          "log2fc": 0.6293761730194092,
+          "pval": 6.9476310855957355e-12,
+          "score": 6.858727931976318
+        }
+      ],
+      "finding": "Trrap recurrent module"
+    },
+    {
+      "exact_de_rows": [
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Myc",
+          "gene_target": "Myc",
+          "log2fc": 0.7090590000152588,
+          "pval": 0.43811377946470875,
+          "score": 0.7753823399543762
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Snrpn",
+          "gene_target": "Myc",
+          "log2fc": -0.0005419079097919166,
+          "pval": 0.8247620129258274,
+          "score": 0.22142437100410461
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Snhg11",
+          "gene_target": "Myc",
+          "log2fc": -0.010379944927990437,
+          "pval": 0.6709473655328297,
+          "score": -0.42484816908836365
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Peg3",
+          "gene_target": "Myc",
+          "log2fc": -0.01074296236038208,
+          "pval": 0.7308793379211287,
+          "score": -0.3439560532569885
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Mest",
+          "gene_target": "Myc",
+          "log2fc": 0.1418866515159607,
+          "pval": 0.10559481537537158,
+          "score": 1.6183146238327026
+        }
+      ],
+      "finding": "Myc boundary"
+    }
+  ],
+  "targets": [
+    "Trrap",
+    "Myc",
+    "Max"
+  ],
+  "title": "Trrap perturbation represses an imprinted/noncoding RNA module unlike Myc loss"
+}

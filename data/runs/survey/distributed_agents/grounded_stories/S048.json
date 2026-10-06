@@ -1,0 +1,225 @@
+{
+  "story_id": "S048",
+  "title": "Kmt2b loss produces a thalamic, mostly downregulated neuronal program",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Kmt2b was significantly reduced in both 151 TH Prkcd Grin2c Glut and 155 MB Glut, but the 151 class converted similar target depletion into a 46-gene, mostly downregulated program led by Stxbp2, Rasgrp2, Csf2ra, Adamts3, and Fah.",
+  "biological_interpretation": "Neuronal KMT2B suppression acts as a loss-like state and identifies thalamic Prkcd/Grin2c neurons as more transcriptionally vulnerable than similarly engaged midbrain glutamatergic neurons.",
+  "targets": [
+    "Kmt2b",
+    "Stxbp2",
+    "Csf2ra",
+    "Rasgrp2",
+    "Ebf4",
+    "Fah",
+    "Col11a1",
+    "Agbl4"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "005 L4-5 IT CTX Glut",
+    "008 L2-3 IT ENT PPP RSP Glut",
+    "046 CTX-CGE GABA",
+    "066 CNU-HYa HY GABA"
+  ],
+  "support": {
+    "exact_de_rows": [
+      {
+        "gene_target": "Kmt2b",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Adamts3",
+        "score": -6.716877460479736,
+        "logfoldchanges": -0.799687385559082,
+        "pvals_adj": 8.01076598223158e-08
+      },
+      {
+        "gene_target": "Kmt2b",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Csf2ra",
+        "score": -6.888350963592529,
+        "logfoldchanges": -0.8691545724868774,
+        "pvals_adj": 3.2471524894858567e-08
+      },
+      {
+        "gene_target": "Kmt2b",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Echdc2",
+        "score": -6.397885799407959,
+        "logfoldchanges": -1.3548877239227295,
+        "pvals_adj": 4.531720678517871e-07
+      },
+      {
+        "gene_target": "Kmt2b",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Fah",
+        "score": -6.348515033721924,
+        "logfoldchanges": -0.6904966831207275,
+        "pvals_adj": 5.360232822351534e-07
+      },
+      {
+        "gene_target": "Kmt2b",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Hap1",
+        "score": 4.610201358795166,
+        "logfoldchanges": 0.6117005944252014,
+        "pvals_adj": 0.003857185638879054
+      },
+      {
+        "gene_target": "Kmt2b",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Kmt2b",
+        "score": -6.57149076461792,
+        "logfoldchanges": -0.6593700051307678,
+        "pvals_adj": 1.719478774941167e-07
+      },
+      {
+        "gene_target": "Kmt2b",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Rasgrp2",
+        "score": -8.84024715423584,
+        "logfoldchanges": -1.6585465669631958,
+        "pvals_adj": 8.241780231508093e-15
+      },
+      {
+        "gene_target": "Kmt2b",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Sptbn1",
+        "score": 4.119668960571289,
+        "logfoldchanges": 0.17996741831302643,
+        "pvals_adj": 0.018709591033198726
+      },
+      {
+        "gene_target": "Kmt2b",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Stxbp2",
+        "score": -11.173076629638672,
+        "logfoldchanges": -1.578277349472046,
+        "pvals_adj": 9.53284154847974e-25
+      },
+      {
+        "gene_target": "Kmt2b",
+        "group_name": "155 MB Glut",
+        "names": "Csf2ra",
+        "score": -5.68251371383667,
+        "logfoldchanges": -0.9027647376060486,
+        "pvals_adj": 0.00011575978586086441
+      },
+      {
+        "gene_target": "Kmt2b",
+        "group_name": "155 MB Glut",
+        "names": "Ebf4",
+        "score": -6.526644706726074,
+        "logfoldchanges": -1.4162837266921997,
+        "pvals_adj": 1.1732044623790243e-06
+      },
+      {
+        "gene_target": "Kmt2b",
+        "group_name": "155 MB Glut",
+        "names": "Fah",
+        "score": -5.088093280792236,
+        "logfoldchanges": -1.0173046588897705,
+        "pvals_adj": 0.002102934736934855
+      },
+      {
+        "gene_target": "Kmt2b",
+        "group_name": "155 MB Glut",
+        "names": "Kmt2b",
+        "score": -4.475915908813477,
+        "logfoldchanges": -0.5842698812484741,
+        "pvals_adj": 0.03317849696299636
+      }
+    ],
+    "evidence_records": [
+      {
+        "target_gene": "Kmt2b",
+        "evidence_id": "E001",
+        "evidence_slug": "kmt2b_on_target_across_cell_types",
+        "cell_type": "",
+        "genes": "Kmt2b",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Kmt2b was measured in 23 cell types; transcript logFC was negative in 22/23 with median -0.316. Only 151 TH Prkcd Grin2c Glut and 155 MB Glut reached on-target FDR <0.05: -0.659, FDR 1.72e-7, 230 perturbed versus 23,679 controls; and -0.584, FDR 0.0332, 170 perturbed versus 20,353 controls. Six cell types had nominal Kmt2b p<0.005.",
+        "description": "Aggregate on-target transcript engagement for the Kmt2b perturbation across assayed cell types."
+      },
+      {
+        "target_gene": "Kmt2b",
+        "evidence_id": "E002",
+        "evidence_slug": "kmt2b_151_th_prkcd_grin2c_signature",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Stxbp2|Rasgrp2|Csf2ra|Adamts3|Kmt2b|Echdc2|Fah|Hap1|Sptbn1",
+        "n_genes": "9",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "230 perturbed cells versus 23,679 controls; 46 genes at FDR <=0.05, 44 down and 2 up. Kmt2b ranked fifth by negative score: logFC -0.659, FDR 1.72e-7. Top down effects were Stxbp2 logFC -1.578, FDR 9.53e-25; Rasgrp2 -1.659, FDR 8.24e-15; Csf2ra -0.869, FDR 3.25e-8; Adamts3 -0.800, FDR 8.01e-8; Echdc2 -1.355, FDR 4.53e-7; Fah -0.690, FDR 5.36e-7. The two FDR<=0.05 up genes were Hap1 logFC 0.612, FDR 0.00386 and Sptbn1 0.180, FDR 0.0187.",
+        "description": "The dominant Kmt2b transcriptional response concentrated in posterior thalamic Prkcd/Grin2c glutamatergic neurons and was mostly downregulated."
+      },
+      {
+        "target_gene": "Kmt2b",
+        "evidence_id": "E003",
+        "evidence_slug": "kmt2b_155_mb_glut_buffered_signature",
+        "cell_type": "155 MB Glut",
+        "genes": "Ebf4|Csf2ra|Fah|Kmt2b|Dtnb|Pnck",
+        "n_genes": "6",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "170 perturbed cells versus 20,353 controls; Kmt2b logFC -0.584, FDR 0.0332. Four genes reached FDR <=0.05 and all were down: Ebf4 logFC -1.416, FDR 1.17e-6; Csf2ra -0.903, FDR 1.16e-4; Fah -1.017, FDR 0.00210; Kmt2b -0.584, FDR 0.0332. The top positive genes Dtnb and Pnck had FDR 0.656.",
+        "description": "Midbrain glutamatergic cells showed on-target Kmt2b transcript depletion with a small downstream signature."
+      }
+    ],
+    "source_claim_ids": [
+      "claim:kmt2b_f001_b17b36407474",
+      "claim:kmt2b_f003_3960b8c4f9fc"
+    ],
+    "source_cluster_ids": [
+      "C151"
+    ]
+  },
+  "caveats": [
+    "The recurrent marker panel outside 151 TH is weaker and partially overlapping rather than a single shared pan-neuronal module."
+  ],
+  "prior_expectation": {
+    "summary": "Prior literature and pathway context were taken from the resolved report references; the observed Perturb-seq signal either refines expected gene function by cell type or marks an exploratory response-state neighbor where noted in caveats.",
+    "citations": [
+      {
+        "reference_id": "Kmt2b:R001",
+        "citation": "UniProtKB reviewed entry Q9UMN6, Histone-lysine N-methyltransferase 2B, human KMT2B.",
+        "url": "https://rest.uniprot.org/uniprotkb/Q9UMN6",
+        "supports": "Curated KMT2B function, catalytic activity, nuclear localization, disease annotations, and subunit relationships with MEN1, WDR5, RBBP5, ASH2L, and DPY30."
+      },
+      {
+        "reference_id": "Kmt2b:R005",
+        "citation": "Kerimoglu C, Agis-Balboa RC, Kranz A, et al. Histone-methyltransferase MLL2 (KMT2B) is required for memory formation in mice. J Neurosci. 2013;33(8):3452-3464. doi:10.1523/JNEUROSCI.3356-12.2013.",
+        "url": "https://www.jneurosci.org/content/33/8/3452",
+        "supports": "Showed that adult forebrain excitatory-neuron Kmt2b deletion impaired hippocampal memory and downregulated dorsal dentate gyrus plasticity genes with reduced H3K4me2/3."
+      },
+      {
+        "reference_id": "Kmt2b:R007",
+        "citation": "Barbagiovanni G, Germain PL, Zech M, et al. KMT2B is selectively required for neuronal transdifferentiation, and its loss exposes dystonia candidate genes. Cell Rep. 2018;25(4):988-1001. doi:10.1016/j.celrep.2018.09.067.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30355503/",
+        "supports": "Used individual and combined KMT2A/KMT2B inactivation during fibroblast-to-neuron conversion and found Kmt2b selectively required for induction of neuronal maturation genes."
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 5,
+    "priority": 5
+  },
+  "report_evidence_ids": [
+    "Kmt2b:E001",
+    "Kmt2b:E002",
+    "Kmt2b:E003"
+  ],
+  "reference_ids": [
+    "Kmt2b:R001",
+    "Kmt2b:R005",
+    "Kmt2b:R007"
+  ],
+  "source_urls_or_dois": [
+    "https://rest.uniprot.org/uniprotkb/Q9UMN6",
+    "https://www.jneurosci.org/content/33/8/3452",
+    "https://pubmed.ncbi.nlm.nih.gov/30355503/"
+  ]
+}

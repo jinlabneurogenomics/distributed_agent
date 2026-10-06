@@ -1,0 +1,139 @@
+{
+  "story_id": "S012",
+  "title": "Obligate NMDAR Grin1 loss produces a thalamic Scg2/Stmn4/Kctd16/Gpm6a program not shared by Grin2d",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Grin1 was strongly depleted in 151 TH Prkcd Grin2c Glut and produced 89 FDR<0.05 genes there. The same contrast induced Scg2, Stmn4, Kctd16, Gpm6a, Igf1, and Jun while reducing Erc2, Homer2, Kcnab2, Gabrd, and Prkcd. Grin2a, Grin2b, Dlg4, Grid1, Grik5, Camk2b, Nrxn1, and Shank3 were target-depleted in 151 TH, but only Grin1 produced a broad 151 TH response.",
+  "biological_interpretation": "Loss of the obligate GluN1 subunit creates a thalamic synaptic/growth-factor state that is not reproduced by depleting individual modulatory NMDAR subunits or postsynaptic scaffolds.",
+  "targets": [
+    "Grin1",
+    "Grin2a",
+    "Grin2b",
+    "Grin2d",
+    "Grin3a",
+    "Dlg4"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "052 Pvalb Gaba",
+    "155 MB Glut"
+  ],
+  "support": {
+    "support_level": 5,
+    "exact_de_rows": [
+      {
+        "gene_target": "Grin1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Grin1",
+        "log2_fold_change": -1.064141035079956,
+        "pvals_adj": 3.309012993182822e-53,
+        "wilcoxon_score": -15.974715232849121
+      },
+      {
+        "gene_target": "Grin1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Scg2",
+        "log2_fold_change": 0.44378146529197693,
+        "pvals_adj": 3.5957788827678947e-07,
+        "wilcoxon_score": 6.592775344848633
+      },
+      {
+        "gene_target": "Grin1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Stmn4",
+        "log2_fold_change": 0.300324022769928,
+        "pvals_adj": 3.5957788827678947e-07,
+        "wilcoxon_score": 6.53762674331665
+      },
+      {
+        "gene_target": "Grin1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kctd16",
+        "log2_fold_change": 0.39059898257255554,
+        "pvals_adj": 8.639854377592703e-07,
+        "wilcoxon_score": 6.361156940460205
+      },
+      {
+        "gene_target": "Grin1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gpm6a",
+        "log2_fold_change": 0.3428613841533661,
+        "pvals_adj": 1.0316681997708954e-06,
+        "wilcoxon_score": 6.299359321594238
+      },
+      {
+        "gene_target": "Grin1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Erc2",
+        "log2_fold_change": -0.37276580929756165,
+        "pvals_adj": 8.181979337468161e-05,
+        "wilcoxon_score": -5.500248432159424
+      },
+      {
+        "gene_target": "Grin1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Homer2",
+        "log2_fold_change": -0.4187716841697693,
+        "pvals_adj": 0.0005872351644641025,
+        "wilcoxon_score": -4.957374572753906
+      }
+    ],
+    "report_evidence_summary": [
+      "Grin1:E001",
+      "Grin1:E002",
+      "Grin1:E003",
+      "Grin1:E004",
+      "Grin1:E005",
+      "Grin2b:E005"
+    ]
+  },
+  "caveats": [
+    "The result is transcriptomic; it does not measure receptor currents, calcium flux, or compensatory synaptic protein trafficking.",
+    "The single-subunit negative comparators had strong target RNA depletion in the thalamic class but their own electrophysiological effect was not assayed."
+  ],
+  "prior_expectation": {
+    "summary": "GluN1/Grin1 is an NMDAR subunit in heterotetrameric receptors; NMDARs require GluN1 with modulatory GluN2/GluN3 subunits whose identity shapes receptor function",
+    "citations": [
+      {
+        "ref_id": "Grin1:R001",
+        "ref": "UniProtKB P35438",
+        "url_or_doi": "https://rest.uniprot.org/uniprotkb/P35438",
+        "supports": "GluN1/Grin1 is an NMDAR subunit in heterotetrameric receptors"
+      },
+      {
+        "ref_id": "Grin1:R002",
+        "ref": "Vieira et al. 2020 PMID:31978252",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/31978252/",
+        "supports": "NMDARs require GluN1 with modulatory GluN2/GluN3 subunits whose identity shapes receptor function"
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 3,
+    "support": 5,
+    "priority": 4
+  },
+  "report_evidence_ids": [
+    "Grin1:E001",
+    "Grin1:E002",
+    "Grin1:E003",
+    "Grin1:E004",
+    "Grin1:E005",
+    "Grin2b:E005"
+  ],
+  "reference_ids": [
+    "Grin1:R001",
+    "Grin1:R002",
+    "Grin1:R003",
+    "Grin2b:R001"
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/31978252/",
+    "https://rest.uniprot.org/uniprotkb/P35438"
+  ],
+  "source_claim_ids": [
+    "claim:grin1_f001_c45287d2bde4",
+    "claim:grin1_f003_0701c785ffd6",
+    "claim:grin2b_f002_c338bf6563cc"
+  ]
+}

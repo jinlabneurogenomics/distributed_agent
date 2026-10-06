@@ -1,0 +1,113 @@
+{
+  "story_id": "S055",
+  "title": "Qrich1 perturbation lowers a Scn2b/Celf3/Ldhd/Tlcd3b module in thalamic and brainstem/midbrain neurons",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Qrich1 perturbation yielded 75 FDR genes in 151 TH Prkcd Grin2c Glut, led by Scn2b logFC -1.277 FDR 6.86e-37, Celf3 -1.353 FDR 1.24e-30, Ldhd -1.981 FDR 3.67e-22, and Map1a -0.686 FDR 2.58e-08. 155 MB Glut and 191 MB P MY GABA reproduced the Celf3/Ldhd/Tlcd3b or Celf3/Map1a/Ldhd down-regulated core at smaller breadth.",
+  "biological_interpretation": "A broadly expressed nucleoplasmic QRICH1 target produces a sharply biased neuronal expression module centered on thalamic and caudal populations, with recurrent repression of ion-channel, RNA-binding, and metabolic genes rather than a uniform brain-wide knockdown state.",
+  "targets": [
+    "Qrich1"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "191 MB P MY GABA",
+    "066 CNU-HYa HY GABA"
+  ],
+  "support": {
+    "support_level": 4,
+    "exact_de_rows": [
+      {
+        "gene_target": "Qrich1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Scn2b",
+        "log2_fold_change": -1.277,
+        "pvals_adj": 6.86e-37
+      },
+      {
+        "gene_target": "Qrich1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Celf3",
+        "log2_fold_change": -1.353,
+        "pvals_adj": 1.24e-30
+      },
+      {
+        "gene_target": "Qrich1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ldhd",
+        "log2_fold_change": -1.981,
+        "pvals_adj": 3.67e-22
+      },
+      {
+        "gene_target": "Qrich1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Map1a",
+        "log2_fold_change": -0.686,
+        "pvals_adj": 2.58e-08
+      },
+      {
+        "gene_target": "Qrich1",
+        "cell_type": "155 MB Glut",
+        "gene": "Scn2b",
+        "log2_fold_change": -0.922,
+        "pvals_adj": 9.15e-15
+      },
+      {
+        "gene_target": "Qrich1",
+        "cell_type": "155 MB Glut",
+        "gene": "Celf3",
+        "log2_fold_change": -1.171,
+        "pvals_adj": 7.2e-10
+      },
+      {
+        "gene_target": "Qrich1",
+        "cell_type": "155 MB Glut",
+        "gene": "Tlcd3b",
+        "log2_fold_change": -0.864,
+        "pvals_adj": 7.42e-07
+      }
+    ],
+    "report_evidence_summary": [
+      "Qrich1:E002",
+      "Qrich1:E003",
+      "Qrich1:E005",
+      "Qrich1:E006",
+      "Qrich1:E007"
+    ]
+  },
+  "caveats": [
+    "Eleven profiled classes had no FDR-level Qrich1 downstream row, so the claim is state-selective rather than pan-neuronal."
+  ],
+  "prior_expectation": {
+    "summary": "QRICH1 is broadly detected and nucleoplasmic in the Human Protein Atlas; that broad expression makes the focused thalamic/midbrain Scn2b/Celf3/Ldhd/Tlcd3b response an unexpected cell-context refinement.",
+    "citations": [
+      {
+        "ref_id": "Qrich1:R004",
+        "ref": "Human Protein Atlas QRICH1",
+        "url_or_doi": "https://www.proteinatlas.org/ENSG00000198218-QRICH1",
+        "supports": "broad QRICH1 RNA and low brain-region specificity"
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 5,
+    "support": 4,
+    "priority": 4
+  },
+  "report_evidence_ids": [
+    "Qrich1:E002",
+    "Qrich1:E003",
+    "Qrich1:E005",
+    "Qrich1:E006",
+    "Qrich1:E007"
+  ],
+  "reference_ids": [
+    "Qrich1:R004"
+  ],
+  "source_urls_or_dois": [
+    "https://www.proteinatlas.org/ENSG00000198218-QRICH1"
+  ],
+  "source_claim_ids": [
+    "claim:qrich1_f001_729209746a98"
+  ]
+}

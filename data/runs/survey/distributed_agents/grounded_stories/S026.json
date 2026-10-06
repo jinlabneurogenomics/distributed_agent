@@ -1,0 +1,213 @@
+{
+  "story_id": "S026",
+  "title": "Sp4 perturbation induces a Tsga10/Abhd11 module in thalamic and midbrain glutamatergic neurons",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Sp4 assignment produced FDR-supported responses almost exclusively in 151 TH Prkcd Grin2c Glut and 155 MB Glut, with shared Tsga10 and Abhd11 induction and partial support from Svip, Strada, Dnajc4, and Tuba1a.",
+  "biological_interpretation": "SP4 dosage perturbation exposes a caudal glutamatergic transcriptional state distinct from the developing-cerebellar SP4-NMDAR axis.",
+  "targets": [
+    "Sp4"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut"
+  ],
+  "support": {
+    "exact_de_rows": [
+      {
+        "gene_target": "Sp4",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Abhd11",
+        "score": 3.6538355350494385,
+        "logfoldchanges": 0.7193832993507385,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Sp4",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Dnajc4",
+        "score": 3.1763696670532227,
+        "logfoldchanges": 0.8627437949180603,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Sp4",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Sp4",
+        "score": 2.21824049949646,
+        "logfoldchanges": 0.5854013562202454,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Sp4",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Strada",
+        "score": 3.5435612201690674,
+        "logfoldchanges": 0.6791003346443176,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Sp4",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Stxbp2",
+        "score": -3.520014524459839,
+        "logfoldchanges": -1.23641037940979,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Sp4",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Svip",
+        "score": 3.2616190910339355,
+        "logfoldchanges": 0.5996173024177551,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Sp4",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Tsga10",
+        "score": 2.271418333053589,
+        "logfoldchanges": 0.7086970210075378,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Sp4",
+        "group_name": "155 MB Glut",
+        "names": "Abhd11",
+        "score": 4.276262283325195,
+        "logfoldchanges": 0.5294024348258972,
+        "pvals_adj": 0.029819977780244377
+      },
+      {
+        "gene_target": "Sp4",
+        "group_name": "155 MB Glut",
+        "names": "Dnajc4",
+        "score": 4.5012054443359375,
+        "logfoldchanges": 0.6076509952545166,
+        "pvals_adj": 0.01457721682318983
+      },
+      {
+        "gene_target": "Sp4",
+        "group_name": "155 MB Glut",
+        "names": "Rassf4",
+        "score": -0.24939127266407013,
+        "logfoldchanges": -0.5650520324707031,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Sp4",
+        "group_name": "155 MB Glut",
+        "names": "Strada",
+        "score": 5.8416948318481445,
+        "logfoldchanges": 0.4694056212902069,
+        "pvals_adj": 2.2295358727059416e-05
+      },
+      {
+        "gene_target": "Sp4",
+        "group_name": "155 MB Glut",
+        "names": "Svip",
+        "score": 6.267293453216553,
+        "logfoldchanges": 0.6431381702423096,
+        "pvals_adj": 3.170280846089573e-06
+      },
+      {
+        "gene_target": "Sp4",
+        "group_name": "155 MB Glut",
+        "names": "Tsga10",
+        "score": 5.156594753265381,
+        "logfoldchanges": 0.7716939449310303,
+        "pvals_adj": 0.0007233865888512312
+      },
+      {
+        "gene_target": "Sp4",
+        "group_name": "155 MB Glut",
+        "names": "Tuba1a",
+        "score": 3.24862003326416,
+        "logfoldchanges": 0.16577830910682678,
+        "pvals_adj": 0.45015072638866954
+      }
+    ],
+    "evidence_records": [
+      {
+        "target_gene": "Sp4",
+        "evidence_id": "E002",
+        "evidence_slug": "sp4_th_prkcd_grin2c_strong_signature",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Stxbp2|Svip|Tspan17|Strada|Sp4|Tsga10|Sfxn4|Dnajc4|R3hdm2|Rpgr|Abhd11|Mpc1|Cyb5r1|Cers5",
+        "n_genes": "14",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "183 perturbed cells versus 23679 matched controls; 14 genes at FDR<0.05. Top effects included Stxbp2 logFC=-1.069, score=-7.400, FDR=2.35e-09; Svip logFC=0.643, score=6.267, FDR=3.17e-06; Tspan17 logFC=-0.695, score=-6.182, FDR=3.64e-06; Strada logFC=0.469, score=5.842, FDR=2.23e-05; Tsga10 logFC=0.772, FDR=7.23e-04.",
+        "description": "The thalamic Prkcd/Grin2c glutamatergic class contained the strongest FDR-corrected Sp4 perturbation signature."
+      },
+      {
+        "target_gene": "Sp4",
+        "evidence_id": "E003",
+        "evidence_slug": "sp4_mb_glut_signature",
+        "cell_type": "155 MB Glut",
+        "genes": "Tsga10|Abhd11|Tuba1a|Rassf4",
+        "n_genes": "4",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "158 perturbed cells versus 20353 matched controls; 4 genes at FDR<0.05. Tsga10 logFC=1.092, score=5.790, FDR=1.22e-04; Abhd11 logFC=0.725, score=5.355, FDR=7.45e-04; Tuba1a logFC=0.368, score=4.901, FDR=0.00554; Rassf4 logFC=-1.402, score=-4.621, FDR=0.0167.",
+        "description": "Midbrain glutamatergic neurons showed the second FDR-corrected Sp4 signature."
+      },
+      {
+        "target_gene": "Sp4",
+        "evidence_id": "E005",
+        "evidence_slug": "sp4_no_fdr_response_in_other_profiled_classes",
+        "cell_type": "",
+        "genes": "",
+        "n_genes": "0",
+        "has_genes": "0",
+        "has_cell_type": "0",
+        "statistics": "The remaining 20 Sp4-profiled classes each had zero genes at FDR<0.05 with 28-91 perturbed cells and 3465-15039 matched controls. Their smallest per-class FDR values were 0.1068 in 066 CNU-HYa HY GABA, 0.1212 in 217 P MY Pineal Glut, and 0.1756 in 052 Pvalb Gaba.",
+        "description": "Most Sp4-assigned cell classes did not produce a multiple-testing-corrected transcriptomic response."
+      }
+    ],
+    "source_claim_ids": [
+      "claim:sp4_f001_92b77425f459"
+    ],
+    "source_cluster_ids": [
+      "C210"
+    ]
+  },
+  "caveats": [
+    "Sp4 mRNA rose rather than fell in the strongest signature, so the result should not be scaled as a measured transcript knockdown."
+  ],
+  "prior_expectation": {
+    "summary": "Prior literature and pathway context were taken from the resolved report references; the observed Perturb-seq signal either refines expected gene function by cell type or marks an exploratory response-state neighbor where noted in caveats.",
+    "citations": [
+      {
+        "reference_id": "Sp4:R001",
+        "citation": "UniProtKB entries Q02446 and Q62445, Transcription factor Sp4.",
+        "url": "https://www.uniprot.org/uniprotkb/Q02446/entry",
+        "supports": "Curated annotation that SP4 is a nuclear Sp1-family C2H2 zinc-finger transcription factor that binds GT/GC boxes and is a probable transcriptional activator."
+      },
+      {
+        "reference_id": "Sp4:R002",
+        "citation": "Human Protein Atlas entry ENSG00000105866, SP4.",
+        "url": "https://www.proteinatlas.org/ENSG00000105866-SP4",
+        "supports": "Reports SP4 as a transcription factor with low regional specificity and detection across human and mouse brain regions."
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 4,
+    "priority": 4
+  },
+  "report_evidence_ids": [
+    "Sp4:E002",
+    "Sp4:E003",
+    "Sp4:E005"
+  ],
+  "reference_ids": [
+    "Sp4:R001",
+    "Sp4:R002"
+  ],
+  "source_urls_or_dois": [
+    "https://www.uniprot.org/uniprotkb/Q02446/entry",
+    "https://www.proteinatlas.org/ENSG00000105866-SP4"
+  ]
+}

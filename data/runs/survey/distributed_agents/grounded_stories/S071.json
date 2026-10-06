@@ -1,0 +1,748 @@
+{
+  "story_id": "S071",
+  "title": "PRDM10 perturbation represses a MADD/CADM3/PTOV1 module in posterior and Pvalb neurons",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Prdm10 perturbation reproducibly lowered a MADD/CADM3/PTOV1-centered module across posterior and Pvalb neurons, with FDR-supported changes in the reported Prdm10 response classes despite the assayed Prdm10 mRNA row itself rising in some contrasts.",
+  "biological_interpretation": "The data nominate PRDM10 as a regulator of a compact posterior-neuronal abundance module involving membrane-traffic and adhesion-associated genes rather than the embryonic stem-cell or renal epithelial axes emphasized in prior work.",
+  "targets": [
+    "Prdm10"
+  ],
+  "cell_types": [
+    "052 Pvalb Gaba",
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "191 MB P MY GABA",
+    "217 P MY Pineal Glut"
+  ],
+  "support": {
+    "source_findings": [
+      {
+        "target_gene": "Prdm10",
+        "finding_id": "F001",
+        "finding_type": "cell_type_selectivity",
+        "direction": "predominantly_down",
+        "confidence": "high",
+        "literature_status": "refines_cell_type_context",
+        "summary": "Prdm10 loss produced a sparse but strong neuronal response concentrated in thalamic, midbrain, hypothalamic, hindbrain/pineal, and Pvalb GABAergic cell types.",
+        "why_it_matters": "The same broadly expressed transcription factor did not behave as a uniform pan-neuronal regulator; functional sensitivity was limited to a subset of neuronal contexts.",
+        "n_genes": "0",
+        "comparators": "cortical and hippocampal glutamatergic classes",
+        "cell_types": "151 TH Prkcd Grin2c Glut|155 MB Glut|191 MB P MY GABA|066 CNU-HYa HY GABA|145 MH-LH TH Glut|110 CNU-HYa HY MM Glut|052 Pvalb Gaba|217 P MY Pineal Glut|308 CB GABA|005 L4-5 IT CTX Glut",
+        "n_cell_types": "10",
+        "evidence_ids": "E002|E003|E004|E005|E006|E007|E008|E009|E010|E011|E013",
+        "ref_ids": "R002",
+        "main_caveats": "The data are transcriptomic end points only, and some responsive cell types, especially 217 P MY Pineal Glut, had low perturbed-cell counts."
+      },
+      {
+        "target_gene": "Prdm10",
+        "finding_id": "F004",
+        "finding_type": "pathway_uncoupling",
+        "direction": "Eif3b_no_change",
+        "confidence": "high",
+        "literature_status": "refines_cell_type_context",
+        "summary": "The ESC PRDM10-Eif3b global-translation axis was not recapitulated at the Eif3b transcript in any measured brain cell type.",
+        "why_it_matters": "A central embryonic PRDM10 effector should not be assumed to explain neuronal Prdm10 phenotypes; the brain response instead centered on Cadm3/Madd/Ptov1-like genes.",
+        "genes": "Eif3b|Madd|Cadm3|Ptov1",
+        "n_genes": "4",
+        "comparators": "mouse embryonic stem cells",
+        "n_cell_types": "0",
+        "evidence_ids": "E012|E014",
+        "ref_ids": "R003|R004",
+        "main_caveats": "The Perturb-seq assay measured RNA abundance, not EIF3B protein or total translation, and the profiled cells were brain neurons rather than pre-implantation embryos or ESCs."
+      }
+    ],
+    "evidence_ledger_rows": [
+      {
+        "target_gene": "Prdm10",
+        "evidence_id": "E002",
+        "evidence_slug": "prdm10_response_overall_asymmetry",
+        "n_genes": "0",
+        "has_genes": "0",
+        "has_cell_type": "0",
+        "statistics": "Across 388046 Prdm10 rows spanning 23 cell types, 182 genes in 10 cell types passed FDR<0.05; 158/182 significant rows had negative scores and 24/182 had positive scores. Thirteen cell types had no FDR<0.05 genes.",
+        "description": "Genome-wide Wilcoxon results show a sparse, predominantly down-regulated Prdm10 response."
+      },
+      {
+        "target_gene": "Prdm10",
+        "evidence_id": "E003",
+        "evidence_slug": "prdm10_151_th_prkcd_grin2c_signature",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Madd|Cadm3|Ptov1|Uchl1|Kcnt1|Prdm10",
+        "n_genes": "6",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "263 perturbed cells versus 23679 controls; 52 FDR<0.05 genes, with 41 down and 11 up. Madd logFC -1.293 FDR 8.69e-42; Cadm3 -0.998 FDR 2.32e-36; Ptov1 -1.146 FDR 3.62e-30; Uchl1 -0.530 FDR 1.71e-26; Kcnt1 -1.039 FDR 4.04e-24; Prdm10 +1.310 FDR 6.12e-22.",
+        "description": "The thalamic Prkcd/Grin2c glutamatergic class had the largest Prdm10 transcriptional response."
+      },
+      {
+        "target_gene": "Prdm10",
+        "evidence_id": "E004",
+        "evidence_slug": "prdm10_155_mb_glut_signature",
+        "cell_type": "155 MB Glut",
+        "genes": "Madd|Ptov1|Cadm3|Fus|Hap1|Prdm10|Flcn",
+        "n_genes": "7",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "219 perturbed cells versus 20353 controls; 29 FDR<0.05 genes, with 26 down and 3 up. Madd logFC -1.268 FDR 2.97e-29; Ptov1 -1.334 FDR 1.83e-28; Cadm3 -0.984 FDR 3.32e-25; Fus -0.453 FDR 1.20e-10; Hap1 -1.013 FDR 1.31e-10; Prdm10 +1.043 FDR 1.03e-7; Flcn -0.704 FDR 0.00369.",
+        "description": "Midbrain glutamatergic neurons showed a strong Prdm10 response and the only stringent Flcn decrease."
+      },
+      {
+        "target_gene": "Prdm10",
+        "evidence_id": "E005",
+        "evidence_slug": "prdm10_191_mb_p_my_gaba_signature",
+        "cell_type": "191 MB P MY GABA",
+        "genes": "Cadm3|Ptov1|Madd|Myt1|Fus|Prdm10",
+        "n_genes": "6",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "111 perturbed cells versus 10309 controls; 34 FDR<0.05 genes, with 28 down and 6 up. Cadm3 logFC -1.227 FDR 1.12e-20; Ptov1 -1.668 FDR 5.57e-20; Madd -1.326 FDR 3.45e-18; Myt1 -1.347 FDR 2.16e-14; Fus -0.823 FDR 3.72e-13; Prdm10 +0.981 FDR 0.00173.",
+        "description": "Midbrain/pons/myelencephalon GABAergic neurons carried a strong down-regulated shared module."
+      },
+      {
+        "target_gene": "Prdm10",
+        "evidence_id": "E006",
+        "evidence_slug": "prdm10_066_cnu_hya_hy_gaba_signature",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "genes": "Cadm3|Madd|Ptov1|Selenow|Ackr1|Prdm10",
+        "n_genes": "6",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "113 perturbed cells versus 10110 controls; 20 FDR<0.05 genes, with 18 down and 2 up. Cadm3 logFC -1.227 FDR 3.23e-17; Madd -1.353 FDR 2.56e-15; Ptov1 -1.275 FDR 2.55e-11; Selenow -1.204 FDR 3.32e-8; Ackr1 -1.446 FDR 1.97e-6; Prdm10 +1.015 FDR 0.0111.",
+        "description": "Central nuclei/hypothalamic GABAergic neurons shared the recurring negative response."
+      },
+      {
+        "target_gene": "Prdm10",
+        "evidence_id": "E007",
+        "evidence_slug": "prdm10_145_mh_lh_th_glut_signature",
+        "cell_type": "145 MH-LH TH Glut",
+        "genes": "Ptov1|Madd|Cadm3|Rnasek|Selenow|Prdm10",
+        "n_genes": "6",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "86 perturbed cells versus 6961 controls; 15 FDR<0.05 genes, with 14 down and 1 up. Ptov1 logFC -1.612 FDR 1.86e-13; Madd -1.263 FDR 7.82e-12; Cadm3 -0.937 FDR 8.28e-9; Rnasek -0.698 FDR 8.03e-6; Selenow -0.839 FDR 8.79e-5; Prdm10 +1.308 FDR 5.20e-6.",
+        "description": "Medial/lateral habenula and thalamic glutamatergic cells showed a compact Prdm10 response."
+      },
+      {
+        "target_gene": "Prdm10",
+        "evidence_id": "E008",
+        "evidence_slug": "prdm10_110_cnu_hya_hy_mm_glut_signature",
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "genes": "Madd|Cadm3|Ptov1|Fus|Psip1",
+        "n_genes": "5",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "80 perturbed cells versus 8681 controls; 11 FDR<0.05 genes and all 11 had negative scores. Madd logFC -1.316 FDR 8.80e-12; Cadm3 -0.994 FDR 5.33e-10; Ptov1 -1.137 FDR 5.79e-8; Fus -0.687 FDR 8.89e-7; Psip1 -0.384 FDR 0.0196. Prdm10 itself was nominally up but not FDR significant: logFC +0.871, p=8.45e-4, FDR=0.580.",
+        "description": "A central nuclei/hypothalamic/mammillary glutamatergic class had a downstream response even though the assayed Prdm10 transcript did not pass FDR."
+      },
+      {
+        "target_gene": "Prdm10",
+        "evidence_id": "E009",
+        "evidence_slug": "prdm10_052_pvalb_gaba_signature",
+        "cell_type": "052 Pvalb Gaba",
+        "genes": "Ptov1|Madd|Cadm3|Them6|Myt1|Prdm10",
+        "n_genes": "6",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "141 perturbed cells versus 13710 controls; 10 FDR<0.05 genes, with 9 down and 1 up. Ptov1 logFC -0.955 FDR 1.24e-8; Madd -0.724 FDR 2.59e-7; Cadm3 -0.641 FDR 1.26e-6; Them6 -0.712 FDR 2.01e-4; Myt1 -0.970 FDR 0.00312; Prdm10 +0.823 FDR 0.0310.",
+        "description": "Pvalb GABAergic neurons showed the same core negative genes with fewer significant hits than the subcortical active classes."
+      },
+      {
+        "target_gene": "Prdm10",
+        "evidence_id": "E010",
+        "evidence_slug": "prdm10_217_p_my_pineal_small_signature",
+        "cell_type": "217 P MY Pineal Glut",
+        "genes": "Madd|Cadm3|Uchl1|Ptov1|Ackr1|Celsr3",
+        "n_genes": "6",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "37 perturbed cells versus 3465 controls; 6 FDR<0.05 genes and all 6 were down. Madd logFC -1.495 FDR 2.92e-5; Cadm3 -1.081 FDR 4.64e-5; Uchl1 -1.013 FDR 1.59e-4; Ptov1 -1.500 FDR 4.19e-4; Ackr1 -1.750 FDR 0.00847; Celsr3 -0.852 FDR 0.0149.",
+        "description": "A low-cell-count pineal/pons/myelencephalic glutamatergic class nevertheless reproduced the shared down-regulated module."
+      },
+      {
+        "target_gene": "Prdm10",
+        "evidence_id": "E011",
+        "evidence_slug": "prdm10_308_cb_gaba_small_signature",
+        "cell_type": "308 CB GABA",
+        "genes": "Madd|Myt1|Ptov1",
+        "n_genes": "3",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "76 perturbed cells versus 8277 controls; 3 FDR<0.05 genes and all 3 were down: Madd logFC -0.830 FDR 1.43e-5; Myt1 -0.903 FDR 0.00143; Ptov1 -0.795 FDR 0.00578.",
+        "description": "Cerebellar GABAergic cells showed a very small but directionally concordant Prdm10 response."
+      },
+      {
+        "target_gene": "Prdm10",
+        "evidence_id": "E013",
+        "evidence_slug": "prdm10_cortical_hippocampal_buffered_classes",
+        "genes": "Cadm3|Madd|Kcnt1",
+        "n_genes": "3",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Among nine cortical/hippocampal/olfactory glutamatergic classes, 001, 007, 008, 009, 012, 017, 022, and 027 had zero FDR<0.05 genes with 51-107 perturbed cells; 005 L4-5 IT CTX Glut had only two, Cadm3 logFC -0.553 FDR 1.70e-4 and Madd -0.419 FDR 0.00163, despite 161 perturbed cells.",
+        "description": "Most telencephalic excitatory classes were buffered or negative for genome-wide Prdm10 responses."
+      },
+      {
+        "target_gene": "Prdm10",
+        "evidence_id": "E012",
+        "evidence_slug": "prdm10_recurrent_core_genes",
+        "genes": "Madd|Cadm3|Ptov1|Stmn2|Myt1|Uchl1|Them6|Ackr1",
+        "n_genes": "8",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "At FDR<0.05, Madd was down in 10 cell types, Cadm3 in 9, Ptov1 in 9, Stmn2 in 7, Myt1 in 7, Uchl1 in 6, Them6 in 6, and Ackr1 in 6. The minimum FDR values were 8.69e-42 for Madd, 2.32e-36 for Cadm3, and 3.62e-30 for Ptov1.",
+        "description": "Only a small set of genes recurred across active Prdm10 cell types."
+      },
+      {
+        "target_gene": "Prdm10",
+        "evidence_id": "E014",
+        "evidence_slug": "prdm10_eif3b_negative",
+        "genes": "Eif3b",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Eif3b was detected in all 23 Prdm10 cell-type tests but never reached nominal p<0.05 or FDR<0.05; its best nominal association was in 191 MB P MY GABA, logFC -0.682, p=0.103, FDR=1.0. Across all rows, Eif3b logFC ranged from -0.682 to +0.254 and the minimum FDR was 1.0.",
+        "description": "The canonical embryonic stem-cell PRDM10 target Eif3b did not register as a Prdm10-responsive transcript in this brain dataset."
+      }
+    ],
+    "exact_de_rows": [
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Ackr1",
+        "score": -3.824961,
+        "logfoldchange": -0.741592,
+        "pval": 0.00013079286097459207,
+        "pvals_adj": 0.15616099603306563
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Cadm3",
+        "score": -6.342761,
+        "logfoldchange": -0.641136,
+        "pval": 2.2568341228216893e-10,
+        "pvals_adj": 1.260968452224572e-06
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Eif3b",
+        "score": -0.6447,
+        "logfoldchange": -0.304085,
+        "pval": 0.5191217112632864,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Flcn",
+        "score": -4.120653,
+        "logfoldchange": -0.618513,
+        "pval": 3.7779946095768086e-05,
+        "pvals_adj": 0.05756976876884225
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Madd",
+        "score": -6.642359,
+        "logfoldchange": -0.72363,
+        "pval": 3.087014288635391e-11,
+        "pvals_adj": 2.587226675305321e-07
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Myt1",
+        "score": -4.891025,
+        "logfoldchange": -0.969935,
+        "pval": 1.0031239286572626e-06,
+        "pvals_adj": 0.0031197985455704985
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Prdm10",
+        "score": 4.306033,
+        "logfoldchange": 0.822888,
+        "pval": 1.6620844868244196e-05,
+        "pvals_adj": 0.030955400186834355
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Ptov1",
+        "score": -7.1723,
+        "logfoldchange": -0.955326,
+        "pval": 7.374788141812433e-13,
+        "pvals_adj": 1.2361619883306001e-08
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Them6",
+        "score": -5.458531,
+        "logfoldchange": -0.711743,
+        "pval": 4.800907664258591e-08,
+        "pvals_adj": 0.00020118203567075625
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Uchl1",
+        "score": -4.240916,
+        "logfoldchange": -0.50457,
+        "pval": 2.226093832548189e-05,
+        "pvals_adj": 0.037313784821172744
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ackr1",
+        "score": -5.734894,
+        "logfoldchange": -0.827872,
+        "pval": 9.757306928959662e-09,
+        "pvals_adj": 8.42006801434574e-06
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cadm3",
+        "score": -13.288645,
+        "logfoldchange": -0.997657,
+        "pval": 2.6941215729506345e-40,
+        "pvals_adj": 2.32489221137775e-36
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Eif3b",
+        "score": -0.922548,
+        "logfoldchange": -0.23817,
+        "pval": 0.3562426913039425,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Flcn",
+        "score": -1.131721,
+        "logfoldchange": -0.133091,
+        "pval": 0.2577517549092212,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Madd",
+        "score": -14.241852,
+        "logfoldchange": -1.293374,
+        "pval": 5.0374245125982855e-46,
+        "pvals_adj": 8.694090966293381e-42
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Myt1",
+        "score": -8.037639,
+        "logfoldchange": -0.575836,
+        "pval": 9.158635424146332e-16,
+        "pvals_adj": 1.4369898980485596e-12
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Prdm10",
+        "score": 10.399937,
+        "logfoldchange": 1.309951,
+        "pval": 2.480981582149552e-25,
+        "pvals_adj": 6.117037303759874e-22
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ptov1",
+        "score": -12.142517,
+        "logfoldchange": -1.146183,
+        "pval": 6.286228868119532e-34,
+        "pvals_adj": 3.6164674678291664e-30
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Them6",
+        "score": -5.820743,
+        "logfoldchange": -0.596678,
+        "pval": 5.858671716344226e-09,
+        "pvals_adj": 5.6174897306880565e-06
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Uchl1",
+        "score": -11.404412,
+        "logfoldchange": -0.530064,
+        "pval": 3.9745066781062496e-30,
+        "pvals_adj": 1.714900268935894e-26
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "155 MB Glut",
+        "gene": "Ackr1",
+        "score": -6.386662,
+        "logfoldchange": -1.029726,
+        "pval": 1.6954565859608417e-10,
+        "pvals_adj": 3.285983247657218e-07
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "155 MB Glut",
+        "gene": "Cadm3",
+        "score": -11.170153,
+        "logfoldchange": -0.983944,
+        "pval": 5.70827624062158e-29,
+        "pvals_adj": 3.3189820821720734e-25
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "155 MB Glut",
+        "gene": "Eif3b",
+        "score": -0.399609,
+        "logfoldchange": -0.128008,
+        "pval": 0.6894445650871939,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "155 MB Glut",
+        "gene": "Flcn",
+        "score": -4.589288,
+        "logfoldchange": -0.70396,
+        "pval": 4.447595660403226e-06,
+        "pvals_adj": 0.003694257671638737
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "155 MB Glut",
+        "gene": "Madd",
+        "score": -12.060846,
+        "logfoldchange": -1.268335,
+        "pval": 1.700271571498754e-33,
+        "pvals_adj": 2.965783702165277e-29
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "155 MB Glut",
+        "gene": "Myt1",
+        "score": -6.944765,
+        "logfoldchange": -0.821481,
+        "pval": 3.790913548219572e-12,
+        "pvals_adj": 9.446415003084855e-09
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "155 MB Glut",
+        "gene": "Prdm10",
+        "score": 6.579452,
+        "logfoldchange": 1.043397,
+        "pval": 4.721873366534691e-11,
+        "pvals_adj": 1.0295454641558077e-07
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "155 MB Glut",
+        "gene": "Ptov1",
+        "score": -11.852013,
+        "logfoldchange": -1.333706,
+        "pval": 2.100827080661e-32,
+        "pvals_adj": 1.832236338398491e-28
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "155 MB Glut",
+        "gene": "Them6",
+        "score": -5.051569,
+        "logfoldchange": -0.560463,
+        "pval": 4.3819686313856384e-07,
+        "pvals_adj": 0.00044961575786623347
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "155 MB Glut",
+        "gene": "Uchl1",
+        "score": -4.487283,
+        "logfoldchange": -0.418187,
+        "pval": 7.213731212966759e-06,
+        "pvals_adj": 0.005242879731157465
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Ackr1",
+        "score": -5.81559,
+        "logfoldchange": -1.191543,
+        "pval": 6.042038991209385e-09,
+        "pvals_adj": 9.391525697427098e-06
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Cadm3",
+        "score": -10.30715,
+        "logfoldchange": -1.227454,
+        "pval": 6.541231977983566e-25,
+        "pvals_adj": 1.1184198435956302e-20
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Eif3b",
+        "score": -1.630088,
+        "logfoldchange": -0.68198,
+        "pval": 0.10308295658654176,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Flcn",
+        "score": -2.610168,
+        "logfoldchange": -0.428996,
+        "pval": 0.009049791794981015,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Madd",
+        "score": -9.628672,
+        "logfoldchange": -1.326274,
+        "pval": 6.050682976113229e-22,
+        "pvals_adj": 3.4484859175194664e-18
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Myt1",
+        "score": -8.652018,
+        "logfoldchange": -1.346874,
+        "pval": 5.059687181418706e-18,
+        "pvals_adj": 2.162763285697426e-14
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Prdm10",
+        "score": 4.757172,
+        "logfoldchange": 0.980584,
+        "pval": 1.963240586504873e-06,
+        "pvals_adj": 0.0017287860891189413
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Ptov1",
+        "score": -10.083856,
+        "logfoldchange": -1.668481,
+        "pval": 6.511924751920646e-24,
+        "pvals_adj": 5.56704447041696e-20
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Them6",
+        "score": -6.640262,
+        "logfoldchange": -1.039796,
+        "pval": 3.131268489781022e-11,
+        "pvals_adj": 5.9487142931417686e-08
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Uchl1",
+        "score": -7.779286,
+        "logfoldchange": -0.927777,
+        "pval": 7.293474259628938e-15,
+        "pvals_adj": 1.7814831841590798e-11
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Ackr1",
+        "score": -4.706166,
+        "logfoldchange": -1.750259,
+        "pval": 2.5241849080975966e-06,
+        "pvals_adj": 0.008467125855722579
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Cadm3",
+        "score": -5.830462,
+        "logfoldchange": -1.081077,
+        "pval": 5.52743496372307e-09,
+        "pvals_adj": 4.6353069605781664e-05
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Eif3b",
+        "score": -0.71474,
+        "logfoldchange": -0.45239,
+        "pval": 0.47476991637121413,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Flcn",
+        "score": -2.688958,
+        "logfoldchange": -0.779694,
+        "pval": 0.00716754947268305,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Madd",
+        "score": -6.020405,
+        "logfoldchange": -1.495196,
+        "pval": 1.7398149520187665e-09,
+        "pvals_adj": 2.918017637525875e-05
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Myt1",
+        "score": -3.324663,
+        "logfoldchange": -0.737347,
+        "pval": 0.0008852537404480928,
+        "pvals_adj": 0.6748852606725187
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Prdm10",
+        "score": 2.147407,
+        "logfoldchange": 0.647543,
+        "pval": 0.0317609299245702,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Ptov1",
+        "score": -5.326752,
+        "logfoldchange": -1.499937,
+        "pval": 9.998469289371128e-08,
+        "pvals_adj": 0.0004192358173033314
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Them6",
+        "score": -3.808104,
+        "logfoldchange": -0.826649,
+        "pval": 0.00014003662289198475,
+        "pvals_adj": 0.2624358826806431
+      },
+      {
+        "target_gene": "Prdm10",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Uchl1",
+        "score": -5.550859,
+        "logfoldchange": -1.012977,
+        "pval": 2.8426969278084064e-08,
+        "pvals_adj": 0.00015892570957734195
+      }
+    ]
+  },
+  "caveats": [
+    "Guide-defined activity is inferred from a coherent downstream signature even though Prdm10 mRNA abundance is not a simple depletion scalar.",
+    "Prior literature for the exact MADD/CADM3/PTOV1 neuronal branch is unresolved in the local references."
+  ],
+  "prior_expectation": {
+    "citations": [
+      {
+        "target_gene": "Prdm10",
+        "ref_id": "R002",
+        "ref_slug": "hpa_prdm10_entry",
+        "source": "Human Protein Atlas",
+        "source_type": "database",
+        "citation": "Human Protein Atlas. PRDM10 entry ENSG00000170325.",
+        "url": "https://www.proteinatlas.org/ENSG00000170325-PRDM10",
+        "description": "Database entry classifying PRDM10 as an intracellular nucleoplasmic transcriptional activator with low brain-regional RNA specificity and detection across brain regions."
+      },
+      {
+        "target_gene": "Prdm10",
+        "ref_id": "R003",
+        "ref_slug": "han_prdm10_eif3b_translation_2020",
+        "source": "Nature Communications",
+        "source_type": "pubmed",
+        "citation": "Han BY, Seah MKY, Brooks IR, Quek DHP, Huxley DR, Foo CS, et al. Global translation during early development depends on the essential transcription factor PRDM10. Nature Communications. 2020;11:3603.",
+        "url": "https://doi.org/10.1038/s41467-020-17304-3",
+        "description": "Mouse ESC and embryo study showing that PRDM10 acts as a sequence-specific transcription factor and supports growth through transcriptional activation of Eif3b and global translation."
+      },
+      {
+        "target_gene": "Prdm10",
+        "ref_id": "R004",
+        "ref_slug": "seah_maternal_prdm10_oocyte_2025",
+        "source": "Nature Communications",
+        "source_type": "pubmed",
+        "citation": "Seah MKY, Han BY, Huang Y, Rasmussen LJH, Stäubli AJ, Bello-Rodríguez J, et al. Maternal PRDM10 activates essential genes for oocyte-to-embryo transition. Nature Communications. 2025;16:1939.",
+        "url": "https://doi.org/10.1038/s41467-025-56991-8",
+        "description": "Maternal-loss study showing that absence of Prdm10 arrests embryos at the two-cell stage through failure to accumulate PRDM10 target transcripts, including Septin11."
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 5,
+    "support": 3,
+    "priority": 3
+  },
+  "report_evidence_ids": [
+    "Prdm10:E002",
+    "Prdm10:E003",
+    "Prdm10:E004",
+    "Prdm10:E005",
+    "Prdm10:E006",
+    "Prdm10:E007",
+    "Prdm10:E008",
+    "Prdm10:E009",
+    "Prdm10:E010",
+    "Prdm10:E011",
+    "Prdm10:E012",
+    "Prdm10:E013",
+    "Prdm10:E014"
+  ],
+  "reference_ids": [
+    "Prdm10:R002",
+    "Prdm10:R003",
+    "Prdm10:R004"
+  ],
+  "source_urls_or_dois": [
+    {
+      "ref_id": "Prdm10:R002",
+      "citation": "Human Protein Atlas. PRDM10 entry ENSG00000170325.",
+      "url_or_doi": "https://www.proteinatlas.org/ENSG00000170325-PRDM10"
+    },
+    {
+      "ref_id": "Prdm10:R003",
+      "citation": "Han BY, Seah MKY, Brooks IR, Quek DHP, Huxley DR, Foo CS, et al. Global translation during early development depends on the essential transcription factor PRDM10. Nature Communications. 2020;11:3603.",
+      "url_or_doi": "https://doi.org/10.1038/s41467-020-17304-3"
+    },
+    {
+      "ref_id": "Prdm10:R004",
+      "citation": "Seah MKY, Han BY, Huang Y, Rasmussen LJH, Stäubli AJ, Bello-Rodríguez J, et al. Maternal PRDM10 activates essential genes for oocyte-to-embryo transition. Nature Communications. 2025;16:1939.",
+      "url_or_doi": "https://doi.org/10.1038/s41467-025-56991-8"
+    }
+  ],
+  "source_cluster_ids": [
+    "C129"
+  ],
+  "source_claim_ids": [
+    "claim:prdm10_f001_94f2a8751ab8",
+    "claim:prdm10_f004_68102ad5b927"
+  ]
+}

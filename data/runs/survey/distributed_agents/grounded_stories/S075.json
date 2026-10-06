@@ -1,0 +1,287 @@
+{
+  "biological_interpretation": "Guide-defined KMT5B perturbation can shift synaptic and translation-associated transcripts in one posterior glutamatergic class, but the target transcript did not validate mRNA knockdown.",
+  "caveats": [
+    "Kmt5b RNA was not significantly depleted in any class and trended upward in the responsive class.",
+    "H4K20 methylation, KMT5B protein abundance and synaptic physiology were not measured."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut"
+  ],
+  "exact_observed_result": "Kmt5b guides produced the only corrected Kmt5b response in 151 TH Prkcd Grin2c Glut, with Ache, Macrod2, Syngap1 and Grik1 up plus Clpp down; Nlgn2 was just above threshold, and Rab3a/Rab3gap2/Eif4e/Eif4g3/Eif2a were nominal members of the same tail.",
+  "preliminary_scores": {
+    "novelty": 3,
+    "priority": 3,
+    "support": 3
+  },
+  "prior_expectation": {
+    "citations": [
+      "Eliyahu et al. 2022 doi:10.3389/fped.2022.844845",
+      "Wang et al. 2021 doi:10.1038/s41386-021-01029-y"
+    ],
+    "expectation": "KMT5B/SUV420H1 deposits H4K20me2/3 and has neurodevelopmental disease and synaptic-deficit anchors."
+  },
+  "reference_ids": [
+    "Kmt5b:R001",
+    "Kmt5b:R002",
+    "Kmt5b:R003",
+    "Kmt5b:R004",
+    "Kmt5b:R005",
+    "Kmt5b:R006",
+    "Kmt5b:R007"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Kmt5b:E001",
+    "Kmt5b:E002",
+    "Kmt5b:E004",
+    "Kmt5b:E005"
+  ],
+  "source_claims": [
+    {
+      "claim_id": "claim:kmt5b_f001_e85bbde42b1c",
+      "finding_id": "F001",
+      "gene": "Kmt5b",
+      "role": "member"
+    },
+    {
+      "claim_id": "claim:kmt5b_f003_b1ddeaf7748e",
+      "finding_id": "F003",
+      "gene": "Kmt5b",
+      "role": "peripheral"
+    }
+  ],
+  "source_references": [
+    {
+      "citation": "Reactome reactions R-HSA-5651654 and R-HSA-5651657, Histone H4K20 methylation by SUV420H1/KMT5B and SUV420H2/KMT5C.",
+      "description": "Places KMT5B/SUV420H1 in nucleoplasmic H4K20 di- and tri-methylation with KMT5C/SUV420H2 and distinguishes this from SETD8/KMT5A-mediated H4K20 monomethylation.",
+      "ref_id": "R001",
+      "ref_slug": "reactome_h4k20_kmt5b",
+      "source": "Reactome ContentService",
+      "source_type": "database",
+      "target_gene": "Kmt5b",
+      "url": "https://reactome.org/content/detail/R-HSA-5651654"
+    },
+    {
+      "citation": "Eliyahu A, Barel O, Greenbaum L, et al. Refining the Phenotypic Spectrum of KMT5B-Associated Developmental Delay. Front Pediatr. 2022;10:844845. doi:10.3389/fped.2022.844845.",
+      "description": "Reports de novo KMT5B variants in patients with developmental delay or intellectual disability and macrocephaly, and reviews KMT5B associations with neurodevelopmental delay, seizures, and autism spectrum disorder.",
+      "ref_id": "R002",
+      "ref_slug": "eliyahu_2022_kmt5b_developmental_delay",
+      "source": "Frontiers in Pediatrics",
+      "source_type": "pubmed",
+      "target_gene": "Kmt5b",
+      "url": "https://doi.org/10.3389/fped.2022.844845"
+    },
+    {
+      "citation": "Wang ZJ, Rein B, Zhong P, Williams J, Cao Q, Yang F, Zhang F, Ma K, Yan Z. Autism risk gene KMT5B deficiency in prefrontal cortex induces synaptic dysfunction and social deficits via alterations of DNA repair and gene transcription. Neuropsychopharmacology. 2021;46:1617-1626. doi:10.1038/s41386-021-01029-y.",
+      "description": "Mouse prefrontal Kmt5b knockdown caused social deficits, impaired glutamatergic synaptic transmission, reduced synaptic glutamate-receptor-associated proteins, and up-regulated cellular-stress and ubiquitin-dependent protein-degradation transcripts.",
+      "ref_id": "R003",
+      "ref_slug": "wang_2021_kmt5b_pfc",
+      "source": "Neuropsychopharmacology",
+      "source_type": "pubmed",
+      "target_gene": "Kmt5b",
+      "url": "https://doi.org/10.1038/s41386-021-01029-y"
+    },
+    {
+      "citation": "Paulsen B, Velasco S, et al. Autism genes converge on asynchronous development of shared neuron classes. Nature. 2022;602:268-273. doi:10.1038/s41586-021-04358-6.",
+      "description": "Human cortical-organoid study reporting that haploinsufficiency of SUV420H1/KMT5B, ARID1B, and CHD8 produced cell-type-specific asynchronous development of GABAergic neurons and deep-layer excitatory projection neurons.",
+      "ref_id": "R004",
+      "ref_slug": "paulsen_2022_asd_organoids_kmt5b_arid1b_chd8",
+      "source": "Nature",
+      "source_type": "pubmed",
+      "target_gene": "Kmt5b",
+      "url": "https://doi.org/10.1038/s41586-021-04358-6"
+    },
+    {
+      "citation": "STRING enrichment API, Mus musculus query of the 31 nominal p<0.001 genes from the 151 TH Prkcd Grin2c Kmt5b signature, performed for this analysis.",
+      "description": "Annotated the 151 TH Prkcd Grin2c Kmt5b nominal gene list as enriched for GO:0098794 postsynapse, GO:0005791 rough endoplasmic reticulum, and translation-initiation keywords.",
+      "ref_id": "R005",
+      "ref_slug": "string_kmt5b_151_enrichment",
+      "source": "STRING enrichment API",
+      "source_type": "database",
+      "target_gene": "Kmt5b",
+      "url": "https://string-db.org/"
+    },
+    {
+      "citation": "ChEMBL target CHEMBL2321645, Histone-lysine N-methyltransferase KMT5B, with activity and mechanism queries performed for this analysis.",
+      "description": "Identified human KMT5B as a biochemical assay target with 83 reported activity records and no registered ChEMBL drug mechanism for KMT5B.",
+      "ref_id": "R006",
+      "ref_slug": "chembl_kmt5b_target",
+      "source": "ChEMBL",
+      "source_type": "database",
+      "target_gene": "Kmt5b",
+      "url": "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL2321645/"
+    },
+    {
+      "citation": "Open Targets Platform target ENSG00000110066, KMT5B associated-disease records, queried for this analysis.",
+      "description": "Ranked intellectual disability autosomal dominant 51 as the top KMT5B-associated disease and listed autism spectrum disorder among associated phenotypes.",
+      "ref_id": "R007",
+      "ref_slug": "opentargets_kmt5b_diseases",
+      "source": "Open Targets Platform",
+      "source_type": "database",
+      "target_gene": "Kmt5b",
+      "url": "https://platform.opentargets.org/target/ENSG00000110066/associations"
+    }
+  ],
+  "source_urls_or_dois": [
+    "https://doi.org/10.1038/s41386-021-01029-y",
+    "https://doi.org/10.1038/s41586-021-04358-6",
+    "https://doi.org/10.3389/fped.2022.844845",
+    "https://platform.opentargets.org/target/ENSG00000110066/associations",
+    "https://reactome.org/content/detail/R-HSA-5651654",
+    "https://string-db.org/",
+    "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL2321645/"
+  ],
+  "status": "grounded",
+  "story_id": "S075",
+  "support": [
+    {
+      "exact_de_rows": [
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Kmt5b",
+          "gene_target": "Kmt5b",
+          "log2fc": 0.26929771900177,
+          "pval": 0.09647338839044585,
+          "score": 1.6621965169906616
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.0012100542717389854,
+          "gene": "Ache",
+          "gene_target": "Kmt5b",
+          "log2fc": 0.46907544136047363,
+          "pval": 7.011149381418305e-08,
+          "score": 5.390884876251221
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.02247411278747983,
+          "gene": "Syngap1",
+          "gene_target": "Kmt5b",
+          "log2fc": 0.2935725748538971,
+          "pval": 4.366457393327701e-06,
+          "score": 4.593130588531494
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.032115452777166265,
+          "gene": "Grik1",
+          "gene_target": "Kmt5b",
+          "log2fc": 0.5586957931518555,
+          "pval": 9.303972645334685e-06,
+          "score": 4.432747840881348
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.05158321697443955,
+          "gene": "Nlgn2",
+          "gene_target": "Kmt5b",
+          "log2fc": 0.31595003604888916,
+          "pval": 1.7932632356836277e-05,
+          "score": 4.289189338684082
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.5315111084558155,
+          "gene": "Rab3a",
+          "gene_target": "Kmt5b",
+          "log2fc": 0.26428914070129395,
+          "pval": 0.0008967421400951907,
+          "score": 3.321066379547119
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.5315111084558155,
+          "gene": "Rab3gap2",
+          "gene_target": "Kmt5b",
+          "log2fc": 0.3325567841529846,
+          "pval": 0.0009546812887264779,
+          "score": 3.3035523891448975
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.17653587346284805,
+          "gene": "Eif4e",
+          "gene_target": "Kmt5b",
+          "log2fc": 0.3621518611907959,
+          "pval": 0.00010228627004047051,
+          "score": 3.885103464126587
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.5315111084558155,
+          "gene": "Eif4g3",
+          "gene_target": "Kmt5b",
+          "log2fc": 0.16955332458019257,
+          "pval": 0.0009011430597773281,
+          "score": 3.319699764251709
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.5315111084558155,
+          "gene": "Eif2a",
+          "gene_target": "Kmt5b",
+          "log2fc": -0.4422203600406647,
+          "pval": 0.0008608906768852034,
+          "score": -3.3324365615844727
+        }
+      ],
+      "finding": "Kmt5b 151 synaptic module"
+    },
+    {
+      "exact_de_rows": [
+        {
+          "cell_type": "155 MB Glut",
+          "fdr": 1.0,
+          "gene": "Kmt5b",
+          "gene_target": "Kmt5b",
+          "log2fc": -0.03294627368450165,
+          "pval": 0.7878638060298288,
+          "score": -0.2690856158733368
+        },
+        {
+          "cell_type": "155 MB Glut",
+          "fdr": 1.0,
+          "gene": "Ache",
+          "gene_target": "Kmt5b",
+          "log2fc": 0.25939834117889404,
+          "pval": 0.0018928566624551604,
+          "score": 3.1065478324890137
+        },
+        {
+          "cell_type": "155 MB Glut",
+          "fdr": 1.0,
+          "gene": "Syngap1",
+          "gene_target": "Kmt5b",
+          "log2fc": -0.06170114874839783,
+          "pval": 0.4388311543479384,
+          "score": -0.7741684913635254
+        },
+        {
+          "cell_type": "155 MB Glut",
+          "fdr": 1.0,
+          "gene": "Grik1",
+          "gene_target": "Kmt5b",
+          "log2fc": 0.06230136379599571,
+          "pval": 0.6626120392399292,
+          "score": 0.43630969524383545
+        },
+        {
+          "cell_type": "155 MB Glut",
+          "fdr": 1.0,
+          "gene": "Nlgn2",
+          "gene_target": "Kmt5b",
+          "log2fc": 0.20954829454421997,
+          "pval": 0.002426745800689376,
+          "score": 3.0323288440704346
+        }
+      ],
+      "finding": "155 MB power-matched boundary"
+    }
+  ],
+  "targets": [
+    "Kmt5b"
+  ],
+  "title": "Kmt5b perturbation induces a narrow thalamic synaptic RNA module"
+}

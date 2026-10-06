@@ -1,0 +1,356 @@
+{
+  "biological_interpretation": "Reduced CUL3 scaffold activity exposes a cell-restricted nuclear RNA-processing signature that is not reproduced by loss of the individual KLHL7 adaptor.",
+  "caveats": [
+    "The 151 TH arm is weak at 5% FDR.",
+    "The data rule out KLHL7 as a transcriptomic phenocopy, not all possible CUL3 substrate adaptors."
+  ],
+  "cell_types": [
+    "155 MB Glut",
+    "151 TH Prkcd Grin2c Glut"
+  ],
+  "exact_observed_result": "Cul3 knockdown produced small but corrected 155 MB Glut and 151 TH Prkcd Grin2c Glut responses with Pnisr/Rsrp1/Snhg11/Srsf5 low and Akap11/Trim28 high in 155 MB Glut; Klhl7 did not align with those Cul3 signatures.",
+  "preliminary_scores": {
+    "novelty": 4,
+    "priority": 3,
+    "support": 4
+  },
+  "prior_expectation": {
+    "citations": [
+      {
+        "ref": "Dong et al. 2020",
+        "supports": "Cul3 deficiency alters neuronal excitation-inhibition and cap-dependent translation",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/31780330/"
+      },
+      {
+        "ref": "Kigoshi et al. 2011",
+        "supports": "KLHL7 assembles with CUL3 as a substrate adaptor",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/21828050/"
+      }
+    ],
+    "summary": "Prior expectation is grounded by the listed traceable corpus citations; direct prior support for the exact cell-type/state relationship is partial unless noted in the caveats."
+  },
+  "reference_ids": [
+    "Cul3:R001",
+    "Cul3:R004",
+    "Cul3:R006",
+    "Klhl7:R001",
+    "Klhl7:R002"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Cul3:E001",
+    "Cul3:E002",
+    "Cul3:E003",
+    "Klhl7:E005",
+    "Klhl7:E006"
+  ],
+  "source_urls_or_dois": [
+    {
+      "ref": "Dong et al. 2020",
+      "supports": "Cul3 deficiency alters neuronal excitation-inhibition and cap-dependent translation",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/31780330/"
+    },
+    {
+      "ref": "Kigoshi et al. 2011",
+      "supports": "KLHL7 assembles with CUL3 as a substrate adaptor",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/21828050/"
+    }
+  ],
+  "status": "grounded",
+  "story_id": "S083",
+  "support": {
+    "exact_de_rows": [
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Cul3",
+        "log2_fold_change": -0.788651,
+        "pval": 1.7358552000524537e-06,
+        "pvals_adj": 0.015139261127257475,
+        "score": -4.78197,
+        "target": "Cul3"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Akap11",
+        "log2_fold_change": 0.715555,
+        "pval": 1.5112987798320095e-06,
+        "pvals_adj": 0.015139261127257475,
+        "score": 4.809736,
+        "target": "Cul3"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Pnisr",
+        "log2_fold_change": -0.383674,
+        "pval": 0.00012759064445505924,
+        "pvals_adj": 0.2781954514036998,
+        "score": -3.831063,
+        "target": "Cul3"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Rsrp1",
+        "log2_fold_change": -0.428109,
+        "pval": 9.300616898199794e-06,
+        "pvals_adj": 0.04047247932373486,
+        "score": -4.432826,
+        "target": "Cul3"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Snhg11",
+        "log2_fold_change": -0.274055,
+        "pval": 1.1601352784422077e-05,
+        "pvals_adj": 0.04047247932373486,
+        "score": -4.384948,
+        "target": "Cul3"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Srsf5",
+        "log2_fold_change": -0.499679,
+        "pval": 6.07197058925314e-06,
+        "pvals_adj": 0.035304460996114166,
+        "score": -4.523868,
+        "target": "Cul3"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Trim28",
+        "log2_fold_change": 1.132668,
+        "pval": 1.6191204023804183e-05,
+        "pvals_adj": 0.04707052863120272,
+        "score": 4.311826,
+        "target": "Cul3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Cul3",
+        "log2_fold_change": -0.408325,
+        "pval": 0.0013297003775045654,
+        "pvals_adj": 0.6556942518671799,
+        "score": -3.209491,
+        "target": "Cul3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Pnisr",
+        "log2_fold_change": -0.32955,
+        "pval": 2.800287323378449e-06,
+        "pvals_adj": 0.04833015891418865,
+        "score": -4.68495,
+        "target": "Cul3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Rsrp1",
+        "log2_fold_change": -0.228854,
+        "pval": 1.232836652567307e-05,
+        "pvals_adj": 0.07092509262219716,
+        "score": -4.371698,
+        "target": "Cul3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Snhg11",
+        "log2_fold_change": -0.184049,
+        "pval": 1.8018996998819998e-05,
+        "pvals_adj": 0.0727996403036077,
+        "score": -4.288122,
+        "target": "Cul3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Akap11",
+        "log2_fold_change": 0.196633,
+        "pval": 0.13276287216542507,
+        "pvals_adj": 1.0,
+        "score": 1.503295,
+        "target": "Cul3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Trim28",
+        "log2_fold_change": 0.018834,
+        "pval": 0.9303037388127622,
+        "pvals_adj": 1.0,
+        "score": -0.087463,
+        "target": "Cul3"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Klhl7",
+        "log2_fold_change": -0.38826,
+        "pval": 0.0010592680429739848,
+        "pvals_adj": 1.0,
+        "score": -3.274293,
+        "target": "Klhl7"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Cul3",
+        "log2_fold_change": -0.120215,
+        "pval": 0.5277353019673177,
+        "pvals_adj": 1.0,
+        "score": -0.631467,
+        "target": "Klhl7"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Akap11",
+        "log2_fold_change": 0.081925,
+        "pval": 0.2629463080404072,
+        "pvals_adj": 1.0,
+        "score": 1.119455,
+        "target": "Klhl7"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Pnisr",
+        "log2_fold_change": 0.005122,
+        "pval": 0.7640987138120188,
+        "pvals_adj": 1.0,
+        "score": 0.300103,
+        "target": "Klhl7"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Rsrp1",
+        "log2_fold_change": -0.035752,
+        "pval": 0.18175004887310486,
+        "pvals_adj": 1.0,
+        "score": -1.335386,
+        "target": "Klhl7"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Snhg11",
+        "log2_fold_change": 0.015649,
+        "pval": 0.6796615011686219,
+        "pvals_adj": 1.0,
+        "score": 0.412925,
+        "target": "Klhl7"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Srsf5",
+        "log2_fold_change": -0.034998,
+        "pval": 0.935266800007918,
+        "pvals_adj": 1.0,
+        "score": -0.08122,
+        "target": "Klhl7"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Trim28",
+        "log2_fold_change": -0.029011,
+        "pval": 0.6586615022636129,
+        "pvals_adj": 1.0,
+        "score": -0.441762,
+        "target": "Klhl7"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Klhl7",
+        "log2_fold_change": -0.307071,
+        "pval": 0.003405734801768688,
+        "pvals_adj": 1.0,
+        "score": -2.928526,
+        "target": "Klhl7"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Cul3",
+        "log2_fold_change": -0.025339,
+        "pval": 0.4279019807630784,
+        "pvals_adj": 1.0,
+        "score": -0.792787,
+        "target": "Klhl7"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Pnisr",
+        "log2_fold_change": -0.078121,
+        "pval": 0.1358833076445423,
+        "pvals_adj": 1.0,
+        "score": -1.491298,
+        "target": "Klhl7"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Rsrp1",
+        "log2_fold_change": -0.06353,
+        "pval": 0.12252117916977558,
+        "pvals_adj": 1.0,
+        "score": -1.544277,
+        "target": "Klhl7"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Snhg11",
+        "log2_fold_change": -0.037279,
+        "pval": 0.06205996181723677,
+        "pvals_adj": 1.0,
+        "score": -1.865867,
+        "target": "Klhl7"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Srsf5",
+        "log2_fold_change": 0.065238,
+        "pval": 0.152670944248663,
+        "pvals_adj": 1.0,
+        "score": 1.430161,
+        "target": "Klhl7"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Trim28",
+        "log2_fold_change": -0.191007,
+        "pval": 0.3235109488069531,
+        "pvals_adj": 1.0,
+        "score": -0.987269,
+        "target": "Klhl7"
+      }
+    ],
+    "summary": [
+      "Only two Cul3 classes had FDR<0.05 genes: six rows in 155 MB Glut and Pnisr in 151 TH.",
+      "Klhl7-Cul3 correlations were near zero in both responsive classes."
+    ]
+  },
+  "targets": [
+    "Cul3",
+    "Klhl7",
+    "Klhl20",
+    "Rhobtb2"
+  ],
+  "title": "CUL3 loss depresses a nuclear RNA-processing module in midbrain and thalamic neurons"
+}

@@ -1,0 +1,5 @@
+{
+  "method": "distributed_agents",
+  "replicate": 2,
+  "task": "depletion"
+}

@@ -1,0 +1,235 @@
+{
+  "biological_interpretation": "The result is a narrow thalamic cytoskeletal-output hypothesis for KLF7 perturbation rather than full recovery of the developmental TrkA/CDKN/Rac3 program.",
+  "caveats": [
+    "Klf7 mRNA was never FDR-significantly depleted, and only Tuba1a reached FDR < 0.05 among downstream rows.",
+    "This is the weakest retained story in the packet and should be treated as Support=3."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut"
+  ],
+  "exact_observed_result": "Klf7 perturbation generated one corrected hit in 151 TH Prkcd Grin2c Glut, Tuba1a down, with several additional projection/cytoskeletal genes including Coro1a, Sptan1, Stmn2, Map1b, Map6 and Dctn1 directionally lower at weaker significance; Ntrk1, Cdkn1a, Cdkn1b and Rac3 were not FDR-supported.",
+  "preliminary_scores": {
+    "novelty": 4,
+    "priority": 3,
+    "support": 3
+  },
+  "prior_expectation": {
+    "citations": [
+      "Laub F, Aldabe R, Friedrich V, Ohnishi S, Yoshida T, Ramirez F. Developmental expression of mouse Kr\u00fcppel-like transcription factor KLF7 suggests a potential role in neurogenesis. Developmental Biology. 2001;233(2):305-318.",
+      "Laub F, Lei L, Sumiyoshi H, Kajimura D, Dragomir C, et al. Transcription factor KLF7 is important for neuronal morphogenesis in selected regions of the nervous system. Molecular and Cellular Biology. 2005;25(13):5699-5711."
+    ],
+    "summary": "Prior work supports the broad molecular function of the perturbed target or complex, while the atlas result refines the affected brain cell type and RNA-output module."
+  },
+  "reference_ids": [
+    "Klf7:R003",
+    "Klf7:R004"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Klf7:E001",
+    "Klf7:E002",
+    "Klf7:E004"
+  ],
+  "source_claim_ids": [
+    "claim:klf7_f001_f4f2605e2ed0"
+  ],
+  "source_cluster_ids": [
+    "C096"
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/11336497/",
+    "https://pubmed.ncbi.nlm.nih.gov/15964824/"
+  ],
+  "status": "grounded",
+  "story_id": "S109",
+  "support": {
+    "exact_de_rows": [
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 1.0,
+        "fdr_significant": false,
+        "gene": "Klf7",
+        "log2_fold_change": -0.059056,
+        "p_value": 0.6199122420504827,
+        "score": -0.495975,
+        "target": "Klf7"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.012269437549581486,
+        "fdr_significant": true,
+        "gene": "Tuba1a",
+        "log2_fold_change": -0.280673,
+        "p_value": 7.109008372200872e-07,
+        "score": -4.958362,
+        "target": "Klf7"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.052635830902085866,
+        "fdr_significant": false,
+        "gene": "Coro1a",
+        "log2_fold_change": -0.432027,
+        "p_value": 6.44781500258361e-06,
+        "score": -4.511147,
+        "target": "Klf7"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.09016112000972683,
+        "fdr_significant": false,
+        "gene": "Sptan1",
+        "log2_fold_change": -0.135107,
+        "p_value": 3.2811011421055116e-05,
+        "score": -4.153024,
+        "target": "Klf7"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.1801345211014434,
+        "fdr_significant": false,
+        "gene": "Stmn2",
+        "log2_fold_change": -0.247965,
+        "p_value": 0.00011480849018575104,
+        "score": -3.856955,
+        "target": "Klf7"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.4641159522698093,
+        "fdr_significant": false,
+        "gene": "Map1b",
+        "log2_fold_change": -0.19305,
+        "p_value": 0.0004571511204928882,
+        "score": -3.504683,
+        "target": "Klf7"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.689612893697611,
+        "fdr_significant": false,
+        "gene": "Map6",
+        "log2_fold_change": -0.219639,
+        "p_value": 0.0007842445724676083,
+        "score": -3.358296,
+        "target": "Klf7"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.7476471851159603,
+        "fdr_significant": false,
+        "gene": "Dctn1",
+        "log2_fold_change": -0.139133,
+        "p_value": 0.0010729831912362933,
+        "score": -3.270656,
+        "target": "Klf7"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 1.0,
+        "fdr_significant": false,
+        "gene": "Ntrk1",
+        "log2_fold_change": -20.23382,
+        "p_value": 0.9498973187973427,
+        "score": -0.062836,
+        "target": "Klf7"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 1.0,
+        "fdr_significant": false,
+        "gene": "Cdkn1a",
+        "log2_fold_change": -0.481969,
+        "p_value": 0.7941480955636441,
+        "score": -0.260928,
+        "target": "Klf7"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "up",
+        "fdr": 1.0,
+        "fdr_significant": false,
+        "gene": "Cdkn1b",
+        "log2_fold_change": 0.092918,
+        "p_value": 0.36931750065779934,
+        "score": 0.897753,
+        "target": "Klf7"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 1.0,
+        "fdr_significant": false,
+        "gene": "Rac3",
+        "log2_fold_change": -0.136352,
+        "p_value": 0.3201454626628779,
+        "score": -0.994159,
+        "target": "Klf7"
+      }
+    ],
+    "resolved_evidence": [
+      {
+        "cell_type": "",
+        "description": "On-target Klf7 mRNA depletion was weak after multiple-testing correction across the assayed mouse-brain cell types.",
+        "evidence_id": "E001",
+        "evidence_slug": "klf7_target_transcript_all_cell_types",
+        "genes": "Klf7",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "1",
+        "statistics": "Klf7 transcript rows were present in 22 Klf7 perturbation signatures; 16/22 logFC values were negative; median logFC -0.106; strongest decrease was in 066 CNU-HYa HY GABA with logFC -0.893, score -3.474, nominal p=5.12e-4, FDR=1.0; no Klf7 target-transcript row had FDR<0.1.",
+        "target_gene": "Klf7"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "The thalamic Prkcd/Grin2c glutamatergic class was the only Klf7 context with FDR-supported genes.",
+        "evidence_id": "E002",
+        "evidence_slug": "klf7_151_th_strongest_corrected_response",
+        "genes": "Tuba1a|Slc22a17|Coro1a|Flot1|Ahnak2|Sptan1|Rgs11|Pgm2l1",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "8",
+        "statistics": "200 perturbed cells versus 23679 controls; 17259 genes tested; 1 gene at FDR<0.05, 8 genes at FDR<0.1, and 20 genes at nominal p<0.001. Tuba1a score -4.958, logFC -0.281, p=7.11e-7, FDR=0.0123.",
+        "target_gene": "Klf7"
+      },
+      {
+        "cell_type": "",
+        "description": "Klf7 effects were not broadly detected at corrected significance across the other assayed brain cell types.",
+        "evidence_id": "E004",
+        "evidence_slug": "klf7_other_cell_types_no_corrected_response",
+        "genes": "",
+        "has_cell_type": "0",
+        "has_genes": "0",
+        "n_genes": "0",
+        "statistics": "The 21 non-151 Klf7 cell types had zero FDR<0.1 genes; their perturbation counts ranged from 26 to 165 cells and the best adjusted p value outside 151 was 0.1969 in 001 L5-6 IT Glut.",
+        "target_gene": "Klf7"
+      }
+    ],
+    "support_note": "Exact log2 fold changes, p-values, and FDRs in exact_de_rows were re-read from the Wilcoxon Parquet for this grounding pass; score-vector correlations and perturbed/control cell counts are resolved from the structured report evidence."
+  },
+  "targets": [
+    "Klf7",
+    "Tuba1a",
+    "Coro1a",
+    "Sptan1",
+    "Stmn2",
+    "Map1b",
+    "Map6",
+    "Dctn1",
+    "Ntrk1",
+    "Cdkn1a",
+    "Cdkn1b",
+    "Rac3"
+  ],
+  "title": "Klf7 loss downshifts a thalamic neuronal-projection and cytoskeletal module"
+}

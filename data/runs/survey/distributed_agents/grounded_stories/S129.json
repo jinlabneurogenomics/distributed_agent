@@ -1,0 +1,39 @@
+{
+  "story_id": "S129",
+  "title": "Hnrnph2 loss couples Rsrp1 repression to TCA-gene induction in thalamic glutamatergic neurons",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Hnrnph2 perturbation generated only six FDR<0.05 rows across 22 cell types. In 151 TH Prkcd/Grin2c, Hnrnph2 and Rsrp1 were repressed while Idh3g and Ogdh were induced; Hnrnph1, Hnrnpf, Hnrnph3, and Grsf1 had FDR=1.0 in all 88 measured rows.",
+  "biological_interpretation": "The acute Hnrnph2 state is a thalamic RNA-processing/TCA marker response rather than a paralog-compensation state like chronic knockout models that up-regulate Hnrnph1.",
+  "targets": ["Hnrnph2", "Rsrp1", "Idh3g", "Ogdh", "Timm44", "Hnrnph1", "Hnrnpf", "Hnrnph3", "Grsf1"],
+  "cell_types": ["151 TH Prkcd Grin2c Glut", "145 MH-LH TH Glut", "155 MB Glut", "052 Pvalb Gaba"],
+  "support": [
+    {
+      "evidence_id": "Hnrnph2:E003;Hnrnph2:E006;Hnrnph2:E005",
+      "description": "The thalamic driver rows and paralog null rows are exact; Pvalb was nominally depleted but FDR-buffered.",
+      "exact_de_rows": [
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Hnrnph2", "gene": "Rsrp1", "logfoldchanges": -0.302, "pvals": null, "pvals_adj": 3.62e-09},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Hnrnph2", "gene": "Hnrnph2", "logfoldchanges": -0.733, "pvals": 1.78e-08, "pvals_adj": 0.000102},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Hnrnph2", "gene": "Idh3g", "logfoldchanges": 0.305, "pvals": null, "pvals_adj": 7.08e-05},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Hnrnph2", "gene": "Ogdh", "logfoldchanges": 0.304, "pvals": null, "pvals_adj": 0.0240},
+        {"cell_type": "052 Pvalb Gaba", "gene_target": "Hnrnph2", "gene": "Hnrnph2", "logfoldchanges": -0.870, "pvals": 1.48e-05, "pvals_adj": 0.248},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Hnrnph2", "gene": "Hnrnph1", "logfoldchanges": 0.117, "pvals": 0.211, "pvals_adj": 1.0}
+      ]
+    }
+  ],
+  "caveats": [
+    "The full FDR landscape is extremely sparse and the Pvalb target row did not survive FDR.",
+    "The Rsrp1/TCA coupling is a marker observation; it does not establish that Rsrp1 controls the TCA genes."
+  ],
+  "prior_expectation": {
+    "summary": "HNRNPH2 is an RNA-binding splicing regulator implicated in neurodevelopmental disease; a chronic mouse knockout model reported Hnrnph1 genetic compensation that was absent after this acute perturbation.",
+    "citations": [
+      {"reference_id": "Hnrnph2:R004", "citation": "Bain et al., American Journal of Human Genetics, 2016.", "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/27545675/"},
+      {"reference_id": "Hnrnph2:R006", "citation": "Korff et al., Journal of Clinical Investigation, 2023.", "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/37463454/"}
+    ]
+  },
+  "preliminary_scores": {"novelty": 4, "support": 4, "priority": 3},
+  "report_evidence_ids": ["Hnrnph2:E001", "Hnrnph2:E002", "Hnrnph2:E003", "Hnrnph2:E005", "Hnrnph2:E006"],
+  "reference_ids": ["Hnrnph2:R001", "Hnrnph2:R003", "Hnrnph2:R004", "Hnrnph2:R005", "Hnrnph2:R006", "Hnrnph2:R007"],
+  "source_urls_or_dois": ["https://pubmed.ncbi.nlm.nih.gov/27545675/", "https://pubmed.ncbi.nlm.nih.gov/37463454/", "https://pubmed.ncbi.nlm.nih.gov/37042074/", "https://string-db.org/"]
+}

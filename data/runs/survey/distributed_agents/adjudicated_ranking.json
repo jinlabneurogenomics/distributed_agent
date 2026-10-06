@@ -1,0 +1,2425 @@
+{
+  "candidate_count": 144,
+  "method": "Global scientific adjudication under the exact live rubric and atlas context card: disagreements routed direct grounded-story rereads; preliminary scores were ignored; self-transcript FDR was not used as an engagement gate; power correction constrained specificity rather than penalizing positive 151/155 findings; eligible stories were ordered by Priority, then Support, then Novelty, with biological consequence used for ties.",
+  "ranked": [
+    {
+      "rank": 1,
+      "story_id": "S144",
+      "novelty_score": 5,
+      "support_score": 4,
+      "priority_score": 5,
+      "evidence_gate": "eligible",
+      "power_assessment": "CYP46A1 repression recurs in 151, 155, and 191, with sterol induction in lower-yield 145/191; self-RNA FDR is not used as an engagement gate.",
+      "adjudication_reason": "A recurrent NAA20–CYP46A1 relationship plus compensatory sterol transcription creates the only agenda-level bridge between NatB disease and brain cholesterol turnover.",
+      "priority_5_consequence": "If validated, a NatB–CYP46A1–24S-hydroxycholesterol axis would recast NAA20 neurodevelopmental disease around brain sterol turnover and seed linked acetylome, lipid-flux, circuit, and therapeutic programs.",
+      "ranker_ranks": {
+        "A": 31,
+        "B": 3,
+        "C": 3
+      }
+    },
+    {
+      "rank": 2,
+      "story_id": "S137",
+      "novelty_score": 5,
+      "support_score": 4,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "The MATR3 core recurs in cortical 005, 151, 155, and 191, so the positive program does not depend solely on the two dominant contexts.",
+      "adjudication_reason": "A recurrent MATR3 program that positive TDP-43 and FUS states do not reproduce defines a distinct ALS/RBP mechanism rather than generic RBP stress.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 7,
+        "B": 27,
+        "C": 2
+      }
+    },
+    {
+      "rank": 3,
+      "story_id": "S032",
+      "novelty_score": 4,
+      "support_score": 4,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "Opposite sterol directions are positively observed across midbrain/hypothalamic, thalamic, and cortical contexts; the reversal, not contextual silence, supports the claim.",
+      "adjudication_reason": "A replicated context-dependent reversal of PP2A-linked sterol output is mechanistically sharper and more consequential than a generic cholesterol program.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 3,
+        "B": 9,
+        "C": 8
+      }
+    },
+    {
+      "rank": 4,
+      "story_id": "S005",
+      "novelty_score": 4,
+      "support_score": 4,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "Two physical AP-2 subunits show positive convergence within matched contexts, with additional cortical and midbrain branches; null contexts are not used for specificity.",
+      "adjudication_reason": "Two AP-2 subunits connect endocytic failure to TFRC, sterol, and excitability outputs, supporting a tractable neuronal iron–lipid program.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 13,
+        "B": 6,
+        "C": 5
+      }
+    },
+    {
+      "rank": 5,
+      "story_id": "S101",
+      "novelty_score": 4,
+      "support_score": 4,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "Independent UFMylation E1 and E2 perturbations show positive convergence in 151/155, with narrower posterior support; concentration in dominant contexts is not penalized.",
+      "adjudication_reason": "E1/E2 convergence defines a pathway-specific UFMylation state linking severe neurodevelopmental disease to DDIT3 and V-ATPase output.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 5,
+        "B": 10,
+        "C": 21
+      }
+    },
+    {
+      "rank": 6,
+      "story_id": "S022",
+      "novelty_score": 4,
+      "support_score": 4,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "The evidence is recurrent sterol induction plus opposite direct Srebf2 polarity in responsive contexts; absence in lower-yield groups is not treated as specificity.",
+      "adjudication_reason": "CHP1 loss repeatedly opposes direct SREBF2 loss on a canonical module, yielding a sharp lipid-homeostasis mechanism rather than a burden-based finding.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 10,
+        "B": 5,
+        "C": 47
+      }
+    },
+    {
+      "rank": 7,
+      "story_id": "S067",
+      "novelty_score": 4,
+      "support_score": 4,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "PGK1 and GAPDH show positive convergence in 151 and OGT decreases in lower-yield 145; metabolic flux remains unmeasured.",
+      "adjudication_reason": "Adjacent glycolytic perturbations converge on OGT and nuclear-speckle genes, opening a specific metabolism-to-RNA-processing mechanism.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 4,
+        "B": 67,
+        "C": 53
+      }
+    },
+    {
+      "rank": 8,
+      "story_id": "S019",
+      "novelty_score": 4,
+      "support_score": 4,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "Distinct positive STXBP1 outputs are observed in cortical 005, 155, and lower-yield 052; silence in other contexts is not treated as buffering.",
+      "adjudication_reason": "Distinct positive STXBP1 programs reveal class-dependent presynaptic stress outputs and provide a strong basis for disease-mechanism work.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 59,
+        "B": 13,
+        "C": 7
+      }
+    },
+    {
+      "rank": 9,
+      "story_id": "S078",
+      "novelty_score": 4,
+      "support_score": 4,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "The relationship is resolved in 151 through positive convergence of two phosphatidylethanolamine-pathway perturbations; 151 concentration is not a flaw.",
+      "adjudication_reason": "Two phosphatidylethanolamine-pathway nodes converge on SREBP output while PCYT2 adds a peptide-processing branch, providing clear mechanistic leverage.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 41,
+        "B": 14,
+        "C": 10
+      }
+    },
+    {
+      "rank": 10,
+      "story_id": "S102",
+      "novelty_score": 4,
+      "support_score": 4,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "Positive TBR1 effects occur in several cortical projection classes outside 151/155; small programs and unequal sampling constrain breadth claims.",
+      "adjudication_reason": "A mature TBR1 regulon outside neonatal fate targets opens focused adult projection-neuron and neurodevelopmental studies.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 23,
+        "B": 88,
+        "C": 11
+      }
+    },
+    {
+      "rank": 11,
+      "story_id": "S110",
+      "novelty_score": 4,
+      "support_score": 4,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive core recurs in 191 as well as 151/155, although response burden covaries with perturbed-cell count and does not prove intrinsic selectivity.",
+      "adjudication_reason": "A recurrent ZBTB11 mitochondrial/nucleolar/glycan core connects a human disease gene to a coherent neuronal liability state.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 24,
+        "B": 21,
+        "C": 12
+      }
+    },
+    {
+      "rank": 12,
+      "story_id": "S142",
+      "novelty_score": 4,
+      "support_score": 4,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "Shared PURA-associated Igip/Ogt/Nefl changes are positively observed in 151/155; the claim is restricted to those contexts and retains the Igip cis alternative.",
+      "adjudication_reason": "PURA perturbation reproducibly remodels neurofilament-associated transcripts; explicitly retaining the cis alternative keeps the interpretation sound.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 15,
+        "B": 57,
+        "C": 42
+      }
+    },
+    {
+      "rank": 13,
+      "story_id": "S056",
+      "novelty_score": 4,
+      "support_score": 4,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "Large positive WDR26 programs occur in cerebellar GABA, 155, 191, and 066; self-transcript FDR is not used as a functional engagement scalar.",
+      "adjudication_reason": "A large, recurrent WDR26 posterior/cerebellar state links a syndromic disease gene to RNA-processing and excitability liability without relying on self-RNA loss.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 34,
+        "B": 23,
+        "C": 27
+      }
+    },
+    {
+      "rank": 14,
+      "story_id": "S038",
+      "novelty_score": 4,
+      "support_score": 4,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "Four BAF/core perturbations show positive convergence within 151; this within-context relationship is not penalized for occurring in a dominant context.",
+      "adjudication_reason": "Multiple BAF/core subunits converge on a mature-neuron output, a strong positive relational finding despite absent occupancy measurements.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 40,
+        "B": 30,
+        "C": 32
+      }
+    },
+    {
+      "rank": 15,
+      "story_id": "S105",
+      "novelty_score": 4,
+      "support_score": 4,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "NIPBL, SMC1A, and STAG2 show positive convergence within 151; negative cohesin comparisons are treated as boundaries, not proof of non-function.",
+      "adjudication_reason": "Positive cohesin-loader/ring convergence creates a specific mature-neuronal cohesinopathy program rather than a generic large-DEG story.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 36,
+        "B": 33,
+        "C": 38
+      }
+    },
+    {
+      "rank": 16,
+      "story_id": "S072",
+      "novelty_score": 4,
+      "support_score": 4,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "Protocadherin/Atf7ip/Tasor derepression is positively observed in 151/155 with narrower 052 support; absent HUSH-node perturbations limit mechanism, not context concentration.",
+      "adjudication_reason": "A SETDB1-linked HUSH/protocadherin axis could open a major neuronal identity program; missing direct HUSH perturbations prevent Support 5, not selection.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 6,
+        "B": 4,
+        "C": 9
+      }
+    },
+    {
+      "rank": 17,
+      "story_id": "S121",
+      "novelty_score": 4,
+      "support_score": 4,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "Positive RANBP2-associated programs resolve into RNA/nuclear and calcium/synaptic branches in L5 ET and cerebellar GABA, both outside 151/155.",
+      "adjudication_reason": "Distinct positive RANBP2 RNA/nuclear and calcium/synaptic branches create a consequential cell-state bifurcation hypothesis.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 33,
+        "B": 26,
+        "C": 13
+      }
+    },
+    {
+      "rank": 18,
+      "story_id": "S001",
+      "novelty_score": 3,
+      "support_score": 4,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "Most positive evidence is in 151, with limited 155/052 recurrence; the valuable result is the within-context separation of RB1 and E2F4 arms.",
+      "adjudication_reason": "Separable RB1 replication and E2F4 chromosome/repair arms provide a precise adult-neuron cell-cycle liability model despite established pathway precedent.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 55,
+        "B": 18,
+        "C": 14
+      }
+    },
+    {
+      "rank": 19,
+      "story_id": "S017",
+      "novelty_score": 3,
+      "support_score": 4,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "Distinct positive TDP-43 and FUS states recur across 151, 155, and 191; negative ALS comparators only bound the claim.",
+      "adjudication_reason": "Recurrent but separable TDP-43 and FUS abundance states provide useful cell-resolved ALS mechanisms despite the assay’s isoform blind spot.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 18,
+        "B": 12,
+        "C": 16
+      }
+    },
+    {
+      "rank": 20,
+      "story_id": "S070",
+      "novelty_score": 3,
+      "support_score": 4,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "Positive ELP1 responses extend beyond 151, while ELP1-BDP1 convergence is chiefly 151; the tRNA-stress relationship is not penalized for that concentration.",
+      "adjudication_reason": "Elongator and Pol III initiation convergence identifies a neurological tRNA/translation-stress axis rather than generic perturbation burden.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 22,
+        "B": 15,
+        "C": 44
+      }
+    },
+    {
+      "rank": 21,
+      "story_id": "S090",
+      "novelty_score": 3,
+      "support_score": 4,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "Several proteasome nodes show positive convergence in 155 and lower-yield inhibitory contexts; self-transcript FDR is not used as an engagement gate.",
+      "adjudication_reason": "Proteasome recovery coupled to mature-neuronal repression defines a consequential liability state rather than benign feedback alone.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 111,
+        "B": 20,
+        "C": 20
+      }
+    },
+    {
+      "rank": 22,
+      "story_id": "S116",
+      "novelty_score": 3,
+      "support_score": 4,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive ANK3 relationship is resolved in 151 and judged on its biology without penalty; silence elsewhere is not a specificity claim.",
+      "adjudication_reason": "ANK3-associated maintenance of a synaptic/calcium program offers a disease-relevant route from ankyrin-G scaffolding to transcription.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 28,
+        "B": 86,
+        "C": 22
+      }
+    },
+    {
+      "rank": 23,
+      "story_id": "S020",
+      "novelty_score": 5,
+      "support_score": 3,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "CALM1 produces a strong positive 151 program, but CALM3 silence and self-RNA loss do not by themselves establish equivalent functional perturbation.",
+      "adjudication_reason": "The CALM1 program is exceptionally surprising, but CALM3 non-phenocopy remains provisional without a functional perturbation measure, limiting Support to 3.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 9,
+        "B": 41,
+        "C": 1
+      }
+    },
+    {
+      "rank": 24,
+      "story_id": "S139",
+      "novelty_score": 5,
+      "support_score": 3,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "FLNB repression is positively observed in 145, 066, and 052 as well as 151; the recurrence is strong, while editing dependence is unmeasured.",
+      "adjudication_reason": "The robust ADARB1–FLNB relationship is highly novel, but the atlas cannot distinguish editing-dependent, editing-independent, direct, or indirect mechanisms.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 2,
+        "B": 1,
+        "C": 24
+      }
+    },
+    {
+      "rank": 25,
+      "story_id": "S052",
+      "novelty_score": 5,
+      "support_score": 3,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "Positive MAX branches recur in 151/155 and MGA partially shares one branch; MYC-family nulls are not treated as decisive without orthogonal perturbation checks.",
+      "adjudication_reason": "MAX-specific meiotic, nucleolar, and clock derepression is exceptionally novel, but partial MGA overlap and uninformative MYC-family nulls keep mechanism incomplete.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 30,
+        "B": 24,
+        "C": 4
+      }
+    },
+    {
+      "rank": 26,
+      "story_id": "S126",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "Positive ATP6V0C programs are resolved in 151 and 052 with a PITPNA overlap; self-RNA loss across other contexts is not used to prove selective vulnerability.",
+      "adjudication_reason": "ATP6V0C–PITPNA coupling supports an acidification/calcium program, but cross-context vulnerability cannot be inferred from self-RNA and null comparisons.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 8,
+        "B": 7,
+        "C": 23
+      }
+    },
+    {
+      "rank": 27,
+      "story_id": "S013",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "Opposite GRIN2A/GRIN2B marker directions are positively observed in cortical 005/007; 151 silence is not used as a functional matched-null control.",
+      "adjudication_reason": "Opposite chronic GluN2A/GluN2B cortical outputs could materially revise subunit-specific plasticity models, but nominal tail genes prevent stronger Support.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 29,
+        "B": 2,
+        "C": 25
+      }
+    },
+    {
+      "rank": 28,
+      "story_id": "S044",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "The 575-gene positive response is resolved most strongly in lower-yield L2/3 cortex with smaller echoes elsewhere; intrinsic L2/3 specificity is not asserted.",
+      "adjudication_reason": "The large superficial-cortical EEF2-associated trophic state could sustain a translation-vulnerability program, although state specificity and physiology require validation.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 35,
+        "B": 25,
+        "C": 33
+      }
+    },
+    {
+      "rank": 29,
+      "story_id": "S029",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "Positive BRAF/MAP2K1/SHOC2 versus NF1 polarity recurs in 151/155/191; weak negative branches and nominal LZTR1 rows are not promoted into core evidence.",
+      "adjudication_reason": "The positive neuronal RAF–MEK–NF1 branch map is valuable, but expected polarity, nominal LZTR1 evidence, and overextended negative branches keep Support at 3.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 1,
+        "B": 29,
+        "C": 31
+      }
+    },
+    {
+      "rank": 30,
+      "story_id": "S073",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive SIN3A program is strongest in 151 with a smaller cortical component; negative chromatin comparisons and restricted correlations remain secondary.",
+      "adjudication_reason": "SIN3A’s cilium/sterol/spliceosome state is rich and potentially programmatic, but the merged interpretation and weak negative comparisons keep Support at 3.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 80,
+        "B": 31,
+        "C": 28
+      }
+    },
+    {
+      "rank": 31,
+      "story_id": "S079",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "Positive MEF2C cortical and MEF2A thalamic programs are both retained, but cross-context absence cannot establish intrinsic paralog specificity.",
+      "adjudication_reason": "Positive MEF2 paralog programs are important, yet cross-context confounding prevents the contrast from clearing the cutoff.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 47,
+        "B": 36,
+        "C": 29
+      }
+    },
+    {
+      "rank": 32,
+      "story_id": "S095",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "Positive ESRRA and PPARGC1B mitochondrial signals are reported chiefly in 151/155; small restricted-signature overlap limits the relational claim, not context concentration.",
+      "adjudication_reason": "ERRα/PGC-1β convergence is important, but small restricted-signature overlap and unmeasured metabolic function leave the mechanism too uncertain for selection.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 43,
+        "B": 35,
+        "C": 35
+      }
+    },
+    {
+      "rank": 33,
+      "story_id": "S058",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "Positive SRRM2/RNA-processing programs are resolved in 151/155; cortical nulls and self-RNA shifts are not used to prove tolerance or buffering.",
+      "adjudication_reason": "The positive nuclear-speckle response is substantial, but tolerance claims and the merged multi-factor framing are less precise than selected stories.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 12,
+        "B": 81,
+        "C": 34
+      }
+    },
+    {
+      "rank": 34,
+      "story_id": "S128",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "Positive cortical GRIN2B/DLGAP4/VGF rows occur outside 151/155, but each class has only one or two non-target FDR genes and correlations are small.",
+      "adjudication_reason": "A cortical GRIN2B–DLGAP4–VGF axis is testable, but marker sparsity and small correlations limit both support and expected program scale.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 45,
+        "B": 85,
+        "C": 40
+      }
+    },
+    {
+      "rank": 35,
+      "story_id": "S086",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "A positive TSC2-associated program occurs in low-yield cerebellar GABA; TSC1/MTOR silence is not treated as proof of functional non-interchangeability.",
+      "adjudication_reason": "A TSC2-associated cerebellar branch is provocative, but silent TSC1/MTOR perturbations cannot establish a TSC2-specific mechanism.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 42,
+        "B": 66,
+        "C": 30
+      }
+    },
+    {
+      "rank": 36,
+      "story_id": "S048",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "A broad positive KMT2B program is resolved in 151; similar self-RNA shifts elsewhere are not used as matched functional engagement evidence.",
+      "adjudication_reason": "The KMT2B program is disease-relevant, but the claimed matched-context vulnerability rests on self-RNA comparisons that do not measure functional editing.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 61,
+        "B": 108,
+        "C": 17
+      }
+    },
+    {
+      "rank": 37,
+      "story_id": "S057",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "A positive VPS35 synaptic/excitability program is resolved in 151; a target-only lower-yield context does not prove intrinsic restriction.",
+      "adjudication_reason": "The VPS35 synaptic program is useful, but target-only contextual nulls cannot establish selective coupling and the cargo mechanism remains unmeasured.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 52,
+        "B": 49,
+        "C": 18
+      }
+    },
+    {
+      "rank": 38,
+      "story_id": "S012",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 4,
+      "evidence_gate": "eligible",
+      "power_assessment": "A strong positive GRIN1 program is resolved in 151; silent receptor/scaffold perturbations bound but do not prove non-interchangeability.",
+      "adjudication_reason": "The GRIN1 state is strong, but silent subunit/scaffold perturbations cannot by themselves establish obligate-subunit non-interchangeability.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 21,
+        "B": 17,
+        "C": 43
+      }
+    },
+    {
+      "rank": 39,
+      "story_id": "S049",
+      "novelty_score": 4,
+      "support_score": 4,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "Positive CELF-family collapse and Snhg11 induction recur across dominant and lower-yield contexts; splicing consequences remain unmeasured.",
+      "adjudication_reason": "CELF-family collapse plus a recurrent Snhg11 reporter is well grounded, but absent splicing or functional consequences supports Priority 3 rather than 4.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 14,
+        "B": 38,
+        "C": 50
+      }
+    },
+    {
+      "rank": 40,
+      "story_id": "S143",
+      "novelty_score": 4,
+      "support_score": 4,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "Positive Pabpn1/Zcchc18 changes recur in 151/155 with a narrower 191 response; context silence and self-RNA FDR are not used as specificity evidence.",
+      "adjudication_reason": "The ZC3H14 RNA-processing reporter is coherent and recurrent, but its presently bounded downstream consequence supports Priority 3.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 16,
+        "B": 43,
+        "C": 58
+      }
+    },
+    {
+      "rank": 41,
+      "story_id": "S055",
+      "novelty_score": 4,
+      "support_score": 4,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "Reported positive programs are assessed across dominant and lower-yield contexts; 151/155 concentration is not penalized, lower-yield nulls are not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "QRICH1 controls a reproducible neuronal module, but its mechanistic meaning and likely field-wide impact remain limited.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 51,
+        "B": 11,
+        "C": 51
+      }
+    },
+    {
+      "rank": 42,
+      "story_id": "S138",
+      "novelty_score": 4,
+      "support_score": 4,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "Reported positive programs are assessed across dominant and lower-yield contexts; 151/155 concentration is not penalized, lower-yield nulls are not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "\"Marchf6 and Txndc15 losses induce a narrow neuronal SREBP2 sterol module\" is well grounded but more likely to extend an existing research line than open a major direction.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 54,
+        "B": 8,
+        "C": 57
+      }
+    },
+    {
+      "rank": 43,
+      "story_id": "S041",
+      "novelty_score": 4,
+      "support_score": 4,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The reported positive relationship is retained, but dominant-context absence is informative only when the comparison is adequately observed; self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "A neuronal XPO1 gain state opposite inhibitor expectations is strong, but its broader physiological consequence is still bounded.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 11,
+        "B": 78,
+        "C": 49
+      }
+    },
+    {
+      "rank": 44,
+      "story_id": "S035",
+      "novelty_score": 4,
+      "support_score": 4,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The thalamic Opn3/Slc6a17/Tspan33 module is unusually clean but too small to justify exceptional impact.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 49,
+        "B": 42,
+        "C": 48
+      }
+    },
+    {
+      "rank": 45,
+      "story_id": "S089",
+      "novelty_score": 3,
+      "support_score": 4,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "All 130 shared FDR genes agreeing in sign makes the known ATXN1-CIC complex unusually tractable in an adult neuronal state.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 17,
+        "B": 22,
+        "C": 19
+      }
+    },
+    {
+      "rank": 46,
+      "story_id": "S107",
+      "novelty_score": 3,
+      "support_score": 4,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "\"Gfpt1/HBP suppression induces a selective ER and integrated-stress program with recurrent Ogt repression\" is well grounded but more likely to extend an existing research line than open a major direction.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 66,
+        "B": 16,
+        "C": 45
+      }
+    },
+    {
+      "rank": 47,
+      "story_id": "S077",
+      "novelty_score": 3,
+      "support_score": 4,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "\"TUBA1A depletion induces compensatory beta-tubulin and Tuba4a transcripts in thalamic and Pvalb neurons\" is well grounded but more likely to extend an existing research line than open a major direction.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 62,
+        "B": 19,
+        "C": 65
+      }
+    },
+    {
+      "rank": 48,
+      "story_id": "S011",
+      "novelty_score": 3,
+      "support_score": 4,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "Reported positive programs are assessed across dominant and lower-yield contexts; 151/155 concentration is not penalized, lower-yield nulls are not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "CHD8's caudal RNA-abundance module is reproducible but does not yet demonstrate splicing mechanism.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 58,
+        "B": 51,
+        "C": 46
+      }
+    },
+    {
+      "rank": 49,
+      "story_id": "S009",
+      "novelty_score": 3,
+      "support_score": 4,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "\"Atp1a3 depletion drives a selective thalamic ion-pump and synaptic remodeling state\" is well grounded but more likely to extend an existing research line than open a major direction.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 57,
+        "B": 50,
+        "C": 59
+      }
+    },
+    {
+      "rank": 50,
+      "story_id": "S122",
+      "novelty_score": 3,
+      "support_score": 4,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "A mature KMT2A neuronal regulon distinct from developmental targets is specific and well grounded but modest in scope.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 27,
+        "B": 89,
+        "C": 56
+      }
+    },
+    {
+      "rank": 51,
+      "story_id": "S124",
+      "novelty_score": 3,
+      "support_score": 4,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The reported positive relationship is retained, but dominant-context absence is informative only when the comparison is adequately observed; self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "\"Ylpm1 depletion selectively represses nuclear-speckle spliceosome genes in midbrain-linked neurons\" is well grounded but more likely to extend an existing research line than open a major direction.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 67,
+        "B": 44,
+        "C": 69
+      }
+    },
+    {
+      "rank": 52,
+      "story_id": "S114",
+      "novelty_score": 3,
+      "support_score": 4,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The asymmetric neuronal clock loop is well supported but largely validates known circadian feedback at one endpoint.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 73,
+        "B": 47,
+        "C": 67
+      }
+    },
+    {
+      "rank": 53,
+      "story_id": "S132",
+      "novelty_score": 3,
+      "support_score": 4,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "Reported positive programs are assessed across dominant and lower-yield contexts; 151/155 concentration is not penalized, lower-yield nulls are not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "\"Hspa8 depletion induces compensatory HSP70/HSP90 folding feedback in selected neurons\" is well grounded but more likely to extend an existing research line than open a major direction.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 69,
+        "B": 48,
+        "C": 70
+      }
+    },
+    {
+      "rank": 54,
+      "story_id": "S120",
+      "novelty_score": 3,
+      "support_score": 4,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "A noncanonical calcineurin output is clean, but lack of NFAT localization or phosphatase measurements limits impact.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 26,
+        "B": 103,
+        "C": 68
+      }
+    },
+    {
+      "rank": 55,
+      "story_id": "S027",
+      "novelty_score": 3,
+      "support_score": 4,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "Reported positive programs are assessed across dominant and lower-yield contexts; 151/155 concentration is not penalized, lower-yield nulls are not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "Asymmetric ACTB-to-ACTG1/FLNA compensation is robust but closely aligned with established actin nonredundancy.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 100,
+        "B": 46,
+        "C": 62
+      }
+    },
+    {
+      "rank": 56,
+      "story_id": "S021",
+      "novelty_score": 3,
+      "support_score": 4,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "CAML loss coherently lowers receptor and vesicle transcripts, a solid extension of tail-anchored-protein insertion biology.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 60,
+        "B": 98,
+        "C": 61
+      }
+    },
+    {
+      "rank": 57,
+      "story_id": "S080",
+      "novelty_score": 3,
+      "support_score": 4,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The reported positive relationship is retained, but dominant-context absence is informative only when the comparison is adequately observed; self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "\"SRSF1 loss rewires a recurrent splice-regulator network instead of inducing SRSF2 compensation\" is well grounded but more likely to extend an existing research line than open a major direction.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 63,
+        "B": 111,
+        "C": 55
+      }
+    },
+    {
+      "rank": 58,
+      "story_id": "S131",
+      "novelty_score": 3,
+      "support_score": 4,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "Reported positive programs are assessed across dominant and lower-yield contexts; 151/155 concentration is not penalized, lower-yield nulls are not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "\"Hsf1 loss selectively suppresses a basal HSPH1/HSP90 chaperone module\" is well grounded but more likely to extend an existing research line than open a major direction.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 68,
+        "B": 55,
+        "C": 125
+      }
+    },
+    {
+      "rank": 59,
+      "story_id": "S104",
+      "novelty_score": 2,
+      "support_score": 4,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "CTCF control of clustered protocadherins is robustly recovered but already well precedented.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 25,
+        "B": 54,
+        "C": 73
+      }
+    },
+    {
+      "rank": 60,
+      "story_id": "S060",
+      "novelty_score": 2,
+      "support_score": 4,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "APC, CTNNB1, and TCF7L2 recover expected Wnt polarity with useful neuronal outputs but limited novelty.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 72,
+        "B": 45,
+        "C": 72
+      }
+    },
+    {
+      "rank": 61,
+      "story_id": "S033",
+      "novelty_score": 2,
+      "support_score": 4,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "PTEN-TSC-mTOR polarity is well supported but primarily validates established pathway ordering.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 71,
+        "B": 53,
+        "C": 71
+      }
+    },
+    {
+      "rank": 62,
+      "story_id": "S074",
+      "novelty_score": 5,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "Reported positive programs are assessed across dominant and lower-yield contexts; 151/155 concentration is not penalized, lower-yield nulls are not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The MYEF2 marker triad is exceptionally novel but functionally unresolved, limiting its present scientific priority.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 120,
+        "B": 56,
+        "C": 74
+      }
+    },
+    {
+      "rank": 63,
+      "story_id": "S133",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "ANKRD11-SETD5 convergence could connect two haploinsufficiency syndromes, but reporter-level overlap needs validation.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 46,
+        "B": 34,
+        "C": 41
+      }
+    },
+    {
+      "rank": 64,
+      "story_id": "S034",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "MIB1-to-sterol output is non-obvious, but failure of Notch perturbations cannot establish pathway independence.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 38,
+        "B": 37,
+        "C": 79
+      }
+    },
+    {
+      "rank": 65,
+      "story_id": "S097",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The reported positive relationship is retained, but dominant-context absence is informative only when the comparison is adequately observed; self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "KANSL1 endolysosomal output is disease-relevant but not a direct autophagy mechanism.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 94,
+        "B": 65,
+        "C": 37
+      }
+    },
+    {
+      "rank": 66,
+      "story_id": "S118",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "Reported positive programs are assessed across dominant and lower-yield contexts; 151/155 concentration is not penalized, lower-yield nulls are not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "BPTF versus CHD4 direction is novel but not yet a biochemical antagonism.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 44,
+        "B": 58,
+        "C": 99
+      }
+    },
+    {
+      "rank": 67,
+      "story_id": "S098",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "THAP paralog divergence is biologically interesting but weakened by absent THAP11 depletion and unequal signature sizes.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 79,
+        "B": 32,
+        "C": 93
+      }
+    },
+    {
+      "rank": 68,
+      "story_id": "S047",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The PHF12-GATAD1 neighborhood is specific but based on sparse markers and weak KMT2E extension.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 86,
+        "B": 59,
+        "C": 82
+      }
+    },
+    {
+      "rank": 69,
+      "story_id": "S030",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The signed ATRX-CHD8 contrast is clean at one marker yet lacks a resolved neuronal mechanism.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 74,
+        "B": 76,
+        "C": 78
+      }
+    },
+    {
+      "rank": 70,
+      "story_id": "S028",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "Reported positive programs are assessed across dominant and lower-yield contexts; 151/155 concentration is not penalized, lower-yield nulls are not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The “Deaf1 loss reproducibly lowers an Eif4g3/Rac3/B4gat1/Tmem80 module in TH and MB neurons” relationship is plausible, but unresolved causal or functional alternatives limit confidence and program scale.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 84,
+        "B": 72,
+        "C": 77
+      }
+    },
+    {
+      "rank": 71,
+      "story_id": "S071",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The reported positive relationship is retained, but dominant-context absence is informative only when the comparison is adequately observed; self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "PRDM10 controls a reproducible posterior module, but rising target RNA and absent mechanistic prior constrain interpretation.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 90,
+        "B": 62,
+        "C": 87
+      }
+    },
+    {
+      "rank": 72,
+      "story_id": "S084",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The “CHD2 loss rewires RNA-processing and ion-channel transcripts in TH Prkcd/Grin2c neurons without phenocopying CHD4, CHD7, or CHD8” relationship is plausible, but unresolved causal or functional alternatives limit confidence and program scale.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 93,
+        "B": 60,
+        "C": 90
+      }
+    },
+    {
+      "rank": 73,
+      "story_id": "S108",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "Cytosolic malate-aspartate components have a distinct RNA output, but metabolite and flux evidence is missing.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 53,
+        "B": 96,
+        "C": 95
+      }
+    },
+    {
+      "rank": 74,
+      "story_id": "S054",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The reported positive relationship is retained, but dominant-context absence is informative only when the comparison is adequately observed; self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "Separable N-terminal acetyltransferase states are valuable, though acetylome evidence is absent.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 101,
+        "B": 61,
+        "C": 83
+      }
+    },
+    {
+      "rank": 75,
+      "story_id": "S068",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "Reported positive programs are assessed across dominant and lower-yield contexts; 151/155 concentration is not penalized, lower-yield nulls are not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "SLC7A6OS gains a recurrent reporter state, but protein function and causal mechanism remain unknown.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 119,
+        "B": 77,
+        "C": 54
+      }
+    },
+    {
+      "rank": 76,
+      "story_id": "S111",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "Reported positive programs are assessed across dominant and lower-yield contexts; 151/155 concentration is not penalized, lower-yield nulls are not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The broad ZBTB7A program is real but biologically mixed and lacks a resolved regulatory mechanism.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 95,
+        "B": 64,
+        "C": 96
+      }
+    },
+    {
+      "rank": 77,
+      "story_id": "S062",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "Reported positive programs are assessed across dominant and lower-yield contexts; 151/155 concentration is not penalized, lower-yield nulls are not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "SETD1A links chromatin and organelle liability to a TSC neighborhood, but the merged mechanistic interpretation is incomplete.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 77,
+        "B": 93,
+        "C": 86
+      }
+    },
+    {
+      "rank": 78,
+      "story_id": "S064",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "USP48 has a compact novel marker set, though specificity and substrate mechanism remain unresolved.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 89,
+        "B": 70,
+        "C": 104
+      }
+    },
+    {
+      "rank": 79,
+      "story_id": "S136",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "A POLR3B Rap/adhesion output distinct from BDP1 stress is novel but requires direct Pol III validation.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 97,
+        "B": 68,
+        "C": 102
+      }
+    },
+    {
+      "rank": 80,
+      "story_id": "S106",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The reported positive relationship is retained, but dominant-context absence is informative only when the comparison is adequately observed; self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "A mature SKI regulon outside canonical SMAD output is novel, though negative TGF-beta comparators are weak.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 81,
+        "B": 95,
+        "C": 94
+      }
+    },
+    {
+      "rank": 81,
+      "story_id": "S129",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "Acute HNRNPH2 lacks chronic paralog compensation and links to TCA markers, but the six-row landscape is sparse.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 98,
+        "B": 73,
+        "C": 100
+      }
+    },
+    {
+      "rank": 82,
+      "story_id": "S043",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "DDX3X produces distinct thalamic and midbrain programs, but two-context evidence and indirect mechanisms limit impact.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 85,
+        "B": 107,
+        "C": 81
+      }
+    },
+    {
+      "rank": 83,
+      "story_id": "S092",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "Reported positive programs are assessed across dominant and lower-yield contexts; 151/155 concentration is not penalized, lower-yield nulls are not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The mature-neuron polarity cassette is specific, though guide-defined convergence does not prove direct CTBP1-ZEB1 action.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 78,
+        "B": 105,
+        "C": 92
+      }
+    },
+    {
+      "rank": 84,
+      "story_id": "S025",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "Distinct GTF2I and GTF2IRD1 outputs refine Williams-Beuren dosage biology but remain sparse.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 83,
+        "B": 119,
+        "C": 76
+      }
+    },
+    {
+      "rank": 85,
+      "story_id": "S061",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "Ion-channel induction with beta-protocadherin repression is specific, but NuRD mechanism and paralog compensation remain unmeasured.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 88,
+        "B": 109,
+        "C": 85
+      }
+    },
+    {
+      "rank": 86,
+      "story_id": "S134",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The “Med15, Med13, and Med23 repress a shared thalamic Mediator output” relationship is plausible, but unresolved causal or functional alternatives limit confidence and program scale.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 96,
+        "B": 92,
+        "C": 101
+      }
+    },
+    {
+      "rank": 87,
+      "story_id": "S003",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The reported positive relationship is retained, but dominant-context absence is informative only when the comparison is adequately observed; self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The “Myt1l and Phf21a perturbations converge on Rreb1-positive mature-neuron remodeling” relationship is plausible, but unresolved causal or functional alternatives limit confidence and program scale.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 82,
+        "B": 135,
+        "C": 75
+      }
+    },
+    {
+      "rank": 88,
+      "story_id": "S040",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "Reported positive programs are assessed across dominant and lower-yield contexts; 151/155 concentration is not penalized, lower-yield nulls are not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The “Dhx9 and nuclear-pore transport perturbations expose a nuclear RNP/splicing state rather than Dicer/Ago or generic karyopherin loss” relationship is plausible, but unresolved causal or functional alternatives limit confidence and program scale.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 76,
+        "B": 82,
+        "C": 134
+      }
+    },
+    {
+      "rank": 89,
+      "story_id": "S059",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "AHDC1-associated synaptic repression is coherent but remains a one-context perturbation state.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 87,
+        "B": 121,
+        "C": 84
+      }
+    },
+    {
+      "rank": 90,
+      "story_id": "S113",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The “Vezf1 loss produces a compact thalamic Hr/Prkcg/Kcnc1/Rasa4-down and Tle2/Abi2-up signature” relationship is plausible, but unresolved causal or functional alternatives limit confidence and program scale.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 127,
+        "B": 75,
+        "C": 98
+      }
+    },
+    {
+      "rank": 91,
+      "story_id": "S082",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "CACNA1G non-phenocopying by other calcium nodes is useful but requires physiology and matched perturbation strength.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 92,
+        "B": 123,
+        "C": 88
+      }
+    },
+    {
+      "rank": 92,
+      "story_id": "S112",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "Reported positive programs are assessed across dominant and lower-yield contexts; 151/155 concentration is not penalized, lower-yield nulls are not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The ZBTB18 module is novel and specific, yet guide effects cannot be interpreted as simple loss.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 138,
+        "B": 74,
+        "C": 97
+      }
+    },
+    {
+      "rank": 93,
+      "story_id": "S083",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "CUL3-to-RNA-processing coupling is novel but small and only excludes one adaptor.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 126,
+        "B": 124,
+        "C": 89
+      }
+    },
+    {
+      "rank": 94,
+      "story_id": "S018",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "Reported positive programs are assessed across dominant and lower-yield contexts; 151/155 concentration is not penalized, lower-yield nulls are not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The “Creb1 perturbation selectively induces Crem compensation outside the upstream cAMP/NMDAR/CaMKII axis” relationship is plausible, but unresolved causal or functional alternatives limit confidence and program scale.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 99,
+        "B": 40,
+        "C": 6
+      }
+    },
+    {
+      "rank": 95,
+      "story_id": "S002",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "Reported positive programs are assessed across dominant and lower-yield contexts; 151/155 concentration is not penalized, lower-yield nulls are not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The “KCC2 loss selectively triggers a thalamic immediate-early response” relationship is plausible, but unresolved causal or functional alternatives limit confidence and program scale.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 19,
+        "B": 113,
+        "C": 15
+      }
+    },
+    {
+      "rank": 96,
+      "story_id": "S036",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The reported positive relationship is retained, but dominant-context absence is informative only when the comparison is adequately observed; self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The result supports a therapeutically relevant MANF augmentation direction, though the comparator is not decisive.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 48,
+        "B": 39,
+        "C": 63
+      }
+    },
+    {
+      "rank": 97,
+      "story_id": "S006",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The reported positive relationship is retained, but dominant-context absence is informative only when the comparison is adequately observed; self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The chronic genetic PDE10A state is power-aware and pharmacologically relevant but very narrow.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 20,
+        "B": 79,
+        "C": 129
+      }
+    },
+    {
+      "rank": 98,
+      "story_id": "S039",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "SERCA2-Elongator stress convergence is plausible but based on marker overlap rather than direct mechanism.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 75,
+        "B": 101,
+        "C": 64
+      }
+    },
+    {
+      "rank": 99,
+      "story_id": "S115",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "RORalpha's thalamic output is important but paralog non-interchangeability is not decisive.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 115,
+        "B": 90,
+        "C": 39
+      }
+    },
+    {
+      "rank": 100,
+      "story_id": "S081",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "Loss of mature neuronal effectors is important, though the mixed RNA/proteostasis interpretation is broad.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 108,
+        "B": 84,
+        "C": 66
+      }
+    },
+    {
+      "rank": 101,
+      "story_id": "S037",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "Reported positive programs are assessed across dominant and lower-yield contexts; 151/155 concentration is not penalized, lower-yield nulls are not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The “Vps37a loss induces V-ATPase genes and represses synaptic membrane transcripts in MB and MB/P/MY neurons” relationship is plausible, but unresolved causal or functional alternatives limit confidence and program scale.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 105,
+        "B": 87,
+        "C": 80
+      }
+    },
+    {
+      "rank": 102,
+      "story_id": "S065",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "Reported positive programs are assessed across dominant and lower-yield contexts; 151/155 concentration is not penalized, lower-yield nulls are not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "Autophagy perturbations lowering ER/endomembrane transcripts is useful but flux and pathway equivalence are untested.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 107,
+        "B": 52,
+        "C": 114
+      }
+    },
+    {
+      "rank": 103,
+      "story_id": "S004",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "PMCA1-specific activity output is useful but fits established calcium-extrusion biology and lacks calcium physiology.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 56,
+        "B": 114,
+        "C": 105
+      }
+    },
+    {
+      "rank": 104,
+      "story_id": "S096",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The “Mecp2 perturbation alters a sparse excitability and membrane-gene module rather than a universal Rett-like transcriptome” relationship is plausible, but unresolved causal or functional alternatives limit confidence and program scale.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 113,
+        "B": 127,
+        "C": 36
+      }
+    },
+    {
+      "rank": 105,
+      "story_id": "S042",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "Reported positive programs are assessed across dominant and lower-yield contexts; 151/155 concentration is not penalized, lower-yield nulls are not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "EIF4E suppression yields a distinctive abundance response, but it is dominant-context-heavy and pharmacologically indirect.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 50,
+        "B": 120,
+        "C": 112
+      }
+    },
+    {
+      "rank": 106,
+      "story_id": "S094",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The endomembrane-like stress state is coherent but broadly expected after clathrin loss.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 64,
+        "B": 106,
+        "C": 120
+      }
+    },
+    {
+      "rank": 107,
+      "story_id": "S008",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The TrkB state is biologically coherent but largely expected and statistically narrow.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 70,
+        "B": 115,
+        "C": 106
+      }
+    },
+    {
+      "rank": 108,
+      "story_id": "S066",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The noncanonical Wnt-adjacent states mainly constrain an overly simple prior.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 118,
+        "B": 122,
+        "C": 52
+      }
+    },
+    {
+      "rank": 109,
+      "story_id": "S103",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The THRA-Hr/Adgrb1 branch is credible but narrow and close to expected receptor biology.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 65,
+        "B": 104,
+        "C": 123
+      }
+    },
+    {
+      "rank": 110,
+      "story_id": "S014",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The reported positive relationship is retained, but dominant-context absence is informative only when the comparison is adequately observed; self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "Kv2.1-specific activity output is credible but close to expected excitability biology.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 117,
+        "B": 117,
+        "C": 60
+      }
+    },
+    {
+      "rank": 111,
+      "story_id": "S076",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "Reported positive programs are assessed across dominant and lower-yield contexts; 151/155 concentration is not penalized, lower-yield nulls are not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The cross-gene cytoskeletal vulnerability is interesting but not a strong phenocopy.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 91,
+        "B": 97,
+        "C": 115
+      }
+    },
+    {
+      "rank": 112,
+      "story_id": "S087",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "Reported positive programs are assessed across dominant and lower-yield contexts; 151/155 concentration is not penalized, lower-yield nulls are not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "Posterior spliceosome/TREX vulnerability is credible but combines several non-equivalent perturbation states.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 110,
+        "B": 80,
+        "C": 117
+      }
+    },
+    {
+      "rank": 113,
+      "story_id": "S023",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "Reported positive programs are assessed across dominant and lower-yield contexts; 151/155 concentration is not penalized, lower-yield nulls are not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "Mitochondrial ISR convergence is important but the focal Lonp1 claim is weaker than its comparators.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 103,
+        "B": 100,
+        "C": 110
+      }
+    },
+    {
+      "rank": 114,
+      "story_id": "S024",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The “Dhdds loss activates ER and amino-acid stress genes in thalamic and midbrain neurons” relationship is plausible, but unresolved causal or functional alternatives limit confidence and program scale.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 104,
+        "B": 99,
+        "C": 111
+      }
+    },
+    {
+      "rank": 115,
+      "story_id": "S085",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "BiP-centered ER stress is expected, while links to HSPA9 and UFMylation remain correlative.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 109,
+        "B": 102,
+        "C": 116
+      }
+    },
+    {
+      "rank": 116,
+      "story_id": "S016",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "Reported positive programs are assessed across dominant and lower-yield contexts; 151/155 concentration is not penalized, lower-yield nulls are not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The caudal HNRNPC abundance state is broad but cannot establish splicing or nuclear-speckle mechanism.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 102,
+        "B": 118,
+        "C": 109
+      }
+    },
+    {
+      "rank": 117,
+      "story_id": "S093",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The chromatin-response hotspot is reproducible but too broad to identify a direct shared mechanism.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 121,
+        "B": 91,
+        "C": 119
+      }
+    },
+    {
+      "rank": 118,
+      "story_id": "S010",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The “BRD4 loss remodels synaptic and membrane transcripts in thalamic Prkcd/Grin2c neurons” relationship is plausible, but unresolved causal or functional alternatives limit confidence and program scale.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 116,
+        "B": 116,
+        "C": 107
+      }
+    },
+    {
+      "rank": 119,
+      "story_id": "S091",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The axon-excitability module is disease-relevant yet incomplete as an RBFOX1 mechanism.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 112,
+        "B": 112,
+        "C": 118
+      }
+    },
+    {
+      "rank": 120,
+      "story_id": "S119",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "SEC63-specific ER compensation is plausible but follows established import/folding stress expectations.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 130,
+        "B": 94,
+        "C": 124
+      }
+    },
+    {
+      "rank": 121,
+      "story_id": "S063",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "Reported positive programs are assessed across dominant and lower-yield contexts; 151/155 concentration is not penalized, lower-yield nulls are not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "ADNP-CHD4 convergence is directly precedented by ChAHP biology and remains sparse in this assay.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 106,
+        "B": 140,
+        "C": 113
+      }
+    },
+    {
+      "rank": 122,
+      "story_id": "S100",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The reported positive relationship is retained, but dominant-context absence is informative only when the comparison is adequately observed; self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The marker panel is useful, whereas the proposed PP2A pathway assignment is not established.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 128,
+        "B": 125,
+        "C": 122
+      }
+    },
+    {
+      "rank": 123,
+      "story_id": "S099",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 3,
+      "evidence_gate": "eligible",
+      "power_assessment": "The reported positive relationship is retained, but dominant-context absence is informative only when the comparison is adequately observed; self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The endomembrane-proteostasis neighborhood is plausible but too heterogeneous for a single strong biological finding.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 114,
+        "B": 142,
+        "C": 121
+      }
+    },
+    {
+      "rank": 124,
+      "story_id": "S141",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 2,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The KLF9-specific program is novel but guide-defined and only weakly linked to a mechanism.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 123,
+        "B": 69,
+        "C": 128
+      }
+    },
+    {
+      "rank": 125,
+      "story_id": "S045",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 2,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The “Zmym2 loss selectively induces a Notum/Echdc2/F11r/Atp2a3 thalamic response” relationship is retained, but its current scope and consequence support only low-priority follow-up.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 124,
+        "B": 71,
+        "C": 140
+      }
+    },
+    {
+      "rank": 126,
+      "story_id": "S026",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 2,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The Tsga10/Abhd11 module is novel but currently a low-consequence marker state.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 139,
+        "B": 128,
+        "C": 103
+      }
+    },
+    {
+      "rank": 127,
+      "story_id": "S050",
+      "novelty_score": 4,
+      "support_score": 3,
+      "priority_score": 2,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The ZFP148 marker set is novel but small, weakly mechanistic, and unlikely to launch broad follow-up.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 125,
+        "B": 129,
+        "C": 126
+      }
+    },
+    {
+      "rank": 128,
+      "story_id": "S123",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 2,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The Sorl1/Sema7a pair is testable but too sparse for broad scientific impact.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 122,
+        "B": 131,
+        "C": 131
+      }
+    },
+    {
+      "rank": 129,
+      "story_id": "S109",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 2,
+      "evidence_gate": "eligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "This is explicitly a narrow cytoskeletal lead rather than a recovered KLF7 program.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 129,
+        "B": 130,
+        "C": 143
+      }
+    },
+    {
+      "rank": 130,
+      "story_id": "S140",
+      "novelty_score": 3,
+      "support_score": 3,
+      "priority_score": 2,
+      "evidence_gate": "eligible",
+      "power_assessment": "Reported positive programs are assessed across dominant and lower-yield contexts; 151/155 concentration is not penalized, lower-yield nulls are not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "Cttnbp2 is a focused biomarker lead without a validated receptor mechanism.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 144,
+        "B": 132,
+        "C": 127
+      }
+    },
+    {
+      "rank": 131,
+      "story_id": "S135",
+      "novelty_score": 4,
+      "support_score": 2,
+      "priority_score": 4,
+      "evidence_gate": "ineligible",
+      "power_assessment": "The reported positive relationship is retained, but dominant-context absence is informative only when the comparison is adequately observed; self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The matched dominant-context null makes forebrain restriction plausible, but predominantly nominal sterol evidence is too thin for the top 30.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 37,
+        "B": 28,
+        "C": 26
+      }
+    },
+    {
+      "rank": 132,
+      "story_id": "S053",
+      "novelty_score": 4,
+      "support_score": 2,
+      "priority_score": 3,
+      "evidence_gate": "ineligible",
+      "power_assessment": "Reported positive programs are assessed across dominant and lower-yield contexts; 151/155 concentration is not penalized, lower-yield nulls are not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "Major null-comparator, nominal-evidence, or mechanistic gaps make the stated “Trrap perturbation represses an imprinted/noncoding RNA module unlike Myc loss” interpretation ineligible.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 32,
+        "B": 63,
+        "C": 135
+      }
+    },
+    {
+      "rank": 133,
+      "story_id": "S117",
+      "novelty_score": 4,
+      "support_score": 2,
+      "priority_score": 3,
+      "evidence_gate": "ineligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "Major null-comparator, nominal-evidence, or mechanistic gaps make the stated “Gabrb2 and Atp2b1 perturbations oppose the Ank3 thalamic state through Nr4a1/Fos/Vgf activity-gene induction” interpretation ineligible.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 132,
+        "B": 126,
+        "C": 132
+      }
+    },
+    {
+      "rank": 134,
+      "story_id": "S130",
+      "novelty_score": 4,
+      "support_score": 2,
+      "priority_score": 3,
+      "evidence_gate": "ineligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "Major null-comparator, nominal-evidence, or mechanistic gaps make the stated “Kmt2d and Kdm6a converge on a 151 TH neuronal enhancer module” interpretation ineligible.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 133,
+        "B": 134,
+        "C": 133
+      }
+    },
+    {
+      "rank": 135,
+      "story_id": "S007",
+      "novelty_score": 3,
+      "support_score": 2,
+      "priority_score": 3,
+      "evidence_gate": "ineligible",
+      "power_assessment": "Reported positive programs are assessed across dominant and lower-yield contexts; 151/155 concentration is not penalized, lower-yield nulls are not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "Lysosomal-sterol convergence is plausible, but the packet merges distinct mechanisms and cannot establish shared flux or specificity.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 39,
+        "B": 83,
+        "C": 137
+      }
+    },
+    {
+      "rank": 136,
+      "story_id": "S127",
+      "novelty_score": 3,
+      "support_score": 2,
+      "priority_score": 3,
+      "evidence_gate": "ineligible",
+      "power_assessment": "Reported positive programs are assessed across dominant and lower-yield contexts; 151/155 concentration is not penalized, lower-yield nulls are not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "Major null-comparator, nominal-evidence, or mechanistic gaps make the stated “Partial Tfrc and Ireb2 perturbation uncovers a selective Vegfa/glycolysis low-iron arm” interpretation ineligible.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 134,
+        "B": 144,
+        "C": 136
+      }
+    },
+    {
+      "rank": 137,
+      "story_id": "S088",
+      "novelty_score": 4,
+      "support_score": 2,
+      "priority_score": 2,
+      "evidence_gate": "ineligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "Sparse Rsrp1/Dazap1 output and modest spliceosome correlations do not support a mechanistic FTO bridge.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 137,
+        "B": 133,
+        "C": 91
+      }
+    },
+    {
+      "rank": 138,
+      "story_id": "S015",
+      "novelty_score": 3,
+      "support_score": 2,
+      "priority_score": 2,
+      "evidence_gate": "ineligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "Major null-comparator, nominal-evidence, or mechanistic gaps make the stated “Wdfy3 loss selectively suppresses synaptic and AP-1/JNK transcripts in thalamic neurons” interpretation ineligible.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 143,
+        "B": 136,
+        "C": 108
+      }
+    },
+    {
+      "rank": 139,
+      "story_id": "S075",
+      "novelty_score": 3,
+      "support_score": 2,
+      "priority_score": 2,
+      "evidence_gate": "ineligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "Major null-comparator, nominal-evidence, or mechanistic gaps make the stated “Kmt5b perturbation induces a narrow thalamic synaptic RNA module” interpretation ineligible.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 141,
+        "B": 110,
+        "C": 142
+      }
+    },
+    {
+      "rank": 140,
+      "story_id": "S069",
+      "novelty_score": 3,
+      "support_score": 2,
+      "priority_score": 2,
+      "evidence_gate": "ineligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The guide-associated state does not establish a PROX1-loss neuronal regulon.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 140,
+        "B": 141,
+        "C": 130
+      }
+    },
+    {
+      "rank": 141,
+      "story_id": "S051",
+      "novelty_score": 3,
+      "support_score": 2,
+      "priority_score": 2,
+      "evidence_gate": "ineligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "Paralog-specific CBP liability cannot be separated from perturbation quality.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 136,
+        "B": 139,
+        "C": 138
+      }
+    },
+    {
+      "rank": 142,
+      "story_id": "S125",
+      "novelty_score": 3,
+      "support_score": 2,
+      "priority_score": 2,
+      "evidence_gate": "ineligible",
+      "power_assessment": "The reported positive relationship is retained, but dominant-context absence is informative only when the comparison is adequately observed; self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The spliceosome-proteasome link is hypothesis-generating, not a sound mechanistic relationship.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 131,
+        "B": 143,
+        "C": 139
+      }
+    },
+    {
+      "rank": 143,
+      "story_id": "S046",
+      "novelty_score": 3,
+      "support_score": 2,
+      "priority_score": 2,
+      "evidence_gate": "ineligible",
+      "power_assessment": "The reported positive relationship is retained, but dominant-context absence is informative only when the comparison is adequately observed; self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "The disinhibition interpretation is plausible but not supported by a strong multi-gene FDR set.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 135,
+        "B": 138,
+        "C": 144
+      }
+    },
+    {
+      "rank": 144,
+      "story_id": "S031",
+      "novelty_score": 3,
+      "support_score": 2,
+      "priority_score": 2,
+      "evidence_gate": "ineligible",
+      "power_assessment": "The positive relationship resolved in 151/155 is judged on its biology without penalty; silence elsewhere is not specificity evidence, and self-RNA FDR is not an engagement gate.",
+      "adjudication_reason": "Major null-comparator, nominal-evidence, or mechanistic gaps make the stated “Lrp6 loss reveals a weak 151 TH Wnt response that Lrp5 does not share” interpretation ineligible.",
+      "priority_5_consequence": null,
+      "ranker_ranks": {
+        "A": 142,
+        "B": 137,
+        "C": 141
+      }
+    }
+  ],
+  "top30_ids": [
+    "S144",
+    "S137",
+    "S032",
+    "S005",
+    "S101",
+    "S022",
+    "S067",
+    "S019",
+    "S078",
+    "S102",
+    "S110",
+    "S142",
+    "S056",
+    "S038",
+    "S105",
+    "S072",
+    "S121",
+    "S001",
+    "S017",
+    "S070",
+    "S090",
+    "S116",
+    "S020",
+    "S139",
+    "S052",
+    "S126",
+    "S013",
+    "S044",
+    "S029",
+    "S073"
+  ],
+  "cutoff_audit": [
+    {
+      "story_id": "S052",
+      "disposition": "kept",
+      "reason": "MAX-specific meiotic, nucleolar, and clock derepression is exceptionally novel, but partial MGA overlap and uninformative MYC-family nulls keep mechanism incomplete."
+    },
+    {
+      "story_id": "S126",
+      "disposition": "kept",
+      "reason": "ATP6V0C–PITPNA coupling supports an acidification/calcium program, but cross-context vulnerability cannot be inferred from self-RNA and null comparisons."
+    },
+    {
+      "story_id": "S013",
+      "disposition": "kept",
+      "reason": "Opposite chronic GluN2A/GluN2B cortical outputs could materially revise subunit-specific plasticity models, but nominal tail genes prevent stronger Support."
+    },
+    {
+      "story_id": "S044",
+      "disposition": "kept",
+      "reason": "The large superficial-cortical EEF2-associated trophic state could sustain a translation-vulnerability program, although state specificity and physiology require validation."
+    },
+    {
+      "story_id": "S029",
+      "disposition": "kept",
+      "reason": "The positive neuronal RAF–MEK–NF1 branch map is valuable, but expected polarity, nominal LZTR1 evidence, and overextended negative branches keep Support at 3."
+    },
+    {
+      "story_id": "S073",
+      "disposition": "kept",
+      "reason": "SIN3A’s cilium/sterol/spliceosome state is rich and potentially programmatic, but the merged interpretation and weak negative comparisons keep Support at 3."
+    },
+    {
+      "story_id": "S079",
+      "disposition": "excluded",
+      "reason": "Positive MEF2 paralog programs are important, yet cross-context confounding prevents the contrast from clearing the cutoff."
+    },
+    {
+      "story_id": "S095",
+      "disposition": "excluded",
+      "reason": "ERRα/PGC-1β convergence is important, but small restricted-signature overlap and unmeasured metabolic function leave the mechanism too uncertain for selection."
+    },
+    {
+      "story_id": "S058",
+      "disposition": "excluded",
+      "reason": "The positive nuclear-speckle response is substantial, but tolerance claims and the merged multi-factor framing are less precise than selected stories."
+    },
+    {
+      "story_id": "S128",
+      "disposition": "excluded",
+      "reason": "A cortical GRIN2B–DLGAP4–VGF axis is testable, but marker sparsity and small correlations limit both support and expected program scale."
+    },
+    {
+      "story_id": "S086",
+      "disposition": "excluded",
+      "reason": "A TSC2-associated cerebellar branch is provocative, but silent TSC1/MTOR perturbations cannot establish a TSC2-specific mechanism."
+    },
+    {
+      "story_id": "S048",
+      "disposition": "excluded",
+      "reason": "The KMT2B program is disease-relevant, but the claimed matched-context vulnerability rests on self-RNA comparisons that do not measure functional editing."
+    },
+    {
+      "story_id": "S057",
+      "disposition": "excluded",
+      "reason": "The VPS35 synaptic program is useful, but target-only contextual nulls cannot establish selective coupling and the cargo mechanism remains unmeasured."
+    },
+    {
+      "story_id": "S012",
+      "disposition": "excluded",
+      "reason": "The GRIN1 state is strong, but silent subunit/scaffold perturbations cannot by themselves establish obligate-subunit non-interchangeability."
+    },
+    {
+      "story_id": "S049",
+      "disposition": "excluded",
+      "reason": "CELF-family collapse plus a recurrent Snhg11 reporter is well grounded, but absent splicing or functional consequences supports Priority 3 rather than 4."
+    },
+    {
+      "story_id": "S143",
+      "disposition": "excluded",
+      "reason": "The ZC3H14 RNA-processing reporter is coherent and recurrent, but its presently bounded downstream consequence supports Priority 3."
+    }
+  ],
+  "calibration_summary": "Novelty distribution {2: 3, 3: 64, 4: 71, 5: 6}; Support distribution {2: 14, 3: 85, 4: 45}; Priority distribution {2: 15, 3: 90, 4: 38, 5: 1}. One Priority 5 was retained for an agenda-level NAA20–CYP46A1/sterol-turnover direction. Major corrections removed self-RNA engagement gating, narrowed null-based cell specificity, preserved strong within-151/155 positive relationships, demoted merged or nominal stories, and did not automatically reward effects outside dominant contexts."
+}

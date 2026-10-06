@@ -1,0 +1,207 @@
+{
+  "story_id": "S059",
+  "title": "Ahdc1 loss selectively depresses neuronal surface and synaptic transcripts in 151 TH without canonical Wnt activation",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Ahdc1 perturbation produced an FDR-supported response only in 151 TH Prkcd Grin2c Glut, dominated by decreases in Ptprz1, Spock3, Lrp1b, Tro, Gria2, Cdh18, Ache, Calb1, and Wls without Axin2 or Nkd1 induction.",
+  "biological_interpretation": "AHDC1 loss in the assayed thalamic neurons is better framed as neuronal surface/synaptic transcript loss than as an APC-like Wnt activation state.",
+  "targets": [
+    "Ahdc1",
+    "Ptprz1",
+    "Spock3",
+    "Lrp1b",
+    "Tro",
+    "Gria2",
+    "Cdh18",
+    "Ache",
+    "Calb1",
+    "Wls",
+    "Axin2",
+    "Nkd1"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut"
+  ],
+  "support": {
+    "exact_de_rows": [
+      {
+        "gene_target": "Ahdc1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Ache",
+        "score": -4.281416893005371,
+        "logfoldchanges": -0.3108135163784027,
+        "pvals_adj": 0.02670931094725228
+      },
+      {
+        "gene_target": "Ahdc1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Ahdc1",
+        "score": 3.665757894515991,
+        "logfoldchanges": 0.4035166800022125,
+        "pvals_adj": 0.19346336839570094
+      },
+      {
+        "gene_target": "Ahdc1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Axin2",
+        "score": -0.5444194078445435,
+        "logfoldchanges": -0.10169469565153122,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Ahdc1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Calb1",
+        "score": -4.282798767089844,
+        "logfoldchanges": -0.6114760637283325,
+        "pvals_adj": 0.02670931094725228
+      },
+      {
+        "gene_target": "Ahdc1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Cdh18",
+        "score": -4.366755485534668,
+        "logfoldchanges": -0.4037635922431946,
+        "pvals_adj": 0.02670931094725228
+      },
+      {
+        "gene_target": "Ahdc1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Gria2",
+        "score": -4.880003929138184,
+        "logfoldchanges": -0.1862396001815796,
+        "pvals_adj": 0.0036618005907277625
+      },
+      {
+        "gene_target": "Ahdc1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Lrp1b",
+        "score": -5.1555094718933105,
+        "logfoldchanges": -0.346985399723053,
+        "pvals_adj": 0.0014551775296747017
+      },
+      {
+        "gene_target": "Ahdc1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Nkd1",
+        "score": 0.8440139293670654,
+        "logfoldchanges": 0.17220966517925262,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Ahdc1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Ptprz1",
+        "score": -6.085524559020996,
+        "logfoldchanges": -0.5200299024581909,
+        "pvals_adj": 2.003951821238249e-05
+      },
+      {
+        "gene_target": "Ahdc1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Spock3",
+        "score": -5.462237358093262,
+        "logfoldchanges": -0.27501168847084045,
+        "pvals_adj": 0.0004057342613177106
+      },
+      {
+        "gene_target": "Ahdc1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Tro",
+        "score": -5.089176177978516,
+        "logfoldchanges": -0.29366356134414673,
+        "pvals_adj": 0.0015516814183299597
+      },
+      {
+        "gene_target": "Ahdc1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Wls",
+        "score": -4.291869640350342,
+        "logfoldchanges": -0.42343688011169434,
+        "pvals_adj": 0.02670931094725228
+      }
+    ],
+    "evidence_records": [
+      {
+        "target_gene": "Ahdc1",
+        "evidence_id": "E001",
+        "evidence_slug": "ahdc1_151_only_fdr_response",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "",
+        "n_genes": "0",
+        "has_genes": "0",
+        "has_cell_type": "1",
+        "statistics": "243 perturbed cells versus 23679 controls; 17259 genes tested; 13 genes at FDR<0.05 and 17 at FDR<0.10; minimum FDR=2.004e-05.",
+        "description": "Ahdc1 produced its only FDR-significant differentially expressed gene set in the 151 TH Prkcd Grin2c Glut class."
+      },
+      {
+        "target_gene": "Ahdc1",
+        "evidence_id": "E005",
+        "evidence_slug": "ahdc1_non151_no_fdr_hits",
+        "cell_type": "",
+        "genes": "",
+        "n_genes": "0",
+        "has_genes": "0",
+        "has_cell_type": "0",
+        "statistics": "Across the 21 non-151 cell-type contrasts, 0 genes reached FDR<0.05 or FDR<0.10; the next-best minimum FDR values were 0.113 in 054 CNU-MGE GABA, 0.124 in 005 L4-5 IT CTX Glut, 0.169 in 008 L2-3 IT ENT PPP RSP Glut, and 0.212 in 007 L2-3 IT CTX Glut.",
+        "description": "The FDR-corrected Ahdc1 response was absent outside 151 TH Prkcd Grin2c Glut."
+      },
+      {
+        "target_gene": "Ahdc1",
+        "evidence_id": "E006",
+        "evidence_slug": "ahdc1_high_n_cell_classes_quiet",
+        "cell_type": "155 MB Glut",
+        "genes": "Ahdc1",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "155 MB Glut had 245 perturbed cells versus 20353 controls, no genes at FDR<0.05, minimum FDR=0.668, and Ahdc1 logFC -0.056 with FDR=1.000; 005 L4-5 IT CTX Glut had 157 perturbed cells, no FDR<0.05 genes, and Ahdc1 logFC +0.034 with FDR=1.000.",
+        "description": "At least two reasonably powered Ahdc1 contrasts had almost no FDR-corrected transcriptomic response."
+      }
+    ],
+    "source_claim_ids": [
+      "claim:ahdc1_f001_e1018a80e59d"
+    ],
+    "source_cluster_ids": [
+      "C298"
+    ]
+  },
+  "caveats": [
+    "The story is grounded in one corrected cell type and does not establish that AHDC1 acts through the same pathway in other neuronal populations."
+  ],
+  "prior_expectation": {
+    "summary": "Prior literature and pathway context were taken from the resolved report references; the observed Perturb-seq signal either refines expected gene function by cell type or marks an exploratory response-state neighbor where noted in caveats.",
+    "citations": [
+      {
+        "reference_id": "Ahdc1:R001",
+        "citation": "Xia F et al. De novo truncating mutations in AHDC1 in individuals with syndromic expressive language delay, hypotonia, and sleep apnea. Am J Hum Genet. 2014;94(5):784-789.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/24791903/",
+        "supports": "Original report linking de novo AHDC1 truncating variants to a syndrome with developmental delay, hypotonia, intellectual disability, and sleep apnea."
+      },
+      {
+        "reference_id": "Ahdc1:R006",
+        "citation": "Human Protein Atlas AHDC1 gene entry ENSG00000126705.",
+        "url": "https://www.proteinatlas.org/ENSG00000126705-AHDC1",
+        "supports": "Human expression database entry annotating AHDC1 as detected across brain regions with low brain regional specificity."
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 5,
+    "support": 4,
+    "priority": 4
+  },
+  "report_evidence_ids": [
+    "Ahdc1:E001",
+    "Ahdc1:E005",
+    "Ahdc1:E006"
+  ],
+  "reference_ids": [
+    "Ahdc1:R001",
+    "Ahdc1:R006"
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/24791903/",
+    "https://www.proteinatlas.org/ENSG00000126705-AHDC1"
+  ]
+}

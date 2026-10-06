@@ -1,0 +1,730 @@
+{
+  "biological_interpretation": "SIN3A scaffold loss has a specific neuronal output that is not a generic REST, NuRD, HDAC, or MYC-family phenocopy despite shared repressor-complex annotations.",
+  "caveats": [
+    "Perturbed-cell counts are modest and the target transcript was increased, not depleted, so transcript shift should not be used as a direct allelic loss readout.",
+    "Rest expression or guide activity was not independently measured here, so the absence of a Rest signature could be caused by weak perturbation, low Rest expression, or compensation.",
+    "The target gene panel is selective, all statistics are transcriptomic, and weak Rest RNA engagement limits directionality.",
+    "The correlations are modest in absolute value and are restricted-signature comparisons across genes, not biochemical evidence in the assayed cells.",
+    "Exact log2 fold changes, scores, p-values, and FDRs in exact_de_rows were re-read from the Wilcoxon Parquet; the graph and cluster summaries were used only to nominate the target/readout combinations."
+  ],
+  "cell_types": [
+    "005 L4-5 IT CTX Glut",
+    "008 L2-3 IT ENT PPP RSP Glut",
+    "009 L2-3 IT PIR AON ENT Glut",
+    "017 CA3 CA2-FC DG Glut",
+    "151 TH Prkcd Grin2c Glut"
+  ],
+  "exact_observed_result": "Sin3a targeting produced a cell-type-skewed FDR chromatin-regulator phenotype with recurrent cilium/centrosome and Cyp46a1/Grn induction plus spliceosome and RNA-processing repression; in 151 TH Prkcd Grin2c Glut, Phf21a and Sin3a had opposite Rreb1 directions, Rest failed to derepress classic NRSE targets, and a second comparison found a weak Max-positive Sin3a component distinct from Myc/Mycn, Mecp2, Chd4, Gatad2b, Mbd2, and HDAC perturbations. Parquet-verified leading rows: Sin3a->Odf2 in 151 TH Prkcd Grin2c Glut log2FC 0.82, FDR 1.71e-26; Sin3a->Hcn3 in 151 TH Prkcd Grin2c Glut log2FC 2.19, FDR 3.99e-23; Sin3a->Dzip1 in 151 TH Prkcd Grin2c Glut log2FC 0.84, FDR 4.54e-21; Sin3a->Srrm2 in 151 TH Prkcd Grin2c Glut log2FC -0.476, FDR 1.60e-19; Sin3a->Snhg11 in 151 TH Prkcd Grin2c Glut log2FC -0.236, FDR 5.84e-19; Sin3a->Amy1 in 151 TH Prkcd Grin2c Glut log2FC -0.986, FDR 8.32e-19.",
+  "preliminary_scores": {
+    "novelty": 4,
+    "priority": 4,
+    "support": 4
+  },
+  "prior_expectation": {
+    "citations": [
+      {
+        "citation": "Witteveen JS, Willemsen MH, Dombroski TC, et al. Haploinsufficiency of MeCP2-interacting transcriptional co-repressor SIN3A causes mild intellectual disability by affecting the development of cortical integrity. Nat Genet. 2016;48:877-887. PMID:27399968. DOI:10.1038/ng.3619.",
+        "description": "Identified SIN3A haploinsufficiency as a syndromic intellectual-disability mechanism and showed that Sin3a knockdown in developing mouse brain perturbs cortical neurogenesis, neuronal identity, and projections.",
+        "ref_id": "R002",
+        "ref_slug": "witteveen_2016_sin3a_neurodevelopment",
+        "scoped_ref_id": "Sin3a:R002",
+        "source": "Nature Genetics",
+        "source_type": "pubmed",
+        "target_gene": "Sin3a",
+        "url": "https://doi.org/10.1038/ng.3619"
+      },
+      {
+        "citation": "Balasubramanian M, Dingemans AJM, Albaba S, et al. Comprehensive study of 28 individuals with SIN3A-related disorder underscoring the associated mild cognitive and distinctive facial phenotype. Eur J Hum Genet. 2021;29:625-636. PMID:33437032. PMCID:PMC8115148. DOI:10.1038/s41431-020-00769-7.",
+        "description": "Clinical series establishing the human phenotype of SIN3A-related Witteveen-Kolk syndrome caused by heterozygous loss-of-function variants.",
+        "ref_id": "R003",
+        "ref_slug": "balasubramanian_2021_sin3a_cohort",
+        "scoped_ref_id": "Sin3a:R003",
+        "source": "European Journal of Human Genetics",
+        "source_type": "pubmed",
+        "target_gene": "Sin3a",
+        "url": "https://doi.org/10.1038/s41431-020-00769-7"
+      },
+      {
+        "citation": "Bridi M, Schoch H, Florian C, et al. Transcriptional corepressor SIN3A regulates hippocampal synaptic plasticity via Homer1/mGluR5 signaling. JCI Insight. 2020;5:e92385. PMID:32069266. PMCID:PMC7141406. DOI:10.1172/jci.insight.92385.",
+        "description": "Postnatal excitatory-neuron Sin3a deletion enhanced hippocampal plasticity and memory and altered postsynaptic-density gene regulation.",
+        "ref_id": "R004",
+        "ref_slug": "bridi_2020_sin3a_hippocampal_plasticity",
+        "scoped_ref_id": "Sin3a:R004",
+        "source": "JCI Insight",
+        "source_type": "pubmed",
+        "target_gene": "Sin3a",
+        "url": "https://doi.org/10.1172/jci.insight.92385"
+      },
+      {
+        "citation": "Open Targets Platform GraphQL associated-disease summary for ENSG00000169375/SIN3A, accessed for ClinVar, Gene2phenotype, ClinGen, PanelApp, and literature evidence.",
+        "description": "Database evidence linked SIN3A most prominently to 15q24 microdeletion syndrome, SIN3A-related intellectual disability syndrome, syndromic intellectual disability, and autism.",
+        "ref_id": "R008",
+        "ref_slug": "opentargets_sin3a_associated_diseases",
+        "scoped_ref_id": "Sin3a:R008",
+        "source": "Open Targets Platform",
+        "source_type": "database",
+        "target_gene": "Sin3a",
+        "url": "https://platform.opentargets.org/target/ENSG00000169375"
+      },
+      {
+        "citation": "UniProtKB entries Q96BD5 and Q6ZPK0 for PHD finger protein 21A/PHF21A/Bhc80.",
+        "description": "Curated human and mouse PHF21A function, BHC/CoREST subunit composition, nuclear localization, GO cross-references, Reactome pathway cross-references, and human PHF21A-related neurodevelopmental-disorder annotation.",
+        "ref_id": "R001",
+        "ref_slug": "uniprot_phf21a_bhc_corest",
+        "scoped_ref_id": "Phf21a:R001",
+        "source": "UniProtKB",
+        "source_type": "database",
+        "target_gene": "Phf21a",
+        "url": "https://rest.uniprot.org/uniprotkb/Q96BD5"
+      },
+      {
+        "citation": "Hakimi MA, Bochar DA, Chenoweth J, et al. A core-BRAF35 complex containing histone deacetylase mediates repression of neuronal-specific genes. Proc Natl Acad Sci U S A. 2002;99(11):7420-7425. doi:10.1073/pnas.112008599.",
+        "description": "Primary biochemical isolation of the BRAF-HDAC/BHC complex that contains PHF21A/BHC80 and mediates neuronal-gene repression.",
+        "ref_id": "R003",
+        "ref_slug": "hakimi_2002_core_braf35_bhc",
+        "scoped_ref_id": "Phf21a:R003",
+        "source": "Proceedings of the National Academy of Sciences of the United States of America",
+        "source_type": "pubmed",
+        "target_gene": "Phf21a",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/12032298/"
+      },
+      {
+        "citation": "UniProtKB reviewed entry Q8VIG1, REST_MOUSE, RE1-silencing transcription factor.",
+        "description": "Curated mouse REST function, synonyms, REST-associated corepressors, SRRM4/NMDA/stem-cell annotations, and disease-stress context.",
+        "ref_id": "R001",
+        "ref_slug": "uniprot_mouse_rest_q8vig1",
+        "scoped_ref_id": "Rest:R001",
+        "source": "UniProtKB",
+        "source_type": "database",
+        "target_gene": "Rest",
+        "url": "https://rest.uniprot.org/uniprotkb/Q8VIG1"
+      },
+      {
+        "citation": "Reactome REST event records, including REST recruits the BHC complex and REST-dependent VGF and NPAS4 promoter events.",
+        "description": "Curated pathway context for REST-mediated BHC recruitment and selected RE1/NRSE promoter targets.",
+        "ref_id": "R003",
+        "ref_slug": "reactome_rest_bhc_vgf_npas4_events",
+        "scoped_ref_id": "Rest:R003",
+        "source": "Reactome",
+        "source_type": "database",
+        "target_gene": "Rest",
+        "url": "https://reactome.org/content/query?q=REST"
+      },
+      {
+        "citation": "Mukherjee S, Brulet R, Zhang L, Hsieh J. REST regulation of gene networks in adult neural stem cells. Nat Commun. 2016;7:13360.",
+        "description": "Shows conditional Rest knockout in adult hippocampal neural stem cells causes precocious progenitor activation and identifies REST-regulated ribosome, cell-cycle, and neuronal genes.",
+        "ref_id": "R004",
+        "ref_slug": "mukherjee_2016_rest_adult_nsc",
+        "scoped_ref_id": "Rest:R004",
+        "source": "Nature Communications",
+        "source_type": "pubmed",
+        "target_gene": "Rest",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/27819263/"
+      },
+      {
+        "citation": "Grzenda A, Lomberk G, Zhang JS, Urrutia R. Sin3: master scaffold and transcriptional corepressor. Biochim Biophys Acta. 2009;1789:443-450. PMID:19505602. DOI:10.1016/j.bbagrm.2009.05.007.",
+        "description": "Review describing Sin3 as an HDAC-associated transcriptional scaffold that recruits many repressors and corepressors.",
+        "ref_id": "R001",
+        "ref_slug": "grzenda_2009_sin3_review",
+        "scoped_ref_id": "Sin3a:R001",
+        "source": "Biochimica et Biophysica Acta",
+        "source_type": "review",
+        "target_gene": "Sin3a",
+        "url": "https://doi.org/10.1016/j.bbagrm.2009.05.007"
+      },
+      {
+        "citation": "UniProtKB reviewed entries Q60520 (SIN3A_MOUSE) and Q96ST3 (SIN3A_HUMAN), accessed for SIN3A function and subunit annotations.",
+        "description": "Curated SIN3A annotations list transcriptional repression, REST and MXI1/MXD1-MAX relationships, HDAC1/2-containing complexes, and a requirement for cortical neuron differentiation and callosal axon elongation.",
+        "ref_id": "R005",
+        "ref_slug": "uniprot_sin3a_mouse_function",
+        "scoped_ref_id": "Sin3a:R005",
+        "source": "UniProtKB",
+        "source_type": "database",
+        "target_gene": "Sin3a",
+        "url": "https://rest.uniprot.org/uniprotkb/Q60520"
+      }
+    ],
+    "summary": "References were retained only when they were linked to one of the resolved source findings."
+  },
+  "reference_ids": [
+    "Phf21a:R001",
+    "Phf21a:R003",
+    "Rest:R001",
+    "Rest:R003",
+    "Rest:R004",
+    "Sin3a:R001",
+    "Sin3a:R002",
+    "Sin3a:R003",
+    "Sin3a:R004",
+    "Sin3a:R005",
+    "Sin3a:R008"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Phf21a:E002",
+    "Phf21a:E006",
+    "Rest:E001",
+    "Rest:E002",
+    "Rest:E008",
+    "Sin3a:E001",
+    "Sin3a:E002",
+    "Sin3a:E003",
+    "Sin3a:E004",
+    "Sin3a:E005",
+    "Sin3a:E008"
+  ],
+  "source_urls_or_dois": [
+    "https://doi.org/10.1016/j.bbagrm.2009.05.007",
+    "https://doi.org/10.1038/ng.3619",
+    "https://doi.org/10.1038/s41431-020-00769-7",
+    "https://doi.org/10.1172/jci.insight.92385",
+    "https://platform.opentargets.org/target/ENSG00000169375",
+    "https://pubmed.ncbi.nlm.nih.gov/12032298/",
+    "https://pubmed.ncbi.nlm.nih.gov/27819263/",
+    "https://reactome.org/content/query?q=REST",
+    "https://rest.uniprot.org/uniprotkb/Q60520",
+    "https://rest.uniprot.org/uniprotkb/Q8VIG1",
+    "https://rest.uniprot.org/uniprotkb/Q96BD5"
+  ],
+  "status": "grounded",
+  "story_id": "S073",
+  "support": {
+    "exact_de_rows": [
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 1.7125276104542385e-26,
+        "gene": "Odf2",
+        "log2_fold_change": 0.8202508091926575,
+        "p_value": 9.92251932588353e-31,
+        "score": 11.524553298950195,
+        "target_gene": "Sin3a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 3.991021248147231e-23,
+        "gene": "Hcn3",
+        "log2_fold_change": 2.192302942276001,
+        "p_value": 4.6248580429309124e-27,
+        "score": 10.772845268249512,
+        "target_gene": "Sin3a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 4.53743652566585e-21,
+        "gene": "Dzip1",
+        "log2_fold_change": 0.8400000929832458,
+        "p_value": 7.887078959961499e-25,
+        "score": 10.289148330688477,
+        "target_gene": "Sin3a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 1.6035936626707874e-19,
+        "gene": "Srrm2",
+        "log2_fold_change": -0.4761013984680176,
+        "p_value": 3.716538994543803e-23,
+        "score": -9.911333084106445,
+        "target_gene": "Sin3a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 5.84191863606254e-19,
+        "gene": "Snhg11",
+        "log2_fold_change": -0.23619119822978973,
+        "p_value": 2.0309120931905232e-22,
+        "score": -9.74023151397705,
+        "target_gene": "Sin3a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 8.317159633166705e-19,
+        "gene": "Amy1",
+        "log2_fold_change": -0.986085832118988,
+        "p_value": 3.373319278762786e-22,
+        "score": -9.6885347366333,
+        "target_gene": "Sin3a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 2.2226558786465064e-18,
+        "gene": "Ache",
+        "log2_fold_change": -1.123280644416809,
+        "p_value": 1.0302594025825395e-21,
+        "score": -9.573821067810059,
+        "target_gene": "Sin3a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 2.357559811486043e-17,
+        "gene": "Sin3a",
+        "log2_fold_change": 1.353721022605896,
+        "p_value": 1.3659886502613378e-20,
+        "score": 9.302952766418457,
+        "target_gene": "Sin3a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 8.728530665258655e-12,
+        "gene": "Tmem191",
+        "log2_fold_change": -0.7716898322105408,
+        "p_value": 1.668935117640278e-14,
+        "score": -7.673861980438232,
+        "target_gene": "Sin3a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 2.3885355291343754e-11,
+        "gene": "Snrnp70",
+        "log2_fold_change": -0.39173266291618347,
+        "p_value": 4.9821704066769514e-14,
+        "score": -7.532385349273682,
+        "target_gene": "Sin3a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 2.7615144138759585e-11,
+        "gene": "Rnpc3",
+        "log2_fold_change": -0.5933532118797302,
+        "p_value": 5.920159529139027e-14,
+        "score": -7.509835720062256,
+        "target_gene": "Sin3a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 5.170074794278554e-11,
+        "gene": "Os9",
+        "log2_fold_change": 0.6350991725921631,
+        "p_value": 1.228188577353385e-13,
+        "score": 7.413704872131348,
+        "target_gene": "Sin3a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 1.2978300892497228e-10,
+        "gene": "Cyp46a1",
+        "log2_fold_change": 0.2993018925189972,
+        "p_value": 3.3838782094117573e-13,
+        "score": 7.2781662940979,
+        "target_gene": "Sin3a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 3.69700828081212e-10,
+        "gene": "Coro6",
+        "log2_fold_change": -0.48573076725006104,
+        "p_value": 1.092458556819156e-12,
+        "score": -7.118325710296631,
+        "target_gene": "Sin3a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 9.99580494263646e-10,
+        "gene": "Rreb1",
+        "log2_fold_change": 0.8785603046417236,
+        "p_value": 5.791647802674814e-14,
+        "score": 7.5127081871032715,
+        "target_gene": "Phf21a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 1.0460341438316596e-09,
+        "gene": "Ddx17",
+        "log2_fold_change": -0.35219791531562805,
+        "p_value": 3.5152662577342988e-12,
+        "score": -6.955414772033691,
+        "target_gene": "Sin3a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 2.768764479511407e-09,
+        "gene": "Omg",
+        "log2_fold_change": -0.5018073916435242,
+        "p_value": 1.12297070262355e-11,
+        "score": -6.78978967666626,
+        "target_gene": "Sin3a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 1.7512963599191842e-08,
+        "gene": "Pnisr",
+        "log2_fold_change": -0.24104154109954834,
+        "p_value": 8.37218535617056e-11,
+        "score": -6.4937567710876465,
+        "target_gene": "Sin3a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 2.1688430902901764e-07,
+        "gene": "Mat2a",
+        "log2_fold_change": -0.37399330735206604,
+        "p_value": 1.4451414067058944e-09,
+        "score": -6.0503692626953125,
+        "target_gene": "Sin3a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 5.384368660071366e-06,
+        "gene": "Rreb1",
+        "log2_fold_change": -0.808456301689148,
+        "p_value": 6.98822979231697e-08,
+        "score": -5.391473293304443,
+        "target_gene": "Sin3a"
+      },
+      {
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "fdr": 1.2765171031377594e-05,
+        "gene": "Rreb1",
+        "log2_fold_change": 1.2981702089309692,
+        "p_value": 7.455420529948367e-10,
+        "score": 6.156108379364014,
+        "target_gene": "Phf21a"
+      },
+      {
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "fdr": 2.326470085901328e-05,
+        "gene": "Os9",
+        "log2_fold_change": 0.7095658779144287,
+        "p_value": 2.520679567433407e-09,
+        "score": 5.960110187530518,
+        "target_gene": "Sin3a"
+      },
+      {
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "fdr": 0.0007800048684154869,
+        "gene": "Tmem191",
+        "log2_fold_change": -0.7239823341369629,
+        "p_value": 3.0443961234518987e-07,
+        "score": -5.120677471160889,
+        "target_gene": "Sin3a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.0008550685203205762,
+        "gene": "Tmem120a",
+        "log2_fold_change": 0.9376475214958191,
+        "p_value": 2.550104201821227e-05,
+        "score": 4.2103190422058105,
+        "target_gene": "Sin3a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.0011830808413383549,
+        "gene": "Hdac8",
+        "log2_fold_change": 0.34472736716270447,
+        "p_value": 3.845578260564442e-05,
+        "score": 4.1165666580200195,
+        "target_gene": "Sin3a"
+      },
+      {
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "fdr": 0.0027596820271288324,
+        "gene": "Mat2a",
+        "log2_fold_change": -0.39230701327323914,
+        "p_value": 1.8607172256527532e-06,
+        "score": -4.767991542816162,
+        "target_gene": "Sin3a"
+      },
+      {
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "fdr": 0.0041172777237436856,
+        "gene": "Odf2",
+        "log2_fold_change": 0.4219655692577362,
+        "p_value": 3.7191404205217373e-06,
+        "score": 4.626490592956543,
+        "target_gene": "Sin3a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.004191161639262854,
+        "gene": "Grn",
+        "log2_fold_change": 0.4227277934551239,
+        "p_value": 0.0001792153247451177,
+        "score": 3.746645212173462,
+        "target_gene": "Sin3a"
+      },
+      {
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "fdr": 0.01066787502988471,
+        "gene": "Tmem120a",
+        "log2_fold_change": 0.9389779567718506,
+        "p_value": 1.1837964348079047e-05,
+        "score": 4.380550861358643,
+        "target_gene": "Sin3a"
+      },
+      {
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "fdr": 0.021858852532176187,
+        "gene": "Hcn3",
+        "log2_fold_change": 0.714277982711792,
+        "p_value": 5.6172731656100476e-05,
+        "score": 4.028337001800537,
+        "target_gene": "Sin3a"
+      }
+    ],
+    "finding_summaries": [
+      {
+        "claim_id": "claim:sin3a_f001_e0e23e9c8b51",
+        "confidence": "high",
+        "direction": "positive_and_negative_transcriptional_response",
+        "finding_id": "F001",
+        "finding_type": "cell_type_selectivity",
+        "summary": "Sin3a targeting generated a strongly cell-type-skewed response, with the majority of FDR signals in thalamic Prkcd/Grin2c glutamatergic neurons, midbrain glutamatergic neurons, Pvalb GABA neurons, and smaller midbrain/cerebral-nuclei GABA compartments.",
+        "target_gene": "Sin3a",
+        "why_it_matters": "Human SIN3A dosage disorders and mouse Sin3a studies are usually framed through cortical and hippocampal development; this dataset points to discrete subcortical excitatory and inhibitory populations as high-liability contexts for the acute transcriptional response."
+      },
+      {
+        "claim_id": "claim:phf21a_f003_9072792d2f7d",
+        "confidence": "moderate",
+        "direction": "Phf21a_up_Rreb1; Rest_no_FDR_response",
+        "finding_id": "F003",
+        "finding_type": "pathway_uncoupling",
+        "summary": "Phf21a is not a simple Rest phenocopy in this neuronal atlas.",
+        "target_gene": "Phf21a",
+        "why_it_matters": "Although BHC/CoREST can be recruited by REST, Rest targeting produced no FDR-significant signature and did not induce Rreb1; the Phf21a effect is therefore likely routed through a REST-independent or REST-buffered context in these brain cells."
+      },
+      {
+        "claim_id": "claim:rest_f004_be1e525760fd",
+        "confidence": "moderate",
+        "direction": "expected_derepression_not_observed",
+        "finding_id": "F004",
+        "finding_type": "literature_direction_mismatch",
+        "summary": "Selected REST/NRSE target genes were not derepressed after Rest targeting.",
+        "target_gene": "Rest",
+        "why_it_matters": "The result refines canonical REST biology by showing that the assayed mouse-brain populations did not enter the target-gene program seen in stem, non-neuronal, or stress contexts."
+      },
+      {
+        "claim_id": "claim:sin3a_f003_f9f8dfc472dc",
+        "confidence": "moderate",
+        "direction": "Max_convergent_Myc_uncoupled",
+        "finding_id": "F003",
+        "finding_type": "cross_perturbation_contrast",
+        "summary": "Max, but not Myc or Mycn, was a reproducible positive Sin3a signature neighbor in the major responder cell types.",
+        "target_gene": "Sin3a",
+        "why_it_matters": "SIN3A is known to be recruited by MXD/MAX-family repressors; the Max-specific convergence suggests that, in these neurons, removing Max resembles disrupting a SIN3A-linked repressor program more than perturbing Myc-family activators."
+      }
+    ],
+    "parquet_filter": {
+      "cell_types": [
+        "005 L4-5 IT CTX Glut",
+        "008 L2-3 IT ENT PPP RSP Glut",
+        "009 L2-3 IT PIR AON ENT Glut",
+        "017 CA3 CA2-FC DG Glut",
+        "151 TH Prkcd Grin2c Glut"
+      ],
+      "gene_targets": [
+        "Phf21a",
+        "Rest",
+        "Sin3a"
+      ],
+      "names": [
+        "Ache",
+        "Amy1",
+        "Bap1",
+        "Chd4",
+        "Coro6",
+        "Cyp46a1",
+        "Ddx17",
+        "Dzip1",
+        "Gatad2b",
+        "Grin2a",
+        "Grin2b",
+        "Grn",
+        "Hcn3",
+        "Hdac4",
+        "Hdac5",
+        "Hdac8",
+        "Htt",
+        "Ift22",
+        "Kansl1",
+        "Kdm5c",
+        "Mat2a",
+        "Max",
+        "Mbd2",
+        "Mecp2",
+        "Myc",
+        "Mycn",
+        "Npas4",
+        "Odf2",
+        "Omg",
+        "Os9",
+        "Phf21a",
+        "Pnisr",
+        "Rest",
+        "Rnpc3",
+        "Rreb1",
+        "Sin3a",
+        "Snhg11",
+        "Snrnp70",
+        "Srrm2",
+        "Srrm4",
+        "Tmem120a",
+        "Tmem191",
+        "Vgf"
+      ]
+    },
+    "resolved_evidence": [
+      {
+        "cell_type": "",
+        "description": "Direct measurement of the target transcript within Sin3a-targeted cells; the measured Sin3a RNA shifted upward rather than being depleted.",
+        "evidence_id": "E001",
+        "evidence_slug": "sin3a_target_transcript_positive_readout",
+        "genes": "Sin3a",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "1",
+        "scoped_evidence_id": "Sin3a:E001",
+        "statistics": "Sin3a was tested in 21 cell types. The Sin3a row was positive in 20/21 and FDR<0.05 in five: 151 TH Prkcd Grin2c Glut score 9.303, logFC 1.354, FDR 2.36e-17, 176 perturbed cells; 155 MB Glut score 6.392, logFC 1.142, FDR 1.98e-7, 118 cells; 066 CNU-HYa HY GABA score 4.593, logFC 1.018, FDR 0.00535, 66 cells; 191 MB P MY GABA score 4.235, logFC 0.995, FDR 0.0104, 61 cells; 052 Pvalb Gaba score 3.716, logFC 0.746, FDR 0.0226, 98 cells. Nominal p<0.05 in 14/21 cell types.",
+        "target_gene": "Sin3a"
+      },
+      {
+        "cell_type": "",
+        "description": "Distribution of the Sin3a differential-expression burden by matched mouse-brain cell type.",
+        "evidence_id": "E002",
+        "evidence_slug": "sin3a_cell_type_fdr_landscape",
+        "genes": "",
+        "has_cell_type": "0",
+        "has_genes": "0",
+        "n_genes": "0",
+        "scoped_evidence_id": "Sin3a:E002",
+        "statistics": "Across Sin3a rows, 2653 gene-cell_type tests had FDR<0.05, comprising 1815 positive-score and 838 negative-score calls. FDR gene counts by cell type were 1433 in 151 TH Prkcd Grin2c Glut, 609 in 155 MB Glut, 252 in 052 Pvalb Gaba, 124 in 191 MB P MY GABA, 57 in 066 CNU-HYa HY GABA, 56 in 005 L4-5 IT CTX Glut, 41 in 022 L5 ET CTX Glut, 23 in 308 CB GABA, 18 in 046 CTX-CGE GABA, 15 in 110 CNU-HYa HY MM Glut, 11 in 145 MH-LH TH Glut, 6 in 007 L2-3 IT CTX Glut, 5 in 054 CNU-MGE GABA, and 3 in 012 MEA LA CA1 DG Glut; 7 of 21 tested cell types had zero FDR<0.05 genes.",
+        "target_gene": "Sin3a"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "The strongest cell-type-specific Sin3a signature in the dataset.",
+        "evidence_id": "E003",
+        "evidence_slug": "sin3a_151_th_strong_signature",
+        "genes": "Odf2|Hcn3|Dzip1|Sin3a|Srrm2|Snhg11|Amy1|Ache",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "8",
+        "scoped_evidence_id": "Sin3a:E003",
+        "statistics": "176 perturbed cells vs 23679 controls; 1433 FDR<0.05 genes. Top positive scores included Odf2 11.525/FDR 1.71e-26, Hcn3 10.773/FDR 3.99e-23, Dzip1 10.289/FDR 4.54e-21, and Sin3a 9.303/FDR 2.36e-17. Top negative scores included Srrm2 -9.911/FDR 1.60e-19, Snhg11 -9.740/FDR 5.84e-19, Amy1 -9.689/FDR 8.32e-19, and Ache -9.574/FDR 2.22e-18.",
+        "target_gene": "Sin3a"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "description": "The large midbrain glutamatergic Sin3a response.",
+        "evidence_id": "E004",
+        "evidence_slug": "sin3a_155_mb_glut_strong_signature",
+        "genes": "Os9|Cyp46a1|Tmem120a|Odf2|Snhg11|Srrm2|Coro6|Tmem191",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "8",
+        "scoped_evidence_id": "Sin3a:E004",
+        "statistics": "118 perturbed cells vs 20353 controls; 609 FDR<0.05 genes. Highest positive scores included Os9 8.271/FDR 1.16e-12, Cyp46a1 7.553/FDR 1.85e-10, Tmem120a 7.278/FDR 1.18e-9, and Odf2 7.119/FDR 2.70e-9. Highest negative scores included Snhg11 -9.925/FDR 5.67e-19, Srrm2 -7.924/FDR 1.34e-11, Coro6 -7.211/FDR 1.62e-9, and Tmem191 -6.986/FDR 6.18e-9.",
+        "target_gene": "Sin3a"
+      },
+      {
+        "cell_type": "",
+        "description": "The three main inhibitory-neuron Sin3a responses.",
+        "evidence_id": "E005",
+        "evidence_slug": "sin3a_gaba_responder_signatures",
+        "genes": "Odf2|Coro6|Cyp46a1|Snhg11|Mat2a|Omg",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "6",
+        "scoped_evidence_id": "Sin3a:E005",
+        "statistics": "052 Pvalb Gaba had 98 perturbed cells and 252 FDR<0.05 genes, led by Odf2 score 7.104/FDR 6.75e-9 and Coro6 score -9.497/FDR 3.63e-17. 191 MB P MY GABA had 61 perturbed cells and 124 FDR<0.05 genes, led by Cyp46a1 7.858/FDR 6.70e-11 and Snhg11 -5.955/FDR 1.45e-5. 066 CNU-HYa HY GABA had 66 perturbed cells and 57 FDR<0.05 genes, led by Odf2 6.789/FDR 1.93e-7 and Mat2a -5.896/FDR 2.79e-5.",
+        "target_gene": "Sin3a"
+      },
+      {
+        "cell_type": "",
+        "description": "Rreb1 is the only gene repeatedly significant after Phf21a targeting across more than two cell types.",
+        "evidence_id": "E002",
+        "evidence_slug": "rreb1_recurrent_fdr_response_to_phf21a",
+        "genes": "Rreb1",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "1",
+        "scoped_evidence_id": "Phf21a:E002",
+        "statistics": "Rreb1 was FDR<0.05 in 5/22 Phf21a cell types and up in all 5: 005 L4-5 IT CTX Glut logFC +1.298 FDR 1.28e-5; 007 L2-3 IT CTX Glut +1.791 FDR 8.99e-6; 151 TH Prkcd Grin2c Glut +0.879 FDR 9.996e-10; 155 MB Glut +1.953 FDR 1.18e-11; 191 MB P MY GABA +1.939 FDR 5.42e-4. Rreb1 was nominally up in 17/22 and directionally up in all 22 Phf21a rows.",
+        "target_gene": "Phf21a"
+      },
+      {
+        "cell_type": "",
+        "description": "The Phf21a Rreb1 signature was not phenocopied by perturbing Rest in the same atlas.",
+        "evidence_id": "E006",
+        "evidence_slug": "rest_perturbation_lacks_fdr_signature",
+        "genes": "Rest|Rreb1",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "2",
+        "scoped_evidence_id": "Phf21a:E006",
+        "statistics": "Rest-targeted cells were present in 23 cell types with 2,486 total perturbed cells; no Rest cell type had any FDR<0.05 gene. Rreb1 had FDR=1.0 in all 23 Rest rows, including 151 TH Prkcd Grin2c Glut logFC -0.166, p=0.135, and 155 MB Glut logFC -0.307, p=0.221.",
+        "target_gene": "Phf21a"
+      },
+      {
+        "cell_type": "",
+        "description": "Global scan of every differential-expression row for gene_target Rest.",
+        "evidence_id": "E001",
+        "evidence_slug": "rest_global_null_across_23_cell_types",
+        "genes": "",
+        "has_cell_type": "0",
+        "has_genes": "0",
+        "n_genes": "0",
+        "scoped_evidence_id": "Rest:E001",
+        "statistics": "388,046 Rest gene-by-cell-type Wilcoxon rows across 23 cell types; 2,486 Rest-perturbed cells summed over cell types; 23-271 perturbed cells and 2,019-23,679 matched controls per cell type; 0 rows with FDR<0.05; min FDR=0.139; min nominal p=8.23e-6; max |score|=4.459.",
+        "target_gene": "Rest"
+      },
+      {
+        "cell_type": "",
+        "description": "On-target RNA abundance did not show measurable differential expression after Rest targeting.",
+        "evidence_id": "E002",
+        "evidence_slug": "rest_transcript_not_measurably_changed",
+        "genes": "Rest",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "1",
+        "scoped_evidence_id": "Rest:E002",
+        "statistics": "Rest transcript was measured in all 23 Rest-tested cell types; Wilcoxon scores ranged from -0.994 to 0.907; nominal p values ranged from 0.320 to 0.977; all Rest transcript rows had FDR=1.0.",
+        "target_gene": "Rest"
+      },
+      {
+        "cell_type": "",
+        "description": "Selected curated or literature-linked REST target genes did not show a coherent FDR-supported derepression pattern.",
+        "evidence_id": "E008",
+        "evidence_slug": "rest_canonical_target_genes_not_derepressed",
+        "genes": "Npas4|Vgf|Srrm4|Grin2b|Grin2a",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "5",
+        "scoped_evidence_id": "Rest:E008",
+        "statistics": "All tested rows for these genes had FDR=1.0. Minimum nominal p values were Npas4 0.061, Vgf 0.064, Srrm4 0.024, Grin2b 0.012, and Grin2a 0.000125; Srrm4 nominal hits were both decreases, Grin2b had one nominal decrease, and Grin2a had one nominal increase.",
+        "target_gene": "Rest"
+      },
+      {
+        "cell_type": "",
+        "description": "Direct signature comparison between Sin3a and Myc/Max-family perturbations.",
+        "evidence_id": "E008",
+        "evidence_slug": "max_myc_signature_correlations",
+        "genes": "Max|Myc|Mycn|Sin3a",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "4",
+        "scoped_evidence_id": "Sin3a:E008",
+        "statistics": "Pearson correlations between whole-transcriptome Wilcoxon-score signatures for Max and Sin3a were positive in the six strongest Sin3a responder contexts: r=0.233, rank 1 in 151 TH Prkcd Grin2c Glut; r=0.158, rank 6 in 155 MB Glut; r=0.117, rank 7 in 052 Pvalb Gaba; r=0.121, rank 4 in 066 CNU-HYa HY GABA; r=0.156, rank 7 in 191 MB P MY GABA; and r=0.046, rank 71 in 005 L4-5 IT CTX Glut. In the same six cell types, Myc had |r|<=0.023 and Mycn had |r|<=0.053.",
+        "target_gene": "Sin3a"
+      }
+    ],
+    "source_claim_ids": [
+      "claim:sin3a_f001_e0e23e9c8b51",
+      "claim:phf21a_f003_9072792d2f7d",
+      "claim:rest_f004_be1e525760fd",
+      "claim:sin3a_f003_f9f8dfc472dc"
+    ],
+    "source_cluster_ids": [
+      "C137",
+      "C549"
+    ]
+  },
+  "targets": [
+    "Sin3a",
+    "Phf21a",
+    "Rest",
+    "Max",
+    "Chd4",
+    "Mecp2"
+  ],
+  "title": "SIN3A loss drives a cilium/centrosome and cholesterol/Grn response with spliceosome repression that is distinct from REST and generic HDAC-associated chromatin loss"
+}

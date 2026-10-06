@@ -1,0 +1,216 @@
+{
+  "biological_interpretation": "The response argues for a locus- or isoform-specific CALM1 dependency in this thalamic class, adjacent to but not explained by CAMTA1, PMCA, CaMK, calcineurin, or NMDAR perturbations.",
+  "caveats": [
+    "Calm2 was weakly engaged, limiting a full three-paralog redundancy test.",
+    "Calmodulin signaling is mostly protein-level calcium sensing; the RNA signature cannot measure CaM binding, CaMK, calcineurin, or channel gating."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut"
+  ],
+  "exact_observed_result": "Calm1 was FDR-depleted in 151 TH Prkcd Grin2c Glut and induced Rasgrp2, Peg3, Aifm3, Resp18 and Coro6 while lowering Atp2b1; Calm3 was efficiently depleted in the same cell class in the report but did not reproduce this module.",
+  "preliminary_scores": {
+    "novelty": 4,
+    "priority": 4,
+    "support": 4
+  },
+  "prior_expectation": {
+    "citations": [
+      "Kobayashi et al. Calm1/2/3 isoform-specific migration evidence as cited by the source report",
+      "Bas-Orth et al. 2016 PMID:27194798"
+    ],
+    "expectation": "CaM proteins are sequence-identical but prior work has shown Calm-gene-specific neuronal consequences."
+  },
+  "reference_ids": [
+    "Calm1:R001",
+    "Calm1:R002",
+    "Calm1:R009"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Calm1:E001",
+    "Calm1:E002",
+    "Calm1:E003",
+    "Calm1:E008",
+    "Calm1:E010"
+  ],
+  "source_claims": [
+    {
+      "claim_id": "claim:calm1_f001_f7fb247d9c9d",
+      "finding_id": "F001",
+      "gene": "Calm1",
+      "role": "member"
+    },
+    {
+      "claim_id": "claim:calm1_f004_5be4b3cab7b6",
+      "finding_id": "F004",
+      "gene": "Calm1",
+      "role": "member"
+    }
+  ],
+  "source_references": [
+    {
+      "citation": "UniProtKB reviewed entries for human CALM1 and mouse Calm1/Calm3 calmodulin proteins, queried 2025.",
+      "description": "Documents curated 149-aa calmodulin protein entries; the human and mouse CALM entries map to the same UniParc sequence, supporting conserved protein identity.",
+      "ref_id": "R001",
+      "ref_slug": "uniprot_calm_reviewed_identical_core",
+      "source": "UniProtKB",
+      "source_type": "database",
+      "target_gene": "Calm1",
+      "url": "https://rest.uniprot.org/uniprotkb/P0DP26"
+    },
+    {
+      "citation": "Reactome calmodulin induced events, CaM pathway, CaMK/CREB, and NMDA receptor pathway records, queried 2025.",
+      "description": "Curated pathway context for calmodulin binding calcium and controlling adenylyl cyclases, PDE1, CaMK/CREB signaling, and NMDA-receptor feedback.",
+      "ref_id": "R002",
+      "ref_slug": "reactome_calmodulin_pathways",
+      "source": "Reactome",
+      "source_type": "database",
+      "target_gene": "Calm1",
+      "url": "https://reactome.org/content/detail/R-HSA-111997"
+    },
+    {
+      "citation": "Bas-Orth C, Tan YW, Oliveira AM, Bengtson CP, Bading H. The calmodulin-binding transcription activator CAMTA1 is required for long-term memory formation in mice. Learning & Memory. 2016.",
+      "description": "Introduces CAMTA proteins as brain-expressed calmodulin-binding transcriptional regulators coupling calcium/calmodulin signaling to memory-related transcription.",
+      "ref_id": "R009",
+      "ref_slug": "bas_orth_2016_camta1_memory",
+      "source": "Learning & Memory",
+      "source_type": "pubmed",
+      "target_gene": "Calm1",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27194798/"
+    }
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/27194798/",
+    "https://reactome.org/content/detail/R-HSA-111997",
+    "https://rest.uniprot.org/uniprotkb/P0DP26"
+  ],
+  "status": "grounded",
+  "story_id": "S020",
+  "support": [
+    {
+      "exact_de_rows": [
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.6682649764427748e-34,
+          "gene": "Calm1",
+          "gene_target": "Calm1",
+          "log2fc": -0.9238097667694092,
+          "pval": 9.666058151936814e-39,
+          "score": -13.018007278442383
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 9.257209966633801e-09,
+          "gene": "Rasgrp2",
+          "gene_target": "Calm1",
+          "log2fc": 0.8615471720695496,
+          "pval": 1.0727400158333393e-12,
+          "score": 7.12083625793457
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 2.3768539238974707e-06,
+          "gene": "Peg3",
+          "gene_target": "Calm1",
+          "log2fc": 0.21552881598472595,
+          "pval": 4.131503431075041e-10,
+          "score": 6.248976707458496
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.0032109230586188486,
+          "gene": "Aifm3",
+          "gene_target": "Calm1",
+          "log2fc": 0.3277767300605774,
+          "pval": 7.441736041761049e-07,
+          "score": 4.949466228485107
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.006602806975835665,
+          "gene": "Resp18",
+          "gene_target": "Calm1",
+          "log2fc": 0.3658776581287384,
+          "pval": 2.295430897213859e-06,
+          "score": 4.725505828857422
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.018167303636867506,
+          "gene": "Coro6",
+          "gene_target": "Calm1",
+          "log2fc": 0.2706359624862671,
+          "pval": 8.421022602406862e-06,
+          "score": 4.454190731048584
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.03256640813425948,
+          "gene": "Atp2b1",
+          "gene_target": "Calm1",
+          "log2fc": -0.1362781524658203,
+          "pval": 2.408400122312589e-05,
+          "score": -4.223216533660889
+        }
+      ],
+      "finding": "Calm1 151 TH module"
+    },
+    {
+      "exact_de_rows": [
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 2.8097242567678394e-35,
+          "gene": "Coro6",
+          "gene_target": "Camta1",
+          "log2fc": -1.0935200452804565,
+          "pval": 3.255952554340158e-39,
+          "score": -13.100849151611328
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.4000504003324845e-33,
+          "gene": "Peg3",
+          "gene_target": "Camta1",
+          "log2fc": -0.7703437209129333,
+          "pval": 3.2448007424126184e-37,
+          "score": -12.746878623962402
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 8.675302090655945e-26,
+          "gene": "Aifm3",
+          "gene_target": "Camta1",
+          "log2fc": -1.1020969152450562,
+          "pval": 2.5132690453259008e-29,
+          "score": -11.24278450012207
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 8.95813200320472e-12,
+          "gene": "Resp18",
+          "gene_target": "Camta1",
+          "log2fc": -0.8737213015556335,
+          "pval": 6.228494353001719e-15,
+          "score": -7.799232482910156
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 4.33516996551266e-05,
+          "gene": "Rasgrp2",
+          "gene_target": "Camta1",
+          "log2fc": -0.9583320617675781,
+          "pval": 8.053237848280246e-08,
+          "score": -5.365931987762451
+        }
+      ],
+      "finding": "Camta1 opposite neighbor rows"
+    }
+  ],
+  "targets": [
+    "Calm1",
+    "Calm3",
+    "Atp2b1",
+    "Camta1"
+  ],
+  "title": "Calm1 loss creates a 151 TH Rasgrp2/Peg3 module not reproduced by Calm3"
+}

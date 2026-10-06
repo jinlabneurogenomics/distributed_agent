@@ -1,0 +1,397 @@
+{
+  "biological_interpretation": "The cytosolic malate-aspartate branch has a privileged thalamic RNA output that is not reproduced by mitochondrial aminotransferase, mitochondrial malate dehydrogenase, or AGC1 carrier loss.",
+  "caveats": [
+    "Got1 support is weaker than Mdh1; its non-target rows reached FDR<0.1, not FDR<0.05.",
+    "No metabolites, redox ratios, or MAS flux were measured."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut"
+  ],
+  "exact_observed_result": "Mdh1 loss in 151 TH Prkcd Grin2c Glut strongly depleted Mdh1 and induced Cars/Gls while lowering Nrxn1, Cadm3, Lrrtm1 and Grin2b; Got1 was depleted and had an Asns-containing FDR<0.1 tail, whereas Got2, Mdh2 and Slc25a12 were target-only or much weaker in the same cell type.",
+  "preliminary_scores": {
+    "novelty": 4,
+    "priority": 3,
+    "support": 4
+  },
+  "prior_expectation": {
+    "citations": [
+      "Reactome R-HSA-9856872 Malate-aspartate shuttle",
+      "van Karnebeek et al. 2019 PMID:31422819",
+      "Broeks et al. 2019 MDH1 deficiency"
+    ],
+    "expectation": "Reactome groups GOT1, MDH1, GOT2, MDH2 and SLC25A12 in the malate-aspartate shuttle, making the cytosolic/mitochondrial split informative."
+  },
+  "reference_ids": [
+    "Got1:R001",
+    "Got1:R002",
+    "Got2:R001",
+    "Got2:R002",
+    "Got2:R003",
+    "Mdh1:R001",
+    "Mdh1:R002",
+    "Mdh1:R003",
+    "Mdh2:R001",
+    "Mdh2:R004",
+    "Slc25a12:R002"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Got1:E001",
+    "Got1:E002",
+    "Got1:E003",
+    "Got2:E002",
+    "Got2:E009",
+    "Got2:E010",
+    "Got2:E011",
+    "Mdh1:E001",
+    "Mdh1:E002",
+    "Mdh2:E002",
+    "Mdh2:E008",
+    "Slc25a12:E005"
+  ],
+  "source_claims": [
+    {
+      "claim_id": "claim:got1_f001_519a4a87380c",
+      "finding_id": "F001",
+      "gene": "Got1",
+      "role": "member"
+    },
+    {
+      "claim_id": "claim:mdh1_f001_7c8fcdfeeb91",
+      "finding_id": "F001",
+      "gene": "Mdh1",
+      "role": "member"
+    },
+    {
+      "claim_id": "claim:got2_f003_738c24d78a59",
+      "finding_id": "F003",
+      "gene": "Got2",
+      "role": "peripheral"
+    },
+    {
+      "claim_id": "claim:mdh2_f004_712757ba608f",
+      "finding_id": "F004",
+      "gene": "Mdh2",
+      "role": "peripheral"
+    },
+    {
+      "claim_id": "claim:slc25a12_f004_5617ee404268",
+      "finding_id": "F004",
+      "gene": "Slc25a12",
+      "role": "peripheral"
+    }
+  ],
+  "source_references": [
+    {
+      "citation": "UniProtKB reviewed entry P05201, Aspartate aminotransferase, cytoplasmic, Mus musculus.",
+      "description": "Defines mouse Got1 as a cytoplasmic homodimeric aspartate aminotransferase that catalyzes L-aspartate plus 2-oxoglutarate to oxaloacetate plus L-glutamate and links Got1 to glutamate, aspartate, and malate-aspartate-shuttle biology.",
+      "ref_id": "R001",
+      "ref_slug": "uniprot_mouse_got1_p05201",
+      "source": "UniProtKB",
+      "source_type": "database",
+      "target_gene": "Got1",
+      "url": "https://rest.uniprot.org/uniprotkb/P05201"
+    },
+    {
+      "citation": "Reactome mouse pathways R-MMU-9856872, Malate-aspartate shuttle, and R-MMU-8963693, Aspartate and asparagine metabolism.",
+      "description": "Places mouse Got1 in curated malate-aspartate-shuttle and aspartate/asparagine-metabolism pathways.",
+      "ref_id": "R002",
+      "ref_slug": "reactome_mouse_got1_mas_aspartate",
+      "source": "Reactome",
+      "source_type": "database",
+      "target_gene": "Got1",
+      "url": "https://reactome.org/content/detail/R-MMU-9856872"
+    },
+    {
+      "citation": "UniProtKB reviewed entry P40925, MDHC_HUMAN, malate dehydrogenase, cytoplasmic.",
+      "description": "Defines MDH1 as cytosolic malate dehydrogenase, its malate/oxaloacetate NAD(H) reaction, and its role in the malate-aspartate shuttle.",
+      "ref_id": "R001",
+      "ref_slug": "uniprot_mdh1_p40925",
+      "source": "UniProtKB",
+      "source_type": "database",
+      "target_gene": "Mdh1",
+      "url": "https://www.uniprot.org/uniprotkb/P40925"
+    },
+    {
+      "citation": "Reactome pathway R-HSA-9856872, Malate-aspartate shuttle.",
+      "description": "Curates MDH1 and GOT1 as cytosolic participants and MDH2, GOT2, SLC25A11, SLC25A12, and SLC25A13 as mitochondrial-side malate-aspartate-shuttle participants.",
+      "ref_id": "R002",
+      "ref_slug": "reactome_malate_aspartate_shuttle",
+      "source": "Reactome",
+      "source_type": "database",
+      "target_gene": "Mdh1",
+      "url": "https://reactome.org/content/detail/R-HSA-9856872"
+    },
+    {
+      "citation": "Human Protein Atlas entry ENSG00000014641, MDH1.",
+      "description": "Reports MDH1 RNA as detected in all brain regions and in single-nucleus brain data with low region and low cell-type specificity.",
+      "ref_id": "R003",
+      "ref_slug": "hpa_mdh1_brain_expression",
+      "source": "Human Protein Atlas",
+      "source_type": "database",
+      "target_gene": "Mdh1",
+      "url": "https://www.proteinatlas.org/ENSG00000014641-MDH1"
+    },
+    {
+      "citation": "UniProtKB reviewed entry P05202, AATM_MOUSE, Aspartate aminotransferase, mitochondrial.",
+      "description": "Curated mouse GOT2 function, catalytic reactions, cofactor, subcellular localization, and pathway cross-references.",
+      "ref_id": "R001",
+      "ref_slug": "uniprot_mouse_got2_p05202",
+      "source": "UniProtKB",
+      "source_type": "database",
+      "target_gene": "Got2",
+      "url": "https://rest.uniprot.org/uniprotkb/P05202"
+    },
+    {
+      "citation": "QuickGO records GO:0043490 malate-aspartate shuttle, GO:0006532 L-aspartate biosynthetic process, and GO:0006536 glutamate metabolic process.",
+      "description": "Ontology definitions grounding the pathway terminology used for GOT2.",
+      "ref_id": "R002",
+      "ref_slug": "quickgo_malate_aspartate_glutamate_terms",
+      "source": "QuickGO / Gene Ontology",
+      "source_type": "database",
+      "target_gene": "Got2",
+      "url": "https://www.ebi.ac.uk/QuickGO/term/GO:0043490"
+    },
+    {
+      "citation": "van Karnebeek CDM, Ramos RJ, Wen X-Y, et al. Bi-allelic GOT2 Mutations Cause a Treatable Malate-Aspartate Shuttle-Related Encephalopathy. American Journal of Human Genetics. 2019;105(3):534-548.",
+      "description": "Human loss-of-function and model-organism evidence linking GOT2 deficiency to malate-aspartate-shuttle redox imbalance, serine biosynthesis defects, and developmental epileptic encephalopathy.",
+      "ref_id": "R003",
+      "ref_slug": "van_karnebeek_2019_got2_encephalopathy",
+      "source": "American Journal of Human Genetics",
+      "source_type": "pubmed",
+      "target_gene": "Got2",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31422819/"
+    },
+    {
+      "citation": "Reactome events R-HSA-70979, R-HSA-71403, and R-HSA-9856872: MDH2 dimer dehydrogenates malate in the mitochondrial matrix; Citric acid cycle; Malate-aspartate shuttle. Queried 2025-04-29.",
+      "description": "Defines human MDH2 as a mitochondrial-matrix homodimer catalyzing malate plus NAD+ to oxaloacetate plus NADH, places MDH2 in the TCA cycle and malate-aspartate shuttle, and lists MDH1, GOT1, GOT2, SLC25A11, SLC25A12, and SLC25A13 among shuttle participants.",
+      "ref_id": "R001",
+      "ref_slug": "reactome_mdh2_tca_mas",
+      "source": "Reactome",
+      "source_type": "database",
+      "target_gene": "Mdh2",
+      "url": "https://reactome.org/content/detail/R-HSA-70979"
+    },
+    {
+      "citation": "Broeks MH, Shamseldin HE, Alhashem A, et al. MDH1 deficiency is a metabolic disorder of the malate-aspartate shuttle associated with early onset severe encephalopathy. Hum Genet. 2019;138(11-12):1247-1257. doi:10.1007/s00439-019-02063-z.",
+      "description": "Shows that loss of the cytosolic malate dehydrogenase MDH1 is also a malate-aspartate shuttle disorder with severe neurodevelopmental disease, providing paralog and pathway context for the Mdh1 versus Mdh2 perturbation contrast.",
+      "ref_id": "R004",
+      "ref_slug": "broeks_2019_mdh1_deficiency",
+      "source": "Human Genetics",
+      "source_type": "pubmed",
+      "target_gene": "Mdh2",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31538237/"
+    },
+    {
+      "citation": "Reactome pathway R-HSA-9856872, Malate-aspartate shuttle.",
+      "description": "Curated pathway placing SLC25A12/SLC25A13 with SLC25A11, GOT1/GOT2, and MDH1/MDH2 in the malate-aspartate shuttle.",
+      "ref_id": "R002",
+      "ref_slug": "reactome_malate_aspartate_shuttle",
+      "source": "Reactome",
+      "source_type": "database",
+      "target_gene": "Slc25a12",
+      "url": "https://reactome.org/content/detail/R-HSA-9856872"
+    }
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/31422819/",
+    "https://pubmed.ncbi.nlm.nih.gov/31538237/",
+    "https://reactome.org/content/detail/R-HSA-70979",
+    "https://reactome.org/content/detail/R-HSA-9856872",
+    "https://reactome.org/content/detail/R-MMU-9856872",
+    "https://rest.uniprot.org/uniprotkb/P05201",
+    "https://rest.uniprot.org/uniprotkb/P05202",
+    "https://www.ebi.ac.uk/QuickGO/term/GO:0043490",
+    "https://www.proteinatlas.org/ENSG00000014641-MDH1",
+    "https://www.uniprot.org/uniprotkb/P40925"
+  ],
+  "status": "grounded",
+  "story_id": "S108",
+  "support": [
+    {
+      "exact_de_rows": [
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.589149185310798e-22,
+          "gene": "Mdh1",
+          "gene_target": "Mdh1",
+          "log2fc": -1.0585825443267822,
+          "pval": 9.207655051340158e-27,
+          "score": -10.709278106689453
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.8277963774327605e-05,
+          "gene": "Gls",
+          "gene_target": "Mdh1",
+          "log2fc": 0.3195560872554779,
+          "pval": 3.1771186814405712e-09,
+          "score": 5.922174453735352
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.012313699748266432,
+          "gene": "Nrxn1",
+          "gene_target": "Mdh1",
+          "log2fc": -0.26439380645751953,
+          "pval": 8.074473212830704e-06,
+          "score": -4.463199615478516
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.012313699748266432,
+          "gene": "Cadm3",
+          "gene_target": "Mdh1",
+          "log2fc": -0.26030784845352173,
+          "pval": 9.613830236360605e-06,
+          "score": -4.4256815910339355
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.012313699748266432,
+          "gene": "Lrrtm1",
+          "gene_target": "Mdh1",
+          "log2fc": -0.3492993712425232,
+          "pval": 9.988515932309523e-06,
+          "score": -4.417421817779541
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.012313699748266432,
+          "gene": "Grin2b",
+          "gene_target": "Mdh1",
+          "log2fc": -0.17385634779930115,
+          "pval": 9.83262241333736e-06,
+          "score": -4.420821666717529
+        }
+      ],
+      "finding": "Mdh1 151 mixed module"
+    },
+    {
+      "exact_de_rows": [
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 5.521851157715302e-11,
+          "gene": "Got1",
+          "gene_target": "Got1",
+          "log2fc": -0.9529331922531128,
+          "pval": 3.1994038807087907e-15,
+          "score": -7.882872104644775
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.07630047293361755,
+          "gene": "Asns",
+          "gene_target": "Got1",
+          "log2fc": 0.5487172603607178,
+          "pval": 1.326272778265558e-05,
+          "score": 4.355724811553955
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.11164141939274264,
+          "gene": "Gls",
+          "gene_target": "Got1",
+          "log2fc": 0.2803720235824585,
+          "pval": 7.115450566777733e-05,
+          "score": 3.9723920822143555
+        }
+      ],
+      "finding": "Got1 Asns tail"
+    },
+    {
+      "exact_de_rows": [
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 3.7630958587019777e-05,
+          "gene": "Got2",
+          "gene_target": "Got2",
+          "log2fc": -0.6005382537841797,
+          "pval": 2.180367262704663e-09,
+          "score": -5.983765602111816
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Gls",
+          "gene_target": "Got2",
+          "log2fc": -0.014907808974385262,
+          "pval": 0.5755138325444302,
+          "score": -0.5599495768547058
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Nrxn1",
+          "gene_target": "Got2",
+          "log2fc": 0.05025795102119446,
+          "pval": 0.5548587866831839,
+          "score": 0.5904950499534607
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 7.368119581014288e-05,
+          "gene": "Mdh2",
+          "gene_target": "Mdh2",
+          "log2fc": -0.8398787975311279,
+          "pval": 4.2691462894804385e-09,
+          "score": -5.873412609100342
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Gls",
+          "gene_target": "Mdh2",
+          "log2fc": 0.0210872869938612,
+          "pval": 0.7771634655977318,
+          "score": 0.28301745653152466
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Nrxn1",
+          "gene_target": "Mdh2",
+          "log2fc": -0.053095027804374695,
+          "pval": 0.47151035620538473,
+          "score": -0.7200237512588501
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Grin2b",
+          "gene_target": "Mdh2",
+          "log2fc": -0.04710555076599121,
+          "pval": 0.3727869202600582,
+          "score": -0.8912652134895325
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.6044530510601576e-09,
+          "gene": "Slc25a12",
+          "gene_target": "Slc25a12",
+          "log2fc": -0.6131260395050049,
+          "pval": 9.296326850108103e-14,
+          "score": -7.450533866882324
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Gls",
+          "gene_target": "Slc25a12",
+          "log2fc": -0.07936669886112213,
+          "pval": 0.13624181864054444,
+          "score": -1.4899331331253052
+        }
+      ],
+      "finding": "mitochondrial and carrier boundary"
+    }
+  ],
+  "targets": [
+    "Got1",
+    "Mdh1",
+    "Got2",
+    "Mdh2",
+    "Slc25a12"
+  ],
+  "title": "Cytosolic Mdh1 and Got1 split from mitochondrial MAS perturbations in 151 TH neurons"
+}

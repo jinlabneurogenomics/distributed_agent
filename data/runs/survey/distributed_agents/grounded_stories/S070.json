@@ -1,0 +1,552 @@
+{
+  "story_id": "S070",
+  "title": "ELP1 and BDP1 reductions activate an ATF4 amino-acid-starvation module in susceptible thalamic neurons",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Elp1 induced an ATF4-like amino-acid-starvation panel across susceptible neurons, Bdp1 induced a concordant 151 TH Ddit3/aminoacyl-tRNA-synthetase state, and Trmt1 did not induce the same Elp1/Elp2 ISR-like module in 151 TH.",
+  "biological_interpretation": "Elongator loss and Pol III initiation stress sensitize a thalamic tRNA/translation pathway that is not a generic consequence of every tRNA-modification perturbation.",
+  "targets": [
+    "Elp1",
+    "Bdp1",
+    "Elp2",
+    "Trmt1",
+    "Asns",
+    "Cars",
+    "Chac1",
+    "Ddit3",
+    "Eif2ak4",
+    "Shmt2",
+    "Slc7a5",
+    "Srsf5"
+  ],
+  "cell_types": [
+    "052 Pvalb Gaba",
+    "066 CNU-HYa HY GABA",
+    "145 MH-LH TH Glut",
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut"
+  ],
+  "support": {
+    "exact_de_rows": [
+      {
+        "gene_target": "Elp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Aldh1l2",
+        "score": 5.023025035858154,
+        "logfoldchanges": 3.2141880989074707,
+        "pvals_adj": 0.001706341774135458
+      },
+      {
+        "gene_target": "Elp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Asns",
+        "score": 5.480436325073242,
+        "logfoldchanges": 1.3539632558822632,
+        "pvals_adj": 0.000649827219184613
+      },
+      {
+        "gene_target": "Elp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Cars",
+        "score": 4.412086486816406,
+        "logfoldchanges": 0.8963454365730286,
+        "pvals_adj": 0.010939574792507081
+      },
+      {
+        "gene_target": "Elp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Chac1",
+        "score": 3.7973029613494873,
+        "logfoldchanges": 2.1761131286621094,
+        "pvals_adj": 0.06249130812392468
+      },
+      {
+        "gene_target": "Elp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Ddit3",
+        "score": 2.272688627243042,
+        "logfoldchanges": 0.8586263060569763,
+        "pvals_adj": 0.8912315827810614
+      },
+      {
+        "gene_target": "Elp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Elp1",
+        "score": -0.2068839967250824,
+        "logfoldchanges": -0.04122919589281082,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Elp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Mars1",
+        "score": 5.349809646606445,
+        "logfoldchanges": 0.9141878485679626,
+        "pvals_adj": 0.000649827219184613
+      },
+      {
+        "gene_target": "Elp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Mthfd2",
+        "score": 4.581263065338135,
+        "logfoldchanges": 2.3381941318511963,
+        "pvals_adj": 0.00643464407655664
+      },
+      {
+        "gene_target": "Elp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Slc7a5",
+        "score": 4.376706123352051,
+        "logfoldchanges": 1.9482232332229614,
+        "pvals_adj": 0.011840953231098902
+      },
+      {
+        "gene_target": "Elp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Srsf5",
+        "score": -4.8190412521362305,
+        "logfoldchanges": -0.538030207157135,
+        "pvals_adj": 0.0034428256129489954
+      },
+      {
+        "gene_target": "Bdp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Aars",
+        "score": 4.639671325683594,
+        "logfoldchanges": 0.6244029998779297,
+        "pvals_adj": 0.012045523855059687
+      },
+      {
+        "gene_target": "Bdp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Cars",
+        "score": 4.554296970367432,
+        "logfoldchanges": 0.6826738119125366,
+        "pvals_adj": 0.01511918319514977
+      },
+      {
+        "gene_target": "Bdp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Ddit3",
+        "score": 5.075687885284424,
+        "logfoldchanges": 1.031280755996704,
+        "pvals_adj": 0.0057181256528629695
+      },
+      {
+        "gene_target": "Bdp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Iars",
+        "score": 4.6879072189331055,
+        "logfoldchanges": 0.7343322038650513,
+        "pvals_adj": 0.012045523855059687
+      },
+      {
+        "gene_target": "Bdp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Kcnc2",
+        "score": -4.454539775848389,
+        "logfoldchanges": -0.23439903557300568,
+        "pvals_adj": 0.02072889195533439
+      },
+      {
+        "gene_target": "Bdp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Lars",
+        "score": 4.667627334594727,
+        "logfoldchanges": 0.6626774668693542,
+        "pvals_adj": 0.012045523855059687
+      },
+      {
+        "gene_target": "Bdp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Mars1",
+        "score": 4.972009181976318,
+        "logfoldchanges": 0.6053118705749512,
+        "pvals_adj": 0.0057181256528629695
+      },
+      {
+        "gene_target": "Bdp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Yars",
+        "score": 4.265933513641357,
+        "logfoldchanges": 0.7055141925811768,
+        "pvals_adj": 0.042946485550350896
+      },
+      {
+        "gene_target": "Trmt1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Asns",
+        "score": 0.3485276699066162,
+        "logfoldchanges": 0.06204166263341904,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Trmt1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Atf4",
+        "score": 1.160248875617981,
+        "logfoldchanges": 0.5146348476409912,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Trmt1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Cars",
+        "score": 0.26399895548820496,
+        "logfoldchanges": -0.008004103787243366,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Trmt1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Ddit3",
+        "score": -0.5862902998924255,
+        "logfoldchanges": -0.2599020302295685,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Trmt1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Elp1",
+        "score": 0.6212406158447266,
+        "logfoldchanges": 0.07730340957641602,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Trmt1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Elp2",
+        "score": -0.1788724958896637,
+        "logfoldchanges": -0.03143548220396042,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Trmt1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Herpud1",
+        "score": 0.8129795789718628,
+        "logfoldchanges": 0.11761682480573654,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Trmt1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Mars1",
+        "score": 2.5589210987091064,
+        "logfoldchanges": 0.34717321395874023,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Trmt1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Nsun2",
+        "score": -0.2379513829946518,
+        "logfoldchanges": -0.06955514848232269,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Trmt1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Shmt2",
+        "score": 1.5839622020721436,
+        "logfoldchanges": 0.5383891463279724,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Trmt1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Slc38a2",
+        "score": 0.8164399862289429,
+        "logfoldchanges": 0.13381840288639069,
+        "pvals_adj": 1.0
+      }
+    ],
+    "evidence_records": [
+      {
+        "target_gene": "Elp1",
+        "evidence_id": "E002",
+        "evidence_slug": "elp1_151_th_prkcd_grin2c_large_isr",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Cars|Chac1|Asns|Shmt2|Slc1a4|Herpud1|Atf4|Ddit3|Mars1|Slc3a2|Slc7a5|Adgrb1|Srsf5",
+        "n_genes": "13",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "153 perturbed cells versus 23679 controls; 645 genes at FDR<0.05. Cars logFC 1.12 score 11.92 FDR 1.53e-28; Chac1 logFC 3.43 score 11.83 FDR 2.28e-28; Asns logFC 1.46 score 11.64 FDR 1.50e-27; Ddit3 logFC 1.57 FDR 3.13e-20; Atf4 logFC 1.57 FDR 4.66e-9; Adgrb1 logFC -0.677 FDR 1.32e-20; Srsf5 logFC -0.543 FDR 4.79e-14.",
+        "description": "The dominant Elp1 response was a large amino-acid-stress-like program in this thalamic glutamatergic class."
+      },
+      {
+        "target_gene": "Elp1",
+        "evidence_id": "E003",
+        "evidence_slug": "elp1_145_mh_lh_th_recurrent_isr",
+        "cell_type": "145 MH-LH TH Glut",
+        "genes": "Asns|Mars1|Ddx17|Aldh1l2|Atf4|Srsf5|Herpud1|Mthfd2|Cars|Shmt2|Slc7a5",
+        "n_genes": "11",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "54 perturbed cells versus 6961 controls; 29 genes at FDR<0.05. Asns logFC 1.35 FDR 6.50e-4; Mars1 logFC 0.914 FDR 6.50e-4; Ddx17 logFC -0.652 FDR 6.50e-4; Aldh1l2 logFC 3.21 FDR 0.00171; Atf4 logFC 1.77 FDR 0.00171; Srsf5 logFC -0.538 FDR 0.00344; Chac1 logFC 2.18 p=1.46e-4 FDR 0.0625.",
+        "description": "A smaller but coherent amino-acid-stress response recurred in the MH-LH/TH glutamatergic class."
+      },
+      {
+        "target_gene": "Elp1",
+        "evidence_id": "E004",
+        "evidence_slug": "elp1_155_mb_glut_recurrent_isr",
+        "cell_type": "155 MB Glut",
+        "genes": "Srsf5|Aldh1l2|Cars|Slc1a4|Chac1|Mars1|Lars|Ddx17",
+        "n_genes": "8",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "128 perturbed cells versus 20353 controls; 12 genes at FDR<0.05. Srsf5 logFC -0.637 FDR 3.65e-12; Aldh1l2 logFC 1.44 FDR 1.23e-5; Cars logFC 0.709 FDR 1.23e-5; Slc1a4 logFC 1.12 FDR 0.00517; Chac1 logFC 1.75 FDR 0.00517; Mars1 logFC 0.610 FDR 0.00844; Lars logFC 0.583 FDR 0.00884; Ddx17 logFC -0.341 FDR 0.0260.",
+        "description": "Midbrain glutamatergic Elp1-perturbed cells showed a compact version of the same stress signature."
+      },
+      {
+        "target_gene": "Elp1",
+        "evidence_id": "E005",
+        "evidence_slug": "elp1_191_mb_p_my_gaba_recurrent_isr",
+        "cell_type": "191 MB P MY GABA",
+        "genes": "Cars|Srsf5|Aldh1l2|Slc7a5|Mars1|Mthfd2",
+        "n_genes": "6",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "64 perturbed cells versus 10309 controls; 10 genes at FDR<0.05. Cars logFC 0.957 FDR 3.43e-7; Srsf5 logFC -0.625 FDR 5.42e-5; Aldh1l2 logFC 1.64 FDR 2.63e-4; Slc7a5 logFC 1.79 FDR 0.00212; Mars1 logFC 0.839 FDR 0.00276; Mthfd2 logFC 2.04 FDR 0.0292.",
+        "description": "A GABAergic midbrain/pons/medulla class also carried the Elp1 amino-acid-stress axis."
+      },
+      {
+        "target_gene": "Bdp1",
+        "evidence_id": "E002",
+        "evidence_slug": "bdp1_thalamic_fdr_aminoacyl_isr_signature",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Ddit3|Mars1|Iars|Lars|Aars|Cars|Yars|Kcnc2",
+        "n_genes": "8",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "93 perturbed cells versus 23679 controls; 8 genes reached FDR<0.05: Ddit3 logFC 1.031, FDR 0.00572; Mars1 0.605, FDR 0.00572; Iars 0.734, FDR 0.0120; Lars 0.663, FDR 0.0120; Aars 0.624, FDR 0.0120; Cars 0.683, FDR 0.0151; Kcnc2 -0.234, FDR 0.0207; Yars 0.706, FDR 0.0429.",
+        "description": "The only Bdp1 cell type with FDR-significant genes showed up-regulation of six cytosolic aminoacyl-tRNA synthetase genes plus Ddit3 and a down-regulated Kcnc2."
+      },
+      {
+        "target_gene": "Bdp1",
+        "evidence_id": "E003",
+        "evidence_slug": "bdp1_fdr_response_restricted_to_151",
+        "cell_type": "",
+        "genes": "",
+        "n_genes": "0",
+        "has_genes": "0",
+        "has_cell_type": "0",
+        "statistics": "Bdp1 DE covered 338339 gene-by-cell-type rows across 20 cell types; all 8 FDR<0.05 rows were in 151 TH Prkcd Grin2c Glut; the other 19 cell types each had 0 FDR<0.05 genes, with minimum within-cell-type FDR values from 0.190 to 1.000.",
+        "description": "Multiple-testing-significant Bdp1 responses were restricted to one glutamatergic thalamic class."
+      },
+      {
+        "target_gene": "Elp1",
+        "evidence_id": "E006",
+        "evidence_slug": "elp1_minor_pvalb_and_cnu_hya_hy_echoes",
+        "cell_type": "",
+        "genes": "Asns|Srsf5|Ndufs8|Zfp961",
+        "n_genes": "4",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "052 Pvalb Gaba had 103 perturbed cells and 3 FDR<0.05 genes: Ndufs8 FDR 0.035, Zfp961 FDR 0.035, Asns FDR 0.0479. 066 CNU-HYa HY GABA had 65 perturbed cells and 1 FDR<0.05 gene: Srsf5 logFC -0.566, score -5.09, FDR 0.00601.",
+        "description": "Two additional GABAergic classes showed only one to three FDR hits including one recurrent stress marker each."
+      },
+      {
+        "target_gene": "Elp1",
+        "evidence_id": "E007",
+        "evidence_slug": "elp1_fifteen_classes_fdr_silent",
+        "cell_type": "",
+        "genes": "",
+        "n_genes": "0",
+        "has_genes": "0",
+        "has_cell_type": "0",
+        "statistics": "15 of 21 tested Elp1 cell types had zero genes at FDR<0.05 despite 35 to 117 perturbed cells per class; examples: 005 L4-5 IT CTX Glut had 117 perturbed cells and max |score| 4.00; 012 MEA LA CA1 DG Glut had Elp1 logFC -0.530 but zero FDR genes; 308 CB GABA had Elp1 logFC -0.688 but zero FDR genes.",
+        "description": "Most cell classes were FDR-silent for Elp1, including several with nominal target-transcript depletion or moderate perturbed-cell counts."
+      },
+      {
+        "target_gene": "Elp1",
+        "evidence_id": "E008",
+        "evidence_slug": "elp2_matches_elp1_151_signature",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Elp2|Asns|Shmt2|Herpud1|Cars|Chac1|Slc3a2|Mars1|Slc7a5",
+        "n_genes": "9",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "Elp2 had 141 perturbed cells versus 23679 controls; Elp2 transcript logFC -0.601, score -3.84, p=1.25e-4, FDR 0.0198. Elp2 produced 150 FDR<0.05 genes and was the top non-Elp1 neighbor of the Elp1 top-100 signature among 2046 perturbations, cosine 0.974 and Pearson r 0.971.",
+        "description": "The other assayed Elongator core subunit phenocopied Elp1 in the strongest responsive cell type."
+      },
+      {
+        "target_gene": "Elp1",
+        "evidence_id": "E009",
+        "evidence_slug": "elp1_related_controls_not_equivalent_151",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Alkbh8|Nsun2|Eif2ak4|Cars|Chac1|Asns|Slc3a2",
+        "n_genes": "7",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "Using the 151 TH Prkcd Grin2c Glut top-100 Elp1 genes, cosine similarity was 0.573 for Alkbh8, 0.332 for Nsun2, and 0.210 for Eif2ak4. Representative Elp1 markers Cars, Chac1, Asns, and Slc3a2 did not pass FDR<0.05 in those three comparator signatures.",
+        "description": "Preselected RNA-modification or stress-sensor comparators did not reproduce the Elp1/Elp2 signature."
+      },
+      {
+        "target_gene": "Trmt1",
+        "evidence_id": "E006",
+        "evidence_slug": "trmt1_vs_tRNA_methyltransferase_neighbors",
+        "cell_type": "",
+        "genes": "Trmt1|Nsun2|Alkbh8",
+        "n_genes": "3",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "In 22 Nsun2 and 20 Alkbh8 cell-type signatures, no Nsun2 or Alkbh8 contrast had any FDR<0.05 gene; Trmt1-versus-Nsun2 Pearson correlations of gene-level scores ranged from -0.106 to 0.061, and Trmt1-versus-Alkbh8 correlations ranged from -0.092 to 0.107 over matched measured genes.",
+        "description": "Comparison of Trmt1 with two assayed tRNA modification neighbors showed no shared score signature."
+      }
+    ],
+    "source_claim_ids": [
+      "claim:elp1_f001_17648acde3a4",
+      "claim:bdp1_f001_3b834bdc437f",
+      "claim:elp1_f002_c5a240b4c352",
+      "claim:elp1_f003_43833ecec224",
+      "claim:trmt1_f003_bd7fb1916186"
+    ],
+    "source_cluster_ids": [
+      "C121",
+      "C160",
+      "C164"
+    ]
+  },
+  "caveats": [
+    "The Bdp1 response is weaker and more thalamus-restricted than the Elp1 response, and the Trmt1 comparator is interpreted as non-interchangeability rather than evidence that TRMT1 biology is absent."
+  ],
+  "prior_expectation": {
+    "summary": "Prior literature and pathway context were taken from the resolved report references; the observed Perturb-seq signal either refines expected gene function by cell type or marks an exploratory response-state neighbor where noted in caveats.",
+    "citations": [
+      {
+        "reference_id": "Elp1:R002",
+        "citation": "Goffena J et al. Elongator and codon bias regulate protein levels in mammalian peripheral neurons. Nat Commun. 2018;9:889.",
+        "url": "https://doi.org/10.1038/s41467-018-03221-z",
+        "supports": "Showed that IKBKAP/ELP1 encodes the Elongator scaffold and that Elongator loss alters codon-biased protein expression in mammalian peripheral neurons."
+      },
+      {
+        "reference_id": "Elp1:R003",
+        "citation": "Shan J et al. The C/ebp-Atf response element location reveals two distinct Atf4-dependent, elongation-mediated mechanisms for transcriptional induction of aminoacyl-tRNA synthetase genes in response to amino acid limitation. Nucleic Acids Res. 2016;44(20):9719-9732.",
+        "url": "https://doi.org/10.1093/nar/gkw667",
+        "supports": "Demonstrated that amino acid limitation induces most cytoplasmic aminoacyl-tRNA synthetase genes through Atf4-dependent CARE enhancers."
+      },
+      {
+        "reference_id": "Elp1:R004",
+        "citation": "Vasudevan D et al. Translational induction of ATF4 during integrated stress response requires noncanonical initiation factors eIF2D and DENR. Nat Commun. 2020;11:4677.",
+        "url": "https://doi.org/10.1038/s41467-020-18453-1",
+        "supports": "Summarized ATF4 induction as a core effector of the metazoan integrated stress response to amino acid deprivation and ER stress."
+      },
+      {
+        "reference_id": "Elp1:R005",
+        "citation": "Waszak SM et al. Germline Elongator mutations in Sonic Hedgehog medulloblastoma. Nature. 2020;580(7803):396-401.",
+        "url": "https://doi.org/10.1038/s41586-020-2164-5",
+        "supports": "Linked germline ELP1 loss-of-function to Sonic Hedgehog medulloblastoma and reported destabilized Elongator, loss of wobble tRNA modifications, codon-dependent translational reprogramming, and unfolded protein response induction in ELP1-associated tumors."
+      },
+      {
+        "reference_id": "Bdp1:R001",
+        "citation": "UniProtKB entries A6H8Y1 BDP1_HUMAN and Q571C7 BDP1_MOUSE.",
+        "url": "https://rest.uniprot.org/uniprotkb/A6H8Y1",
+        "supports": "Curated BDP1 function, homology to mouse Bdp1, nuclear localization, TFIIIB subunit membership, and links to RNA polymerase III promoter-initiation pathways."
+      },
+      {
+        "reference_id": "Bdp1:R002",
+        "citation": "Reactome RNA Polymerase III Transcription Initiation From Type 1/2/3 Promoter pathways: R-HSA-76061, R-HSA-76066 and R-HSA-76071.",
+        "url": "https://reactome.org/content/detail/R-HSA-76066",
+        "supports": "Places BDP1 in RNA polymerase III transcription initiation at all three promoter classes."
+      },
+      {
+        "reference_id": "Bdp1:R005",
+        "citation": "Neill GNG, Masson GR. A stay of execution: ATF4 regulation and potential outcomes for the integrated stress response. Front Mol Neurosci. 2023;16:1112253. doi:10.3389/fnmol.2023.1112253.",
+        "url": "https://www.frontiersin.org/articles/10.3389/fnmol.2023.1112253/full",
+        "supports": "Review defining ATF4 and DDIT3/CHOP as hallmark ISR outputs with context-dependent adaptation or apoptosis."
+      },
+      {
+        "reference_id": "Bdp1:R006",
+        "citation": "Shan J, Zhang F, Sharkey J, Tang TA, \u00d6rd T, Kilberg MS. The C/EBP-ATF response element location reveals two distinct ATF4-dependent, elongation-mediated mechanisms for transcriptional induction of aminoacyl-tRNA synthetase genes in response to amino acid limitation. Nucleic Acids Res. 2016;44(20):9719-9732. doi:10.1093/nar/gkw667.",
+        "url": "https://doi.org/10.1093/nar/gkw667",
+        "supports": "Demonstrates that most cytosolic aminoacyl-tRNA synthetase genes are inducible during amino-acid limitation through ATF4/CARE-dependent transcriptional regulation."
+      },
+      {
+        "reference_id": "Elp1:R001",
+        "citation": "Slaugenhaupt SA et al. Tissue-specific expression of a splicing mutation in the IKBKAP gene causes familial dysautonomia. Am J Hum Genet. 2001;68(3):598-605.",
+        "url": "https://doi.org/10.1086/318810",
+        "supports": "Identified IKBKAP/ELP1 mutations as causes of familial dysautonomia and showed tissue-specific exon-20 skipping with loss of wild-type transcript in patient brain RNA."
+      },
+      {
+        "reference_id": "Elp1:R006",
+        "citation": "Dalwadi U et al. Biochemical and structural characterization of human core Elongator and its subassemblies. ACS Omega. 2022;7(4):3424-3433.",
+        "url": "https://doi.org/10.1021/acsomega.1c05719",
+        "supports": "Biochemically characterized human Elongator as an Elp1-Elp6 tRNA anticodon-modifying complex and showed that ELP1, ELP2, and ELP3 form the core subcomplex."
+      },
+      {
+        "reference_id": "Elp1:R007",
+        "citation": "Kojic M et al. A novel ELP1 mutation impairs the function of the Elongator complex and causes a severe neurodevelopmental phenotype. J Hum Genet. 2023;68(7):445-453.",
+        "url": "https://doi.org/10.1038/s10038-023-01135-3",
+        "supports": "Reported a homozygous ELP1 missense mutation causing intellectual disability and global developmental delay and showed impaired ELP123 tRNA binding and Elongator function."
+      },
+      {
+        "reference_id": "Elp1:R008",
+        "citation": "Morini E et al. ELP1 splicing correction reverses proprioceptive sensory loss in familial dysautonomia. Am J Hum Genet. 2019;104(4):638-650.",
+        "url": "https://doi.org/10.1016/j.ajhg.2019.02.009",
+        "supports": "Provided preclinical evidence that increasing correct ELP1 splicing can rescue proprioceptive sensory phenotypes, supporting restoration of ELP1 expression as a therapeutic direction."
+      },
+      {
+        "reference_id": "Trmt1:R006",
+        "citation": "STRING interaction-partner network for human TRMT1, queried for high-confidence functional partners.",
+        "url": "https://string-db.org/cgi/network?identifiers=TRMT1&species=9606",
+        "supports": "Shows that the closest TRMT1 functional neighborhood is enriched for other RNA and tRNA modification enzymes, including NSUN2 among the experimentally assayed dataset neighbors."
+      },
+      {
+        "reference_id": "Trmt1:R007",
+        "citation": "UniProtKB Q08J23, NSUN2_HUMAN; UniProtKB Q96BT7, ALKB8_HUMAN.",
+        "url": "https://www.uniprot.org/",
+        "supports": "Curated functions for the comparator tRNA modification enzymes NSUN2 and ALKBH8."
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 5,
+    "priority": 5
+  },
+  "report_evidence_ids": [
+    "Elp1:E002",
+    "Elp1:E003",
+    "Elp1:E004",
+    "Elp1:E005",
+    "Bdp1:E002",
+    "Bdp1:E003",
+    "Elp1:E006",
+    "Elp1:E007",
+    "Elp1:E008",
+    "Elp1:E009",
+    "Trmt1:E006"
+  ],
+  "reference_ids": [
+    "Elp1:R002",
+    "Elp1:R003",
+    "Elp1:R004",
+    "Elp1:R005",
+    "Bdp1:R001",
+    "Bdp1:R002",
+    "Bdp1:R005",
+    "Bdp1:R006",
+    "Elp1:R001",
+    "Elp1:R006",
+    "Elp1:R007",
+    "Elp1:R008",
+    "Trmt1:R006",
+    "Trmt1:R007"
+  ],
+  "source_urls_or_dois": [
+    "https://doi.org/10.1038/s41467-018-03221-z",
+    "https://doi.org/10.1093/nar/gkw667",
+    "https://doi.org/10.1038/s41467-020-18453-1",
+    "https://doi.org/10.1038/s41586-020-2164-5",
+    "https://rest.uniprot.org/uniprotkb/A6H8Y1",
+    "https://reactome.org/content/detail/R-HSA-76066",
+    "https://www.frontiersin.org/articles/10.3389/fnmol.2023.1112253/full",
+    "https://doi.org/10.1086/318810",
+    "https://doi.org/10.1021/acsomega.1c05719",
+    "https://doi.org/10.1038/s10038-023-01135-3",
+    "https://doi.org/10.1016/j.ajhg.2019.02.009",
+    "https://string-db.org/cgi/network?identifiers=TRMT1&species=9606",
+    "https://www.uniprot.org/"
+  ]
+}

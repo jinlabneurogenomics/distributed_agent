@@ -1,0 +1,299 @@
+{
+  "biological_interpretation": "CHD4/NuRD loss acutely rewires a thalamic adhesion and excitability program while provoking a partial CHD paralog response rather than a nonspecific chromatin-regulator signature.",
+  "caveats": [
+    "Chd4 mRNA itself was only nominal in 151 TH despite the broad guide-defined response.",
+    "NuRD paralog compensation is inferred from Chd3/Chd5 mRNA changes, not NuRD complex composition."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut"
+  ],
+  "exact_observed_result": "Chd4 perturbation generated a dominant 151 TH Prkcd Grin2c Glut state with Begain and ion-channel/synaptic genes up, Pcdhb19/20/21/22 down, and Chd3 induced with nominal Chd5 induction.",
+  "preliminary_scores": {
+    "novelty": 4,
+    "priority": 4,
+    "support": 5
+  },
+  "prior_expectation": {
+    "citations": [
+      {
+        "ref": "Yamada et al. 2014",
+        "supports": "CHD4/NuRD control of neuronal synaptic connectivity",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/24991957/"
+      },
+      {
+        "ref": "Nitarska et al. 2016",
+        "supports": "CHD3/4/5 NuRD subunit functions in cortical development",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/27806305/"
+      }
+    ],
+    "summary": "Prior expectation is grounded by the listed traceable corpus citations; direct prior support for the exact cell-type/state relationship is partial unless noted in the caveats."
+  },
+  "reference_ids": [
+    "Chd4:R002",
+    "Chd4:R003",
+    "Chd4:R007"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Chd4:E002",
+    "Chd4:E003",
+    "Chd4:E004",
+    "Chd4:E005",
+    "Ep300:E010",
+    "Ep300:E011",
+    "Ep300:E012"
+  ],
+  "source_urls_or_dois": [
+    {
+      "ref": "Yamada et al. 2014",
+      "supports": "CHD4/NuRD control of neuronal synaptic connectivity",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/24991957/"
+    },
+    {
+      "ref": "Nitarska et al. 2016",
+      "supports": "CHD3/4/5 NuRD subunit functions in cortical development",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/27806305/"
+    }
+  ],
+  "status": "grounded",
+  "story_id": "S061",
+  "support": {
+    "exact_de_rows": [
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Bcan",
+        "log2_fold_change": 0.816597,
+        "pval": 3.530082573871453e-08,
+        "pvals_adj": 5.5386995584043105e-05,
+        "score": 5.51288,
+        "target": "Chd4"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Begain",
+        "log2_fold_change": 1.001379,
+        "pval": 6.847729165277544e-29,
+        "pvals_adj": 1.1818495766352513e-24,
+        "score": 11.153975,
+        "target": "Chd4"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Cacnb3",
+        "log2_fold_change": 0.498762,
+        "pval": 5.160926405349091e-05,
+        "pvals_adj": 0.015326950069888604,
+        "score": 4.048217,
+        "target": "Chd4"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Cacng7",
+        "log2_fold_change": 0.411156,
+        "pval": 1.5767193950642977e-08,
+        "pvals_adj": 3.0236222266016352e-05,
+        "score": 5.652999,
+        "target": "Chd4"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Chd3",
+        "log2_fold_change": 0.337275,
+        "pval": 0.00020717184877309087,
+        "pvals_adj": 0.0399944240028574,
+        "score": 3.710107,
+        "target": "Chd4"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Chd4",
+        "log2_fold_change": -0.343914,
+        "pval": 0.0005066880375273941,
+        "pvals_adj": 0.07346477306937542,
+        "score": -3.477196,
+        "target": "Chd4"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Chd5",
+        "log2_fold_change": 0.404213,
+        "pval": 0.0012014533843090313,
+        "pvals_adj": 0.11871181461943699,
+        "score": 3.238535,
+        "target": "Chd4"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Cpne7",
+        "log2_fold_change": -1.06352,
+        "pval": 2.5320383529338805e-21,
+        "pvals_adj": 2.1850224966642924e-17,
+        "score": -9.480444,
+        "target": "Chd4"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Kcna2",
+        "log2_fold_change": 0.24237,
+        "pval": 0.0001371414835121207,
+        "pvals_adj": 0.03045161505427632,
+        "score": 3.813268,
+        "target": "Chd4"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Kcnab3",
+        "log2_fold_change": 0.796615,
+        "pval": 8.689347981005751e-08,
+        "pvals_adj": 9.997963786945216e-05,
+        "score": 5.352195,
+        "target": "Chd4"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Kcnt1",
+        "log2_fold_change": 0.372183,
+        "pval": 5.4820600883675825e-05,
+        "pvals_adj": 0.015769145844189352,
+        "score": 4.034063,
+        "target": "Chd4"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Lrrc55",
+        "log2_fold_change": 1.323352,
+        "pval": 1.5826526731255808e-05,
+        "pvals_adj": 0.007003846791147282,
+        "score": 4.316859,
+        "target": "Chd4"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Pcdhb19",
+        "log2_fold_change": -0.811083,
+        "pval": 0.00022645060896082814,
+        "pvals_adj": 0.041738451222450276,
+        "score": -3.68752,
+        "target": "Chd4"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Pcdhb20",
+        "log2_fold_change": -0.895023,
+        "pval": 7.565254176790631e-07,
+        "pvals_adj": 0.0005440363409884562,
+        "score": -4.946261,
+        "target": "Chd4"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Pcdhb21",
+        "log2_fold_change": -1.052145,
+        "pval": 1.91052411556633e-05,
+        "pvals_adj": 0.008200956794991162,
+        "score": -4.275099,
+        "target": "Chd4"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Pcdhb22",
+        "log2_fold_change": -0.807932,
+        "pval": 1.3010965218523471e-05,
+        "pvals_adj": 0.006237673575180461,
+        "score": -4.359921,
+        "target": "Chd4"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Ramp3",
+        "log2_fold_change": -0.682198,
+        "pval": 3.2046725180179075e-10,
+        "pvals_adj": 1.3827360747117767e-06,
+        "score": -6.288539,
+        "target": "Chd4"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Stxbp2",
+        "log2_fold_change": 0.583593,
+        "pval": 3.8249945454207146e-07,
+        "pvals_adj": 0.0003883269462318595,
+        "score": 5.077467,
+        "target": "Chd4"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Ep300",
+        "log2_fold_change": -0.187744,
+        "pval": 0.039669926347930595,
+        "pvals_adj": 1.0,
+        "score": -2.057169,
+        "target": "Ep300"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Hdac5",
+        "log2_fold_change": -0.326726,
+        "pval": 1.5828303386274885e-05,
+        "pvals_adj": 0.27318068814371826,
+        "score": -4.316834,
+        "target": "Hdac5"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Ncoa3",
+        "log2_fold_change": -0.126613,
+        "pval": 0.3486508181131177,
+        "pvals_adj": 1.0,
+        "score": -0.937209,
+        "target": "Ncoa3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Stat3",
+        "log2_fold_change": 0.117571,
+        "pval": 0.2836802707504773,
+        "pvals_adj": 1.0,
+        "score": 1.072088,
+        "target": "Stat3"
+      }
+    ],
+    "summary": [
+      "Chd4 had 100 FDR<0.05 genes in 151 TH, including the ion-channel and beta-protocadherin arms.",
+      "Chd3 reached FDR<0.05 and Chd5 rose nominally in the same dominant cell type.",
+      "Ep300, Hdac5, Ncoa3, and Stat3 each had zero FDR genes in 151 TH."
+    ]
+  },
+  "targets": [
+    "Chd4",
+    "Chd3",
+    "Chd5",
+    "Ep300",
+    "Hdac5",
+    "Ncoa3",
+    "Stat3"
+  ],
+  "title": "Chd4 loss raises ion-channel genes and Chd3 while lowering beta-protocadherins in 151 TH neurons"
+}

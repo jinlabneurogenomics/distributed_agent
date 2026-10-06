@@ -1,0 +1,47 @@
+{
+  "story_id": "S041",
+  "title": "Xpo1 gain in caudal neurons induces Arrdc3/Slc16a6/Vamp2/Sun2 and represses RNA-processing transcripts without mimicking selinexor-like inhibition",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Xpo1 targeting increased Xpo1 RNA in the strongest responsive classes and produced a bidirectional module: Arrdc3, Slc16a6, Vamp2, and Sun2 rose while Snrnp70, Arglu1, Pabpn1, and Srsf-family rows fell. A WNT/TGF-beta/p53 sentinel panel produced zero FDR<0.05 rows in the five responsive classes.",
+  "biological_interpretation": "This is an Xpo1-transcript gain state coupled to RNA-processing repression and is directionally distinct from pharmacologic CRM1/XPO1 inhibition by selinexor.",
+  "targets": ["Xpo1", "Arrdc3", "Slc16a6", "Vamp2", "Sun2", "Snrnp70", "Pabpn1", "Arglu1", "Srsf11"],
+  "cell_types": ["151 TH Prkcd Grin2c Glut", "155 MB Glut", "066 CNU-HYa HY GABA", "145 MH-LH TH Glut", "191 MB P MY GABA"],
+  "support": [
+    {
+      "evidence_id": "Xpo1:E001;Xpo1:E002;Xpo1:E003;Xpo1:E004;Xpo1:E005",
+      "description": "Five caudal or subcortical classes carried FDR-supported Xpo1 module rows.",
+      "exact_de_rows": [
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Xpo1", "gene": "Xpo1", "logfoldchanges": 0.520, "pvals": null, "pvals_adj": 3.76e-05},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Xpo1", "gene": "Arrdc3", "logfoldchanges": 2.103, "pvals": null, "pvals_adj": 8.36e-18},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Xpo1", "gene": "Slc16a6", "logfoldchanges": 1.516, "pvals": null, "pvals_adj": 7.72e-15},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Xpo1", "gene": "Snrnp70", "logfoldchanges": -0.896, "pvals": null, "pvals_adj": 1.65e-21},
+        {"cell_type": "155 MB Glut", "gene_target": "Xpo1", "gene": "Vamp2", "logfoldchanges": 0.759, "pvals": null, "pvals_adj": 3.40e-10},
+        {"cell_type": "191 MB P MY GABA", "gene_target": "Xpo1", "gene": "Sun2", "logfoldchanges": 1.123, "pvals": null, "pvals_adj": 0.000410}
+      ]
+    },
+    {
+      "evidence_id": "Xpo1:E008;Xpo1:E012",
+      "description": "The recurrent arm contained Arrdc3 in six cell types, Slc16a6 and Snrnp70 in five, and no FDR induction of inhibitor cargo sentinels.",
+      "exact_de_rows": [
+        {"cell_type": "066 CNU-HYa HY GABA", "gene_target": "Xpo1", "gene": "Arglu1", "logfoldchanges": -0.481, "pvals": null, "pvals_adj": 0.00451},
+        {"cell_type": "145 MH-LH TH Glut", "gene_target": "Xpo1", "gene": "Slc16a6", "logfoldchanges": 1.974, "pvals": null, "pvals_adj": 0.00397}
+      ]
+    }
+  ],
+  "caveats": [
+    "Two Arrdc3-only rows occurred without detectable Xpo1 target-transcript gain, so Arrdc3 alone is not a complete engagement marker.",
+    "The selinexor comparison used sentinel mRNAs only and cannot exclude protein relocalization or drug-specific cargo effects."
+  ],
+  "prior_expectation": {
+    "summary": "CRM1/XPO1 is a Ran-dependent nuclear export receptor and a clinical Exportin-1 inhibitor target; the neuronal data instead represent excess Xpo1 transcript.",
+    "citations": [
+      {"reference_id": "Xpo1:R006", "citation": "ChEMBL Exportin-1 target and selinexor mechanism records.", "url_or_doi": "https://www.ebi.ac.uk/chembl/"},
+      {"reference_id": "Xpo1:R003", "citation": "Zhao et al., PLoS ONE, 2014.", "url_or_doi": "https://doi.org/10.1371/journal.pone.0093709"}
+    ]
+  },
+  "preliminary_scores": {"novelty": 5, "support": 5, "priority": 4},
+  "report_evidence_ids": ["Xpo1:E001", "Xpo1:E002", "Xpo1:E003", "Xpo1:E004", "Xpo1:E005", "Xpo1:E008", "Xpo1:E009", "Xpo1:E010", "Xpo1:E012"],
+  "reference_ids": ["Xpo1:R003", "Xpo1:R005", "Xpo1:R006"],
+  "source_urls_or_dois": ["https://doi.org/10.1371/journal.pone.0093709", "https://string-db.org", "https://www.ebi.ac.uk/chembl/"]
+}

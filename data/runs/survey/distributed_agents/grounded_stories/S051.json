@@ -1,0 +1,338 @@
+{
+  "biological_interpretation": "CBP has a thalamic neuronal output that is not shared acutely by the KAT3 paralog p300.",
+  "caveats": [
+    "151 TH Prkcd Grin2c Glut also had the largest Crebbp perturbed-cell count, and Crebbp mRNA was not significantly depleted in any class.",
+    "The Crebbp response occurred despite weak measured Crebbp transcript depletion, and Ep300 engagement was also weak.",
+    "Exact log2 fold changes, scores, p-values, and FDRs in exact_de_rows were re-read from the Wilcoxon Parquet; the graph and cluster summaries were used only to nominate the target/readout combinations."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut"
+  ],
+  "exact_observed_result": "Crebbp perturbation produced its corrected response in 151 TH Prkcd Grin2c Glut, where an excitability-associated branch including Rbfox2, Stmn4, and near-threshold Kcnq2, Scn1b, Kctd17, Nrn1, and Kcnc2 was down-regulated; Ep300 remained weak and near-zero correlated with Crebbp. Parquet-verified leading rows: Crebbp->Stxbp2 in 151 TH Prkcd Grin2c Glut log2FC 1.06, FDR 5.01e-04; Crebbp->Rtn4rl1 in 151 TH Prkcd Grin2c Glut log2FC -0.617, FDR 0.024; Crebbp->Dgkz in 151 TH Prkcd Grin2c Glut log2FC -0.46, FDR 0.0472; Crebbp->Ccdc141 in 151 TH Prkcd Grin2c Glut log2FC -1.35, FDR 0.0472; Crebbp->Rbfox2 in 151 TH Prkcd Grin2c Glut log2FC -0.471, FDR 0.0472; Crebbp->Leng8 in 151 TH Prkcd Grin2c Glut log2FC 0.248, FDR 0.0472.",
+  "preliminary_scores": {
+    "novelty": 3,
+    "priority": 3,
+    "support": 4
+  },
+  "prior_expectation": {
+    "citations": [
+      {
+        "citation": "UniProtKB Q92793. CREB-binding protein, human CBP_HUMAN.",
+        "description": "Curated CREBBP function, catalytic acetyltransferase activity, interacting proteins including SRCAP and DDX17, and CREBBP disease annotations.",
+        "ref_id": "R001",
+        "ref_slug": "uniprot_crebbp_q92793",
+        "scoped_ref_id": "Crebbp:R001",
+        "source": "UniProtKB",
+        "source_type": "database",
+        "target_gene": "Crebbp",
+        "url": "https://rest.uniprot.org/uniprotkb/Q92793"
+      },
+      {
+        "citation": "Lipinski M, Ninerola S, Fuentes-Ramos M, Valor LM, del Blanco B, Lopez-Atalaya JP, Barco A. CBP Is Required for Establishing Adaptive Gene Programs in the Adult Mouse Brain. J Neurosci. 2022;42:7984-8001. doi:10.1523/JNEUROSCI.0970-22.2022.",
+        "description": "Reports that adult forebrain excitatory-neuron CBP loss, but not p300 loss, impairs plasticity-gene expression and stimulus-driven transcription.",
+        "ref_id": "R002",
+        "ref_slug": "lipinski_2022_cbp_adult_mouse_brain",
+        "scoped_ref_id": "Crebbp:R002",
+        "source": "Journal of Neuroscience",
+        "source_type": "pubmed",
+        "target_gene": "Crebbp",
+        "url": "https://www.jneurosci.org/content/42/42/7984"
+      },
+      {
+        "citation": "Reactome Content Service. EP300 search and curated Homo sapiens event annotations. Accessed 2025-04-29.",
+        "description": "Placed EP300 in the CREBBP,EP300 set and in curated RUNX, NOTCH, TP53, FOXO, and other transcriptional events.",
+        "ref_id": "R001",
+        "ref_slug": "reactome_ep300_pathway_context",
+        "scoped_ref_id": "Ep300:R001",
+        "source": "Reactome ContentService",
+        "source_type": "database",
+        "target_gene": "Ep300",
+        "url": "https://reactome.org/ContentService/search/query?query=EP300&species=Homo%20sapiens&cluster=true&topLevelPathwaysOnly=false"
+      },
+      {
+        "citation": "STRING protein association network for EP300, CREBBP, KMT2D, CHD4, and ANKRD11 in Homo sapiens. Accessed 2025-04-29.",
+        "description": "Reported high-confidence EP300-CREBBP, EP300-KMT2D, and EP300-CHD4 association scores used to define related chromatin comparators.",
+        "ref_id": "R002",
+        "ref_slug": "string_ep300_crebbp_kmt2d_chd4_network",
+        "scoped_ref_id": "Ep300:R002",
+        "source": "STRING",
+        "source_type": "database",
+        "target_gene": "Ep300",
+        "url": "https://string-db.org/"
+      },
+      {
+        "citation": "Gonz\u00e1lez-Mart\u00ednez R, M\u00e1rquez-Galera A, Del Blanco B, L\u00f3pez-Atalaya JP, Barco A, Herrera E. CBP and p300 Jointly Maintain Neural Progenitor Viability but Play Unique Roles in the Differentiation of Neural Lineages. Cells. 2022;11:4118.",
+        "description": "Experimental neural stem-cell study showing shared and nonredundant CBP and p300 roles during neural differentiation.",
+        "ref_id": "R003",
+        "ref_slug": "gonzalez_martinez_2022_cbp_p300_neural",
+        "scoped_ref_id": "Ep300:R003",
+        "source": "Cells",
+        "source_type": "pubmed",
+        "target_gene": "Ep300",
+        "url": "https://www.mdpi.com/2073-4409/11/24/4118"
+      },
+      {
+        "citation": "L\u00f3pez M, Garc\u00eda-Oguiza A, Armstrong J, Garc\u00eda-Cobaleda I, Garc\u00eda-Mi\u00f1aur S, Santos-Simarro F, Seidel V, Dom\u00ednguez-Garrido E. Rubinstein-Taybi 2 associated to novel EP300 mutations: deepening the clinical and genetic spectrum. BMC Med Genet. 2018;19:36.",
+        "description": "Cohort and review context establishing heterozygous EP300 mutation as a cause of Rubinstein-Taybi syndrome type 2.",
+        "ref_id": "R004",
+        "ref_slug": "lopez_2018_ep300_rsts2",
+        "scoped_ref_id": "Ep300:R004",
+        "source": "BMC Medical Genetics",
+        "source_type": "pubmed",
+        "target_gene": "Ep300",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5839060/"
+      }
+    ],
+    "summary": "References were retained only when they were linked to one of the resolved source findings."
+  },
+  "reference_ids": [
+    "Crebbp:R001",
+    "Crebbp:R002",
+    "Ep300:R001",
+    "Ep300:R002",
+    "Ep300:R003",
+    "Ep300:R004"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Crebbp:E001",
+    "Crebbp:E002",
+    "Crebbp:E003",
+    "Crebbp:E004",
+    "Ep300:E006",
+    "Ep300:E007"
+  ],
+  "source_urls_or_dois": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC5839060/",
+    "https://reactome.org/ContentService/search/query?query=EP300&species=Homo%20sapiens&cluster=true&topLevelPathwaysOnly=false",
+    "https://rest.uniprot.org/uniprotkb/Q92793",
+    "https://string-db.org/",
+    "https://www.jneurosci.org/content/42/42/7984",
+    "https://www.mdpi.com/2073-4409/11/24/4118"
+  ],
+  "status": "grounded",
+  "story_id": "S051",
+  "support": {
+    "exact_de_rows": [
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.000500983627134502,
+        "gene": "Stxbp2",
+        "log2_fold_change": 1.0599650144577026,
+        "p_value": 2.9027384386957644e-08,
+        "score": 5.54720401763916,
+        "target_gene": "Crebbp"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.024042602236311335,
+        "gene": "Rtn4rl1",
+        "log2_fold_change": -0.6168151497840881,
+        "p_value": 2.7860944708628927e-06,
+        "score": -4.685990333557129,
+        "target_gene": "Crebbp"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.04724516118351044,
+        "gene": "Dgkz",
+        "log2_fold_change": -0.4601968228816986,
+        "p_value": 1.2679989581568719e-05,
+        "score": -4.365555763244629,
+        "target_gene": "Crebbp"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.04724516118351044,
+        "gene": "Ccdc141",
+        "log2_fold_change": -1.3549243211746216,
+        "p_value": 1.2780207561036853e-05,
+        "score": -4.363834857940674,
+        "target_gene": "Crebbp"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.04724516118351044,
+        "gene": "Rbfox2",
+        "log2_fold_change": -0.47141167521476746,
+        "p_value": 1.95413302488185e-05,
+        "score": -4.270068168640137,
+        "target_gene": "Crebbp"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.04724516118351044,
+        "gene": "Leng8",
+        "log2_fold_change": 0.24788933992385864,
+        "p_value": 1.9713324628489552e-05,
+        "score": 4.268113136291504,
+        "target_gene": "Crebbp"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.04724516118351044,
+        "gene": "Cfap298",
+        "log2_fold_change": 0.9235945343971252,
+        "p_value": 2.129813373839717e-05,
+        "score": 4.250828266143799,
+        "target_gene": "Crebbp"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.04724516118351044,
+        "gene": "Stmn4",
+        "log2_fold_change": -0.4389316737651825,
+        "p_value": 2.1899373629299698e-05,
+        "score": -4.244589805603027,
+        "target_gene": "Crebbp"
+      }
+    ],
+    "finding_summaries": [
+      {
+        "claim_id": "claim:crebbp_f001_7992d8829c69",
+        "confidence": "moderate",
+        "direction": "up_and_down_only_detected_in_151",
+        "finding_id": "F001",
+        "finding_type": "cell_type_selectivity",
+        "summary": "Detected Crebbp response was concentrated in 151 TH Prkcd Grin2c Glut, the only Crebbp cell class with FDR-significant genes.",
+        "target_gene": "Crebbp",
+        "why_it_matters": "The strongest Crebbp output in this dataset is a restricted thalamic glutamatergic state rather than a uniform consequence across all assayed Crebbp-positive neuronal classes."
+      },
+      {
+        "claim_id": "claim:ep300_f003_c67da9ecd4fe",
+        "confidence": "moderate",
+        "direction": "EP300_weaker_than_CREBBP",
+        "finding_id": "F003",
+        "finding_type": "cross_perturbation_contrast",
+        "summary": "Ep300 and Crebbp did not behave as interchangeable KAT3 paralogs in the shared cell types; Crebbp alone produced a corrected 151 TH Prkcd Grin2c Glut response and their whole-signature correlations were near zero.",
+        "target_gene": "Ep300",
+        "why_it_matters": "p300 and CBP are often grouped biochemically, but their perturbation signatures in this brain dataset should not be merged or assumed equivalent."
+      }
+    ],
+    "parquet_filter": {
+      "cell_types": [
+        "151 TH Prkcd Grin2c Glut"
+      ],
+      "gene_targets": [
+        "Crebbp",
+        "Ep300"
+      ],
+      "names": [
+        "Ccdc141",
+        "Cfap298",
+        "Crebbp",
+        "Dgkz",
+        "Ep300",
+        "Kcnc2",
+        "Kcnq2",
+        "Kctd17",
+        "Leng8",
+        "Nrn1",
+        "Rbfox2",
+        "Rtn4rl1",
+        "Scn1b",
+        "Stmn4",
+        "Stxbp2"
+      ]
+    },
+    "resolved_evidence": [
+      {
+        "cell_type": "",
+        "description": "On-target Crebbp transcript abundance was not significantly reduced in any context where the target transcript was measured.",
+        "evidence_id": "E001",
+        "evidence_slug": "crebbp_target_transcript_not_depleted",
+        "genes": "Crebbp",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "1",
+        "scoped_evidence_id": "Crebbp:E001",
+        "statistics": "Crebbp target row detected in 8 cell-type contrasts; n_pert_matched=20-61; Crebbp logFC range -0.586 to 0.048; nominal p range 0.0697-0.823; pvals_adj=1.0 in all 8 contrasts.",
+        "target_gene": "Crebbp"
+      },
+      {
+        "cell_type": "",
+        "description": "Only the thalamic Prkcd/Grin2c glutamatergic class had a multiple-testing-significant Crebbp transcriptional response.",
+        "evidence_id": "E002",
+        "evidence_slug": "crebbp_response_concentrated_in_151",
+        "genes": "",
+        "has_cell_type": "0",
+        "has_genes": "0",
+        "n_genes": "0",
+        "scoped_evidence_id": "Crebbp:E002",
+        "statistics": "151 TH Prkcd Grin2c Glut: 61 perturbed cells, 23679 controls, 8 genes FDR<0.05, 16 genes FDR<0.10, min FDR=0.000501. The seven other Crebbp cell types had 20-37 perturbed cells each and 0 genes FDR<0.05; their min FDR values ranged from 0.110797 to 1.0.",
+        "target_gene": "Crebbp"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "The significant positive branch of the Crebbp response in 151 TH Prkcd Grin2c Glut.",
+        "evidence_id": "E003",
+        "evidence_slug": "crebbp_151_top_up_genes",
+        "genes": "Stxbp2|Leng8|Cfap298",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "3",
+        "scoped_evidence_id": "Crebbp:E003",
+        "statistics": "Stxbp2 score 5.547, logFC 1.060, p=2.90e-08, FDR 0.000501; Leng8 score 4.268, logFC 0.248, p=1.97e-05, FDR 0.047245; Cfap298 score 4.251, logFC 0.924, p=2.13e-05, FDR 0.047245.",
+        "target_gene": "Crebbp"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "The significant negative branch of the Crebbp response in the responsive thalamic class.",
+        "evidence_id": "E004",
+        "evidence_slug": "crebbp_151_significant_down_genes",
+        "genes": "Rtn4rl1|Dgkz|Ccdc141|Rbfox2|Stmn4",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "5",
+        "scoped_evidence_id": "Crebbp:E004",
+        "statistics": "Rtn4rl1 logFC -0.617, FDR 0.024043; Dgkz logFC -0.460, FDR 0.047245; Ccdc141 logFC -1.355, FDR 0.047245; Rbfox2 logFC -0.471, FDR 0.047245; Stmn4 logFC -0.439, FDR 0.047245.",
+        "target_gene": "Crebbp"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "The EP300 paralog Crebbp produced a corrected response in the same thalamic glutamatergic class in which Ep300 did not.",
+        "evidence_id": "E006",
+        "evidence_slug": "crebbp_vs_ep300_151_th_prkcd",
+        "genes": "Crebbp|Ep300|Stxbp2|Rtn4rl1|Dgkz|Ccdc141|Rbfox2|Stmn4",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "8",
+        "scoped_evidence_id": "Ep300:E006",
+        "statistics": "Crebbp: 61 perturbed cells, 8 genes with FDR<0.05 and 16 with FDR<0.10; Stxbp2 logFC 1.060, p=2.90e-08, FDR=0.000501. Ep300: 155 perturbed cells, 0 genes with FDR<0.10; Stxbp2 logFC 0.388, p=0.00101, FDR=1.0.",
+        "target_gene": "Ep300"
+      },
+      {
+        "cell_type": "",
+        "description": "Whole-transcriptome Ep300 and Crebbp signatures were nearly uncorrelated in every shared cell type.",
+        "evidence_id": "E007",
+        "evidence_slug": "ep300_crebbp_signature_correlations_low",
+        "genes": "Ep300|Crebbp",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "2",
+        "scoped_evidence_id": "Ep300:E007",
+        "statistics": "Eight overlapping Ep300 and Crebbp cell types; Pearson correlations were -0.0005, -0.0160, 0.0207, 0.0320, 0.0902, 0.0387, 0.0475, and -0.0127; maximum Pearson correlation was 0.0902 in 151 TH Prkcd Grin2c Glut.",
+        "target_gene": "Ep300"
+      }
+    ],
+    "source_claim_ids": [
+      "claim:crebbp_f001_7992d8829c69",
+      "claim:ep300_f003_c67da9ecd4fe"
+    ],
+    "source_cluster_ids": [
+      "C167"
+    ]
+  },
+  "targets": [
+    "Crebbp",
+    "Ep300",
+    "Rbfox2",
+    "Stmn4",
+    "Kcnq2",
+    "Scn1b",
+    "Kctd17",
+    "Nrn1",
+    "Kcnc2"
+  ],
+  "title": "Crebbp loss alone lowers a thalamic excitability branch among KAT3 paralogs"
+}

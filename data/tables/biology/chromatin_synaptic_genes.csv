@@ -1,0 +1,46 @@
+perturbation,gene,report_module,logFC,FDR
+Smarcb1,Prkcd,Mature synaptic identity / transmission,-0.53726953,2.4528659961038028e-12
+Smarcb1,Grin2c,Mature synaptic identity / transmission,-0.3288967,0.0013309612074687731
+Smarcb1,Grm1,Mature synaptic identity / transmission,-0.23104164,1.129989110272686e-06
+Smarcb1,Gabra4,Mature synaptic identity / transmission,-0.2584459,3.853478669644485e-06
+Smarcb1,Begain,Mature synaptic identity / transmission,-0.76541907,3.100090778794842e-12
+Smarcb1,Shank1,Mature synaptic identity / transmission,-0.26993632,0.005031120346940787
+Smarcb1,Lrrtm1,Mature synaptic identity / transmission,-0.41997686,1.1536429207738716e-06
+Smarcb1,Slc6a7,Mature synaptic identity / transmission,-0.39629212,7.120130900799367e-06
+Smarcb1,Atp1b2,Mature synaptic identity / transmission,-0.6489614,2.7245525341159895e-09
+Smarcb1,Kcnk4,Mature synaptic identity / transmission,-0.58857805,5.960899376341166e-05
+Smarcb1,Tiam1,Dendritic / NMDA-linked signaling,-0.72181976,2.8826649349635273e-18
+Smarcc2,Nlgn2,Synapse / cell junction,-0.2543345,0.03411700708003936
+Smarcc2,Agrn,Synapse / cell junction,-0.30342492,0.0023580387771375087
+Smarcc2,Lrrtm1,Synapse / cell junction,-0.2812836,0.014107074202702003
+Smarcc2,L1cam,Synapse / cell junction,-0.30469692,1.4559646062305988e-05
+Smarcc2,Begain,Synapse / cell junction,-0.7412693,1.8048612038854521e-07
+Smarcc2,Cnih3,Membrane excitability / ion handling,-0.78318614,0.004064057891553967
+Smarcc2,Cacnb2,Membrane excitability / ion handling,-0.38979384,0.008594491116680321
+Smarcc2,Hcn4,Membrane excitability / ion handling,-0.4269688,0.020857642235945054
+Smarcc2,P2rx4,Membrane excitability / ion handling,-0.4971013,0.0042720062987805
+Smarcc2,Asic2,Membrane excitability / ion handling,-0.50469315,0.019139439154929497
+Smarcc2,Atp2b1,Membrane excitability / ion handling,-0.27609396,2.151801524455763e-07
+Smarcc2,Tiam1,Neurite / synapse organization,-0.8394202,1.3501074885630258e-12
+Smarcc2,Prkcd,Neurite / synapse organization,-0.5747471,1.5467820205765654e-10
+Smarcc2,Grin3a,Compensatory synaptic remodeling,0.750257,0.016819070315187493
+Smarcc2,Grm5,Compensatory synaptic remodeling,0.33198726,0.04775125591096448
+Arid2,Kcnj9,Membrane signaling / excitability,0.32504275,3.3613044355893705e-05
+Arid2,Gpr4,Membrane signaling / excitability,0.6234692,0.027765191332857587
+Arid2,Gpr153,Membrane signaling / excitability,0.3192262,0.04829582964205559
+Arid2,Pde4a,Membrane signaling / excitability,-0.49545357,0.003482836967718277
+Arid2,Map2k2,Membrane signaling / excitability,-0.34727097,0.026263250410631246
+Arid2,Prkcd,Membrane signaling / excitability,-0.29185978,4.9461462838494716e-05
+Arid2,Stxbp2,Synaptic handling / vesicle trafficking,-1.0060117,1.594514863169657e-08
+Arid2,Nsg1,Synaptic handling / vesicle trafficking,-0.26156256,0.014051543959261668
+Arid2,Gria2,Synaptic handling / vesicle trafficking,-0.22910462,0.013373972819499905
+Arid2,Ece2,Synaptic handling / vesicle trafficking,-0.26697552,0.038650605133075465
+Arid1a,Begain,Synaptic / PSD,-0.4546359,4.8227368045562005e-06
+Arid1a,Lrrc7,Synaptic / PSD,-0.12780325,0.00463054377463551
+Arid1a,Clstn2,Synaptic / PSD,0.38538504,4.8227368045562005e-06
+Arid1a,Mpp2,Synaptic / PSD,0.5168346,0.028636734906640406
+Arid1a,Kcnq2,Excitability / signaling,-0.21934196,0.00015056949562339617
+Arid1a,Prkcb,Excitability / signaling,-0.20961554,0.00886780479576147
+Arid1a,Rasa4,Excitability / signaling,-0.41204762,0.005498230662179864
+Arid1a,Ppp2r5d,Excitability / signaling,0.21009591,0.008425714369214
+Arid1a,Adora1,Excitability / signaling,-0.31765747,0.0775377500215133

@@ -56,3 +56,43 @@ pixi run -e minimal distributed_agents chat \
 Run the same command again to resume that chat. Use a different output directory to start a separate session.
 
 For API-key authentication with the Codex CLI, add `--codex-auth apikey` to either command.
+
+## Manuscript analyses
+
+Large datasets and workbooks are stored with Git LFS. After installing Git LFS
+and cloning this repository, download them before preparing the analyses:
+
+```bash
+git lfs install
+git lfs pull
+```
+
+The manuscript uses a single data preparation step followed by the figure notebooks:
+
+```text
+data/runs/ + data/inputs/ → data/tables/ → notebook/
+```
+
+```bash
+pixi run prepare-manuscript
+pixi run notebook
+```
+
+Alternatively, install the analysis dependencies with `pip install -e '.[manuscript]'`
+and run `python -m manuscript_figures.prepare`. An editable installation resolves
+data paths from the checkout, so the command and notebooks can run from any
+working directory. Reproducing the saved analyses requires no model calls or API
+credentials. Notebooks display figures inline and do not export images or HTML.
+
+```text
+data/
+  runs/                 Saved predictions, reports, prompts, and run measurements
+  inputs/               Reference data, experimental measurements, reviewed annotations
+  tables/               Prepared notebook inputs and supplementary Excel workbooks
+notebook/               Main and supplementary figure notebooks
+src/manuscript_figures/ Preparation methods and shared plotting style
+```
+
+Manuscript data uses `distributed_agents` in run paths and field names, and
+`Distributed Agents` in plot labels and prose. All data needed to regenerate the
+manuscript tables and figures is bundled under `data/`.

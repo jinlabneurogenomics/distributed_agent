@@ -1,0 +1,320 @@
+{
+  "biological_interpretation": "Selected neuronal populations may couple impaired iron uptake or partial IRP2 lowering to low-iron/HIF-like glycolytic compensation, but the state is weak and sparse rather than a global ferroptosis or ferritinophagy transcriptome.",
+  "caveats": [
+    "Support is preliminary because Tfrc target mRNA was never FDR-depleted and Ireb2-to-Tfrc rows were nominal.",
+    "The assay did not measure iron, HIF protein, ferritinophagy, or ferroptosis phenotypes."
+  ],
+  "cell_types": [
+    "145 MH-LH TH Glut",
+    "052 Pvalb Gaba",
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut"
+  ],
+  "exact_observed_result": "Tfrc guides weakly reduced Tfrc mRNA but produced rare FDR-supported outputs including Vegfa in 145 MH-LH TH Glut, while Ireb2 perturbation nominally lowered Tfrc in Pvalb, 151 TH, and 155 MB cells without a broad FDR iron-stress program.",
+  "preliminary_scores": {
+    "novelty": 4,
+    "priority": 3,
+    "support": 3
+  },
+  "prior_expectation": {
+    "citations": [
+      {
+        "ref": "Levy et al. 1999",
+        "supports": "Tfrc requirement for erythrocyte and nervous-system development",
+        "url_or_doi": "https://doi.org/10.1038/7727"
+      },
+      {
+        "ref": "Cooperman et al. 2005",
+        "supports": "Irp2 knockout mice have low transferrin receptor and CNS iron defects",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/15831703/"
+      },
+      {
+        "ref": "Costain et al. 2019",
+        "supports": "biallelic human IREB2 loss causes neurodegeneration and functional iron deficiency",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/30915432/"
+      }
+    ],
+    "summary": "Prior expectation is grounded by the listed traceable corpus citations; direct prior support for the exact cell-type/state relationship is partial unless noted in the caveats."
+  },
+  "reference_ids": [
+    "Tfrc:R001",
+    "Tfrc:R004",
+    "Ireb2:R001",
+    "Ireb2:R002",
+    "Ireb2:R004",
+    "Ireb2:R005",
+    "Ireb2:R006"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Tfrc:E001",
+    "Ireb2:E003",
+    "Ireb2:E004",
+    "Ireb2:E005",
+    "Ireb2:E007",
+    "Ireb2:E008",
+    "Ireb2:E009"
+  ],
+  "source_urls_or_dois": [
+    {
+      "ref": "Levy et al. 1999",
+      "supports": "Tfrc requirement for erythrocyte and nervous-system development",
+      "url_or_doi": "https://doi.org/10.1038/7727"
+    },
+    {
+      "ref": "Cooperman et al. 2005",
+      "supports": "Irp2 knockout mice have low transferrin receptor and CNS iron defects",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/15831703/"
+    },
+    {
+      "ref": "Costain et al. 2019",
+      "supports": "biallelic human IREB2 loss causes neurodegeneration and functional iron deficiency",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/30915432/"
+    }
+  ],
+  "status": "grounded",
+  "story_id": "S127",
+  "support": {
+    "exact_de_rows": [
+      {
+        "cell_type": "145 MH-LH TH Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Tfrc",
+        "log2_fold_change": -0.294357,
+        "pval": 0.2926309271733114,
+        "pvals_adj": 1.0,
+        "score": -1.052368,
+        "target": "Tfrc"
+      },
+      {
+        "cell_type": "145 MH-LH TH Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Vegfa",
+        "log2_fold_change": 0.940084,
+        "pval": 1.9622407310892164e-06,
+        "pvals_adj": 0.03278315589430754,
+        "score": 4.757275,
+        "target": "Tfrc"
+      },
+      {
+        "cell_type": "145 MH-LH TH Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Aldoa",
+        "log2_fold_change": 0.129601,
+        "pval": 0.5592357694977774,
+        "pvals_adj": 1.0,
+        "score": 0.583977,
+        "target": "Tfrc"
+      },
+      {
+        "cell_type": "145 MH-LH TH Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Ldha",
+        "log2_fold_change": 0.212793,
+        "pval": 0.2808973145124779,
+        "pvals_adj": 1.0,
+        "score": 1.078306,
+        "target": "Tfrc"
+      },
+      {
+        "cell_type": "145 MH-LH TH Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Pfkl",
+        "log2_fold_change": 0.566468,
+        "pval": 0.00010395717868613469,
+        "pvals_adj": 0.8684062921546262,
+        "score": 3.881165,
+        "target": "Tfrc"
+      },
+      {
+        "cell_type": "145 MH-LH TH Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Pfkp",
+        "log2_fold_change": 0.313237,
+        "pval": 0.009815193474461656,
+        "pvals_adj": 1.0,
+        "score": 2.582273,
+        "target": "Tfrc"
+      },
+      {
+        "cell_type": "145 MH-LH TH Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Pkm",
+        "log2_fold_change": 0.166828,
+        "pval": 0.15139311905128128,
+        "pvals_adj": 1.0,
+        "score": 1.434628,
+        "target": "Tfrc"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Tfrc",
+        "log2_fold_change": -0.48005,
+        "pval": 0.007441158674247801,
+        "pvals_adj": 1.0,
+        "score": -2.676428,
+        "target": "Tfrc"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Vegfa",
+        "log2_fold_change": 0.541,
+        "pval": 6.917105541393136e-05,
+        "pvals_adj": 0.25046172596741584,
+        "score": 3.979119,
+        "target": "Tfrc"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Aldoa",
+        "log2_fold_change": 0.243618,
+        "pval": 0.0032163383997866335,
+        "pvals_adj": 0.9251797406986251,
+        "score": 2.946268,
+        "target": "Tfrc"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Ldha",
+        "log2_fold_change": 0.765979,
+        "pval": 0.00021048450334269306,
+        "pvals_adj": 0.3698275794590015,
+        "score": 3.706089,
+        "target": "Tfrc"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Pfkl",
+        "log2_fold_change": 0.238289,
+        "pval": 0.005369596873159751,
+        "pvals_adj": 0.9735681100129834,
+        "score": 2.783982,
+        "target": "Tfrc"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Pfkp",
+        "log2_fold_change": 0.346378,
+        "pval": 3.0322178898395324e-06,
+        "pvals_adj": 0.05233304856074049,
+        "score": 4.668625,
+        "target": "Tfrc"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Pkm",
+        "log2_fold_change": 0.257922,
+        "pval": 0.0029305616597203334,
+        "pvals_adj": 0.903188637234165,
+        "score": 2.974929,
+        "target": "Tfrc"
+      },
+      {
+        "cell_type": "052 Pvalb Gaba",
+        "fdr_lt_0_05": false,
+        "gene": "Ireb2",
+        "log2_fold_change": -0.300552,
+        "pval": 0.04281286468182638,
+        "pvals_adj": 1.0,
+        "score": -2.025531,
+        "target": "Ireb2"
+      },
+      {
+        "cell_type": "052 Pvalb Gaba",
+        "fdr_lt_0_05": false,
+        "gene": "Tfrc",
+        "log2_fold_change": -0.483186,
+        "pval": 0.00026349872386935034,
+        "pvals_adj": 1.0,
+        "score": -3.64877,
+        "target": "Ireb2"
+      },
+      {
+        "cell_type": "052 Pvalb Gaba",
+        "fdr_lt_0_05": false,
+        "gene": "Fth1",
+        "log2_fold_change": -0.086236,
+        "pval": 0.6216031431903426,
+        "pvals_adj": 1.0,
+        "score": -0.49358,
+        "target": "Ireb2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Ireb2",
+        "log2_fold_change": -0.276412,
+        "pval": 0.010320050708066334,
+        "pvals_adj": 1.0,
+        "score": -2.564917,
+        "target": "Ireb2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Tfrc",
+        "log2_fold_change": -0.417017,
+        "pval": 0.0032472801241421483,
+        "pvals_adj": 1.0,
+        "score": -2.943305,
+        "target": "Ireb2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Fth1",
+        "log2_fold_change": -0.199384,
+        "pval": 0.0421524448576681,
+        "pvals_adj": 1.0,
+        "score": -2.032012,
+        "target": "Ireb2"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Ireb2",
+        "log2_fold_change": -0.181167,
+        "pval": 0.13893700236270995,
+        "pvals_adj": 1.0,
+        "score": -1.479761,
+        "target": "Ireb2"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Tfrc",
+        "log2_fold_change": -0.468415,
+        "pval": 0.002480758183564414,
+        "pvals_adj": 1.0,
+        "score": -3.025679,
+        "target": "Ireb2"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Fth1",
+        "log2_fold_change": 0.137821,
+        "pval": 0.10938508430185041,
+        "pvals_adj": 1.0,
+        "score": 1.600963,
+        "target": "Ireb2"
+      }
+    ],
+    "summary": [
+      "Tfrc target transcript depletion was weak and never reached 5% FDR, but the report found rare corrected downstream Vegfa/glycolysis responses.",
+      "Ireb2-to-Tfrc support is nominal in selected neurons, consistent with partial IRP2 pathway engagement and not a broad iron module."
+    ]
+  },
+  "targets": [
+    "Tfrc",
+    "Ireb2"
+  ],
+  "title": "Partial Tfrc and Ireb2 perturbation uncovers a selective Vegfa/glycolysis low-iron arm"
+}

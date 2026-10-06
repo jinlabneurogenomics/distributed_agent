@@ -1,0 +1,51 @@
+{
+  "story_id": "S019",
+  "title": "Stxbp1 loss drives different presynaptic stress outputs in L4/5 IT, MB Glut, and Pvalb neurons",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Stxbp1 was lower in all 22 measured Stxbp1 cell types and reached target-row FDR in 10. L4/5 IT cells carried the largest non-target signature, 155 MB Glut had a smaller stress/adhesion program, and Pvalb GABA cells reduced Slc6a1 while direct Slc6a1 knockdown remained target-only.",
+  "biological_interpretation": "Munc18-1 depletion is a privileged presynaptic perturbation that can be seen by scRNA-seq, but the transcriptional consequences split by neuronal class and are not reproduced by every SNARE or vesicle-fusion gene.",
+  "targets": ["Stxbp1", "Snap25", "Stx1b", "Slc6a1"],
+  "cell_types": ["005 L4-5 IT CTX Glut", "155 MB Glut", "052 Pvalb Gaba", "151 TH Prkcd Grin2c Glut"],
+  "support": [
+    {
+      "evidence_id": "Stxbp1:E004;Stxbp1:E005;Stxbp1:E006",
+      "description": "L4/5 IT cortical glutamatergic cells showed target depletion plus broad synaptic down-regulation and a neurosecretory counter-module.",
+      "exact_de_rows": [
+        {"cell_type": "005 L4-5 IT CTX Glut", "gene_target": "Stxbp1", "gene": "Stxbp1", "logfoldchanges": -0.520, "pvals": 5.64e-15, "pvals_adj": 9.66e-11},
+        {"cell_type": "005 L4-5 IT CTX Glut", "gene_target": "Stxbp1", "gene": "Nrsn1", "logfoldchanges": 0.724, "pvals": null, "pvals_adj": 0.000398},
+        {"cell_type": "005 L4-5 IT CTX Glut", "gene_target": "Stxbp1", "gene": "Pcsk1n", "logfoldchanges": 0.448, "pvals": null, "pvals_adj": 0.000587},
+        {"cell_type": "005 L4-5 IT CTX Glut", "gene_target": "Stxbp1", "gene": "Grin2b", "logfoldchanges": -0.231, "pvals": null, "pvals_adj": 0.00582}
+      ]
+    },
+    {
+      "evidence_id": "Stxbp1:E007;Stxbp1:E003;Stxbp1:E013;Snap25:E006",
+      "description": "MB Glut and Pvalb used different marker sets, and Snap25 had fewer non-target hits in matched classes.",
+      "exact_de_rows": [
+        {"cell_type": "155 MB Glut", "gene_target": "Stxbp1", "gene": "Stxbp1", "logfoldchanges": -0.608, "pvals": null, "pvals_adj": 2.76e-09},
+        {"cell_type": "155 MB Glut", "gene_target": "Stxbp1", "gene": "Cntnap1", "logfoldchanges": -0.526, "pvals": null, "pvals_adj": 3.71e-05},
+        {"cell_type": "155 MB Glut", "gene_target": "Stxbp1", "gene": "Mt1", "logfoldchanges": 1.107, "pvals": null, "pvals_adj": 0.000947},
+        {"cell_type": "155 MB Glut", "gene_target": "Stxbp1", "gene": "Fos", "logfoldchanges": 1.390, "pvals": null, "pvals_adj": 0.0464},
+        {"cell_type": "052 Pvalb Gaba", "gene_target": "Stxbp1", "gene": "Slc6a1", "logfoldchanges": -0.412, "pvals": null, "pvals_adj": 1.27e-08},
+        {"cell_type": "052 Pvalb Gaba", "gene_target": "Slc6a1", "gene": "Slc6a1", "logfoldchanges": -1.018, "pvals": 8.28e-34, "pvals_adj": 1.39e-29}
+      ]
+    }
+  ],
+  "caveats": [
+    "Several Stxbp1-engaged classes, especially 151 TH Prkcd Grin2c Glut, had no non-target 5% FDR hit.",
+    "Snap25 and Stx1b were used only as non-interchangeability comparators, not as members of the Stxbp1 transcriptional state.",
+    "The assay reads steady-state cell-body RNA and misses acute vesicle-fusion physiology."
+  ],
+  "prior_expectation": {
+    "summary": "STXBP1/Munc18-1 is a syntaxin-binding Sec1/Munc18 factor in neurotransmitter release; loss of STXBP1 is expected to affect synaptic biology, but the report-level evidence shows that acute mRNA remodeling is much more specific than generic SNARE membership.",
+    "citations": [
+      {"reference_id": "Stxbp1:R001", "citation": "UniProtKB STXBP1/MUNC18-1.", "url_or_doi": "https://rest.uniprot.org/uniprotkb/P61764"},
+      {"reference_id": "Stxbp1:R004", "citation": "Verhage et al., Science, 2000.", "url_or_doi": "https://doi.org/10.1126/science.287.5454.864"},
+      {"reference_id": "Snap25:R004", "citation": "Sudhof and Rothman, Science, 2009.", "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/19164740/"}
+    ]
+  },
+  "preliminary_scores": {"novelty": 3, "support": 5, "priority": 4},
+  "report_evidence_ids": ["Stxbp1:E001", "Stxbp1:E003", "Stxbp1:E004", "Stxbp1:E005", "Stxbp1:E006", "Stxbp1:E007", "Stxbp1:E008", "Stxbp1:E013", "Snap25:E006", "Stx1b:E007", "Stx1b:E008", "Stx1b:E009"],
+  "reference_ids": ["Stxbp1:R001", "Stxbp1:R002", "Stxbp1:R004", "Stxbp1:R006", "Stxbp1:R007", "Snap25:R004", "Stx1b:R003"],
+  "source_urls_or_dois": ["https://rest.uniprot.org/uniprotkb/P61764", "https://reactome.org/content/detail/R-HSA-210500", "https://doi.org/10.1126/science.287.5454.864", "https://doi.org/10.7554/eLife.48705", "https://doi.org/10.1523/ENEURO.0186-22.2022"]
+}

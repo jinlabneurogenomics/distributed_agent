@@ -1,0 +1,46 @@
+{
+  "story_id": "S030",
+  "title": "Atrx and Chd8 perturbations move Csf2ra in opposite directions in TH and MB glutamatergic neurons",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Atrx produced only ten FDR<0.05 rows across 18 tested cell types, but Csf2ra was FDR-repressed in both 151 TH Prkcd Grin2c Glut and 155 MB Glut. Chd8 induced Csf2ra in those same cell classes with FDR support.",
+  "biological_interpretation": "The Csf2ra marker is not a generic chromatin-loss response: ATRX and CHD8 have opposite signed effects on the same transcript in the two strongest Csf2ra-responsive neuronal contexts.",
+  "targets": ["Atrx", "Chd8"],
+  "cell_types": ["151 TH Prkcd Grin2c Glut", "155 MB Glut", "007 L2-3 IT CTX Glut"],
+  "support": [
+    {
+      "evidence_id": "Atrx:E003;Atrx:E004;Atrx:E012",
+      "description": "Atrx and Chd8 have opposite Csf2ra direction in thalamic and midbrain glutamatergic cells.",
+      "exact_de_rows": [
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Atrx", "gene": "Csf2ra", "logfoldchanges": -1.122, "pvals": null, "pvals_adj": 0.000178},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Chd8", "gene": "Csf2ra", "logfoldchanges": 0.666, "pvals": null, "pvals_adj": 1.25e-06},
+        {"cell_type": "155 MB Glut", "gene_target": "Atrx", "gene": "Csf2ra", "logfoldchanges": -1.541, "pvals": 5.92e-08, "pvals_adj": 0.00103},
+        {"cell_type": "155 MB Glut", "gene_target": "Chd8", "gene": "Csf2ra", "logfoldchanges": 0.534, "pvals": null, "pvals_adj": 0.00714}
+      ]
+    },
+    {
+      "evidence_id": "Atrx:E003;Atrx:E005;Chd8:E002;Chd8:E003",
+      "description": "Atrx has a sparse thalamic signature with Cyp46a1/Pigk/Pnpla6 down and Begain up; 007 L2/3 IT CTX contributes an isolated Limd2 increase.",
+      "exact_de_rows": [
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Atrx", "gene": "Cyp46a1", "logfoldchanges": -0.268, "pvals": null, "pvals_adj": 0.00332},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Atrx", "gene": "Begain", "logfoldchanges": 0.530, "pvals": null, "pvals_adj": 0.0205},
+        {"cell_type": "007 L2-3 IT CTX Glut", "gene_target": "Atrx", "gene": "Limd2", "logfoldchanges": 1.198, "pvals": 1.36e-06, "pvals_adj": 0.0228}
+      ]
+    }
+  ],
+  "caveats": [
+    "Atrx target RNA itself was not FDR-depleted; all target-row FDR values were 1.0.",
+    "The direct literature prior links ATRX and CHD8 to chromatin and neurodevelopment, not specifically to Csf2ra regulation in neurons."
+  ],
+  "prior_expectation": {
+    "summary": "ATRX is an ATRX:DAXX/H3.3 chromatin remodeler with neurodevelopmental loss phenotypes, while CHD8 is an autism-associated chromatin regulator; the opposite neuronal Csf2ra direction is therefore dataset-specific.",
+    "citations": [
+      {"reference_id": "Atrx:R002", "citation": "Berube et al., Journal of Clinical Investigation, 2005. PMID:15668733.", "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/15668733/"},
+      {"reference_id": "Chd8:R003", "citation": "Bernier et al., Cell, 2014. PMID:24998929.", "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/24998929/"}
+    ]
+  },
+  "preliminary_scores": {"novelty": 4, "support": 3, "priority": 3},
+  "report_evidence_ids": ["Atrx:E001", "Atrx:E002", "Atrx:E003", "Atrx:E004", "Atrx:E005", "Atrx:E006", "Atrx:E012", "Chd8:E002", "Chd8:E003"],
+  "reference_ids": ["Atrx:R001", "Atrx:R002", "Atrx:R003", "Chd8:R003", "Chd8:R004", "Chd8:R006"],
+  "source_urls_or_dois": ["https://rest.uniprot.org/uniprotkb/Q61687", "https://pubmed.ncbi.nlm.nih.gov/15668733/", "https://pubmed.ncbi.nlm.nih.gov/24998929/", "https://pubmed.ncbi.nlm.nih.gov/27602517/"]
+}

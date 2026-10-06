@@ -1,0 +1,128 @@
+{
+  "story_id": "S110",
+  "title": "Zbtb11 loss represses a mitochondrial, nucleolar, endomembrane, and glycan program in vulnerable subcortical neurons",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Zbtb11 perturbation produced 48 FDR genes in 151 TH Prkcd Grin2c Glut, 17 in 191 MB P MY GABA, and 16 in 155 MB Glut. The recurrent core was down-regulated and included Rbm28, Taf1b, Stx16, Pigq, Man2c1, Gtpbp3, Acsf3, Ndufc2, Ndufaf1, and Ttc4, with 151 TH examples such as Rbm28 logFC -1.460 FDR 3.57e-16 and Acsf3 logFC -1.146 FDR 7.68e-09.",
+  "biological_interpretation": "Zbtb11 loss selectively suppresses a mixed mitochondrial, RNA polymerase I/nucleolar, endomembrane, GPI-biosynthesis, and glycan-catabolic abundance program, matching known ZBTB11 mitochondrial and neurodevelopmental disease biology but showing that the response is not shared by arbitrary ZBTB-family perturbations.",
+  "targets": [
+    "Zbtb11"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "191 MB P MY GABA",
+    "155 MB Glut",
+    "066 CNU-HYa HY GABA"
+  ],
+  "support": {
+    "support_level": 5,
+    "exact_de_rows": [
+      {
+        "gene_target": "Zbtb11",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rbm28",
+        "log2_fold_change": -1.46,
+        "pvals_adj": 3.57e-16
+      },
+      {
+        "gene_target": "Zbtb11",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Stx16",
+        "log2_fold_change": -1.32,
+        "pvals_adj": 2.29e-14
+      },
+      {
+        "gene_target": "Zbtb11",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Pigq",
+        "log2_fold_change": -1.26,
+        "pvals_adj": 2.03e-13
+      },
+      {
+        "gene_target": "Zbtb11",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Acsf3",
+        "log2_fold_change": -1.146,
+        "pvals_adj": 7.68e-09
+      },
+      {
+        "gene_target": "Zbtb11",
+        "cell_type": "155 MB Glut",
+        "gene": "Stx16",
+        "log2_fold_change": -1.731,
+        "pvals_adj": 1.5e-13
+      },
+      {
+        "gene_target": "Zbtb11",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Acsf3",
+        "log2_fold_change": -1.897,
+        "pvals_adj": 1.33e-06
+      },
+      {
+        "gene_target": "Zbtb11",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Ndufaf1",
+        "log2_fold_change": -2.459,
+        "pvals_adj": 0.000818
+      }
+    ],
+    "report_evidence_summary": [
+      "Zbtb11:E002",
+      "Zbtb11:E003",
+      "Zbtb11:E004",
+      "Zbtb11:E005",
+      "Zbtb11:E006",
+      "Zbtb11:E011",
+      "Zbtb11:E012"
+    ]
+  },
+  "caveats": [
+    "FDR gene counts correlated with perturbed-cell counts across cell types, and ZBTB-family comparator tests do not include known GABP/NRF-2 partners."
+  ],
+  "prior_expectation": {
+    "summary": "ZBTB11 cooperates with NRF-2/GABP to activate nuclear mitochondrial genes and biallelic ZBTB11 variants cause intellectual disability with biochemical ACSF3 effects, supporting the mitochondrial branch of the Perturb-seq response.",
+    "citations": [
+      {
+        "ref_id": "Zbtb11:R002",
+        "ref": "Sumathipala et al. 2022 PMID:35104841",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/35104841/",
+        "supports": "ZBTB11 dysfunction in brain disease and ACSF3 biochemistry"
+      },
+      {
+        "ref_id": "Zbtb11:R005",
+        "ref": "Human Protein Atlas ZBTB11",
+        "url_or_doi": "https://www.proteinatlas.org/ENSG00000066422-ZBTB11",
+        "supports": "broad ZBTB11 expression despite selective response"
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 5,
+    "priority": 5
+  },
+  "report_evidence_ids": [
+    "Zbtb11:E002",
+    "Zbtb11:E003",
+    "Zbtb11:E004",
+    "Zbtb11:E005",
+    "Zbtb11:E006",
+    "Zbtb11:E011",
+    "Zbtb11:E012"
+  ],
+  "reference_ids": [
+    "Zbtb11:R001",
+    "Zbtb11:R002",
+    "Zbtb11:R003",
+    "Zbtb11:R005"
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/35104841/",
+    "https://www.proteinatlas.org/ENSG00000066422-ZBTB11"
+  ],
+  "source_claim_ids": [
+    "claim:zbtb11_f001_e5ee694be1b4",
+    "claim:zbtb11_f007_b7aaf71993b0"
+  ]
+}

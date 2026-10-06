@@ -1,0 +1,456 @@
+{
+  "biological_interpretation": "Acute autophagy-initiation and conjugation perturbations are visible only in selected neuronal populations in the RNA layer and initially depress ER/lysosomal/vesicle markers rather than triggering a broad Ddit3/Xbp1 unfolded-protein alarm.",
+  "caveats": [
+    "Atg5 had weak target-transcript support, and Becn1/Rb1cc1 convergence was strongest only in 155 MB Glut.",
+    "The assay does not measure autophagic flux, LC3 lipidation, PI3P, or lysosomal substrate clearance."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "191 MB P MY GABA"
+  ],
+  "exact_observed_result": "Rb1cc1 loss produced corrected ER/endomembrane responses in 151 TH, 155 MB and 191 MB P MY GABA neurons, including Calr, Hspa5, Pdia6, Psap, Atp1a3 and Atp1b1 decreases. Atg5 was weaker but had a focal 155 MB Glut signature with Calr and Rtn1 down, and Becn1 had its only multi-gene FDR program in 155 MB Glut with Calr, Ctsb, Dnm1, Psma5 and Syt11 down.",
+  "preliminary_scores": {
+    "novelty": 4,
+    "priority": 4,
+    "support": 4
+  },
+  "prior_expectation": {
+    "citations": [
+      "UniProtKB entry Q8TDY2, RB1-inducible coiled-coil protein 1, human RB1CC1/FIP200.",
+      "Reactome pathway R-HSA-1632852, Macroautophagy; RB1CC1-containing ULK1:ATG13:RB1CC1:ATG101 reactions.",
+      "Hara T, Takamura A, Kishi C, Iemura S, Natsume T, Guan JL, et al. FIP200, a ULK-interacting protein, is required for autophagosome formation in mammalian cells. J Cell Biol. 2008;181(3):497-510. PMID: 18443221. doi:10.1083/jcb.200712064.",
+      "Ganley IG, Lam du H, Wang J, Ding X, Chen S, Jiang X. ULK1.ATG13.FIP200 complex mediates mTOR signaling and is essential for autophagy. J Biol Chem. 2009;284(18):12297-12305. PMID: 19258318. doi:10.1074/jbc.M900573200.",
+      "Reactome ContentService. ATG5 pathway membership in Macroautophagy, Negative regulators of DDX58/IFIH1 signaling, PINK1-PRKN Mediated Mitophagy, and Receptor Mediated Mitophagy. Accessed 2025-04-29.",
+      "Szklarczyk D et al. The STRING database in 2023: protein-protein association networks and functional enrichment analyses for any sequenced genome of interest. Nucleic Acids Res. 2023;51:D638-D646.",
+      "Iriondo MN et al. Effect of ATG12-ATG5-ATG16L1 autophagy E3-like complex on the ability of LC3/GABARAP proteins to induce vesicle tethering and fusion. Cell Mol Life Sci. 2023;80(2):56. doi:10.1007/s00018-023-04704-z.",
+      "UniProtKB reviewed entry Q14457, BECN1_HUMAN, Beclin-1.",
+      "Reactome pathway R-HSA-1632852, Macroautophagy.",
+      "Itakura E, Kishi C, Inoue K, Mizushima N. Beclin 1 forms two distinct phosphatidylinositol 3-kinase complexes with mammalian Atg14 and UVRAG. Mol Biol Cell. 2008;19(12):5360-5372. PMID: 18843052.",
+      "STRING v12 interaction-partner query for Mus musculus Becn1.",
+      "Ganley IG, Lam du H, Wang J, Ding X, Chen S, Jiang X. ULK1.ATG13.FIP200 complex mediates mTOR signaling and is essential for autophagy. J Biol Chem. 2009;284(18):12297-12305. PMID: 19258318.",
+      "Hara T, Nakamura K, Matsui M, Yamamoto A, Nakahara Y, Suzuki-Migishima R, et al. Suppression of basal autophagy in neural cells causes neurodegenerative disease in mice. Nature. 2006;441(7095):885-889. PMID: 16625204. doi:10.1038/nature04724.",
+      "STRING mouse network queries for Rb1cc1 with Ulk1, Ulk2, Atg13, Atg101, Atg5, Map1lc3a, Becn1, Tsc1, Tsc2, Mtor, and Rptor, Mus musculus."
+    ],
+    "summary": "Prior work supports the broad molecular function of the perturbed target or complex, while the atlas result refines the affected brain cell type and RNA-output module."
+  },
+  "reference_ids": [
+    "Atg5:R001",
+    "Atg5:R002",
+    "Atg5:R003",
+    "Becn1:R001",
+    "Becn1:R002",
+    "Becn1:R003",
+    "Becn1:R004",
+    "Becn1:R005",
+    "Rb1cc1:R001",
+    "Rb1cc1:R002",
+    "Rb1cc1:R003",
+    "Rb1cc1:R004",
+    "Rb1cc1:R006",
+    "Rb1cc1:R008"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Atg5:E001",
+    "Atg5:E004",
+    "Atg5:E006",
+    "Becn1:E002",
+    "Becn1:E003",
+    "Becn1:E005",
+    "Becn1:E006",
+    "Becn1:E008",
+    "Rb1cc1:E001",
+    "Rb1cc1:E002",
+    "Rb1cc1:E003",
+    "Rb1cc1:E004",
+    "Rb1cc1:E007"
+  ],
+  "source_claim_ids": [
+    "claim:rb1cc1_f001_0c058da526b7",
+    "claim:atg5_f001_0729029cb9fa",
+    "claim:becn1_f001_bb26309cab98",
+    "claim:becn1_f003_48c363bb62bd",
+    "claim:rb1cc1_f004_6b030b6b41c8"
+  ],
+  "source_cluster_ids": [
+    "C038",
+    "C032"
+  ],
+  "source_urls_or_dois": [
+    "https://doi.org/10.1038/nature04724",
+    "https://doi.org/10.1074/jbc.M900573200",
+    "https://doi.org/10.1083/jcb.200712064",
+    "https://pubmed.ncbi.nlm.nih.gov/18843052/",
+    "https://pubmed.ncbi.nlm.nih.gov/19258318/",
+    "https://pubmed.ncbi.nlm.nih.gov/36729310/",
+    "https://reactome.org/content/detail/R-HSA-1632852",
+    "https://rest.uniprot.org/uniprotkb/Q14457",
+    "https://rest.uniprot.org/uniprotkb/Q8TDY2",
+    "https://string-db.org/",
+    "https://string-db.org/cgi/network?identifier=Becn1&species=10090",
+    "https://string-db.org/cgi/network?identifier=Rb1cc1&species=10090"
+  ],
+  "status": "grounded",
+  "story_id": "S065",
+  "support": {
+    "exact_de_rows": [
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.0074389923358433524,
+        "fdr_significant": true,
+        "gene": "Calr",
+        "log2_fold_change": -0.616181,
+        "p_value": 4.334237225606988e-07,
+        "score": -5.053659,
+        "target": "Rb1cc1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.0074389923358433524,
+        "fdr_significant": true,
+        "gene": "Hspa5",
+        "log2_fold_change": -0.558628,
+        "p_value": 8.620421039276148e-07,
+        "score": -4.92077,
+        "target": "Rb1cc1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.033799518775453265,
+        "fdr_significant": true,
+        "gene": "Pdia6",
+        "log2_fold_change": -0.567008,
+        "p_value": 7.833482536752596e-06,
+        "score": -4.469685,
+        "target": "Rb1cc1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 1.0,
+        "fdr_significant": false,
+        "gene": "Atp1a3",
+        "log2_fold_change": -0.084432,
+        "p_value": 0.19754229569090798,
+        "score": -1.288585,
+        "target": "Rb1cc1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 1.0,
+        "fdr_significant": false,
+        "gene": "Atp1b1",
+        "log2_fold_change": -0.124215,
+        "p_value": 0.10094890619836842,
+        "score": -1.640271,
+        "target": "Rb1cc1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 1.0,
+        "fdr_significant": false,
+        "gene": "Psap",
+        "log2_fold_change": -0.04465,
+        "p_value": 0.3313826173321832,
+        "score": -0.971333,
+        "target": "Rb1cc1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 1.0,
+        "fdr_significant": false,
+        "gene": "Hyou1",
+        "log2_fold_change": -0.197508,
+        "p_value": 0.11293285612642008,
+        "score": -1.585147,
+        "target": "Rb1cc1"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "down",
+        "fdr": 0.04095264121889554,
+        "fdr_significant": true,
+        "gene": "Calr",
+        "log2_fold_change": -0.896355,
+        "p_value": 4.576508856969977e-06,
+        "score": -4.58332,
+        "target": "Atg5"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "down",
+        "fdr": 0.04095264121889554,
+        "fdr_significant": true,
+        "gene": "Rtn1",
+        "log2_fold_change": -0.307502,
+        "p_value": 4.6955960808227415e-06,
+        "score": -4.577948,
+        "target": "Atg5"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "down",
+        "fdr": 0.4528222760740432,
+        "fdr_significant": false,
+        "gene": "Ctsb",
+        "log2_fold_change": -0.285547,
+        "p_value": 0.00025960114434102116,
+        "score": -3.652597,
+        "target": "Atg5"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "down",
+        "fdr": 0.7448891902465137,
+        "fdr_significant": false,
+        "gene": "Aplp1",
+        "log2_fold_change": -0.354329,
+        "p_value": 0.0006832670437392776,
+        "score": -3.396207,
+        "target": "Atg5"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "down",
+        "fdr": 0.0076747615800628255,
+        "fdr_significant": true,
+        "gene": "Psma5",
+        "log2_fold_change": -0.879383,
+        "p_value": 4.3999091785030244e-07,
+        "score": -5.050788,
+        "target": "Becn1"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "down",
+        "fdr": 0.008790072814963263,
+        "fdr_significant": true,
+        "gene": "Dnm1",
+        "log2_fold_change": -0.233467,
+        "p_value": 1.0078625024322952e-06,
+        "score": -4.890097,
+        "target": "Becn1"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "down",
+        "fdr": 0.029911654699353994,
+        "fdr_significant": true,
+        "gene": "Calr",
+        "log2_fold_change": -0.686762,
+        "p_value": 5.144468503013357e-06,
+        "score": -4.558808,
+        "target": "Becn1"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "down",
+        "fdr": 0.045286463156553845,
+        "fdr_significant": true,
+        "gene": "Ctsb",
+        "log2_fold_change": -0.404434,
+        "p_value": 1.0385017062788246e-05,
+        "score": -4.408998,
+        "target": "Becn1"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "down",
+        "fdr": 0.049663520392838195,
+        "fdr_significant": true,
+        "gene": "Syt11",
+        "log2_fold_change": -0.275916,
+        "p_value": 1.4235945764157026e-05,
+        "score": -4.34019,
+        "target": "Becn1"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "down",
+        "fdr": 0.07671210580274022,
+        "fdr_significant": false,
+        "gene": "Dnajb11",
+        "log2_fold_change": -0.72236,
+        "p_value": 2.638724042976789e-05,
+        "score": -4.202595,
+        "target": "Becn1"
+      }
+    ],
+    "resolved_evidence": [
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "Thalamic Rb1cc1 perturbation showed significant target-transcript depletion and a compact downregulated ER-chaperone signature.",
+        "evidence_id": "E001",
+        "evidence_slug": "rb1cc1_151_th_prkcd_signature",
+        "genes": "Calr|Hspa5|Rb1cc1|Pdia6",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "4",
+        "statistics": "151 perturbed cells versus 23679 controls; 4 genes with FDR<0.05. Calr logFC -0.616 score -5.054 FDR 0.00744; Hspa5 logFC -0.559 score -4.921 FDR 0.00744; Rb1cc1 logFC -0.542 score -4.629 nominal p 3.67e-06 FDR 0.0211; Pdia6 logFC -0.567 score -4.470 FDR 0.0338.",
+        "target_gene": "Rb1cc1"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "description": "Midbrain glutamatergic cells had the largest Rb1cc1 downstream signature even though the target transcript was only nominally depleted after multiple-testing correction.",
+        "evidence_id": "E002",
+        "evidence_slug": "rb1cc1_155_mb_glut_signature",
+        "genes": "Srrm2|Calr|Psap|Atp1b1|Atp1a3|Atp5b|Sez6l2|Glrb|Tubb4a|Ckmt1|Myt1|Rb1cc1",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "12",
+        "statistics": "103 perturbed cells versus 20353 controls; 11 genes with FDR<0.05. Rb1cc1 logFC -0.525 score -3.326 nominal p 8.82e-04 FDR 0.341. Top FDR genes: Srrm2 logFC 0.325 FDR 0.00559; Calr -0.945 FDR 0.00559; Psap -0.365 FDR 0.00559; Atp1b1 -0.340 FDR 0.00559; Atp1a3 -0.327 FDR 0.0163; Myt1 0.557 FDR 0.0352.",
+        "target_gene": "Rb1cc1"
+      },
+      {
+        "cell_type": "191 MB P MY GABA",
+        "description": "Midbrain/pons/medulla GABA cells showed significant target engagement but only two significant non-target transcripts.",
+        "evidence_id": "E003",
+        "evidence_slug": "rb1cc1_191_mb_p_my_gaba_signature",
+        "genes": "Rb1cc1|Atp1a3|Nrxn1|Setd1a|Hyou1",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "5",
+        "statistics": "59 perturbed cells versus 10309 controls; 3 genes with FDR<0.05. Nrxn1 logFC -0.925 score -4.943 FDR 0.0104; Atp1a3 logFC -0.405 score -4.785 FDR 0.0104; Rb1cc1 logFC -0.899 score -4.773 nominal p 1.82e-06 FDR 0.0104. Setd1a was the strongest positive gene, logFC 0.648 FDR 0.0550.",
+        "target_gene": "Rb1cc1"
+      },
+      {
+        "cell_type": "",
+        "description": "Most cell classes did not show a robust on-target or downstream response, including some classes with only low cell counts or nominal target-transcript decreases.",
+        "evidence_id": "E004",
+        "evidence_slug": "rb1cc1_18_cell_types_no_fdr_response",
+        "genes": "Rb1cc1",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "1",
+        "statistics": "18 of 21 Rb1cc1-assayed cell classes had zero genes with FDR<0.05; n_pert ranged from 22 to 89, minimum per-class FDR ranged from 0.0623 to 1.0, and the Rb1cc1 row had FDR 1.0 in every one of these 18 classes. Examples of nominal target depletion without FDR support included 053 Sst Gaba, 22 cells, Rb1cc1 logFC -1.091, p 0.00206, FDR 1.0; and 052 Pvalb Gaba, 77 cells, Rb1cc1 logFC -0.280, p 0.0129, FDR 1.0.",
+        "target_gene": "Rb1cc1"
+      },
+      {
+        "cell_type": "",
+        "description": "Direct measurement of the perturbed target transcript where Atg5 itself was in the Wilcoxon feature set.",
+        "evidence_id": "E001",
+        "evidence_slug": "atg5_target_transcript_weak_across_panel",
+        "genes": "Atg5",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "1",
+        "statistics": "Atg5 rows were present in 21 of 23 cell classes, totaling 1,078 Atg5-assigned cells. Per class: 28-114 perturbed cells versus 4,807-23,679 controls; Atg5 logFC was negative in 14/21 classes with median -0.069; best Atg5 nominal p=0.0138 in 151 TH Prkcd Grin2c Glut; all Atg5 self-transcript FDR values were 1.0.",
+        "target_gene": "Atg5"
+      },
+      {
+        "cell_type": "",
+        "description": "Broad absence of multiple-testing-significant Atg5 downstream transcriptional responses outside 155 MB Glut.",
+        "evidence_id": "E004",
+        "evidence_slug": "atg5_fdr_null_in_twenty_cell_classes",
+        "genes": "",
+        "has_cell_type": "0",
+        "has_genes": "0",
+        "n_genes": "0",
+        "statistics": "Only 155 MB Glut had any genes at FDR<0.10 after Atg5 perturbation, with 2 genes. The other 20 Atg5-tested cell classes had zero genes at FDR<0.10; their smallest FDR values ranged from 0.1047 to 1.0.",
+        "target_gene": "Atg5"
+      },
+      {
+        "cell_type": "",
+        "description": "Comparison of perturbation proxies among autophagy-related targets present in the dataset.",
+        "evidence_id": "E006",
+        "evidence_slug": "related_autophagy_targets_outperform_atg5_self_depletion",
+        "genes": "Atg5|Atg16l1|Becn1|Map1lc3a|Rb1cc1|Sqstm1",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "6",
+        "statistics": "Self-transcript FDR<0.10 counts across tested classes were Atg5 0/21, Atg16l1 0/18, Becn1 0/22, Rb1cc1 2/21 with min FDR 0.0104, Map1lc3a 5/22 with min FDR 9.42e-5, and Sqstm1 4/22 with min FDR 1.48e-6.",
+        "target_gene": "Atg5"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "description": "The only multi-gene FDR-supported response to Becn1 knockdown, concentrated in midbrain glutamatergic cells and dominated by downregulated proteostasis, endocytic, and lysosomal transcripts.",
+        "evidence_id": "E002",
+        "evidence_slug": "becn1_155_mb_glut_fdr_module",
+        "genes": "Psma5|Dnm1|Calr|Ctsb|Syt11|Dnajb11",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "6",
+        "statistics": "166 Becn1-perturbed cells versus 20353 controls. FDR<0.05: Psma5 logFC -0.879 score -5.051 FDR 0.00767; Dnm1 -0.233 score -4.890 FDR 0.00879; Calr -0.687 score -4.559 FDR 0.0299; Ctsb -0.404 score -4.409 FDR 0.0453; Syt11 -0.276 score -4.340 FDR 0.0497. Dnajb11 logFC -0.722 score -4.203 FDR 0.0767.",
+        "target_gene": "Becn1"
+      },
+      {
+        "cell_type": "",
+        "description": "Becn1 did not produce a broadly recurrent FDR-level transcriptome across the assayed cell classes; two cell types had isolated single-gene FDR hits.",
+        "evidence_id": "E003",
+        "evidence_slug": "becn1_fdr_hits_across_all_cell_types",
+        "genes": "Psma5|Dnm1|Calr|Ctsb|Syt11|Spen|Atp1b1",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "7",
+        "statistics": "Across all Becn1 tests, only 7 gene rows reached FDR<0.05: 5 in 155 MB Glut, Spen in 022 L5 ET CTX Glut with logFC 0.599 score 4.748 FDR 0.0349, and Atp1b1 in 110 CNU-HYa HY MM Glut with logFC -0.400 score -4.698 FDR 0.0451.",
+        "target_gene": "Becn1"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "description": "A same-cell-type restricted-signature comparison linked Becn1 most strongly to the upstream autophagy-initiation scaffold Rb1cc1.",
+        "evidence_id": "E005",
+        "evidence_slug": "becn1_rb1cc1_signature_convergence_155_mb_glut",
+        "genes": "Becn1|Rb1cc1|Calr|Ctsb|Atp1a3",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "5",
+        "statistics": "On the 200 genes with largest absolute Becn1 scores in 155 MB Glut, Rb1cc1 was the top positive neighbor among 2040 non-Becn1 perturbations: Pearson r=0.433, Spearman rho=0.393. Rb1cc1 had 103 perturbed cells; 11 genes reached FDR<0.05, including Calr logFC -0.945 FDR 0.00559 and Atp1a3 logFC -0.327 FDR 0.0163; Ctsb trended down with logFC -0.317 FDR 0.0538.",
+        "target_gene": "Becn1"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "description": "A downstream autophagy conjugation gene showed far less concordance with the Becn1 signature than Rb1cc1 in 155 MB Glut.",
+        "evidence_id": "E006",
+        "evidence_slug": "becn1_atg5_weak_concordance_155_mb_glut",
+        "genes": "Becn1|Atg5|Calr|Rtn1",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "4",
+        "statistics": "In the same 155 MB Glut top-200 Becn1 signature comparison, Atg5 had Pearson r=0.083 and Spearman rho=0.059. Atg5 had 101 perturbed cells, 2 genes at FDR<0.05, Calr logFC -0.896 FDR 0.0410 and Rtn1 logFC -0.308 FDR 0.0410; the Atg5 transcript itself was not detectably depleted at nominal p<0.05 in this cell type, score -1.597, nominal p=0.110.",
+        "target_gene": "Becn1"
+      },
+      {
+        "cell_type": "",
+        "description": "The parquet did not contain direct perturbation rows for several canonical Beclin-PI3KC3 or ULK-complex genes, constraining complex-member comparisons.",
+        "evidence_id": "E008",
+        "evidence_slug": "becn1_related_gene_target_availability",
+        "genes": "Becn1|Rb1cc1|Atg5|Atg16l1|Rubcn|Sqstm1|Bcl2|Mtor|Rptor|Tsc1|Tsc2|Pten|Pik3ca|Pik3r1|Pik3r2|Vps41|Pik3c3|Pik3r4|Atg14|Uvrag|Ambra1|Nrbf2|Ulk1|Ulk2|Atg13|Atg101",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "26",
+        "statistics": "A queried Becn1/PI3KC3/ULK candidate set returned gene_target rows for Becn1, Rb1cc1, Atg5, Atg16l1, Rubcn, Sqstm1, Bcl2, Mtor, Rptor, Tsc1, Tsc2, Pten, Pik3ca, Pik3r1, Pik3r2, and Vps41; no rows were returned for Pik3c3, Pik3r4, Atg14, Uvrag, Ambra1, Nrbf2, Ulk1, Ulk2, Atg13, or Atg101.",
+        "target_gene": "Becn1"
+      },
+      {
+        "cell_type": "",
+        "description": "Related autophagy perturbations did not uniformly phenocopy Rb1cc1; Becn1 partially converged only in 155 MB Glut.",
+        "evidence_id": "E007",
+        "evidence_slug": "autophagy_gene_cross_perturbation_contrast",
+        "genes": "Rb1cc1|Atg5|Map1lc3a|Becn1",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "4",
+        "statistics": "A filter for Ulk1, Ulk2, Atg13, and Atg101 returned no rows, leaving Atg5, Map1lc3a, and Becn1 as available autophagy comparators. In 151 TH Prkcd Grin2c Glut, 155 MB Glut, and 191 MB P MY GABA, Rb1cc1 had 4, 11, and 3 FDR<0.05 gene-cell calls, respectively. Atg5 had 0, 2, and 0; Map1lc3a had exactly 1 in each class, always Map1lc3a itself; Becn1 had 0, 5, and 0. Pearson correlations to the Rb1cc1 200-gene restricted signature were: Atg5 r=0.122, 0.349, 0.222; Map1lc3a r=0.051, -0.192, 0.140; Becn1 r=-0.078, 0.454, 0.252 in the same three classes.",
+        "target_gene": "Rb1cc1"
+      }
+    ],
+    "support_note": "Exact log2 fold changes, p-values, and FDRs in exact_de_rows were re-read from the Wilcoxon Parquet for this grounding pass; score-vector correlations and perturbed/control cell counts are resolved from the structured report evidence."
+  },
+  "targets": [
+    "Rb1cc1",
+    "Atg5",
+    "Becn1",
+    "Atp1a3",
+    "Calr",
+    "Ctsb",
+    "Rtn1"
+  ],
+  "title": "Core autophagy perturbations reduce ER-lumen and endomembrane transcripts in selected thalamic and midbrain neurons"
+}

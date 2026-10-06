@@ -1,0 +1,20 @@
+{
+  "current_conservative_primary": 1071,
+  "union_primary": 1519,
+  "new_primary": 448,
+  "extended_current": 75,
+  "excluded_control_findings": 1,
+  "flags": {
+    "Inferred": 636,
+    "Agree": 420,
+    "No Literature": 362,
+    "Disagree": 101
+  },
+  "local_signal": {
+    "Low": 634,
+    "No placement": 166,
+    "Moderate": 241,
+    "Strong": 466,
+    "No local DEGs": 12
+  }
+}

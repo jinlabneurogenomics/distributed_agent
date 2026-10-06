@@ -1,0 +1,638 @@
+{
+  "biological_interpretation": "ERRalpha and PGC-1beta participate in a susceptible-neuron mitochondrial transcriptional axis that is not interchangeable with PGC-1alpha or broad PPAR/RXR receptor loss.",
+  "caveats": [
+    "151 TH Prkcd Grin2c Glut had the highest perturbed-cell count, although other high-count classes still lacked FDR hits.",
+    "Absence of target-transcript depletion does not exclude guide activity at protein or isoform levels, but the measured RNA evidence is weak.",
+    "The genome-wide correlation was small, so the comparison is restricted-signature and hypothesis-generating.",
+    "Both coactivator perturbations showed weak measured on-target mRNA effects, so divergence could reflect perturbation quality rather than true paralog-specific biology.",
+    "All compared perturbations had weak target-transcript depletion, so lack of correlation could reflect perturbation strength as well as biology.",
+    "Exact log2 fold changes, scores, p-values, and FDRs in exact_de_rows were re-read from the Wilcoxon Parquet; the graph and cluster summaries were used only to nominate the target/readout combinations."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "191 MB P MY GABA"
+  ],
+  "exact_observed_result": "Esrra loss produced a robust 151 TH-specific decrease of TCA, pyruvate, OXPHOS-linked, membrane, axon-adhesion, and synaptic transcripts; Ppargc1b perturbation exposed a selective mitochondrial signal with Atp5b FDR-supported in 155 MB Glut and recurrent decreases in Idh3b, Uqcrc1, Dlst, Atp5j, Slc25a3, and Ndufa10; Esrra was the closest positive Ppargc1b neighbor in 151 TH, while Ppargc1a and PPAR receptors did not phenocopy Ppargc1b. Parquet-verified leading rows: Esrra->Gas6 in 151 TH Prkcd Grin2c Glut log2FC -0.556, FDR 1.56e-09; Esrra->Bcan in 151 TH Prkcd Grin2c Glut log2FC -0.937, FDR 2.38e-06; Esrra->Nceh1 in 151 TH Prkcd Grin2c Glut log2FC -0.376, FDR 8.11e-06; Esrra->Nsg2 in 151 TH Prkcd Grin2c Glut log2FC 0.379, FDR 7.45e-05; Esrra->Mdh1 in 151 TH Prkcd Grin2c Glut log2FC -0.25, FDR 1.53e-04; Esrra->Atp1b1 in 151 TH Prkcd Grin2c Glut log2FC -0.209, FDR 1.53e-04.",
+  "preliminary_scores": {
+    "novelty": 4,
+    "priority": 4,
+    "support": 4
+  },
+  "prior_expectation": {
+    "citations": [
+      {
+        "citation": "UniProtKB accession O08580. Steroid hormone receptor ERR1, Mus musculus.",
+        "description": "Curated Esrra/ERR\u03b1 molecular function, nuclear-receptor domains, ERR response-element binding, and PPARGC1A coactivator interaction.",
+        "ref_id": "R001",
+        "ref_slug": "uniprot_mouse_esrra_o08580",
+        "scoped_ref_id": "Esrra:R001",
+        "source": "UniProtKB",
+        "source_type": "database",
+        "target_gene": "Esrra",
+        "url": "https://www.uniprot.org/uniprotkb/O08580"
+      },
+      {
+        "citation": "McMeekin LJ et al. Estrogen-related Receptor Alpha (ERR\u03b1) is Required for PGC-1\u03b1-dependent Gene Expression in the Mouse Brain. Neuroscience. 2021;479:70-90. doi:10.1016/j.neuroscience.2021.10.007.",
+        "description": "Mouse-brain study showing that ERR\u03b1 contributes to PGC-1\u03b1-dependent mitochondrial and synaptic gene expression and highlighting ERR\u03b1 expression in parvalbumin neurons.",
+        "ref_id": "R002",
+        "ref_slug": "mcmeekin_2021_esrra_pgc1a_mouse_brain",
+        "scoped_ref_id": "Esrra:R002",
+        "source": "Neuroscience",
+        "source_type": "pubmed",
+        "target_gene": "Esrra",
+        "url": "https://doi.org/10.1016/j.neuroscience.2021.10.007"
+      },
+      {
+        "citation": "Bakshi R, Mittal S, Liao Z, Scherzer CR. A Feed-Forward Circuit of Endogenous PGC-1\u03b1 and Estrogen Related Receptor \u03b1 Regulates the Neuronal Electron Transport Chain. Parkinson's Disease. 2016;2016:2405176. doi:10.1155/2016/2405176.",
+        "description": "Neuronal study supporting a PGC-1\u03b1/ERR\u03b1 feed-forward circuit that activates nuclear-encoded mitochondrial electron-transport genes.",
+        "ref_id": "R003",
+        "ref_slug": "bakshi_2016_pgc1a_esrra_neuronal_etc",
+        "scoped_ref_id": "Esrra:R003",
+        "source": "Parkinson's Disease",
+        "source_type": "pmc",
+        "target_gene": "Esrra",
+        "url": "https://doi.org/10.1155/2016/2405176"
+      },
+      {
+        "citation": "Bianco S, Lanvin O, Tribollet V, Macari C, North S, Vanacker JM. Modulating Estrogen Receptor-related Receptor-\u03b1 Activity Inhibits Cell Proliferation. Journal of Biological Chemistry. 2009;284(35):23286-23292. doi:10.1074/jbc.M109.028191.",
+        "description": "Preclinical XCT790 study illustrating pharmacologic inhibition of ERR\u03b1 activity in proliferating tumor-cell models.",
+        "ref_id": "R004",
+        "ref_slug": "bianco_2009_xct790_esrra",
+        "scoped_ref_id": "Esrra:R004",
+        "source": "Journal of Biological Chemistry",
+        "source_type": "pubmed",
+        "target_gene": "Esrra",
+        "url": "https://doi.org/10.1074/jbc.M109.028191"
+      },
+      {
+        "citation": "UniProtKB reviewed entry Q8VHJ7, Peroxisome proliferator-activated receptor gamma coactivator 1-beta, Mus musculus; and Q86YN6, Homo sapiens.",
+        "description": "Curated entry describing Ppargc1b/PPARGC1B as a transcriptional coactivator of nuclear receptors and NRF1 with roles in mitochondrial biogenesis, oxidative metabolism, and energy expenditure.",
+        "ref_id": "R001",
+        "ref_slug": "uniprot_ppargc1b_function",
+        "scoped_ref_id": "Ppargc1b:R001",
+        "source": "UniProtKB",
+        "source_type": "database",
+        "target_gene": "Ppargc1b",
+        "url": "https://www.uniprot.org/uniprotkb/Q8VHJ7/entry"
+      },
+      {
+        "citation": "Lin J, Puigserver P, Donovan J, Tarr P, Spiegelman BM. Peroxisome proliferator-activated receptor gamma coactivator 1beta (PGC-1beta), a novel PGC-1-related transcription coactivator associated with host cell factor. J Biol Chem. 2002;277:1645-1648. PMID:11733490.",
+        "description": "Original cloning paper identifying PGC-1beta as a PGC-1alpha homolog and nuclear-receptor coactivator with regulation distinct from PGC-1alpha.",
+        "ref_id": "R002",
+        "ref_slug": "lin_2002_pgc1b_clone",
+        "scoped_ref_id": "Ppargc1b:R002",
+        "source": "Journal of Biological Chemistry",
+        "source_type": "pubmed",
+        "target_gene": "Ppargc1b",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/11733490/"
+      },
+      {
+        "citation": "Meirhaeghe A, Crowley V, Lenaghan C, et al. Characterization of the human, mouse and rat PGC1 beta gene in vitro and in vivo. Biochem J. 2003;373:155-165. PMID:12678921.",
+        "description": "Characterized PGC1 beta isoforms, brain expression, PPAR coactivation, and increased mitochondrial number and basal oxygen consumption after ectopic PGC1 beta expression.",
+        "ref_id": "R003",
+        "ref_slug": "meirhaeghe_2003_pgc1b_characterization",
+        "scoped_ref_id": "Ppargc1b:R003",
+        "source": "Biochemical Journal",
+        "source_type": "pubmed",
+        "target_gene": "Ppargc1b",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/12678921/"
+      },
+      {
+        "citation": "Kamei Y, Ohizumi H, Fujitani Y, et al. PPARgamma coactivator 1beta/ERR ligand 1 is an ERR protein ligand, whose expression induces a high-energy expenditure and antagonizes obesity. Proc Natl Acad Sci U S A. 2003;100:12378-12383. PMID:14530391.",
+        "description": "Showed that PGC-1beta/ERRL1 binds and activates estrogen-related receptors and increases an ERR target involved in mitochondrial beta-oxidation in transgenic mice.",
+        "ref_id": "R004",
+        "ref_slug": "kamei_2003_pgc1b_errl1",
+        "scoped_ref_id": "Ppargc1b:R004",
+        "source": "Proceedings of the National Academy of Sciences of the United States of America",
+        "source_type": "pubmed",
+        "target_gene": "Ppargc1b",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/14530391/"
+      },
+      {
+        "citation": "Wareski P, Vaarmann A, Choubey V, et al. PGC-1alpha and PGC-1beta regulate mitochondrial density in neurons. J Biol Chem. 2009;284:21379-21385. PMID:19542216.",
+        "description": "Demonstrated in primary neuronal systems that PGC-1alpha and PGC-1beta can additively and independently control mitochondrial capacity across cortical, midbrain, and cerebellar granule neurons.",
+        "ref_id": "R005",
+        "ref_slug": "wareski_2009_pgc1_neuronal_mitochondria",
+        "scoped_ref_id": "Ppargc1b:R005",
+        "source": "Journal of Biological Chemistry",
+        "source_type": "pubmed",
+        "target_gene": "Ppargc1b",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/19542216/"
+      },
+      {
+        "citation": "Chambers KT, Chen Z, Crawford PA, et al. Liver-specific PGC-1beta deficiency leads to impaired mitochondrial function and lipogenic response to fasting-refeeding. PLoS One. 2012;7:e52645. PMID:23285128.",
+        "description": "Mouse loss-of-function study showing that liver-specific PGC-1beta deletion diminished mitochondrial DNA content and genes across fatty-acid oxidation and oxidative phosphorylation pathways.",
+        "ref_id": "R006",
+        "ref_slug": "chambers_2012_liver_pgc1b_deficiency",
+        "scoped_ref_id": "Ppargc1b:R006",
+        "source": "PLoS One",
+        "source_type": "pubmed",
+        "target_gene": "Ppargc1b",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/23285128/"
+      },
+      {
+        "citation": "STRING mouse Ppargc1b interaction-partner query, species 10090, accessed for this report.",
+        "description": "Protein-network database query placing Nrf1, Srebf1, Esrra, Pparg, and Ppara among high-scoring Ppargc1b functional partners.",
+        "ref_id": "R007",
+        "ref_slug": "string_mouse_ppargc1b_partners",
+        "scoped_ref_id": "Ppargc1b:R007",
+        "source": "STRING",
+        "source_type": "database",
+        "target_gene": "Ppargc1b",
+        "url": "https://string-db.org/cgi/network?identifier=Ppargc1b&species=10090"
+      },
+      {
+        "citation": "Reactome R-HSA-2151201 Transcriptional activation of mitochondrial biogenesis and R-HSA-2151209 Activation of PPARGC1A by phosphorylation.",
+        "description": "Places PPARGC1A, PPARGC1B, NRF1, and NRF2/GABP components in mitochondrial-biogenesis transcriptional complexes.",
+        "ref_id": "R002",
+        "ref_slug": "reactome_ppargc1a_mito_biogenesis",
+        "scoped_ref_id": "Ppargc1a:R002",
+        "source": "Reactome",
+        "source_type": "database",
+        "target_gene": "Ppargc1a",
+        "url": "https://reactome.org/content/detail/R-HSA-2151201"
+      }
+    ],
+    "summary": "References were retained only when they were linked to one of the resolved source findings."
+  },
+  "reference_ids": [
+    "Esrra:R001",
+    "Esrra:R002",
+    "Esrra:R003",
+    "Esrra:R004",
+    "Ppargc1a:R002",
+    "Ppargc1b:R001",
+    "Ppargc1b:R002",
+    "Ppargc1b:R003",
+    "Ppargc1b:R004",
+    "Ppargc1b:R005",
+    "Ppargc1b:R006",
+    "Ppargc1b:R007"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Esrra:E001",
+    "Esrra:E002",
+    "Esrra:E005",
+    "Ppargc1a:E006",
+    "Ppargc1a:E007",
+    "Ppargc1b:E001",
+    "Ppargc1b:E006",
+    "Ppargc1b:E007",
+    "Ppargc1b:E008"
+  ],
+  "source_urls_or_dois": [
+    "https://doi.org/10.1016/j.neuroscience.2021.10.007",
+    "https://doi.org/10.1074/jbc.M109.028191",
+    "https://doi.org/10.1155/2016/2405176",
+    "https://pubmed.ncbi.nlm.nih.gov/11733490/",
+    "https://pubmed.ncbi.nlm.nih.gov/12678921/",
+    "https://pubmed.ncbi.nlm.nih.gov/14530391/",
+    "https://pubmed.ncbi.nlm.nih.gov/19542216/",
+    "https://pubmed.ncbi.nlm.nih.gov/23285128/",
+    "https://reactome.org/content/detail/R-HSA-2151201",
+    "https://string-db.org/cgi/network?identifier=Ppargc1b&species=10090",
+    "https://www.uniprot.org/uniprotkb/O08580",
+    "https://www.uniprot.org/uniprotkb/Q8VHJ7/entry"
+  ],
+  "status": "grounded",
+  "story_id": "S095",
+  "support": {
+    "exact_de_rows": [
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 1.5610797993240475e-09,
+        "gene": "Gas6",
+        "log2_fold_change": -0.5558640956878662,
+        "p_value": 9.045018826838446e-14,
+        "score": -7.454148292541504,
+        "target_gene": "Esrra"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 2.377743678828776e-06,
+        "gene": "Bcan",
+        "log2_fold_change": -0.9373576045036316,
+        "p_value": 2.755366682691669e-10,
+        "score": -6.311952590942383,
+        "target_gene": "Esrra"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 8.107104287556998e-06,
+        "gene": "Nceh1",
+        "log2_fold_change": -0.3757013976573944,
+        "p_value": 1.4091959477762904e-09,
+        "score": -6.0544257164001465,
+        "target_gene": "Esrra"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 7.45493153840204e-05,
+        "gene": "Nsg2",
+        "log2_fold_change": 0.3786065876483917,
+        "p_value": 1.7277783274586103e-08,
+        "score": 5.637259483337402,
+        "target_gene": "Esrra"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.00015275544027883845,
+        "gene": "Mdh1",
+        "log2_fold_change": -0.25029051303863525,
+        "p_value": 4.5160196425068494e-08,
+        "score": -5.46938419342041,
+        "target_gene": "Esrra"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.00015275544027883845,
+        "gene": "Atp1b1",
+        "log2_fold_change": -0.2087562084197998,
+        "p_value": 5.31046202950942e-08,
+        "score": -5.440589427947998,
+        "target_gene": "Esrra"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.00016889786709956854,
+        "gene": "Atp2b3",
+        "log2_fold_change": -0.37753114104270935,
+        "p_value": 6.850252446242423e-08,
+        "score": -5.395055294036865,
+        "target_gene": "Esrra"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.00020730859797787012,
+        "gene": "Esrra",
+        "log2_fold_change": -0.48063763976097107,
+        "p_value": 9.609298243368451e-08,
+        "score": -5.333961486816406,
+        "target_gene": "Esrra"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.0006391672360557631,
+        "gene": "Syt7",
+        "log2_fold_change": 0.1906217485666275,
+        "p_value": 3.703385109541475e-07,
+        "score": 5.08360481262207,
+        "target_gene": "Esrra"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.0008503406358894392,
+        "gene": "Pxdn",
+        "log2_fold_change": 0.46269115805625916,
+        "p_value": 5.4196343906274e-07,
+        "score": 5.010828018188477,
+        "target_gene": "Esrra"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.0015931168228623816,
+        "gene": "Cdh2",
+        "log2_fold_change": -0.29844504594802856,
+        "p_value": 1.1076772625498918e-06,
+        "score": -4.871475696563721,
+        "target_gene": "Esrra"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.0038818267820579814,
+        "gene": "Got1",
+        "log2_fold_change": -0.28929853439331055,
+        "p_value": 3.3737413367442912e-06,
+        "score": -4.646646976470947,
+        "target_gene": "Esrra"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 0.0075431513053118415,
+        "gene": "Atp5b",
+        "log2_fold_change": -0.5148929357528687,
+        "p_value": 4.3244575504854906e-07,
+        "score": -5.054090976715088,
+        "target_gene": "Ppargc1b"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.017105848175621087,
+        "gene": "Atp1a3",
+        "log2_fold_change": -0.14711697399616241,
+        "p_value": 2.477815657862722e-05,
+        "score": -4.216810703277588,
+        "target_gene": "Esrra"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.01869784181594682,
+        "gene": "Dlat",
+        "log2_fold_change": -0.3447778522968292,
+        "p_value": 2.8167558213953146e-05,
+        "score": -4.187796592712402,
+        "target_gene": "Esrra"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.02593905694161134,
+        "gene": "Kcnab3",
+        "log2_fold_change": -0.6160175204277039,
+        "p_value": 5.26025258100931e-05,
+        "score": -4.043752193450928,
+        "target_gene": "Esrra"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.028800861673866026,
+        "gene": "Idh3b",
+        "log2_fold_change": -0.2501307427883148,
+        "p_value": 6.589525856428453e-05,
+        "score": -3.9906399250030518,
+        "target_gene": "Esrra"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.029222722290513405,
+        "gene": "Aco1",
+        "log2_fold_change": -0.617155134677887,
+        "p_value": 7.025315434490935e-05,
+        "score": -3.97542667388916,
+        "target_gene": "Esrra"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.03336395293818811,
+        "gene": "Cntn1",
+        "log2_fold_change": -0.1689387559890747,
+        "p_value": 8.312474513830979e-05,
+        "score": -3.9352078437805176,
+        "target_gene": "Esrra"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.03504285410258855,
+        "gene": "Cntnap1",
+        "log2_fold_change": -0.18161427974700928,
+        "p_value": 9.341673097767626e-05,
+        "score": -3.9070839881896973,
+        "target_gene": "Esrra"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.04799157784997765,
+        "gene": "Cplx1",
+        "log2_fold_change": -0.23259328305721283,
+        "p_value": 0.00015796891369432338,
+        "score": -3.778195381164551,
+        "target_gene": "Esrra"
+      }
+    ],
+    "finding_summaries": [
+      {
+        "claim_id": "claim:esrra_f001_cb969bf84a2f",
+        "confidence": "high",
+        "direction": "restricted_to_151",
+        "finding_id": "F001",
+        "finding_type": "cell_type_selectivity",
+        "summary": "Esrra has a single robust FDR-significant response in 151 TH Prkcd Grin2c Glut.",
+        "target_gene": "Esrra",
+        "why_it_matters": "The perturbation cannot be interpreted as a pan-neuronal ESRRA program; downstream analysis should focus on the one class with both target mRNA depletion and corrected effects."
+      },
+      {
+        "claim_id": "claim:ppargc1b_f001_b1a16118aacc",
+        "confidence": "high",
+        "direction": "weak_or_undetectable_target_depletion",
+        "finding_id": "F001",
+        "finding_type": "negative_result",
+        "summary": "Most assayed Ppargc1b perturbations were transcriptionally weak: target RNA was never FDR-significantly reduced and only one downstream gene reached FDR<0.05 across the full Ppargc1b slice.",
+        "target_gene": "Ppargc1b",
+        "why_it_matters": "The negative result prevents overcalling the many nominal tails as complete PGC-1beta loss of function and makes cell-count and target-engagement caveats first-order biological constraints."
+      },
+      {
+        "claim_id": "claim:ppargc1b_f004_6286800cfcaa",
+        "confidence": "exploratory",
+        "direction": "convergent_downstream_metabolic_signature",
+        "finding_id": "F004",
+        "finding_type": "convergent_module",
+        "summary": "In 151 TH Prkcd Grin2c Glut, Esrra was the closest positive Ppargc1b signature neighbor and co-depleted metabolic genes including Idh3b, Uqcrc1, Mdh1, and Dlst.",
+        "target_gene": "Ppargc1b",
+        "why_it_matters": "The dataset gives an exploratory in situ echo of the known PGC-1beta-ERR connection in the same cell type in which Ppargc1b showed its strongest sub-FDR TCA/OXPHOS tail."
+      },
+      {
+        "claim_id": "claim:ppargc1a_f004_83bd04d362e1",
+        "confidence": "moderate",
+        "direction": "nonconvergent",
+        "finding_id": "F004",
+        "finding_type": "cross_perturbation_contrast",
+        "summary": "Ppargc1a and Ppargc1b signatures were nearly uncorrelated, and the single Ppargc1b Atp5b hit was not reproduced by Ppargc1a.",
+        "target_gene": "Ppargc1a",
+        "why_it_matters": "PGC-1 coactivator paralogs should be considered separately in this dataset; the Ppargc1b result does not rescue or proxy for the failed Ppargc1a perturbation."
+      },
+      {
+        "claim_id": "claim:ppargc1b_f005_a2fb428abee2",
+        "confidence": "moderate",
+        "direction": "uncoupled",
+        "finding_id": "F005",
+        "finding_type": "pathway_uncoupling",
+        "summary": "Ppargc1b was not transcriptomically interchangeable with Ppargc1a or the assayed PPAR receptors in the main responder classes.",
+        "target_gene": "Ppargc1b",
+        "why_it_matters": "Even though PPARGC1B is a PGC-1-family PPAR coactivator, the neuronal Ppargc1b knockdown signature appears more selective than a generic PPAR-family perturbation signature."
+      }
+    ],
+    "parquet_filter": {
+      "cell_types": [
+        "151 TH Prkcd Grin2c Glut",
+        "155 MB Glut",
+        "191 MB P MY GABA"
+      ],
+      "gene_targets": [
+        "Esrra",
+        "Ppargc1a",
+        "Ppargc1b"
+      ],
+      "names": [
+        "Aco1",
+        "Atp1a3",
+        "Atp1b1",
+        "Atp2b3",
+        "Atp5b",
+        "Atp5j",
+        "Bcan",
+        "Cdh2",
+        "Cntn1",
+        "Cntnap1",
+        "Cplx1",
+        "Cyc1",
+        "Dlat",
+        "Dlst",
+        "Esrra",
+        "Gas6",
+        "Got1",
+        "Idh3a",
+        "Idh3b",
+        "Kcnab3",
+        "Mdh1",
+        "Nceh1",
+        "Ndufa10",
+        "Ndufb10",
+        "Nsg2",
+        "Ppara",
+        "Ppard",
+        "Pparg",
+        "Ppargc1a",
+        "Ppargc1b",
+        "Ptcd3",
+        "Pxdn",
+        "Samm50",
+        "Slc25a3",
+        "Syt7",
+        "Uqcrc1"
+      ]
+    },
+    "resolved_evidence": [
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "On-target Esrra transcript depletion in the only cell class with an FDR-significant Esrra response.",
+        "evidence_id": "E001",
+        "evidence_slug": "esrra_target_depletion_151_th_prkcd_grin2c_glut",
+        "genes": "Esrra",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "1",
+        "scoped_evidence_id": "Esrra:E001",
+        "statistics": "275 perturbed cells versus 23679 controls; Esrra Wilcoxon score -5.334, logFC -0.4806, p=9.61e-08, FDR=2.07e-04.",
+        "target_gene": "Esrra"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "Size, direction, and leading genes of the Esrra response in 151 TH Prkcd Grin2c Glut.",
+        "evidence_id": "E002",
+        "evidence_slug": "esrra_151_global_fdr_signature",
+        "genes": "Gas6|Bcan|Nceh1|Nsg2|Syt7|Pxdn",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "6",
+        "scoped_evidence_id": "Esrra:E002",
+        "statistics": "57 genes at FDR<0.05 including Esrra; 56 downstream genes; 41/57 FDR rows lower; 112 genes with raw p<0.001. Gas6 score -7.454 logFC -0.5559 FDR=1.56e-09; Bcan score -6.312 logFC -0.9374 FDR=2.38e-06; Nceh1 score -6.054 logFC -0.3757 FDR=8.11e-06; Nsg2 score 5.637 logFC 0.3786 FDR=7.45e-05.",
+        "target_gene": "Esrra"
+      },
+      {
+        "cell_type": "",
+        "description": "Cell-type distribution of multiple-testing-corrected Esrra responses.",
+        "evidence_id": "E005",
+        "evidence_slug": "esrra_fdr_response_restricted_to_151",
+        "genes": "Esrra",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "1",
+        "scoped_evidence_id": "Esrra:E005",
+        "statistics": "23 cell classes tested; 151 TH Prkcd Grin2c Glut had 57 FDR<0.05 rows, while the other 22 classes each had 0 FDR<0.05 rows. Perturbed-cell counts ranged from 21 to 275 and matched controls from 2019 to 23679.",
+        "target_gene": "Esrra"
+      },
+      {
+        "cell_type": "",
+        "description": "Direct target-transcript rows for the Ppargc1b perturbation show weak, non-FDR-significant RNA depletion wherever Ppargc1b was measured.",
+        "evidence_id": "E001",
+        "evidence_slug": "ppargc1b_on_target_all_measured_classes",
+        "genes": "Ppargc1b",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "1",
+        "scoped_evidence_id": "Ppargc1b:E001",
+        "statistics": "21 measured cell types; 30-170 perturbed cells per cell type, median 55; on-target Ppargc1b logFC ranged from -0.576 to +0.135; minimum nominal p=0.008744; pvals_adj=1.0 for all 21 target-transcript rows; 3/21 rows were nominally negative at p<0.05.",
+        "target_gene": "Ppargc1b"
+      },
+      {
+        "cell_type": "",
+        "description": "The Ppargc1b perturbation produced a very sparse FDR-significant response despite nominal tails in every assayed cell type.",
+        "evidence_id": "E006",
+        "evidence_slug": "ppargc1b_sparse_fdr_response",
+        "genes": "",
+        "has_cell_type": "0",
+        "has_genes": "0",
+        "n_genes": "0",
+        "scoped_evidence_id": "Ppargc1b:E006",
+        "statistics": "355046 gene-by-cell-type Ppargc1b tests across 21 cell types yielded 1 FDR<0.05 row; 20/21 cell types had zero FDR<0.05 genes. Per-cell-type nominal p<0.05 counts ranged from 264 to 455 among approximately 16428-17443 tested genes.",
+        "target_gene": "Ppargc1b"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "A restricted-signature comparison links the Ppargc1b nominal metabolic tail to a stronger Esrra perturbation in the same cell type.",
+        "evidence_id": "E007",
+        "evidence_slug": "ppargc1b_esrra_151_signature_convergence",
+        "genes": "Ppargc1b|Esrra|Idh3b|Uqcrc1|Mdh1|Dlst",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "6",
+        "scoped_evidence_id": "Ppargc1b:E007",
+        "statistics": "Within 151 TH Prkcd Grin2c Glut, Esrra was the top positive Ppargc1b score-signature neighbor among 2045 other perturbations, Pearson r=0.0946; 30 genes had score<-2 under both Ppargc1b and Esrra. Shared negative examples: Idh3b, Ppargc1b logFC -0.340/FDR 0.225 and Esrra logFC -0.250/FDR 0.0288; Uqcrc1, -0.226/0.282 and -0.197/0.0725; Mdh1, -0.147/1.0 and -0.250/1.53e-4; Dlst, -0.241/1.0 and -0.168/0.998.",
+        "target_gene": "Ppargc1b"
+      },
+      {
+        "cell_type": "",
+        "description": "Paralog signature correlations were near zero across all matched cell classes.",
+        "evidence_id": "E006",
+        "evidence_slug": "ppargc1a_ppargc1b_correlations_all_matched_classes",
+        "genes": "Ppargc1a|Ppargc1b",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "2",
+        "scoped_evidence_id": "Ppargc1a:E006",
+        "statistics": "21 Ppargc1a-matched cell classes; Ppargc1a versus Ppargc1b score-vector Pearson correlations ranged from -0.044 to 0.130, and Spearman correlations ranged from -0.031 to 0.111.",
+        "target_gene": "Ppargc1a"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "description": "Ppargc1b gave only one corrected hit and it was not reproduced by Ppargc1a in the same cell class.",
+        "evidence_id": "E007",
+        "evidence_slug": "ppargc1b_single_atp5b_hit",
+        "genes": "Ppargc1b|Atp5b|Ppargc1a",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "3",
+        "scoped_evidence_id": "Ppargc1a:E007",
+        "statistics": "Across 355046 Ppargc1b rows in 21 classes, only Atp5b in 155 MB Glut was FDR-significant: 124 perturbed cells versus 20353 controls, Atp5b logFC -0.515, p=4.32e-7, FDR=0.00754. In the same 155 MB Glut class under Ppargc1a perturbation, Atp5b logFC was -0.165, p=0.152, FDR=1.0.",
+        "target_gene": "Ppargc1a"
+      },
+      {
+        "cell_type": "",
+        "description": "Perturbations of the PGC-1 paralog and assayed PPAR nuclear receptors did not reproduce the Ppargc1b mitochondrial signature in the strongest Ppargc1b contexts.",
+        "evidence_id": "E008",
+        "evidence_slug": "ppargc1b_ppar_family_score_uncoupling",
+        "genes": "Ppargc1b|Ppargc1a|Ppara|Ppard|Pparg|Atp5b|Idh3b",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "7",
+        "scoped_evidence_id": "Ppargc1b:E008",
+        "statistics": "Score correlations with Ppargc1b were near zero for Ppara/Ppard/Pparg in the two main responder classes: in 155 MB Glut, r=0.013/0.022/-0.018; in 151 TH Prkcd Grin2c Glut, r=0.0086/-0.017/0.0081. Ppargc1a correlations were also weak, r=0.033 in 155 MB Glut and r=0.0636 in 151 TH Prkcd Grin2c Glut. The Ppara, Ppard, and Pparg perturbations did not nominally reduce Atp5b or Idh3b in 155 MB Glut.",
+        "target_gene": "Ppargc1b"
+      }
+    ],
+    "source_claim_ids": [
+      "claim:esrra_f001_cb969bf84a2f",
+      "claim:ppargc1b_f001_b1a16118aacc",
+      "claim:ppargc1b_f004_6286800cfcaa",
+      "claim:ppargc1a_f004_83bd04d362e1",
+      "claim:ppargc1b_f005_a2fb428abee2"
+    ],
+    "source_cluster_ids": [
+      "C148"
+    ]
+  },
+  "targets": [
+    "Esrra",
+    "Ppargc1b",
+    "Ppargc1a",
+    "Idh3b",
+    "Uqcrc1",
+    "Dlst",
+    "Atp5b",
+    "Atp5j",
+    "Slc25a3",
+    "Ndufa10"
+  ],
+  "title": "Esrra and Ppargc1b perturbations reveal separable mitochondrial programs in thalamic and midbrain neurons"
+}

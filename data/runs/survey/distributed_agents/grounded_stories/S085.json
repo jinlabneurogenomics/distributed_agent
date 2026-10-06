@@ -1,0 +1,41 @@
+{
+  "story_id": "S085",
+  "title": "HSPA5 perturbation activates a BiP-centered ER stress state that selectively converges with HSPA9 and UFMylation",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Hspa5 perturbation produced its only FDR<0.05 ER chaperone/ERAD signature in 151 TH Prkcd Grin2c Glut, where Hsp90b1, Nfe2l1, Pdia4, and Derl3 increased and Erc1 decreased. The 151 score vector was closest to Hspa9 and also aligned with Uba5, Ufc1, and Hspa8.",
+  "biological_interpretation": "The response agrees with BiP/UPR biology but extends it to a selective neuronal organelle-stress state that bridges ER folding, mitochondrial Hsp70, and UFMylation-like proteostasis rather than every UPR or chaperone perturbation.",
+  "targets": ["Hspa5", "Hspa9", "Hspa8", "Uba5", "Ufc1"],
+  "cell_types": ["151 TH Prkcd Grin2c Glut"],
+  "support": [
+    {
+      "evidence_id": "Hspa5:E002;Hspa5:E003;Hspa5:E006;Hspa5:E007",
+      "description": "Hspa5 induced ER stress genes in 151 TH and shared selected stress genes with Hspa9.",
+      "exact_de_rows": [
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Hspa5", "gene": "Hsp90b1", "logfoldchanges": 1.078, "pvals": 1.11e-06, "pvals_adj": 0.00879},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Hspa5", "gene": "Nfe2l1", "logfoldchanges": 0.751, "pvals": 1.53e-06, "pvals_adj": 0.00879},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Hspa5", "gene": "Pdia4", "logfoldchanges": 1.480, "pvals": 3.01e-06, "pvals_adj": 0.01297},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Hspa5", "gene": "Derl3", "logfoldchanges": 4.880, "pvals": 9.93e-06, "pvals_adj": 0.0343},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Hspa9", "gene": "Shmt2", "logfoldchanges": 2.597, "pvals": null, "pvals_adj": 2.99e-16},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Hspa9", "gene": "Chac1", "logfoldchanges": 3.126, "pvals": null, "pvals_adj": 7.44e-12}
+      ]
+    }
+  ],
+  "caveats": [
+    "Hspa5 mRNA itself was not depleted; all Hspa5 self rows had adjusted p=1.0, so the exact editing mechanism is unresolved.",
+    "Asns, Ddit3, Shmt2, and Chac1 are nominal to near-FDR after Hspa5 and should not be treated as standalone Hspa5 hits.",
+    "Uba5/Ufc1 support is correlative signature-neighbor evidence, not epistasis."
+  ],
+  "prior_expectation": {
+    "summary": "HSPA5/BiP is an ER lumenal chaperone and UPR sensor regulator; UBA5 is the E1 enzyme in the UFM1 pathway, and HSPA9 is the mitochondrial Hsp70 paralog.",
+    "citations": [
+      {"reference_id": "Hspa5:R001", "citation": "UniProtKB P20029, BIP_MOUSE.", "url_or_doi": "https://rest.uniprot.org/uniprotkb/P20029"},
+      {"reference_id": "Hspa5:R004", "citation": "Walter and Ron, Science, 2011. PMID:22116877.", "url_or_doi": "https://doi.org/10.1126/science.1209038"},
+      {"reference_id": "Hspa5:R005", "citation": "Gavin et al., Journal of Biological Chemistry, 2014. PMID:24966333.", "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/24966333/"}
+    ]
+  },
+  "preliminary_scores": {"novelty": 3, "support": 3, "priority": 4},
+  "report_evidence_ids": ["Hspa5:E002", "Hspa5:E003", "Hspa5:E004", "Hspa5:E006", "Hspa5:E007"],
+  "reference_ids": ["Hspa5:R001", "Hspa5:R002", "Hspa5:R003", "Hspa5:R004", "Hspa5:R005", "Hspa5:R007", "Hspa5:R008", "Hspa5:R009"],
+  "source_urls_or_dois": ["https://rest.uniprot.org/uniprotkb/P20029", "https://reactome.org/content/detail/R-HSA-381158", "https://doi.org/10.1126/science.1209038", "https://pubmed.ncbi.nlm.nih.gov/24966333/", "https://rest.uniprot.org/uniprotkb/P38647"]
+}

@@ -1,0 +1,39 @@
+{
+  "story_id": "S074",
+  "title": "MYEF2 perturbation repeatedly induces a compact Dzip3/Vbp1/Ist1 module in posterior neuronal classes",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Myef2 ranked first among all perturbations by the mean score of Dzip3, Vbp1, and Ist1 in seven posterior or subcortical cell types. The three genes all reached FDR in 151 TH, 155 MB Glut, and 191 MB P MY GABA, with partial FDR support in 145 MH-LH TH Glut, 054 CNU-MGE GABA, and other nearby classes.",
+  "biological_interpretation": "The response is a compact and unusually specific Myef2 RNA marker module, although existing prior literature links MYEF2 to transcriptional repression rather than to a known DZIP3/VBP1/IST1 pathway.",
+  "targets": ["Myef2"],
+  "cell_types": ["054 CNU-MGE GABA", "066 CNU-HYa HY GABA", "145 MH-LH TH Glut", "151 TH Prkcd Grin2c Glut", "155 MB Glut", "191 MB P MY GABA"],
+  "support": [
+    {
+      "evidence_id": "Myef2:E001;Myef2:E002;Myef2:E003;Myef2:E004;Myef2:E008",
+      "description": "The Dzip3/Vbp1/Ist1 triad is repeatedly induced and ranks Myef2 first across the responsive classes.",
+      "exact_de_rows": [
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Myef2", "gene": "Vbp1", "logfoldchanges": 0.7218, "pvals": null, "pvals_adj": 6.92e-11},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Myef2", "gene": "Dzip3", "logfoldchanges": 0.5808, "pvals": null, "pvals_adj": 6.88e-08},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Myef2", "gene": "Ist1", "logfoldchanges": 0.5233, "pvals": null, "pvals_adj": 1.57e-07},
+        {"cell_type": "155 MB Glut", "gene_target": "Myef2", "gene": "Dzip3", "logfoldchanges": 0.8002, "pvals": null, "pvals_adj": 7.06e-14},
+        {"cell_type": "155 MB Glut", "gene_target": "Myef2", "gene": "Vbp1", "logfoldchanges": 0.9352, "pvals": null, "pvals_adj": 4.97e-12},
+        {"cell_type": "191 MB P MY GABA", "gene_target": "Myef2", "gene": "Ist1", "logfoldchanges": 0.5720, "pvals": null, "pvals_adj": 0.00503}
+      ]
+    }
+  ],
+  "caveats": [
+    "The functional link among Dzip3, Vbp1, Ist1, and MYEF2 is unresolved.",
+    "Some supporting classes have low perturbed-cell counts and only one or two FDR genes."
+  ],
+  "prior_expectation": {
+    "summary": "MYEF2 is a sequence-specific nuclear repressor originally identified at the mouse Mbp promoter and later as a context-dependent corepressor; the DZIP3/VBP1/IST1 module itself is novel.",
+    "citations": [
+      {"reference_id": "Myef2:R001", "citation": "Haas et al., Journal of Biological Chemistry, 1995. PMID:7539003.", "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/7539003/"},
+      {"reference_id": "Myef2:R004", "citation": "van Riel et al., Molecular and Cellular Biology, 2012.", "url_or_doi": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3457535/"}
+    ]
+  },
+  "preliminary_scores": {"novelty": 5, "support": 3, "priority": 3},
+  "report_evidence_ids": ["Myef2:E001", "Myef2:E002", "Myef2:E003", "Myef2:E004", "Myef2:E005", "Myef2:E006", "Myef2:E007", "Myef2:E008"],
+  "reference_ids": ["Myef2:R001", "Myef2:R004", "Myef2:R005", "Myef2:R006"],
+  "source_urls_or_dois": ["https://pubmed.ncbi.nlm.nih.gov/7539003/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC3457535/", "https://rest.uniprot.org/uniprotkb/Q8C854"]
+}

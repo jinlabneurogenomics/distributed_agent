@@ -1,0 +1,48 @@
+{
+  "story_id": "S008",
+  "title": "TrkB loss represses Vgf-centered MAPK output in Pvalb and thalamic glutamatergic neurons",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Ntrk2 was reduced in 22/22 assayed Ntrk2 cell types and reached FDR in Pvalb GABA, thalamic Prkcd/Grin2c glutamatergic cells, and 155 MB Glut. The decisive non-target rows were Akap5 down in Pvalb GABA and Atp2a2 plus Vgf down in 151 TH Prkcd Grin2c Glut; Ntrk1 and Ntrk3 did not reproduce those same-cell marker rows.",
+  "biological_interpretation": "The CRISPRi response is a narrow TrkB-loss RNA state, not a pan-neurotrophin receptor state. Vgf is the most recurrent BDNF/TrkB-compatible output, while Akap5 and Atp2a2 mark distinct Pvalb and thalamic branches.",
+  "targets": ["Ntrk2", "Ntrk1", "Ntrk3", "Braf", "Map2k1", "Nf1"],
+  "cell_types": ["052 Pvalb Gaba", "151 TH Prkcd Grin2c Glut"],
+  "support": [
+    {
+      "evidence_id": "Ntrk2:E003",
+      "description": "Ntrk2 loss in 151 TH Prkcd Grin2c Glut decreased the target and the Vgf/Atp2a2 branch.",
+      "exact_de_rows": [
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Ntrk2", "gene": "Ntrk2", "logfoldchanges": -0.42717528343200684, "pvals": 1.350047334941406e-09, "pvals_adj": 2.3300466953753727e-05},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Ntrk2", "gene": "Atp2a2", "logfoldchanges": -0.23030926287174225, "pvals": 2.748613257522667e-07, "pvals_adj": 0.0023719158105791854},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Ntrk2", "gene": "Vgf", "logfoldchanges": -0.6180335879325867, "pvals": 8.490866097835679e-07, "pvals_adj": 0.004884795266084866}
+      ]
+    },
+    {
+      "evidence_id": "Ntrk3:E007;Ntrk1:E004;Ntrk3:E008",
+      "description": "Pvalb Ntrk2 decreased Akap5 while Ntrk3 drove an Arhgap12-only response; Ntrk3 and Ntrk1 did not move the Ntrk2/Braf thalamic Vgf/Atp2a2 module.",
+      "exact_de_rows": [
+        {"cell_type": "052 Pvalb Gaba", "gene_target": "Ntrk2", "gene": "Akap5", "logfoldchanges": -1.049, "pvals": 5.18e-06, "pvals_adj": 0.0434},
+        {"cell_type": "052 Pvalb Gaba", "gene_target": "Ntrk3", "gene": "Arhgap12", "logfoldchanges": 0.578, "pvals": 1.31e-06, "pvals_adj": 0.0220},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Ntrk3", "gene": "Ntrk3", "logfoldchanges": -0.100, "pvals": 0.842, "pvals_adj": 1.0},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Ntrk1", "gene": "Vgf", "logfoldchanges": -0.110, "pvals": 0.184, "pvals_adj": 1.0}
+      ]
+    }
+  ],
+  "caveats": [
+    "The broader Vgf recurrence after Ntrk2 perturbation is mostly nominal; only the 151 TH row passed 5% FDR.",
+    "The Nf1 and Pten opposition is based on weak whole-signature anticorrelations, not a direct FDR marker-gene reversal.",
+    "Ntrk1 and Ngfr target engagement was weak, so their null signatures are assay-limited comparators."
+  ],
+  "prior_expectation": {
+    "summary": "NTRK2/TrkB is a BDNF/NTF receptor feeding RAS-MAPK and PI3K cascades; Vgf is an established neurotrophin-inducible BDNF output, and adult TrkB signaling is known to matter in PV interneurons.",
+    "citations": [
+      {"reference_id": "Ntrk2:R002", "citation": "Reactome R-HSA-9006115, Signaling by NTRK2 (TRKB).", "url_or_doi": "https://reactome.org/content/detail/R-HSA-9006115"},
+      {"reference_id": "Ntrk2:R006", "citation": "Bozdagi et al., Journal of Neuroscience, 2008.", "url_or_doi": "https://doi.org/10.1523/JNEUROSCI.3145-08.2008"},
+      {"reference_id": "Ntrk3:R005", "citation": "Guyon et al., Journal of Neuroscience, 2021.", "url_or_doi": "https://doi.org/10.1523/JNEUROSCI.1848-20.2021"}
+    ]
+  },
+  "preliminary_scores": {"novelty": 3, "support": 4, "priority": 4},
+  "report_evidence_ids": ["Ntrk2:E001", "Ntrk2:E003", "Ntrk2:E007", "Ntrk3:E007", "Ntrk3:E008", "Ntrk1:E004", "Ntrk1:E005", "Ntrk1:E006"],
+  "reference_ids": ["Ntrk2:R002", "Ntrk2:R006", "Ntrk2:R007", "Ntrk2:R008", "Ntrk3:R005", "Ntrk1:R005"],
+  "source_urls_or_dois": ["https://reactome.org/content/detail/R-HSA-9006115", "https://doi.org/10.1523/JNEUROSCI.3145-08.2008", "https://doi.org/10.1523/JNEUROSCI.1848-20.2021", "https://doi.org/10.1146/annurev.biochem.72.121801.161629"]
+}

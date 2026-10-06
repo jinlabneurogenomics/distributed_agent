@@ -1,0 +1,266 @@
+{
+  "biological_interpretation": "SLC7A6OS loss exposes a recurrent RNA-processing/Pol-II stress state rather than a cell-type-private response; the pattern is plausible as a target-engagement panel but not a direct measurement of the annotated protein\u2019s transport or nuclear biology.",
+  "caveats": [
+    "SLC7A6OS protein loss, nuclear import, and Pol-II function were not directly measured.",
+    "The strongest Slc7a6os neuronal phenotype in 151 TH also includes synaptic repression, so the Pol-II/RNA-processing state is not the entire target response."
+  ],
+  "cell_types": [
+    "007 L2-3 IT CTX Glut",
+    "110 CNU-HYa HY MM Glut",
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut"
+  ],
+  "exact_observed_result": "Slc7a6os perturbation recurrently combined induction of Son and Polr2a with repression of RNA-processing or nuclear-speckle-associated Srrm2, Pnisr, Rsrp1, and Snhg11 across 007 L2-3 IT CTX Glut, 110 CNU-HYa HY MM Glut, 151 TH Prkcd Grin2c Glut, and 155 MB Glut.",
+  "preliminary_scores": {
+    "novelty": 5,
+    "priority": 4,
+    "support": 4
+  },
+  "prior_expectation": "The prior functional expectation for SLC7A6OS in these adult mouse neurons is sparse; the observed recurrent Son/Polr2a/Srrm2/Pnisr/Snhg11 pattern is therefore exploratory.",
+  "reference_ids": [
+    "Slc7a6os:F002"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    {
+      "finding_id": "F002",
+      "gene": "Slc7a6os"
+    }
+  ],
+  "source_claim_ids": [
+    "claim:slc7a6os_f002_2126fe76ee7a"
+  ],
+  "source_cluster_ids": [
+    "C060"
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/21504834/",
+    "https://string-db.org/"
+  ],
+  "status": "grounded",
+  "story_id": "S068",
+  "support": {
+    "exact_de_rows": [
+      {
+        "gene_target": "Slc7a6os",
+        "group_name": "007 L2-3 IT CTX Glut",
+        "logfoldchanges": 0.04642618075013161,
+        "names": "Pnisr",
+        "pvals": 0.6657724776399168,
+        "pvals_adj": 1.0,
+        "scores": 0.4319572448730469
+      },
+      {
+        "gene_target": "Slc7a6os",
+        "group_name": "007 L2-3 IT CTX Glut",
+        "logfoldchanges": 1.1138386726379395,
+        "names": "Polr2a",
+        "pvals": 8.612315290878996e-07,
+        "pvals_adj": 0.01442821180680958,
+        "scores": 4.920954704284668
+      },
+      {
+        "gene_target": "Slc7a6os",
+        "group_name": "007 L2-3 IT CTX Glut",
+        "logfoldchanges": 0.05534368380904198,
+        "names": "Slc7a6os",
+        "pvals": 0.8050200902315954,
+        "pvals_adj": 1.0,
+        "scores": 0.2468554526567459
+      },
+      {
+        "gene_target": "Slc7a6os",
+        "group_name": "007 L2-3 IT CTX Glut",
+        "logfoldchanges": -0.10895680636167526,
+        "names": "Snhg11",
+        "pvals": 0.03318280822272888,
+        "pvals_adj": 1.0,
+        "scores": -2.129864454269409
+      },
+      {
+        "gene_target": "Slc7a6os",
+        "group_name": "007 L2-3 IT CTX Glut",
+        "logfoldchanges": 0.32664430141448975,
+        "names": "Son",
+        "pvals": 0.0005580964745813989,
+        "pvals_adj": 0.7192146337432442,
+        "scores": 3.4512016773223877
+      },
+      {
+        "gene_target": "Slc7a6os",
+        "group_name": "007 L2-3 IT CTX Glut",
+        "logfoldchanges": -0.12283264100551605,
+        "names": "Srrm2",
+        "pvals": 0.20856739846250827,
+        "pvals_adj": 1.0,
+        "scores": -1.257514476776123
+      },
+      {
+        "gene_target": "Slc7a6os",
+        "group_name": "110 CNU-HYa HY MM Glut",
+        "logfoldchanges": -0.2774522006511688,
+        "names": "Pnisr",
+        "pvals": 1.4347414101608986e-05,
+        "pvals_adj": 0.0419124409740826,
+        "scores": -4.338476181030273
+      },
+      {
+        "gene_target": "Slc7a6os",
+        "group_name": "110 CNU-HYa HY MM Glut",
+        "logfoldchanges": 0.9578443169593811,
+        "names": "Polr2a",
+        "pvals": 2.792778057681706e-07,
+        "pvals_adj": 0.0023971810458110923,
+        "scores": 5.136919975280762
+      },
+      {
+        "gene_target": "Slc7a6os",
+        "group_name": "110 CNU-HYa HY MM Glut",
+        "logfoldchanges": -0.05271510034799576,
+        "names": "Slc7a6os",
+        "pvals": 0.6338375953427962,
+        "pvals_adj": 1.0,
+        "scores": -0.4763323962688446
+      },
+      {
+        "gene_target": "Slc7a6os",
+        "group_name": "110 CNU-HYa HY MM Glut",
+        "logfoldchanges": -0.23518042266368866,
+        "names": "Snhg11",
+        "pvals": 4.868759770002129e-05,
+        "pvals_adj": 0.06429384536278965,
+        "scores": -4.0618391036987305
+      },
+      {
+        "gene_target": "Slc7a6os",
+        "group_name": "110 CNU-HYa HY MM Glut",
+        "logfoldchanges": 0.4596635103225708,
+        "names": "Son",
+        "pvals": 8.182074575546251e-08,
+        "pvals_adj": 0.001404616742384025,
+        "scores": 5.363066673278809
+      },
+      {
+        "gene_target": "Slc7a6os",
+        "group_name": "110 CNU-HYa HY MM Glut",
+        "logfoldchanges": -0.31470000743865967,
+        "names": "Srrm2",
+        "pvals": 0.0007194846408713276,
+        "pvals_adj": 0.39214027841581767,
+        "scores": -3.382044553756714
+      },
+      {
+        "gene_target": "Slc7a6os",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.21727988123893738,
+        "names": "Pnisr",
+        "pvals": 1.120530898938419e-05,
+        "pvals_adj": 0.006043513370243179,
+        "scores": -4.392502784729004
+      },
+      {
+        "gene_target": "Slc7a6os",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.4859620928764343,
+        "names": "Polr2a",
+        "pvals": 4.995171855493714e-05,
+        "pvals_adj": 0.018342908734886386,
+        "scores": 4.055852890014648
+      },
+      {
+        "gene_target": "Slc7a6os",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.083711639046669,
+        "names": "Slc7a6os",
+        "pvals": 0.6434802610789088,
+        "pvals_adj": 1.0,
+        "scores": 0.4628383219242096
+      },
+      {
+        "gene_target": "Slc7a6os",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.286131352186203,
+        "names": "Snhg11",
+        "pvals": 7.829844247918516e-12,
+        "pvals_adj": 1.3513528187482567e-07,
+        "scores": -6.841627597808838
+      },
+      {
+        "gene_target": "Slc7a6os",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.2593541741371155,
+        "names": "Son",
+        "pvals": 5.625137015907028e-06,
+        "pvals_adj": 0.004221053902501713,
+        "scores": 4.540010929107666
+      },
+      {
+        "gene_target": "Slc7a6os",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.38034582138061523,
+        "names": "Srrm2",
+        "pvals": 1.2735748334355398e-08,
+        "pvals_adj": 5.4951570125659956e-05,
+        "scores": -5.689572811126709
+      },
+      {
+        "gene_target": "Slc7a6os",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": -0.010665987618267536,
+        "names": "Pnisr",
+        "pvals": 0.4309743518005833,
+        "pvals_adj": 1.0,
+        "scores": -0.7875254154205322
+      },
+      {
+        "gene_target": "Slc7a6os",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": 0.5463519096374512,
+        "names": "Polr2a",
+        "pvals": 0.0004100171546668402,
+        "pvals_adj": 0.41996922388623587,
+        "scores": 3.533550977706909
+      },
+      {
+        "gene_target": "Slc7a6os",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": -0.39822953939437866,
+        "names": "Slc7a6os",
+        "pvals": 0.010219211910515972,
+        "pvals_adj": 1.0,
+        "scores": -2.56832218170166
+      },
+      {
+        "gene_target": "Slc7a6os",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": -0.2152576446533203,
+        "names": "Snhg11",
+        "pvals": 2.2492674892488123e-07,
+        "pvals_adj": 0.0019616986407483515,
+        "scores": -5.177460193634033
+      },
+      {
+        "gene_target": "Slc7a6os",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": 0.23909983038902283,
+        "names": "Son",
+        "pvals": 0.0014159702726690502,
+        "pvals_adj": 0.5260981641996126,
+        "scores": 3.191375732421875
+      },
+      {
+        "gene_target": "Slc7a6os",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": -0.25056734681129456,
+        "names": "Srrm2",
+        "pvals": 4.465302341502449e-05,
+        "pvals_adj": 0.15577653748565443,
+        "scores": -4.0819830894470215
+      }
+    ]
+  },
+  "targets": [
+    "Slc7a6os"
+  ],
+  "title": "Slc7a6os perturbation induces a mixed Pol-II and RNA-processing stress state"
+}

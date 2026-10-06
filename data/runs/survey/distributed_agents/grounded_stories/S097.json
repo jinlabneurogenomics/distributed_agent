@@ -1,0 +1,354 @@
+{
+  "biological_interpretation": "KANSL1 depletion induces a selective posterior neuronal state touching vacuolar, endosomal, lysosomal and autophagy-transport biology without collapsing into generic NSL or OGT loss.",
+  "caveats": [
+    "Kansl1 mRNA itself was not visibly depleted in the report, so guide identity is the engagement readout.",
+    "The Li et al. STX17 autophagy mechanism is relevant, but Stx17 and Snap29 mRNAs were not FDR-significant in this screen."
+  ],
+  "cell_types": [
+    "155 MB Glut",
+    "191 MB P MY GABA",
+    "066 CNU-HYa HY GABA",
+    "217 P MY Pineal Glut"
+  ],
+  "exact_observed_result": "Kansl1 guides produced large signatures in posterior classes, with Ttc4, Nsmce2, Ccdc39, Commd4, Ctsa and Man2b2 repeatedly down and Dgkz up; Ogt and other chromatin-neighbor correlations were weak, not Kansl1 phenocopies.",
+  "preliminary_scores": {
+    "novelty": 3,
+    "priority": 4,
+    "support": 4
+  },
+  "prior_expectation": {
+    "citations": [
+      "Koolen et al. 2012 PMID:22544363",
+      "Li et al. 2022 PMID:35177641"
+    ],
+    "expectation": "KANSL1 haploinsufficiency causes Koolen-de Vries syndrome and has published mouse links to autophagosome-lysosome fusion."
+  },
+  "reference_ids": [
+    "Kansl1:R001",
+    "Kansl1:R002",
+    "Kansl1:R003",
+    "Kansl1:R004",
+    "Kansl1:R005",
+    "Kansl1:R006",
+    "Kansl1:R007",
+    "Kansl1:R008"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Kansl1:E002",
+    "Kansl1:E003",
+    "Kansl1:E004",
+    "Kansl1:E005",
+    "Kansl1:E006",
+    "Kansl1:E009",
+    "Kansl1:E011",
+    "Kansl1:E012"
+  ],
+  "source_claims": [
+    {
+      "claim_id": "claim:kansl1_f001_a4105c40161f",
+      "finding_id": "F001",
+      "gene": "Kansl1",
+      "role": "member"
+    },
+    {
+      "claim_id": "claim:kansl1_f004_690b7d636906",
+      "finding_id": "F004",
+      "gene": "Kansl1",
+      "role": "peripheral"
+    },
+    {
+      "claim_id": "claim:kansl1_f005_98ffb7a3aae6",
+      "finding_id": "F005",
+      "gene": "Kansl1",
+      "role": "peripheral"
+    }
+  ],
+  "source_references": [
+    {
+      "citation": "Koolen DA, Kramer JM, Neveling K, et al. Mutations in the chromatin modifier gene KANSL1 cause the 17q21.31 microdeletion syndrome. Nat Genet. 2012;44(6):639-641.",
+      "description": "Establishes that KANSL1 haploinsufficiency is sufficient to cause the 17q21.31/Koolen-de Vries syndrome phenotype and implicates neuronal functions.",
+      "ref_id": "R005",
+      "ref_slug": "koolen_2012_kansl1_17q21",
+      "source": "Nature Genetics",
+      "source_type": "pubmed",
+      "target_gene": "Kansl1",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22544363/"
+    },
+    {
+      "citation": "Koolen DA, Pfundt R, Linda K, et al. The Koolen-de Vries syndrome: a phenotypic comparison of patients with a 17q21.31 microdeletion versus a KANSL1 sequence variant. Eur J Hum Genet. 2016;24(5):652-659.",
+      "description": "Shows that truncating KANSL1 sequence variants recapitulate the 17q21.31 deletion phenotype, supporting KANSL1 dosage as the driver of KdVS neurodevelopmental disease.",
+      "ref_id": "R006",
+      "ref_slug": "koolen_2016_microdeletion_vs_kansl1_sequence",
+      "source": "European Journal of Human Genetics",
+      "source_type": "pmc",
+      "target_gene": "Kansl1",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26306646/"
+    },
+    {
+      "citation": "Cai Y, Jin J, Swanson SK, et al. Subunit composition and substrate specificity of a MOF-containing histone acetyltransferase distinct from the male-specific lethal (MSL) complex. J Biol Chem. 2010;285(7):4268-4272.",
+      "description": "Defines human NSL as a nine-subunit MOF/KAT8 histone-acetyltransferase complex and shows that MSL versus NSL complex assembly changes MOF substrate specificity.",
+      "ref_id": "R001",
+      "ref_slug": "cai_2010_mof_nsl_substrate_specificity",
+      "source": "Journal of Biological Chemistry",
+      "source_type": "pubmed",
+      "target_gene": "Kansl1",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20018852/"
+    },
+    {
+      "citation": "Dias J, Van Nguyen N, Georgiev P, et al. Structural analysis of the KANSL1/WDR5/KANSL2 complex reveals that WDR5 is required for efficient assembly and chromatin targeting of the NSL complex. Genes Dev. 2014;28(9):929-942.",
+      "description": "Shows that KANSL1 is a scaffold for the NSL complex and that KANSL1-WDR5 interactions promote NSL assembly and chromatin targeting.",
+      "ref_id": "R002",
+      "ref_slug": "dias_2014_kansl1_wdr5_kansl2_nsl_structure",
+      "source": "Genes & Development",
+      "source_type": "pmc",
+      "target_gene": "Kansl1",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24788516/"
+    },
+    {
+      "citation": "Radzisheuskaya A, Shliaha PV, Grinev VV, et al. Complex-dependent histone acetyltransferase activity of KAT8 determines its role in transcription and cellular homeostasis. Mol Cell. 2021;81(8):1749-1765.e8.",
+      "description": "Demonstrates that KAT8 in NSL catalyzes promoter H4K5ac/H4K8ac and supports transcription initiation at housekeeping genes, whereas MSL mainly controls H4K16ac.",
+      "ref_id": "R003",
+      "ref_slug": "radzisheuskaya_2021_kat8_complex_dependent",
+      "source": "Molecular Cell",
+      "source_type": "pmc",
+      "target_gene": "Kansl1",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33657400/"
+    },
+    {
+      "citation": "Chatterjee A, Seyfferth J, Lucci J, et al. MOF Acetyl Transferase Regulates Transcription and Respiration in Mitochondria. Cell. 2016;167(3):722-738.e23.",
+      "description": "Reports that MOF/KAT8 and a subset of NSL partners localize to mitochondria and regulate respiratory-gene expression.",
+      "ref_id": "R004",
+      "ref_slug": "chatterjee_2016_mof_mitochondria",
+      "source": "Cell",
+      "source_type": "pubmed",
+      "target_gene": "Kansl1",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27768893/"
+    },
+    {
+      "citation": "Li T, Lu D, Yao C, et al. Kansl1 haploinsufficiency impairs autophagosome-lysosome fusion and links autophagic dysfunction with Koolen-de Vries syndrome in mice. Nat Commun. 2022;13(1):931.",
+      "description": "Connects Kansl1 haploinsufficiency in mice to defective autophagosome-lysosome fusion through STX17 transcription and reports rescue of mitophagic and neurobehavioral phenotypes by 13-cis retinoic acid.",
+      "ref_id": "R007",
+      "ref_slug": "li_2022_kansl1_autophagy_stx17",
+      "source": "Nature Communications",
+      "source_type": "pmc",
+      "target_gene": "Kansl1",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35177641/"
+    },
+    {
+      "citation": "Szklarczyk D, Kirsch R, Koutrouli M, et al. The STRING database in 2023: protein-protein association networks and functional enrichment analyses for any sequenced genome of interest. Nucleic Acids Res. 2023;51(D1):D638-D646.",
+      "description": "Source database used to map the data-derived recurrent Kansl1 gene set onto mouse vacuolar, lysosomal, autophagosome, and transport annotations.",
+      "ref_id": "R008",
+      "ref_slug": "szklarczyk_2023_string",
+      "source": "Nucleic Acids Research",
+      "source_type": "database",
+      "target_gene": "Kansl1",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36370105/"
+    }
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/20018852/",
+    "https://pubmed.ncbi.nlm.nih.gov/22544363/",
+    "https://pubmed.ncbi.nlm.nih.gov/24788516/",
+    "https://pubmed.ncbi.nlm.nih.gov/26306646/",
+    "https://pubmed.ncbi.nlm.nih.gov/27768893/",
+    "https://pubmed.ncbi.nlm.nih.gov/33657400/",
+    "https://pubmed.ncbi.nlm.nih.gov/35177641/",
+    "https://pubmed.ncbi.nlm.nih.gov/36370105/"
+  ],
+  "status": "grounded",
+  "story_id": "S097",
+  "support": [
+    {
+      "exact_de_rows": [
+        {
+          "cell_type": "155 MB Glut",
+          "fdr": 1.0,
+          "gene": "Kansl1",
+          "gene_target": "Kansl1",
+          "log2fc": -0.014725953340530396,
+          "pval": 0.8905948781169392,
+          "score": -0.13755151629447937
+        },
+        {
+          "cell_type": "155 MB Glut",
+          "fdr": 2.6249371917225155e-10,
+          "gene": "Nsmce2",
+          "gene_target": "Kansl1",
+          "log2fc": -1.3291410207748413,
+          "pval": 1.5048656720303363e-14,
+          "score": -7.687117576599121
+        },
+        {
+          "cell_type": "155 MB Glut",
+          "fdr": 1.0351143243382906e-09,
+          "gene": "Ccdc39",
+          "gene_target": "Kansl1",
+          "log2fc": -1.8133487701416016,
+          "pval": 1.1868535508092537e-13,
+          "score": -7.418241500854492
+        },
+        {
+          "cell_type": "155 MB Glut",
+          "fdr": 8.547431551234125e-09,
+          "gene": "Ttc4",
+          "gene_target": "Kansl1",
+          "log2fc": -0.8043493628501892,
+          "pval": 1.4700621827496632e-12,
+          "score": -7.077284812927246
+        },
+        {
+          "cell_type": "155 MB Glut",
+          "fdr": 1.016501980822954e-08,
+          "gene": "Dgkz",
+          "gene_target": "Kansl1",
+          "log2fc": 0.8241110444068909,
+          "pval": 2.913781977936577e-12,
+          "score": 6.981821060180664
+        },
+        {
+          "cell_type": "155 MB Glut",
+          "fdr": 7.299823576215272e-06,
+          "gene": "Ctsa",
+          "gene_target": "Kansl1",
+          "log2fc": -1.2911393642425537,
+          "pval": 9.206909286059507e-09,
+          "score": -5.744727611541748
+        },
+        {
+          "cell_type": "155 MB Glut",
+          "fdr": 1.006605196086013e-05,
+          "gene": "Man2b2",
+          "gene_target": "Kansl1",
+          "log2fc": -2.1664786338806152,
+          "pval": 1.3272900022919392e-08,
+          "score": -5.682514190673828
+        },
+        {
+          "cell_type": "191 MB P MY GABA",
+          "fdr": 4.8215572625013206e-08,
+          "gene": "Commd4",
+          "gene_target": "Kansl1",
+          "log2fc": -1.8522987365722656,
+          "pval": 2.8199539492930875e-12,
+          "score": -6.986416816711426
+        },
+        {
+          "cell_type": "191 MB P MY GABA",
+          "fdr": 8.251311026857758e-06,
+          "gene": "Nsmce2",
+          "gene_target": "Kansl1",
+          "log2fc": -1.3207545280456543,
+          "pval": 1.455653945551304e-09,
+          "score": -6.049201488494873
+        },
+        {
+          "cell_type": "191 MB P MY GABA",
+          "fdr": 8.251311026857758e-06,
+          "gene": "Ttc4",
+          "gene_target": "Kansl1",
+          "log2fc": -0.9594399929046631,
+          "pval": 9.911842105489624e-10,
+          "score": -6.110823154449463
+        },
+        {
+          "cell_type": "191 MB P MY GABA",
+          "fdr": 0.0037347018399392236,
+          "gene": "Dgkz",
+          "gene_target": "Kansl1",
+          "log2fc": 0.6175561547279358,
+          "pval": 9.84070085639291e-06,
+          "score": 4.420644283294678
+        },
+        {
+          "cell_type": "066 CNU-HYa HY GABA",
+          "fdr": 4.0986186656927614e-06,
+          "gene": "Commd4",
+          "gene_target": "Kansl1",
+          "log2fc": -1.7440470457077026,
+          "pval": 2.3948922903428545e-10,
+          "score": -6.333610534667969
+        },
+        {
+          "cell_type": "066 CNU-HYa HY GABA",
+          "fdr": 0.0007215458249980205,
+          "gene": "Nsmce2",
+          "gene_target": "Kansl1",
+          "log2fc": -1.2430205345153809,
+          "pval": 1.2648343315379582e-07,
+          "score": -5.28386926651001
+        },
+        {
+          "cell_type": "066 CNU-HYa HY GABA",
+          "fdr": 0.0007786343722157084,
+          "gene": "Ttc4",
+          "gene_target": "Kansl1",
+          "log2fc": -0.7948495745658875,
+          "pval": 2.274846243472328e-07,
+          "score": -5.175349712371826
+        },
+        {
+          "cell_type": "066 CNU-HYa HY GABA",
+          "fdr": 0.0050100474691465655,
+          "gene": "Dgkz",
+          "gene_target": "Kansl1",
+          "log2fc": 0.736522912979126,
+          "pval": 2.1373867811104864e-06,
+          "score": 4.739980697631836
+        }
+      ],
+      "finding": "Kansl1 posterior core"
+    },
+    {
+      "exact_de_rows": [
+        {
+          "cell_type": "155 MB Glut",
+          "fdr": 3.092710333018192e-23,
+          "gene": "Ogt",
+          "gene_target": "Ogt",
+          "log2fc": -1.6777082681655884,
+          "pval": 1.7730380857754926e-27,
+          "score": -10.86074161529541
+        },
+        {
+          "cell_type": "155 MB Glut",
+          "fdr": 0.0006279143277946983,
+          "gene": "Nsmce2",
+          "gene_target": "Ogt",
+          "log2fc": -0.8889026045799255,
+          "pval": 4.571754837466416e-06,
+          "score": -4.5835371017456055
+        },
+        {
+          "cell_type": "155 MB Glut",
+          "fdr": 0.00016435209464270815,
+          "gene": "Ttc4",
+          "gene_target": "Ogt",
+          "log2fc": -0.7204480171203613,
+          "pval": 8.480014055978749e-07,
+          "score": -4.923983097076416
+        },
+        {
+          "cell_type": "155 MB Glut",
+          "fdr": 1.0,
+          "gene": "Dgkz",
+          "gene_target": "Ogt",
+          "log2fc": -0.032654598355293274,
+          "pval": 0.45532270739961633,
+          "score": -0.7465707659721375
+        }
+      ],
+      "finding": "Ogt comparator"
+    }
+  ],
+  "targets": [
+    "Kansl1",
+    "Ogt",
+    "Ttc4",
+    "Nsmce2",
+    "Ctsa",
+    "Man2b2",
+    "Dgkz"
+  ],
+  "title": "Kansl1 loss represses an endolysosomal/autophagy-transport core in posterior neurons"
+}

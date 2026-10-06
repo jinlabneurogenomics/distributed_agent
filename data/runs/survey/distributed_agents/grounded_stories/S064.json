@@ -1,0 +1,349 @@
+{
+  "biological_interpretation": "USP48 loss exposes a compact thalamic neuronal RNA output separable from Usp9x/Uchl1 loss, ARL3 or GSDME substrate biology, and canonical NF-kappaB transcription.",
+  "caveats": [
+    "Usp48 self-depletion was nominal in 151 TH but just above target-row FDR.",
+    "ARL3 and GSDME are protein substrates from retina or cancer contexts; lack of RNA phenocopy is only a boundary."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut"
+  ],
+  "exact_observed_result": "Usp48 perturbation had its best self-RNA decrease in 151 TH and generated exactly 10 FDR genes there: Abhd12b, Resp18, Galk2, Msrb2, Tmem181a, Syne1, Bcan, Lrp10 and Macf1 up, with Cyp46a1 down; all non-151 Usp48 contrasts had zero FDR genes.",
+  "preliminary_scores": {
+    "novelty": 4,
+    "priority": 3,
+    "support": 3
+  },
+  "prior_expectation": {
+    "citations": [
+      "Tian et al. 2003 PMID:14535949",
+      "Bassani et al. 2021 PMID:34059922",
+      "S\u00e1nchez-Bellver et al. 2022 PMID:36293380"
+    ],
+    "expectation": "USP48 is a deubiquitinase linked to postsynaptic fractions, hearing loss, ARL3/UNC119a and GSDME protein regulation."
+  },
+  "reference_ids": [
+    "Usp48:R001",
+    "Usp48:R004",
+    "Usp48:R005",
+    "Usp48:R006",
+    "Usp48:R007",
+    "Usp48:R008"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Usp48:E001",
+    "Usp48:E002",
+    "Usp48:E003",
+    "Usp48:E007",
+    "Usp48:E008"
+  ],
+  "source_claims": [
+    {
+      "claim_id": "claim:usp48_f001_5c6cde484a04",
+      "finding_id": "F001",
+      "gene": "Usp48",
+      "role": "member"
+    },
+    {
+      "claim_id": "claim:usp48_f004_351f313ded74",
+      "finding_id": "F004",
+      "gene": "Usp48",
+      "role": "member"
+    }
+  ],
+  "source_references": [
+    {
+      "citation": "Tian QB, Okano A, Nakayama K, et al. A novel ubiquitin-specific protease, synUSP, is localized at the post-synaptic density and post-synaptic lipid raft. J Neurochem. 2003.",
+      "description": "Rat brain study identifying synUSP/Usp48 as a DUB enriched in postsynaptic density and dendritic lipid-raft fractions.",
+      "ref_id": "R004",
+      "ref_slug": "tian_2003_synusp_postsynaptic",
+      "source": "PubMed",
+      "source_type": "pubmed",
+      "target_gene": "Usp48",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/14535949/"
+    },
+    {
+      "citation": "Bassani S, van Beelen E, Rossel M, et al. Variants in USP48 encoding ubiquitin hydrolase are associated with autosomal dominant non-syndromic hereditary hearing loss. Hum Mol Genet. 2021.",
+      "description": "Links deleterious USP48 variants to autosomal-dominant non-syndromic hereditary hearing loss and reports impaired tetra-ubiquitin hydrolysis for mutant proteins.",
+      "ref_id": "R005",
+      "ref_slug": "bassani_2021_usp48_hearing_loss",
+      "source": "PubMed",
+      "source_type": "pubmed",
+      "target_gene": "Usp48",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34059922/"
+    },
+    {
+      "citation": "Human Protein Atlas entry ENSG00000090686, USP48.",
+      "description": "Annotates USP48 as a protein-level gene, a ubiquitin-specific peptidase, low tissue-specificity RNA expression, and disease involvement in deafness.",
+      "ref_id": "R008",
+      "ref_slug": "hpa_usp48",
+      "source": "Human Protein Atlas",
+      "source_type": "database",
+      "target_gene": "Usp48",
+      "url": "https://www.proteinatlas.org/ENSG00000090686-USP48"
+    },
+    {
+      "citation": "UniProtKB reviewed entry Q86UV5. Ubiquitin carboxyl-terminal hydrolase 48, Homo sapiens.",
+      "description": "Curated USP48 molecular function, catalytic activity, subunits TRAF2/RELA, disease annotation for DFNA85, and reported ARL3/GSDME-related functions.",
+      "ref_id": "R001",
+      "ref_slug": "uniprot_q86uv5_usp48",
+      "source": "UniProtKB",
+      "source_type": "database",
+      "target_gene": "Usp48",
+      "url": "https://rest.uniprot.org/uniprotkb/Q86UV5"
+    },
+    {
+      "citation": "S\u00e1nchez-Bellver L, F\u00e9rriz-Gordillo A, Carrillo-Pz M, et al. The Deubiquitinating Enzyme USP48 Interacts with the Retinal Degeneration-Associated Proteins UNC119a and ARL3. Int J Mol Sci. 2022.",
+      "description": "Shows USP48 interaction with ARL3 and UNC119a and supports a role for USP48 in retinal ciliary and intracellular trafficking protein homeostasis.",
+      "ref_id": "R006",
+      "ref_slug": "sanchez_bellver_2022_usp48_arl3_unc119a",
+      "source": "PubMed",
+      "source_type": "pubmed",
+      "target_gene": "Usp48",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36293380/"
+    },
+    {
+      "citation": "Ren Y, Feng M, Hao X, et al. USP48 Stabilizes Gasdermin E to Promote Pyroptosis in Cancer. Cancer Res. 2023.",
+      "description": "Identifies GSDME as a USP48-stabilized substrate in cancer pyroptosis, providing a protein-level USP48 neighbor that was tested as a dataset comparator.",
+      "ref_id": "R007",
+      "ref_slug": "ren_2023_usp48_gsdme_pyroptosis",
+      "source": "PubMed",
+      "source_type": "pubmed",
+      "target_gene": "Usp48",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36607699/"
+    }
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/14535949/",
+    "https://pubmed.ncbi.nlm.nih.gov/34059922/",
+    "https://pubmed.ncbi.nlm.nih.gov/36293380/",
+    "https://pubmed.ncbi.nlm.nih.gov/36607699/",
+    "https://rest.uniprot.org/uniprotkb/Q86UV5",
+    "https://www.proteinatlas.org/ENSG00000090686-USP48"
+  ],
+  "status": "grounded",
+  "story_id": "S064",
+  "support": [
+    {
+      "exact_de_rows": [
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.07142005006809186,
+          "gene": "Usp48",
+          "gene_target": "Usp48",
+          "log2fc": -0.44714346528053284,
+          "pval": 4.965760477531157e-05,
+          "score": -4.057232856750488
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 8.398149824045067e-10,
+          "gene": "Abhd12b",
+          "gene_target": "Usp48",
+          "log2fc": 1.4756513833999634,
+          "pval": 4.865953893067424e-14,
+          "score": 7.535465717315674
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.3895905286487306e-06,
+          "gene": "Cyp46a1",
+          "gene_target": "Usp48",
+          "log2fc": -0.2703574597835541,
+          "pval": 1.6102793077799764e-10,
+          "score": -6.394543170928955
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.0013118470271976759,
+          "gene": "Resp18",
+          "gene_target": "Usp48",
+          "log2fc": 0.4235627055168152,
+          "pval": 2.2802833777119344e-07,
+          "score": 5.174903869628906
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.0015312356459983702,
+          "gene": "Galk2",
+          "gene_target": "Usp48",
+          "log2fc": 0.6241950392723083,
+          "pval": 3.5488397844565044e-07,
+          "score": 5.091691017150879
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.0016443041937152924,
+          "gene": "Msrb2",
+          "gene_target": "Usp48",
+          "log2fc": 1.0286831855773926,
+          "pval": 4.763613748523357e-07,
+          "score": 5.035597324371338
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.0017192025428601602,
+          "gene": "Tmem181a",
+          "gene_target": "Usp48",
+          "log2fc": 0.5169607400894165,
+          "pval": 5.976716644742431e-07,
+          "score": 4.991968154907227
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.0041555171985982525,
+          "gene": "Syne1",
+          "gene_target": "Usp48",
+          "log2fc": 0.19683954119682312,
+          "pval": 1.6854174859602391e-06,
+          "score": 4.787892818450928
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.006272356064625811,
+          "gene": "Bcan",
+          "gene_target": "Usp48",
+          "log2fc": 0.6571356058120728,
+          "pval": 2.9074018492963956e-06,
+          "score": 4.677255153656006
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.03388749673615133,
+          "gene": "Lrp10",
+          "gene_target": "Usp48",
+          "log2fc": 0.8028081059455872,
+          "pval": 1.7671213316261774e-05,
+          "score": 4.292450428009033
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.04770480583732415,
+          "gene": "Macf1",
+          "gene_target": "Usp48",
+          "log2fc": 0.19527390599250793,
+          "pval": 2.7640538755040356e-05,
+          "score": 4.192082405090332
+        }
+      ],
+      "finding": "Usp48 151 FDR signature"
+    },
+    {
+      "exact_de_rows": [
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.003541028196469513,
+          "gene": "Usp9x",
+          "gene_target": "Usp9x",
+          "log2fc": -0.5601558685302734,
+          "pval": 2.0516995170458965e-07,
+          "score": -5.194591522216797
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Abhd12b",
+          "gene_target": "Usp9x",
+          "log2fc": -0.2639327049255371,
+          "pval": 0.4161268038901401,
+          "score": -0.813159167766571
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.8579152552249781,
+          "gene": "Resp18",
+          "gene_target": "Usp9x",
+          "log2fc": -0.35293492674827576,
+          "pval": 0.005403115732798107,
+          "score": -2.781963348388672
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Cyp46a1",
+          "gene_target": "Usp9x",
+          "log2fc": 0.04241946339607239,
+          "pval": 0.5288424728632952,
+          "score": 0.6297739744186401
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.01835715721566928,
+          "gene": "Arl3",
+          "gene_target": "Arl3",
+          "log2fc": -0.41779235005378723,
+          "pval": 1.0636280906002248e-06,
+          "score": -4.879485607147217
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Abhd12b",
+          "gene_target": "Arl3",
+          "log2fc": -0.16703777015209198,
+          "pval": 0.5346396815086458,
+          "score": -0.6209391355514526
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Resp18",
+          "gene_target": "Arl3",
+          "log2fc": 0.022391948848962784,
+          "pval": 0.6625467540845431,
+          "score": 0.4363996982574463
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Cyp46a1",
+          "gene_target": "Arl3",
+          "log2fc": -0.013379019685089588,
+          "pval": 0.8363520307693759,
+          "score": 0.206561878323555
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "gene": "Gsdme",
+          "gene_target": "Gsdme",
+          "unresolved": "row not returned by exact Parquet query"
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Abhd12b",
+          "gene_target": "Gsdme",
+          "log2fc": 0.19025178253650665,
+          "pval": 0.38790202215869973,
+          "score": 0.8634282946586609
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Resp18",
+          "gene_target": "Gsdme",
+          "log2fc": 0.14898426830768585,
+          "pval": 0.2835175317413364,
+          "score": 1.0724509954452515
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Cyp46a1",
+          "gene_target": "Gsdme",
+          "log2fc": 0.001146145281381905,
+          "pval": 0.9598222716137482,
+          "score": 0.050376612693071365
+        }
+      ],
+      "finding": "DUB and substrate comparator rows"
+    }
+  ],
+  "targets": [
+    "Usp48",
+    "Usp9x",
+    "Arl3",
+    "Gsdme"
+  ],
+  "title": "USP48 depletion selectively induces a thalamic ABHD12B/RESP18 endomembrane signature"
+}

@@ -1,0 +1,137 @@
+{
+  "story_id": "S058",
+  "title": "Srrm2 depletion is tolerated in several cortical classes but drives abundance programs in thalamic, midbrain, and related GABAergic neurons",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Acute Srrm2 depletion produced a highly cell-state-selective abundance phenotype in which thalamic, midbrain, and related GABAergic classes carried most corrected downstream responses, while several cortical and Pvalb classes reduced Srrm2 without corrected off-target genes. / Multiple FDR-supported perturbations in RNA-processing factors or Huwe1 produced nonuniform neuronal signatures centered on Srrm2, Srsf-family, Rsrp1, Tcea2, Pabpn1, and related spliceosome or nuclear-speckle transcripts, with thalamic and midbrain classes repeatedly carrying the broadest response while other target-shifted classes were buffered.",
+  "biological_interpretation": "The nuclear-speckle factor SRRM2 is a loss-of-function vulnerability for a subset of thalamic/midbrain neuronal states rather than a universal neuronal transcript-abundance dependency. / Selected subcortical neurons are acutely sensitive to partial nuclear-speckle or spliceosome stress, so local SR-factor/nuclear-speckle marker panels should be better pharmacodynamic and liability readouts than the target-RNA row alone.",
+  "targets": [
+    "Srrm2",
+    "Nop56",
+    "Huwe1",
+    "Tnpo3",
+    "Snrnp70",
+    "U2af2"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "191 MB P MY GABA",
+    "005 L4-5 IT CTX Glut",
+    "008 L2-3 IT ENT PPP RSP Glut",
+    "022 L5 ET CTX Glut",
+    "052 Pvalb Gaba",
+    "110 CNU-HYa HY MM Glut",
+    "066 CNU-HYa HY GABA",
+    "145 MH-LH TH Glut"
+  ],
+  "support": {
+    "exact_de_rows": [
+      {
+        "target": "Srrm2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Srrm2",
+        "logfoldchanges": -1.565003514289856,
+        "pvals": 4.664028550790065e-42,
+        "pvals_adj": 8.049646875808573e-38,
+        "score": -13.588841438293457
+      },
+      {
+        "target": "Srrm2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rsrp1",
+        "logfoldchanges": -0.28132742643356323,
+        "pvals": 4.1045557818159106e-08,
+        "pvals_adj": 3.54202641191804e-05,
+        "score": -5.486293315887451
+      },
+      {
+        "target": "Srrm2",
+        "cell_type": "155 MB Glut",
+        "gene": "Leng8",
+        "logfoldchanges": -0.8479694724082947,
+        "pvals": 2.1535479795514953e-26,
+        "pvals_adj": 1.8782168703658366e-22,
+        "score": -10.630327224731445
+      },
+      {
+        "target": "Nop56",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rsrp1",
+        "logfoldchanges": -0.23342439532279968,
+        "pvals": 1.0003774903817465e-10,
+        "pvals_adj": 1.7265515106498564e-06,
+        "score": -6.466894149780273
+      },
+      {
+        "target": "Huwe1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rsrp1",
+        "logfoldchanges": 0.4616546034812927,
+        "pvals": 1.199694103052025e-21,
+        "pvals_adj": 2.0705520524574898e-17,
+        "score": 9.558073043823242
+      },
+      {
+        "target": "Snrnp70",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Srsf5",
+        "logfoldchanges": -0.36132654547691345,
+        "pvals": 1.6175208329995646e-08,
+        "pvals_adj": 5.583358411347897e-05,
+        "score": -5.648608207702637
+      },
+      {
+        "target": "U2af2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rsrp1",
+        "logfoldchanges": -0.9828653335571289,
+        "pvals": 5.222617001577764e-33,
+        "pvals_adj": 9.013714683023063e-29,
+        "score": -11.968074798583984
+      }
+    ],
+    "evidence_summary": "Srrm2:F001/F002 and the Nop56/Huwe1/Tnpo3/Snrnp70/U2af2 F001 findings resolve overlapping but distinct cell-selective nuclear-speckle and RNA-processing signatures."
+  },
+  "caveats": [
+    "The story spans several distinct RNA-processing factors and should not be read as direct epistasis.",
+    "Some U2af2 and Tnpo3 response classes lack FDR-significant self-mRNA loss."
+  ],
+  "prior_expectation": {
+    "summary": "Srrm2:F001/F002 and the Nop56/Huwe1/Tnpo3/Snrnp70/U2af2 F001 findings resolve overlapping but distinct cell-selective nuclear-speckle and RNA-processing signatures.",
+    "citations": [
+      "Cuinat 2022 DOI:10.1016/j.gim.2022.04.011",
+      "Ilik 2020 DOI:10.7554/eLife.60579",
+      "Xu 2022 DOI:10.1093/nar/gkac669",
+      "Lai 2001 PMID:11517331"
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 3,
+    "support": 5,
+    "priority": 5
+  },
+  "report_evidence_ids": [
+    "Srrm2:E001",
+    "Srrm2:E002",
+    "Srrm2:E003",
+    "Srrm2:E008",
+    "Nop56:E003",
+    "Huwe1:E003",
+    "Tnpo3:E002",
+    "Snrnp70:E004",
+    "U2af2:E002"
+  ],
+  "reference_ids": [
+    "Srrm2:R003",
+    "Srrm2:R005",
+    "Srrm2:R006",
+    "Tnpo3:R002"
+  ],
+  "source_urls_or_dois": [
+    "https://doi.org/10.1016/j.gim.2022.04.011",
+    "https://doi.org/10.7554/eLife.60579",
+    "https://doi.org/10.1093/nar/gkac669",
+    "https://pubmed.ncbi.nlm.nih.gov/11517331/"
+  ]
+}

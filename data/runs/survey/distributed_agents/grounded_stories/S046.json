@@ -1,0 +1,218 @@
+{
+  "biological_interpretation": "The Gabrg2 result is consistent with reduced GABA-A gamma-2 inhibitory signaling inducing activity/trophic genes in selected glutamatergic cells, but the shared Gphn/Kcnb1 neighborhood is weak and should be kept as a restricted excitability-signature hint.",
+  "caveats": [
+    "Key Gabrg2 Bdnf/Vgf rows in L4/5 are nominal or near-FDR, so this story reaches support through the Gabrg2 report and exact directionality but not through a strong multi-gene FDR set.",
+    "Gphn is a weak comparator and does not prove a shared gephyrin/GABA-A mechanism."
+  ],
+  "cell_types": [
+    "005 L4-5 IT CTX Glut",
+    "155 MB Glut"
+  ],
+  "exact_observed_result": "Gabrg2 mRNA was strongly depleted in 005 L4-5 IT CTX Glut, where Bdnf, Vgf, Nptx2, and Fosl2 trended upward; the Bdnf/Vgf arm was nominal-to-near-FDR rather than conventionally FDR-supported in the exact rows. Kcnb1 in the same cell type robustly induced Bdnf, Vgf, and Nptx2, while Gphn produced a narrow Cbarp signal.",
+  "preliminary_scores": {
+    "novelty": 3,
+    "priority": 3,
+    "support": 3
+  },
+  "prior_expectation": "Gamma-2-containing GABA-A receptors and gephyrin organize inhibitory transmission, and disinhibition can induce immediate-early and trophic activity markers; the chronic scRNA signature is an indirect readout of that physiology.",
+  "reference_ids": [
+    "Gabrg2:F001",
+    "Gabrg2:F003",
+    "Gabrg2:F005"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    {
+      "finding_id": "F003",
+      "gene": "Gabrg2"
+    },
+    {
+      "finding_id": "F001",
+      "gene": "Gabrg2"
+    },
+    {
+      "finding_id": "F005",
+      "gene": "Gabrg2"
+    }
+  ],
+  "source_claim_ids": [
+    "claim:gabrg2_f003_473fd9758bbf",
+    "claim:gabrg2_f001_cf34ccd34eeb",
+    "claim:gabrg2_f005_fa090d05be54"
+  ],
+  "source_cluster_ids": [
+    "C087",
+    "C272"
+  ],
+  "source_urls_or_dois": [
+    "https://www.cell.com/cell-reports/fulltext/S2211-1247(21)00958-7",
+    "https://www.jneurosci.org/content/23/34/10800"
+  ],
+  "status": "grounded",
+  "story_id": "S046",
+  "support": {
+    "exact_de_rows": [
+      {
+        "gene_target": "Gabrg2",
+        "group_name": "005 L4-5 IT CTX Glut",
+        "logfoldchanges": 1.3208452463150024,
+        "names": "Bdnf",
+        "pvals": 7.388106815433602e-06,
+        "pvals_adj": 0.06324958244692706,
+        "scores": 4.482189655303955
+      },
+      {
+        "gene_target": "Gabrg2",
+        "group_name": "005 L4-5 IT CTX Glut",
+        "logfoldchanges": 0.49263083934783936,
+        "names": "Fos",
+        "pvals": 0.05139934784219008,
+        "pvals_adj": 1.0,
+        "scores": 1.948130488395691
+      },
+      {
+        "gene_target": "Gabrg2",
+        "group_name": "005 L4-5 IT CTX Glut",
+        "logfoldchanges": 1.2919669151306152,
+        "names": "Fosl2",
+        "pvals": 3.080016958996732e-05,
+        "pvals_adj": 0.17578683457314012,
+        "scores": 4.167468070983887
+      },
+      {
+        "gene_target": "Gabrg2",
+        "group_name": "005 L4-5 IT CTX Glut",
+        "logfoldchanges": -0.7949346303939819,
+        "names": "Gabrg2",
+        "pvals": 1.3999543116483787e-14,
+        "pvals_adj": 2.397001772404354e-10,
+        "scores": -7.696361541748047
+      },
+      {
+        "gene_target": "Gabrg2",
+        "group_name": "005 L4-5 IT CTX Glut",
+        "logfoldchanges": 1.0067214965820312,
+        "names": "Nptx2",
+        "pvals": 0.000227467328401976,
+        "pvals_adj": 0.4868369496123291,
+        "scores": 3.6863791942596436
+      },
+      {
+        "gene_target": "Gabrg2",
+        "group_name": "005 L4-5 IT CTX Glut",
+        "logfoldchanges": 0.24906541407108307,
+        "names": "Vgf",
+        "pvals": 0.07981893672177494,
+        "pvals_adj": 1.0,
+        "scores": 1.7517375946044922
+      },
+      {
+        "gene_target": "Gabrg2",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": 0.4113321304321289,
+        "names": "Bdnf",
+        "pvals": 0.07275935151339122,
+        "pvals_adj": 1.0,
+        "scores": 1.794337272644043
+      },
+      {
+        "gene_target": "Gabrg2",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": -1.2987210750579834,
+        "names": "Gabrg2",
+        "pvals": 1.010332457963798e-27,
+        "pvals_adj": 1.762322906426253e-23,
+        "scores": -10.911978721618652
+      },
+      {
+        "gene_target": "Gabrg2",
+        "group_name": "155 MB Glut",
+        "logfoldchanges": 1.075573444366455,
+        "names": "Vgf",
+        "pvals": 2.6274073704724835e-07,
+        "pvals_adj": 0.0022914933381575765,
+        "scores": 5.148383617401123
+      },
+      {
+        "gene_target": "Gphn",
+        "group_name": "005 L4-5 IT CTX Glut",
+        "logfoldchanges": 0.9079169631004333,
+        "names": "Bdnf",
+        "pvals": 0.0017906060992563151,
+        "pvals_adj": 1.0,
+        "scores": 3.122929573059082
+      },
+      {
+        "gene_target": "Gphn",
+        "group_name": "005 L4-5 IT CTX Glut",
+        "logfoldchanges": 0.4147201180458069,
+        "names": "Cbarp",
+        "pvals": 3.8152975254123383e-07,
+        "pvals_adj": 0.006532552423011005,
+        "scores": 5.077949523925781
+      },
+      {
+        "gene_target": "Gphn",
+        "group_name": "005 L4-5 IT CTX Glut",
+        "logfoldchanges": -0.054931871592998505,
+        "names": "Gphn",
+        "pvals": 0.8507156355473735,
+        "pvals_adj": 1.0,
+        "scores": -0.18820540606975555
+      },
+      {
+        "gene_target": "Gphn",
+        "group_name": "005 L4-5 IT CTX Glut",
+        "logfoldchanges": -0.01568271592259407,
+        "names": "Vgf",
+        "pvals": 0.8655277281749149,
+        "pvals_adj": 1.0,
+        "scores": 0.16934189200401306
+      },
+      {
+        "gene_target": "Kcnb1",
+        "group_name": "005 L4-5 IT CTX Glut",
+        "logfoldchanges": 1.0625169277191162,
+        "names": "Bdnf",
+        "pvals": 9.972912964705414e-08,
+        "pvals_adj": 0.0014407049828868042,
+        "scores": 5.327216625213623
+      },
+      {
+        "gene_target": "Kcnb1",
+        "group_name": "005 L4-5 IT CTX Glut",
+        "logfoldchanges": -0.273766428232193,
+        "names": "Kcnb1",
+        "pvals": 0.03250391089401171,
+        "pvals_adj": 1.0,
+        "scores": -2.138158082962036
+      },
+      {
+        "gene_target": "Kcnb1",
+        "group_name": "005 L4-5 IT CTX Glut",
+        "logfoldchanges": 0.8179369568824768,
+        "names": "Nptx2",
+        "pvals": 1.1463741748817624e-05,
+        "pvals_adj": 0.039256437244651075,
+        "scores": 4.387544631958008
+      },
+      {
+        "gene_target": "Kcnb1",
+        "group_name": "005 L4-5 IT CTX Glut",
+        "logfoldchanges": 0.5103605389595032,
+        "names": "Vgf",
+        "pvals": 1.6828699718336693e-07,
+        "pvals_adj": 0.0014407049828868042,
+        "scores": 5.2313385009765625
+      }
+    ]
+  },
+  "targets": [
+    "Gabrg2",
+    "Gphn",
+    "Bdnf",
+    "Vgf",
+    "Kcnb1"
+  ],
+  "title": "Gabrg2 loss induces a weak glutamatergic Bdnf-Vgf activity response"
+}

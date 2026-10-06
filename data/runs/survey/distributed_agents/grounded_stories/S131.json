@@ -1,0 +1,398 @@
+{
+  "biological_interpretation": "HSF1 maintains a compact constitutive HSPH1/HSP90 support layer in a restricted set of mature neuronal classes, and direct Hsp90ab1 or Hsf4 perturbation does not simply phenocopy Hsf1 loss.",
+  "caveats": [
+    "Hsf1 target mRNA did not pass FDR in any class despite mostly negative log-fold changes.",
+    "Only mRNA abundance was measured, not inducible heat-shock capacity or HSP protein levels."
+  ],
+  "cell_types": [
+    "052 Pvalb Gaba",
+    "066 CNU-HYa HY GABA",
+    "110 CNU-HYa HY MM Glut",
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut"
+  ],
+  "exact_observed_result": "Hsf1 perturbation consistently reduced basal chaperone transcripts in selected neurons: 151 TH lowered Hsph1, Hsp90aa1, Hsp90ab1 and Ahsa2 at FDR < 0.05; 155 MB lowered Hsph1, Rsrp1 and Stip1; 052 Pvalb lowered Rsrp1 and Ahsa2; and 110 CNU-HYa HY MM Glut had a single FDR-supported Hsp90aa1 decrease.",
+  "preliminary_scores": {
+    "novelty": 3,
+    "priority": 3,
+    "support": 4
+  },
+  "prior_expectation": {
+    "citations": [
+      "UniProtKB reviewed entry P38532, Heat shock factor protein 1, Mus musculus.",
+      "Reactome pathway R-HSA-3371511, HSF1 activation; and R-HSA-3371571, HSF1-dependent transactivation.",
+      "Gomez-Pastor R, Burchfiel ET, Thiele DJ. Regulation of heat shock transcription factors and their roles in physiology and disease. Nat Rev Mol Cell Biol. 2018;19:4-19. PMID: 28852220.",
+      "STRING functional network and enrichment for HSF1, HSPH1, HSP90AA1, HSP90AB1, STIP1, and AHSA2 in Homo sapiens, queried 2025-04-29.",
+      "Prodromou C. Mechanisms of Hsp90 regulation. Biochem J. 2016. PMID: 27515256."
+    ],
+    "summary": "Prior work supports the broad molecular function of the perturbed target or complex, while the atlas result refines the affected brain cell type and RNA-output module."
+  },
+  "reference_ids": [
+    "Hsf1:R001",
+    "Hsf1:R002",
+    "Hsf1:R003",
+    "Hsf1:R004",
+    "Hsf1:R007"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Hsf1:E001",
+    "Hsf1:E002",
+    "Hsf1:E003",
+    "Hsf1:E004",
+    "Hsf1:E005",
+    "Hsf1:E008",
+    "Hsf1:E012",
+    "Hsf1:E013"
+  ],
+  "source_claim_ids": [
+    "claim:hsf1_f001_96335c32c459",
+    "claim:hsf1_f005_27620c8e44b2"
+  ],
+  "source_cluster_ids": [
+    "C058"
+  ],
+  "source_urls_or_dois": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4980810/",
+    "https://pubmed.ncbi.nlm.nih.gov/28852220/",
+    "https://reactome.org/content/detail/R-HSA-3371511",
+    "https://rest.uniprot.org/uniprotkb/P38532",
+    "https://string-db.org/"
+  ],
+  "status": "grounded",
+  "story_id": "S131",
+  "support": {
+    "exact_de_rows": [
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 1.694390445047314e-08,
+        "fdr_significant": true,
+        "gene": "Hsph1",
+        "log2_fold_change": -0.484007,
+        "p_value": 9.817431166622133e-13,
+        "score": -7.133042,
+        "target": "Hsf1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.0002847500432962585,
+        "fdr_significant": true,
+        "gene": "Hsp90aa1",
+        "log2_fold_change": -0.281787,
+        "p_value": 3.299728180036601e-08,
+        "score": -5.524741,
+        "target": "Hsf1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.000896280008314009,
+        "fdr_significant": true,
+        "gene": "Hsp90ab1",
+        "log2_fold_change": -0.345027,
+        "p_value": 2.0772466731885023e-07,
+        "score": -5.192288,
+        "target": "Hsf1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.008274093116412218,
+        "fdr_significant": true,
+        "gene": "Ahsa2",
+        "log2_fold_change": -0.293777,
+        "p_value": 2.8764446780504846e-06,
+        "score": -4.679451,
+        "target": "Hsf1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.000806245893115821,
+        "fdr_significant": true,
+        "gene": "Rsrp1",
+        "log2_fold_change": -0.174778,
+        "p_value": 1.4014355868517662e-07,
+        "score": -5.26506,
+        "target": "Hsf1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.0073664338522237745,
+        "fdr_significant": true,
+        "gene": "Mat2a",
+        "log2_fold_change": -0.233654,
+        "p_value": 2.1340847824971826e-06,
+        "score": -4.740294,
+        "target": "Hsf1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.6802749495438593,
+        "fdr_significant": false,
+        "gene": "Hsf1",
+        "log2_fold_change": -0.299477,
+        "p_value": 0.0004920397165064242,
+        "score": -3.485053,
+        "target": "Hsf1"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "down",
+        "fdr": 0.0002500109579762204,
+        "fdr_significant": true,
+        "gene": "Hsph1",
+        "log2_fold_change": -0.598722,
+        "p_value": 1.433302516632577e-08,
+        "score": -5.669362,
+        "target": "Hsf1"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "down",
+        "fdr": 0.0016940501591646057,
+        "fdr_significant": true,
+        "gene": "Rsrp1",
+        "log2_fold_change": -0.16065,
+        "p_value": 1.9423839467575597e-07,
+        "score": -5.204769,
+        "target": "Hsf1"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "down",
+        "fdr": 0.005832608414982232,
+        "fdr_significant": true,
+        "gene": "Stip1",
+        "log2_fold_change": -0.388277,
+        "p_value": 1.0031431086938427e-06,
+        "score": -4.891021,
+        "target": "Hsf1"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "down",
+        "fdr": 0.798649995858425,
+        "fdr_significant": false,
+        "gene": "Hsf1",
+        "log2_fold_change": -0.337325,
+        "p_value": 0.00018314510023698333,
+        "score": -3.741198,
+        "target": "Hsf1"
+      },
+      {
+        "cell_type": "052 Pvalb Gaba",
+        "direction": "down",
+        "fdr": 0.0025230566625313536,
+        "fdr_significant": true,
+        "gene": "Rsrp1",
+        "log2_fold_change": -0.194931,
+        "p_value": 1.5052241155777076e-07,
+        "score": -5.251919,
+        "target": "Hsf1"
+      },
+      {
+        "cell_type": "052 Pvalb Gaba",
+        "direction": "down",
+        "fdr": 0.004707483652336443,
+        "fdr_significant": true,
+        "gene": "Ahsa2",
+        "log2_fold_change": -0.589637,
+        "p_value": 5.616851989424225e-07,
+        "score": -5.003946,
+        "target": "Hsf1"
+      },
+      {
+        "cell_type": "052 Pvalb Gaba",
+        "direction": "down",
+        "fdr": 1.0,
+        "fdr_significant": false,
+        "gene": "Hsph1",
+        "log2_fold_change": -0.370018,
+        "p_value": 0.0008388665496258566,
+        "score": -3.339641,
+        "target": "Hsf1"
+      },
+      {
+        "cell_type": "052 Pvalb Gaba",
+        "direction": "down",
+        "fdr": 1.0,
+        "fdr_significant": false,
+        "gene": "Hsp90aa1",
+        "log2_fold_change": -0.269606,
+        "p_value": 0.0013200604376171373,
+        "score": -3.211582,
+        "target": "Hsf1"
+      },
+      {
+        "cell_type": "052 Pvalb Gaba",
+        "direction": "down",
+        "fdr": 1.0,
+        "fdr_significant": false,
+        "gene": "Hsf1",
+        "log2_fold_change": -0.347103,
+        "p_value": 0.003917428413245789,
+        "score": -2.884735,
+        "target": "Hsf1"
+      },
+      {
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "direction": "down",
+        "fdr": 0.027533858590413258,
+        "fdr_significant": true,
+        "gene": "Hsp90aa1",
+        "log2_fold_change": -0.43899,
+        "p_value": 1.603882949287194e-06,
+        "score": -4.797837,
+        "target": "Hsf1"
+      },
+      {
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "direction": "down",
+        "fdr": 1.0,
+        "fdr_significant": false,
+        "gene": "Mat2a",
+        "log2_fold_change": -0.316238,
+        "p_value": 0.0002930831716629052,
+        "score": -3.621338,
+        "target": "Hsf1"
+      },
+      {
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "direction": "down",
+        "fdr": 1.0,
+        "fdr_significant": false,
+        "gene": "Hsph1",
+        "log2_fold_change": -0.415238,
+        "p_value": 0.0008219503812284513,
+        "score": -3.345295,
+        "target": "Hsf1"
+      },
+      {
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "direction": "down",
+        "fdr": 1.0,
+        "fdr_significant": false,
+        "gene": "Hsf1",
+        "log2_fold_change": -0.323682,
+        "p_value": 0.02286823242707588,
+        "score": -2.275629,
+        "target": "Hsf1"
+      }
+    ],
+    "resolved_evidence": [
+      {
+        "cell_type": "",
+        "description": "Direct measurement of Hsf1 mRNA after Hsf1 guides showed consistent but multiple-testing-weak target knockdown.",
+        "evidence_id": "E001",
+        "evidence_slug": "hsf1_target_transcript_global",
+        "genes": "Hsf1",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "1",
+        "statistics": "Hsf1 transcript row present in all 22 Hsf1-perturbed cell types; logFC was negative in 21/22, median -0.311, range -0.589 to +0.136; 13/22 nominal p<0.05; 0/22 FDR<0.05.",
+        "target_gene": "Hsf1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "Strongest Hsf1 response, dominated by downregulated HSP90/HSPH1-associated chaperone genes plus Rsrp1 and Mat2a.",
+        "evidence_id": "E002",
+        "evidence_slug": "hsf1_151_heatshock_module",
+        "genes": "Hsph1|Hsp90aa1|Rsrp1|Hsp90ab1|Mat2a|Ahsa2|Hsf1",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "7",
+        "statistics": "246 perturbed cells versus 23679 controls; 6 genes at FDR<0.05: Hsph1 logFC -0.484 FDR 1.69e-08, Hsp90aa1 -0.282 FDR 2.85e-04, Rsrp1 -0.175 FDR 8.06e-04, Hsp90ab1 -0.345 FDR 8.96e-04, Mat2a -0.234 FDR 0.00737, Ahsa2 -0.294 FDR 0.00827; Hsf1 logFC -0.299, p=4.92e-04, FDR 0.680.",
+        "target_gene": "Hsf1"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "description": "Midbrain glutamatergic Hsf1 perturbation significantly lowered Hsph1, Rsrp1, and the Hsp70-Hsp90 co-chaperone Stip1.",
+        "evidence_id": "E003",
+        "evidence_slug": "hsf1_155_heatshock_module",
+        "genes": "Hsph1|Rsrp1|Stip1|Hsf1",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "4",
+        "statistics": "233 perturbed cells versus 20353 controls; Hsph1 logFC -0.599 FDR 2.50e-04; Rsrp1 -0.161 FDR 0.00169; Stip1 -0.388 FDR 0.00583; Hsf1 -0.337, p=1.83e-04, FDR 0.799.",
+        "target_gene": "Hsf1"
+      },
+      {
+        "cell_type": "052 Pvalb Gaba",
+        "description": "Pvalb interneurons showed a smaller but FDR-supported Hsf1 response centered on Rsrp1 and Ahsa2, with nominal downregulation of core heat-shock genes.",
+        "evidence_id": "E004",
+        "evidence_slug": "hsf1_052_pvalb_module",
+        "genes": "Rsrp1|Ahsa2|Hsph1|Hsp90aa1|Hsf1",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "5",
+        "statistics": "158 perturbed cells versus 13710 controls; Rsrp1 logFC -0.195 FDR 0.00252; Ahsa2 -0.590 FDR 0.00471; Hsph1 -0.370 p=8.39e-04 FDR 1.0; Hsp90aa1 -0.270 p=0.00132 FDR 1.0; Hsf1 -0.347 p=0.00392 FDR 1.0.",
+        "target_gene": "Hsf1"
+      },
+      {
+        "cell_type": "110 CNU-HYa HY MM Glut",
+        "description": "A restricted hypothalamic glutamatergic group had a single FDR-significant Hsp90aa1 decrease after Hsf1 perturbation.",
+        "evidence_id": "E005",
+        "evidence_slug": "hsf1_110_hsp90aa1_single_hit",
+        "genes": "Hsp90aa1|Mat2a|Hsph1|Hsf1",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "4",
+        "statistics": "107 perturbed cells versus 8681 controls; Hsp90aa1 logFC -0.439, score -4.798, p=1.60e-06, FDR 0.0275; Mat2a p=2.93e-04, Hsph1 p=8.22e-04, and Hsf1 p=0.0229 were nominal but not FDR-significant.",
+        "target_gene": "Hsf1"
+      },
+      {
+        "cell_type": "",
+        "description": "Hsph1 was the most directionally recurrent chaperone transcript in the Hsf1 dataset.",
+        "evidence_id": "E008",
+        "evidence_slug": "hsph1_recurrent_downstream_readout",
+        "genes": "Hsph1",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "1",
+        "statistics": "Hsph1 was lower after Hsf1 perturbation in 22/22 measured cell types; median logFC -0.442; 9/22 nominal p<0.001; FDR<0.05 in 151 TH Prkcd Grin2c Glut and 155 MB Glut.",
+        "target_gene": "Hsf1"
+      },
+      {
+        "cell_type": "",
+        "description": "Direct knockdown of the HSF1-regulated Hsp90ab1 chaperone was much stronger at the Hsp90ab1 mRNA level than Hsf1 knockdown was at Hsf1 mRNA.",
+        "evidence_id": "E012",
+        "evidence_slug": "hsp90ab1_strong_ontarget_comparator",
+        "genes": "Hsp90ab1",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "1",
+        "statistics": "Hsp90ab1 guides lowered Hsp90ab1 at FDR<0.05 in 15/23 groups; examples were 151 TH Prkcd Grin2c Glut logFC -1.417 FDR 2.31e-32, 155 MB Glut -1.496 FDR 2.75e-28, 052 Pvalb Gaba -1.349 FDR 1.39e-21, and 110 CNU-HYa HY MM Glut -1.422 FDR 9.64e-09.",
+        "target_gene": "Hsf1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "Hsp90ab1 loss did not phenocopy Hsf1 loss and produced weak opposite-direction changes in several HSF1-responsive HSP transcripts.",
+        "evidence_id": "E013",
+        "evidence_slug": "hsp90ab1_feedback_not_hsf1_phenocopy",
+        "genes": "Hsp90ab1|Hsph1|Hsp90aa1|Ahsa2|Stip1",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "5",
+        "statistics": "After Hsp90ab1 perturbation in 151 TH Prkcd Grin2c Glut, Hsp90ab1 logFC was -1.417 FDR 2.31e-32, while Hsp90aa1 was weakly higher at logFC +0.147 p=0.0136 FDR 1.0, Hsph1 +0.152 p=0.101 FDR 1.0, Ahsa2 +0.103 p=0.141 FDR 1.0, and Stip1 +0.120 p=0.127 FDR 1.0; top-200 Hsf1 signature correlations with Hsp90ab1 were 0.0669 in 151, 0.0686 in 155, 0.0884 in 052, and 0.141 in 110.",
+        "target_gene": "Hsf1"
+      }
+    ],
+    "support_note": "Exact log2 fold changes, p-values, and FDRs in exact_de_rows were re-read from the Wilcoxon Parquet for this grounding pass; score-vector correlations and perturbed/control cell counts are resolved from the structured report evidence."
+  },
+  "targets": [
+    "Hsf1",
+    "Hsph1",
+    "Hsp90aa1",
+    "Hsp90ab1",
+    "Ahsa2",
+    "Stip1",
+    "Mat2a",
+    "Rsrp1"
+  ],
+  "title": "Hsf1 loss selectively suppresses a basal HSPH1/HSP90 chaperone module"
+}

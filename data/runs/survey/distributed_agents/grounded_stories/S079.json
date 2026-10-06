@@ -1,0 +1,244 @@
+{
+  "biological_interpretation": "MEF2 paralog identity matters: MEF2C loss preferentially remodels cortical IT excitatory neurons, whereas MEF2A loss resolves to a narrower thalamic marker set.",
+  "caveats": [
+    "The cortical Mef2c module is not explained by a strong in-dataset phenocopy; Celf2/Cic relationships remain weak thalamic follow-ups, not causal assignments.",
+    "Mef2a and Mef2c have different target-engagement profiles, which contributes to the paralog contrast."
+  ],
+  "cell_types": [
+    "005 L4-5 IT CTX Glut",
+    "007 L2-3 IT CTX Glut",
+    "151 TH Prkcd Grin2c Glut"
+  ],
+  "exact_observed_result": "Mef2c perturbation drove a cortical IT synaptic/membrane program in 005 L4-5 and 007 L2-3 IT CTX Glut, while Mef2a\u2019s FDR-supported downstream response was restricted to 151 TH Prkcd Grin2c Glut with Gpr4, Ogt, Prkcg, and Sez6. No assayed perturbation was a strong Mef2c-like or anti-Mef2c neighbor in the two high-signal cortical classes.",
+  "preliminary_scores": {
+    "novelty": 3,
+    "priority": 4,
+    "support": 4
+  },
+  "prior_expectation": "MEF2 transcription factors are activity-regulated neuronal regulators and MEF2C dosage is neurodevelopmentally relevant; the data refine that broad expectation by showing acute adult cell-type and paralog specificity.",
+  "reference_ids": [
+    "Mef2a:F003",
+    "Mef2c:F001",
+    "Mef2c:F006"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    {
+      "finding_id": "F001",
+      "gene": "Mef2c"
+    },
+    {
+      "finding_id": "F006",
+      "gene": "Mef2c"
+    },
+    {
+      "finding_id": "F003",
+      "gene": "Mef2a"
+    }
+  ],
+  "source_claim_ids": [
+    "claim:mef2c_f001_2a48e6cdb563",
+    "claim:mef2c_f006_8fe75363e640",
+    "claim:mef2a_f003_7ae17ce6d653"
+  ],
+  "source_cluster_ids": [
+    "C173"
+  ],
+  "source_urls_or_dois": [
+    "https://doi.org/10.7554/eLife.20059",
+    "https://doi.org/10.3389/fncel.2024.1465821"
+  ],
+  "status": "grounded",
+  "story_id": "S079",
+  "support": {
+    "exact_de_rows": [
+      {
+        "gene_target": "Mef2a",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -1.348405122756958,
+        "names": "Gpr4",
+        "pvals": 2.490094132856803e-07,
+        "pvals_adj": 0.004297653463897556,
+        "scores": -5.158444881439209
+      },
+      {
+        "gene_target": "Mef2a",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.4273054301738739,
+        "names": "Mef2a",
+        "pvals": 2.313029416625468e-05,
+        "pvals_adj": 0.05743705195074464,
+        "scores": -4.2323102951049805
+      },
+      {
+        "gene_target": "Mef2a",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.1745234876871109,
+        "names": "Ogt",
+        "pvals": 9.785075719232512e-07,
+        "pvals_adj": 0.005711152850411571,
+        "scores": -4.895912170410156
+      },
+      {
+        "gene_target": "Mef2a",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.2558462917804718,
+        "names": "Prkcg",
+        "pvals": 9.92726029968985e-07,
+        "pvals_adj": 0.005711152850411571,
+        "scores": -4.893074989318848
+      },
+      {
+        "gene_target": "Mef2a",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": 0.47627633810043335,
+        "names": "Sez6",
+        "pvals": 4.762318908518467e-06,
+        "pvals_adj": 0.020548215510530054,
+        "scores": 4.5749945640563965
+      },
+      {
+        "gene_target": "Mef2c",
+        "group_name": "005 L4-5 IT CTX Glut",
+        "logfoldchanges": 0.4809547960758209,
+        "names": "Chgb",
+        "pvals": 3.018270842216003e-09,
+        "pvals_adj": 5.16788333604224e-05,
+        "scores": 5.930601596832275
+      },
+      {
+        "gene_target": "Mef2c",
+        "group_name": "005 L4-5 IT CTX Glut",
+        "logfoldchanges": 0.1656566709280014,
+        "names": "Gria2",
+        "pvals": 4.027889636027748e-06,
+        "pvals_adj": 0.005305040488312854,
+        "scores": 4.609938144683838
+      },
+      {
+        "gene_target": "Mef2c",
+        "group_name": "005 L4-5 IT CTX Glut",
+        "logfoldchanges": -0.3909367322921753,
+        "names": "Mef2c",
+        "pvals": 1.4105605075532954e-06,
+        "pvals_adj": 0.0024151617010327526,
+        "scores": -4.823506832122803
+      },
+      {
+        "gene_target": "Mef2c",
+        "group_name": "005 L4-5 IT CTX Glut",
+        "logfoldchanges": 0.43319717049598694,
+        "names": "Nptx1",
+        "pvals": 5.876652315801328e-05,
+        "pvals_adj": 0.03131340460371429,
+        "scores": 4.017709732055664
+      },
+      {
+        "gene_target": "Mef2c",
+        "group_name": "005 L4-5 IT CTX Glut",
+        "logfoldchanges": 1.158643364906311,
+        "names": "Serinc2",
+        "pvals": 2.3524538574126435e-05,
+        "pvals_adj": 0.017336313044845078,
+        "scores": 4.228508949279785
+      },
+      {
+        "gene_target": "Mef2c",
+        "group_name": "005 L4-5 IT CTX Glut",
+        "logfoldchanges": -0.5902293920516968,
+        "names": "Slit2",
+        "pvals": 6.035173180250972e-05,
+        "pvals_adj": 0.03131340460371429,
+        "scores": -4.0114312171936035
+      },
+      {
+        "gene_target": "Mef2c",
+        "group_name": "005 L4-5 IT CTX Glut",
+        "logfoldchanges": 1.4789912700653076,
+        "names": "Stac2",
+        "pvals": 6.856985346783155e-08,
+        "pvals_adj": 0.0002935132577690529,
+        "scores": 5.39487886428833
+      },
+      {
+        "gene_target": "Mef2c",
+        "group_name": "007 L2-3 IT CTX Glut",
+        "logfoldchanges": 0.8189800381660461,
+        "names": "Chgb",
+        "pvals": 1.5295239067752606e-11,
+        "pvals_adj": 2.562411401020594e-07,
+        "scores": 6.745070934295654
+      },
+      {
+        "gene_target": "Mef2c",
+        "group_name": "007 L2-3 IT CTX Glut",
+        "logfoldchanges": 0.17426753044128418,
+        "names": "Gria2",
+        "pvals": 2.7755691777907023e-05,
+        "pvals_adj": 0.02214243354072745,
+        "scores": 4.1911396980285645
+      },
+      {
+        "gene_target": "Mef2c",
+        "group_name": "007 L2-3 IT CTX Glut",
+        "logfoldchanges": -0.5470607876777649,
+        "names": "Mef2c",
+        "pvals": 3.127370944224425e-08,
+        "pvals_adj": 0.00013098211357147948,
+        "scores": -5.534152507781982
+      },
+      {
+        "gene_target": "Mef2c",
+        "group_name": "007 L2-3 IT CTX Glut",
+        "logfoldchanges": 0.33528754115104675,
+        "names": "Nptx1",
+        "pvals": 0.00013218573518502486,
+        "pvals_adj": 0.0582765163567032,
+        "scores": 3.822350263595581
+      },
+      {
+        "gene_target": "Mef2c",
+        "group_name": "007 L2-3 IT CTX Glut",
+        "logfoldchanges": 1.7809394598007202,
+        "names": "Serinc2",
+        "pvals": 2.540690179751312e-06,
+        "pvals_adj": 0.003547015215114477,
+        "scores": 4.704836845397949
+      },
+      {
+        "gene_target": "Mef2c",
+        "group_name": "007 L2-3 IT CTX Glut",
+        "logfoldchanges": -1.587063193321228,
+        "names": "Slit2",
+        "pvals": 4.260305552403046e-09,
+        "pvals_adj": 2.379096630646941e-05,
+        "scores": -5.873755931854248
+      },
+      {
+        "gene_target": "Mef2c",
+        "group_name": "007 L2-3 IT CTX Glut",
+        "logfoldchanges": 2.066410541534424,
+        "names": "Stac2",
+        "pvals": 1.8029437234394129e-09,
+        "pvals_adj": 1.5102358099390241e-05,
+        "scores": 6.0146331787109375
+      },
+      {
+        "gene_target": "Mef2c",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "logfoldchanges": -0.3910011649131775,
+        "names": "Mef2c",
+        "pvals": 1.6400761449767387e-06,
+        "pvals_adj": 0.028306074186153534,
+        "scores": -4.79336404800415
+      }
+    ]
+  },
+  "targets": [
+    "Mef2c",
+    "Mef2a",
+    "Celf2",
+    "Cic"
+  ],
+  "title": "MEF2C and MEF2A expose paralog-specific cortical and thalamic programs"
+}

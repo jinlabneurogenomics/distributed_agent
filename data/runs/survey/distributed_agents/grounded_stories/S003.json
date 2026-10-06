@@ -1,0 +1,109 @@
+{
+  "story_id": "S003",
+  "title": "Myt1l and Phf21a perturbations converge on Rreb1-positive mature-neuron remodeling",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Myt1l loss produced a recurrent mixed program with broad Rreb1 induction and a narrower Kifc2/Slc22a17 down arm, while Phf21a targeting also induced Rreb1 in overlapping thalamic, midbrain, and other neuronal subclasses.",
+  "biological_interpretation": "MYT1L and PHF21A perturbations may share a noncanonical Rreb1-positive chromatin response in mature neurons, separate from proneural bHLH or motor/pancreatic developmental transcription-factor programs.",
+  "targets": [
+    "Myt1l",
+    "Phf21a",
+    "Naa20",
+    "Zbtb7a"
+  ],
+  "cell_types": [
+    "155 MB Glut",
+    "151 TH Prkcd Grin2c Glut",
+    "052 Pvalb Gaba",
+    "001 L5-6 IT Glut",
+    "005 L4-5 IT CTX Glut",
+    "007 L2-3 IT CTX Glut"
+  ],
+  "support": {
+    "exact_de_rows": [
+      {
+        "target": "Myt1l",
+        "cell_type": "155 MB Glut",
+        "gene": "Rreb1",
+        "logfoldchanges": 1.3054442405700684,
+        "pvals": 1.0247295971798576e-07,
+        "pvals_adj": 0.0002234294795451032,
+        "score": 5.3222832679748535
+      },
+      {
+        "target": "Myt1l",
+        "cell_type": "155 MB Glut",
+        "gene": "Kifc2",
+        "logfoldchanges": -0.20670077204704285,
+        "pvals": 8.01862128452472e-06,
+        "pvals_adj": 0.0043709003458113965,
+        "score": -4.464685916900635
+      },
+      {
+        "target": "Myt1l",
+        "cell_type": "155 MB Glut",
+        "gene": "Slc22a17",
+        "logfoldchanges": -0.2554952800273895,
+        "pvals": 5.664740709891188e-07,
+        "pvals_adj": 0.0006175629512664499,
+        "score": -5.002309799194336
+      },
+      {
+        "target": "Phf21a",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rreb1",
+        "logfoldchanges": 0.8785603046417236,
+        "pvals": 5.791647802674814e-14,
+        "pvals_adj": 9.99580494263646e-10,
+        "score": 7.5127081871032715
+      },
+      {
+        "target": "Phf21a",
+        "cell_type": "155 MB Glut",
+        "gene": "Rreb1",
+        "logfoldchanges": 1.952719807624817,
+        "pvals": 6.76550298419736e-16,
+        "pvals_adj": 1.1801066855335455e-11,
+        "score": 8.074677467346191
+      }
+    ],
+    "evidence_summary": "Myt1l:F001/F005 and Phf21a:F001 support broad Myt1l and Phf21a Rreb1 induction with weaker whole-signature convergence."
+  },
+  "caveats": [
+    "Myt1l-Phf21a convergence is marker-level; same-cell whole-signature correlations were only about 0.15-0.20.",
+    "PHF21A mRNA depletion was not directly detected, so the Rreb1 response needs orthogonal edit validation."
+  ],
+  "prior_expectation": {
+    "summary": "Myt1l:F001/F005 and Phf21a:F001 support broad Myt1l and Phf21a Rreb1 induction with weaker whole-signature convergence.",
+    "citations": [
+      "Mall 2017 PMID:28379941",
+      "Marcum 2020 PMID:32391601",
+      "Hakimi 2002 PMID:12032298",
+      "Lan 2007 PMID:17687328"
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 3,
+    "priority": 3
+  },
+  "report_evidence_ids": [
+    "Myt1l:E003",
+    "Myt1l:E005",
+    "Myt1l:E012",
+    "Phf21a:E002",
+    "Phf21a:E003"
+  ],
+  "reference_ids": [
+    "Myt1l:R002",
+    "Myt1l:R003",
+    "Phf21a:R003",
+    "Phf21a:R004"
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/28379941/",
+    "https://pubmed.ncbi.nlm.nih.gov/32391601/",
+    "https://pubmed.ncbi.nlm.nih.gov/12032298/",
+    "https://pubmed.ncbi.nlm.nih.gov/17687328/"
+  ]
+}

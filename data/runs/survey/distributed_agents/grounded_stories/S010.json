@@ -1,0 +1,227 @@
+{
+  "biological_interpretation": "The result supports a selective BET/chromatin-cofactor liability in thalamic glutamatergic neurons and connects BRD4 output to an active enhancer/cofactor neighborhood rather than to a generic chromatin-remodeler state.",
+  "caveats": [
+    "Brd4 mRNA itself was not FDR-depleted in the responsive cells, so downstream genes are the functional readout.",
+    "The Yy1/Brd4 relationship is based on score-vector similarity, not a physical interaction assay."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "052 Pvalb Gaba",
+    "155 MB Glut",
+    "191 MB P MY GABA"
+  ],
+  "exact_observed_result": "Brd4 perturbation produced its largest corrected signature in 151 TH Prkcd Grin2c Glut neurons, where Omg, Plch2, Sparcl1, Gria4, Gabrg2, Dpp6 and Mapk10 were reduced and Gabbr1, Gabbr2, Snap25 and Vamp2 were induced at FDR < 0.05. Yy1 perturbation aligned with Brd4, Chd8 and Trrap signatures more than with the flat Jarid2 PRC2-cofactor comparison.",
+  "preliminary_scores": {
+    "novelty": 4,
+    "priority": 4,
+    "support": 4
+  },
+  "prior_expectation": {
+    "citations": [
+      "Korb E, Herre M, Zucker-Scharff I, Darnell RB, Allis CD. BET protein Brd4 activates transcription in neurons and BET inhibitor Jq1 blocks memory in mice. Nature Neuroscience. 2015;18(10):1464-1473. doi:10.1038/nn.4095.",
+      "Martella N, Pensabene D, Varone M, Colardo M, Petraroia M, Sergio W, La Rosa P, Moreno S, Segatto M. Bromodomain and Extra-Terminal Proteins in Brain Physiology and Pathology: BET-ing on Epigenetic Regulation. Biomedicines. 2023;11(3):750. doi:10.3390/biomedicines11030750.",
+      "Weintraub AS, Li CH, Zamudio AV, Sigova AA, Hannett NM, et al. YY1 Is a Structural Regulator of Enhancer-Promoter Loops. Cell. 2017;171(7):1573-1588.e28.",
+      "Wilkinson F, Pratt H, Atchison ML. PcG recruitment by the YY1 REPO domain can be mediated by Yaf2. J Cell Biochem. 2010;109(3):478-486."
+    ],
+    "summary": "Prior work supports the broad molecular function of the perturbed target or complex, while the atlas result refines the affected brain cell type and RNA-output module."
+  },
+  "reference_ids": [
+    "Brd4:R004",
+    "Brd4:R005",
+    "Yy1:R002",
+    "Yy1:R003"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Brd4:E003",
+    "Yy1:E012",
+    "Yy1:E013"
+  ],
+  "source_claim_ids": [
+    "claim:brd4_f003_980519c60f6f",
+    "claim:yy1_f005_8dc4eaf4508a"
+  ],
+  "source_cluster_ids": [
+    "C046"
+  ],
+  "source_urls_or_dois": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10044990/",
+    "https://pubmed.ncbi.nlm.nih.gov/19960508/",
+    "https://pubmed.ncbi.nlm.nih.gov/26301327/",
+    "https://pubmed.ncbi.nlm.nih.gov/29224777/"
+  ],
+  "status": "grounded",
+  "story_id": "S010",
+  "support": {
+    "exact_de_rows": [
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 6.140679793109548e-05,
+        "fdr_significant": true,
+        "gene": "Dpp6",
+        "log2_fold_change": -0.594165,
+        "p_value": 1.209705735939073e-07,
+        "score": -5.292023,
+        "target": "Brd4"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "up",
+        "fdr": 0.0008631906335550983,
+        "fdr_significant": true,
+        "gene": "Gabbr1",
+        "log2_fold_change": 0.283382,
+        "p_value": 3.5509899172844296e-06,
+        "score": 4.636068,
+        "target": "Brd4"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "up",
+        "fdr": 0.0030378862218005103,
+        "fdr_significant": true,
+        "gene": "Gabbr2",
+        "log2_fold_change": 0.24297,
+        "p_value": 1.6590264710248803e-05,
+        "score": 4.30644,
+        "target": "Brd4"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 5.8409922247048263e-05,
+        "fdr_significant": true,
+        "gene": "Gabrg2",
+        "log2_fold_change": -0.838183,
+        "p_value": 1.1168245171519745e-07,
+        "score": -5.306611,
+        "target": "Brd4"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 2.901051247766029e-05,
+        "fdr_significant": true,
+        "gene": "Gria4",
+        "log2_fold_change": -0.61774,
+        "p_value": 4.3703188158014226e-08,
+        "score": -5.475194,
+        "target": "Brd4"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 7.928894661739095e-05,
+        "fdr_significant": true,
+        "gene": "Mapk10",
+        "log2_fold_change": -0.60378,
+        "p_value": 1.60792231972228e-07,
+        "score": -5.239752,
+        "target": "Brd4"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 1.4954871956365178e-10,
+        "fdr_significant": true,
+        "gene": "Omg",
+        "log2_fold_change": -1.141701,
+        "p_value": 8.664970135213616e-15,
+        "score": -7.757456,
+        "target": "Brd4"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 4.062918551900264e-10,
+        "fdr_significant": true,
+        "gene": "Plch2",
+        "log2_fold_change": -1.282932,
+        "p_value": 5.698142619718825e-14,
+        "score": -7.514838,
+        "target": "Brd4"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "up",
+        "fdr": 0.0013221888698645044,
+        "fdr_significant": true,
+        "gene": "Snap25",
+        "log2_fold_change": 0.231884,
+        "p_value": 6.1659319573499215e-06,
+        "score": 4.520618,
+        "target": "Brd4"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 1.2477345083509535e-08,
+        "fdr_significant": true,
+        "gene": "Sparcl1",
+        "log2_fold_change": -1.277557,
+        "p_value": 4.337682977058764e-12,
+        "score": -6.925718,
+        "target": "Brd4"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "up",
+        "fdr": 0.0015690241469173767,
+        "fdr_significant": true,
+        "gene": "Vamp2",
+        "log2_fold_change": 0.420421,
+        "p_value": 7.5484943471858566e-06,
+        "score": 4.477605,
+        "target": "Brd4"
+      }
+    ],
+    "resolved_evidence": [
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "The largest Brd4 response occurred in 151 TH Prkcd Grin2c Glut and included both induced RNA-processing markers and altered synaptic or membrane genes.",
+        "evidence_id": "E003",
+        "evidence_slug": "brd4_151_th_prkcd_signature",
+        "genes": "Pabpn1|Leng8|Fkbp2|Omg|Plch2|Sparcl1|Gabbr1|Gabbr2|Snap25|Vamp2|Gria4|Gabrg2|Dpp6|Mapk10",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "14",
+        "statistics": "93 perturbed cells versus 23679 controls; 311 FDR<0.05 genes. Examples: Omg logFC -1.142 FDR 1.50e-10, Plch2 -1.283 FDR 4.06e-10, Sparcl1 -1.278 FDR 1.25e-08, Gria4 -0.618 FDR 2.90e-05, Gabrg2 -0.838 FDR 5.84e-05, Pabpn1 +0.425 FDR 4.06e-10, Leng8 +0.391 FDR 1.85e-08.",
+        "target_gene": "Brd4"
+      },
+      {
+        "cell_type": "",
+        "description": "Restricted-signature perturbation-neighbor analysis identified Brd4, Chd8 and Trrap as recurrent positive neighbors of Yy1.",
+        "evidence_id": "E012",
+        "evidence_slug": "yy1_chromatin_signature_neighbors",
+        "genes": "Yy1|Brd4|Chd8|Trrap",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "4",
+        "statistics": "Using Pearson correlations over the top 250 absolute Yy1 score genes per group: in 151 TH, Chd8 r=0.423 rank 2/2046, Brd4 r=0.412 rank 3, Trrap r=0.362 rank 5; in 155 MB, Chd8 r=0.410 rank 2/2041, Brd4 r=0.400 rank 3, Trrap r=0.348 rank 4; in 191 MB P MY GABA, Brd4 r=0.405 rank 2, Trrap r=0.278 rank 5, Chd8 r=0.245 rank 8; in 052 Pvalb, Brd4 r=0.351 rank 2 and Trrap r=0.197 rank 16; in 308 CB GABA, Brd4 r=0.321 rank 2 and Trrap r=0.222 rank 9.",
+        "target_gene": "Yy1"
+      },
+      {
+        "cell_type": "",
+        "description": "The assayed PRC2 cofactor Jarid2 did not phenocopy the Yy1 signature, although Jarid2 target engagement was also not verified.",
+        "evidence_id": "E013",
+        "evidence_slug": "jarid2_prc2_neighbor_flat",
+        "genes": "Jarid2|Yy1",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "2",
+        "statistics": "Jarid2 perturbation had 0 FDR<0.05 genes in all 23 Yy1-assayed cell types. Jarid2 top-250 Yy1 correlations were r=-0.131 in 151 TH, -0.052 in 155 MB, 0.000 in 191 MB P MY GABA, 0.014 in 052 Pvalb, and 0.043 in 308 CB GABA; Jarid2's own transcript had 0/23 FDR<0.05 rows, with minimum FDR=0.777.",
+        "target_gene": "Yy1"
+      }
+    ],
+    "support_note": "Exact log2 fold changes, p-values, and FDRs in exact_de_rows were re-read from the Wilcoxon Parquet for this grounding pass; score-vector correlations and perturbed/control cell counts are resolved from the structured report evidence."
+  },
+  "targets": [
+    "Brd4",
+    "Yy1",
+    "Chd8",
+    "Trrap",
+    "Jarid2"
+  ],
+  "title": "BRD4 loss remodels synaptic and membrane transcripts in thalamic Prkcd/Grin2c neurons"
+}

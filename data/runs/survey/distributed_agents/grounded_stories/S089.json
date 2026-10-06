@@ -1,0 +1,127 @@
+{
+  "story_id": "S089",
+  "title": "Atxn1 and Cic converge on a thalamic synaptic reporter module",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Atxn1 perturbation generated a 187-gene 151 TH response with Dclk1 up, Lrrc7 down, Tecr up, Aldh1l2 up, Trim9 down, Ankrd55 up, and Grin2c down. The report identified Cic as the top non-Atxn1 151 TH signature neighbor, with Pearson r=0.543 across 17,259 genes and all 130 shared FDR genes having the same sign.",
+  "biological_interpretation": "The Atxn1-loss-like adult thalamic state is strongly CIC-linked and nominates a compact mixed-direction reporter module rather than a generic ataxia-gene response.",
+  "targets": [
+    "Atxn1",
+    "Cic",
+    "Ankrd55",
+    "Tecr",
+    "Aldh1l2",
+    "Lrrc7",
+    "Trim9",
+    "Grin2c"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut"
+  ],
+  "support": {
+    "support_level": 5,
+    "exact_de_rows": [
+      {
+        "gene_target": "Atxn1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Dclk1",
+        "log2_fold_change": 0.6006513237953186,
+        "pvals_adj": 2.9289600767505813e-12,
+        "wilcoxon_score": 8.241752624511719
+      },
+      {
+        "gene_target": "Atxn1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lrrc7",
+        "log2_fold_change": -0.27431124448776245,
+        "pvals_adj": 7.187267098686153e-11,
+        "wilcoxon_score": -7.762475967407227
+      },
+      {
+        "gene_target": "Atxn1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Aldh1l2",
+        "log2_fold_change": 4.439804553985596,
+        "pvals_adj": 4.247468192470472e-08,
+        "wilcoxon_score": 6.708317279815674
+      },
+      {
+        "gene_target": "Atxn1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Trim9",
+        "log2_fold_change": -0.36150601506233215,
+        "pvals_adj": 1.8304860606761246e-07,
+        "wilcoxon_score": -6.4580512046813965
+      },
+      {
+        "gene_target": "Atxn1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ankrd55",
+        "log2_fold_change": 1.458727478981018,
+        "pvals_adj": 2.593852736785626e-07,
+        "wilcoxon_score": 6.390523433685303
+      },
+      {
+        "gene_target": "Atxn1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Grin2c",
+        "log2_fold_change": -0.2814478874206543,
+        "pvals_adj": 0.004093175073872459,
+        "wilcoxon_score": -4.290998935699463
+      }
+    ],
+    "report_evidence_summary": [
+      "Atxn1:E002",
+      "Atxn1:E003",
+      "Atxn1:E004",
+      "Atxn1:E005",
+      "Atxn1:E009"
+    ]
+  },
+  "caveats": [
+    "Atxn1 transcript depletion was not FDR-detected, so the signature is not proportional to measured Atxn1 mRNA loss.",
+    "CIC occupancy and ATXN1-CIC protein complex disruption were not measured."
+  ],
+  "prior_expectation": {
+    "summary": "disruption of the ATXN1-CIC complex causes neurobehavioral phenotypes in mice and humans; the ATXN1-CIC complex is a major driver of SCA1 cerebellar pathology in disease models",
+    "citations": [
+      {
+        "ref_id": "Atxn1:R006",
+        "ref": "Lu et al. 2017 PMID:28288114",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/28288114/",
+        "supports": "disruption of the ATXN1-CIC complex causes neurobehavioral phenotypes in mice and humans"
+      },
+      {
+        "ref_id": "Atxn1:R007",
+        "ref": "Rousseaux et al. 2018 PMID:29526553",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/29526553/",
+        "supports": "the ATXN1-CIC complex is a major driver of SCA1 cerebellar pathology in disease models"
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 5,
+    "priority": 4
+  },
+  "report_evidence_ids": [
+    "Atxn1:E002",
+    "Atxn1:E003",
+    "Atxn1:E004",
+    "Atxn1:E005",
+    "Atxn1:E009"
+  ],
+  "reference_ids": [
+    "Atxn1:R001",
+    "Atxn1:R002",
+    "Atxn1:R006",
+    "Atxn1:R007"
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/28288114/",
+    "https://pubmed.ncbi.nlm.nih.gov/29526553/"
+  ],
+  "source_claim_ids": [
+    "claim:atxn1_f001_91da117bf6e6"
+  ]
+}

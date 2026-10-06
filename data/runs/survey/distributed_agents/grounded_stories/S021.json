@@ -1,0 +1,254 @@
+{
+  "biological_interpretation": "CAML depletion appears as a cell-restricted neuronal receptor and synaptic-vesicle trafficking liability, consistent with CAMLG/WRB function in ER tail-anchored-protein insertion but narrower than a pan-neuronal collapse.",
+  "caveats": [
+    "The assay measures steady-state mRNA, not membrane insertion or receptor localization.",
+    "Most Caml-assayed cell types had no FDR-level downstream response despite directional Caml reduction."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "052 Pvalb Gaba"
+  ],
+  "exact_observed_result": "Caml was FDR-depleted in 151 TH Prkcd Grin2c Glut and 155 MB Glut, the two clearest response classes. The 151 TH program reduced receptor and membrane genes including Lingo1, Gabrd, Gabra1, Chrnb2, Syp and Thy1, while the 155 MB program reduced Sv2a, Syp, Slc12a5, Atp1a3, Gabbr1 and Glrb.",
+  "preliminary_scores": {
+    "novelty": 4,
+    "priority": 4,
+    "support": 5
+  },
+  "prior_expectation": {
+    "citations": [
+      "UniProtKB entry P49069, CAMLG_HUMAN, guided entry of tail-anchored proteins factor CAMLG.",
+      "Yamamoto Y, Sakisaka T. Molecular machinery for insertion of tail-anchored membrane proteins into the endoplasmic reticulum membrane in mammalian cells. Mol Cell. 2012;48(3):387-397. doi:10.1016/j.molcel.2012.08.028. PMID:23041287.",
+      "Vilardi F, Stephan M, Clancy A, Janshoff A, Schwappach B. WRB and CAML are necessary and sufficient to mediate tail-anchored protein targeting to the ER membrane. PLoS One. 2014;9(1):e85033. doi:10.1371/journal.pone.0085033. PMID:24392163.",
+      "Reactome Content Service entries R-HSA-9609899 and R-HSA-9609917 for ASNA1/TRC40-bound tail-anchored proteins docking at and dissociating from the WRB:CAMLG ER-membrane complex."
+    ],
+    "summary": "Prior work supports the broad molecular function of the perturbed target or complex, while the atlas result refines the affected brain cell type and RNA-output module."
+  },
+  "reference_ids": [
+    "Caml:R001",
+    "Caml:R002",
+    "Caml:R003",
+    "Caml:R004"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Caml:E001",
+    "Caml:E002",
+    "Caml:E003"
+  ],
+  "source_claim_ids": [
+    "claim:caml_f001_b5004b64ae99"
+  ],
+  "source_cluster_ids": [
+    "C162"
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/23041287/",
+    "https://pubmed.ncbi.nlm.nih.gov/24392163/",
+    "https://reactome.org/content/detail/R-HSA-9609899",
+    "https://www.uniprot.org/uniprotkb/P49069/entry"
+  ],
+  "status": "grounded",
+  "story_id": "S021",
+  "support": {
+    "exact_de_rows": [
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.028528424380677164,
+        "fdr_significant": true,
+        "gene": "Caml",
+        "log2_fold_change": -0.375208,
+        "p_value": 3.407516597839002e-05,
+        "score": -4.144368,
+        "target": "Caml"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.00038791135492903246,
+        "fdr_significant": true,
+        "gene": "Lingo1",
+        "log2_fold_change": -0.326907,
+        "p_value": 2.247588822811475e-08,
+        "score": -5.591776,
+        "target": "Caml"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.002393110574480312,
+        "fdr_significant": true,
+        "gene": "Gabrd",
+        "log2_fold_change": -0.281064,
+        "p_value": 5.546348164969724e-07,
+        "score": -5.006379,
+        "target": "Caml"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.01341642086237262,
+        "fdr_significant": true,
+        "gene": "Gabra1",
+        "log2_fold_change": -0.285645,
+        "p_value": 8.550937452117667e-06,
+        "score": -4.450904,
+        "target": "Caml"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.023039202578024352,
+        "fdr_significant": true,
+        "gene": "Chrnb2",
+        "log2_fold_change": -0.326272,
+        "p_value": 2.323821773708585e-05,
+        "score": -4.231264,
+        "target": "Caml"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.015366504908459967,
+        "fdr_significant": true,
+        "gene": "Syp",
+        "log2_fold_change": -0.207128,
+        "p_value": 1.0684168196391425e-05,
+        "score": -4.402843,
+        "target": "Caml"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.04684078728518493,
+        "fdr_significant": true,
+        "gene": "Thy1",
+        "log2_fold_change": -0.165066,
+        "p_value": 7.327778299437935e-05,
+        "score": -3.965384,
+        "target": "Caml"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "down",
+        "fdr": 0.003359885199671845,
+        "fdr_significant": true,
+        "gene": "Caml",
+        "log2_fold_change": -0.552869,
+        "p_value": 5.778625006601809e-07,
+        "score": -4.998473,
+        "target": "Caml"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "down",
+        "fdr": 0.0030278707508075197,
+        "fdr_significant": true,
+        "gene": "Sv2a",
+        "log2_fold_change": -0.420117,
+        "p_value": 2.2155781203870155e-07,
+        "score": -5.180276,
+        "target": "Caml"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "down",
+        "fdr": 0.006694877183918585,
+        "fdr_significant": true,
+        "gene": "Syp",
+        "log2_fold_change": -0.246422,
+        "p_value": 1.5759428773176602e-06,
+        "score": -4.801357,
+        "target": "Caml"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "down",
+        "fdr": 0.008488362808115121,
+        "fdr_significant": true,
+        "gene": "Slc12a5",
+        "log2_fold_change": -0.396887,
+        "p_value": 4.12746934590798e-06,
+        "score": -4.604858,
+        "target": "Caml"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "down",
+        "fdr": 0.008572973219310907,
+        "fdr_significant": true,
+        "gene": "Atp1a3",
+        "log2_fold_change": -0.227202,
+        "p_value": 4.914850208857942e-06,
+        "score": -4.56839,
+        "target": "Caml"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "down",
+        "fdr": 0.0207517929284215,
+        "fdr_significant": true,
+        "gene": "Gabbr1",
+        "log2_fold_change": -0.294641,
+        "p_value": 1.511456186013291e-05,
+        "score": -4.327012,
+        "target": "Caml"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "direction": "down",
+        "fdr": 0.023246706102088645,
+        "fdr_significant": true,
+        "gene": "Glrb",
+        "log2_fold_change": -0.376952,
+        "p_value": 1.999086117819926e-05,
+        "score": -4.264993,
+        "target": "Caml"
+      }
+    ],
+    "resolved_evidence": [
+      {
+        "cell_type": "",
+        "description": "Dataset-wide on-target transcript summary for the Caml guide group.",
+        "evidence_id": "E001",
+        "evidence_slug": "caml_target_engagement_all_cell_types",
+        "genes": "Caml",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "1",
+        "statistics": "Caml was measured under Caml perturbation in 23 cell types; perturbed-cell counts ranged from 23 to 209 with median 66; Caml logFC was negative in 22/23, nominal p<0.05 in 12/23, and FDR<0.05 only in 151 TH Prkcd Grin2c Glut and 155 MB Glut; mean Caml logFC=-0.353.",
+        "target_gene": "Caml"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "Strong thalamic glutamatergic Caml response dominated by down-regulated membrane, receptor, and synaptic genes.",
+        "evidence_id": "E002",
+        "evidence_slug": "caml_151_th_prkcd_grin2c_glut_strong_signature",
+        "genes": "Caml|Lingo1|Crem|Slc24a3|Gabrd|Gabra1|Chrnb2|Syp|Sel1l|Ric3|Thy1",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "11",
+        "statistics": "209 perturbed cells versus 23679 controls; 28 genes FDR<0.05. Caml logFC=-0.375, p=3.41e-5, FDR=0.0285; top examples include Lingo1 logFC=-0.327 FDR=3.88e-4, Crem logFC=0.702 FDR=4.87e-4, Slc24a3 logFC=-0.396 FDR=4.87e-4, Gabrd logFC=-0.281 FDR=0.00239, Gabra1 logFC=-0.286 FDR=0.0134, and Chrnb2 logFC=-0.326 FDR=0.0230.",
+        "target_gene": "Caml"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "description": "Strong midbrain glutamatergic Caml response with target knockdown and down-regulation of synaptic vesicle, cytoskeletal, and neurotransmitter-receptor genes.",
+        "evidence_id": "E003",
+        "evidence_slug": "caml_155_mb_glut_strong_signature",
+        "genes": "Caml|Sv2a|Syp|Slc12a5|Atp1a3|Gabbr1|Glrb|Tubb3|Tubb4a|Ptprn2|Chgb",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "11",
+        "statistics": "192 perturbed cells versus 20353 controls; 18 genes FDR<0.05. Caml logFC=-0.553, p=5.78e-7, FDR=0.00336; Sv2a logFC=-0.420 FDR=0.00303, Syp logFC=-0.246 FDR=0.00670, Slc12a5 logFC=-0.397 FDR=0.00849, Atp1a3 logFC=-0.227 FDR=0.00857, Gabbr1 logFC=-0.295 FDR=0.0208, and Glrb logFC=-0.377 FDR=0.0232.",
+        "target_gene": "Caml"
+      }
+    ],
+    "support_note": "Exact log2 fold changes, p-values, and FDRs in exact_de_rows were re-read from the Wilcoxon Parquet for this grounding pass; score-vector correlations and perturbed/control cell counts are resolved from the structured report evidence."
+  },
+  "targets": [
+    "Caml"
+  ],
+  "title": "Caml loss lowers receptor and vesicle transcripts in thalamic and midbrain glutamatergic neurons"
+}

@@ -1,0 +1,40 @@
+{
+  "story_id": "S118",
+  "title": "Bptf loss drives a posterior neuronal Grk4/Zcwpw2/Resp18 chromatin-response that opposes Chd4 on diagnostic genes",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Bptf perturbation drove Zcwpw2 and Grk4 up with Resp18, Abhd14b, and Stxbp2 down in 151 TH Prkcd/Grin2c, 155 MB Glut, and 191 MB P MY GABA. In 151 and 155, Chd4 was the most negative restricted-signature neighbor of the Bptf FDR gene set.",
+  "biological_interpretation": "BPTF/NURF loss defines a posterior neuronal chromatin-response branch that is not equivalent to CHD4/NuRD direction; both are chromatin remodeler-associated, but they push diagnostic Bptf genes in opposite directions.",
+  "targets": ["Bptf", "Chd4", "Atrx", "Trrap", "Grk4", "Zcwpw2", "Resp18", "Rgs11", "Stxbp2", "Abhd14b"],
+  "cell_types": ["151 TH Prkcd Grin2c Glut", "155 MB Glut", "191 MB P MY GABA", "052 Pvalb Gaba", "066 CNU-HYa HY GABA", "110 CNU-HYa HY MM Glut", "145 MH-LH TH Glut"],
+  "support": [
+    {
+      "evidence_id": "Bptf:E001;Bptf:E002;Bptf:E003;Bptf:E011;Bptf:E012;Atrx:E011",
+      "description": "The core Bptf branch repeats across three posterior classes and opposes Chd4 in the two strongest Bptf contexts; Resp18 is a narrow Atrx/Bptf/Trrap convergence marker.",
+      "exact_de_rows": [
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Bptf", "gene": "Zcwpw2", "logfoldchanges": 1.738, "pvals": null, "pvals_adj": 1.55e-22},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Bptf", "gene": "Resp18", "logfoldchanges": -1.377, "pvals": null, "pvals_adj": 3.99e-19},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Bptf", "gene": "Grk4", "logfoldchanges": 2.519, "pvals": null, "pvals_adj": 1.07e-05},
+        {"cell_type": "155 MB Glut", "gene_target": "Bptf", "gene": "Zcwpw2", "logfoldchanges": 1.263, "pvals": null, "pvals_adj": 3.17e-10},
+        {"cell_type": "155 MB Glut", "gene_target": "Bptf", "gene": "Abhd14b", "logfoldchanges": -1.173, "pvals": null, "pvals_adj": 1.43e-09},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Chd4", "gene": "Stxbp2", "logfoldchanges": 0.584, "pvals": null, "pvals_adj": 0.000388}
+      ]
+    }
+  ],
+  "caveats": [
+    "Many Bptf-responsive rows were summarized at FDR<0.1, so the story relies on the diagnostic FDR<0.05 core rather than every tail gene.",
+    "The Chd4 opposition is a restricted-signature projection and does not imply a direct biochemical antagonism.",
+    "Atrx convergence is only marker-level on Resp18, not a broad phenocopy."
+  ],
+  "prior_expectation": {
+    "summary": "BPTF is the large NURF subunit and reads H3K4me3 through its PHD finger, whereas CHD4 is part of the NuRD remodeling complex; these priors support chromatin involvement but not the observed opposite direction.",
+    "citations": [
+      {"reference_id": "Bptf:R001", "citation": "Wysocka et al., Nature, 2006.", "url_or_doi": "https://doi.org/10.1038/nature04815"},
+      {"reference_id": "Bptf:R007", "citation": "Low et al., Journal of Biological Chemistry, 2016.", "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/27235397/"}
+    ]
+  },
+  "preliminary_scores": {"novelty": 4, "support": 4, "priority": 4},
+  "report_evidence_ids": ["Bptf:E001", "Bptf:E002", "Bptf:E003", "Bptf:E004", "Bptf:E011", "Bptf:E012", "Atrx:E003", "Atrx:E007", "Atrx:E011"],
+  "reference_ids": ["Bptf:R001", "Bptf:R002", "Bptf:R003", "Bptf:R004", "Bptf:R007", "Atrx:R006"],
+  "source_urls_or_dois": ["https://doi.org/10.1038/nature04815", "https://pubmed.ncbi.nlm.nih.gov/16728978/", "https://pubmed.ncbi.nlm.nih.gov/21596426/", "https://doi.org/10.1371/journal.pgen.1000241", "https://pubmed.ncbi.nlm.nih.gov/27235397/"]
+}

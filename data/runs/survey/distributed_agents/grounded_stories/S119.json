@@ -1,0 +1,480 @@
+{
+  "biological_interpretation": "The ER-stress readout is tied to SEC63-mediated ER import/folding stress rather than a generic response to partial TRAP, OST, COPII, ERGIC or glycan-trimming ERAD perturbation.",
+  "caveats": [
+    "Sec63 transcript depletion itself was not measured as an FDR self-row in the report, constraining causal certainty.",
+    "Sec61/Sec62 and several polycystic kidney disease ER genes were not in the perturbation library."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut"
+  ],
+  "exact_observed_result": "Sec63 perturbation in 151 TH induced Hspa5, Canx, Hyou1 and Chac1 at FDR, with Pdia4 and Hsp90b1 just below conventional FDR; 155 MB Glut had an Hspa5-only FDR echo. Ssr4, Stt3b, Sec23a, Sar1b, Ergic1 and Edem3 failed to reproduce Hspa5/Canx/Hyou1 induction in matched contexts.",
+  "preliminary_scores": {
+    "novelty": 3,
+    "priority": 4,
+    "support": 4
+  },
+  "prior_expectation": {
+    "citations": [
+      "Lang et al. 2012 doi:10.1242/jcs.096727",
+      "Fedeles et al. 2011 doi:10.1038/ng.860",
+      "Mungrue et al. 2009 doi:10.4049/jimmunol.182.1.466"
+    ],
+    "expectation": "SEC63 is an ER translocation factor and HSPA5/BiP is an ER folding/UPR chaperone; the neuronal selectivity over other secretory perturbations is the refinement."
+  },
+  "reference_ids": [
+    "Edem3:R001",
+    "Edem3:R006",
+    "Ergic1:R006",
+    "Sec63:R001",
+    "Sec63:R002",
+    "Sec63:R003",
+    "Sec63:R004",
+    "Sec63:R005",
+    "Sec63:R006",
+    "Sec63:R007",
+    "Sec63:R008",
+    "Sec63:R009",
+    "Ssr4:R002",
+    "Ssr4:R005",
+    "Ssr4:R006"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Edem3:E007",
+    "Edem3:E009",
+    "Ergic1:E002",
+    "Ergic1:E006",
+    "Ergic1:E007",
+    "Sec63:E002",
+    "Sec63:E003",
+    "Sec63:E007",
+    "Sec63:E008",
+    "Sec63:E010",
+    "Sec63:E011",
+    "Sec63:E012",
+    "Ssr4:E009",
+    "Ssr4:E011",
+    "Ssr4:E012"
+  ],
+  "source_claims": [
+    {
+      "claim_id": "claim:sec63_f001_f7ea88aa0c6a",
+      "finding_id": "F001",
+      "gene": "Sec63",
+      "role": "member"
+    },
+    {
+      "claim_id": "claim:sec63_f006_f0ccfc99e9a9",
+      "finding_id": "F006",
+      "gene": "Sec63",
+      "role": "peripheral"
+    },
+    {
+      "claim_id": "claim:edem3_f003_7f93972a34a4",
+      "finding_id": "F003",
+      "gene": "Edem3",
+      "role": "peripheral"
+    },
+    {
+      "claim_id": "claim:ergic1_f003_e920f98705c5",
+      "finding_id": "F003",
+      "gene": "Ergic1",
+      "role": "peripheral"
+    },
+    {
+      "claim_id": "claim:ssr4_f003_684ba7eb382f",
+      "finding_id": "F003",
+      "gene": "Ssr4",
+      "role": "peripheral"
+    },
+    {
+      "claim_id": "claim:sec63_f004_db486f1a0b69",
+      "finding_id": "F004",
+      "gene": "Sec63",
+      "role": "member"
+    }
+  ],
+  "source_references": [
+    {
+      "citation": "UniProtKB reviewed entry Q8VHE0, SEC63_MOUSE, translocation protein SEC63 homolog, Mus musculus.",
+      "description": "Curated SEC63 function, ER membrane localization, auxiliary SEC61-translocon membership, and mouse disruption phenotype used to interpret the perturbation.",
+      "ref_id": "R001",
+      "ref_slug": "uniprot_sec63_mouse_q8vhe0",
+      "source": "UniProtKB",
+      "source_type": "database",
+      "target_gene": "Sec63",
+      "url": "https://www.uniprot.org/uniprotkb/Q8VHE0"
+    },
+    {
+      "citation": "Lang S, Benedix J, Fedeles SV, et al. Different effects of Sec61\u03b1, Sec62 and Sec63 depletion on transport of polypeptides into the endoplasmic reticulum of mammalian cells. J Cell Sci. 2012;125(Pt 8):1958-1969. doi:10.1242/jcs.096727.",
+      "description": "Experimental mammalian study showing that SEC63 has precursor-specific involvement in the initial phase of co-translational ER protein transport.",
+      "ref_id": "R002",
+      "ref_slug": "lang_2012_sec61_sec62_sec63_transport",
+      "source": "Journal of Cell Science",
+      "source_type": "pubmed",
+      "target_gene": "Sec63",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22375059/"
+    },
+    {
+      "citation": "Fedeles SV, Tian X, Gallagher AR, et al. A genetic interaction network of five genes for human polycystic kidney and liver diseases defines polycystin-1 as the central determinant of cyst formation. Nat Genet. 2011;43(7):639-647. doi:10.1038/ng.860.",
+      "description": "Connects SEC63 and ER quality-control genes to polycystic kidney/liver disease through inadequate Polycystin-1 biogenesis.",
+      "ref_id": "R003",
+      "ref_slug": "fedeles_2011_sec63_pkd1_polycystic_disease",
+      "source": "Nature Genetics",
+      "source_type": "pubmed",
+      "target_gene": "Sec63",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21685914/"
+    },
+    {
+      "citation": "UniProtKB reviewed entry P20029, BIP_MOUSE, endoplasmic reticulum chaperone BiP, Mus musculus.",
+      "description": "Curated Hspa5/BiP molecular function as an ER folding and quality-control chaperone and UPR regulator.",
+      "ref_id": "R004",
+      "ref_slug": "uniprot_hspa5_bip_mouse_p20029",
+      "source": "UniProtKB",
+      "source_type": "database",
+      "target_gene": "Sec63",
+      "url": "https://www.uniprot.org/uniprotkb/P20029"
+    },
+    {
+      "citation": "UniProtKB reviewed mouse entries Q01405 SEC23A_MOUSE, Q3UPL0 SC31A_MOUSE, Q9CQC9 SAR1B_MOUSE, Q62186 SSRD_MOUSE, and Q3TDQ1 STT3B_MOUSE.",
+      "description": "Functional annotations identifying Sec23a, Sec31a, Sar1b, Ssr4, and Stt3b as COPII, TRAP/SSR, or OST/ER-secretory-pathway comparators.",
+      "ref_id": "R005",
+      "ref_slug": "uniprot_early_secretory_comparators_mouse",
+      "source": "UniProtKB",
+      "source_type": "database",
+      "target_gene": "Sec63",
+      "url": "https://www.uniprot.org/"
+    },
+    {
+      "citation": "Mungrue IN, Pagnon J, Kohannim O, Gargalovic PS, Lusis AJ. CHAC1/MGC4504 is a novel proapoptotic component of the unfolded protein response, downstream of the ATF4-ATF3-CHOP cascade. J Immunol. 2009;182(1):466-476. doi:10.4049/jimmunol.182.1.466.",
+      "description": "Primary source for interpreting Chac1 induction as an ATF4-arm unfolded-protein-response marker.",
+      "ref_id": "R006",
+      "ref_slug": "mungrue_2009_chac1_atf4_upr",
+      "source": "Journal of Immunology",
+      "source_type": "pubmed",
+      "target_gene": "Sec63",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19109178/"
+    },
+    {
+      "citation": "QuickGO records for GO:0034976 response to endoplasmic reticulum stress, GO:0006986 response to unfolded protein, GO:0036503 ERAD pathway, GO:0006614 SRP-dependent cotranslational protein targeting to membrane, GO:0006620 post-translational protein targeting to ER membrane, and GO:0031204 post-translational protein targeting to membrane translocation.",
+      "description": "Ontology definitions for ER-stress, ERAD, and ER protein-targeting processes used to label the pathway layer.",
+      "ref_id": "R007",
+      "ref_slug": "quickgo_er_stress_erad_sec63_terms",
+      "source": "QuickGO / Gene Ontology",
+      "source_type": "database",
+      "target_gene": "Sec63",
+      "url": "https://www.ebi.ac.uk/QuickGO/"
+    },
+    {
+      "citation": "UniProtKB reviewed entry P38647, HSPA9_MOUSE, stress-70 protein, mitochondrial, Mus musculus.",
+      "description": "Curated Hspa9 annotation used to classify one positive Sec63 signature neighbor as a proteostasis perturbation.",
+      "ref_id": "R008",
+      "ref_slug": "uniprot_hspa9_mouse_p38647",
+      "source": "UniProtKB",
+      "source_type": "database",
+      "target_gene": "Sec63",
+      "url": "https://www.uniprot.org/uniprotkb/P38647"
+    },
+    {
+      "citation": "Pauwels E, Sch\u00fclein R, Vermeire K. Inhibitors of the Sec61 Complex and Novel High Throughput Screening Strategies to Target the Protein Translocation Pathway. Int J Mol Sci. 2021;22(21):12007. doi:10.3390/ijms222112007.",
+      "description": "Review explaining that pharmacologic blockade of SEC61-dependent ER import is pursued in oncology but is mechanistically distinct from direct SEC63 perturbation.",
+      "ref_id": "R009",
+      "ref_slug": "pauwels_2021_sec61_inhibitor_review",
+      "source": "International Journal of Molecular Sciences",
+      "source_type": "review",
+      "target_gene": "Sec63",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34769437/"
+    },
+    {
+      "citation": "UniProtKB. EDEM3_HUMAN Q9BZQ6 and EDEM3_MOUSE Q2HXL6 entries.",
+      "description": "Curated protein-function entries annotating EDEM3 as an ER protein involved in glycoprotein ERAD and mannose trimming.",
+      "ref_id": "R001",
+      "ref_slug": "uniprot_edem3",
+      "source": "UniProtKB",
+      "source_type": "database",
+      "target_gene": "Edem3",
+      "url": "https://www.uniprot.org/uniprotkb/Q9BZQ6/entry"
+    },
+    {
+      "citation": "Reactome reaction R-HSA-6782685. EDEM1,3 hydrolyse (GlcNAc)2 (Man)8b to (GlcNAc)2 (Man)5.",
+      "description": "Authoritative pathway record placing EDEM3 together with EDEM1 in ER quality-control mannose trimming upstream of ERAD.",
+      "ref_id": "R006",
+      "ref_slug": "reactome_edem1_3_hydrolysis",
+      "source": "Reactome",
+      "source_type": "database",
+      "target_gene": "Edem3",
+      "url": "https://reactome.org/content/detail/R-HSA-6782685"
+    },
+    {
+      "citation": "Reactome event R-HSA-381158, ATF6:HSPA5 dissociates and HSPA5 binds unfolded protein.",
+      "description": "Curated pathway context for HSPA5/BiP as an ER chaperone coupled to unfolded-protein-response sensor regulation.",
+      "ref_id": "R006",
+      "ref_slug": "reactome_hspa5_atf6_bip",
+      "source": "Reactome",
+      "source_type": "database",
+      "target_gene": "Ergic1",
+      "url": "https://reactome.org/content/detail/R-HSA-381158"
+    },
+    {
+      "citation": "STRING functional protein association network for mouse Ssr4, accessed through the STRING API.",
+      "description": "Places Ssr4 next to Ssr1, Ssr2, Ssr3, Sec61 and oligosaccharyltransferase-associated components in mouse.",
+      "ref_id": "R002",
+      "ref_slug": "string_mouse_ssr4_network",
+      "source": "STRING",
+      "source_type": "database",
+      "target_gene": "Ssr4",
+      "url": "https://string-db.org/"
+    },
+    {
+      "citation": "Jaskolowski M, Jomaa A, Gamerdinger M, Shrestha S, Leibundgut M, Deuerling E, Ban N. Molecular basis of the TRAP complex function in ER protein biogenesis. Nature Structural & Molecular Biology. 2023;30:770-777. doi:10.1038/s41594-023-00990-0.",
+      "description": "Structural study showing how mammalian TRAP engages the translating ribosome and Sec61 translocon.",
+      "ref_id": "R005",
+      "ref_slug": "jaskolowski_2023_trap_sec61_ribosome_structure",
+      "source": "Nature Structural & Molecular Biology",
+      "source_type": "pubmed",
+      "target_gene": "Ssr4",
+      "url": "https://doi.org/10.1038/s41594-023-00990-0"
+    },
+    {
+      "citation": "Nguyen D, Stutz R, Schorr S, Lang S, Pfeffer S, Freeze HH, F\u00f6rster F, Helms V, Dudek J, Zimmermann R. Proteomics reveals signal peptide features determining the client specificity in human TRAP-dependent ER protein import. Nature Communications. 2018;9:3765. doi:10.1038/s41467-018-06188-z.",
+      "description": "Proteomic evidence that TRAP assists a subset of Sec61 clients rather than all ER-imported precursors.",
+      "ref_id": "R006",
+      "ref_slug": "nguyen_2018_trap_client_specificity",
+      "source": "Nature Communications",
+      "source_type": "pubmed",
+      "target_gene": "Ssr4",
+      "url": "https://doi.org/10.1038/s41467-018-06188-z"
+    }
+  ],
+  "source_urls_or_dois": [
+    "https://doi.org/10.1038/s41467-018-06188-z",
+    "https://doi.org/10.1038/s41594-023-00990-0",
+    "https://pubmed.ncbi.nlm.nih.gov/19109178/",
+    "https://pubmed.ncbi.nlm.nih.gov/21685914/",
+    "https://pubmed.ncbi.nlm.nih.gov/22375059/",
+    "https://pubmed.ncbi.nlm.nih.gov/34769437/",
+    "https://reactome.org/content/detail/R-HSA-381158",
+    "https://reactome.org/content/detail/R-HSA-6782685",
+    "https://string-db.org/",
+    "https://www.ebi.ac.uk/QuickGO/",
+    "https://www.uniprot.org/",
+    "https://www.uniprot.org/uniprotkb/P20029",
+    "https://www.uniprot.org/uniprotkb/P38647",
+    "https://www.uniprot.org/uniprotkb/Q8VHE0",
+    "https://www.uniprot.org/uniprotkb/Q9BZQ6/entry"
+  ],
+  "status": "grounded",
+  "story_id": "S119",
+  "support": [
+    {
+      "exact_de_rows": [
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.0006309438767311054,
+          "gene": "Hspa5",
+          "gene_target": "Sec63",
+          "log2fc": 0.9235924482345581,
+          "pval": 3.655738320476884e-08,
+          "score": 5.506723403930664
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.006067065505892488,
+          "gene": "Canx",
+          "gene_target": "Sec63",
+          "log2fc": 0.7230780720710754,
+          "pval": 1.0545916054045694e-06,
+          "score": 4.881168365478516
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.008762012244699071,
+          "gene": "Hyou1",
+          "gene_target": "Sec63",
+          "log2fc": 0.6332706212997437,
+          "pval": 2.2279395282449625e-06,
+          "score": 4.731566429138184
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.01785198019527091,
+          "gene": "Chac1",
+          "gene_target": "Sec63",
+          "log2fc": 2.0302562713623047,
+          "pval": 6.714977916069165e-06,
+          "score": 4.502528190612793
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.06882908581339692,
+          "gene": "Pdia4",
+          "gene_target": "Sec63",
+          "log2fc": 0.8228774666786194,
+          "pval": 6.15973471559919e-05,
+          "score": 4.006606578826904
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.06882908581339692,
+          "gene": "Hsp90b1",
+          "gene_target": "Sec63",
+          "log2fc": 0.5029556751251221,
+          "pval": 6.380817967520428e-05,
+          "score": 3.9982662200927734
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Derl3",
+          "gene_target": "Sec63",
+          "log2fc": 2.2060039043426514,
+          "pval": 0.01825569395209106,
+          "score": 2.3603906631469727
+        },
+        {
+          "cell_type": "155 MB Glut",
+          "fdr": 0.029811581065927642,
+          "gene": "Hspa5",
+          "gene_target": "Sec63",
+          "log2fc": 1.028456687927246,
+          "pval": 1.7090856541837781e-06,
+          "score": 4.785092353820801
+        },
+        {
+          "cell_type": "155 MB Glut",
+          "fdr": 0.36283940597526604,
+          "gene": "Hyou1",
+          "gene_target": "Sec63",
+          "log2fc": 0.8845660090446472,
+          "pval": 4.160286716450909e-05,
+          "score": 4.098392963409424
+        },
+        {
+          "cell_type": "155 MB Glut",
+          "fdr": 1.0,
+          "gene": "Dnajb9",
+          "gene_target": "Sec63",
+          "log2fc": 0.9781103730201721,
+          "pval": 0.0011308308999853545,
+          "score": 3.2557756900787354
+        }
+      ],
+      "finding": "Sec63 ER chaperone rows"
+    },
+    {
+      "exact_de_rows": [
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 5.6528379698307536e-05,
+          "gene": "Ssr4",
+          "gene_target": "Ssr4",
+          "log2fc": -0.6403447389602661,
+          "pval": 3.2752986672638935e-09,
+          "score": -5.917169094085693
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Hspa5",
+          "gene_target": "Ssr4",
+          "log2fc": 0.06810580939054489,
+          "pval": 0.36423619648363814,
+          "score": 0.9073226451873779
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Canx",
+          "gene_target": "Ssr4",
+          "log2fc": 0.1996580958366394,
+          "pval": 0.0714820142929034,
+          "score": 1.8024030923843384
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Chac1",
+          "gene_target": "Ssr4",
+          "log2fc": 0.15784123539924622,
+          "pval": 0.8386580421188243,
+          "score": 0.20361030101776123
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.0003687948946324805,
+          "gene": "Stt3b",
+          "gene_target": "Stt3b",
+          "log2fc": -0.6188505291938782,
+          "pval": 2.1368265521321077e-08,
+          "score": -5.600542068481445
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Hspa5",
+          "gene_target": "Stt3b",
+          "log2fc": 0.02102659083902836,
+          "pval": 0.9423648971447874,
+          "score": 0.0722978264093399
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 2.5589706968380745e-17,
+          "gene": "Ergic1",
+          "gene_target": "Ergic1",
+          "log2fc": -0.8203280568122864,
+          "pval": 1.4826876973394024e-21,
+          "score": -9.536125183105469
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Hspa5",
+          "gene_target": "Ergic1",
+          "log2fc": -0.080330990254879,
+          "pval": 0.3452005258660933,
+          "score": -0.9439395666122437
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Hyou1",
+          "gene_target": "Ergic1",
+          "log2fc": 0.14902493357658386,
+          "pval": 0.12277802574385996,
+          "score": 1.543217420578003
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Edem3",
+          "gene_target": "Edem3",
+          "log2fc": -0.2592839300632477,
+          "pval": 0.025211160332908666,
+          "score": -2.238151788711548
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0,
+          "gene": "Hspa5",
+          "gene_target": "Edem3",
+          "log2fc": 0.33103281259536743,
+          "pval": 0.004443183857994631,
+          "score": 2.844853639602661
+        }
+      ],
+      "finding": "secretory boundary rows"
+    }
+  ],
+  "targets": [
+    "Sec63",
+    "Ssr4",
+    "Stt3b",
+    "Sec23a",
+    "Sar1b",
+    "Ergic1",
+    "Edem3"
+  ],
+  "title": "Sec63 uniquely induces an ER-chaperone compensation module"
+}

@@ -1,0 +1,479 @@
+{
+  "story_id": "S092",
+  "title": "Ctbp1 and Zeb1 share a thalamic polarity and vesicle-trafficking response distinct from Zeb2",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Ctbp1 and Zeb1 both induced a 151 TH Stxbp2/Ap1m2/F11r trafficking cassette; Zeb1 also induced PATJ/SPINT2/CDC42BPG in 151 TH and 155 MB Glut, whereas Zeb2 showed its strongest corrected response in 052 Pvalb GABA with Rasd2, Gramd1b, and Plcl1 up and Tm6sf1 down.",
+  "biological_interpretation": "Mature neurons reuse a restricted CTBP1-ZEB1 polarity/trafficking branch, but ZEB1, ZEB2, and canonical SMAD/TGFbeta perturbations are not interchangeable in this assay.",
+  "targets": [
+    "Ctbp1",
+    "Zeb1",
+    "Zeb2",
+    "Ap1m2",
+    "F11r",
+    "Stxbp2",
+    "Patj",
+    "Spint2",
+    "Cdc42bpg"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "052 Pvalb Gaba"
+  ],
+  "support": {
+    "exact_de_rows": [
+      {
+        "gene_target": "Ctbp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Ap1m2",
+        "score": 4.481221675872803,
+        "logfoldchanges": 2.928485870361328,
+        "pvals_adj": 0.02561819717281022
+      },
+      {
+        "gene_target": "Ctbp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Ctbp1",
+        "score": -3.8518223762512207,
+        "logfoldchanges": -0.38313499093055725,
+        "pvals_adj": 0.1278672639768104
+      },
+      {
+        "gene_target": "Ctbp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "F11r",
+        "score": 5.321958541870117,
+        "logfoldchanges": 0.7542977929115295,
+        "pvals_adj": 0.0004783745014521177
+      },
+      {
+        "gene_target": "Ctbp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Hook2",
+        "score": 4.123881816864014,
+        "logfoldchanges": 0.4693084955215454,
+        "pvals_adj": 0.09572984521401785
+      },
+      {
+        "gene_target": "Ctbp1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Stxbp2",
+        "score": 9.938713073730469,
+        "logfoldchanges": 1.020546317100525,
+        "pvals_adj": 4.874841468421723e-19
+      },
+      {
+        "gene_target": "Zeb1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Ap1m2",
+        "score": 2.915912389755249,
+        "logfoldchanges": 3.0199904441833496,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Zeb1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Cdc42bpg",
+        "score": 2.3835813999176025,
+        "logfoldchanges": 3.6363749504089355,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Zeb1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "F11r",
+        "score": 2.4463603496551514,
+        "logfoldchanges": 0.6992182731628418,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Zeb1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Patj",
+        "score": 2.945488452911377,
+        "logfoldchanges": 0.572509229183197,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Zeb1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Spint2",
+        "score": 0.9830758571624756,
+        "logfoldchanges": 0.6406643986701965,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Zeb1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Stxbp2",
+        "score": 4.969222068786621,
+        "logfoldchanges": 1.3097957372665405,
+        "pvals_adj": 0.01123079991924418
+      },
+      {
+        "gene_target": "Zeb1",
+        "group_name": "155 MB Glut",
+        "names": "Ap1m2",
+        "score": 10.231318473815918,
+        "logfoldchanges": 4.347303867340088,
+        "pvals_adj": 1.238782285513188e-20
+      },
+      {
+        "gene_target": "Zeb1",
+        "group_name": "155 MB Glut",
+        "names": "Patj",
+        "score": 5.970348358154297,
+        "logfoldchanges": 0.3572131097316742,
+        "pvals_adj": 6.810051938750288e-06
+      },
+      {
+        "gene_target": "Zeb1",
+        "group_name": "155 MB Glut",
+        "names": "Spint2",
+        "score": 5.3037495613098145,
+        "logfoldchanges": 2.283149242401123,
+        "pvals_adj": 0.00021755544651888228
+      },
+      {
+        "gene_target": "Zeb1",
+        "group_name": "155 MB Glut",
+        "names": "Stxbp2",
+        "score": 11.25068187713623,
+        "logfoldchanges": 1.2203563451766968,
+        "pvals_adj": 3.966281015526577e-25
+      },
+      {
+        "gene_target": "Zeb2",
+        "group_name": "052 Pvalb Gaba",
+        "names": "Dlx6",
+        "score": -4.223232746124268,
+        "logfoldchanges": -0.8873919248580933,
+        "pvals_adj": 0.07993766343582857
+      },
+      {
+        "gene_target": "Zeb2",
+        "group_name": "052 Pvalb Gaba",
+        "names": "Gramd1b",
+        "score": 5.858692169189453,
+        "logfoldchanges": 0.4150823652744293,
+        "pvals_adj": 3.909961689607388e-05
+      },
+      {
+        "gene_target": "Zeb2",
+        "group_name": "052 Pvalb Gaba",
+        "names": "Patj",
+        "score": 4.055139541625977,
+        "logfoldchanges": 0.9661315083503723,
+        "pvals_adj": 0.08271233471307093
+      },
+      {
+        "gene_target": "Zeb2",
+        "group_name": "052 Pvalb Gaba",
+        "names": "Plcl1",
+        "score": 4.839991092681885,
+        "logfoldchanges": 1.0150971412658691,
+        "pvals_adj": 0.007254866303334567
+      },
+      {
+        "gene_target": "Zeb2",
+        "group_name": "052 Pvalb Gaba",
+        "names": "Rasd2",
+        "score": 6.369891166687012,
+        "logfoldchanges": 1.7537387609481812,
+        "pvals_adj": 3.1707398321027507e-06
+      },
+      {
+        "gene_target": "Zeb2",
+        "group_name": "052 Pvalb Gaba",
+        "names": "Tm6sf1",
+        "score": -4.4276580810546875,
+        "logfoldchanges": -0.3751879930496216,
+        "pvals_adj": 0.039919468033089614
+      }
+    ],
+    "evidence_records": [
+      {
+        "target_gene": "Ctbp1",
+        "evidence_id": "E005",
+        "evidence_slug": "ctbp1_151_th_stxbp2_module",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Ctbp1|Stxbp2|St3gal4|F11r|Mal2|Ap1m2|Hook2|Arap2|Usp43",
+        "n_genes": "9",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "202 perturbed cells versus 23679 controls; Ctbp1 logFC -0.383, score -3.85, p=1.17e-4, FDR=0.128; Stxbp2 logFC 1.02 FDR=4.87e-19; St3gal4 logFC 0.587 FDR=1.01e-6; F11r logFC 0.754 FDR=4.78e-4; Mal2 logFC 0.557 FDR=4.78e-4; Ap1m2 logFC 2.93 FDR=0.0256; Hook2, Arap2, and Usp43 each FDR=0.0957.",
+        "description": "The only Ctbp1 perturbation with more than one gene at FDR<0.05, dominated by up-regulated trafficking and junction-associated genes."
+      },
+      {
+        "target_gene": "Zeb1",
+        "evidence_id": "E001",
+        "evidence_slug": "zeb1_on_target_all_cell_types",
+        "cell_type": "",
+        "genes": "Zeb1",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Zeb1 transcript was measured in 23 Zeb1-perturbed cell types; all had FDR=1.0. Nominal p values ranged from 0.0163 to 0.978; logFC ranged from -0.479 to 0.392.",
+        "description": "The measured Zeb1 mRNA did not show multiple-testing-significant depletion in any cell type."
+      },
+      {
+        "target_gene": "Zeb1",
+        "evidence_id": "E002",
+        "evidence_slug": "zeb1_151_th_prkcd_grin2c_glut_signature",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Stxbp2|Ap1m2|F11r|Cdc42bpg|Nipal2|Patj|Epha1|Spint2",
+        "n_genes": "8",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "173 perturbed cells versus 23679 controls; 15 genes FDR<0.05. Stxbp2 logFC 1.220 FDR 3.97e-25; Ap1m2 logFC 4.347 FDR 1.24e-20; F11r logFC 1.122 FDR 1.49e-10; Cdc42bpg logFC 4.488 FDR 3.52e-08; Patj logFC 0.357 FDR 6.81e-06; Spint2 logFC 2.283 FDR 2.18e-04.",
+        "description": "151 TH Prkcd Grin2c Glut carried the largest Zeb1 downstream signature."
+      },
+      {
+        "target_gene": "Zeb1",
+        "evidence_id": "E003",
+        "evidence_slug": "zeb1_155_mb_glut_signature",
+        "cell_type": "155 MB Glut",
+        "genes": "Ap1m2|Cdkn2d|Spint2|Stxbp2|Patj",
+        "n_genes": "5",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "163 perturbed cells versus 20353 controls; 5 genes FDR<0.05. Ap1m2 logFC 2.883 FDR 6.09e-11; Cdkn2d logFC 0.975 FDR 0.00146; Spint2 logFC 1.445 FDR 0.00150; Stxbp2 logFC 1.133 FDR 0.0180; Patj logFC 0.459 FDR 0.0213.",
+        "description": "155 MB Glut had a smaller Zeb1-induced module overlapping the 151 TH Prkcd Grin2c Glut response."
+      },
+      {
+        "target_gene": "Zeb1",
+        "evidence_id": "E004",
+        "evidence_slug": "stxbp2_recurrence_across_zeb1_cell_types",
+        "cell_type": "",
+        "genes": "Stxbp2",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Stxbp2 was FDR<0.05 in 151 TH Prkcd Grin2c Glut, logFC 1.220 FDR 3.97e-25; 191 MB P MY GABA, logFC 1.573 FDR 8.82e-05; 145 MH-LH TH Glut, logFC 1.310 FDR 0.0112; and 155 MB Glut, logFC 1.133 FDR 0.0180.",
+        "description": "Stxbp2 was the only measured gene recurring at FDR<0.05 in four Zeb1-responsive cell types."
+      },
+      {
+        "target_gene": "Zeb1",
+        "evidence_id": "E006",
+        "evidence_slug": "zeb1_buffered_and_null_cell_types",
+        "cell_type": "",
+        "genes": "",
+        "n_genes": "0",
+        "has_genes": "0",
+        "has_cell_type": "0",
+        "statistics": "19 of 23 Zeb1 cell-type contrasts had zero FDR<0.05 genes. High-count examples with no significant genes were 005 L4-5 IT CTX Glut, 114 perturbed versus 15039 controls, min FDR 1.0; 052 Pvalb Gaba, 114 versus 13710, min FDR 0.578; and 066 CNU-HYa HY GABA, 77 versus 10110, min FDR 0.580.",
+        "description": "Most profiled cell classes showed no multiple-testing-significant Zeb1 response."
+      },
+      {
+        "target_gene": "Zeb2",
+        "evidence_id": "E001",
+        "evidence_slug": "zeb2_target_transcript_across_22_cell_types",
+        "cell_type": "",
+        "genes": "Zeb2",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Zeb2 transcript was measured in 22 Zeb2-targeted signatures; 0/22 had Zeb2 pvals_adj<0.05 and 3/22 had nominal p<0.05. Strongest measured knockdown: 007 L2-3 IT CTX Glut logFC -0.408, p=0.00149, FDR=0.895; 052 Pvalb Gaba logFC -0.172, p=0.0351, FDR=1.0; 005 L4-5 IT CTX Glut logFC -0.121, p=0.430, FDR=1.0.",
+        "description": "Measured on-target transcript change for Zeb2 itself shows weak captured target engagement."
+      },
+      {
+        "target_gene": "Zeb2",
+        "evidence_id": "E002",
+        "evidence_slug": "pvalb_gaba_zeb2_fdr_response",
+        "cell_type": "052 Pvalb Gaba",
+        "genes": "Rasd2|Gramd1b|Plcl1|Tm6sf1|Dlx6|Patj",
+        "n_genes": "6",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "112 perturbed cells versus 13710 controls; 4 genes at FDR<0.05, 11 at FDR<0.10, and 34 at p<0.001. Rasd2 logFC 1.754 FDR 3.17e-6; Gramd1b 0.415 FDR 3.91e-5; Plcl1 1.015 FDR 0.00726; Tm6sf1 -0.375 FDR 0.0399; Dlx6 -0.887 p=2.41e-5 FDR 0.0799; Patj 0.966 p=5.01e-5 FDR 0.0827.",
+        "description": "The clearest Zeb2-assigned downstream signature occurs in Pvalb GABAergic neurons."
+      },
+      {
+        "target_gene": "Zeb2",
+        "evidence_id": "E006",
+        "evidence_slug": "zeb2_buffered_cell_types",
+        "cell_type": "",
+        "genes": "",
+        "n_genes": "0",
+        "has_genes": "0",
+        "has_cell_type": "0",
+        "statistics": "Across all Zeb2 signatures, only 2/22 cell types had any FDR<0.05 gene; 20/22 had none. Examples with adequate cell numbers but no FDR<0.05 gene were 151 TH Prkcd Grin2c Glut, 186 perturbed cells and 4 genes at p<0.001; 155 MB Glut, 170 perturbed cells and 2 genes at p<0.001; and 059 CNU-LGE LSX GABA, 74 perturbed cells and 0 genes at p<0.001. The smallest Zeb2 group was 217 P MY Pineal Glut, with 27 perturbed cells and 0 FDR<0.05 genes.",
+        "description": "Most Zeb2-assigned guide groups produced little downstream differential expression."
+      },
+      {
+        "target_gene": "Zeb1",
+        "evidence_id": "E007",
+        "evidence_slug": "ctbp1_positive_neighbor_in_151",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Ctbp1|Stxbp2|F11r|Ap1m2",
+        "n_genes": "4",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "Across 2045 non-Zeb1 signatures in 151 TH Prkcd Grin2c Glut, Ctbp1 was the top positive Pearson neighbor of Zeb1 with r=0.103; the strongest negative neighbor was Camta1 with r=-0.070. Ctbp1 perturbation had 202 perturbed cells and 5 FDR<0.05 genes, including Stxbp2 logFC 1.021 FDR 4.87e-19, F11r logFC 0.754 FDR 4.78e-04, and Ap1m2 logFC 2.928 FDR 0.0256.",
+        "description": "Ctbp1 perturbation partially converged with the Zeb1 response in the dominant responsive cell type."
+      },
+      {
+        "target_gene": "Zeb2",
+        "evidence_id": "E007",
+        "evidence_slug": "zeb1_ctbp1_thalamic_response",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Zeb1|Ctbp1|Stxbp2|Ap1m2|Patj|F11r",
+        "n_genes": "6",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "Zeb1 perturbation had 173 cells and 15 FDR<0.05 genes: Stxbp2 logFC 1.220 FDR 3.97e-25, Ap1m2 4.347 FDR 1.24e-20, F11r 1.122 FDR 1.49e-10, Patj 0.357 FDR 6.81e-6. Ctbp1 perturbation had 202 cells and 5 FDR<0.05 genes: Stxbp2 1.021 FDR 4.87e-19, St3gal4 0.587 FDR 1.01e-6, F11r 0.754 FDR 4.78e-4.",
+        "description": "A Zeb1/Ctbp1-associated thalamic module is strong in the same broad dataset but is not produced by Zeb2."
+      },
+      {
+        "target_gene": "Zeb2",
+        "evidence_id": "E008",
+        "evidence_slug": "zeb2_zeb1_ctbp1_signature_correlations",
+        "cell_type": "",
+        "genes": "Zeb2|Zeb1|Ctbp1|Smad2|Smad3|Smad4",
+        "n_genes": "6",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Restricted to the top 200 Zeb2 genes by absolute Wilcoxon score: in 052 Pvalb Gaba, score correlations were Zeb1 0.113, Ctbp1 0.095, Smad2 0.096, Smad3 0.117, Smad4 0.061. In 005 L4-5 IT CTX Glut, correlations were Zeb1 0.264, Ctbp1 0.170, Smad2 0.105, Smad3 -0.007, Smad4 -0.055. Using the top 200 Zeb1 genes in 151 TH Prkcd Grin2c Glut, Zeb1-Ctbp1 score correlation was 0.455 whereas Zeb1-Zeb2 was 0.134.",
+        "description": "Restricted-signature correlations separate the Zeb2 Pvalb/L4 responses from Zeb1, Ctbp1, and SMAD perturbations."
+      }
+    ],
+    "source_claim_ids": [
+      "claim:ctbp1_f002_223fec6c1a15",
+      "claim:zeb1_f001_8abee6d74245",
+      "claim:zeb2_f001_0bc0d0452b5f",
+      "claim:zeb1_f004_72e3e9d674f9",
+      "claim:zeb2_f004_219c0220ae92"
+    ],
+    "source_cluster_ids": [
+      "C055"
+    ]
+  },
+  "caveats": [
+    "Zeb1 and Zeb2 self-transcript knockdown was not FDR-significant, so guide assignment, not captured ZEB mRNA depletion, anchors the downstream signatures."
+  ],
+  "prior_expectation": {
+    "summary": "Prior literature and pathway context were taken from the resolved report references; the observed Perturb-seq signal either refines expected gene function by cell type or marks an exploratory response-state neighbor where noted in caveats.",
+    "citations": [
+      {
+        "reference_id": "Ctbp1:R006",
+        "citation": "Pagliuso A, Valente C, Giordano LL, Filograna A, Li G, Circolo D, Turacchio G, Marzullo VM, Mandrich L, Zhukovsky MA, Formiggini F, Polishchuk RS, Corda D, Luini A. Golgi membrane fission requires the CtBP1-S/BARS-induced activation of lysophosphatidic acid acyltransferase delta. Nat Commun. 2016;7:12148.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/27401954/",
+        "supports": "Shows a cytoplasmic CtBP1-S/BARS role in Golgi carrier fission through lipid remodeling."
+      },
+      {
+        "reference_id": "Ctbp1:R007",
+        "citation": "Ivanova D, Imig C, Camacho M, Reinhold A, Guhathakurta D, Montenegro-Venegas C, Cousin MA, Gundelfinger ED, Rosenmund C, Cooper B, Fejtova A. CtBP1-Mediated Membrane Fission Contributes to Effective Recycling of Synaptic Vesicles. Cell Rep. 2020;30(7):2444-2459.e7.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/32075774/",
+        "supports": "Functional work in hippocampal neurons showing nuclear and presynaptic CtBP1 activities, including CtBP1-dependent synaptic-vesicle recycling."
+      },
+      {
+        "reference_id": "Ctbp1:R011",
+        "citation": "UniProtKB reviewed mouse entries STXB2_MOUSE Q64324, AP1M2_MOUSE Q9WVP1, JAM1_MOUSE O88792, MAL2_MOUSE Q8BI08, and HOOK2_MOUSE Q7TMK6, queried 2025-04-29.",
+        "url": "https://www.uniprot.org/",
+        "supports": "Curated protein functions for the up-regulated 151 TH module, including SNARE-associated vesicle trafficking, clathrin adaptor protein sorting, junctional adhesion, polarized transport, and Hook/FHF vesicle trafficking."
+      },
+      {
+        "reference_id": "Zeb1:R001",
+        "citation": "Singh S, Howell D, Trivedi N, et al. Zeb1 controls neuron differentiation and germinal zone exit by a mesenchymal-epithelial-like transition. eLife. 2016;5:e12717. doi:10.7554/eLife.12717.",
+        "url": "https://doi.org/10.7554/eLife.12717",
+        "supports": "Shows that Zeb1 transcriptionally represses polarity genes in cerebellar granule neuron progenitors, inhibits polarization, and is elevated in SHH medulloblastoma."
+      },
+      {
+        "reference_id": "Zeb1:R003",
+        "citation": "Wang H, Xiao Z, Zheng J, Wu J, Hu XL, Yang X, Shen Q. ZEB1 Represses Neural Differentiation and Cooperates with CTBP2 to Dynamically Regulate Cell Migration during Neocortex Development. Cell Reports. 2019;27(8):2335-2353.e6. doi:10.1016/j.celrep.2019.04.081.",
+        "url": "https://doi.org/10.1016/j.celrep.2019.04.081",
+        "supports": "Describes ZEB1 downregulation during cortical neural progenitor differentiation and a CTBP2-dependent ZEB1 function in embryonic neuronal migration."
+      },
+      {
+        "reference_id": "Zeb1:R004",
+        "citation": "UniProtKB reviewed entry Q64318, Zinc finger E-box-binding homeobox 1, Mus musculus.",
+        "url": "https://rest.uniprot.org/uniprotkb/Q64318",
+        "supports": "Reviewed mouse ZEB1 functional annotation as a nuclear E-box-binding transcriptional repressor with EMT-related targets."
+      },
+      {
+        "reference_id": "Zeb2:R004",
+        "citation": "McKinsey GL, Lindtner S, Trzcinski B, Visel A, Pennacchio LA, Huylebroeck D, Higashi Y, Rubenstein JL. Dlx1&2-dependent expression of Zfhx1b (Sip1, Zeb2) regulates the fate switch between cortical and striatal interneurons. Neuron. 2013;77(1):83-98. doi:10.1016/j.neuron.2012.11.035. PMID:23312518.",
+        "url": "https://doi.org/10.1016/j.neuron.2012.11.035",
+        "supports": "Places Zeb2 downstream of Dlx1/2 in the medial ganglionic eminence and identifies a requirement for cortical interneuron fate specification."
+      },
+      {
+        "reference_id": "Zeb2:R005",
+        "citation": "van den Berghe V, Stappers E, Vandesande B, Dimidschstein J, Kroes R, Francis A, et al. Directed migration of cortical interneurons depends on the cell-autonomous action of Sip1. Neuron. 2013;77(1):70-82. doi:10.1016/j.neuron.2012.11.009. PMID:23312517.",
+        "url": "https://doi.org/10.1016/j.neuron.2012.11.009",
+        "supports": "Demonstrates a cell-autonomous requirement for Sip1/Zeb2 in cortical interneuron differentiation and migration."
+      },
+      {
+        "reference_id": "Zeb2:R006",
+        "citation": "Birkhoff JC, Huylebroeck D, Conidi A. ZEB2, the Mowat-Wilson Syndrome Transcription Factor: Confirmations, Novel Functions, and Continuing Surprises. Genes. 2021;12(7):1037. doi:10.3390/genes12071037. PMID:34356053.",
+        "url": "https://doi.org/10.3390/genes12071037",
+        "supports": "Review of ZEB2 as the Mowat-Wilson syndrome transcription factor with neurodevelopmental and neural-crest roles."
+      },
+      {
+        "reference_id": "Zeb1:R005",
+        "citation": "Reactome event R-HSA-9765973: CTBP1,CTBP2 binds ZEB1.",
+        "url": "https://reactome.org/content/detail/R-HSA-9765973",
+        "supports": "Curated physical and functional relationship linking ZEB1 to CTBP1 and CTBP2 corepressors."
+      },
+      {
+        "reference_id": "Zeb2:R003",
+        "citation": "Postigo AA. Opposing functions of ZEB proteins in the regulation of the TGFbeta/BMP signaling pathway. EMBO J. 2003;22(10):2443-2452. doi:10.1093/emboj/cdg225. PMID:12743038.",
+        "url": "https://doi.org/10.1093/emboj/cdg225",
+        "supports": "Shows that ZEB1 and ZEB2 both bind Smads but can have opposing effects on TGF\u03b2/BMP transcriptional outputs."
+      },
+      {
+        "reference_id": "Zeb2:R007",
+        "citation": "Grabitz AL, Duncan MK. Focus on molecules: Smad Interacting Protein 1 (Sip1, ZEB2, ZFHX1B). Exp Eye Res. 2012;101:105-106. doi:10.1016/j.exer.2010.09.010. PMID:20868684.",
+        "url": "https://doi.org/10.1016/j.exer.2010.09.010",
+        "supports": "Concise structural and functional overview of SIP1/ZEB2 as a two-handed ZEB-family Smad-interacting transcription factor."
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 5,
+    "priority": 4
+  },
+  "report_evidence_ids": [
+    "Ctbp1:E005",
+    "Zeb1:E001",
+    "Zeb1:E002",
+    "Zeb1:E003",
+    "Zeb1:E004",
+    "Zeb1:E006",
+    "Zeb2:E001",
+    "Zeb2:E002",
+    "Zeb2:E006",
+    "Zeb1:E007",
+    "Zeb2:E007",
+    "Zeb2:E008"
+  ],
+  "reference_ids": [
+    "Ctbp1:R006",
+    "Ctbp1:R007",
+    "Ctbp1:R011",
+    "Zeb1:R001",
+    "Zeb1:R003",
+    "Zeb1:R004",
+    "Zeb2:R004",
+    "Zeb2:R005",
+    "Zeb2:R006",
+    "Zeb1:R005",
+    "Zeb2:R003",
+    "Zeb2:R007"
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/27401954/",
+    "https://pubmed.ncbi.nlm.nih.gov/32075774/",
+    "https://www.uniprot.org/",
+    "https://doi.org/10.7554/eLife.12717",
+    "https://doi.org/10.1016/j.celrep.2019.04.081",
+    "https://rest.uniprot.org/uniprotkb/Q64318",
+    "https://doi.org/10.1016/j.neuron.2012.11.035",
+    "https://doi.org/10.1016/j.neuron.2012.11.009",
+    "https://doi.org/10.3390/genes12071037",
+    "https://reactome.org/content/detail/R-HSA-9765973",
+    "https://doi.org/10.1093/emboj/cdg225",
+    "https://doi.org/10.1016/j.exer.2010.09.010"
+  ]
+}

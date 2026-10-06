@@ -1,0 +1,801 @@
+library,pathway,n_targets,n_findings,mean_score
+Hallmark,HALLMARK_E2F_TARGETS,17,32,1.1242
+Hallmark,HALLMARK_MITOTIC_SPINDLE,34,58,1.1027
+Hallmark,HALLMARK_PROTEIN_SECRETION,21,38,0.9172
+Hallmark,HALLMARK_G2M_CHECKPOINT,29,58,0.8911
+Hallmark,HALLMARK_SPERMATOGENESIS,15,28,0.7993
+Hallmark,HALLMARK_P53_PATHWAY,22,39,0.7797
+Hallmark,HALLMARK_PI3K_AKT_MTOR_SIGNALING,31,62,0.7748
+Hallmark,HALLMARK_APOPTOSIS,36,69,0.6894
+Hallmark,HALLMARK_PEROXISOME,18,30,0.6765
+Hallmark,HALLMARK_ESTROGEN_RESPONSE_LATE,28,45,0.6205
+Hallmark,HALLMARK_UV_RESPONSE_DN,55,92,0.6111
+Hallmark,HALLMARK_UNFOLDED_PROTEIN_RESPONSE,13,32,0.5646
+Hallmark,HALLMARK_MYC_TARGETS_V1,27,55,0.4857
+Hallmark,HALLMARK_APICAL_JUNCTION,28,53,0.4663
+Hallmark,HALLMARK_UV_RESPONSE_UP,30,53,0.4647
+Hallmark,HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION,24,39,0.4575
+Hallmark,HALLMARK_ESTROGEN_RESPONSE_EARLY,30,48,0.4564
+Hallmark,HALLMARK_HEME_METABOLISM,29,48,0.4539
+Hallmark,HALLMARK_TGF_BETA_SIGNALING,16,34,0.4115
+Hallmark,HALLMARK_MTORC1_SIGNALING,24,40,0.4076
+Hallmark,HALLMARK_MYOGENESIS,36,64,0.3979
+Hallmark,HALLMARK_HYPOXIA,22,39,0.3851
+Hallmark,HALLMARK_KRAS_SIGNALING_DN,29,52,0.3696
+Hallmark,HALLMARK_IL2_STAT5_SIGNALING,39,66,0.3477
+Hallmark,HALLMARK_GLYCOLYSIS,25,40,0.3321
+Hallmark,HALLMARK_COMPLEMENT,32,53,0.3291
+Hallmark,HALLMARK_FATTY_ACID_METABOLISM,21,34,0.294
+Hallmark,HALLMARK_KRAS_SIGNALING_UP,30,48,0.241
+Hallmark,HALLMARK_INTERFERON_GAMMA_RESPONSE,31,50,0.2329
+Hallmark,HALLMARK_OXIDATIVE_PHOSPHORYLATION,64,103,0.2324
+Hallmark,HALLMARK_BILE_ACID_METABOLISM,15,28,0.2099
+Hallmark,HALLMARK_TNFA_SIGNALING_VIA_NFKB,35,63,0.1862
+Hallmark,HALLMARK_ALLOGRAFT_REJECTION,42,69,0.1821
+Hallmark,HALLMARK_ADIPOGENESIS,37,66,0.169
+Hallmark,HALLMARK_IL6_JAK_STAT3_SIGNALING,30,56,0.1685
+Hallmark,HALLMARK_XENOBIOTIC_METABOLISM,25,46,0.164
+Hallmark,HALLMARK_INFLAMMATORY_RESPONSE,43,73,0.1527
+Reactome,Mitotic G1 phase and G1/S transition,13,29,1.2775
+Reactome,CHD chromatin remodelers,15,25,1.2014
+Reactome,Resolution of Sister Chromatid Cohesion,18,38,1.0564
+Reactome,Regulation of RAS by GAPs,12,27,1.0243
+Reactome,Mitotic Prometaphase,29,59,0.9978
+Reactome,Cell Cycle,62,124,0.968
+Reactome,"Cell Cycle, Mitotic",56,112,0.9582
+Reactome,Separation of Sister Chromatids,21,47,0.9413
+Reactome,Degradation of beta-catenin by the destruction complex,11,25,0.9153
+Reactome,Signaling by NTRK1 (TRKA),20,42,0.9066
+Reactome,M Phase,46,92,0.9055
+Reactome,Signaling by NTRKs,25,49,0.8499
+Reactome,PCP/CE pathway,14,30,0.8477
+Reactome,Neddylation,14,29,0.8312
+Reactome,Mitotic Anaphase,24,54,0.8291
+Reactome,Mitotic Metaphase and Anaphase,24,54,0.8291
+Reactome,MHC class II antigen presentation,24,53,0.8269
+Reactome,AURKA Activation by TPX2,16,32,0.8056
+Reactome,Loss of Nlp from mitotic centrosomes,16,32,0.8056
+Reactome,Loss of proteins required for interphase microtubule organization from the centrosome,16,32,0.8056
+Reactome,Regulation of PLK1 Activity at G2/M Transition,16,32,0.8056
+Reactome,Cell Cycle Checkpoints,21,47,0.8025
+Reactome,Co-stimulation by CD28,14,25,0.7914
+Reactome,ATP-dependent chromatin remodelers,28,50,0.7871
+Reactome,Signaling by FGFR3,10,25,0.7869
+Reactome,Signaling by FGFR4,10,25,0.7869
+Reactome,Centrosome maturation,17,33,0.7819
+Reactome,Recruitment of mitotic centrosome proteins and complexes,17,33,0.7819
+Reactome,TCF dependent signaling in response to WNT,31,68,0.779
+Reactome,PTEN Regulation,13,30,0.776
+Reactome,Apoptosis,22,43,0.7726
+Reactome,Deactivation of the beta-catenin transactivating complex,14,29,0.7702
+Reactome,Beta-catenin independent WNT signaling,27,56,0.7678
+Reactome,Signaling by WNT,50,103,0.7618
+Reactome,Regulation of CDH1 Expression and Function,20,37,0.757
+Reactome,Regulation of Expression and Function of Type I Classical Cadherins,20,37,0.757
+Reactome,Signaling by FGFR2,12,28,0.7233
+Reactome,Regulation of Homotypic Cell-Cell Adhesion,21,39,0.7197
+Reactome,MITF-M-regulated melanocyte development,17,34,0.708
+Reactome,Ca2+ pathway,17,34,0.6988
+Reactome,Signaling by FGFR1,16,35,0.6978
+Reactome,Signaling by VEGF,28,51,0.6951
+Reactome,VEGFA-VEGFR2 Pathway,25,46,0.6921
+Reactome,DNA Repair,18,28,0.6915
+Reactome,EML4 and NUDC in mitotic spindle formation,14,30,0.6883
+Reactome,Recruitment of NuMA to mitotic centrosomes,19,38,0.6805
+Reactome,Chromatin organization,56,98,0.674
+Reactome,Processing of Capped Intron-Containing Pre-mRNA,27,60,0.6714
+Reactome,SUMOylation,38,71,0.6691
+Reactome,SUMO E3 ligases SUMOylate target proteins,37,70,0.666
+Reactome,mRNA 3'-end processing,19,42,0.6632
+Reactome,COPI-independent Golgi-to-ER retrograde traffic,12,25,0.6622
+Reactome,Opioid Signalling,19,33,0.6594
+Reactome,Signaling by FGFR,18,38,0.658
+Reactome,Cargo recognition for clathrin-mediated endocytosis,20,36,0.6572
+Reactome,Anchoring of the basal body to the plasma membrane,21,40,0.6565
+Reactome,Class I MHC mediated antigen processing & presentation,28,55,0.6561
+Reactome,Regulation of insulin secretion,22,39,0.6521
+Reactome,HSP90 chaperone cycle for steroid hormone receptors (SHR) in the presence of ligand,12,29,0.649
+Reactome,Downstream signal transduction,12,26,0.6406
+Reactome,Programmed Cell Death,26,54,0.6371
+Reactome,RHO GTPases Activate Formins,21,41,0.6319
+Reactome,Adaptive Immune System,109,212,0.6312
+Reactome,Selective autophagy,17,36,0.6309
+Reactome,RAF/MAP kinase cascade,63,124,0.6244
+Reactome,Mitotic G2-G2/M phases,26,57,0.6236
+Reactome,PIP3 activates AKT signaling,46,89,0.615
+Reactome,RET signaling,12,27,0.6141
+Reactome,Intracellular signaling by second messengers,55,107,0.6079
+Reactome,Epigenetic regulation of gene expression,20,38,0.5963
+Reactome,MAPK1/MAPK3 signaling,67,134,0.5962
+Reactome,RAC1 GTPase cycle,24,45,0.5933
+Reactome,RHO GTPase Effectors,39,76,0.5929
+Reactome,Antigen processing: Ubiquitination & Proteasome degradation,23,47,0.5919
+Reactome,RAC2 GTPase cycle,14,26,0.5901
+Reactome,Signaling by MET,15,28,0.5899
+Reactome,MAPK family signaling cascades,74,147,0.5866
+Reactome,Metabolism of RNA,45,104,0.5855
+Reactome,GABA receptor activation,21,35,0.5827
+Reactome,G2/M Transition,25,55,0.5821
+Reactome,Platelet homeostasis,16,30,0.5731
+Reactome,RAC3 GTPase cycle,16,28,0.5721
+Reactome,Signaling by Rho GTPases,80,148,0.5709
+Reactome,Autophagy,25,54,0.5694
+Reactome,Macroautophagy,25,54,0.5694
+Reactome,Integration of energy metabolism,27,48,0.5693
+Reactome,Activation of NMDA receptors and postsynaptic events,17,34,0.5683
+Reactome,Signaling by Receptor Tyrosine Kinases,89,166,0.5644
+Reactome,Voltage gated Potassium channels,14,25,0.5639
+Reactome,Regulation of TP53 Activity,19,37,0.5634
+Reactome,Signaling by PDGF,14,30,0.5595
+Reactome,"Signaling by Rho GTPases, Miro GTPases and RHOBTB3",83,154,0.5564
+Reactome,Negative regulation of the PI3K/AKT network,33,59,0.5527
+Reactome,Epigenetic regulation by WDR5-containing histone modifying complexes,12,25,0.5522
+Reactome,Cardiac conduction,25,46,0.551
+Reactome,Extra-nuclear estrogen signaling,17,32,0.5475
+Reactome,Regulation of PD-L1(CD274) Post-translational modification,11,25,0.5443
+Reactome,Signaling by ERBB2,13,26,0.5421
+Reactome,"PI5P, PP2A and IER3 Regulate PI3K/AKT Signaling",31,55,0.5413
+Reactome,Gap junction trafficking,13,27,0.5395
+Reactome,Gap junction trafficking and regulation,13,27,0.5395
+Reactome,"Glutamate binding, activation of AMPA receptors and synaptic plasticity",16,31,0.5388
+Reactome,Trafficking of AMPA receptors,16,31,0.5388
+Reactome,Regulation of T cell activation by CD28 family,36,70,0.5347
+Reactome,Nuclear Receptor transcription pathway,44,87,0.5346
+Reactome,Adherens junctions interactions,31,57,0.5319
+Reactome,Cell-cell junction organization,31,57,0.5319
+Reactome,RHO GTPase cycle,53,92,0.5315
+Reactome,Muscle contraction,29,52,0.5281
+Reactome,"Unblocking of NMDA receptors, glutamate binding and activation",13,26,0.5275
+Reactome,Cell junction organization,35,61,0.5256
+Reactome,Signaling by SCF-KIT,14,27,0.5238
+Reactome,Gene expression (Transcription),178,337,0.5236
+Reactome,Translation,14,35,0.523
+Reactome,Cell-Cell communication,36,62,0.5191
+Reactome,Fc epsilon receptor (FCERI) signaling,20,44,0.5181
+Reactome,Regulation of PD-L1(CD274) expression,14,28,0.5173
+Reactome,C-type lectin receptors (CLRs),17,37,0.5168
+Reactome,Signaling by the B Cell Receptor (BCR),17,36,0.5167
+Reactome,Golgi-to-ER retrograde transport,22,42,0.5164
+Reactome,Recycling pathway of L1,15,33,0.5152
+Reactome,Axon guidance,82,152,0.5144
+Reactome,G alpha (q) signalling events,50,84,0.5137
+Reactome,Neurotransmitter receptors and postsynaptic signal transmission,71,124,0.5121
+Reactome,G2/M Checkpoints,12,26,0.5121
+Reactome,RUNX1 interacts with co-factors whose precise effect on RUNX1 targets is not known,12,25,0.5093
+Reactome,Nervous system development,83,154,0.5087
+Reactome,Generic Transcription Pathway,156,300,0.5042
+Reactome,"Platelet activation, signaling and aggregation",35,62,0.4975
+Reactome,G alpha (i) signalling events,56,97,0.4972
+Reactome,COPI-mediated anterograde transport,18,37,0.4971
+Reactome,RNA Polymerase II Transcription,160,305,0.497
+Reactome,Potassium Channels,25,44,0.4923
+Reactome,Neutrophil degranulation,60,104,0.4894
+Reactome,Hemostasis,84,140,0.4875
+Reactome,Cellular responses to stimuli,91,186,0.4852
+Reactome,Golgi Associated Vesicle Biogenesis,14,27,0.4838
+Reactome,Developmental Biology,118,221,0.4813
+Reactome,Signal Transduction,414,752,0.4813
+Reactome,Signaling by ERBB4,12,26,0.4796
+Reactome,Organelle biogenesis and maintenance,40,77,0.479
+Reactome,Chromatin modifying enzymes,42,75,0.4789
+Reactome,Post-translational protein modification,148,284,0.477
+Reactome,Peptide ligand-binding receptors,38,68,0.4748
+Reactome,Metabolism of proteins,192,367,0.4735
+Reactome,Clathrin-mediated endocytosis,28,55,0.4731
+Reactome,ESR-mediated signaling,26,45,0.4724
+Reactome,PI3K Cascade,12,26,0.4699
+Reactome,Phospholipid metabolism,18,38,0.4688
+Reactome,Signaling by TGF-beta Receptor Complex,18,34,0.4675
+Reactome,Hedgehog 'off' state,24,51,0.4658
+Reactome,GPCR downstream signalling,129,214,0.4653
+Reactome,Transcriptional Regulation by TP53,35,67,0.4638
+Reactome,IGF1R signaling cascade,14,32,0.463
+Reactome,IRS-related events triggered by IGF1R,14,32,0.463
+Reactome,Signaling by Type 1 Insulin-like Growth Factor 1 Receptor (IGF1R),14,32,0.463
+Reactome,Signaling by GPCR,131,218,0.4579
+Reactome,Cell surface interactions at the vascular wall,21,35,0.4573
+Reactome,Innate Immune System,128,237,0.4564
+Reactome,Ub-specific processing proteases,24,50,0.4548
+Reactome,Intra-Golgi and retrograde Golgi-to-ER traffic,31,60,0.4538
+Reactome,Immune System,248,457,0.4536
+Reactome,IRS-mediated signalling,13,29,0.4533
+Reactome,trans-Golgi Network Vesicle Budding,17,31,0.4518
+Reactome,Cellular responses to stress,78,166,0.4502
+Reactome,Insulin receptor signalling cascade,15,32,0.4467
+Reactome,mRNA Splicing,21,48,0.4464
+Reactome,Assembly of the 9+0 primary cilium,39,75,0.4447
+Reactome,Cilium Assembly,39,75,0.4447
+Reactome,L1CAM interactions,27,55,0.4442
+Reactome,Transcriptional regulation by RUNX3,14,31,0.4424
+Reactome,"Interleukin-3, Interleukin-5 and GM-CSF signaling",14,29,0.4422
+Reactome,Cellular response to heat stress,18,40,0.4395
+Reactome,mRNA Polyadenylation,15,34,0.4376
+Reactome,Membrane Trafficking,93,176,0.4354
+Reactome,Metabolism of lipids,56,106,0.4353
+Reactome,Transport of small molecules,89,164,0.4323
+Reactome,Signaling by TGFB family members,29,57,0.4304
+Reactome,Vesicle-mediated transport,97,183,0.4287
+Reactome,Signaling by Hedgehog,28,59,0.4181
+Reactome,KEAP1-NFE2L2 pathway,12,28,0.4149
+Reactome,Ion homeostasis,17,34,0.4123
+Reactome,SLC-mediated transmembrane transport,19,34,0.4115
+Reactome,Co-inhibition by PD-1,21,43,0.4101
+Reactome,MyD88 cascade initiated on plasma membrane,15,27,0.4065
+Reactome,MyD88:MAL(TIRAP) cascade initiated on plasma membrane,15,27,0.4065
+Reactome,Toll Like Receptor 10 (TLR10) Cascade,15,27,0.4065
+Reactome,Toll Like Receptor 2 (TLR2) Cascade,15,27,0.4065
+Reactome,Toll Like Receptor 5 (TLR5) Cascade,15,27,0.4065
+Reactome,Toll Like Receptor TLR1:TLR2 Cascade,15,27,0.4065
+Reactome,Toll Like Receptor TLR6:TLR2 Cascade,15,27,0.4065
+Reactome,Transmission across Chemical Synapses,97,171,0.4051
+Reactome,Neuronal System,140,247,0.4029
+Reactome,Signaling by Insulin receptor,23,47,0.3934
+Reactome,Protein localization,17,29,0.3916
+Reactome,Factors involved in megakaryocyte development and platelet production,25,41,0.3897
+Reactome,Interleukin-2 family signaling,13,26,0.3897
+Reactome,p75 NTR receptor-mediated signalling,15,28,0.3893
+Reactome,ER to Golgi Anterograde Transport,28,52,0.3881
+Reactome,Transport to the Golgi and subsequent modification,28,52,0.3881
+Reactome,RHOG GTPase cycle,14,26,0.3859
+Reactome,Transcriptional regulation by RUNX1,31,64,0.3858
+Reactome,Fcgamma receptor (FCGR) dependent phagocytosis,20,37,0.3848
+Reactome,Protein-protein interactions at synapses,32,56,0.3811
+Reactome,mRNA Splicing - Major Pathway,20,47,0.3807
+Reactome,EPH-Ephrin signaling,19,36,0.3789
+Reactome,Cellular response to chemical stress,27,56,0.3776
+Reactome,TRAF6 mediated induction of NFkB and MAP kinases upon TLR7/8 or 9 activation,17,30,0.3771
+Reactome,SWI/SNF chromatin remodelers,13,25,0.3728
+Reactome,Regulation of actin dynamics for phagocytic cup formation,14,25,0.3704
+Reactome,Mitochondrial protein degradation,23,42,0.3687
+Reactome,Neurexins and neuroligins,19,33,0.3666
+Reactome,Deubiquitination,36,73,0.3658
+Reactome,Signaling by Nuclear Receptors,43,75,0.3631
+Reactome,Toll Like Receptor 3 (TLR3) Cascade,17,31,0.3613
+Reactome,MyD88 dependent cascade initiated on endosome,18,32,0.3595
+Reactome,TP53 Regulates Metabolic Genes,17,32,0.3544
+Reactome,Death Receptor Signaling,26,46,0.3504
+Reactome,GPCR ligand binding,90,149,0.3461
+Reactome,Class A/1 (Rhodopsin-like receptors),72,119,0.346
+Reactome,Toll-like Receptor Cascades,33,55,0.3411
+Reactome,Toll Like Receptor 7/8 (TLR7/8) Cascade,20,34,0.339
+Reactome,MyD88-independent TLR4 cascade,23,42,0.3317
+Reactome,TRIF (TICAM1)-mediated TLR4 signaling,23,42,0.3317
+Reactome,Toll Like Receptor 9 (TLR9) Cascade,20,35,0.3287
+Reactome,Metabolism,213,375,0.3226
+Reactome,Toll Like Receptor 4 (TLR4) Cascade,26,47,0.3215
+Reactome,Asparagine N-linked glycosylation,38,74,0.3169
+Reactome,Signaling by Interleukins,56,109,0.3135
+Reactome,Rab regulation of trafficking,15,27,0.3051
+Reactome,SUMOylation of intracellular receptors,17,33,0.2926
+Reactome,Sensory Perception,17,30,0.2851
+Reactome,Downstream TCR signaling,16,35,0.2845
+Reactome,Cytokine Signaling in Immune system,101,193,0.284
+Reactome,TCR signaling,19,40,0.284
+Reactome,Semaphorin interactions,17,25,0.2833
+Reactome,Interferon Signaling,34,70,0.2826
+Reactome,Metabolism of amino acids and derivatives,18,33,0.2732
+Reactome,Hedgehog 'on' state,11,25,0.2687
+Reactome,Fatty acid metabolism,17,30,0.2561
+Reactome,Metabolism of carbohydrates and carbohydrate derivatives,24,40,0.2498
+Reactome,Ion transport by P-type ATPases,16,32,0.2469
+Reactome,G alpha (s) signalling events,34,51,0.2389
+Reactome,Extracellular matrix organization,28,41,0.2377
+Reactome,Antimicrobial mechanism of IFN-stimulated genes,22,45,0.233
+Reactome,Cytoprotection by HMOX1,14,26,0.2307
+Reactome,Ion channel transport,33,61,0.2283
+Reactome,Metabolism of water-soluble vitamins and cofactors,13,27,0.2237
+Reactome,Intraflagellar transport,14,28,0.2201
+Reactome,Biological oxidations,16,29,0.2095
+Reactome,The role of GTSE1 in G2/M progression after G2 checkpoint,11,25,0.2074
+Reactome,Metabolism of vitamins and cofactors,22,45,0.2037
+Reactome,COPI-dependent Golgi-to-ER retrograde traffic,16,28,0.198
+Reactome,Interleukin-1 signaling,13,30,0.1948
+Reactome,Respiratory electron transport,51,82,0.1945
+Reactome,Visual phototransduction,14,26,0.189
+Reactome,Interleukin-1 family signaling,16,34,0.1815
+Reactome,Aerobic respiration and respiratory electron transport,69,111,0.1657
+Reactome,TNFR2 non-canonical NF-kB pathway,16,29,0.1458
+Reactome,PKR-mediated signaling,17,36,0.1431
+Reactome,Amine ligand-binding receptors,21,31,0.116
+Reactome,Complex I biogenesis,26,40,0.0819
+Reactome,Neurotransmitter release cycle,20,37,0.0492
+GO:BP,regulation of lipid metabolic process,15,31,1.0699
+GO:BP,negative regulation of smoothened signaling pathway,18,30,1.0662
+GO:BP,canonical Wnt signaling pathway,19,36,1.0337
+GO:BP,TORC1 signaling,13,28,1.0026
+GO:BP,insulin receptor signaling pathway,23,44,0.9942
+GO:BP,protein destabilization,16,33,0.9789
+GO:BP,negative regulation of proteasomal ubiquitin-dependent protein catabolic process,14,26,0.9141
+GO:BP,negative regulation of canonical Wnt signaling pathway,30,55,0.9112
+GO:BP,pigmentation,16,27,0.9083
+GO:BP,negative regulation of neuron differentiation,29,47,0.9074
+GO:BP,negative regulation of MAPK cascade,14,27,0.9017
+GO:BP,stem cell population maintenance,26,55,0.8968
+GO:BP,eye development,17,26,0.894
+GO:BP,regulation of circadian rhythm,29,57,0.8817
+GO:BP,lipid homeostasis,13,27,0.8607
+GO:BP,synaptic vesicle endocytosis,15,27,0.8583
+GO:BP,negative regulation of epithelial cell proliferation,21,40,0.8577
+GO:BP,positive regulation of axon extension,16,26,0.8541
+GO:BP,regulation of cell cycle,48,94,0.8532
+GO:BP,DNA damage response,39,74,0.8485
+GO:BP,regulation of mitotic cell cycle,13,29,0.8456
+GO:BP,cellular response to nutrient levels,20,44,0.827
+GO:BP,action potential,22,42,0.824
+GO:BP,regulation of MAPK cascade,19,37,0.8087
+GO:BP,cellular response to interleukin-1,15,28,0.8076
+GO:BP,metanephros development,17,29,0.8017
+GO:BP,cognition,26,44,0.7949
+GO:BP,negative regulation of protein kinase activity,13,27,0.7947
+GO:BP,adipose tissue development,16,29,0.7917
+GO:BP,negative regulation of neuron projection development,23,38,0.7906
+GO:BP,circadian rhythm,37,69,0.7883
+GO:BP,intracellular protein transport,35,62,0.783
+GO:BP,bone development,28,48,0.7778
+GO:BP,ossification,24,35,0.7766
+GO:BP,negative regulation of epithelial to mesenchymal transition,14,25,0.7756
+GO:BP,response to endoplasmic reticulum stress,24,47,0.7716
+GO:BP,regulation of long-term neuronal synaptic plasticity,16,31,0.7699
+GO:BP,skin development,19,35,0.7688
+GO:BP,actin cytoskeleton organization,37,63,0.7621
+GO:BP,hair follicle development,14,29,0.7608
+GO:BP,positive regulation of excitatory postsynaptic potential,26,42,0.7603
+GO:BP,negative regulation of translational initiation,14,30,0.7528
+GO:BP,somatic stem cell population maintenance,19,34,0.7503
+GO:BP,negative regulation of cold-induced thermogenesis,13,28,0.7454
+GO:BP,long-term memory,17,32,0.7438
+GO:BP,developmental growth,20,38,0.741
+GO:BP,regulation of G1/S transition of mitotic cell cycle,15,32,0.7316
+GO:BP,cellular response to insulin stimulus,24,45,0.7286
+GO:BP,face morphogenesis,18,34,0.7202
+GO:BP,positive regulation of dendritic spine development,15,32,0.7193
+GO:BP,neural tube closure,30,58,0.7151
+GO:BP,spermatogenesis,54,92,0.7133
+GO:BP,positive regulation of endothelial cell proliferation,15,28,0.7131
+GO:BP,positive regulation of protein catabolic process,16,35,0.7118
+GO:BP,positive regulation of epithelial to mesenchymal transition,15,29,0.7106
+GO:BP,hemopoiesis,23,36,0.701
+GO:BP,receptor internalization,15,27,0.701
+GO:BP,peptidyl-serine phosphorylation,19,35,0.6938
+GO:BP,heart morphogenesis,30,49,0.688
+GO:BP,mitotic cell cycle,14,27,0.6867
+GO:BP,negative regulation of TORC1 signaling,14,32,0.6858
+GO:BP,protein localization to nucleus,15,32,0.6773
+GO:BP,chondrocyte differentiation,21,38,0.675
+GO:BP,regulation of neuronal synaptic plasticity,14,26,0.6732
+GO:BP,protein-containing complex assembly,34,73,0.6726
+GO:BP,cellular response to xenobiotic stimulus,20,37,0.6722
+GO:BP,negative regulation of fat cell differentiation,17,29,0.6716
+GO:BP,positive regulation of cell adhesion,14,26,0.6679
+GO:BP,skeletal muscle cell differentiation,16,29,0.6661
+GO:BP,cellular response to starvation,26,52,0.6656
+GO:BP,erythrocyte differentiation,18,34,0.6636
+GO:BP,regulation of blood pressure,28,48,0.6627
+GO:BP,"retrograde transport, endosome to Golgi",12,26,0.6545
+GO:BP,wound healing,18,31,0.6505
+GO:BP,blood vessel remodeling,18,27,0.6491
+GO:BP,neural tube development,18,33,0.649
+GO:BP,blood vessel development,29,55,0.6471
+GO:BP,protein polyubiquitination,16,34,0.6465
+GO:BP,positive regulation of protein localization to nucleus,13,27,0.6405
+GO:BP,cholesterol homeostasis,23,46,0.6394
+GO:BP,positive regulation of TORC1 signaling,19,40,0.6362
+GO:BP,anterior/posterior pattern specification,39,73,0.6343
+GO:BP,epidermis development,17,31,0.6312
+GO:BP,dendritic spine development,14,25,0.6292
+GO:BP,epidermal growth factor receptor signaling pathway,18,31,0.6282
+GO:BP,postsynaptic modulation of chemical synaptic transmission,17,33,0.6229
+GO:BP,kidney development,55,101,0.6226
+GO:BP,embryonic digit morphogenesis,25,43,0.6213
+GO:BP,cell morphogenesis,27,47,0.6209
+GO:BP,positive regulation of neuron apoptotic process,28,49,0.6207
+GO:BP,intracellular receptor signaling pathway,39,76,0.6186
+GO:BP,thymus development,19,32,0.6172
+GO:BP,protein dephosphorylation,12,25,0.6171
+GO:BP,positive regulation of smooth muscle cell proliferation,21,43,0.6149
+GO:BP,chromatin remodeling,72,138,0.613
+GO:BP,positive regulation of dendritic spine morphogenesis,16,31,0.6103
+GO:BP,myelination in peripheral nervous system,12,26,0.6091
+GO:BP,animal organ morphogenesis,40,67,0.608
+GO:BP,post-embryonic development,38,71,0.6079
+GO:BP,social behavior,45,81,0.6067
+GO:BP,regulation of protein localization,18,32,0.6061
+GO:BP,Wnt signaling pathway,24,49,0.6003
+GO:BP,multicellular organism growth,52,89,0.598
+GO:BP,energy homeostasis,18,42,0.5975
+GO:BP,chromatin organization,25,44,0.5969
+GO:BP,regulation of cell differentiation,16,31,0.5962
+GO:BP,negative regulation of autophagy,15,25,0.5957
+GO:BP,protein ubiquitination,44,78,0.5939
+GO:BP,regulation of actin cytoskeleton organization,17,27,0.5932
+GO:BP,response to hormone,18,36,0.5926
+GO:BP,cellular response to hypoxia,37,66,0.5925
+GO:BP,positive regulation of cell growth,18,32,0.5922
+GO:BP,protein folding,15,30,0.5915
+GO:BP,regulation of inflammatory response,22,43,0.5906
+GO:BP,positive regulation of neuron projection development,58,101,0.5886
+GO:BP,vasodilation,21,35,0.5868
+GO:BP,response to wounding,17,28,0.5861
+GO:BP,axonogenesis,49,93,0.5828
+GO:BP,cellular response to tumor necrosis factor,22,41,0.5823
+GO:BP,regulation of postsynapse organization,27,53,0.5821
+GO:BP,positive regulation of cold-induced thermogenesis,31,61,0.5792
+GO:BP,Notch signaling pathway,29,57,0.5784
+GO:BP,microtubule cytoskeleton organization,31,52,0.5779
+GO:BP,startle response,21,41,0.5771
+GO:BP,negative regulation of DNA-templated transcription,160,304,0.5758
+GO:BP,positive regulation of translation,16,31,0.5751
+GO:BP,cell differentiation,107,202,0.5749
+GO:BP,neural crest cell migration,18,30,0.5744
+GO:BP,proteasome-mediated ubiquitin-dependent protein catabolic process,41,90,0.5718
+GO:BP,cardiac muscle cell differentiation,19,32,0.5704
+GO:BP,small GTPase-mediated signal transduction,18,28,0.5667
+GO:BP,hormone-mediated signaling pathway,23,47,0.5659
+GO:BP,negative regulation of inflammatory response,39,71,0.5647
+GO:BP,in utero embryonic development,81,153,0.5642
+GO:BP,cell migration,57,95,0.5636
+GO:BP,"synaptic transmission, GABAergic",19,35,0.5605
+GO:BP,circadian regulation of gene expression,27,60,0.5595
+GO:BP,liver development,25,49,0.5593
+GO:BP,outflow tract morphogenesis,33,56,0.5593
+GO:BP,neuron apoptotic process,21,38,0.5591
+GO:BP,negative regulation of phosphatidylinositol 3-kinase/protein kinase B signal transduction,25,48,0.5589
+GO:BP,homeostasis of number of cells within a tissue,20,38,0.5589
+GO:BP,positive regulation of epithelial cell proliferation,23,45,0.5584
+GO:BP,heart development,100,192,0.554
+GO:BP,vasculogenesis,23,40,0.5533
+GO:BP,dendrite development,22,37,0.5524
+GO:BP,positive regulation of fibroblast proliferation,14,25,0.5519
+GO:BP,vesicle-mediated transport,35,64,0.5518
+GO:BP,epithelial to mesenchymal transition,15,35,0.5517
+GO:BP,neuronal action potential,22,36,0.5505
+GO:BP,limb morphogenesis,18,29,0.549
+GO:BP,embryonic organ development,22,38,0.5474
+GO:BP,positive regulation of dendrite morphogenesis,13,25,0.5474
+GO:BP,pattern specification process,21,42,0.545
+GO:BP,negative regulation of transcription by RNA polymerase II,273,505,0.5446
+GO:BP,forebrain development,46,88,0.544
+GO:BP,neuromuscular junction development,22,40,0.5435
+GO:BP,cellular response to hydrogen peroxide,21,36,0.5412
+GO:BP,heterochromatin formation,14,26,0.5392
+GO:BP,insulin-like growth factor receptor signaling pathway,13,27,0.5384
+GO:BP,response to toxic substance,22,39,0.5377
+GO:BP,odontogenesis of dentin-containing tooth,23,36,0.5366
+GO:BP,protein stabilization,41,75,0.5357
+GO:BP,negative regulation of translation,21,41,0.5352
+GO:BP,negative regulation of protein ubiquitination,15,30,0.5329
+GO:BP,negative regulation of apoptotic process,136,237,0.5326
+GO:BP,regulation of gene expression,124,222,0.5317
+GO:BP,mesoderm formation,15,28,0.5309
+GO:BP,regulation of protein phosphorylation,17,30,0.5308
+GO:BP,negative regulation of cell growth,24,43,0.5302
+GO:BP,proteolysis,22,38,0.5288
+GO:BP,intracellular signal transduction,65,114,0.5287
+GO:BP,positive regulation of peptidyl-tyrosine phosphorylation,16,27,0.5274
+GO:BP,positive regulation of protein phosphorylation,44,76,0.5269
+GO:BP,positive regulation of cytosolic calcium ion concentration,46,79,0.5265
+GO:BP,autophagosome assembly,13,26,0.5258
+GO:BP,response to insulin,23,43,0.5243
+GO:BP,cell fate specification,23,44,0.5228
+GO:BP,monoatomic cation transmembrane transport,19,35,0.5218
+GO:BP,neuron differentiation,71,125,0.5205
+GO:BP,positive regulation of axonogenesis,17,27,0.5181
+GO:BP,phosphatidylinositol 3-kinase/protein kinase B signal transduction,21,43,0.5178
+GO:BP,neuromuscular process,29,59,0.5175
+GO:BP,embryonic hindlimb morphogenesis,19,32,0.5175
+GO:BP,protein autophosphorylation,40,77,0.5163
+GO:BP,neuron projection development,54,98,0.5158
+GO:BP,positive regulation of apoptotic process,93,170,0.5154
+GO:BP,positive regulation of canonical Wnt signaling pathway,25,46,0.5148
+GO:BP,tissue development,18,32,0.5145
+GO:BP,skeletal system morphogenesis,21,37,0.5137
+GO:BP,animal organ development,38,67,0.5133
+GO:BP,response to amphetamine,18,33,0.5116
+GO:BP,lysosome organization,15,27,0.5107
+GO:BP,negative regulation of osteoblast differentiation,19,32,0.5102
+GO:BP,visual learning,33,62,0.51
+GO:BP,regulation of heart rate,16,27,0.5067
+GO:BP,fat cell differentiation,26,47,0.506
+GO:BP,positive regulation of protein ubiquitination,17,31,0.5055
+GO:BP,cellular response to heat,15,32,0.5022
+GO:BP,negative regulation of insulin secretion,17,32,0.5021
+GO:BP,positive regulation of DNA-templated transcription,250,472,0.5019
+GO:BP,B cell differentiation,20,34,0.4994
+GO:BP,positive regulation of mesenchymal cell proliferation,15,27,0.4993
+GO:BP,apoptotic process,44,79,0.4989
+GO:BP,embryonic cranial skeleton morphogenesis,16,29,0.4972
+GO:BP,intracellular protein localization,41,78,0.4969
+GO:BP,dorsal/ventral pattern formation,22,44,0.4968
+GO:BP,positive regulation of transcription by RNA polymerase II,407,748,0.4959
+GO:BP,"regulation of synaptic transmission, glutamatergic",16,29,0.4958
+GO:BP,response to hypoxia,52,100,0.4953
+GO:BP,adenylate cyclase-inhibiting G protein-coupled receptor signaling pathway,29,50,0.4952
+GO:BP,positive regulation of cell migration,60,105,0.4949
+GO:BP,response to activity,20,41,0.4922
+GO:BP,osteoblast differentiation,34,67,0.4918
+GO:BP,response to xenobiotic stimulus,88,155,0.4914
+GO:BP,chloride transmembrane transport,26,42,0.4908
+GO:BP,skeletal system development,34,63,0.4902
+GO:BP,calcium ion transmembrane transport,40,68,0.4897
+GO:BP,gene expression,126,220,0.4896
+GO:BP,lung development,41,79,0.4891
+GO:BP,cellular response to mechanical stimulus,27,45,0.4882
+GO:BP,response to estradiol,26,50,0.4881
+GO:BP,regulation of membrane potential,40,70,0.4874
+GO:BP,response to estrogen,23,43,0.4866
+GO:BP,behavioral response to cocaine,11,26,0.4855
+GO:BP,myelination,21,41,0.4852
+GO:BP,positive regulation of autophagy,23,49,0.4845
+GO:BP,regulation of DNA-templated transcription,365,647,0.4817
+GO:BP,long-term synaptic potentiation,32,57,0.4813
+GO:BP,regulation of myelination,16,30,0.4811
+GO:BP,"mRNA splicing, via spliceosome",16,33,0.4788
+GO:BP,negative regulation of cell population proliferation,110,204,0.4786
+GO:BP,regulation of transcription by RNA polymerase II,376,686,0.4781
+GO:BP,negative regulation of gene expression,102,195,0.4771
+GO:BP,potassium ion transport,32,57,0.477
+GO:BP,prepulse inhibition,14,27,0.4752
+GO:BP,brain development,86,146,0.4734
+GO:BP,midbrain development,18,31,0.4724
+GO:BP,chloride transport,17,27,0.4711
+GO:BP,regulation of neurogenesis,15,27,0.4709
+GO:BP,response to axon injury,15,31,0.4706
+GO:BP,retinal ganglion cell axon guidance,13,27,0.4698
+GO:BP,skeletal muscle tissue development,20,41,0.4684
+GO:BP,hematopoietic progenitor cell differentiation,18,30,0.4681
+GO:BP,somitogenesis,17,31,0.4672
+GO:BP,negative regulation of angiogenesis,24,41,0.4671
+GO:BP,regulation of signal transduction,25,41,0.4668
+GO:BP,gamma-aminobutyric acid signaling pathway,21,35,0.4661
+GO:BP,regulation of protein stability,20,40,0.4644
+GO:BP,regulation of calcium ion transport,17,27,0.461
+GO:BP,embryonic skeletal system morphogenesis,18,27,0.4599
+GO:BP,transmembrane transport,71,124,0.4597
+GO:BP,regulation of synapse assembly,19,37,0.4593
+GO:BP,"synaptic transmission, cholinergic",16,25,0.4586
+GO:BP,associative learning,29,52,0.4582
+GO:BP,monoatomic ion transport,92,158,0.4568
+GO:BP,sodium ion transmembrane transport,27,53,0.4566
+GO:BP,learning,38,62,0.4564
+GO:BP,cellular response to growth factor stimulus,27,48,0.4543
+GO:BP,branching involved in blood vessel morphogenesis,18,33,0.4541
+GO:BP,response to nicotine,21,40,0.4537
+GO:BP,blood vessel morphogenesis,15,25,0.4529
+GO:BP,positive regulation of synapse assembly,31,58,0.4524
+GO:BP,regulation of postsynaptic membrane potential,45,78,0.4522
+GO:BP,negative regulation of canonical NF-kappaB signal transduction,20,36,0.4522
+GO:BP,neuron migration,58,95,0.4506
+GO:BP,regulation of apoptotic process,52,97,0.4505
+GO:BP,negative regulation of miRNA transcription,17,29,0.45
+GO:BP,vasculature development,13,27,0.4491
+GO:BP,potassium ion transmembrane transport,39,70,0.4488
+GO:BP,protein phosphorylation,72,128,0.4478
+GO:BP,limb development,21,36,0.4475
+GO:BP,coronary vasculature development,14,26,0.4462
+GO:BP,regulation of presynaptic membrane potential,32,56,0.4458
+GO:BP,MAPK cascade,28,53,0.4455
+GO:BP,positive regulation of cell size,11,25,0.4446
+GO:BP,regulation of postsynaptic membrane neurotransmitter receptor levels,19,33,0.4431
+GO:BP,positive regulation of non-canonical NF-kappaB signal transduction,18,33,0.4431
+GO:BP,sensory perception of pain,31,61,0.4421
+GO:BP,cell population proliferation,43,75,0.442
+GO:BP,positive regulation of mitotic cell cycle,12,25,0.4416
+GO:BP,regulation of synaptic plasticity,34,62,0.4406
+GO:BP,calcium-mediated signaling,37,64,0.4406
+GO:BP,cell-matrix adhesion,17,25,0.4388
+GO:BP,positive regulation of phagocytosis,20,33,0.4371
+GO:BP,cellular response to glucose stimulus,25,53,0.4368
+GO:BP,positive regulation of cell population proliferation,132,227,0.4356
+GO:BP,positive regulation of gene expression,174,328,0.4334
+GO:BP,defense response to bacterium,16,32,0.4319
+GO:BP,negative regulation of transforming growth factor beta receptor signaling pathway,21,40,0.4297
+GO:BP,positive regulation of insulin secretion involved in cellular response to glucose stimulus,15,28,0.4282
+GO:BP,retina development in camera-type eye,32,63,0.4282
+GO:BP,positive regulation of phosphatidylinositol 3-kinase/protein kinase B signal transduction,58,99,0.4274
+GO:BP,positive regulation of cell differentiation,34,67,0.4261
+GO:BP,calcium ion transport,53,92,0.4256
+GO:BP,cytoskeleton organization,20,31,0.4243
+GO:BP,cell adhesion,34,53,0.4241
+GO:BP,positive regulation of intracellular signal transduction,18,31,0.4234
+GO:BP,acetylcholine receptor signaling pathway,18,29,0.4221
+GO:BP,cell maturation,18,32,0.4192
+GO:BP,sodium ion transport,15,32,0.4175
+GO:BP,mitochondrion organization,34,72,0.4169
+GO:BP,angiogenesis,51,95,0.4166
+GO:BP,response to virus,18,30,0.4163
+GO:BP,neuron development,37,62,0.4161
+GO:BP,cell surface receptor protein tyrosine kinase signaling pathway,37,63,0.4157
+GO:BP,neuromuscular process controlling balance,25,51,0.4147
+GO:BP,cerebral cortex development,39,74,0.4145
+GO:BP,response to ethanol,37,69,0.4142
+GO:BP,negative regulation of cell differentiation,25,46,0.4141
+GO:BP,nerve development,15,27,0.4136
+GO:BP,cellular response to leukemia inhibitory factor,24,46,0.413
+GO:BP,presynaptic modulation of chemical synaptic transmission,31,48,0.4127
+GO:BP,regulation of cell migration,24,39,0.4111
+GO:BP,negative regulation of neuron apoptotic process,74,135,0.4107
+GO:BP,regulation of neuron projection development,22,41,0.4094
+GO:BP,negative regulation of protein phosphorylation,18,40,0.4082
+GO:BP,regulation of developmental process,28,46,0.4077
+GO:BP,receptor-mediated endocytosis,19,31,0.4072
+GO:BP,cellular response to retinoic acid,20,42,0.407
+GO:BP,negative regulation of cardiac muscle cell apoptotic process,13,25,0.406
+GO:BP,anatomical structure morphogenesis,28,44,0.4056
+GO:BP,learning or memory,35,60,0.4054
+GO:BP,embryonic limb morphogenesis,25,44,0.4038
+GO:BP,cellular response to amyloid-beta,21,35,0.4036
+GO:BP,protein catabolic process,25,46,0.4013
+GO:BP,membrane depolarization,24,43,0.4001
+GO:BP,ephrin receptor signaling pathway,17,30,0.399
+GO:BP,negative regulation of cell migration,34,66,0.3984
+GO:BP,regulation of cell population proliferation,56,105,0.3981
+GO:BP,response to cytokine,17,31,0.3966
+GO:BP,locomotory behavior,55,104,0.3963
+GO:BP,camera-type eye development,34,55,0.3951
+GO:BP,response to oxidative stress,31,54,0.3935
+GO:BP,ureteric bud development,23,40,0.3927
+GO:BP,adenylate cyclase-activating G protein-coupled receptor signaling pathway,44,72,0.3921
+GO:BP,positive regulation of ERK1 and ERK2 cascade,62,106,0.389
+GO:BP,neuron fate commitment,18,31,0.3887
+GO:BP,"positive regulation of synaptic transmission, glutamatergic",25,42,0.3885
+GO:BP,endocytosis,27,41,0.3849
+GO:BP,modulation of chemical synaptic transmission,73,128,0.3839
+GO:BP,homophilic cell-cell adhesion,18,33,0.3834
+GO:BP,response to cocaine,27,52,0.3828
+GO:BP,cellular response to lipopolysaccharide,44,76,0.3817
+GO:BP,mammary gland development,15,27,0.3807
+GO:BP,positive regulation of neuron differentiation,40,64,0.3805
+GO:BP,gastrulation,12,25,0.3803
+GO:BP,cell communication,14,27,0.3797
+GO:BP,response to lipopolysaccharide,40,70,0.377
+GO:BP,negative regulation of protein-containing complex assembly,13,27,0.3764
+GO:BP,memory,55,101,0.3746
+GO:BP,protein import into nucleus,24,47,0.374
+GO:BP,ventricular septum development,18,34,0.3727
+GO:BP,central nervous system development,42,74,0.3716
+GO:BP,monoatomic ion transmembrane transport,56,91,0.37
+GO:BP,roof of mouth development,30,56,0.3696
+GO:BP,ubiquitin-dependent protein catabolic process,21,39,0.3689
+GO:BP,chemical synaptic transmission,72,118,0.3688
+GO:BP,retinoic acid receptor signaling pathway,16,30,0.3665
+GO:BP,cell-cell adhesion,41,69,0.3631
+GO:BP,sensory perception of sound,41,74,0.3614
+GO:BP,positive regulation of nitric oxide biosynthetic process,17,26,0.3611
+GO:BP,positive regulation of osteoblast differentiation,25,44,0.36
+GO:BP,neurogenesis,32,60,0.3592
+GO:BP,neuron projection morphogenesis,27,42,0.357
+GO:BP,response to nutrient,17,31,0.3559
+GO:BP,phospholipase C-activating G protein-coupled receptor signaling pathway,46,79,0.3558
+GO:BP,"synaptic transmission, glutamatergic",34,63,0.3551
+GO:BP,protein localization to plasma membrane,29,57,0.355
+GO:BP,excitatory postsynaptic potential,44,75,0.3546
+GO:BP,cellular response to transforming growth factor beta stimulus,22,42,0.3535
+GO:BP,cochlea development,16,29,0.3534
+GO:BP,pituitary gland development,18,32,0.3526
+GO:BP,transforming growth factor beta receptor signaling pathway,21,42,0.3522
+GO:BP,hippocampus development,34,62,0.3507
+GO:BP,behavioral fear response,22,39,0.3497
+GO:BP,signal transduction,143,241,0.3475
+GO:BP,DNA-templated transcription,15,32,0.3471
+GO:BP,cilium assembly,43,79,0.3465
+GO:BP,epithelial cell differentiation,20,35,0.3374
+GO:BP,heart looping,20,40,0.3367
+GO:BP,ionotropic glutamate receptor signaling pathway,21,41,0.3356
+GO:BP,cerebellum development,30,61,0.3338
+GO:BP,innate immune response,29,50,0.3337
+GO:BP,G protein-coupled receptor signaling pathway,135,213,0.332
+GO:BP,hindbrain development,15,30,0.3299
+GO:BP,regulation of neurotransmitter receptor localization to postsynaptic specialization membrane,16,29,0.329
+GO:BP,axon guidance,73,128,0.3286
+GO:BP,eating behavior,16,33,0.3285
+GO:BP,BMP signaling pathway,26,46,0.3282
+GO:BP,endoplasmic reticulum to Golgi vesicle-mediated transport,22,39,0.3249
+GO:BP,male gonad development,30,49,0.3232
+GO:BP,determination of left/right symmetry,20,40,0.3229
+GO:BP,positive regulation of MAPK cascade,60,101,0.3227
+GO:BP,regulation of nucleotide-excision repair,13,29,0.32
+GO:BP,ERK1 and ERK2 cascade,15,29,0.3191
+GO:BP,positive regulation of endothelial cell migration,19,32,0.3162
+GO:BP,cartilage development,29,55,0.315
+GO:BP,cellular response to calcium ion,19,35,0.3142
+GO:BP,synapse organization,39,71,0.3139
+GO:BP,mRNA transcription by RNA polymerase II,19,36,0.3122
+GO:BP,nervous system development,93,162,0.3099
+GO:BP,negative regulation of cytosolic calcium ion concentration,15,27,0.3083
+GO:BP,adult locomotory behavior,37,73,0.3065
+GO:BP,positive regulation of insulin secretion,19,34,0.3064
+GO:BP,outflow tract septum morphogenesis,21,37,0.3064
+GO:BP,cell development,18,29,0.3062
+GO:BP,regulation of postsynaptic neurotransmitter receptor internalization,15,26,0.3054
+GO:BP,positive regulation of miRNA transcription,29,55,0.3027
+GO:BP,neuropeptide signaling pathway,30,53,0.3026
+GO:BP,protein homooligomerization,25,46,0.3009
+GO:BP,regulation of synapse organization,15,28,0.3006
+GO:BP,neuromuscular synaptic transmission,16,26,0.2973
+GO:BP,intracellular calcium ion homeostasis,39,74,0.2972
+GO:BP,glucose homeostasis,44,79,0.2965
+GO:BP,transcription by RNA polymerase II,26,46,0.2956
+GO:BP,cell fate commitment,26,43,0.2954
+GO:BP,cellular response to virus,20,31,0.2947
+GO:BP,integrin-mediated signaling pathway,17,29,0.2942
+GO:BP,protein targeting,13,26,0.2905
+GO:BP,cellular response to oxidative stress,29,56,0.2894
+GO:BP,cardiac muscle contraction,13,25,0.287
+GO:BP,positive regulation of myoblast differentiation,19,37,0.2858
+GO:BP,macroautophagy,13,26,0.2846
+GO:BP,positive regulation of stem cell population maintenance,16,33,0.2833
+GO:BP,positive regulation of JNK cascade,31,48,0.2829
+GO:BP,ventricular septum morphogenesis,19,34,0.2826
+GO:BP,response to glucose,13,25,0.28
+GO:BP,adult behavior,25,44,0.2787
+GO:BP,inflammatory response,43,70,0.2761
+GO:BP,positive regulation of canonical NF-kappaB signal transduction,41,74,0.2725
+GO:BP,response to stress,16,30,0.271
+GO:BP,positive regulation of angiogenesis,38,60,0.269
+GO:BP,positive regulation of SMAD protein signal transduction,15,30,0.2689
+GO:BP,regulation of neuron differentiation,16,27,0.2677
+GO:BP,muscle organ development,13,25,0.2651
+GO:BP,negative regulation of extrinsic apoptotic signaling pathway,14,25,0.2637
+GO:BP,insulin secretion,15,26,0.2631
+GO:BP,positive regulation of bone mineralization,18,32,0.2607
+GO:BP,peptidyl-tyrosine phosphorylation,22,32,0.26
+GO:BP,endoderm development,14,27,0.2585
+GO:BP,protein transport,23,36,0.2583
+GO:BP,defense response to virus,33,60,0.2582
+GO:BP,establishment of protein localization,17,37,0.2544
+GO:BP,transmission of nerve impulse,14,27,0.2543
+GO:BP,cardiac muscle tissue development,15,27,0.2524
+GO:BP,positive regulation of type I interferon production,19,36,0.248
+GO:BP,cell surface receptor signaling pathway,66,108,0.2477
+GO:BP,positive regulation of protein localization to plasma membrane,17,29,0.2462
+GO:BP,positive regulation of T cell differentiation,15,28,0.2461
+GO:BP,lipid metabolic process,18,30,0.2449
+GO:BP,positive regulation of interferon-beta production,20,34,0.2443
+GO:BP,nervous system process,16,29,0.2441
+GO:BP,smoothened signaling pathway,17,34,0.2422
+GO:BP,response to ischemia,21,37,0.2417
+GO:BP,proton transmembrane transport,29,55,0.2405
+GO:BP,response to bacterium,18,29,0.24
+GO:BP,positive regulation of cytokine production,19,32,0.2389
+GO:BP,visual perception,27,48,0.2364
+GO:BP,immune system process,17,29,0.2309
+GO:BP,inner ear development,24,44,0.2286
+GO:BP,response to retinoic acid,17,28,0.227
+GO:BP,stem cell differentiation,19,36,0.2264
+GO:BP,negative regulation of tumor necrosis factor production,18,34,0.2262
+GO:BP,regulation of presynapse assembly,15,28,0.2257
+GO:BP,positive regulation of inflammatory response,20,32,0.22
+GO:BP,aerobic respiration,27,38,0.2168
+GO:BP,synapse assembly,36,59,0.2156
+GO:BP,nuclear receptor-mediated steroid hormone signaling pathway,19,36,0.2085
+GO:BP,intracellular iron ion homeostasis,16,30,0.205
+GO:BP,cellular response to hormone stimulus,22,38,0.2034
+GO:BP,positive regulation of tumor necrosis factor production,33,55,0.2033
+GO:BP,regulation of synaptic vesicle exocytosis,16,27,0.2008
+GO:BP,positive regulation of cardiac muscle cell proliferation,16,29,0.1958
+GO:BP,positive regulation of double-strand break repair,14,32,0.1941
+GO:BP,inner ear morphogenesis,33,61,0.1937
+GO:BP,adult walking behavior,18,34,0.1926
+GO:BP,positive regulation of receptor signaling pathway via JAK-STAT,17,29,0.1917
+GO:BP,canonical NF-kappaB signal transduction,20,35,0.1895
+GO:BP,defense response,17,31,0.1748
+GO:BP,positive regulation of protein import into nucleus,14,28,0.1732
+GO:BP,immune response,29,51,0.1708
+GO:BP,cytokine-mediated signaling pathway,41,74,0.1662
+GO:BP,positive regulation of interleukin-6 production,27,45,0.1656
+GO:BP,cell surface receptor signaling pathway via JAK-STAT,25,48,0.1609
+GO:BP,cellular response to type II interferon,18,31,0.1594
+GO:BP,autophagy,20,38,0.1552
+GO:BP,motor neuron axon guidance,15,26,0.1473
+GO:BP,T cell receptor signaling pathway,21,35,0.1409
+GO:BP,dendrite morphogenesis,20,32,0.1318
+GO:BP,SMAD protein signal transduction,14,25,0.1232
+GO:BP,response to calcium ion,19,34,0.121
+GO:BP,embryonic morphogenesis,17,29,0.1178
+GO:BP,regulation of synaptic vesicle endocytosis,15,28,0.1168
+GO:BP,adenylate cyclase-modulating G protein-coupled receptor signaling pathway,19,34,0.1026
+GO:BP,cellular response to cytokine stimulus,14,25,0.0902
+GO:BP,positive regulation of type II interferon production,25,38,0.0888
+GO:BP,positive regulation of interferon-alpha production,18,31,0.0729
+GO:BP,proton motive force-driven mitochondrial ATP synthesis,24,33,0.0696
+GO:BP,positive regulation of interleukin-12 production,18,27,0.0421

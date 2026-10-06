@@ -1,0 +1,350 @@
+{
+  "biological_interpretation": "Lowering either ATXN10 or EEF1A2 exposes a restricted neuronal communication and cytoskeletal vulnerability rather than a generic ataxia-network or translation-elongation signature across all neurons.",
+  "caveats": [
+    "SCA10 is usually modeled as a toxic intronic repeat RNA disease; the atlas tested total Atxn10 lowering.",
+    "The Atxn10/Eef1a2 relationship is convergence at selected markers, not a strong whole-transcriptome phenocopy."
+  ],
+  "cell_types": [
+    "052 Pvalb Gaba",
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "217 P MY Pineal Glut"
+  ],
+  "exact_observed_result": "Atxn10 perturbation was strongest in 052 Pvalb GABA and also reduced Atp1a3, Eef1a2, Snap25 and tubulin-family transcripts in thalamic or midbrain glutamatergic neurons. Eef1a2 perturbation, despite broad target knockdown, produced its dominant downstream response in 151 TH Prkcd Grin2c Glut with App, Aplp2, Hsp90aa1, Tubb3, Tuba1a, Atp1a3 and Cx3cl1 down.",
+  "preliminary_scores": {
+    "novelty": 4,
+    "priority": 3,
+    "support": 4
+  },
+  "prior_expectation": {
+    "citations": [
+      "M\u00e4rz P, et al. Ataxin-10 interacts with O-linked beta-N-acetylglucosamine transferase in the brain. J Biol Chem. 2006. doi:10.1074/jbc.M601563200.",
+      "Waragai M, et al. Ataxin 10 induces neuritogenesis via interaction with G-protein beta2 subunit. J Neurosci Res. 2006. doi:10.1002/jnr.20807.",
+      "Kurosaki T, Ashizawa T. The genetic and molecular features of the intronic pentanucleotide repeat expansion in spinocerebellar ataxia type 10. Front Genet. 2022. doi:10.3389/fgene.2022.936869.",
+      "Human Protein Atlas entry ENSG00000101210, EEF1A2.",
+      "Szklarczyk D, Kirsch R, Koutrouli M, et al. The STRING database in 2023: protein-protein association networks and functional enrichment analyses for any sequenced genome of interest. Nucleic Acids Res. 2023;51(D1):D638-D646."
+    ],
+    "summary": "Prior work supports the broad molecular function of the perturbed target or complex, while the atlas result refines the affected brain cell type and RNA-output module."
+  },
+  "reference_ids": [
+    "Atxn10:R001",
+    "Atxn10:R002",
+    "Atxn10:R007",
+    "Eef1a2:R003",
+    "Eef1a2:R007"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Atxn10:E002",
+    "Eef1a2:E002",
+    "Eef1a2:E003",
+    "Eef1a2:E004"
+  ],
+  "source_claim_ids": [
+    "claim:atxn10_f001_67233a0d1686",
+    "claim:eef1a2_f002_d8c3afdb7eca"
+  ],
+  "source_cluster_ids": [
+    "C159"
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/16498633/",
+    "https://pubmed.ncbi.nlm.nih.gov/16714295/",
+    "https://pubmed.ncbi.nlm.nih.gov/36199580/",
+    "https://string-db.org",
+    "https://www.proteinatlas.org/ENSG00000101210-EEF1A2"
+  ],
+  "status": "grounded",
+  "story_id": "S076",
+  "support": {
+    "exact_de_rows": [
+      {
+        "cell_type": "052 Pvalb Gaba",
+        "direction": "down",
+        "fdr": 2.740452920531735e-05,
+        "fdr_significant": true,
+        "gene": "Pvalb",
+        "log2_fold_change": -0.548495,
+        "p_value": 2.45238001479394e-08,
+        "score": -5.576619,
+        "target": "Atxn10"
+      },
+      {
+        "cell_type": "052 Pvalb Gaba",
+        "direction": "down",
+        "fdr": 1.8420946189541498e-08,
+        "fdr_significant": true,
+        "gene": "Kcnip2",
+        "log2_fold_change": -1.069728,
+        "p_value": 2.8182341151491377e-12,
+        "score": -6.986503,
+        "target": "Atxn10"
+      },
+      {
+        "cell_type": "052 Pvalb Gaba",
+        "direction": "down",
+        "fdr": 3.0683702627735435e-07,
+        "fdr_significant": true,
+        "gene": "Atp1a3",
+        "log2_fold_change": -0.402969,
+        "p_value": 7.322205614541328e-11,
+        "score": -6.513905,
+        "target": "Atxn10"
+      },
+      {
+        "cell_type": "052 Pvalb Gaba",
+        "direction": "down",
+        "fdr": 4.061371508214797e-06,
+        "fdr_significant": true,
+        "gene": "Snap25",
+        "log2_fold_change": -0.326213,
+        "p_value": 1.9383708427227285e-09,
+        "score": -6.002889,
+        "target": "Atxn10"
+      },
+      {
+        "cell_type": "052 Pvalb Gaba",
+        "direction": "down",
+        "fdr": 0.00015394987866150842,
+        "fdr_significant": true,
+        "gene": "Slc6a1",
+        "log2_fold_change": -0.513718,
+        "p_value": 2.2961144055230348e-07,
+        "score": -5.173612,
+        "target": "Atxn10"
+      },
+      {
+        "cell_type": "052 Pvalb Gaba",
+        "direction": "down",
+        "fdr": 1.1828778311314404e-05,
+        "fdr_significant": true,
+        "gene": "Cyp46a1",
+        "log2_fold_change": -0.630612,
+        "p_value": 9.879662114210814e-09,
+        "score": -5.732782,
+        "target": "Atxn10"
+      },
+      {
+        "cell_type": "052 Pvalb Gaba",
+        "direction": "down",
+        "fdr": 0.000524834991940249,
+        "fdr_significant": true,
+        "gene": "Tubb4a",
+        "log2_fold_change": -0.705577,
+        "p_value": 1.2524400237209139e-06,
+        "score": -4.847156,
+        "target": "Atxn10"
+      },
+      {
+        "cell_type": "052 Pvalb Gaba",
+        "direction": "down",
+        "fdr": 6.033637297046784e-06,
+        "fdr_significant": true,
+        "gene": "Eef1a2",
+        "log2_fold_change": -0.408833,
+        "p_value": 3.2396334371447958e-09,
+        "score": -5.918971,
+        "target": "Atxn10"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 6.896310180590835e-07,
+        "fdr_significant": true,
+        "gene": "Atp1a3",
+        "log2_fold_change": -0.299616,
+        "p_value": 7.991552442888737e-11,
+        "score": -6.50076,
+        "target": "Atxn10"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.0038320232703502656,
+        "fdr_significant": true,
+        "gene": "Eef1a2",
+        "log2_fold_change": -0.215346,
+        "p_value": 1.5542130420332498e-06,
+        "score": -4.804136,
+        "target": "Atxn10"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.7885638047435576,
+        "fdr_significant": false,
+        "gene": "Snap25",
+        "log2_fold_change": -0.082697,
+        "p_value": 0.023694777523469497,
+        "score": -2.262043,
+        "target": "Atxn10"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.060782723464052786,
+        "fdr_significant": false,
+        "gene": "Tubb3",
+        "log2_fold_change": -0.235317,
+        "p_value": 0.00020074252491169875,
+        "score": -3.71808,
+        "target": "Atxn10"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.03249543693848677,
+        "fdr_significant": true,
+        "gene": "Tubb4a",
+        "log2_fold_change": -0.340622,
+        "p_value": 7.342963326965548e-05,
+        "score": -3.96489,
+        "target": "Atxn10"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 6.553200493417902e-05,
+        "fdr_significant": true,
+        "gene": "App",
+        "log2_fold_change": -0.179134,
+        "p_value": 7.593951553876705e-09,
+        "score": -5.777232,
+        "target": "Eef1a2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.005689781358181092,
+        "fdr_significant": true,
+        "gene": "Aplp2",
+        "log2_fold_change": -0.200788,
+        "p_value": 2.6373631650413543e-06,
+        "score": -4.697212,
+        "target": "Eef1a2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.00011386703913247158,
+        "fdr_significant": true,
+        "gene": "Hsp90aa1",
+        "log2_fold_change": -0.306881,
+        "p_value": 2.6390182312410125e-08,
+        "score": -5.56384,
+        "target": "Eef1a2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.0003625996954031361,
+        "fdr_significant": true,
+        "gene": "Tubb3",
+        "log2_fold_change": -0.273919,
+        "p_value": 1.0504655408863088e-07,
+        "score": -5.31777,
+        "target": "Eef1a2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.0005995157684417397,
+        "fdr_significant": true,
+        "gene": "Tuba1a",
+        "log2_fold_change": -0.263213,
+        "p_value": 2.431548976819154e-07,
+        "score": -5.162899,
+        "target": "Eef1a2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.006061732321631581,
+        "fdr_significant": true,
+        "gene": "Atp1a3",
+        "log2_fold_change": -0.169362,
+        "p_value": 3.1609937362931933e-06,
+        "score": -4.660072,
+        "target": "Eef1a2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.006261067778798224,
+        "fdr_significant": true,
+        "gene": "Cx3cl1",
+        "log2_fold_change": -0.183898,
+        "p_value": 3.6277117902533313e-06,
+        "score": -4.631645,
+        "target": "Eef1a2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "direction": "down",
+        "fdr": 0.00011386703913247158,
+        "fdr_significant": true,
+        "gene": "Sez6l2",
+        "log2_fold_change": -0.290591,
+        "p_value": 2.2628198280678455e-08,
+        "score": -5.590603,
+        "target": "Eef1a2"
+      }
+    ],
+    "resolved_evidence": [
+      {
+        "cell_type": "052 Pvalb Gaba",
+        "description": "The largest Atxn10 downstream signature occurred in Pvalb GABA neurons, with Pvalb, synaptic, ion-homeostasis, secretory, metabolic, and tubulin-associated transcripts shifting in both directions.",
+        "evidence_id": "E002",
+        "evidence_slug": "pvalb_gaba_broad_atxn10_response",
+        "genes": "Atxn10|Kcnip2|Vgf|Kifc2|Atp1a3|Ptprn|Snap25|Cort|Pvalb|Chac1|Cyp46a1|Tubb4a",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "12",
+        "statistics": "104 perturbed cells versus 13710 controls; 180 genes at FDR<0.05. Atxn10 logFC -0.317, p=3.05e-4, FDR=3.28e-2; Kcnip2 -1.070, FDR=1.84e-8; Vgf +1.511, FDR=1.84e-8; Kifc2 -0.633, FDR=1.84e-8; Atp1a3 -0.403, FDR=3.07e-7; Ptprn +0.750, FDR=1.05e-6; Snap25 -0.326, FDR=4.06e-6; Pvalb -0.548, FDR=2.74e-5; Cort +2.023, FDR=6.65e-6; Chac1 +1.920, FDR=3.36e-5; Cyp46a1 -0.631, FDR=1.18e-5.",
+        "target_gene": "Atxn10"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "The largest cell-type-specific downstream signature after Eef1a2 perturbation.",
+        "evidence_id": "E002",
+        "evidence_slug": "th_prkcd_grin2c_eef1a2_large_downstream_signature",
+        "genes": "Eef1a2|App|Sez6l2|Hsp90aa1|Tubb3|Dgkz|Tuba1a|Aplp2|Atp1a3|Cx3cl1|Scarb2|Glg1|Adgrb1|Ctsb|Psap|Larp4|Nceh1|Ppp2r5b|Clstn3|Tubb4a|Slc1a1",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "21",
+        "statistics": "240 perturbed cells versus 23679 controls; Eef1a2 logFC -1.334, FDR 1.23e-73. Excluding Eef1a2, 21 genes were FDR<0.05, 41 were FDR<0.1, and 92 were FDR<0.25; top FDR genes included App logFC -0.179 FDR 6.55e-05, Sez6l2 -0.291 FDR 1.14e-04, Hsp90aa1 -0.307 FDR 1.14e-04, Tubb3 -0.274 FDR 3.63e-04, Dgkz +0.240 FDR 6.00e-04, and Tuba1a -0.263 FDR 6.00e-04.",
+        "target_gene": "Eef1a2"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "description": "A cell type with very strong target-transcript depletion but a much smaller downstream response than 151 TH Prkcd Grin2c Glut.",
+        "evidence_id": "E003",
+        "evidence_slug": "mb_glut_strong_target_limited_signature",
+        "genes": "Eef1a2|Adprh|Ghitm|Ncdn|Uqcrc1",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "5",
+        "statistics": "224 perturbed cells versus 20353 controls; Eef1a2 logFC -1.398, FDR 2.38e-73. Excluding Eef1a2, 3 genes were FDR<0.05 and 4 were FDR<0.1: Adprh logFC +0.417 FDR 7.65e-04, Ghitm -0.499 FDR 0.0151, Ncdn -0.269 FDR 0.0232, and Uqcrc1 -0.258 FDR 0.0886.",
+        "target_gene": "Eef1a2"
+      },
+      {
+        "cell_type": "052 Pvalb Gaba",
+        "description": "A restricted Pvalb GABA response marked by significant Aplp2 loss and Psenen induction.",
+        "evidence_id": "E004",
+        "evidence_slug": "pvalb_gaba_aplp2_psenen_signature",
+        "genes": "Eef1a2|Psenen|Aplp2|Cars|Tubb2a",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "5",
+        "statistics": "144 perturbed cells versus 13710 controls; Eef1a2 logFC -1.064, FDR 2.00e-37. Excluding Eef1a2, Psenen was upregulated, logFC +0.637 FDR 0.00821, Aplp2 was downregulated, logFC -0.231 FDR 0.0124, and Cars was nominal at FDR 0.0938; Tubb2a was down by logFC -0.380 at FDR 0.128.",
+        "target_gene": "Eef1a2"
+      }
+    ],
+    "support_note": "Exact log2 fold changes, p-values, and FDRs in exact_de_rows were re-read from the Wilcoxon Parquet for this grounding pass; score-vector correlations and perturbed/control cell counts are resolved from the structured report evidence."
+  },
+  "targets": [
+    "Atxn10",
+    "Eef1a2"
+  ],
+  "title": "Atxn10 and Eef1a2 loss converge on cell-selective synaptic-cytoskeletal depression"
+}

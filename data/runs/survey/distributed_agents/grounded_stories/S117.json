@@ -1,0 +1,658 @@
+{
+  "biological_interpretation": "Reducing beta2-containing GABA-A receptor or calcium-extrusion components shifts thalamic excitability/activity feedback in a direction antagonistic to Ank3 scaffold loss, but gamma2 and beta1 subunits are not interchangeable.",
+  "caveats": [
+    "Only three non-target genes were FDR significant; Fos and Npas4 were nominal and should be treated as supporting but not FDR-significant activity markers.",
+    "The literature links ATP2B1 and GABRB2 to calcium and inhibition, respectively, but does not establish a direct Ank3 coupling in this thalamic cell type.",
+    "The comparator perturbations had much stronger on-target FDRs than Gabrb1; therefore divergence could combine beta1-specific biology with weaker Gabrb1 perturbation.",
+    "Correlations were small, Gabrg2/Gabrb2 activity genes were cell-type restricted, and transcriptomic divergence does not prove distinct channel biophysics.",
+    "This is a transcriptomic contrast between perturbations with different guides and cell counts, not a matched receptor-composition or chloride-current assay.",
+    "Exact log2 fold changes, scores, p-values, and FDRs in exact_de_rows were re-read from the Wilcoxon Parquet; the graph and cluster summaries were used only to nominate the target/readout combinations."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut"
+  ],
+  "exact_observed_result": "Gabrb2 loss in 151 TH induced Nr4a1 and Vgf and aligned weakly with Gabra1, Gabrd, Slc12a5, and Atp2b1 perturbations; Atp2b1 or Gabrb2 up-regulated Nr4a1 and Fos in the opposite direction from Ank3-driven Opn3/Vgf repression, while Gabrb1 and Gabrg2 did not phenocopy Gabrb2. Parquet-verified leading rows: Gabrb2->Gabrb2 in 151 TH Prkcd Grin2c Glut log2FC -1.07, FDR 3.15e-36; Gabrg2->Gabrg2 in 151 TH Prkcd Grin2c Glut log2FC -1.05, FDR 4.66e-24; Gabrg2->Gabrg2 in 155 MB Glut log2FC -1.3, FDR 1.76e-23; Gabra1->Gabra1 in 151 TH Prkcd Grin2c Glut log2FC -1.13, FDR 4.26e-18; Gabra1->Gabra1 in 155 MB Glut log2FC -1.59, FDR 3.24e-16; Gabrb2->Gabrb2 in 155 MB Glut log2FC -0.979, FDR 4.52e-15.",
+  "preliminary_scores": {
+    "novelty": 4,
+    "priority": 4,
+    "support": 4
+  },
+  "prior_expectation": {
+    "citations": [
+      {
+        "citation": "Alder J, Thakker-Varia S, Bangasser DA, Kuroiwa M, Plummer MR, Shors TJ, Black IB. Brain-derived neurotrophic factor-induced gene expression reveals novel actions of VGF in hippocampal synaptic plasticity. J Neurosci. 2003;23(34):10800-10808.",
+        "description": "Study identifying Vgf as a BDNF-induced, activity-associated neuronal gene with in vivo induction after hippocampal learning.",
+        "ref_id": "R005",
+        "ref_slug": "vgf_bdnf_synaptic_plasticity",
+        "scoped_ref_id": "Gabrb2:R005",
+        "source": "Journal of Neuroscience",
+        "source_type": "pubmed",
+        "target_gene": "Gabrb2",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/14645472/"
+      },
+      {
+        "citation": "Maxwell MA, Muscat GEO. The NR4A subgroup: immediate early response genes with pleiotropic physiological roles. Nucl Recept Signal. 2006;4:e002. doi:10.1621/nrs.04002.",
+        "description": "Review classifying NR4A1/Nur77 and its NR4A paralogs as immediate-early response genes induced by neurotransmitters and other stimuli.",
+        "ref_id": "R006",
+        "ref_slug": "nr4a_immediate_early_review",
+        "scoped_ref_id": "Gabrb2:R006",
+        "source": "Nuclear Receptor Signaling",
+        "source_type": "review",
+        "target_gene": "Gabrb2",
+        "url": "https://doi.org/10.1621/nrs.04002"
+      },
+      {
+        "citation": "UniProt Consortium. UniProtKB entry P20020, AT2B1_HUMAN: Plasma membrane calcium-transporting ATPase 1.",
+        "description": "Defines ATP2B1 as a plasma-membrane calcium pump that exports cytosolic calcium and contributes to calcium homeostasis.",
+        "ref_id": "R006",
+        "ref_slug": "uniprot_atp2b1_p20020",
+        "scoped_ref_id": "Ank3:R006",
+        "source": "UniProtKB",
+        "source_type": "database",
+        "target_gene": "Ank3",
+        "url": "https://rest.uniprot.org/uniprotkb/P20020"
+      },
+      {
+        "citation": "UniProt Consortium. UniProtKB entry P47870, GBRB2_HUMAN: Gamma-aminobutyric acid receptor subunit beta-2.",
+        "description": "Defines GABRB2 as a beta subunit of the GABA-A ligand-gated chloride channel mediating inhibitory neurotransmission.",
+        "ref_id": "R007",
+        "ref_slug": "uniprot_gabrb2_p47870",
+        "scoped_ref_id": "Ank3:R007",
+        "source": "UniProtKB",
+        "source_type": "database",
+        "target_gene": "Ank3",
+        "url": "https://rest.uniprot.org/uniprotkb/P47870"
+      },
+      {
+        "citation": "UniProtKB P18505, GABRB1_HUMAN, gamma-aminobutyric acid receptor subunit beta-1.",
+        "description": "Curated human GABRB1 entry describing beta1 as a postsynaptic, heteropentameric GABA-gated chloride-channel subunit and listing DEE45 as a GABRB1-associated disease.",
+        "ref_id": "R001",
+        "ref_slug": "uniprot_human_gabrb1_p18505",
+        "scoped_ref_id": "Gabrb1:R001",
+        "source": "UniProtKB",
+        "source_type": "database",
+        "target_gene": "Gabrb1",
+        "url": "https://rest.uniprot.org/uniprotkb/P18505"
+      },
+      {
+        "citation": "STRING human GABRB1 interaction-partner query, accessed for this report.",
+        "description": "Functional network context placing GABRB1 close to GABRA1, GABRB3, GABRB2, GABRA4, GABRA2, GABRG1, GABRG2, and GABRA5.",
+        "ref_id": "R003",
+        "ref_slug": "string_human_gabrb1_partners",
+        "scoped_ref_id": "Gabrb1:R003",
+        "source": "STRING",
+        "source_type": "database",
+        "target_gene": "Gabrb1",
+        "url": "https://string-db.org/cgi/network?identifier=GABRB1&species=9606"
+      },
+      {
+        "citation": "Spiegel I, Mardinly AR, Gabel HW, Bazinet JE, Couch CH, Tzeng CP, Harmin DA, Greenberg ME. Npas4 regulates excitatory-inhibitory balance within neural circuits through cell-type-specific gene programs. Cell. 2014;157:1216-1229. doi:10.1016/j.cell.2014.03.058. PMID:24855953.",
+        "description": "Demonstrates that neuronal activity induces Npas4 and other early transcriptional programs with cell-type-specific downstream effects.",
+        "ref_id": "R005",
+        "ref_slug": "spiegel_2014_npas4_activity_programs",
+        "scoped_ref_id": "Gabrb1:R005",
+        "source": "Cell",
+        "source_type": "pubmed",
+        "target_gene": "Gabrb1",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/24855953/"
+      },
+      {
+        "citation": "Reactome ContentService search for GABRA1, accessed for plasma-membrane GABRA1 heteropentamer complexes including 2GABRA1:2GABRB:GABRG.",
+        "description": "Curated pathway database support that GABRA1 participates in plasma-membrane GABA-A receptor heteropentamers.",
+        "ref_id": "R002",
+        "ref_slug": "reactome_gabra1_heteropentamers",
+        "scoped_ref_id": "Gabra1:R002",
+        "source": "Reactome",
+        "source_type": "database",
+        "target_gene": "Gabra1",
+        "url": "https://reactome.org/content/query?q=GABRA1"
+      },
+      {
+        "citation": "Zhu S, Noviello CM, Teng J, Walsh RM Jr, Kim JJ, Hibbs RE. Structure of a human synaptic GABAA receptor. Nature. 2018;559:67-72.",
+        "description": "Cryo-EM study of the human alpha1-beta2-gamma2 GABA-A receptor, described as a predominant adult synaptic isoform.",
+        "ref_id": "R008",
+        "ref_slug": "zhu_2018_human_synaptic_gabaa_structure",
+        "scoped_ref_id": "Gabra1:R008",
+        "source": "Nature",
+        "source_type": "pubmed",
+        "target_gene": "Gabra1",
+        "url": "https://www.nature.com/articles/s41586-018-0255-3"
+      },
+      {
+        "citation": "UniProtKB reviewed entry P22723, Gamma-aminobutyric acid receptor subunit gamma-2, Mus musculus.",
+        "description": "Curated function, subunit, and localization annotations for mouse Gabrg2 as a gamma subunit of heteropentameric GABA_A chloride channels.",
+        "ref_id": "R001",
+        "ref_slug": "uniprot_gabrg2_mouse",
+        "scoped_ref_id": "Gabrg2:R001",
+        "source": "UniProtKB",
+        "source_type": "database",
+        "target_gene": "Gabrg2",
+        "url": "https://rest.uniprot.org/uniprotkb/P22723"
+      }
+    ],
+    "summary": "References were retained only when they were linked to one of the resolved source findings."
+  },
+  "reference_ids": [
+    "Ank3:R006",
+    "Ank3:R007",
+    "Gabra1:R002",
+    "Gabra1:R008",
+    "Gabrb1:R001",
+    "Gabrb1:R003",
+    "Gabrb1:R005",
+    "Gabrb2:R005",
+    "Gabrb2:R006",
+    "Gabrg2:R001"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Ank3:E002",
+    "Ank3:E009",
+    "Ank3:E010",
+    "Gabra1:E007",
+    "Gabra1:E008",
+    "Gabra1:E009",
+    "Gabrb1:E003",
+    "Gabrb1:E004",
+    "Gabrb1:E005",
+    "Gabrb1:E006",
+    "Gabrb2:E002",
+    "Gabrb2:E003",
+    "Gabrg2:E007"
+  ],
+  "source_urls_or_dois": [
+    "https://doi.org/10.1621/nrs.04002",
+    "https://pubmed.ncbi.nlm.nih.gov/14645472/",
+    "https://pubmed.ncbi.nlm.nih.gov/24855953/",
+    "https://reactome.org/content/query?q=GABRA1",
+    "https://rest.uniprot.org/uniprotkb/P18505",
+    "https://rest.uniprot.org/uniprotkb/P20020",
+    "https://rest.uniprot.org/uniprotkb/P22723",
+    "https://rest.uniprot.org/uniprotkb/P47870",
+    "https://string-db.org/cgi/network?identifier=GABRB1&species=9606",
+    "https://www.nature.com/articles/s41586-018-0255-3"
+  ],
+  "status": "grounded",
+  "story_id": "S117",
+  "support": {
+    "exact_de_rows": [
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 3.1483565541421866e-36,
+        "gene": "Gabrb2",
+        "log2_fold_change": -1.0705480575561523,
+        "p_value": 1.8241824869008557e-40,
+        "score": -13.317793846130371,
+        "target_gene": "Gabrb2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 4.660713780330542e-24,
+        "gene": "Gabrg2",
+        "log2_fold_change": -1.0458893775939941,
+        "p_value": 2.7004541284724156e-28,
+        "score": -11.03126335144043,
+        "target_gene": "Gabrg2"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 1.762322906426253e-23,
+        "gene": "Gabrg2",
+        "log2_fold_change": -1.2987210750579834,
+        "p_value": 1.010332457963798e-27,
+        "score": -10.911978721618652,
+        "target_gene": "Gabrg2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 4.262033419387818e-18,
+        "gene": "Gabra1",
+        "log2_fold_change": -1.1335819959640503,
+        "p_value": 2.4694555996221204e-22,
+        "score": -9.720344543457031,
+        "target_gene": "Gabra1"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 3.236565687133792e-16,
+        "gene": "Gabra1",
+        "log2_fold_change": -1.5899419784545898,
+        "p_value": 1.855509767318576e-20,
+        "score": -9.270341873168945,
+        "target_gene": "Gabra1"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 4.517183543081444e-15,
+        "gene": "Gabrb2",
+        "log2_fold_change": -0.9786681532859802,
+        "p_value": 2.58968270542994e-19,
+        "score": -8.98490047454834,
+        "target_gene": "Gabrb2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 9.236981912788823e-11,
+        "gene": "Opn3",
+        "log2_fold_change": -1.0527015924453735,
+        "p_value": 9.776658067318499e-15,
+        "score": -7.742127895355225,
+        "target_gene": "Ank3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 9.236981912788823e-11,
+        "gene": "Atp2a2",
+        "log2_fold_change": -0.35997214913368225,
+        "p_value": 1.0703959572152295e-14,
+        "score": -7.7306013107299805,
+        "target_gene": "Ank3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 3.807455874351767e-10,
+        "gene": "Atp2b1",
+        "log2_fold_change": -0.3374243676662445,
+        "p_value": 6.618209411353671e-14,
+        "score": -7.495230197906494,
+        "target_gene": "Ank3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 1.0952494677141118e-08,
+        "gene": "Pcsk1n",
+        "log2_fold_change": 0.5523461699485779,
+        "p_value": 2.5383845361008443e-12,
+        "score": 7.001167297363281,
+        "target_gene": "Ank3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 1.7530411216088293e-08,
+        "gene": "Erc2",
+        "log2_fold_change": -0.5453271865844727,
+        "p_value": 5.078628893936002e-12,
+        "score": -6.9033613204956055,
+        "target_gene": "Ank3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 2.398537706907085e-08,
+        "gene": "Vgf",
+        "log2_fold_change": -0.8522036075592041,
+        "p_value": 8.338389386084078e-12,
+        "score": -6.832609176635742,
+        "target_gene": "Ank3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 2.5797741261239212e-08,
+        "gene": "Ache",
+        "log2_fold_change": -0.6884763240814209,
+        "p_value": 1.0463189572320208e-11,
+        "score": -6.79998254776001,
+        "target_gene": "Ank3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 2.2409690949351855e-06,
+        "gene": "Nsmf",
+        "log2_fold_change": 0.35629042983055115,
+        "p_value": 1.4282785818579896e-09,
+        "score": 6.052259922027588,
+        "target_gene": "Ank3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 5.203937719301772e-05,
+        "gene": "Nr4a1",
+        "log2_fold_change": -0.8984399437904358,
+        "p_value": 3.919763042524077e-08,
+        "score": -5.494429111480713,
+        "target_gene": "Ank3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 8.419647572341257e-05,
+        "gene": "Ank3",
+        "log2_fold_change": -0.2557591199874878,
+        "p_value": 6.829773799917585e-08,
+        "score": -5.39559268951416,
+        "target_gene": "Ank3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.00025136957564181567,
+        "gene": "Nr4a1",
+        "log2_fold_change": 0.8042863011360168,
+        "p_value": 2.9129100833398884e-08,
+        "score": 5.5465922355651855,
+        "target_gene": "Gabrb2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.0020344356095497447,
+        "gene": "Vgf",
+        "log2_fold_change": 0.5725728273391724,
+        "p_value": 3.536303858073605e-07,
+        "score": 5.092361927032471,
+        "target_gene": "Gabrb2"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 0.0022914933381575765,
+        "gene": "Vgf",
+        "log2_fold_change": 1.075573444366455,
+        "p_value": 2.6274073704724835e-07,
+        "score": 5.148383617401123,
+        "target_gene": "Gabrg2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr": 0.0024661017526603065,
+        "gene": "Nalf1",
+        "log2_fold_change": -0.3096107542514801,
+        "p_value": 5.715514810036054e-07,
+        "score": -5.000589847564697,
+        "target_gene": "Gabrb2"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr": 0.039844176225395524,
+        "gene": "Ank3",
+        "log2_fold_change": -0.2952430546283722,
+        "p_value": 2.2842501992429928e-06,
+        "score": -4.726498126983643,
+        "target_gene": "Ank3"
+      }
+    ],
+    "finding_summaries": [
+      {
+        "claim_id": "claim:gabrb2_f002_7441165d4dad",
+        "confidence": "high",
+        "direction": "Nr4a1/Vgf_up_Nalf1_down",
+        "finding_id": "F002",
+        "finding_type": "cell_type_selectivity",
+        "summary": "151 TH Prkcd Grin2c Glut was the one robust downstream responder to Gabrb2 CRISPRi, coupling beta2 loss to Nr4a1 and Vgf induction rather than to a broad, ubiquitous stress program.",
+        "target_gene": "Gabrb2",
+        "why_it_matters": "The selective induction of activity-associated Nr4a1 and Vgf nominates a thalamic glutamatergic population as a circuit context in which reduced Gabrb2 can be converted into a nuclear transcriptional response."
+      },
+      {
+        "claim_id": "claim:ank3_f005_5a083f00b9d2",
+        "confidence": "exploratory",
+        "direction": "opposing full-rank signatures",
+        "finding_id": "F005",
+        "finding_type": "homeostatic_compensation",
+        "summary": "Gabrb2 and Atp2b1 were the top negative Ank3 signature neighbors, and direct Atp2b1/Gabrb2 perturbation upregulated several genes that Ank3 perturbation downregulated.",
+        "target_gene": "Ank3",
+        "why_it_matters": "This creates an experimentally testable hypothesis that calcium extrusion and GABA-A receptor perturbations elicit a counter-response to the Ank3 thalamic program."
+      },
+      {
+        "claim_id": "claim:gabrb1_f002_a34dfb719e28",
+        "confidence": "moderate",
+        "direction": "Gabrb2_or_Gabrg2_activity_genes;_Gabrb1_absent",
+        "finding_id": "F002",
+        "finding_type": "cross_perturbation_contrast",
+        "summary": "Gabrb1 failed to phenocopy the activity-gene response caused by related GABA-A subunits: in 151 TH Prkcd Grin2c Glut, Gabrb2 significantly upregulated Nr4a1 and Vgf and drove near-threshold Fos/Npas4 increases while Gabrb1 left the same genes near baseline; Gabrg2 significantly induced Vgf in 155 MB Glut whereas Gabrb1 did not.",
+        "target_gene": "Gabrb1",
+        "why_it_matters": "Beta and gamma GABA-A subunits participate in the same heteropentameric receptor family, but this dataset separates beta1 from beta2/gamma2 at the transcriptional-phenotype level instead of supporting simple subunit interchangeability."
+      },
+      {
+        "claim_id": "claim:gabra1_f004_76d089c98aae",
+        "confidence": "moderate",
+        "direction": "divergent; only weak positive Gabra1-Gabrb2 convergence in 151 TH Prkcd Grin2c Glut",
+        "finding_id": "F004",
+        "finding_type": "cross_perturbation_contrast",
+        "summary": "Complex neighbors Gabrb2 and Gabrg2 were not interchangeable with Gabra1: beta2 or gamma2 knockdown could induce Vgf/Nr4a1/Fos-type activity genes in matched regions, whereas Gabra1 knockdown remained a sparse target-only signature.",
+        "target_gene": "Gabra1",
+        "why_it_matters": "The result refines the canonical alpha1-beta-gamma GABA-A receptor model by showing that different subunits of the same receptor family generate distinct transcriptomic consequences in this assay."
+      },
+      {
+        "claim_id": "claim:gabrg2_f004_34103d5bae73",
+        "confidence": "moderate",
+        "direction": "divergent",
+        "finding_id": "F004",
+        "finding_type": "cross_perturbation_contrast",
+        "summary": "Gabrb2 and Gabrg2 were not interchangeable in 151 TH Prkcd Grin2c Glut despite both being GABA_A receptor subunits.",
+        "target_gene": "Gabrg2",
+        "why_it_matters": "In the same thalamic glutamatergic class, beta2 loss produced a Nr4a1/Vgf/Fos/Npas4/Homer2 program whereas gamma2 loss was almost purely on-target, arguing for subunit- and cell-context-specific receptor biology."
+      }
+    ],
+    "parquet_filter": {
+      "cell_types": [
+        "151 TH Prkcd Grin2c Glut",
+        "155 MB Glut"
+      ],
+      "gene_targets": [
+        "Ank3",
+        "Gabra1",
+        "Gabrb1",
+        "Gabrb2",
+        "Gabrg2"
+      ],
+      "names": [
+        "Ache",
+        "Ank3",
+        "Atp2a2",
+        "Atp2b1",
+        "Dlgap4",
+        "Erc2",
+        "Fos",
+        "Gabra1",
+        "Gabrb1",
+        "Gabrb2",
+        "Gabrd",
+        "Gabrg2",
+        "Gphn",
+        "Grin1",
+        "Homer2",
+        "Nalcn",
+        "Nalf1",
+        "Nlgn2",
+        "Npas4",
+        "Nr4a1",
+        "Nsmf",
+        "Opn3",
+        "Pcsk1n",
+        "Scn1b",
+        "Vgf"
+      ]
+    },
+    "resolved_evidence": [
+      {
+        "cell_type": "",
+        "description": "FDR-count screen showing that most engaged Gabrb2 perturbations did not yield additional transcriptome-wide hits.",
+        "evidence_id": "E002",
+        "evidence_slug": "self_only_fdr_in_eight_engaged_classes",
+        "genes": "Gabrb2",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "1",
+        "scoped_evidence_id": "Gabrb2:E002",
+        "statistics": "Among the 9 cell classes with FDR-significant Gabrb2 depletion, 8 had exactly one FDR<0.05 gene, Gabrb2 itself: 005 L4-5 IT CTX Glut, 007 L2-3 IT CTX Glut, 052 Pvalb Gaba, 110 CNU-HYa HY MM Glut, 145 MH-LH TH Glut, 155 MB Glut, 191 MB P MY GABA, and 308 CB GABA. Only 151 TH Prkcd Grin2c Glut had more than one FDR hit.",
+        "target_gene": "Gabrb2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "The only Gabrb2 perturbation context with multiple transcriptome-wide DE genes.",
+        "evidence_id": "E003",
+        "evidence_slug": "gabrb2_151_th_prkcd_grin2c_program",
+        "genes": "Gabrb2|Nr4a1|Vgf|Nalf1|Fos|Npas4",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "6",
+        "scoped_evidence_id": "Gabrb2:E003",
+        "statistics": "140 perturbed cells versus 23679 controls; 4 genes passed FDR<0.05: Gabrb2 logFC -1.071 FDR 3.15e-36, Nr4a1 logFC 0.804 FDR 2.51e-4, Vgf logFC 0.573 FDR 0.00203, and Nalf1 logFC -0.310 FDR 0.00247. Fos logFC 0.840 and Npas4 logFC 0.896 were nominal at p=1.68e-5 and p=2.28e-5, both FDR 0.0563.",
+        "target_gene": "Gabrb2"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "The dominant Ank3 downstream response was concentrated in thalamic Prkcd/Grin2c glutamatergic neurons.",
+        "evidence_id": "E002",
+        "evidence_slug": "ank3_151_th_broad_fdr_signature",
+        "genes": "Ank3|Opn3|Atp2a2|Atp2b1|Erc2|Vgf|Ache|Pcsk1n|Nsmf",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "9",
+        "scoped_evidence_id": "Ank3:E002",
+        "statistics": "164 perturbed cells versus 23679 controls; 121 genes had FDR <0.05. Ank3 logFC -0.256 FDR 8.42e-05. Top FDR hits included Opn3 logFC -1.053 FDR 9.24e-11, Atp2a2 logFC -0.360 FDR 9.24e-11, Atp2b1 logFC -0.337 FDR 3.81e-10, Pcsk1n logFC 0.552 FDR 1.10e-08, Erc2 logFC -0.545 FDR 1.75e-08, Vgf logFC -0.852 FDR 2.40e-08, and Ache logFC -0.688 FDR 2.58e-08.",
+        "target_gene": "Ank3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "The strongest opposite-direction signatures to Ank3 perturbation in the responsive thalamic class targeted an inhibitory receptor subunit and a plasma-membrane calcium pump.",
+        "evidence_id": "E009",
+        "evidence_slug": "ank3_151_negative_neighbors_gabrb2_atp2b1",
+        "genes": "Gabrb2|Atp2b1|Ank3",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "3",
+        "scoped_evidence_id": "Ank3:E009",
+        "statistics": "Among 2046 perturbations in 151 TH Prkcd Grin2c Glut, Gabrb2 was the most negative Ank3 full-score neighbor with r=-0.129 ranked 2046/2046, and Atp2b1 was second most negative with r=-0.116 ranked 2045/2046.",
+        "target_gene": "Ank3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "Genes downregulated by Ank3 perturbation were increased by the strongest negative-neighbor perturbations.",
+        "evidence_id": "E010",
+        "evidence_slug": "atp2b1_gabrb2_opposite_vgf_nr4a1_opn3_axis",
+        "genes": "Atp2b1|Gabrb2|Opn3|Vgf|Nr4a1|Fos",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "6",
+        "scoped_evidence_id": "Ank3:E010",
+        "statistics": "Direct Atp2b1 perturbation in 151 TH had Atp2b1 logFC -0.852 FDR 3.84e-28 and upregulated Opn3 logFC 0.621 FDR 0.00127, Vgf logFC 0.571 FDR 0.00248, Nr4a1 logFC 0.646 FDR 0.00356, and Fos logFC 1.026 FDR 0.000933. Direct Gabrb2 perturbation had Gabrb2 logFC -1.071 FDR 3.15e-36 and upregulated Nr4a1 logFC 0.804 FDR 0.000251 and Vgf logFC 0.573 FDR 0.00203.",
+        "target_gene": "Ank3"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "The best sampled and strongest nominal Gabrb1 self-depletion contrast did not activate the immediate-early/activity markers observed after some related perturbations.",
+        "evidence_id": "E003",
+        "evidence_slug": "gabrb1_151_th_prkcd_silent_activity_genes",
+        "genes": "Gabrb1|Fos|Nr4a1|Npas4|Vgf",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "5",
+        "scoped_evidence_id": "Gabrb1:E003",
+        "statistics": "139 perturbed cells versus 23,679 controls; Gabrb1 logFC -0.525, score -3.724, nominal p = 1.96e-4, FDR = 1.0; 0/17,259 genes had FDR < 0.05; Fos logFC 0.061, p = 0.542; Npas4 logFC 0.011, p = 0.907; Nr4a1 logFC 0.092, p = 0.623; Vgf logFC 0.065, p = 0.828.",
+        "target_gene": "Gabrb1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "A beta-subunit comparator in the same thalamic glutamatergic class produced strong on-target depletion and a compact activity-related signature.",
+        "evidence_id": "E004",
+        "evidence_slug": "gabrb2_151_th_prkcd_activity_signature",
+        "genes": "Gabrb2|Nr4a1|Vgf|Nalf1|Fos|Npas4",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "6",
+        "scoped_evidence_id": "Gabrb1:E004",
+        "statistics": "140 perturbed cells versus 23,679 controls; Gabrb2 logFC -1.071, FDR = 3.15e-36; Nr4a1 logFC 0.804, FDR = 2.51e-4; Vgf logFC 0.573, FDR = 0.00203; Nalf1 logFC -0.310, FDR = 0.00247; Fos logFC 0.840 and Npas4 logFC 0.896 with FDR = 0.0563; 4 genes had FDR < 0.05 and 10 had FDR < 0.10.",
+        "target_gene": "Gabrb1"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "description": "A gamma-subunit perturbation in midbrain glutamatergic cells showed strong on-target depletion and Vgf induction, unlike Gabrb1 in the same broad cell class.",
+        "evidence_id": "E005",
+        "evidence_slug": "gabrg2_155_mb_vgf_response",
+        "genes": "Gabrg2|Vgf|Fos|Npas4|Nr4a1",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "5",
+        "scoped_evidence_id": "Gabrb1:E005",
+        "statistics": "139 Gabrg2-perturbed cells versus 20,353 controls; Gabrg2 logFC -1.299, FDR = 1.76e-23; Vgf logFC 1.076, FDR = 0.00229; Fos logFC 1.156, FDR = 0.2005; Npas4 logFC 0.729, FDR = 1.0; Nr4a1 logFC 0.873, FDR = 0.932; 2 genes had FDR < 0.05.",
+        "target_gene": "Gabrb1"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "description": "Gabrb1 was nominally depleted in midbrain glutamatergic cells without reproducing the Gabrg2 Vgf/Fos/Npas4/Nr4a1 trend.",
+        "evidence_id": "E006",
+        "evidence_slug": "gabrb1_155_mb_no_activity_response",
+        "genes": "Gabrb1|Vgf|Fos|Npas4|Nr4a1",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "5",
+        "scoped_evidence_id": "Gabrb1:E006",
+        "statistics": "119 perturbed cells versus 20,353 controls; Gabrb1 logFC -0.639, nominal p = 0.00807, FDR = 1.0; 0/17,443 genes had FDR < 0.05; Vgf logFC 0.187, p = 0.480; Fos logFC 0.487, p = 0.168; Npas4 logFC 0.018, p = 0.968; Nr4a1 logFC 0.409, p = 0.132.",
+        "target_gene": "Gabrb1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "Gabrb2, a GABA-A beta-subunit comparator, produced a clearer thalamic activity-linked response than Gabra1.",
+        "evidence_id": "E007",
+        "evidence_slug": "gabrb2_thalamic_comparator_activity_genes",
+        "genes": "Gabrb2|Nr4a1|Vgf|Fos|Npas4|Nalf1|Gabra1",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "7",
+        "scoped_evidence_id": "Gabra1:E007",
+        "statistics": "Gabrb2 perturbation had 140 perturbed cells and direct Gabrb2 depletion score -13.318, logFC -1.071, p=1.82e-40, FDR=3.15e-36. In the same signature, Nr4a1 was up score +5.547, logFC +0.804, FDR=2.51e-4; Vgf was up score +5.092, logFC +0.573, FDR=0.00203; Nalf1 was down score -5.001, logFC -0.310, FDR=0.00247; Fos and Npas4 were nominally up with FDR=0.0563. In the Gabra1 perturbation in the same cell type, Fos was only nominal, score +3.090, p=0.0020, FDR=1.0, and Nr4a1, Vgf, Npas4, and Nalf1 all had FDR=1.0.",
+        "target_gene": "Gabra1"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "description": "Gabrg2, a GABA-A gamma-subunit comparator, produced Vgf/Fos/Nr4a1 signals that were absent from the strongly engaged Gabra1 155 MB Glut signature.",
+        "evidence_id": "E008",
+        "evidence_slug": "gabrg2_midbrain_comparator_activity_genes",
+        "genes": "Gabrg2|Vgf|Fos|Nr4a1|Npas4|Gabra1",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "6",
+        "scoped_evidence_id": "Gabra1:E008",
+        "statistics": "Gabrg2 perturbation had 139 perturbed cells and direct Gabrg2 depletion score -10.912, logFC -1.299, p=1.01e-27, FDR=1.76e-23. Vgf was up with score +5.148, logFC +1.076, p=2.63e-7, FDR=0.00229; Fos and Nr4a1 were nominally up with scores +4.142 and +3.407. In the Gabra1 perturbation in 155 MB Glut, Gabra1 itself was depleted with FDR=3.24e-16, but Vgf, Fos, Nr4a1, and Npas4 all had FDR=1.0.",
+        "target_gene": "Gabra1"
+      },
+      {
+        "cell_type": "",
+        "description": "Signature-neighbor analysis showed only weak convergence between Gabra1 and related GABAergic perturbations.",
+        "evidence_id": "E009",
+        "evidence_slug": "gabra1_related_signature_correlations_are_weak",
+        "genes": "Gabra1|Gabrb2|Gabrd|Gphn|Nlgn2|Gabrg2",
+        "has_cell_type": "0",
+        "has_genes": "1",
+        "n_genes": "6",
+        "scoped_evidence_id": "Gabra1:E009",
+        "statistics": "Pearson correlations with the Gabra1 signature, after excluding GABA receptor gene rows, were small across related perturbations. The largest related correlations were in 151 TH Prkcd Grin2c Glut: Gabrb2 r=0.154, Spearman rho=0.104 over 17,242 genes; Gabrd r=0.131; Gphn r=0.117. Gabrb2 was also the second-ranked genome-wide positive neighbor of Gabra1 in this cell type, below Sgce r=0.159. Maximal related correlations in 052 Pvalb Gaba, 155 MB Glut, and 005 L4-5 IT CTX Glut were 0.021, 0.022, and 0.027, respectively.",
+        "target_gene": "Gabra1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "description": "A same-cell-type contrast between two GABA_A receptor subunit perturbations.",
+        "evidence_id": "E007",
+        "evidence_slug": "gabrb2_th_diverges_from_gabrg2",
+        "genes": "Gabrg2|Gabrb2|Nr4a1|Vgf|Npas4|Fos|Homer2",
+        "has_cell_type": "1",
+        "has_genes": "1",
+        "n_genes": "7",
+        "scoped_evidence_id": "Gabrg2:E007",
+        "statistics": "In 151 TH Prkcd Grin2c Glut, Gabrg2 perturbation had n=166, Gabrg2 logFC -1.046 FDR 4.66e-24, and 0 non-target genes with FDR<0.10. Gabrb2 perturbation in the same class had n=140, Gabrb2 logFC -1.071 FDR 3.15e-36, and 8 non-target rows with FDR<0.10, including Nr4a1 logFC 0.804 FDR 2.51e-4, Vgf logFC 0.573 FDR 0.00203, Npas4 logFC 0.896 FDR 0.0563, Fos logFC 0.840 FDR 0.0563, and Homer2 logFC 0.412 FDR 0.0579.",
+        "target_gene": "Gabrg2"
+      }
+    ],
+    "source_claim_ids": [
+      "claim:gabrb2_f002_7441165d4dad",
+      "claim:ank3_f005_5a083f00b9d2",
+      "claim:gabrb1_f002_a34dfb719e28",
+      "claim:gabra1_f004_76d089c98aae",
+      "claim:gabrg2_f004_34103d5bae73"
+    ],
+    "source_cluster_ids": [
+      "C368"
+    ]
+  },
+  "targets": [
+    "Gabrb2",
+    "Atp2b1",
+    "Ank3",
+    "Fos",
+    "Nr4a1",
+    "Npas4",
+    "Vgf",
+    "Gabra1",
+    "Gabrd",
+    "Gabrg2",
+    "Gabrb1"
+  ],
+  "title": "Gabrb2 and Atp2b1 perturbations oppose the Ank3 thalamic state through Nr4a1/Fos/Vgf activity-gene induction"
+}

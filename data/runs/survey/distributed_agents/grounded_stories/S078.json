@@ -1,0 +1,149 @@
+{
+  "story_id": "S078",
+  "title": "PCYT2 and SELENOI perturbations activate a TH Prkcd/Grin2c SREBP cholesterol program and reveal a peptide-processing branch downstream of PCYT2",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Pcyt2 perturbation in 151 TH induced sterol genes including Insig1, Cyp51, Msmo1, Fdft1, Ldlr, Hmgcr, Hmgcs1, and Srebf2 at FDR<0.05, and reduced Cpe and Pcsk2 in the same cells. Selenoi was directly depleted in 151 TH and induced the overlapping Insig1/Msmo1/Fdft1/Hmgcr sterol arm.",
+  "biological_interpretation": "Two CDP-ethanolamine phosphatidylethanolamine-pathway perturbations converge on a thalamic SREBP-like transcriptional compensation state, while PCYT2 additionally depresses secretory peptide-processing transcripts.",
+  "targets": [
+    "Pcyt2",
+    "Selenoi",
+    "Srebf2"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "145 MH-LH TH Glut"
+  ],
+  "support": {
+    "support_level": 4,
+    "exact_de_rows": [
+      {
+        "gene_target": "Pcyt2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Insig1",
+        "log2_fold_change": 1.003625750541687,
+        "pvals_adj": 1.3624866097423189e-11,
+        "wilcoxon_score": 8.055826187133789
+      },
+      {
+        "gene_target": "Pcyt2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cyp51",
+        "log2_fold_change": 0.6828410625457764,
+        "pvals_adj": 1.918239585645481e-09,
+        "wilcoxon_score": 7.334657669067383
+      },
+      {
+        "gene_target": "Pcyt2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ldlr",
+        "log2_fold_change": 1.408236026763916,
+        "pvals_adj": 5.755916007840449e-06,
+        "wilcoxon_score": 5.997724533081055
+      },
+      {
+        "gene_target": "Pcyt2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Srebf2",
+        "log2_fold_change": 0.27788418531417847,
+        "pvals_adj": 0.02061117435471069,
+        "wilcoxon_score": 4.236626148223877
+      },
+      {
+        "gene_target": "Pcyt2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Cpe",
+        "log2_fold_change": -0.31512200832366943,
+        "pvals_adj": 1.290721953612425e-05,
+        "wilcoxon_score": -5.797509670257568
+      },
+      {
+        "gene_target": "Pcyt2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Pcsk2",
+        "log2_fold_change": -0.3121553659439087,
+        "pvals_adj": 0.0036447929429258025,
+        "wilcoxon_score": -4.689004898071289
+      },
+      {
+        "gene_target": "Selenoi",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Selenoi",
+        "log2_fold_change": -0.6519796252250671,
+        "pvals_adj": 0.0027590137612450616,
+        "wilcoxon_score": -5.034307956695557
+      },
+      {
+        "gene_target": "Selenoi",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Insig1",
+        "log2_fold_change": 0.7584823369979858,
+        "pvals_adj": 0.00037647213063334045,
+        "wilcoxon_score": 5.5969696044921875
+      }
+    ],
+    "report_evidence_summary": [
+      "Pcyt2:E002",
+      "Pcyt2:E007",
+      "Pcyt2:E008",
+      "Selenoi:E001",
+      "Selenoi:E002"
+    ]
+  },
+  "caveats": [
+    "Pcyt2 mRNA did not pass FDR in any Pcyt2 contrast, so the sterol state infers pathway engagement indirectly.",
+    "Cpe and Pcsk2 are RNA readouts; neuropeptide abundance, secretion, PE, and sterol species were not measured."
+  ],
+  "prior_expectation": {
+    "summary": "PCYT2 and SELENOI/EPT1 are endoplasmic-reticulum enzymes in phosphatidylethanolamine synthesis; biallelic PCYT2 variants disrupt etherlipids and cause complex hereditary spastic paraplegia; Cpe and Pcsk2 are secretory peptide-processing genes",
+    "citations": [
+      {
+        "ref_id": "Pcyt2:R001",
+        "ref": "Reactome R-HSA-1483213",
+        "url_or_doi": "https://reactome.org/PathwayBrowser/#/R-HSA-1483213",
+        "supports": "PCYT2 and SELENOI/EPT1 are endoplasmic-reticulum enzymes in phosphatidylethanolamine synthesis"
+      },
+      {
+        "ref_id": "Pcyt2:R004",
+        "ref": "Vaz et al. 2019 PMID:31637422",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/31637422/",
+        "supports": "biallelic PCYT2 variants disrupt etherlipids and cause complex hereditary spastic paraplegia"
+      },
+      {
+        "ref_id": "Pcyt2:R006",
+        "ref": "QuickGO CPE/PCSK2 annotations",
+        "url_or_doi": "https://www.ebi.ac.uk/QuickGO/",
+        "supports": "Cpe and Pcsk2 are secretory peptide-processing genes"
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 5,
+    "support": 4,
+    "priority": 5
+  },
+  "report_evidence_ids": [
+    "Pcyt2:E002",
+    "Pcyt2:E007",
+    "Pcyt2:E008",
+    "Selenoi:E001",
+    "Selenoi:E002"
+  ],
+  "reference_ids": [
+    "Pcyt2:R001",
+    "Pcyt2:R004",
+    "Pcyt2:R006",
+    "Selenoi:R001",
+    "Selenoi:R002"
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/31637422/",
+    "https://reactome.org/PathwayBrowser/#/R-HSA-1483213",
+    "https://www.ebi.ac.uk/QuickGO/"
+  ],
+  "source_claim_ids": [
+    "claim:selenoi_f001_548029de2b73",
+    "claim:pcyt2_f001_f12257042bc4",
+    "claim:pcyt2_f005_c6c27fae09a3"
+  ]
+}

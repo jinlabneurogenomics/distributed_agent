@@ -1,0 +1,374 @@
+{
+  "biological_interpretation": "SETDB1 has a selective CNS HUSH/protocadherin-repression role that is separable from a generic H3K9-methyltransferase loss signature.",
+  "caveats": [
+    "Atf7ip, Tasor, Mphosph8, Morc2a, Setdb2, Suv39h1, and Suv39h2 were not directly perturbed, leaving Ehmt1 as the only close H3K9-writer comparator.",
+    "Setdb1 target-transcript depletion was weak in several responsive classes."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "052 Pvalb Gaba",
+    "022 L5 ET CTX Glut",
+    "191 MB P MY GABA"
+  ],
+  "exact_observed_result": "Setdb1 perturbation induced Atf7ip, Tasor, and clustered Pcdhga/Pcdhgb genes in 151 TH Prkcd Grin2c Glut and 155 MB Glut, with narrower protocadherin hits in Pvalb and other classes; Ehmt1 shared Abhd12b and Smtn in 151 TH but did not induce the Pcdh/Atf7ip/Tasor module.",
+  "preliminary_scores": {
+    "novelty": 3,
+    "priority": 4,
+    "support": 5
+  },
+  "prior_expectation": {
+    "citations": [
+      {
+        "ref": "Jiang et al. 2017",
+        "supports": "SETDB1 regulation of a neuron-specific clustered protocadherin domain",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/28671686/"
+      },
+      {
+        "ref": "Hagelkruys et al. 2022",
+        "supports": "HUSH control of brain architecture and protocadherin fidelity",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/36332029/"
+      }
+    ],
+    "summary": "Prior expectation is grounded by the listed traceable corpus citations; direct prior support for the exact cell-type/state relationship is partial unless noted in the caveats."
+  },
+  "reference_ids": [
+    "Setdb1:R001",
+    "Setdb1:R004",
+    "Setdb1:R005",
+    "Setdb1:R009",
+    "Ehmt1:R002",
+    "Ehmt1:R003"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Setdb1:E003",
+    "Setdb1:E004",
+    "Setdb1:E005",
+    "Setdb1:E006",
+    "Setdb1:E007",
+    "Setdb1:E011",
+    "Setdb1:E012",
+    "Ehmt1:E008",
+    "Ehmt1:E009"
+  ],
+  "source_urls_or_dois": [
+    {
+      "ref": "Jiang et al. 2017",
+      "supports": "SETDB1 regulation of a neuron-specific clustered protocadherin domain",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/28671686/"
+    },
+    {
+      "ref": "Hagelkruys et al. 2022",
+      "supports": "HUSH control of brain architecture and protocadherin fidelity",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/36332029/"
+    }
+  ],
+  "status": "grounded",
+  "story_id": "S072",
+  "support": {
+    "exact_de_rows": [
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Abhd12b",
+        "log2_fold_change": 1.337072,
+        "pval": 1.0790416539056651e-07,
+        "pvals_adj": 0.00033706451471045127,
+        "score": 5.312883,
+        "target": "Setdb1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Atf7ip",
+        "log2_fold_change": 0.706325,
+        "pval": 9.294034866719855e-08,
+        "pvals_adj": 0.00033706451471045127,
+        "score": 5.340012,
+        "target": "Setdb1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Pcdhga11",
+        "log2_fold_change": 0.927634,
+        "pval": 4.615886473709967e-06,
+        "pvals_adj": 0.007242325877250938,
+        "score": 4.581529,
+        "target": "Setdb1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Pcdhga12",
+        "log2_fold_change": 0.780518,
+        "pval": 9.235846918660316e-06,
+        "pvals_adj": 0.011385820140654172,
+        "score": 4.434331,
+        "target": "Setdb1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Pcdhga7",
+        "log2_fold_change": 0.783898,
+        "pval": 4.10782723214035e-05,
+        "pvals_adj": 0.035623500250403194,
+        "score": 4.10133,
+        "target": "Setdb1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Pcdhga8",
+        "log2_fold_change": 0.998873,
+        "pval": 2.393393450591373e-07,
+        "pvals_adj": 0.0005901082509108072,
+        "score": 5.165857,
+        "target": "Setdb1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Pcdhga9",
+        "log2_fold_change": 0.887202,
+        "pval": 9.888212002850961e-05,
+        "pvals_adj": 0.07420028302487162,
+        "score": 3.893319,
+        "target": "Setdb1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Pcdhgb4",
+        "log2_fold_change": 0.653251,
+        "pval": 0.0006408479935039251,
+        "pvals_adj": 0.283599885125237,
+        "score": 3.41371,
+        "target": "Setdb1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Pcdhgb5",
+        "log2_fold_change": 0.488435,
+        "pval": 0.030528465622536555,
+        "pvals_adj": 1.0,
+        "score": 2.163165,
+        "target": "Setdb1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Setdb1",
+        "log2_fold_change": -0.07588,
+        "pval": 0.5916349026106994,
+        "pvals_adj": 1.0,
+        "score": -0.536468,
+        "target": "Setdb1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Smtn",
+        "log2_fold_change": 0.78669,
+        "pval": 5.608566352246511e-07,
+        "pvals_adj": 0.0012099780834177816,
+        "score": 5.00423,
+        "target": "Setdb1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Tasor",
+        "log2_fold_change": 0.729757,
+        "pval": 5.868640545949135e-09,
+        "pvals_adj": 0.00010128686718253613,
+        "score": 5.820458,
+        "target": "Setdb1"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Atf7ip",
+        "log2_fold_change": 0.916102,
+        "pval": 8.627455457189605e-07,
+        "pvals_adj": 0.008941064572293479,
+        "score": 4.920611,
+        "target": "Setdb1"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Pcdhga11",
+        "log2_fold_change": 1.169009,
+        "pval": 6.620905458296663e-06,
+        "pvals_adj": 0.01924807565151145,
+        "score": 4.505525,
+        "target": "Setdb1"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Pcdhga12",
+        "log2_fold_change": 1.039514,
+        "pval": 2.0503501857005055e-06,
+        "pvals_adj": 0.008941064572293479,
+        "score": 4.748397,
+        "target": "Setdb1"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Pcdhga7",
+        "log2_fold_change": 1.097225,
+        "pval": 1.8419457559430424e-06,
+        "pvals_adj": 0.008941064572293479,
+        "score": 4.770034,
+        "target": "Setdb1"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Pcdhga9",
+        "log2_fold_change": 1.034405,
+        "pval": 8.702657359744569e-06,
+        "pvals_adj": 0.021685778903717787,
+        "score": 4.447126,
+        "target": "Setdb1"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Pcdhgb5",
+        "log2_fold_change": 1.131096,
+        "pval": 6.061597217144904e-06,
+        "pvals_adj": 0.01924807565151145,
+        "score": 4.52423,
+        "target": "Setdb1"
+      },
+      {
+        "cell_type": "155 MB Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Tasor",
+        "log2_fold_change": 0.789807,
+        "pval": 2.0312490109507803e-06,
+        "pvals_adj": 0.008941064572293479,
+        "score": 4.75029,
+        "target": "Setdb1"
+      },
+      {
+        "cell_type": "052 Pvalb Gaba",
+        "fdr_lt_0_05": true,
+        "gene": "Pcdhga11",
+        "log2_fold_change": 1.380901,
+        "pval": 3.129447855870864e-08,
+        "pvals_adj": 0.0005245580496010742,
+        "score": 5.534036,
+        "target": "Setdb1"
+      },
+      {
+        "cell_type": "052 Pvalb Gaba",
+        "fdr_lt_0_05": true,
+        "gene": "Pcdhgb4",
+        "log2_fold_change": 1.204445,
+        "pval": 1.302317391122269e-06,
+        "pvals_adj": 0.010914722054995737,
+        "score": 4.8394,
+        "target": "Setdb1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Abhd12b",
+        "log2_fold_change": 1.484034,
+        "pval": 3.13215380219314e-18,
+        "pvals_adj": 5.40578424720514e-14,
+        "score": 8.706568,
+        "target": "Ehmt1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Atf7ip",
+        "log2_fold_change": -0.021374,
+        "pval": 0.7457643349474194,
+        "pvals_adj": 1.0,
+        "score": -0.324229,
+        "target": "Ehmt1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Ehmt1",
+        "log2_fold_change": -0.064218,
+        "pval": 0.5898096691008383,
+        "pvals_adj": 1.0,
+        "score": -0.539112,
+        "target": "Ehmt1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Pcdhga11",
+        "log2_fold_change": -0.213832,
+        "pval": 0.239732748132384,
+        "pvals_adj": 1.0,
+        "score": -1.175655,
+        "target": "Ehmt1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Pcdhga12",
+        "log2_fold_change": -0.129906,
+        "pval": 0.3992524585884397,
+        "pvals_adj": 1.0,
+        "score": -0.842957,
+        "target": "Ehmt1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Pcdhgb5",
+        "log2_fold_change": 0.022435,
+        "pval": 0.9915186663495884,
+        "pvals_adj": 1.0,
+        "score": 0.01063,
+        "target": "Ehmt1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": true,
+        "gene": "Smtn",
+        "log2_fold_change": 0.551988,
+        "pval": 3.140329248535629e-06,
+        "pvals_adj": 0.018066314166825474,
+        "score": 4.661421,
+        "target": "Ehmt1"
+      },
+      {
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "fdr_lt_0_05": false,
+        "gene": "Tasor",
+        "log2_fold_change": -0.214502,
+        "pval": 0.048414948560836266,
+        "pvals_adj": 1.0,
+        "score": -1.973708,
+        "target": "Ehmt1"
+      }
+    ],
+    "summary": [
+      "Setdb1 induced HUSH-associated cofactors and protocadherins most strongly in 151 TH and 155 MB.",
+      "Ehmt1 overlapped only on Abhd12b and Smtn; score correlations with Setdb1 were near zero across matched classes."
+    ]
+  },
+  "targets": [
+    "Setdb1",
+    "Ehmt1",
+    "Atf7ip",
+    "Tasor"
+  ],
+  "title": "SETDB1 loss derepresses HUSH-associated protocadherins in selected neuronal classes"
+}

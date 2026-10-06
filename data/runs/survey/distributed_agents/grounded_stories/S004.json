@@ -1,0 +1,304 @@
+{
+  "story_id": "S004",
+  "title": "PMCA1 loss selectively induces a thalamic calcium-activity and neurosecretory program",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Atp2b1 knockdown in 151 TH Prkcd Grin2c Glut depleted Atp2b1 and induced immediate-early/neurosecretory genes including Chml, Fos, Cck, Vgf, Ptprn, and Nr4a1, while matched Atp2b2, Atp2b3, and Atp2c1 calcium-pump perturbations did not reproduce the module.",
+  "biological_interpretation": "PMCA1 loss couples plasma-membrane calcium extrusion to an activity-like thalamic RNA state that is separable from PMCA2/PMCA3 buffering and SERCA2 ER stress.",
+  "targets": [
+    "Atp2b1",
+    "Atp2b2",
+    "Atp2b3",
+    "Atp2a2",
+    "Atp2c1"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "001 L5-6 IT Glut",
+    "005 L4-5 IT CTX Glut"
+  ],
+  "support": {
+    "exact_de_rows": [
+      {
+        "gene_target": "Atp2b1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Atp2b1",
+        "score": -11.84715461730957,
+        "logfoldchanges": -0.8516018986701965,
+        "pvals_adj": 3.8422234521625252e-28
+      },
+      {
+        "gene_target": "Atp2b1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Cck",
+        "score": 4.911641597747803,
+        "logfoldchanges": 0.32634270191192627,
+        "pvals_adj": 0.002478800475063435
+      },
+      {
+        "gene_target": "Atp2b1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Chml",
+        "score": 5.801640510559082,
+        "logfoldchanges": 0.6744323372840881,
+        "pvals_adj": 5.666932046257338e-05
+      },
+      {
+        "gene_target": "Atp2b1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Fos",
+        "score": 5.238146781921387,
+        "logfoldchanges": 1.0259242057800293,
+        "pvals_adj": 0.0009331195971784686
+      },
+      {
+        "gene_target": "Atp2b1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Nr4a1",
+        "score": 4.747061252593994,
+        "logfoldchanges": 0.6463345885276794,
+        "pvals_adj": 0.0035621476320021987
+      },
+      {
+        "gene_target": "Atp2b1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Ptprn",
+        "score": 4.7662763595581055,
+        "logfoldchanges": 0.28760862350463867,
+        "pvals_adj": 0.0035621476320021987
+      },
+      {
+        "gene_target": "Atp2b1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Vgf",
+        "score": 4.890585422515869,
+        "logfoldchanges": 0.5711733102798462,
+        "pvals_adj": 0.002478800475063435
+      },
+      {
+        "gene_target": "Atp2b2",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Atp2b2",
+        "score": -5.6602301597595215,
+        "logfoldchanges": -0.9821733832359314,
+        "pvals_adj": 0.0002525602575450606
+      },
+      {
+        "gene_target": "Atp2b3",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Atp2b3",
+        "score": -3.6154208183288574,
+        "logfoldchanges": -0.7106451392173767,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Atp2c1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Atp2c1",
+        "score": -5.083143711090088,
+        "logfoldchanges": -0.38467085361480713,
+        "pvals_adj": 0.00640720837750736
+      },
+      {
+        "gene_target": "Atp2c1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Chac1",
+        "score": 0.008773211389780045,
+        "logfoldchanges": -0.07805753499269485,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Atp2c1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Ddit3",
+        "score": 0.45997196435928345,
+        "logfoldchanges": 0.07433830946683884,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Atp2c1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Hspa5",
+        "score": -0.4517000913619995,
+        "logfoldchanges": -0.08004474639892578,
+        "pvals_adj": 1.0
+      },
+      {
+        "gene_target": "Atp2c1",
+        "group_name": "151 TH Prkcd Grin2c Glut",
+        "names": "Xbp1",
+        "score": -0.7562307715415955,
+        "logfoldchanges": -0.0597493015229702,
+        "pvals_adj": 1.0
+      }
+    ],
+    "evidence_records": [
+      {
+        "target_gene": "Atp2b1",
+        "evidence_id": "E002",
+        "evidence_slug": "th_prkcd_atp2b1_target",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Atp2b1",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "146 perturbed cells versus 23679 controls; Atp2b1 logFC -0.852, Wilcoxon score -11.847, p=2.23e-32, FDR=3.84e-28; Atp2b1 was rank 1 by FDR and by absolute score in this stratum.",
+        "description": "Strong on-target Atp2b1 depletion in the thalamic Prkcd/Grin2c glutamatergic class."
+      },
+      {
+        "target_gene": "Atp2b1",
+        "evidence_id": "E003",
+        "evidence_slug": "th_prkcd_non_target_fdr_module",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Chml|Fos|Opn3|Xylt2|Cck|Vgf|Cbarp|Ptprn|Nr4a1|Fat1|Necab2|Rtn4|Ap1s1|Clstn3|Taok1|Hdac5|Arpp21|Gpr88|Syt7|Nr3c1|Slc35a3",
+        "n_genes": "21",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "21 non-target genes at FDR<0.05; 19 increased and 2 decreased. Examples: Chml logFC 0.674 FDR 5.67e-5; Fos logFC 1.026 FDR 9.33e-4; Cck logFC 0.326 FDR 2.48e-3; Vgf logFC 0.571 FDR 2.48e-3; Nr4a1 logFC 0.646 FDR 3.56e-3; Necab2 logFC -0.548 FDR 6.69e-3; Nr3c1 logFC -0.355 FDR 4.49e-2.",
+        "description": "The full FDR 0.05 non-target program following Atp2b1 knockdown in the most responsive cell type."
+      },
+      {
+        "target_gene": "Atp2b1",
+        "evidence_id": "E006",
+        "evidence_slug": "pmca_paralogs_th_prkcd_contrast",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Atp2b1|Atp2b2|Atp2b3",
+        "n_genes": "3",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "Atp2b2: 280 perturbed cells, target logFC -1.019 FDR 8.94e-35, one FDR<0.05 gene total, Pearson r to Atp2b1 scores 0.085. Atp2b3: 188 perturbed cells, target logFC -0.649 FDR 5.31e-6, one FDR<0.05 gene total, Pearson r to Atp2b1 scores 0.0002.",
+        "description": "Efficient knockdown of neuronal PMCA paralogs in the Atp2b1-responsive class did not reproduce the Atp2b1 downstream signature."
+      },
+      {
+        "target_gene": "Atp2c1",
+        "evidence_id": "E006",
+        "evidence_slug": "atp2a2_151_upr_contrast",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Atp2a2|Ddit3|Chac1|Xbp1|Herpud1|Hspa5|Cars|Shmt2|Asns",
+        "n_genes": "9",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "For Atp2a2 perturbation, 98 perturbed cells yielded 187 FDR<0.05 rows: Atp2a2 logFC -1.256 FDR=1.78e-19, Cars logFC 0.916 FDR=1.12e-9, Ddit3 logFC 1.604 FDR=2.06e-8, Shmt2 logFC 2.021 FDR=3.99e-8, Chac1 logFC 3.014 FDR=6.61e-8, Xbp1 logFC 0.785 FDR=3.00e-7, Herpud1 logFC 0.857 FDR=8.22e-7, Hspa5 logFC 0.749 FDR=1.95e-6, and Asns logFC 0.866 FDR=3.08e-6. In matched Atp2c1 perturbation, all listed UPR markers had FDR=1.0.",
+        "description": "SERCA2/Atp2a2 depletion, unlike Atp2c1 depletion, induced a broad ER-stress signature in the thalamic glutamatergic class."
+      },
+      {
+        "target_gene": "Atp2c1",
+        "evidence_id": "E007",
+        "evidence_slug": "atp2a2_155_upr_contrast",
+        "cell_type": "155 MB Glut",
+        "genes": "Atp2a2|Atp2c1|Chac1|Ddit3|Xbp1|Hspa5|Herpud1",
+        "n_genes": "7",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "For Atp2a2 perturbation, 55 perturbed cells yielded 10 FDR<0.05 rows, including Atp2a2 logFC -1.228 FDR=9.54e-10, Chac1 logFC 2.344 FDR=0.0402, and Ddit3 logFC 1.631 FDR=0.0458; for Atp2c1 perturbation in the same cell type, Atp2c1 logFC -0.716 FDR=2.14e-4 while Xbp1 P=0.0336 FDR=1.0, Hspa5 P=0.337 FDR=1.0, Herpud1 P=0.169 FDR=1.0, Ddit3 P=0.794 FDR=1.0, and Chac1 P=0.986 FDR=1.0.",
+        "description": "Midbrain glutamatergic cells showed a smaller but still significant Atp2a2 stress response that was absent after Atp2c1 perturbation."
+      }
+    ],
+    "source_claim_ids": [
+      "claim:atp2b1_f001_293480b81850",
+      "claim:atp2b1_f003_601be879483b",
+      "claim:atp2c1_f003_c539cee56bab"
+    ],
+    "source_cluster_ids": [
+      "C027",
+      "C354"
+    ]
+  },
+  "caveats": [
+    "Target engagement was inferred from transcript abundance, Bdnf remained nominal rather than FDR-significant, and calcium flux or PMCA protein were not measured."
+  ],
+  "prior_expectation": {
+    "summary": "Prior literature and pathway context were taken from the resolved report references; the observed Perturb-seq signal either refines expected gene function by cell type or marks an exploratory response-state neighbor where noted in caveats.",
+    "citations": [
+      {
+        "reference_id": "Atp2b1:R001",
+        "citation": "UniProtKB reviewed entries P20020 for ATP2B1_HUMAN and P16615 for AT2A2_HUMAN.",
+        "url": "https://rest.uniprot.org/uniprotkb/P20020",
+        "supports": "Defines ATP2B1/PMCA1 and ATP2A2/SERCA2 as curated calcium-transporting ATPases used to interpret the calcium-pump perturbations."
+      },
+      {
+        "reference_id": "Atp2b1:R002",
+        "citation": "QuickGO term GO:0005388, P-type calcium transporter activity, and ATP2B1 annotations to this activity.",
+        "url": "https://www.ebi.ac.uk/QuickGO/term/GO:0005388",
+        "supports": "Provides the formal activity definition for ATP-driven Ca2+ transport out of the cytosol and supports the calcium-extrusion interpretation of ATP2B1."
+      },
+      {
+        "reference_id": "Atp2b1:R003",
+        "citation": "Mata AM, Sepulveda MR. Plasma membrane Ca2+-ATPases in the nervous system during development and ageing. World J Biol Chem. 2010;1(7):229-234.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/21537478/",
+        "supports": "Review describing PMCAs as high-affinity Ca2+ regulators that are broadly expressed in brain and have nervous-system isoform specificity."
+      },
+      {
+        "reference_id": "Atp2b1:R005",
+        "citation": "West AE, Chen WG, Dalva MB, Dolmetsch RE, Kornhauser JM, Shaywitz AJ, Takasu MA, Tao X, Greenberg ME. Calcium regulation of neuronal gene expression. Proc Natl Acad Sci U S A. 2001;98(20):11024-11031.",
+        "url": "https://doi.org/10.1073/pnas.191352298",
+        "supports": "Summarizes how neuronal Ca2+ signals activate transcriptional programs, including CREB-linked BDNF regulation."
+      },
+      {
+        "reference_id": "Atp2b1:R009",
+        "citation": "STRING database mouse functional-association API queried for Atp2b1, PMCA paralogs, calmodulins, and calcium-signaling neighbors.",
+        "url": "https://string-db.org/",
+        "supports": "Supplies functional-association support linking mouse PMCA family members and calmodulin/calcineurin calcium-signaling proteins."
+      },
+      {
+        "reference_id": "Atp2c1:R001",
+        "citation": "UniProtKB P98194, Calcium-transporting ATPase type 2C member 1, human ATP2C1/SPCA1.",
+        "url": "https://rest.uniprot.org/uniprotkb/P98194",
+        "supports": "Curated ATP2C1 function: Golgi Ca2+/Mn2+ pump, trans-Golgi localization, catalytic activity, and Hailey-Hailey disease annotation."
+      },
+      {
+        "reference_id": "Atp2c1:R002",
+        "citation": "Reactome R-HSA-936837, Ion transport by P-type ATPases; R-HSA-936883, ATP2C1/2:Mg2+ transport cytosolic Ca2+ to Golgi lumen.",
+        "url": "https://reactome.org/content/detail/R-HSA-936837",
+        "supports": "Places ATP2C1/SPCA1 in the curated P-type ATPase ion-transport pathway and Golgi Ca2+ transport reaction."
+      },
+      {
+        "reference_id": "Atp2c1:R006",
+        "citation": "UniProtKB P16615, Sarcoplasmic/endoplasmic reticulum calcium ATPase 2, human ATP2A2/SERCA2.",
+        "url": "https://rest.uniprot.org/uniprotkb/P16615",
+        "supports": "Curated ATP2A2 function as an ER/SR Ca2+ pump and disease annotation for Darier disease."
+      },
+      {
+        "reference_id": "Atp2c1:R007",
+        "citation": "Reactome R-HSA-381119, Unfolded Protein Response; R-HSA-380994, ATF4 activates genes in response to endoplasmic reticulum stress; R-HSA-381038, XBP1(S) activates chaperone genes.",
+        "url": "https://reactome.org/content/detail/R-HSA-381119",
+        "supports": "Curated ER-stress and UPR pathway context for the Atp2a2-induced markers."
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 5,
+    "priority": 5
+  },
+  "report_evidence_ids": [
+    "Atp2b1:E002",
+    "Atp2b1:E003",
+    "Atp2b1:E006",
+    "Atp2c1:E006",
+    "Atp2c1:E007"
+  ],
+  "reference_ids": [
+    "Atp2b1:R001",
+    "Atp2b1:R002",
+    "Atp2b1:R003",
+    "Atp2b1:R005",
+    "Atp2b1:R009",
+    "Atp2c1:R001",
+    "Atp2c1:R002",
+    "Atp2c1:R006",
+    "Atp2c1:R007"
+  ],
+  "source_urls_or_dois": [
+    "https://rest.uniprot.org/uniprotkb/P20020",
+    "https://www.ebi.ac.uk/QuickGO/term/GO:0005388",
+    "https://pubmed.ncbi.nlm.nih.gov/21537478/",
+    "https://doi.org/10.1073/pnas.191352298",
+    "https://string-db.org/",
+    "https://rest.uniprot.org/uniprotkb/P98194",
+    "https://reactome.org/content/detail/R-HSA-936837",
+    "https://rest.uniprot.org/uniprotkb/P16615",
+    "https://reactome.org/content/detail/R-HSA-381119"
+  ]
+}

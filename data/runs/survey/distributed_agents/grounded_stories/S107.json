@@ -1,0 +1,39 @@
+{
+  "story_id": "S107",
+  "title": "Gfpt1/HBP suppression induces a selective ER and integrated-stress program with recurrent Ogt repression",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Gfpt1 perturbation induced ER and integrated-stress transcripts in selected classes while repeatedly repressing Ogt. The largest response was in 151 TH Prkcd/Grin2c cells, with 311 FDR<0.05 rows including Ogt down and Herpud1, Asns, Cyb5r1, Ddit3, Hspa5, Chac1, and Oga responses.",
+  "biological_interpretation": "GFPT1/HBP suppression is read out as a selective neuronal ER/ISR liability that couples UDP-GlcNAc stress to compensatory ER folding and O-GlcNAc pathway genes, rather than as a uniform brain-wide response.",
+  "targets": ["Gfpt1", "Ddit3", "Asns", "Hspa5", "Herpud1", "Chac1", "Oga", "Ogt", "Pdia6", "Sdf2l1"],
+  "cell_types": ["005 L4-5 IT CTX Glut", "009 L2-3 IT PIR AON ENT Glut", "017 CA3 CA2-FC DG Glut", "027 NP-CT-L6b-OB Glut"],
+  "support": [
+    {
+      "evidence_id": "Gfpt1:E002;Gfpt1:E003;Gfpt1:E004;Gfpt1:E005;Gfpt1:E007;Gfpt1:E010",
+      "description": "A strong 151 TH response and smaller hypothalamic, midbrain, and cortical responses share stress induction with Ogt repression; several planned cortical and hippocampal classes are buffered.",
+      "exact_de_rows": [
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Gfpt1", "gene": "Ogt", "logfoldchanges": -0.960, "pvals": null, "pvals_adj": 8.10e-17},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Gfpt1", "gene": "Ddit3", "logfoldchanges": 1.897, "pvals": null, "pvals_adj": 2.94e-12},
+        {"cell_type": "151 TH Prkcd Grin2c Glut", "gene_target": "Gfpt1", "gene": "Chac1", "logfoldchanges": 3.077, "pvals": null, "pvals_adj": 1.48e-09},
+        {"cell_type": "145 MH-LH TH Glut", "gene_target": "Gfpt1", "gene": "Asns", "logfoldchanges": 1.492, "pvals": null, "pvals_adj": 3.39e-06},
+        {"cell_type": "155 MB Glut", "gene_target": "Gfpt1", "gene": "Hspa5", "logfoldchanges": 1.422, "pvals": null, "pvals_adj": 2.56e-05},
+        {"cell_type": "005 L4-5 IT CTX Glut", "gene_target": "Gfpt1", "gene": "Ogt", "logfoldchanges": -0.552, "pvals": null, "pvals_adj": 0.00665}
+      ]
+    }
+  ],
+  "caveats": [
+    "The packet title lists cortical classes that are weak compared with the dominant 151 TH and caudal/subcortical responders.",
+    "Pvalb, CA3/CA2/DG, and NP/CT/L6b/OB examples had zero FDR<0.05 rows and are best treated as buffered or unengaged."
+  ],
+  "prior_expectation": {
+    "summary": "GFPT1 is rate-limiting in the hexosamine biosynthetic pathway producing UDP-GlcNAc for N-glycosylation and O-GlcNAcylation; HBP deficiency has been linked to ER stress.",
+    "citations": [
+      {"reference_id": "Gfpt1:R002", "citation": "Reactome R-HSA-446210, Synthesis of UDP-N-acetyl-glucosamine.", "url_or_doi": "https://reactome.org/content/detail/R-HSA-446210"},
+      {"reference_id": "Gfpt1:R004", "citation": "Wang et al., Cell, 2014.", "url_or_doi": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3959665/"}
+    ]
+  },
+  "preliminary_scores": {"novelty": 3, "support": 4, "priority": 4},
+  "report_evidence_ids": ["Gfpt1:E002", "Gfpt1:E003", "Gfpt1:E004", "Gfpt1:E005", "Gfpt1:E006", "Gfpt1:E007", "Gfpt1:E008", "Gfpt1:E010"],
+  "reference_ids": ["Gfpt1:R001", "Gfpt1:R002", "Gfpt1:R003", "Gfpt1:R004", "Gfpt1:R005"],
+  "source_urls_or_dois": ["https://rest.uniprot.org/uniprotkb/Q06210", "https://reactome.org/content/detail/R-HSA-446210", "https://pmc.ncbi.nlm.nih.gov/articles/PMC10138107/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC3959665/", "https://pubmed.ncbi.nlm.nih.gov/38903011/"]
+}

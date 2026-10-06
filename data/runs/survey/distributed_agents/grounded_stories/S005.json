@@ -1,0 +1,1628 @@
+{
+  "story_id": "S005",
+  "title": "AP-2 subunit loss converges on a Tfrc-positive, sterol-repressed endocytosis state",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Ap2m1 and Ap2s1 loss converged on AP-2 dysfunction in 151 TH Prkcd Grin2c Glut, including FDR-supported Tfrc induction under both perturbations and shared repression of Prkcb/Mical2/Kcnn3-like output genes; Ap2s1 also produced a 005 L4-5 IT CTX Glut activity/neurotrophin branch with Egr3, Arc, and Vgf repression, and both AP-2 subunits lowered sterol genes in 155 MB Glut.",
+  "biological_interpretation": "The response is consistent with loss of the AP-2 clathrin adaptor rather than a generic endocytic perturbation: AP2M1 and AP2S1 encode physical AP-2 subunits, transferrin-receptor uptake is known to be AP-2-dependent, and the neuronal mRNA response couples a putative TFRC compensation axis to cell-type-restricted sterol and excitability outputs.",
+  "targets": [
+    "Ap2m1",
+    "Ap2s1"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "005 L4-5 IT CTX Glut"
+  ],
+  "support": {
+    "source_findings": [
+      {
+        "target_gene": "Ap2m1",
+        "finding_id": "F001",
+        "finding_type": "cell_type_selectivity",
+        "direction": "target_down_with_cell_type_restricted_downstream_response",
+        "confidence": "high",
+        "literature_status": "refines_cell_type_context",
+        "summary": "Ap2m1 knockdown produced a broad FDR-level downstream signature mainly in 151 TH Prkcd Grin2c Glut, with only a small five-gene response in 155 MB Glut.",
+        "why_it_matters": "AP-2 is a core endocytic complex, so the strong restriction of the transcriptional state change nominates a vulnerable neuronal context rather than a ubiquitous scRNA-seq response to AP2M1 depletion.",
+        "genes": "Ap2m1|Tfrc|Gss|Rap1gap|Prkcb|Mical2|Kcnn3|Srebf2|Dhcr24",
+        "n_genes": "9",
+        "cell_types": "151 TH Prkcd Grin2c Glut|155 MB Glut",
+        "n_cell_types": "2",
+        "evidence_ids": "E001|E002|E003|E005",
+        "ref_ids": "R001|R002|R004|R005",
+        "main_caveats": "Cell-type selectivity is transcriptional only; weaker target engagement and modest cell counts may explain some nonresponsive strata."
+      },
+      {
+        "target_gene": "Ap2s1",
+        "finding_id": "F003",
+        "finding_type": "biomarker_candidate",
+        "direction": "down",
+        "confidence": "moderate",
+        "literature_status": "extends_known_mechanism",
+        "summary": "Vgf, Bdnf, and immediate-early-gene repression identify a recurrent neurotrophin/activity-output marker set after Ap2s1 perturbation, especially in L4/5 cortical and midbrain neurons.",
+        "why_it_matters": "The Vgf signature gives a compact transcriptional biomarker for Ap2s1-sensitive excitatory-neuron physiology that connects endocytosis to plasticity-associated gene expression.",
+        "genes": "Vgf|Bdnf|Egr1|Egr3|Arc",
+        "n_genes": "5",
+        "cell_types": "005 L4-5 IT CTX Glut|001 L5-6 IT Glut|009 L2-3 IT PIR AON ENT Glut|008 L2-3 IT ENT PPP RSP Glut|155 MB Glut|191 MB P MY GABA",
+        "n_cell_types": "6",
+        "evidence_ids": "E003|E007",
+        "ref_ids": "R002|R009",
+        "main_caveats": "Vgf is not specific to BDNF, and the report infers reduced neurotrophin/activity output from transcript markers rather than from electrophysiology or BDNF protein."
+      }
+    ],
+    "evidence_ledger_rows": [
+      {
+        "target_gene": "Ap2m1",
+        "evidence_id": "E001",
+        "evidence_slug": "ap2m1_global_on_target",
+        "genes": "Ap2m1",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "21 cell types; Ap2m1 logFC was negative in all 21, range -0.988 to -0.135; nominal p<0.05 in 16/21; FDR<0.05 in 5/21; perturbed-cell counts ranged from 40 to 181.",
+        "description": "On-target Ap2m1 transcript knockdown across all cell types in which the perturbation was tested."
+      },
+      {
+        "target_gene": "Ap2m1",
+        "evidence_id": "E002",
+        "evidence_slug": "ap2m1_151_th_strong_signature",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Ap2m1|Tfrc|Gss|Rap1gap|Prkcb|Mical2|Kcnn3|Atp1b2|Sv2b",
+        "n_genes": "9",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "181 perturbed cells versus 23679 controls; 139 genes FDR<0.05, with 48 up and 91 down. Ap2m1 logFC -0.578 FDR 2.41e-08; Gss logFC 0.742 FDR 2.53e-07; Tfrc logFC 0.831 FDR 3.13e-06; Rap1gap logFC -0.337 FDR 9.75e-10; Prkcb logFC -0.592 FDR 4.74e-09; Mical2 logFC -0.706 FDR 8.75e-09; Kcnn3 logFC -0.675 FDR 2.81e-08.",
+        "description": "The dominant Ap2m1 perturbation response occurred in the 151 thalamic Prkcd/Grin2c glutamatergic class."
+      },
+      {
+        "target_gene": "Ap2m1",
+        "evidence_id": "E003",
+        "evidence_slug": "ap2m1_155_midbrain_sterol_signature",
+        "cell_type": "155 MB Glut",
+        "genes": "Ap2m1|Tfrc|Srebf2|Dhcr24|Hap1",
+        "n_genes": "5",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "144 perturbed cells versus 20353 controls; five genes FDR<0.05. Tfrc logFC 0.964 FDR 1.07e-05; Srebf2 logFC -0.784 FDR 3.64e-05; Ap2m1 logFC -0.590 FDR 1.77e-04; Dhcr24 logFC -0.834 FDR 0.00323; Hap1 logFC -0.679 FDR 0.0321.",
+        "description": "A smaller Ap2m1 response in midbrain glutamatergic cells coupled TFRC induction to Srebf2 and Dhcr24 repression."
+      },
+      {
+        "target_gene": "Ap2m1",
+        "evidence_id": "E005",
+        "evidence_slug": "ap2m1_weak_target_or_no_fdr_groups",
+        "genes": "Ap2m1",
+        "n_genes": "1",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Eleven cell types had nominal Ap2m1 p<0.05 but target FDR>=0.315 and zero FDR<0.05 downstream genes; five cell types lacked nominal Ap2m1 p<0.05 and also had zero FDR<0.05 genes.",
+        "description": "Many null cell-type results coincided with weak or FDR-insignificant Ap2m1 self-statistics."
+      },
+      {
+        "target_gene": "Ap2s1",
+        "evidence_id": "E003",
+        "evidence_slug": "ap2s1_l45_ctx_ieg_signature",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "genes": "Ap2s1|Egr3|Arc|Srebf2|Ptprn2|Mgat5b|Jun|Vgf",
+        "n_genes": "8",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "176 Ap2s1 cells versus 15039 controls; Ap2s1 logFC -0.757 FDR 0.00991; 110 genes at FDR<0.05. Egr3 logFC -1.333 FDR 1.35e-13; Srebf2 -0.631 FDR 2.17e-10; Arc -0.893 FDR 2.56e-07; Vgf -0.633 FDR 2.52e-04; Ptprn2 +0.330 FDR 2.64e-05; Mgat5b +0.822 FDR 2.80e-05; Jun +0.843 FDR 1.83e-04.",
+        "description": "Ap2s1 perturbation in L4/5 intratelencephalic cortical excitatory neurons produced a moderate signature with repression of activity-associated transcripts and Srebf2."
+      },
+      {
+        "target_gene": "Ap2s1",
+        "evidence_id": "E007",
+        "evidence_slug": "vgf_bdnf_ieg_recurrent_repression",
+        "genes": "Vgf|Bdnf|Egr1|Egr3|Arc",
+        "n_genes": "5",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Vgf was negative in 22/23 Ap2s1 cell types and FDR<0.05 in 6/23: 191 MB P MY GABA logFC -1.451 FDR 5.40e-04; 005 L4-5 IT CTX Glut -0.633 FDR 2.52e-04; 001 L5-6 IT Glut -1.180 FDR 0.00399; 009 L2-3 IT PIR AON ENT Glut -0.792 FDR 0.0220; 008 L2-3 IT ENT PPP RSP Glut -0.925 FDR 0.0423; 155 MB Glut -1.042 FDR 0.0248. Bdnf was FDR<0.05 and negative in 005 L4-5 IT CTX Glut and 009 L2-3 IT PIR AON ENT Glut.",
+        "description": "A neurotrophin/activity-associated transcriptional marker set was repeatedly reduced after Ap2s1 perturbation."
+      }
+    ],
+    "exact_de_rows": [
+      {
+        "target_gene": "Ap2m1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ap2m1",
+        "score": -6.858084,
+        "logfoldchange": -0.578194,
+        "pval": 6.979026257187352e-12,
+        "pvals_adj": 2.40902028345593e-08
+      },
+      {
+        "target_gene": "Ap2m1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ap2s1",
+        "score": -0.431921,
+        "logfoldchange": -0.083336,
+        "pval": 0.6657988825409435,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2m1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Arc",
+        "score": 0.103238,
+        "logfoldchange": -0.10643,
+        "pval": 0.917773809778006,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2m1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Bdnf",
+        "score": -0.17353,
+        "logfoldchange": 0.145138,
+        "pval": 0.8622349348847753,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2m1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Dhcr24",
+        "score": -2.789667,
+        "logfoldchange": -0.380571,
+        "pval": 0.005276232384738321,
+        "pvals_adj": 0.23843007459945315
+      },
+      {
+        "target_gene": "Ap2m1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Egr1",
+        "score": -4.235101,
+        "logfoldchange": -0.550488,
+        "pval": 2.2844900185463483e-05,
+        "pvals_adj": 0.005973941398498701
+      },
+      {
+        "target_gene": "Ap2m1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Egr3",
+        "score": -1.001479,
+        "logfoldchange": -0.576814,
+        "pval": 0.3165955105374211,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2m1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Fdft1",
+        "score": -1.11458,
+        "logfoldchange": -0.189181,
+        "pval": 0.26503053220371353,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2m1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gss",
+        "score": 6.408587,
+        "logfoldchange": 0.742349,
+        "pval": 1.468740843357824e-10,
+        "pvals_adj": 2.5348998215512685e-07
+      },
+      {
+        "target_gene": "Ap2m1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Hmgcs1",
+        "score": 0.724911,
+        "logfoldchange": 0.096583,
+        "pval": 0.4685068126464288,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2m1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Insig1",
+        "score": 1.316355,
+        "logfoldchange": 0.164357,
+        "pval": 0.18805484757757096,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2m1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Jun",
+        "score": -1.060537,
+        "logfoldchange": -0.17552,
+        "pval": 0.2889004247238788,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2m1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Mgat5b",
+        "score": 0.771257,
+        "logfoldchange": 0.117541,
+        "pval": 0.4405544968905225,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2m1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ptprn2",
+        "score": -0.698853,
+        "logfoldchange": -0.042291,
+        "pval": 0.48464369703356347,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2m1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Srebf2",
+        "score": -2.642292,
+        "logfoldchange": -0.216192,
+        "pval": 0.008234710138596064,
+        "pvals_adj": 0.3111401879776939
+      },
+      {
+        "target_gene": "Ap2m1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Tfrc",
+        "score": 5.95901,
+        "logfoldchange": 0.831401,
+        "pval": 2.537711581415465e-09,
+        "pvals_adj": 3.128454584546394e-06
+      },
+      {
+        "target_gene": "Ap2m1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Vgf",
+        "score": 0.69204,
+        "logfoldchange": 0.110688,
+        "pval": 0.4889123735105928,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2m1",
+        "cell_type": "155 MB Glut",
+        "gene": "Ap2m1",
+        "score": -5.539042,
+        "logfoldchange": -0.589827,
+        "pval": 3.041314099746153e-08,
+        "pvals_adj": 0.00017683213947290716
+      },
+      {
+        "target_gene": "Ap2m1",
+        "cell_type": "155 MB Glut",
+        "gene": "Ap2s1",
+        "score": 0.088233,
+        "logfoldchange": -0.009853,
+        "pval": 0.9296912140176726,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2m1",
+        "cell_type": "155 MB Glut",
+        "gene": "Arc",
+        "score": -0.948731,
+        "logfoldchange": -0.523635,
+        "pval": 0.34275740661588405,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2m1",
+        "cell_type": "155 MB Glut",
+        "gene": "Bdnf",
+        "score": -0.845813,
+        "logfoldchange": -0.329635,
+        "pval": 0.39765686715322013,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2m1",
+        "cell_type": "155 MB Glut",
+        "gene": "Dhcr24",
+        "score": -4.950381,
+        "logfoldchange": -0.83428,
+        "pval": 7.406827560611069e-07,
+        "pvals_adj": 0.003229932328493472
+      },
+      {
+        "target_gene": "Ap2m1",
+        "cell_type": "155 MB Glut",
+        "gene": "Egr1",
+        "score": -2.574165,
+        "logfoldchange": -0.717193,
+        "pval": 0.010048230313023002,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2m1",
+        "cell_type": "155 MB Glut",
+        "gene": "Egr3",
+        "score": -0.109242,
+        "logfoldchange": -0.030914,
+        "pval": 0.9130103139858102,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2m1",
+        "cell_type": "155 MB Glut",
+        "gene": "Fdft1",
+        "score": -2.660434,
+        "logfoldchange": -0.520083,
+        "pval": 0.0078040028109385914,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2m1",
+        "cell_type": "155 MB Glut",
+        "gene": "Gss",
+        "score": 2.036335,
+        "logfoldchange": 0.561622,
+        "pval": 0.041716765822016805,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2m1",
+        "cell_type": "155 MB Glut",
+        "gene": "Hmgcs1",
+        "score": -3.067617,
+        "logfoldchange": -0.515812,
+        "pval": 0.0021577260933464157,
+        "pvals_adj": 0.7101361555894627
+      },
+      {
+        "target_gene": "Ap2m1",
+        "cell_type": "155 MB Glut",
+        "gene": "Insig1",
+        "score": -2.691004,
+        "logfoldchange": -0.514153,
+        "pval": 0.007123734032273333,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2m1",
+        "cell_type": "155 MB Glut",
+        "gene": "Jun",
+        "score": 0.155677,
+        "logfoldchange": 0.097854,
+        "pval": 0.8762877789301533,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2m1",
+        "cell_type": "155 MB Glut",
+        "gene": "Mgat5b",
+        "score": 0.242645,
+        "logfoldchange": 0.013808,
+        "pval": 0.8082802348991567,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2m1",
+        "cell_type": "155 MB Glut",
+        "gene": "Ptprn2",
+        "score": -0.038202,
+        "logfoldchange": -0.00027,
+        "pval": 0.969526671056148,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2m1",
+        "cell_type": "155 MB Glut",
+        "gene": "Srebf2",
+        "score": -5.8791,
+        "logfoldchange": -0.784175,
+        "pval": 4.125039515258327e-09,
+        "pvals_adj": 3.5976532132325504e-05
+      },
+      {
+        "target_gene": "Ap2m1",
+        "cell_type": "155 MB Glut",
+        "gene": "Tfrc",
+        "score": 6.187054,
+        "logfoldchange": 0.963985,
+        "pval": 6.129887119890726e-10,
+        "pvals_adj": 1.0692362103225394e-05
+      },
+      {
+        "target_gene": "Ap2m1",
+        "cell_type": "155 MB Glut",
+        "gene": "Vgf",
+        "score": -2.756115,
+        "logfoldchange": -0.873041,
+        "pval": 0.0058492339874996096,
+        "pvals_adj": 0.9905649363490844
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "001 L5-6 IT Glut",
+        "gene": "Ap2m1",
+        "score": 0.114369,
+        "logfoldchange": -0.007874,
+        "pval": 0.9089450809623818,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "001 L5-6 IT Glut",
+        "gene": "Ap2s1",
+        "score": -3.147057,
+        "logfoldchange": -0.787238,
+        "pval": 0.0016492281517693057,
+        "pvals_adj": 0.36116995023308857
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "001 L5-6 IT Glut",
+        "gene": "Arc",
+        "score": -2.60056,
+        "logfoldchange": -0.768212,
+        "pval": 0.009307177848426083,
+        "pvals_adj": 0.6767127615618669
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "001 L5-6 IT Glut",
+        "gene": "Bdnf",
+        "score": -3.760159,
+        "logfoldchange": -1.475491,
+        "pval": 0.00016980557799968916,
+        "pvals_adj": 0.12907539458585462
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "001 L5-6 IT Glut",
+        "gene": "Dhcr24",
+        "score": -1.282265,
+        "logfoldchange": -0.173455,
+        "pval": 0.19974968200322807,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "001 L5-6 IT Glut",
+        "gene": "Egr1",
+        "score": -3.69745,
+        "logfoldchange": -0.896724,
+        "pval": 0.0002177757047290229,
+        "pvals_adj": 0.14007165808397884
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "001 L5-6 IT Glut",
+        "gene": "Egr3",
+        "score": -3.889105,
+        "logfoldchange": -0.921254,
+        "pval": 0.00010061461809944872,
+        "pvals_adj": 0.08855675044616215
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "001 L5-6 IT Glut",
+        "gene": "Fdft1",
+        "score": -0.782249,
+        "logfoldchange": -0.199053,
+        "pval": 0.43406821299947573,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "001 L5-6 IT Glut",
+        "gene": "Gss",
+        "score": 0.442992,
+        "logfoldchange": 0.334712,
+        "pval": 0.6577716691842519,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "001 L5-6 IT Glut",
+        "gene": "Hmgcs1",
+        "score": -1.914069,
+        "logfoldchange": -0.384742,
+        "pval": 0.055611305618285534,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "001 L5-6 IT Glut",
+        "gene": "Insig1",
+        "score": -1.193291,
+        "logfoldchange": -0.259838,
+        "pval": 0.23275549915781724,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "001 L5-6 IT Glut",
+        "gene": "Jun",
+        "score": 2.801061,
+        "logfoldchange": 0.789247,
+        "pval": 0.00509348386140522,
+        "pvals_adj": 0.5495376168663194
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "001 L5-6 IT Glut",
+        "gene": "Mgat5b",
+        "score": 1.942581,
+        "logfoldchange": 0.490308,
+        "pval": 0.05206676033994674,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "001 L5-6 IT Glut",
+        "gene": "Ptprn2",
+        "score": 1.71398,
+        "logfoldchange": 0.084084,
+        "pval": 0.08653233249396654,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "001 L5-6 IT Glut",
+        "gene": "Srebf2",
+        "score": -3.286821,
+        "logfoldchange": -0.383633,
+        "pval": 0.001013251229235476,
+        "pvals_adj": 0.26896190962706135
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "001 L5-6 IT Glut",
+        "gene": "Tfrc",
+        "score": 1.523105,
+        "logfoldchange": 0.334647,
+        "pval": 0.1277323950041659,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "001 L5-6 IT Glut",
+        "gene": "Vgf",
+        "score": -5.035456,
+        "logfoldchange": -1.180299,
+        "pval": 4.767121250551152e-07,
+        "pvals_adj": 0.0039860284336483455
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Ap2m1",
+        "score": -0.407143,
+        "logfoldchange": -0.019527,
+        "pval": 0.683902760421347,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Ap2s1",
+        "score": -4.128732,
+        "logfoldchange": -0.757263,
+        "pval": 3.647696096033594e-05,
+        "pvals_adj": 0.009913627389886857
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Arc",
+        "score": -6.510547,
+        "logfoldchange": -0.892539,
+        "pval": 7.487778316256231e-11,
+        "pvals_adj": 2.564114806618784e-07
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Bdnf",
+        "score": -3.795881,
+        "logfoldchange": -1.104653,
+        "pval": 0.00014711986797275956,
+        "pvals_adj": 0.027380286732930317
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Dhcr24",
+        "score": -2.71602,
+        "logfoldchange": -0.282166,
+        "pval": 0.006607184787642254,
+        "pvals_adj": 0.3327300527470902
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Egr1",
+        "score": -6.452445,
+        "logfoldchange": -0.86763,
+        "pval": 1.1005981356110037e-10,
+        "pvals_adj": 3.140740212988601e-07
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Egr3",
+        "score": -8.601223,
+        "logfoldchange": -1.332919,
+        "pval": 7.887092959546183e-18,
+        "pvals_adj": 1.3504280565334974e-13
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Fdft1",
+        "score": -1.867997,
+        "logfoldchange": -0.284053,
+        "pval": 0.06176255193062631,
+        "pvals_adj": 0.9130077367692697
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Gss",
+        "score": 0.390598,
+        "logfoldchange": 0.213598,
+        "pval": 0.6960941975563866,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Hmgcs1",
+        "score": -3.714278,
+        "logfoldchange": -0.502904,
+        "pval": 0.0002037844094680226,
+        "pvals_adj": 0.03560404753991309
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Insig1",
+        "score": -2.329832,
+        "logfoldchange": -0.323281,
+        "pval": 0.019815011666788257,
+        "pvals_adj": 0.5676902170044433
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Jun",
+        "score": 5.118186,
+        "logfoldchange": 0.842788,
+        "pval": 3.0848758639768944e-07,
+        "pvals_adj": 0.00018344811445734964
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Mgat5b",
+        "score": 5.554873,
+        "logfoldchange": 0.822484,
+        "pval": 2.7781447029077333e-08,
+        "pvals_adj": 2.7980819766580125e-05
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Ptprn2",
+        "score": 5.575871,
+        "logfoldchange": 0.329785,
+        "pval": 2.46294507273575e-08,
+        "pvals_adj": 2.6356590959613445e-05
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Srebf2",
+        "score": -7.620063,
+        "logfoldchange": -0.6311,
+        "pval": 2.5355268329448583e-14,
+        "pvals_adj": 2.1706645216840932e-10
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Tfrc",
+        "score": 0.626854,
+        "logfoldchange": 0.086376,
+        "pval": 0.5307547664731085,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Vgf",
+        "score": -5.049797,
+        "logfoldchange": -0.633169,
+        "pval": 4.4227981245361745e-07,
+        "pvals_adj": 0.0002524238316276946
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "008 L2-3 IT ENT PPP RSP Glut",
+        "gene": "Ap2m1",
+        "score": -0.157656,
+        "logfoldchange": -0.016689,
+        "pval": 0.874728207872889,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "008 L2-3 IT ENT PPP RSP Glut",
+        "gene": "Ap2s1",
+        "score": -0.882681,
+        "logfoldchange": -0.306958,
+        "pval": 0.3774084800096682,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "008 L2-3 IT ENT PPP RSP Glut",
+        "gene": "Arc",
+        "score": -3.213974,
+        "logfoldchange": -0.871558,
+        "pval": 0.0013091131079878786,
+        "pvals_adj": 0.4851282264179081
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "008 L2-3 IT ENT PPP RSP Glut",
+        "gene": "Bdnf",
+        "score": -1.458812,
+        "logfoldchange": -0.392875,
+        "pval": 0.14461690725858994,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "008 L2-3 IT ENT PPP RSP Glut",
+        "gene": "Dhcr24",
+        "score": -2.053995,
+        "logfoldchange": -0.454384,
+        "pval": 0.03997621907655901,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "008 L2-3 IT ENT PPP RSP Glut",
+        "gene": "Egr1",
+        "score": -4.923253,
+        "logfoldchange": -1.191869,
+        "pval": 8.511750127357439e-07,
+        "pvals_adj": 0.014194194512381266
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "008 L2-3 IT ENT PPP RSP Glut",
+        "gene": "Egr3",
+        "score": -3.83311,
+        "logfoldchange": -0.877211,
+        "pval": 0.00012653317747107624,
+        "pvals_adj": 0.1918242970461516
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "008 L2-3 IT ENT PPP RSP Glut",
+        "gene": "Fdft1",
+        "score": -2.114827,
+        "logfoldchange": -0.594043,
+        "pval": 0.03444470537164717,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "008 L2-3 IT ENT PPP RSP Glut",
+        "gene": "Gss",
+        "score": 0.412042,
+        "logfoldchange": 0.288105,
+        "pval": 0.6803082641406458,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "008 L2-3 IT ENT PPP RSP Glut",
+        "gene": "Hmgcs1",
+        "score": -0.697734,
+        "logfoldchange": -0.209676,
+        "pval": 0.48534362587029567,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "008 L2-3 IT ENT PPP RSP Glut",
+        "gene": "Insig1",
+        "score": -1.899188,
+        "logfoldchange": -0.630165,
+        "pval": 0.057539812033324506,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "008 L2-3 IT ENT PPP RSP Glut",
+        "gene": "Jun",
+        "score": 1.37663,
+        "logfoldchange": 0.38944,
+        "pval": 0.1686266744710092,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "008 L2-3 IT ENT PPP RSP Glut",
+        "gene": "Mgat5b",
+        "score": 0.446257,
+        "logfoldchange": 0.102975,
+        "pval": 0.6554117106130906,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "008 L2-3 IT ENT PPP RSP Glut",
+        "gene": "Ptprn2",
+        "score": 3.388017,
+        "logfoldchange": 0.294192,
+        "pval": 0.0007039979605996034,
+        "pvals_adj": 0.3410496438006854
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "008 L2-3 IT ENT PPP RSP Glut",
+        "gene": "Srebf2",
+        "score": -3.353313,
+        "logfoldchange": -0.46485,
+        "pval": 0.000798503610856784,
+        "pvals_adj": 0.3629134995998018
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "008 L2-3 IT ENT PPP RSP Glut",
+        "gene": "Tfrc",
+        "score": 0.292063,
+        "logfoldchange": 0.075719,
+        "pval": 0.7702388038845197,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "008 L2-3 IT ENT PPP RSP Glut",
+        "gene": "Vgf",
+        "score": -4.414509,
+        "logfoldchange": -0.925422,
+        "pval": 1.0123937388202838e-05,
+        "pvals_adj": 0.04232636970117168
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "009 L2-3 IT PIR AON ENT Glut",
+        "gene": "Ap2m1",
+        "score": -1.294545,
+        "logfoldchange": -0.158748,
+        "pval": 0.19547722122775302,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "009 L2-3 IT PIR AON ENT Glut",
+        "gene": "Ap2s1",
+        "score": -2.195574,
+        "logfoldchange": -0.458155,
+        "pval": 0.02812243973416011,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "009 L2-3 IT PIR AON ENT Glut",
+        "gene": "Arc",
+        "score": -2.654195,
+        "logfoldchange": -0.657991,
+        "pval": 0.007949792538027382,
+        "pvals_adj": 0.8988495694640697
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "009 L2-3 IT PIR AON ENT Glut",
+        "gene": "Bdnf",
+        "score": -4.26984,
+        "logfoldchange": -1.209046,
+        "pval": 1.9561318930266675e-05,
+        "pvals_adj": 0.037353425237284785
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "009 L2-3 IT PIR AON ENT Glut",
+        "gene": "Dhcr24",
+        "score": -2.316334,
+        "logfoldchange": -0.346067,
+        "pval": 0.020540039576019964,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "009 L2-3 IT PIR AON ENT Glut",
+        "gene": "Egr1",
+        "score": -2.347753,
+        "logfoldchange": -0.405635,
+        "pval": 0.018887034910357633,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "009 L2-3 IT PIR AON ENT Glut",
+        "gene": "Egr3",
+        "score": -2.686418,
+        "logfoldchange": -0.576171,
+        "pval": 0.007222264822847594,
+        "pvals_adj": 0.8679849178004109
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "009 L2-3 IT PIR AON ENT Glut",
+        "gene": "Fdft1",
+        "score": -1.276852,
+        "logfoldchange": -0.224562,
+        "pval": 0.20165437559421195,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "009 L2-3 IT PIR AON ENT Glut",
+        "gene": "Gss",
+        "score": 1.461584,
+        "logfoldchange": 0.570679,
+        "pval": 0.1438553229899337,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "009 L2-3 IT PIR AON ENT Glut",
+        "gene": "Hmgcs1",
+        "score": -2.361205,
+        "logfoldchange": -0.326574,
+        "pval": 0.018215637642655963,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "009 L2-3 IT PIR AON ENT Glut",
+        "gene": "Insig1",
+        "score": -0.255557,
+        "logfoldchange": -0.065213,
+        "pval": 0.7982929996347299,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "009 L2-3 IT PIR AON ENT Glut",
+        "gene": "Jun",
+        "score": -0.189648,
+        "logfoldchange": 0.008683,
+        "pval": 0.849584965929624,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "009 L2-3 IT PIR AON ENT Glut",
+        "gene": "Mgat5b",
+        "score": 2.131603,
+        "logfoldchange": 0.391937,
+        "pval": 0.03303952546281873,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "009 L2-3 IT PIR AON ENT Glut",
+        "gene": "Ptprn2",
+        "score": -1.221252,
+        "logfoldchange": -0.041376,
+        "pval": 0.22199061725348046,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "009 L2-3 IT PIR AON ENT Glut",
+        "gene": "Srebf2",
+        "score": -4.51242,
+        "logfoldchange": -0.490076,
+        "pval": 6.409214414160979e-06,
+        "pvals_adj": 0.022029751784354117
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "009 L2-3 IT PIR AON ENT Glut",
+        "gene": "Tfrc",
+        "score": 0.259962,
+        "logfoldchange": 0.054342,
+        "pval": 0.7948932427779092,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "009 L2-3 IT PIR AON ENT Glut",
+        "gene": "Vgf",
+        "score": -4.548865,
+        "logfoldchange": -0.792205,
+        "pval": 5.393593669375334e-06,
+        "pvals_adj": 0.022029751784354117
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ap2m1",
+        "score": 1.439242,
+        "logfoldchange": 0.0843,
+        "pval": 0.15008210507993594,
+        "pvals_adj": 0.6542730617768665
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ap2s1",
+        "score": -4.855772,
+        "logfoldchange": -0.536429,
+        "pval": 1.1991854503601136e-06,
+        "pvals_adj": 6.329278803597921e-05
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Arc",
+        "score": -0.232909,
+        "logfoldchange": -0.350147,
+        "pval": 0.8158324606737262,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Bdnf",
+        "score": -1.245416,
+        "logfoldchange": -0.41315,
+        "pval": 0.21297889228924516,
+        "pvals_adj": 0.786615674184684
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Dhcr24",
+        "score": -2.974451,
+        "logfoldchange": -0.294007,
+        "pval": 0.0029351367563715466,
+        "pvals_adj": 0.045189585439979064
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Egr1",
+        "score": -10.850542,
+        "logfoldchange": -1.207468,
+        "pval": 1.9824653379348814e-27,
+        "pvals_adj": 3.0562950772187646e-24
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Egr3",
+        "score": -0.788811,
+        "logfoldchange": -0.488039,
+        "pval": 0.4302222146214092,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Fdft1",
+        "score": 0.475492,
+        "logfoldchange": -0.025549,
+        "pval": 0.6344365040299456,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Gss",
+        "score": 9.548249,
+        "logfoldchange": 0.907751,
+        "pval": 1.3190614495436091e-21,
+        "pvals_adj": 7.588560519224383e-19
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Hmgcs1",
+        "score": 1.491586,
+        "logfoldchange": 0.102217,
+        "pval": 0.13580771547247128,
+        "pvals_adj": 0.6186079074529908
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Insig1",
+        "score": 1.118542,
+        "logfoldchange": 0.078969,
+        "pval": 0.2633356092255186,
+        "pvals_adj": 0.8777059397103385
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Jun",
+        "score": -2.530715,
+        "logfoldchange": -0.25265,
+        "pval": 0.011383011602968115,
+        "pvals_adj": 0.12309486043585632
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Mgat5b",
+        "score": -1.441714,
+        "logfoldchange": -0.134252,
+        "pval": 0.1493831091148081,
+        "pvals_adj": 0.6522702340301073
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ptprn2",
+        "score": 0.568673,
+        "logfoldchange": 0.032037,
+        "pval": 0.569577856478615,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Srebf2",
+        "score": -5.189927,
+        "logfoldchange": -0.358912,
+        "pval": 2.1037627199790583e-07,
+        "pvals_adj": 1.3013921427999485e-05
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Tfrc",
+        "score": 10.844193,
+        "logfoldchange": 0.983582,
+        "pval": 2.1250096139188353e-27,
+        "pvals_adj": 3.0562950772187646e-24
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Vgf",
+        "score": 1.881689,
+        "logfoldchange": 0.184537,
+        "pval": 0.05987827726556088,
+        "pvals_adj": 0.37771900121575847
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "155 MB Glut",
+        "gene": "Ap2m1",
+        "score": -1.338507,
+        "logfoldchange": -0.114089,
+        "pval": 0.18073108919857406,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "155 MB Glut",
+        "gene": "Ap2s1",
+        "score": -4.56532,
+        "logfoldchange": -0.714161,
+        "pval": 4.987339893457524e-06,
+        "pvals_adj": 0.01087427122019745
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "155 MB Glut",
+        "gene": "Arc",
+        "score": -0.879591,
+        "logfoldchange": -0.447409,
+        "pval": 0.37908114475897303,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "155 MB Glut",
+        "gene": "Bdnf",
+        "score": -2.095613,
+        "logfoldchange": -0.454696,
+        "pval": 0.036116501767133206,
+        "pvals_adj": 0.9779830649104618
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "155 MB Glut",
+        "gene": "Dhcr24",
+        "score": -4.477405,
+        "logfoldchange": -0.550457,
+        "pval": 7.555573247407037e-06,
+        "pvals_adj": 0.014643540461613437
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "155 MB Glut",
+        "gene": "Egr1",
+        "score": -3.76153,
+        "logfoldchange": -0.761402,
+        "pval": 0.0001688770270993985,
+        "pvals_adj": 0.0818256106581891
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "155 MB Glut",
+        "gene": "Egr3",
+        "score": -1.29664,
+        "logfoldchange": -0.812866,
+        "pval": 0.19475504372156416,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "155 MB Glut",
+        "gene": "Fdft1",
+        "score": -3.996775,
+        "logfoldchange": -0.606749,
+        "pval": 6.421114414821222e-05,
+        "pvals_adj": 0.04666812447405274
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "155 MB Glut",
+        "gene": "Gss",
+        "score": 0.171331,
+        "logfoldchange": 0.076503,
+        "pval": 0.8639637632932055,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "155 MB Glut",
+        "gene": "Hmgcs1",
+        "score": -4.309408,
+        "logfoldchange": -0.514614,
+        "pval": 1.6369243630119722e-05,
+        "pvals_adj": 0.02379405972001486
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "155 MB Glut",
+        "gene": "Insig1",
+        "score": -4.671544,
+        "logfoldchange": -0.628099,
+        "pval": 2.9894443855149656e-06,
+        "pvals_adj": 0.007449268345219649
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "155 MB Glut",
+        "gene": "Jun",
+        "score": 2.233436,
+        "logfoldchange": 0.369485,
+        "pval": 0.02552019351914045,
+        "pvals_adj": 0.8737159947416644
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "155 MB Glut",
+        "gene": "Mgat5b",
+        "score": 0.101953,
+        "logfoldchange": 0.006129,
+        "pval": 0.9187941775031234,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "155 MB Glut",
+        "gene": "Ptprn2",
+        "score": 0.262772,
+        "logfoldchange": 0.026983,
+        "pval": 0.7927262332763193,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "155 MB Glut",
+        "gene": "Srebf2",
+        "score": -5.017188,
+        "logfoldchange": -0.491781,
+        "pval": 5.243338886933704e-07,
+        "pvals_adj": 0.002286489005119615
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "155 MB Glut",
+        "gene": "Tfrc",
+        "score": 6.885764,
+        "logfoldchange": 0.850378,
+        "pval": 5.747820859426644e-12,
+        "pvals_adj": 1.0025923925097895e-07
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "155 MB Glut",
+        "gene": "Vgf",
+        "score": -4.262848,
+        "logfoldchange": -1.042392,
+        "pval": 2.0183760596450337e-05,
+        "pvals_adj": 0.024848900441400337
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Ap2m1",
+        "score": -0.37275,
+        "logfoldchange": -0.033881,
+        "pval": 0.7093347110448502,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Ap2s1",
+        "score": -4.619448,
+        "logfoldchange": -1.152856,
+        "pval": 3.847618852797318e-06,
+        "pvals_adj": 0.010964431190854756
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Arc",
+        "score": -1.385912,
+        "logfoldchange": -1.150879,
+        "pval": 0.16577366462029652,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Bdnf",
+        "score": -1.035941,
+        "logfoldchange": -0.904742,
+        "pval": 0.3002299132467806,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Dhcr24",
+        "score": -3.74437,
+        "logfoldchange": -0.660107,
+        "pval": 0.00018084663476816302,
+        "pvals_adj": 0.231351440025212
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Egr1",
+        "score": -2.378618,
+        "logfoldchange": -0.892,
+        "pval": 0.017377648355904288,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Egr3",
+        "score": 0.398441,
+        "logfoldchange": 0.024063,
+        "pval": 0.6903051103042864,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Fdft1",
+        "score": -3.620666,
+        "logfoldchange": -0.720442,
+        "pval": 0.0002938457987325407,
+        "pvals_adj": 0.24054814446987152
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Gss",
+        "score": 1.455679,
+        "logfoldchange": 0.464466,
+        "pval": 0.1454813014015532,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Hmgcs1",
+        "score": -2.933607,
+        "logfoldchange": -0.472479,
+        "pval": 0.003350484837127991,
+        "pvals_adj": 0.8205238857361902
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Insig1",
+        "score": -4.82071,
+        "logfoldchange": -0.753722,
+        "pval": 1.430483902532157e-06,
+        "pvals_adj": 0.005900365482552954
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Jun",
+        "score": 2.849615,
+        "logfoldchange": 0.698317,
+        "pval": 0.004377213668919746,
+        "pvals_adj": 0.8804894036610567
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Mgat5b",
+        "score": 0.08139,
+        "logfoldchange": -0.004601,
+        "pval": 0.9351321703820052,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Ptprn2",
+        "score": -1.780505,
+        "logfoldchange": -0.147789,
+        "pval": 0.07499332487909226,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Srebf2",
+        "score": -5.620723,
+        "logfoldchange": -0.780633,
+        "pval": 1.9015956537762308e-08,
+        "pvals_adj": 0.00032513482488265993
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Tfrc",
+        "score": 4.783178,
+        "logfoldchange": 0.730663,
+        "pval": 1.7254548726614089e-06,
+        "pvals_adj": 0.005900365482552954
+      },
+      {
+        "target_gene": "Ap2s1",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Vgf",
+        "score": -5.409537,
+        "logfoldchange": -1.45092,
+        "pval": 6.318773581902742e-08,
+        "pvals_adj": 0.0005401919535168654
+      }
+    ]
+  },
+  "caveats": [
+    "Transcriptome data do not measure coated-pit formation, surface TFRC, iron uptake, cholesterol abundance, or neuronal firing.",
+    "Several recurrent Tfrc increases outside the largest classes were nominal rather than FDR-significant."
+  ],
+  "prior_expectation": {
+    "citations": [
+      {
+        "target_gene": "Ap2m1",
+        "ref_id": "R001",
+        "ref_slug": "uniprot_ap2m1_ap2_complex",
+        "source": "UniProtKB",
+        "source_type": "database",
+        "citation": "UniProtKB reviewed entries P84091 and Q96CW1 for AP-2 complex subunit mu.",
+        "url": "https://rest.uniprot.org/uniprotkb/P84091",
+        "description": "Defines AP2M1 as the AP-2 mu subunit, describes AP-2 cargo recognition and clathrin-dependent endocytosis, and lists AP2S1/AP2B1/alpha adaptins as heterotetrameric complex partners."
+      },
+      {
+        "target_gene": "Ap2m1",
+        "ref_id": "R002",
+        "ref_slug": "reactome_ap2m1_clathrin",
+        "source": "Reactome",
+        "source_type": "database",
+        "citation": "Reactome pathways R-HSA-8856828 and R-HSA-8856825 for clathrin-mediated endocytosis and cargo recognition for clathrin-mediated endocytosis.",
+        "url": "https://reactome.org/content/detail/R-HSA-8856828",
+        "description": "Places human AP2M1 in curated clathrin-mediated endocytosis and cargo-recognition pathway contexts."
+      },
+      {
+        "target_gene": "Ap2m1",
+        "ref_id": "R004",
+        "ref_slug": "motley_2003_ap2_depletion_tfrc",
+        "source": "PubMed",
+        "source_type": "pubmed",
+        "citation": "Motley A, Bright NA, Seaman MNJ, Robinson MS. Clathrin-mediated endocytosis in AP-2-depleted cells. J Cell Biol. 2003;162(5):909-918. doi:10.1083/jcb.200305145.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/12952941/",
+        "description": "AP-2 mu2 RNAi in HeLaM cells reduced coated pits and severely inhibited receptor-mediated transferrin uptake, establishing TFRC as AP-2-dependent cargo in a perturbation experiment."
+      },
+      {
+        "target_gene": "Ap2m1",
+        "ref_id": "R005",
+        "ref_slug": "helbig_2019_ap2m1_dee",
+        "source": "PubMed",
+        "source_type": "pubmed",
+        "citation": "Helbig I, Lopez-Hernandez T, Shor O, et al. A Recurrent Missense Variant in AP2M1 Impairs Clathrin-Mediated Endocytosis and Causes Developmental and Epileptic Encephalopathy. Am J Hum Genet. 2019;104(6):1060-1072. doi:10.1016/j.ajhg.2019.04.001.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31104773/",
+        "description": "Links AP2M1 dysfunction to human developmental and epileptic encephalopathy and shows defective transferrin clathrin-mediated endocytosis for the recurrent p.Arg170Trp variant."
+      },
+      {
+        "target_gene": "Ap2s1",
+        "ref_id": "R002",
+        "ref_slug": "reactome_ap2s1_endocytosis_srebp",
+        "source": "Reactome",
+        "source_type": "database",
+        "citation": "Reactome pathways R-HSA-8856828 Clathrin-mediated endocytosis and R-HSA-1655829 Regulation of cholesterol biosynthesis by SREBP (SREBF).",
+        "url": "https://reactome.org/content/detail/R-HSA-8856828",
+        "description": "Places AP2S1 in clathrin-mediated endocytosis and records the SREBP-regulated cholesterol-biosynthesis pathway used to interpret the Srebf2 module."
+      },
+      {
+        "target_gene": "Ap2s1",
+        "ref_id": "R009",
+        "ref_slug": "alder_2003_bdnf_vgf_iegs",
+        "source": "Journal of Neuroscience",
+        "source_type": "pubmed",
+        "citation": "Alder J, Thakker-Varia S, Bangasser DA, Kuroiwa M, Plummer MR, Shors TJ, Black IB. Brain-Derived Neurotrophic Factor-Induced Gene Expression Reveals Novel Actions of VGF in Hippocampal Synaptic Plasticity. J Neurosci. 2003;23:10800-10808. doi:10.1523/JNEUROSCI.23-34-10800.2003.",
+        "url": "https://www.jneurosci.org/content/23/34/10800",
+        "description": "Showed that BDNF stimulation of hippocampal neurons induces immediate-early genes including Egr1 and Arc and later induces Vgf."
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 5,
+    "priority": 4
+  },
+  "report_evidence_ids": [
+    "Ap2m1:E001",
+    "Ap2m1:E002",
+    "Ap2m1:E003",
+    "Ap2m1:E005",
+    "Ap2s1:E003",
+    "Ap2s1:E007"
+  ],
+  "reference_ids": [
+    "Ap2m1:R001",
+    "Ap2m1:R002",
+    "Ap2m1:R004",
+    "Ap2m1:R005",
+    "Ap2s1:R002",
+    "Ap2s1:R009"
+  ],
+  "source_urls_or_dois": [
+    {
+      "ref_id": "Ap2m1:R001",
+      "citation": "UniProtKB reviewed entries P84091 and Q96CW1 for AP-2 complex subunit mu.",
+      "url_or_doi": "https://rest.uniprot.org/uniprotkb/P84091"
+    },
+    {
+      "ref_id": "Ap2m1:R002",
+      "citation": "Reactome pathways R-HSA-8856828 and R-HSA-8856825 for clathrin-mediated endocytosis and cargo recognition for clathrin-mediated endocytosis.",
+      "url_or_doi": "https://reactome.org/content/detail/R-HSA-8856828"
+    },
+    {
+      "ref_id": "Ap2m1:R004",
+      "citation": "Motley A, Bright NA, Seaman MNJ, Robinson MS. Clathrin-mediated endocytosis in AP-2-depleted cells. J Cell Biol. 2003;162(5):909-918. doi:10.1083/jcb.200305145.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/12952941/"
+    },
+    {
+      "ref_id": "Ap2m1:R005",
+      "citation": "Helbig I, Lopez-Hernandez T, Shor O, et al. A Recurrent Missense Variant in AP2M1 Impairs Clathrin-Mediated Endocytosis and Causes Developmental and Epileptic Encephalopathy. Am J Hum Genet. 2019;104(6):1060-1072. doi:10.1016/j.ajhg.2019.04.001.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/31104773/"
+    },
+    {
+      "ref_id": "Ap2s1:R009",
+      "citation": "Alder J, Thakker-Varia S, Bangasser DA, Kuroiwa M, Plummer MR, Shors TJ, Black IB. Brain-Derived Neurotrophic Factor-Induced Gene Expression Reveals Novel Actions of VGF in Hippocampal Synaptic Plasticity. J Neurosci. 2003;23:10800-10808. doi:10.1523/JNEUROSCI.23-34-10800.2003.",
+      "url_or_doi": "https://www.jneurosci.org/content/23/34/10800"
+    }
+  ],
+  "source_cluster_ids": [
+    "C126",
+    "C027"
+  ],
+  "source_claim_ids": [
+    "claim:ap2m1_f001_1ce18fa56d1d",
+    "claim:ap2s1_f003_cf4a922fc2c2"
+  ]
+}

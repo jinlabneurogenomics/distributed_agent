@@ -1,0 +1,901 @@
+{
+  "story_id": "S104",
+  "title": "Ctcf loss selectively down-regulates clustered protocadherins in thalamic and midbrain glutamatergic neurons",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Ctcf knockdown produced broad Pcdh-cluster repression in 151 TH Prkcd Grin2c Glut and 155 MB Glut, including Pcdhb20, Pcdhb17, Pcdhb16, Pcdhb18, Pcdhac1, Pcdha10, Pcdhgb2, and Pcdhga12, plus a smaller Ctcf-specific Zcwpw2-up and Dennd6b/Abhd14b/Rabggta-down core in additional neuronal classes.",
+  "biological_interpretation": "The data align CTCF loss with known clustered-protocadherin locus control and refine it to selected thalamic and midbrain glutamatergic vulnerability in this screen.",
+  "targets": [
+    "Ctcf",
+    "Pcdhb20",
+    "Pcdhb17",
+    "Pcdhb16",
+    "Pcdhb18",
+    "Pcdhac1",
+    "Pcdha10",
+    "Pcdhgb2",
+    "Pcdhga12",
+    "Zcwpw2",
+    "Dennd6b",
+    "Abhd14b"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "005 L4-5 IT CTX Glut",
+    "052 Pvalb Gaba"
+  ],
+  "support": {
+    "source_findings": [
+      {
+        "target_gene": "Ctcf",
+        "finding_id": "F001",
+        "finding_type": "cell_type_selectivity",
+        "direction": "broadest in 151 TH Prkcd Grin2c Glut and 155 MB Glut",
+        "confidence": "high",
+        "literature_status": "refines_cell_type_context",
+        "summary": "Ctcf perturbation generated broad transcriptional remodeling mainly in 151 TH Prkcd Grin2c Glut and 155 MB Glut, while similarly powered or lower-powered classes often showed only a handful of significant genes or none.",
+        "why_it_matters": "The response to loss of a ubiquitous chromatin organizer was not uniformly pan-neuronal; thalamic and midbrain glutamatergic neurons dominated the detectable response.",
+        "genes": "Ctcf|Zcwpw2|Dennd6b|Abhd14b",
+        "n_genes": "4",
+        "cell_types": "151 TH Prkcd Grin2c Glut|155 MB Glut|005 L4-5 IT CTX Glut|052 Pvalb Gaba",
+        "n_cell_types": "4",
+        "evidence_ids": "E002|E003|E007|E008",
+        "ref_ids": "R003|R005",
+        "main_caveats": "Cell-type cell counts vary and many weak classes have fewer than 50 perturbed cells; direct CTCF protein loss was not measured."
+      },
+      {
+        "target_gene": "Ctcf",
+        "finding_id": "F003",
+        "finding_type": "biomarker_candidate",
+        "direction": "Zcwpw2 up; Dennd6b, Abhd14b, and Rabggta down",
+        "confidence": "moderate",
+        "literature_status": "novel_no_direct_literature",
+        "summary": "Up-regulated Zcwpw2 paired with recurrent down-regulation of Dennd6b, Abhd14b, and Rabggta formed a compact Ctcf-response core that persisted even in low-amplitude classes.",
+        "why_it_matters": "These genes can flag Ctcf-responsive cells when the larger Pcdh/synaptic program is absent or underpowered, although their mechanistic relationship to CTCF is not established here.",
+        "genes": "Zcwpw2|Dennd6b|Abhd14b|Rabggta",
+        "n_genes": "4",
+        "cell_types": "005 L4-5 IT CTX Glut|052 Pvalb Gaba|066 CNU-HYa HY GABA|145 MH-LH TH Glut|151 TH Prkcd Grin2c Glut|155 MB Glut|191 MB P MY GABA",
+        "n_cell_types": "7",
+        "evidence_ids": "E006|E007",
+        "main_caveats": "This is a transcriptomic biomarker hypothesis; no direct CTCF binding or rescue data link these genes to CTCF."
+      }
+    ],
+    "evidence_ledger_rows": [
+      {
+        "target_gene": "Ctcf",
+        "evidence_id": "E002",
+        "evidence_slug": "ctcf_th_prkcd_broad_response",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "genes": "Zcwpw2|Dennd6b|Abhd14b|Wls|Mettl25|Rabggta",
+        "n_genes": "6",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "129 perturbed cells versus 23679 controls; 270 genes at FDR<0.05, with 151 up and 119 down; minimum FDR=5.32e-30; Zcwpw2 logFC=+2.006 FDR=2.76e-20; Dennd6b logFC=-1.670 FDR=5.32e-30; Abhd14b logFC=-1.573 FDR=3.54e-19; Wls logFC=+0.919 FDR=4.60e-09.",
+        "description": "The TH Prkcd Grin2c glutamatergic class had the largest Ctcf differential-expression signature."
+      },
+      {
+        "target_gene": "Ctcf",
+        "evidence_id": "E003",
+        "evidence_slug": "ctcf_mb_glut_broad_response",
+        "cell_type": "155 MB Glut",
+        "genes": "Zcwpw2|Dennd6b|Abhd14b|Asl|Grk4|Rabggta",
+        "n_genes": "6",
+        "has_genes": "1",
+        "has_cell_type": "1",
+        "statistics": "102 perturbed cells versus 20353 controls; 112 genes at FDR<0.05, with 35 up and 77 down; minimum FDR=2.27e-33; Zcwpw2 logFC=+2.385 FDR=2.27e-33; Dennd6b logFC=-1.865 FDR=1.06e-28; Abhd14b logFC=-2.350 FDR=2.47e-18; Asl logFC=+1.810 FDR=8.21e-14.",
+        "description": "The midbrain glutamatergic class was the second broadest Ctcf response and shared the main recurrent genes with the thalamic class."
+      },
+      {
+        "target_gene": "Ctcf",
+        "evidence_id": "E007",
+        "evidence_slug": "ctcf_low_amplitude_core_responses",
+        "genes": "Zcwpw2|Dennd6b|Abhd14b|Rabggta",
+        "n_genes": "4",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "FDR<0.05 gene counts outside the two broadest classes were small: 8 in 005 L4-5 IT CTX Glut with 87 perturbed cells, 6 in 052 Pvalb Gaba with 81 cells, 6 in 191 MB P MY GABA with 49 cells, 4 in 066 CNU-HYa HY GABA with 41 cells, 4 in 145 MH-LH TH Glut with 32 cells, 2 in 110 CNU-HYa HY MM Glut with 45 cells, and one each in 001 L5-6 IT Glut, 008 L2-3 IT ENT PPP RSP Glut, and 308 CB GABA.",
+        "description": "Several classes carried only the compact recurrent Ctcf module rather than a broad transcriptome response."
+      },
+      {
+        "target_gene": "Ctcf",
+        "evidence_id": "E008",
+        "evidence_slug": "ctcf_zero_fdr_classes",
+        "n_genes": "0",
+        "has_genes": "0",
+        "has_cell_type": "0",
+        "statistics": "Nine Ctcf contrasts had no FDR<0.05 genes: 007 L2-3 IT CTX Glut, 009 L2-3 IT PIR AON ENT Glut, 012 MEA LA CA1 DG Glut, 017 CA3 CA2-FC DG Glut, 022 L5 ET CTX Glut, 027 NP-CT-L6b-OB Glut, 046 CTX-CGE GABA, 054 CNU-MGE GABA, and 059 CNU-LGE LSX GABA; their perturbed-cell counts were 32-49 and their minimum adjusted p values ranged from 0.407 to 1.0.",
+        "description": "Many matched Ctcf cell-type contrasts did not produce a conventionally significant downstream signature."
+      },
+      {
+        "target_gene": "Ctcf",
+        "evidence_id": "E006",
+        "evidence_slug": "ctcf_core_genes_recur_across_classes",
+        "genes": "Zcwpw2|Dennd6b|Abhd14b|Rabggta",
+        "n_genes": "4",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "Across 20 Ctcf cell-type contrasts, Zcwpw2 was significant and up in 10 classes with logFC +1.124 to +2.385; Dennd6b was significant and down in 9 classes with logFC -0.720 to -1.865; Abhd14b was down in 6 classes with logFC -1.028 to -2.350; Rabggta was down in 5 classes with logFC -0.806 to -2.550.",
+        "description": "A small set of genes was repeatedly detected with the same sign across Ctcf-responsive neuronal classes."
+      },
+      {
+        "target_gene": "Ctcf",
+        "evidence_id": "E007",
+        "evidence_slug": "ctcf_low_amplitude_core_responses",
+        "genes": "Zcwpw2|Dennd6b|Abhd14b|Rabggta",
+        "n_genes": "4",
+        "has_genes": "1",
+        "has_cell_type": "0",
+        "statistics": "FDR<0.05 gene counts outside the two broadest classes were small: 8 in 005 L4-5 IT CTX Glut with 87 perturbed cells, 6 in 052 Pvalb Gaba with 81 cells, 6 in 191 MB P MY GABA with 49 cells, 4 in 066 CNU-HYa HY GABA with 41 cells, 4 in 145 MH-LH TH Glut with 32 cells, 2 in 110 CNU-HYa HY MM Glut with 45 cells, and one each in 001 L5-6 IT Glut, 008 L2-3 IT ENT PPP RSP Glut, and 308 CB GABA.",
+        "description": "Several classes carried only the compact recurrent Ctcf module rather than a broad transcriptome response."
+      }
+    ],
+    "exact_de_rows": [
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Abhd14b",
+        "score": -4.727132,
+        "logfoldchange": -1.028317,
+        "pval": 2.2771351212776993e-06,
+        "pvals_adj": 0.009747276886629191
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Ctcf",
+        "score": -0.529523,
+        "logfoldchange": -0.089271,
+        "pval": 0.5964429202764516,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Dennd6b",
+        "score": -6.763683,
+        "logfoldchange": -1.122428,
+        "pval": 1.3452762419158559e-11,
+        "pvals_adj": 2.3033819814083284e-07
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Pcdha10",
+        "score": -2.79976,
+        "logfoldchange": -0.677769,
+        "pval": 0.0051140560314197605,
+        "pvals_adj": 0.7275608764959564
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Pcdhac1",
+        "score": -3.371807,
+        "logfoldchange": -0.798652,
+        "pval": 0.0007467666797733249,
+        "pvals_adj": 0.37606291444349615
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Pcdhb16",
+        "score": -2.297274,
+        "logfoldchange": -0.957004,
+        "pval": 0.021603145442398997,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Pcdhb17",
+        "score": -2.27499,
+        "logfoldchange": -0.577712,
+        "pval": 0.02290653288590018,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Pcdhb18",
+        "score": -2.259219,
+        "logfoldchange": -0.779866,
+        "pval": 0.023869780116114042,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Pcdhb20",
+        "score": -2.074865,
+        "logfoldchange": -0.524633,
+        "pval": 0.03799908510017705,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Pcdhga12",
+        "score": -1.323942,
+        "logfoldchange": -0.281305,
+        "pval": 0.18552227127530152,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Pcdhgb2",
+        "score": -1.666722,
+        "logfoldchange": -0.50462,
+        "pval": 0.09556966283830726,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Rabggta",
+        "score": -1.689314,
+        "logfoldchange": -0.302958,
+        "pval": 0.0911592744958834,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "005 L4-5 IT CTX Glut",
+        "gene": "Zcwpw2",
+        "score": 6.550051,
+        "logfoldchange": 1.420864,
+        "pval": 5.751727523601124e-11,
+        "pvals_adj": 4.924053932954922e-07
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Abhd14b",
+        "score": -3.179464,
+        "logfoldchange": -0.64356,
+        "pval": 0.0014754755485296837,
+        "pvals_adj": 0.686137617042487
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Ctcf",
+        "score": -0.234381,
+        "logfoldchange": -0.031199,
+        "pval": 0.8146890469262092,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Dennd6b",
+        "score": -4.774774,
+        "logfoldchange": -0.719575,
+        "pval": 1.7990954740802093e-06,
+        "pvals_adj": 0.015078219168266235
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Pcdha10",
+        "score": -1.661942,
+        "logfoldchange": -0.414693,
+        "pval": 0.09652450868663878,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Pcdhac1",
+        "score": -1.077073,
+        "logfoldchange": -0.249194,
+        "pval": 0.28144760657749823,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Pcdhb16",
+        "score": -2.955902,
+        "logfoldchange": -1.067277,
+        "pval": 0.003117566106528634,
+        "pvals_adj": 0.8057425593862694
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Pcdhb17",
+        "score": -2.971842,
+        "logfoldchange": -0.87876,
+        "pval": 0.0029601868701453773,
+        "pvals_adj": 0.8057425593862694
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Pcdhb18",
+        "score": -3.784542,
+        "logfoldchange": -1.304817,
+        "pval": 0.00015399188368976155,
+        "pvals_adj": 0.25812119544077833
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Pcdhb20",
+        "score": -3.062183,
+        "logfoldchange": -0.910073,
+        "pval": 0.002197292916233335,
+        "pvals_adj": 0.7673129971229825
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Pcdhga12",
+        "score": -1.874994,
+        "logfoldchange": -0.623166,
+        "pval": 0.06079359366671056,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Pcdhgb2",
+        "score": -2.064282,
+        "logfoldchange": -0.581824,
+        "pval": 0.038991019191816974,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Rabggta",
+        "score": -4.356353,
+        "logfoldchange": -0.806342,
+        "pval": 1.3224763039956434e-05,
+        "pvals_adj": 0.03694557967929163
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "052 Pvalb Gaba",
+        "gene": "Zcwpw2",
+        "score": 6.732424,
+        "logfoldchange": 1.124337,
+        "pval": 1.6685934157670284e-11,
+        "pvals_adj": 2.7968962835086933e-07
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Abhd14b",
+        "score": -4.67908,
+        "logfoldchange": -1.4127,
+        "pval": 2.8816494400898997e-06,
+        "pvals_adj": 0.012329137129424636
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Ctcf",
+        "score": 0.542445,
+        "logfoldchange": 0.231879,
+        "pval": 0.5875121498251659,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Dennd6b",
+        "score": -6.691007,
+        "logfoldchange": -1.526233,
+        "pval": 2.2164083135143915e-11,
+        "pvals_adj": 3.7931611877485297e-07
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Pcdha10",
+        "score": -1.675315,
+        "logfoldchange": -0.550818,
+        "pval": 0.09387247167380461,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Pcdhac1",
+        "score": -2.129969,
+        "logfoldchange": -0.899503,
+        "pval": 0.03317418949384128,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Pcdhb16",
+        "score": -2.089224,
+        "logfoldchange": -1.183714,
+        "pval": 0.03668756132629117,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Pcdhb17",
+        "score": -2.227959,
+        "logfoldchange": -1.130343,
+        "pval": 0.02588323826171503,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Pcdhb18",
+        "score": -2.932395,
+        "logfoldchange": -1.750289,
+        "pval": 0.0033635854703276667,
+        "pvals_adj": 0.8715407176075045
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Pcdhb20",
+        "score": -1.84553,
+        "logfoldchange": -0.66521,
+        "pval": 0.06496051760620308,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Pcdhga12",
+        "score": -2.610629,
+        "logfoldchange": -1.417674,
+        "pval": 0.009037590588539358,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Pcdhgb2",
+        "score": -2.383836,
+        "logfoldchange": -1.185014,
+        "pval": 0.017133238764438112,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Rabggta",
+        "score": -2.459585,
+        "logfoldchange": -0.674534,
+        "pval": 0.013909779622967355,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Zcwpw2",
+        "score": 6.515291,
+        "logfoldchange": 2.001974,
+        "pval": 7.254870797313187e-11,
+        "pvals_adj": 6.207992941260894e-07
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Abhd14b",
+        "score": -5.152324,
+        "logfoldchange": -1.65534,
+        "pval": 2.5727760176049637e-07,
+        "pvals_adj": 0.0014327789642042041
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Ctcf",
+        "score": 0.91832,
+        "logfoldchange": 0.327002,
+        "pval": 0.35845142736235436,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Dennd6b",
+        "score": -5.488636,
+        "logfoldchange": -1.437238,
+        "pval": 4.0504837142256135e-08,
+        "pvals_adj": 0.0003383571570678366
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Pcdha10",
+        "score": -3.532901,
+        "logfoldchange": -1.898292,
+        "pval": 0.0004110267124199716,
+        "pvals_adj": 0.35597932352421124
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Pcdhac1",
+        "score": -2.677815,
+        "logfoldchange": -1.316999,
+        "pval": 0.007410414679050073,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Pcdhb16",
+        "score": -3.348069,
+        "logfoldchange": -2.700871,
+        "pval": 0.0008137659081797435,
+        "pvals_adj": 0.49443334869734534
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Pcdhb17",
+        "score": -3.309848,
+        "logfoldchange": -1.858962,
+        "pval": 0.0009334656067840081,
+        "pvals_adj": 0.49443334869734534
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Pcdhb18",
+        "score": -2.498469,
+        "logfoldchange": -1.463909,
+        "pval": 0.012473106166218152,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Pcdhb20",
+        "score": -2.490219,
+        "logfoldchange": -1.322118,
+        "pval": 0.012766435171000698,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Pcdhga12",
+        "score": -1.617668,
+        "logfoldchange": -0.692948,
+        "pval": 0.10573410944957912,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Pcdhgb2",
+        "score": -1.102449,
+        "logfoldchange": -0.387488,
+        "pval": 0.27026652136078777,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Rabggta",
+        "score": -4.958541,
+        "logfoldchange": -2.550497,
+        "pval": 7.10245001294041e-07,
+        "pvals_adj": 0.0029665158091548858
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "145 MH-LH TH Glut",
+        "gene": "Zcwpw2",
+        "score": 5.501143,
+        "logfoldchange": 1.949696,
+        "pval": 3.7733740939589715e-08,
+        "pvals_adj": 0.0003383571570678366
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Abhd14b",
+        "score": -9.860774,
+        "logfoldchange": -1.572807,
+        "pval": 6.157284719559343e-23,
+        "pvals_adj": 3.5422858991624897e-19
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ctcf",
+        "score": 1.236666,
+        "logfoldchange": 0.220607,
+        "pval": 0.21621099291806767,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Dennd6b",
+        "score": -12.200708,
+        "logfoldchange": -1.670231,
+        "pval": 3.081312040648492e-34,
+        "pvals_adj": 5.3180364509552324e-30
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Pcdha10",
+        "score": -5.088997,
+        "logfoldchange": -1.106311,
+        "pval": 3.599616918054115e-07,
+        "pvals_adj": 0.00010020288449789672
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Pcdhac1",
+        "score": -6.278335,
+        "logfoldchange": -1.385859,
+        "pval": 3.422174950719775e-10,
+        "pvals_adj": 3.281295415248478e-07
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Pcdhb16",
+        "score": -6.335522,
+        "logfoldchange": -1.909824,
+        "pval": 2.3653847547804357e-10,
+        "pvals_adj": 2.551510967672221e-07
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Pcdhb17",
+        "score": -6.346955,
+        "logfoldchange": -1.61825,
+        "pval": 2.1961879562878728e-10,
+        "pvals_adj": 2.5269338625048265e-07
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Pcdhb18",
+        "score": -5.429198,
+        "logfoldchange": -1.401549,
+        "pval": 5.6607825018004956e-08,
+        "pvals_adj": 2.078711599969676e-05
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Pcdhb20",
+        "score": -6.44032,
+        "logfoldchange": -1.52098,
+        "pval": 1.1922141374449402e-10,
+        "pvals_adj": 1.4697445570115875e-07
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Pcdhga12",
+        "score": -3.682716,
+        "logfoldchange": -0.850605,
+        "pval": 0.00023076260822736466,
+        "pvals_adj": 0.020114807350485285
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Pcdhgb2",
+        "score": -2.772827,
+        "logfoldchange": -0.838095,
+        "pval": 0.005557170789327161,
+        "pvals_adj": 0.18850877817906372
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rabggta",
+        "score": -6.80591,
+        "logfoldchange": -1.179956,
+        "pval": 1.0041244488869233e-11,
+        "pvals_adj": 1.9255759848154902e-08
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Zcwpw2",
+        "score": 10.153396,
+        "logfoldchange": 2.006134,
+        "pval": 3.2002939169540576e-24,
+        "pvals_adj": 2.761693635635504e-20
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "155 MB Glut",
+        "gene": "Abhd14b",
+        "score": -9.664929,
+        "logfoldchange": -2.350397,
+        "pval": 4.24912848186764e-22,
+        "pvals_adj": 2.4705849369739077e-18
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "155 MB Glut",
+        "gene": "Ctcf",
+        "score": -0.594702,
+        "logfoldchange": -0.086913,
+        "pval": 0.5520428294690329,
+        "pvals_adj": 1.0
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "155 MB Glut",
+        "gene": "Dennd6b",
+        "score": -11.897658,
+        "logfoldchange": -1.864998,
+        "pval": 1.2171484469772082e-32,
+        "pvals_adj": 1.0615360180311722e-28
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "155 MB Glut",
+        "gene": "Pcdha10",
+        "score": -5.511531,
+        "logfoldchange": -1.726028,
+        "pval": 3.557251023366127e-08,
+        "pvals_adj": 2.8204149818443343e-05
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "155 MB Glut",
+        "gene": "Pcdhac1",
+        "score": -4.326877,
+        "logfoldchange": -1.619807,
+        "pval": 1.5123865832350568e-05,
+        "pvals_adj": 0.004187390344661761
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "155 MB Glut",
+        "gene": "Pcdhb16",
+        "score": -5.08329,
+        "logfoldchange": -2.314856,
+        "pval": 3.709528721696937e-07,
+        "pvals_adj": 0.00018487231283588476
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "155 MB Glut",
+        "gene": "Pcdhb17",
+        "score": -4.905357,
+        "logfoldchange": -1.70526,
+        "pval": 9.325767580115211e-07,
+        "pvals_adj": 0.0003614874753332214
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "155 MB Glut",
+        "gene": "Pcdhb18",
+        "score": -5.45753,
+        "logfoldchange": -2.478061,
+        "pval": 4.828051815022944e-08,
+        "pvals_adj": 3.50898782539355e-05
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "155 MB Glut",
+        "gene": "Pcdhb20",
+        "score": -5.286808,
+        "logfoldchange": -1.932795,
+        "pval": 1.2446933438590844e-07,
+        "pvals_adj": 7.356430480499211e-05
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "155 MB Glut",
+        "gene": "Pcdhga12",
+        "score": -5.277806,
+        "logfoldchange": -1.744707,
+        "pval": 1.3073974940977787e-07,
+        "pvals_adj": 7.356430480499211e-05
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "155 MB Glut",
+        "gene": "Pcdhgb2",
+        "score": -5.419648,
+        "logfoldchange": -2.113575,
+        "pval": 5.971641768763188e-08,
+        "pvals_adj": 4.1665338949014514e-05
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "155 MB Glut",
+        "gene": "Rabggta",
+        "score": -7.234877,
+        "logfoldchange": -1.693027,
+        "pval": 4.659506390728194e-13,
+        "pvals_adj": 1.3545961662245315e-09
+      },
+      {
+        "target_gene": "Ctcf",
+        "cell_type": "155 MB Glut",
+        "gene": "Zcwpw2",
+        "score": 12.817759,
+        "logfoldchange": 2.384651,
+        "pval": 1.3041682469736546e-37,
+        "pvals_adj": 2.2748606731961457e-33
+      }
+    ]
+  },
+  "caveats": [
+    "The experiment does not measure CTCF binding, chromatin loops, or protocadherin isoform choice at the DNA level.",
+    "The Zcwpw2/Dennd6b/Abhd14b branch is Ctcf-specific in this perturbation panel but not mechanistically explained."
+  ],
+  "prior_expectation": {
+    "citations": [
+      {
+        "target_gene": "Ctcf",
+        "ref_id": "R003",
+        "ref_slug": "hirayama_2012_ctcf_pcdh_neurons",
+        "source": "Cell Reports",
+        "source_type": "pubmed",
+        "citation": "Hirayama T, Tarusawa E, Yoshimura Y, Galjart N, Yagi T. CTCF is required for neural development and stochastic expression of clustered Pcdh genes in neurons. Cell Rep. 2012;2(2):345-357. doi:10.1016/j.celrep.2012.06.014. PMID:22854024.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/22854024/",
+        "description": "Mouse neuronal CTCF knockout study connecting CTCF to dendritic arborization, synapse formation, and clustered protocadherin expression."
+      },
+      {
+        "target_gene": "Ctcf",
+        "ref_id": "R005",
+        "ref_slug": "sams_2016_neuronal_ctcf_memory",
+        "source": "Cell Reports",
+        "source_type": "pubmed",
+        "citation": "Sams DS, Nardone S, Getselter D, Raz D, Tal M, et al. Neuronal CTCF Is Necessary for Basal and Experience-Dependent Gene Regulation, Memory Formation, and Genomic Structure of BDNF and Arc. Cell Rep. 2016;17(9):2418-2430. doi:10.1016/j.celrep.2016.11.004. PMID:27880914.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/27880914/",
+        "description": "Shows that neuronal CTCF controls hippocampal memory-related transcription and chromatin organization, including protocadherin and activity-regulated genes."
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 3,
+    "support": 5,
+    "priority": 4
+  },
+  "report_evidence_ids": [
+    "Ctcf:E002",
+    "Ctcf:E003",
+    "Ctcf:E006",
+    "Ctcf:E007",
+    "Ctcf:E008"
+  ],
+  "reference_ids": [
+    "Ctcf:R003",
+    "Ctcf:R005"
+  ],
+  "source_urls_or_dois": [
+    {
+      "ref_id": "Ctcf:R003",
+      "citation": "Hirayama T, Tarusawa E, Yoshimura Y, Galjart N, Yagi T. CTCF is required for neural development and stochastic expression of clustered Pcdh genes in neurons. Cell Rep. 2012;2(2):345-357. doi:10.1016/j.celrep.2012.06.014. PMID:22854024.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/22854024/"
+    },
+    {
+      "ref_id": "Ctcf:R005",
+      "citation": "Sams DS, Nardone S, Getselter D, Raz D, Tal M, et al. Neuronal CTCF Is Necessary for Basal and Experience-Dependent Gene Regulation, Memory Formation, and Genomic Structure of BDNF and Arc. Cell Rep. 2016;17(9):2418-2430. doi:10.1016/j.celrep.2016.11.004. PMID:27880914.",
+      "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/27880914/"
+    }
+  ],
+  "source_cluster_ids": [
+    "C041"
+  ],
+  "source_claim_ids": [
+    "claim:ctcf_f001_348dbe3c6286",
+    "claim:ctcf_f003_48cb573e6fe9"
+  ]
+}

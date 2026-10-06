@@ -1,0 +1,143 @@
+{
+  "story_id": "S011",
+  "title": "CHD8 loss produces a caudal neuronal Pnisr/Usp11/Dus3l-down and Csf2ra/Aaas-up state",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Chd8 knockdown was strongest in 151 TH Prkcd Grin2c Glut, 155 MB Glut, and 191 MB P MY GABA. In the leading 151 TH class, Chd8 was depleted with logFC -0.5318986177444458 and FDR 1.0221595465910485e-09 while Pnisr, Usp11, and Dus3l fell and Csf2ra and Aaas rose; the same Pnisr/Usp11/Dus3l-down core recurred in 155 MB Glut and 191 MB P MY GABA.",
+  "biological_interpretation": "Acute CHD8 loss in the profiled adult mouse brain is not a uniform cortical Wnt/cell-cycle state; it exposes a posterior neuronal RNA-processing-like abundance module that is most resolved in thalamic, midbrain, and hindbrain classes.",
+  "targets": [
+    "Chd8"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "191 MB P MY GABA"
+  ],
+  "support": {
+    "support_level": 5,
+    "exact_de_rows": [
+      {
+        "gene_target": "Chd8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Chd8",
+        "log2_fold_change": -0.5318986177444458,
+        "pvals_adj": 1.0221595465910485e-09,
+        "wilcoxon_score": -7.364603519439697
+      },
+      {
+        "gene_target": "Chd8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Pnisr",
+        "log2_fold_change": -0.5937798023223877,
+        "pvals_adj": 1.3033749031136165e-34,
+        "wilcoxon_score": -13.036844253540039
+      },
+      {
+        "gene_target": "Chd8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Usp11",
+        "log2_fold_change": -1.1245753765106201,
+        "pvals_adj": 5.151301743101023e-07,
+        "wilcoxon_score": -6.406155109405518
+      },
+      {
+        "gene_target": "Chd8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Dus3l",
+        "log2_fold_change": -0.4656989276409149,
+        "pvals_adj": 3.3561429711786397e-06,
+        "wilcoxon_score": -6.060001373291016
+      },
+      {
+        "gene_target": "Chd8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Csf2ra",
+        "log2_fold_change": 0.6656902432441711,
+        "pvals_adj": 1.2458621105756211e-06,
+        "wilcoxon_score": 6.241600036621094
+      },
+      {
+        "gene_target": "Chd8",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Aaas",
+        "log2_fold_change": 0.8045562505722046,
+        "pvals_adj": 0.0013248361855583482,
+        "wilcoxon_score": 4.838997840881348
+      },
+      {
+        "gene_target": "Chd8",
+        "cell_type": "155 MB Glut",
+        "gene": "Chd8",
+        "log2_fold_change": -0.385,
+        "pvals_adj": 0.00821
+      },
+      {
+        "gene_target": "Chd8",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Chd8",
+        "log2_fold_change": -0.546,
+        "pvals_adj": 0.000413,
+        "wilcoxon_score": -5.333
+      }
+    ],
+    "report_evidence_summary": [
+      "Chd8:E001",
+      "Chd8:E002",
+      "Chd8:E003",
+      "Chd8:E004",
+      "Chd8:E006"
+    ]
+  },
+  "caveats": [
+    "The response was cell-type-selective and partially coupled to target engagement and perturbed-cell count.",
+    "The recurrent Pnisr module is an mRNA-abundance readout, not direct splice-junction or isoform evidence."
+  ],
+  "prior_expectation": {
+    "summary": "Human genetics and mouse models support CHD8 haploinsufficiency as disease-relevant; CHD8 is known as an ASD-linked chromatin remodeler, but the caudal Pnisr/Usp11/Dus3l response refines that biology to selected neuronal classes.",
+    "citations": [
+      {
+        "ref_id": "Chd8:R003",
+        "ref": "Bernier et al. 2014 PMID:24998929",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/24998929/",
+        "supports": "disruptive CHD8 mutations define a human autism subtype"
+      },
+      {
+        "ref_id": "Chd8:R004",
+        "ref": "Katayama et al. 2016 PMID:27602517",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/27602517/",
+        "supports": "Chd8 haploinsufficiency is causal in a mouse disease model"
+      },
+      {
+        "ref_id": "Chd8:R006",
+        "ref": "Cotney et al. 2015 PMID:25752243",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/25752243/",
+        "supports": "CHD8 regulates ASD-relevant neurodevelopmental transcriptional networks"
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 5,
+    "priority": 4
+  },
+  "report_evidence_ids": [
+    "Chd8:E001",
+    "Chd8:E002",
+    "Chd8:E003",
+    "Chd8:E004",
+    "Chd8:E006"
+  ],
+  "reference_ids": [
+    "Chd8:R003",
+    "Chd8:R004",
+    "Chd8:R006"
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/24998929/",
+    "https://pubmed.ncbi.nlm.nih.gov/27602517/",
+    "https://pubmed.ncbi.nlm.nih.gov/25752243/"
+  ],
+  "source_claim_ids": [
+    "claim:chd8_f001_585a4ab20c22"
+  ]
+}

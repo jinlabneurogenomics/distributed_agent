@@ -1,0 +1,38 @@
+# Task understanding
+
+I predicted the held-out `n_degs` for each requested genetic perturbation in `151 TH Prkcd Grin2c Glut` cells.  `n_degs` is the assay-specific count of measured genes with BH-adjusted Wilcoxon `pvals_adj < 0.05` in the focal Perturb-seq comparison, not a general score of mitochondrial importance or neuron viability.  The only requested target in `the single-target request` was `Ndufs1`; it was absent from the supplied training count table, and its perturbation signature was completely held out.
+
+# Sources used
+
+- Declared focal training endpoint: `../../../../../inputs/holdout/151_TH_Prkcd_Grin2c_Glut_deg_counts_training.csv`, 1,674 non-held-out perturbations with observed `n_degs` in `151 TH Prkcd Grin2c Glut`.
+- Declared differential-expression parquet: `training differential-expression dataset`; I queried the focal rows for respiratory-chain analogs to identify which genes, if any, passed FDR and whether the significant genes represented a coherent stress program.
+- Run-local task metadata: `task_bindings.json`, `coverage.json`, and `capabilities.json`; the task is a scalar count prediction with an unranked requested list, so the ranked-output `dataset.perturbseq_features`, `synthesis.ordering_validate`, and `corpus.predictive_graph_review` capabilities were not available or appropriate.
+- External mechanism references: MitoCarta3.0 respiratory-chain annotations for mitochondrial complex-I subunits (Rath et al., 2021, Nucleic Acids Research, DOI 10.1093/nar/gkaa1011); the mammalian complex-I cryo-EM structure placing NDUFS1 in the conserved 14-subunit catalytic core (Zhu, Vinothkumar & Hirst 2016, DOI 10.1038/nature19095, PMID 27509854); human genetics showing NDUFS1/NDUFV1 lesions as causes of isolated complex-I deficiency and Leigh-like neurologic disease (Bénit et al. 2001, DOI 10.1086/320603, PMID 11349233); mouse dopaminergic-neuron evidence that Engrailed promotes translation of Ndufs1 and Ndufs3 and thereby supports complex-I activity (Alvarez-Fischer et al. 2011, DOI 10.1038/nn.2916, PMID 21892157); and neuron/astrocyte work showing that NDUFS1 abundance affects complex-I supercomplex assembly, oxygen consumption, and mitochondrial ROS in neurons (Lopez-Fabuel et al. 2016, DOI 10.1073/pnas.1613701113, PMID 27799543).
+
+# Quantitative calibration
+
+The count table was extremely zero-inflated in the focal cell group: median `n_degs = 0`, 75th percentile `= 1`, 90th percentile `= 2`, 95th percentile `= 18`, and a long upper tail reaching 2,677 DEGs for the strongest chromatin, RNA-processing, ubiquitin, and proteasome perturbations.  I therefore treated an analog count of 0 or 1 as a genuine near-null assay response rather than as a missing effect.
+
+I selected mitochondrial respiratory-chain analogs by gene name from the training table, then queried the parquet for those `gene_target` values restricted to `group_name == "151 TH Prkcd Grin2c Glut"` and counted genes with `pvals_adj < 0.05`.  The relevant focal observations were:
+
+| analog class | training perturbations and `n_degs` | focal expression-pattern evidence |
+|---|---:|---|
+| Complex-I N-module / conserved core near NDUFS1 | `Ndufs2` 1, `Ndufs7` 0, `Ndufs8` 1, `Ndufv1` 0, `Ndufv2` 1 | `Ndufs2` and `Ndufs8` each had only their own target transcript significant; `Ndufv2` had one significant non-mitochondrial gene, `Cdc40`, while the target transcript itself was not FDR-significant; `Ndufv1` and `Ndufs7` had no FDR-significant genes. |
+| Other complex-I subunits | `Ndufa10` 1, `Ndufa11` 0, `Ndufa12` 0, `Ndufa4` 1, `Ndufa6` 1, `Ndufa8` 0, `Ndufa9` 0, `Ndufb10` 1, `Ndufb11` 1, `Ndufb3` 0, `Ndufb7` 0, `Ndufb8` 1, `Ndufb9` 1, `Ndufc2` 1 | Every nonzero complex-I count in this set was exactly one DEG, and the single significant feature was the targeted subunit itself. |
+| Complex-I assembly factors | `Ndufaf2` 0, `Ndufaf4` 0, `Ndufaf5` 0 | No FDR-significant genes, consistent with the lack of a broad mitochondrial unfolded-protein, oxidative-stress, or activity-regulated transcriptional program. |
+| Other respiratory-chain / mitochondrial controls | `Sdha` 1, `Cox5a` 1, `Uqcrc2` 1, `Uqcrq` 1, `Cox11` 0, `Cox4i1` 0, `Cox6a1` 0, `Cox7b` 0, `Cox8a` 0, `Uqcrb` 0, `Uqcrfs1` 0, `Uqcrh` 0, `Tomm40` 1, `Timmdc1` 0 | Complex-II, complex-III, complex-IV, mitochondrial-import, and complex-I assembly perturbations also stayed at 0 or 1 DEG in the same focal cells. |
+
+These within-dataset signatures are the central calibration.  NDUFS1 is not just a superficial gene-family match: it is an obligate nuclear-encoded subunit of mitochondrial complex I, like `Ndufs2`, `Ndufs7`, `Ndufs8`, `Ndufv1`, and `Ndufv2`, all of which impair the same NADH:ubiquinone oxidoreductase when sufficiently depleted.  The causal transfer chain is therefore: CRISPR loss of a complex-I core subunit -> reduced complex-I catalytic module or assembly -> altered oxidative phosphorylation / ROS in affected neurons -> possible stress or survival selection -> snRNA-seq DEG count among recovered NeuN+ nuclei.  In this specific assay the last step was not visibly amplified: analogous complex-I perturbations did not trigger many secondary FDR-significant genes after sparse, partial, 3–4 week postnatal CRISPR perturbation.
+
+# Target-specific prediction
+
+## Ndufs1
+
+- **Appropriate analogs.** The closest training analogs were the conserved complex-I catalytic/peripheral-arm subunits `Ndufs2` with 1 DEG, `Ndufs7` with 0, `Ndufs8` with 1, `Ndufv1` with 0, and `Ndufv2` with 1.  Broader complex-I subunits and assembly factors also ranged only from 0 to 1 DEG in the focal count table.
+- **Expression evidence.** For `Ndufs2` and `Ndufs8`, the sole DEG was the target transcript itself; `Ndufv2` had a single significant `Cdc40` row despite no significant `Ndufv2` self-row; `Ndufv1` and `Ndufs7` had no significant focal rows.  Thus the within-dataset pattern is target knockdown detectability plus sparse statistical noise, not a shared downstream complex-I injury signature.
+- **External biology.** Structural and mitochondrial annotations put NDUFS1 in the essential complex-I catalytic core, and NDUFS1 loss or depletion can compromise complex-I assembly/function in patient fibroblasts and neurons.  This argues against treating `Ndufs1` as an inert locus, but it does not overcome the same-experiment observation that many true respiratory-chain knockouts were transcriptionally near-null at FDR 0.05 in `151 TH Prkcd Grin2c Glut` nuclei.
+- **Point estimate.** I predicted **1 DEG**.  The nonzero value reflects the possibility that the highly expressed `Ndufs1` target transcript itself will pass FDR after CRISPR depletion, matching `Ndufs2`, `Ndufs8`, and multiple accessory `Nduf` genes.  I did not predict a larger stress response because no training complex-I core, assembly, complex-II, complex-III, or complex-IV perturbation exceeded one DEG in this cell group.
+
+# Limits and uncertainty
+
+The prediction is an extrapolation from neighboring complex-I perturbations because `Ndufs1` itself was held out.  `Ndufs1` is a particularly central Fe-S/NADH module component, so stronger editing or longer follow-up could plausibly cause oxidative-phosphorylation failure, ROS, or loss of vulnerable neurons; however, the supplied snRNA-seq endpoint samples surviving nuclei after a relatively partial AAV CRISPR perturbation, and downstream mitochondrial dysfunction need not appear as many BH-significant transcriptomic changes.  The exact integer hinges on guide efficacy, target transcript abundance, and the number of matched perturbed nuclei for the hidden `Ndufs1` experiment, none of which are present in the declared inputs.

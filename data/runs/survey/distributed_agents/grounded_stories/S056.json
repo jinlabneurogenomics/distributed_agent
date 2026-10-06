@@ -1,0 +1,156 @@
+{
+  "story_id": "S056",
+  "title": "Wdr26 loss exposes caudal and subcortical neuronal CTLH-liability signatures that Gnb1 does not explain",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "The raw footprint proposal was verified against the Wdr26 report: FDR<0.05 burdens were 1459 genes in 308 CB GABA, 491 in 155 MB Glut, 329 in 191 MB P MY GABA, 43 in 066 CNU-HYa HY GABA, and 13 in 151 TH, with 16/21 groups FDR-silent. Exact rows included Srrm2, Luc7l2, Kpna1, Cacna1g, and Grik1 down in 308 CB GABA; Srrm2, Nat8l, and Atp1b1 down plus Dync1h1 up in 155 MB Glut; and Col11a2 up with Srrm2, Atp1a3, and Kcna2 down in 191 MB P MY GABA. Gnb1 depletion was efficient in overlapping classes but nearly orthogonal to Wdr26.",
+  "biological_interpretation": "Wdr26 perturbation exposes a posterior and subcortical neuronal RNA-processing/excitability state linked to the WDR26-CTLH disease gene, not a simple consequence of depleting the assayed G-protein beta subunit.",
+  "targets": [
+    "Wdr26",
+    "Gnb1"
+  ],
+  "cell_types": [
+    "308 CB GABA",
+    "155 MB Glut",
+    "191 MB P MY GABA",
+    "066 CNU-HYa HY GABA",
+    "151 TH Prkcd Grin2c Glut"
+  ],
+  "support": {
+    "support_level": 5,
+    "exact_de_rows": [
+      {
+        "gene_target": "Wdr26",
+        "cell_type": "308 CB GABA",
+        "gene": "Srrm2",
+        "log2_fold_change": -0.7993407249450684,
+        "pvals_adj": 1.946446620453439e-11,
+        "wilcoxon_score": -8.009828567504883
+      },
+      {
+        "gene_target": "Wdr26",
+        "cell_type": "308 CB GABA",
+        "gene": "Cacna1g",
+        "log2_fold_change": -1.7427115440368652,
+        "pvals_adj": 6.512207949060906e-10,
+        "wilcoxon_score": -7.343694686889648
+      },
+      {
+        "gene_target": "Wdr26",
+        "cell_type": "155 MB Glut",
+        "gene": "Srrm2",
+        "log2_fold_change": -0.692960262298584,
+        "pvals_adj": 7.088549760757304e-19,
+        "wilcoxon_score": -9.90240478515625
+      },
+      {
+        "gene_target": "Wdr26",
+        "cell_type": "155 MB Glut",
+        "gene": "Nat8l",
+        "log2_fold_change": -0.90318763256073,
+        "pvals_adj": 1.9871684367194365e-15,
+        "wilcoxon_score": -8.998969078063965
+      },
+      {
+        "gene_target": "Wdr26",
+        "cell_type": "191 MB P MY GABA",
+        "gene": "Col11a2",
+        "log2_fold_change": 2.5389652252197266,
+        "pvals_adj": 1.67058114179329e-14,
+        "wilcoxon_score": 8.837703704833984
+      },
+      {
+        "gene_target": "Wdr26",
+        "cell_type": "066 CNU-HYa HY GABA",
+        "gene": "Eif4g3",
+        "log2_fold_change": -0.623191237449646,
+        "pvals_adj": 0.003136373460273645,
+        "wilcoxon_score": -5.141443252563477
+      },
+      {
+        "gene_target": "Wdr26",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Grin2b",
+        "log2_fold_change": -0.26534581184387207,
+        "pvals_adj": 0.0002998074223613388,
+        "wilcoxon_score": -5.636331558227539
+      }
+    ],
+    "report_evidence_summary": [
+      "Wdr26:E001",
+      "Wdr26:E002",
+      "Wdr26:E003",
+      "Wdr26:E004",
+      "Wdr26:E005",
+      "Wdr26:E006",
+      "Wdr26:E007",
+      "Wdr26:E008",
+      "Wdr26:E009",
+      "Wdr26:E010",
+      "Wdr26:E013"
+    ]
+  },
+  "caveats": [
+    "Wdr26 mRNA did not reach FDR<0.05 in any assayed group, so the response is not a transcript-dose series.",
+    "Core CTLH complex members were absent as perturbation targets, and Psmc/Psmb/Pomp similarities were modest exploratory neighbors."
+  ],
+  "prior_expectation": {
+    "summary": "WDR26 haploinsufficiency causes a syndromic neurodevelopmental disorder; Skraban-Deardorff WDR26 mutations impair CTLH E3 complex assembly; WDR26 can bind and scaffold G beta-gamma signaling components in leukocytes",
+    "citations": [
+      {
+        "ref_id": "Wdr26:R001",
+        "ref": "Skraban et al. 2017 DOI:10.1016/j.ajhg.2017.06.002",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/28686853/",
+        "supports": "WDR26 haploinsufficiency causes a syndromic neurodevelopmental disorder"
+      },
+      {
+        "ref_id": "Wdr26:R002",
+        "ref": "Gross et al. 2024 DOI:10.1002/1873-3468.14866",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/38575527/",
+        "supports": "Skraban-Deardorff WDR26 mutations impair CTLH E3 complex assembly"
+      },
+      {
+        "ref_id": "Wdr26:R007",
+        "ref": "Sun et al. 2011 DOI:10.1074/jbc.M111.301382",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/22065575/",
+        "supports": "WDR26 can bind and scaffold G beta-gamma signaling components in leukocytes"
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 5,
+    "priority": 5
+  },
+  "report_evidence_ids": [
+    "Wdr26:E001",
+    "Wdr26:E002",
+    "Wdr26:E003",
+    "Wdr26:E004",
+    "Wdr26:E005",
+    "Wdr26:E006",
+    "Wdr26:E007",
+    "Wdr26:E008",
+    "Wdr26:E009",
+    "Wdr26:E010",
+    "Wdr26:E013"
+  ],
+  "reference_ids": [
+    "Wdr26:R001",
+    "Wdr26:R002",
+    "Wdr26:R004",
+    "Wdr26:R006",
+    "Wdr26:R007"
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/22065575/",
+    "https://pubmed.ncbi.nlm.nih.gov/28686853/",
+    "https://pubmed.ncbi.nlm.nih.gov/38575527/"
+  ],
+  "source_claim_ids": [
+    "claim:wdr26_f001_885407b53c0d",
+    "claim:wdr26_f004_6b333a7f2dce",
+    "claim:wdr26_f003_cdd9926fd862",
+    "claim:wdr26_f002_9adda12e1526"
+  ]
+}

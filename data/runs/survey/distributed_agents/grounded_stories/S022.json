@@ -1,0 +1,205 @@
+{
+  "story_id": "S022",
+  "title": "Chp1 loss recurrently activates an SREBP2 cholesterol-biosynthesis program across neurons",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Chp1 knockdown induced canonical SREBP2 sterol genes in 151 TH Prkcd Grin2c Glut and 155 MB Glut, including Insig1, Hmgcs1, Msmo1, and Cyp51. Direct Srebf2 loss moved the same module downward, while Dctn1, Dync1h1, Htt, Mib1, Agps, and Far1 supplied narrower same-direction or contextual sterol signatures.",
+  "biological_interpretation": "CHP1 depletion appears to be sensed as lipid/ER-homeostatic stress that converges on a compensatory SREBP2 cholesterol-demand program. The state also connects to dynein/dynactin and endolysosomal transport perturbations, but Hap1, Srebf1, Tubb3, and Usf1 are negative comparators rather than equal members.",
+  "targets": [
+    "Chp1",
+    "Srebf2",
+    "Dctn1",
+    "Dync1h1",
+    "Htt",
+    "Mib1",
+    "Agps",
+    "Far1"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "066 CNU-HYa HY GABA",
+    "191 MB P MY GABA"
+  ],
+  "support": {
+    "support_level": 5,
+    "exact_de_rows": [
+      {
+        "gene_target": "Chp1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Insig1",
+        "log2_fold_change": 1.37,
+        "pvals_adj": 1.78e-31
+      },
+      {
+        "gene_target": "Chp1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Msmo1",
+        "log2_fold_change": 1.3,
+        "pvals_adj": 2.56e-25
+      },
+      {
+        "gene_target": "Chp1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Fdft1",
+        "log2_fold_change": 1.27,
+        "pvals_adj": 2.56e-16
+      },
+      {
+        "gene_target": "Chp1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Hmgcs1",
+        "log2_fold_change": 0.759,
+        "pvals_adj": 2.45e-12
+      },
+      {
+        "gene_target": "Chp1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Dhcr24",
+        "log2_fold_change": 0.853,
+        "pvals_adj": 4.77e-13
+      },
+      {
+        "gene_target": "Chp1",
+        "cell_type": "155 MB Glut",
+        "gene": "Dhcr24",
+        "log2_fold_change": 0.654,
+        "pvals_adj": 0.000186
+      },
+      {
+        "gene_target": "Chp1",
+        "cell_type": "155 MB Glut",
+        "gene": "Insig1",
+        "log2_fold_change": 0.912,
+        "pvals_adj": 2.46e-07
+      },
+      {
+        "gene_target": "Srebf2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Msmo1",
+        "log2_fold_change": -1.14,
+        "pvals_adj": 4e-12
+      },
+      {
+        "gene_target": "Srebf2",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Dhcr24",
+        "log2_fold_change": -0.95,
+        "pvals_adj": 1e-11
+      }
+    ],
+    "report_evidence_summary": [
+      "Chp1:E002",
+      "Chp1:E004",
+      "Chp1:E005",
+      "Chp1:E006",
+      "Chp1:E007",
+      "Chp1:E008",
+      "Chp1:E009",
+      "Chp1:E010",
+      "Chp1:E012",
+      "Srebf2:E002",
+      "Srebf2:E003",
+      "Srebf2:E014",
+      "Srebf2:E015"
+    ]
+  },
+  "caveats": [
+    "The strongest claim is for Chp1 and the Srebf2-opposed sterol module; Far1, Agps, Pafah1b1, and Marchf6 supply weaker or exploratory extensions.",
+    "The transcriptome reports do not measure cholesterol, ER cholesterol transport, or GPAT4 enzymatic activity directly."
+  ],
+  "prior_expectation": {
+    "summary": "SREBP2 is the canonical transcriptional regulator of cholesterol-biosynthesis genes; CHP1 has prior links to GPAT4-dependent glycerolipid synthesis and NHE1 maturation, making the Chp1-to-SREBP branch mechanistically plausible but not a reported direct CHP1 endpoint.",
+    "citations": [
+      {
+        "ref_id": "Chp1:R002",
+        "ref": "Reactome R-HSA-1655829",
+        "url_or_doi": "https://reactome.org/content/detail/R-HSA-1655829",
+        "supports": "SREBP pathway assignment"
+      },
+      {
+        "ref_id": "Chp1:R003",
+        "ref": "Zhu et al. 2019 PMID:30846317",
+        "url_or_doi": "https://doi.org/10.1016/j.molcel.2019.01.037",
+        "supports": "CHP1 activates GPAT4 and regulates ER glycerolipid synthesis"
+      },
+      {
+        "ref_id": "Dctn1:R006",
+        "ref": "Rocha et al. 2009 DOI:10.1083/jcb.200811005",
+        "url_or_doi": "https://doi.org/10.1083/jcb.200811005",
+        "supports": "late-endosome positioning connects Rab7, p150Glued, and cholesterol sensing"
+      },
+      {
+        "ref_id": "Srebf2:R003",
+        "ref": "Brown and Goldstein 2009 DOI:10.1194/jlr.R800054-JLR200",
+        "url_or_doi": "https://doi.org/10.1194/jlr.R800054-JLR200",
+        "supports": "SCAP/SREBP/INSIG sterol feedback"
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 5,
+    "support": 5,
+    "priority": 5
+  },
+  "report_evidence_ids": [
+    "Chp1:E002",
+    "Chp1:E004",
+    "Chp1:E005",
+    "Chp1:E006",
+    "Chp1:E007",
+    "Chp1:E008",
+    "Chp1:E009",
+    "Chp1:E010",
+    "Chp1:E012",
+    "Htt:E007",
+    "Htt:E008",
+    "Hap1:E006",
+    "Mib1:E002",
+    "Mib1:E003",
+    "Srebf2:E002",
+    "Srebf2:E003",
+    "Srebf2:E014",
+    "Srebf2:E015",
+    "Srebf1:E001",
+    "Tubb3:E003"
+  ],
+  "reference_ids": [
+    "Chp1:R002",
+    "Chp1:R003",
+    "Chp1:R006",
+    "Dctn1:R006",
+    "Dctn1:R007",
+    "Dctn1:R008",
+    "Htt:R001",
+    "Htt:R002",
+    "Srebf2:R001",
+    "Srebf2:R003",
+    "Srebf2:R010"
+  ],
+  "source_urls_or_dois": [
+    "https://reactome.org/content/detail/R-HSA-1655829",
+    "https://doi.org/10.1016/j.molcel.2019.01.037",
+    "https://doi.org/10.1083/jcb.200811005",
+    "https://doi.org/10.1194/jlr.R800054-JLR200",
+    "https://pubmed.ncbi.nlm.nih.gov/17548833/"
+  ],
+  "source_claim_ids": [
+    "claim:chp1_f001_bf2581798b46",
+    "claim:htt_f001_7f6938ce035d",
+    "claim:htt_f003_ba20321dbe76",
+    "claim:hap1_f002_c6e0fb46e7b7",
+    "claim:chp1_f005_e346f413f25a",
+    "claim:pafah1b1_f002_380ec9482a1b",
+    "claim:mib1_f001_face32895cb2",
+    "claim:srebf2_f001_2799dadbb73b",
+    "claim:agps_f001_2f0b5d153eef",
+    "claim:far1_f001_f8277c44371a",
+    "claim:dctn1_f001_450cf5955089",
+    "claim:srebf2_f004_67b7491f0a10",
+    "claim:srebf1_f002_031b07b8ff10",
+    "claim:tubb3_f005_4997e36f1485",
+    "claim:chp1_f003_d69bcafeaa56",
+    "claim:usf1_f004_5d5143d528ba"
+  ]
+}

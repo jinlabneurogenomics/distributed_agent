@@ -1,0 +1,163 @@
+{
+  "story_id": "S023",
+  "title": "Lonp1 loss induces a Ddit3-centered mitochondrial ISR-like amino-acid module",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Lonp1 perturbation induced Ddit3 in 217 P MY Pineal Glut and 155 MB Glut and Slc7a1 in 217 P MY Pineal Glut. The same Ddit3/amino-acid state was stronger and target-engaged after Dnm1l knockdown in 151 TH and after Opa1 knockdown in 155 MB Glut, with Asns, Cars, Ddit3, Chac1, and Mars1 induced. Hspa9 guides induced an overlapping 151 TH stress state with Shmt2, Cyb5r1, Chac1, and Lonp1.",
+  "biological_interpretation": "Perturbing several mitochondrial maintenance nodes converges on an ATF4/ISR-like amino-acid and one-carbon module in vulnerable neuronal classes, with Lonp1 contributing a smaller Ddit3-centered version and Opa1/Dnm1l/Hspa9 providing stronger comparator anchors.",
+  "targets": [
+    "Lonp1",
+    "Opa1",
+    "Hspa9",
+    "Dnm1l",
+    "Mff",
+    "Atad1",
+    "Dnm1"
+  ],
+  "cell_types": [
+    "217 P MY Pineal Glut",
+    "155 MB Glut",
+    "151 TH Prkcd Grin2c Glut",
+    "191 MB P MY GABA",
+    "052 Pvalb Gaba"
+  ],
+  "support": {
+    "support_level": 4,
+    "exact_de_rows": [
+      {
+        "gene_target": "Lonp1",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Ddit3",
+        "log2_fold_change": 1.5775283575057983,
+        "pvals_adj": 0.007630954701319165,
+        "wilcoxon_score": 4.910172462463379
+      },
+      {
+        "gene_target": "Lonp1",
+        "cell_type": "217 P MY Pineal Glut",
+        "gene": "Slc7a1",
+        "log2_fold_change": 1.648108959197998,
+        "pvals_adj": 0.04013922785738356,
+        "wilcoxon_score": 4.488290786743164
+      },
+      {
+        "gene_target": "Dnm1l",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Asns",
+        "log2_fold_change": 1.0172816514968872,
+        "pvals_adj": 1.7168457133205018e-14,
+        "wilcoxon_score": 8.835698127746582
+      },
+      {
+        "gene_target": "Dnm1l",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Chac1",
+        "log2_fold_change": 2.6036980152130127,
+        "pvals_adj": 7.013024548920419e-11,
+        "wilcoxon_score": 7.625121593475342
+      },
+      {
+        "gene_target": "Opa1",
+        "cell_type": "155 MB Glut",
+        "gene": "Cars",
+        "log2_fold_change": 0.9104167222976685,
+        "pvals_adj": 2.0558448739836617e-19,
+        "wilcoxon_score": 10.02541732788086
+      },
+      {
+        "gene_target": "Opa1",
+        "cell_type": "155 MB Glut",
+        "gene": "Asns",
+        "log2_fold_change": 0.9161596894264221,
+        "pvals_adj": 1.8499861314205442e-10,
+        "wilcoxon_score": 7.590702056884766
+      },
+      {
+        "gene_target": "Hspa9",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Shmt2",
+        "log2_fold_change": 2.596710205078125,
+        "pvals_adj": 2.98907023650845e-16,
+        "wilcoxon_score": 9.277691841125488
+      }
+    ],
+    "report_evidence_summary": [
+      "Lonp1:E002",
+      "Lonp1:E003",
+      "Lonp1:E005",
+      "Dnm1l:E002",
+      "Dnm1l:E003",
+      "Opa1:E004",
+      "Opa1:E006",
+      "Hspa9:E002",
+      "Mff:E001",
+      "Atad1:E003"
+    ]
+  },
+  "caveats": [
+    "The Lonp1 arm itself is FDR-supported in only two cell classes and lacks exact target-transcript depletion as a clean engagement metric.",
+    "Hspa9 mRNA itself was not FDR-depleted, and Mff/Atad1 are buffered negative comparators rather than positive members of the ISR module."
+  ],
+  "prior_expectation": {
+    "summary": "LONP1 loss can elicit a mitochondrial integrated stress response; ATF4 is a key regulator of mammalian mitochondrial stress responses; ATF5 can mediate the mammalian mitochondrial UPR",
+    "citations": [
+      {
+        "ref_id": "Lonp1:R002",
+        "ref": "Zurita Rendon and Shoubridge 2018 PMID:30061372",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/30061372/",
+        "supports": "LONP1 loss can elicit a mitochondrial integrated stress response"
+      },
+      {
+        "ref_id": "Lonp1:R003",
+        "ref": "Quiros et al. 2017 PMID:28566324",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/28566324/",
+        "supports": "ATF4 is a key regulator of mammalian mitochondrial stress responses"
+      },
+      {
+        "ref_id": "Hspa9:R004",
+        "ref": "Fiorese et al. 2016 DOI:10.1016/j.cub.2016.06.002",
+        "url_or_doi": "https://doi.org/10.1016/j.cub.2016.06.002",
+        "supports": "ATF5 can mediate the mammalian mitochondrial UPR"
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 3,
+    "support": 4,
+    "priority": 5
+  },
+  "report_evidence_ids": [
+    "Lonp1:E002",
+    "Lonp1:E003",
+    "Lonp1:E005",
+    "Dnm1l:E002",
+    "Dnm1l:E003",
+    "Opa1:E004",
+    "Opa1:E006",
+    "Hspa9:E002",
+    "Mff:E001",
+    "Atad1:E003"
+  ],
+  "reference_ids": [
+    "Lonp1:R002",
+    "Lonp1:R003",
+    "Lonp1:R006",
+    "Dnm1l:R001",
+    "Hspa9:R004",
+    "Hspa9:R005"
+  ],
+  "source_urls_or_dois": [
+    "https://doi.org/10.1016/j.cub.2016.06.002",
+    "https://pubmed.ncbi.nlm.nih.gov/28566324/",
+    "https://pubmed.ncbi.nlm.nih.gov/30061372/"
+  ],
+  "source_claim_ids": [
+    "claim:lonp1_f001_bb95ea1266df",
+    "claim:dnm1l_f001_aeffb083b53d",
+    "claim:opa1_f001_ea17a77b1a31",
+    "claim:hspa9_f001_63c113519adb",
+    "claim:dnm1l_f004_a1d4b2572226",
+    "claim:mff_f003_c4e00cf73e99",
+    "claim:atad1_f004_cea7b8668d29"
+  ]
+}

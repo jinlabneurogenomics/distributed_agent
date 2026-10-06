@@ -1,0 +1,117 @@
+{
+  "story_id": "S080",
+  "title": "SRSF1 loss rewires a recurrent splice-regulator network instead of inducing SRSF2 compensation",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Srsf1 knockdown produced uneven but FDR-supported downstream RNA-processing signatures, with Ptbp2, Rbm28, Dazap1, and Psip1 rising while related SR, hnRNP, and CLK transcripts such as Srsf2, Hnrnpdl, Clk4, and Clk1 fell.",
+  "biological_interpretation": "Neuronal SRSF1 loss partially collapses an SR-protein regulatory network rather than being transcriptionally buffered by Srsf2 or Clk-family induction.",
+  "targets": [
+    "Srsf1",
+    "Srsf2",
+    "Clk1",
+    "Clk4"
+  ],
+  "cell_types": [
+    "017 CA3 CA2-FC DG Glut",
+    "059 CNU-LGE LSX GABA",
+    "066 CNU-HYa HY GABA",
+    "151 TH Prkcd Grin2c Glut"
+  ],
+  "support": {
+    "exact_de_rows": [
+      {
+        "target": "Srsf1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Srsf1",
+        "logfoldchanges": -1.8320939540863037,
+        "pvals": 3.2671864497183185e-68,
+        "pvals_adj": 7.048546366961057e-65,
+        "score": -17.45298194885254
+      },
+      {
+        "target": "Srsf1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Ptbp2",
+        "logfoldchanges": 1.1942205429077148,
+        "pvals": 5.202445697142503e-76,
+        "pvals_adj": 2.992967009566082e-72,
+        "score": 18.450124740600586
+      },
+      {
+        "target": "Srsf1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Rbm28",
+        "logfoldchanges": 1.2482361793518066,
+        "pvals": 9.4746314179913e-71,
+        "pvals_adj": 4.088066591077796e-67,
+        "score": 17.783571243286133
+      },
+      {
+        "target": "Srsf1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Dazap1",
+        "logfoldchanges": 1.259628415107727,
+        "pvals": 5.186063115407247e-68,
+        "pvals_adj": 9.945140367645966e-65,
+        "score": 17.42657470703125
+      },
+      {
+        "target": "Srsf1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Psip1",
+        "logfoldchanges": 0.9993756413459778,
+        "pvals": 2.862429446324886e-67,
+        "pvals_adj": 4.9402669814121206e-64,
+        "score": 17.328594207763672
+      },
+      {
+        "target": "Srsf1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Srsf2",
+        "logfoldchanges": -1.2222219705581665,
+        "pvals": 1.262834857472757e-47,
+        "pvals_adj": 1.0897633402561155e-44,
+        "score": -14.497151374816895
+      }
+    ],
+    "evidence_summary": "Srsf1:F001 resolves broad self-depletion and uneven downstream burden; Srsf1:F002 resolves Ptbp2/Rbm28/Dazap1/Psip1 up with Srsf2/Hnrnpdl/Clk4/Clk1 down.",
+    "unresolved_exact_rows": [
+      {
+        "target": "Srsf1",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Clk1"
+      }
+    ]
+  },
+  "caveats": [
+    "The assay reports total mRNA abundance, not splice isoforms.",
+    "Very broad Srsf1 signatures may include secondary stress."
+  ],
+  "prior_expectation": {
+    "summary": "Srsf1:F001 resolves broad self-depletion and uneven downstream burden; Srsf1:F002 resolves Ptbp2/Rbm28/Dazap1/Psip1 up with Srsf2/Hnrnpdl/Clk4/Clk1 down.",
+    "citations": [
+      "UniProtKB Q6PDM2/Q07955",
+      "STRING recurrent Srsf1-response enrichment"
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 3,
+    "support": 5,
+    "priority": 4
+  },
+  "report_evidence_ids": [
+    "Srsf1:E001",
+    "Srsf1:E002",
+    "Srsf1:E003",
+    "Srsf1:E007",
+    "Srsf1:E008"
+  ],
+  "reference_ids": [
+    "Srsf1:R001",
+    "Srsf1:R003"
+  ],
+  "source_urls_or_dois": [
+    "https://rest.uniprot.org/uniprotkb/Q6PDM2",
+    "https://string-db.org/"
+  ]
+}

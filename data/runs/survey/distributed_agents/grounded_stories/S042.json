@@ -1,0 +1,231 @@
+{
+  "biological_interpretation": "Basal EIF4E-axis suppression is transcriptionally visible in selected glutamatergic and caudal neuronal states, but it is not a generic signature of all translation-initiation perturbations.",
+  "caveats": [
+    "Only the 151 TH class had FDR-significant target transcript depletion.",
+    "MNK inhibitors alter EIF4E phosphorylation rather than reducing Eif4e RNA, making pharmacologic inference indirect."
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "145 MH-LH TH Glut",
+    "155 MB Glut",
+    "191 MB P MY GABA"
+  ],
+  "exact_observed_result": "Eif4e was FDR-depleted only in 151 TH Prkcd Grin2c Glut, where 160 genes passed FDR including Rnpc3 and Amy1 up and Rsrp1 down; 145 MH-LH TH Glut, 155 MB Glut and 191 MB P MY GABA carried smaller echoes involving Rnpc3, Amy1, Rsrp1, Fkbp2 and Pcsk1n.",
+  "preliminary_scores": {
+    "novelty": 3,
+    "priority": 3,
+    "support": 4
+  },
+  "prior_expectation": {
+    "citations": [
+      "Gkogkas et al. 2013 Nature",
+      "Wiebe et al. 2019 doi:10.1073/pnas.1908126116",
+      "Aguilar-Valles et al. 2018 Nature Communications"
+    ],
+    "expectation": "EIF4E-dependent translation is disease-relevant in autism models and MNK/eIF4E phosphorylation is druggable upstream."
+  },
+  "reference_ids": [
+    "Eif4e:R006"
+  ],
+  "rejection_reason": null,
+  "report_evidence_ids": [
+    "Eif4e:E001",
+    "Eif4e:E002",
+    "Eif4e:E005",
+    "Eif4e:E006"
+  ],
+  "source_claims": [
+    {
+      "claim_id": "claim:eif4e_f001_7f7260f99f4b",
+      "finding_id": "F001",
+      "gene": "Eif4e",
+      "role": "member"
+    }
+  ],
+  "source_references": [
+    {
+      "citation": "Wiebe S et al. Inhibitory interneurons mediate autism-associated behaviors via 4E-BP2. Proc Natl Acad Sci U S A. 2019;116(36):18060-18067. doi:10.1073/pnas.1908126116. PMID:31427534.",
+      "description": "Cell-type-specific 4E-BP2 study implicating Gad2 inhibitory neurons in autism-associated behaviors.",
+      "ref_id": "R006",
+      "ref_slug": "wiebe_2019_inhibitory_4ebp2",
+      "source": "Proceedings of the National Academy of Sciences of the United States of America",
+      "source_type": "pubmed",
+      "target_gene": "Eif4e",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31427534/"
+    }
+  ],
+  "source_urls_or_dois": [
+    "https://pubmed.ncbi.nlm.nih.gov/31427534/"
+  ],
+  "status": "grounded",
+  "story_id": "S042",
+  "support": [
+    {
+      "exact_de_rows": [
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.034617322279615274,
+          "gene": "Eif4e",
+          "gene_target": "Eif4e",
+          "log2fc": -0.2841525077819824,
+          "pval": 0.00025168793032956827,
+          "score": -3.660536289215088
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.3275020018672175e-07,
+          "gene": "Rnpc3",
+          "gene_target": "Eif4e",
+          "log2fc": 0.41644567251205444,
+          "pval": 3.845825371884865e-11,
+          "score": 6.609899044036865
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 1.0718649107426173e-07,
+          "gene": "Amy1",
+          "gene_target": "Eif4e",
+          "log2fc": 0.6023787260055542,
+          "pval": 1.9085596734265818e-11,
+          "score": 6.712852478027344
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 3.3156725946239423e-08,
+          "gene": "Rsrp1",
+          "gene_target": "Eif4e",
+          "log2fc": -0.30524465441703796,
+          "pval": 3.8422534267616225e-12,
+          "score": -6.942865371704102
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.0003045417300166146,
+          "gene": "Fkbp2",
+          "gene_target": "Eif4e",
+          "log2fc": -0.37631288170814514,
+          "pval": 5.293616026709797e-07,
+          "score": -5.015353202819824
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 0.18029050666980687,
+          "gene": "Pcsk1n",
+          "gene_target": "Eif4e",
+          "log2fc": -0.2603423595428467,
+          "pval": 0.0035830374753892903,
+          "score": -2.912713050842285
+        },
+        {
+          "cell_type": "151 TH Prkcd Grin2c Glut",
+          "fdr": 5.445266430768083e-10,
+          "gene": "Hexim1",
+          "gene_target": "Eif4e",
+          "log2fc": 1.005617618560791,
+          "pval": 3.155030089094434e-14,
+          "score": 7.591795444488525
+        }
+      ],
+      "finding": "Eif4e 151 signature"
+    },
+    {
+      "exact_de_rows": [
+        {
+          "cell_type": "155 MB Glut",
+          "fdr": 3.761936989081958e-05,
+          "gene": "Rnpc3",
+          "gene_target": "Eif4e",
+          "log2fc": 0.5297598242759705,
+          "pval": 2.1567029691463384e-09,
+          "score": 5.985542297363281
+        },
+        {
+          "cell_type": "155 MB Glut",
+          "fdr": 9.797264290493928e-05,
+          "gene": "Amy1",
+          "gene_target": "Eif4e",
+          "log2fc": 0.707371175289154,
+          "pval": 1.1233462466885201e-08,
+          "score": 5.710968971252441
+        },
+        {
+          "cell_type": "155 MB Glut",
+          "fdr": 0.004057742872543912,
+          "gene": "Rsrp1",
+          "gene_target": "Eif4e",
+          "log2fc": -0.2767798602581024,
+          "pval": 8.099102519294267e-07,
+          "score": -4.932964324951172
+        },
+        {
+          "cell_type": "155 MB Glut",
+          "fdr": 0.032726799587533655,
+          "gene": "Fkbp2",
+          "gene_target": "Eif4e",
+          "log2fc": -0.48908549547195435,
+          "pval": 1.876213930375145e-05,
+          "score": -4.279134750366211
+        },
+        {
+          "cell_type": "155 MB Glut",
+          "fdr": 0.004057742872543912,
+          "gene": "Pcsk1n",
+          "gene_target": "Eif4e",
+          "log2fc": -0.5793770551681519,
+          "pval": 9.30514905129602e-07,
+          "score": -4.905791282653809
+        },
+        {
+          "cell_type": "145 MH-LH TH Glut",
+          "fdr": 0.14864869623097363,
+          "gene": "Rnpc3",
+          "gene_target": "Eif4e",
+          "log2fc": 0.49163252115249634,
+          "pval": 0.00019542372067997313,
+          "score": 3.7248599529266357
+        },
+        {
+          "cell_type": "145 MH-LH TH Glut",
+          "fdr": 0.02031818815706538,
+          "gene": "Amy1",
+          "gene_target": "Eif4e",
+          "log2fc": 0.7233743667602539,
+          "pval": 6.080741053769491e-06,
+          "score": 4.523562431335449
+        },
+        {
+          "cell_type": "145 MH-LH TH Glut",
+          "fdr": 0.002302655041480293,
+          "gene": "Rsrp1",
+          "gene_target": "Eif4e",
+          "log2fc": -0.6030181646347046,
+          "pval": 1.3782576413959974e-07,
+          "score": -5.268123149871826
+        },
+        {
+          "cell_type": "145 MH-LH TH Glut",
+          "fdr": 0.011965455559514226,
+          "gene": "Fkbp2",
+          "gene_target": "Eif4e",
+          "log2fc": -0.995322585105896,
+          "pval": 1.432388287485991e-06,
+          "score": -4.820444107055664
+        },
+        {
+          "cell_type": "145 MH-LH TH Glut",
+          "fdr": 0.02159839449571882,
+          "gene": "Pcsk1n",
+          "gene_target": "Eif4e",
+          "log2fc": -0.8075975179672241,
+          "pval": 8.555097854801402e-06,
+          "score": -4.450799942016602
+        }
+      ],
+      "finding": "Eif4e echo classes"
+    }
+  ],
+  "targets": [
+    "Eif4e"
+  ],
+  "title": "Eif4e suppression elicits a dominant 151 TH Rnpc3/Amy1/Rsrp1 response"
+}

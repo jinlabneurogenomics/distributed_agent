@@ -1,0 +1,153 @@
+{
+  "story_id": "S122",
+  "title": "Kmt2a loss reveals a context-specific mature-neuronal Nr2f1/Pcdh/Lhx9/Grik2 thalamic regulon",
+  "status": "grounded",
+  "rejection_reason": null,
+  "exact_observed_result": "Kmt2a was FDR-depleted in 151 TH and produced 24 FDR<0.05 genes, including Nr2f1, Pcdh7, and Lhx9 down and Igfbp5/Cx3cl1 up. In 155 MB Glut, Kmt2a and Fnbp1l were the only two FDR rows. Ptprk, Aff4, and Nap1l2 were singleton hits in three other glutamatergic classes, and Las1l did not phenocopy Kmt2a.",
+  "biological_interpretation": "Acute KMT2A depletion in the assayed mature neurons resolves to a thalamic neuronal regulon, plus a tiny MB marker, rather than a broad HOX, Dlx2, Meis2, Arc, or LAS1L/5FMC-like collapse.",
+  "targets": [
+    "Kmt2a",
+    "Nr2f1",
+    "Pcdh7",
+    "Lhx9",
+    "Camk2d",
+    "Pcdh10",
+    "Grik2",
+    "Sox2",
+    "Igfbp5",
+    "Cx3cl1",
+    "Fnbp1l",
+    "Las1l"
+  ],
+  "cell_types": [
+    "151 TH Prkcd Grin2c Glut",
+    "155 MB Glut",
+    "007 L2-3 IT CTX Glut",
+    "012 MEA LA CA1 DG Glut",
+    "027 NP-CT-L6b-OB Glut"
+  ],
+  "support": {
+    "support_level": 4,
+    "exact_de_rows": [
+      {
+        "gene_target": "Kmt2a",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Kmt2a",
+        "log2_fold_change": -0.48537135124206543,
+        "pvals_adj": 0.00017585130269699383,
+        "wilcoxon_score": -5.487545013427734
+      },
+      {
+        "gene_target": "Kmt2a",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Nr2f1",
+        "log2_fold_change": -0.8060721158981323,
+        "pvals_adj": 2.385018921780346e-10,
+        "wilcoxon_score": -7.698020935058594
+      },
+      {
+        "gene_target": "Kmt2a",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Pcdh7",
+        "log2_fold_change": -0.7741906642913818,
+        "pvals_adj": 3.600812488387578e-07,
+        "wilcoxon_score": -6.597812652587891
+      },
+      {
+        "gene_target": "Kmt2a",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Lhx9",
+        "log2_fold_change": -1.181793451309204,
+        "pvals_adj": 0.00015440866859242993,
+        "wilcoxon_score": -5.560893535614014
+      },
+      {
+        "gene_target": "Kmt2a",
+        "cell_type": "151 TH Prkcd Grin2c Glut",
+        "gene": "Igfbp5",
+        "log2_fold_change": 0.8738647103309631,
+        "pvals_adj": 0.01262501748872032,
+        "wilcoxon_score": 4.484309673309326
+      },
+      {
+        "gene_target": "Kmt2a",
+        "cell_type": "155 MB Glut",
+        "gene": "Fnbp1l",
+        "log2_fold_change": -0.7487874031066895,
+        "pvals_adj": 0.021366113418367323,
+        "wilcoxon_score": -4.712262153625488
+      }
+    ],
+    "report_evidence_summary": [
+      "Kmt2a:E001",
+      "Kmt2a:E002",
+      "Kmt2a:E003",
+      "Kmt2a:E004",
+      "Kmt2a:E005",
+      "Kmt2a:E008",
+      "Las1l:E007",
+      "Las1l:E008"
+    ]
+  },
+  "caveats": [
+    "KMT2A protein, H3K4 methylation, and enhancer/promoter occupancy were not measured.",
+    "Las1l was compared as a same-assay null, but core 5FMC members Nol9, Tex10, Wdr18, Senp3, and Pelp1 were not perturbed."
+  ],
+  "prior_expectation": {
+    "summary": "neuronal Kmt2a/Mll1 is important for prefrontal synaptic plasticity and working memory; Mll1 is required for postnatal neural-stem-cell neurogenesis and Dlx2 activation; de novo KMT2A mutations cause Wiedemann-Steiner syndrome",
+    "citations": [
+      {
+        "ref_id": "Kmt2a:R004",
+        "ref": "Jakovcevski et al. 2015 PMID:25834037",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/25834037/",
+        "supports": "neuronal Kmt2a/Mll1 is important for prefrontal synaptic plasticity and working memory"
+      },
+      {
+        "ref_id": "Kmt2a:R005",
+        "ref": "Lim et al. 2009 DOI:10.1038/nature07726",
+        "url_or_doi": "https://doi.org/10.1038/nature07726",
+        "supports": "Mll1 is required for postnatal neural-stem-cell neurogenesis and Dlx2 activation"
+      },
+      {
+        "ref_id": "Kmt2a:R006",
+        "ref": "Jones et al. 2012 PMID:22795537",
+        "url_or_doi": "https://pubmed.ncbi.nlm.nih.gov/22795537/",
+        "supports": "de novo KMT2A mutations cause Wiedemann-Steiner syndrome"
+      }
+    ]
+  },
+  "preliminary_scores": {
+    "novelty": 4,
+    "support": 4,
+    "priority": 5
+  },
+  "report_evidence_ids": [
+    "Kmt2a:E001",
+    "Kmt2a:E002",
+    "Kmt2a:E003",
+    "Kmt2a:E004",
+    "Kmt2a:E005",
+    "Kmt2a:E008",
+    "Las1l:E007",
+    "Las1l:E008"
+  ],
+  "reference_ids": [
+    "Kmt2a:R001",
+    "Kmt2a:R004",
+    "Kmt2a:R005",
+    "Kmt2a:R006",
+    "Las1l:R001",
+    "Las1l:R004"
+  ],
+  "source_urls_or_dois": [
+    "https://doi.org/10.1038/nature07726",
+    "https://pubmed.ncbi.nlm.nih.gov/22795537/",
+    "https://pubmed.ncbi.nlm.nih.gov/25834037/"
+  ],
+  "source_claim_ids": [
+    "claim:kmt2a_f001_236d94ee5523",
+    "claim:kmt2a_f006_73196f6d17fd",
+    "claim:las1l_f004_7afbef787975",
+    "claim:kmt2a_f002_ab92b0eaa6be"
+  ]
+}
