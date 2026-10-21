@@ -1,0 +1,71 @@
+cff-version: 1.2.0
+message: "If you use Distributed Agents in your research, please cite the paper below."
+type: software
+title: Distributed Agents
+license: MIT
+authors:
+  - family-names: Sun
+    given-names: Alexander
+  - family-names: Park
+    given-names: Joshua J
+  - family-names: DeTomaso
+    given-names: David
+  - family-names: Kim
+    given-names: Seoyeon
+  - family-names: Liu
+    given-names: Amelia
+  - family-names: Shringarpure
+    given-names: Suyash
+  - family-names: Kim
+    given-names: Kenny
+  - family-names: Thompson
+    given-names: Patrick C
+  - family-names: Shi
+    given-names: Tuo
+  - family-names: Wang
+    given-names: Yunyun
+  - family-names: Mukamel
+    given-names: Eran A
+  - family-names: Zheng
+    given-names: Grace XY
+  - family-names: Jiao
+    given-names: Y Joy
+  - family-names: Jin
+    given-names: Xin
+preferred-citation:
+  type: article
+  title: Distributed AI agents enable comprehensive discovery of biological insights at scale
+  authors:
+    - family-names: Sun
+      given-names: Alexander
+    - family-names: Park
+      given-names: Joshua J
+    - family-names: DeTomaso
+      given-names: David
+    - family-names: Kim
+      given-names: Seoyeon
+    - family-names: Liu
+      given-names: Amelia
+    - family-names: Shringarpure
+      given-names: Suyash
+    - family-names: Kim
+      given-names: Kenny
+    - family-names: Thompson
+      given-names: Patrick C
+    - family-names: Shi
+      given-names: Tuo
+    - family-names: Wang
+      given-names: Yunyun
+    - family-names: Mukamel
+      given-names: Eran A
+    - family-names: Zheng
+      given-names: Grace XY
+    - family-names: Jiao
+      given-names: Y Joy
+    - family-names: Jin
+      given-names: Xin
+  journal: bioRxiv
+  year: 2026
+  doi: 10.64898/2026.10.15.759436
+  url: https://www.biorxiv.org/content/10.64898/2026.10.15.759436v1
+  notes: Preprint
