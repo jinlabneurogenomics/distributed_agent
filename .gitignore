@@ -1,5 +1,5 @@
 .pixi/
-build/
+/build/
 dist/
 *.egg-info/
 __pycache__/
@@ -7,3 +7,7 @@ __pycache__/
 .env
 .ipynb_checkpoints/
 /runs/
+# Downloaded atlas and reproducible benchmark derivatives.
+/data/wilcoxon_de_results_group_name_final_data_no_multi_guide_cells*.parquet*
+/data/inputs/holdout/training_de_all_cell_groups.parquet*
+/data/benchmark-data.provenance.json

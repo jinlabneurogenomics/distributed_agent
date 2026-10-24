@@ -20,11 +20,16 @@ release's observed-findings and optional graph roles, which say what actually ha
 
 ## Access point
 
-`scripts/query_gene_annotations.py` — stdlib + pandas (no special env needed). Parquet-
-backed by two bundled tables under `scripts/out/`:
-- `genes.parquet` (DIMENSION: one row per gene, scalar flags — is_perturbation_target,
-  is_measured, is_control_target, type_of_gene, entrez/ensembl IDs).
-- `gene_membership.parquet` (FACT: `gene, resource, set_id, set_name`, many-to-many).
+`scripts/query_gene_annotations.py` runs in the documented `minimal` environment.
+It reads gene flags and curated memberships from the `gene_analog_index` artifact
+in the installed corpus manifest. Shi holdout uses the same Shi annotation index
+as a dataset reference; the runtime mounts only that index from Shi. These are
+curated priors, not report contents or observed responses.
+
+Query/chat resolve and pass the data path automatically. For direct use from the
+checkout, run the examples with `pixi run -e minimal python` (or activate that
+environment first). Separately installed capsules are discovered through
+`DISTRIBUTED_AGENTS_CORPUS_RELEASE_ROOTS`.
 
 ```bash
 Q=src/distributed_agents/skills/dataset/gene-annotation-skill/scripts/query_gene_annotations.py
@@ -35,7 +40,8 @@ python $Q sets-for --gene Ctnnb1 --resource MSigDB:CP:WIKIPATHWAYS
 ```
 
 Resources present (from `resources`): GO:BP, GO:CC, GO:MF, reactome, kegg,
-MSigDB:CP:WIKIPATHWAYS, MSigDB:MH, functional_class, MSigDB:CP:BIOCARTA, CORUM.
+MSigDB:CP:WIKIPATHWAYS, MSigDB:MH, functional_class, MSigDB:CP:BIOCARTA, CORUM,
+and CORUM:human_ortholog_1to1 (human complexes mapped to mouse orthologs).
 
 ## Modes
 
@@ -45,7 +51,8 @@ MSigDB:CP:WIKIPATHWAYS, MSigDB:MH, functional_class, MSigDB:CP:BIOCARTA, CORUM.
 - `genes-in --set <query> | --set-id <id> [--resource R] [--union]` — the **parameter
   provider**: set → member genes. `--json` prints a JSON array to stdout (the count line
   goes to stderr) ready for `biokg_cypher.py --param family="$FAM"`. `--targets-only`
-  intersects with perturbation targets (so you get only members this screen perturbed);
+  intersects with the full screen's biological perturbation targets, excluding
+  controls (not just targets with reports in the selected corpus);
   `--measured-only` with readout genes. An ambiguous `--set` lists candidates so you pick
   an exact `--set-id`, unless you pass `--union` to merge across all matching sets.
 - `sets-for --gene <symbol>` — gene → its set memberships (repeatable `--gene`).
@@ -71,8 +78,13 @@ annotation store gives the *expected* group; the observed lanes give what actual
 
 ## Notes
 
-- Override the data location with `--store-dir` or `DISTRIBUTED_AGENTS_GENE_STORE` if needed; the
-  default resolves to the bundled `scripts/out/`.
+- Override the data location with `--store-dir` or `DISTRIBUTED_AGENTS_GENE_STORE`.
+  Both accept a SQLite annotation index or a legacy directory containing
+  `genes.parquet` (gene flags) and `gene_membership.parquet` (`gene`, `resource`,
+  `set_id`, `set_name`). The CLI option takes precedence over the environment.
+  Explicit missing stores report an error; they do not silently select other data.
+- A standalone Shi holdout installation also needs the Shi annotation capsule or
+  an explicit store override for this skill.
 - This layer is context-invariant curated membership, not a measurement — never read a
   membership as an observed effect. It selects *who to compare*; the observed lanes decide
   *what happened*.

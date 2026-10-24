@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import os
 import shutil
 import subprocess
 from collections.abc import Callable, Iterable
@@ -21,6 +22,7 @@ from ..runtime.events import codex_thread_id
 from ..runtime import sandbox
 from ..runtime.paths import PACKAGE_ROOT
 from ..skills.registry import resolve_skills
+from ..skills.gene_annotations import GENE_STORE_ENV, resolve_gene_store
 from .models import ChatStateError, ChatTurn
 
 CHAT_SCHEMA_VERSION = "distributed_agents-chat-v1"
@@ -123,6 +125,7 @@ def effective_chat_input_roots(
     skills_index_container_path: str = "",
     corpus_release: CorpusRelease | None = None,
     protected_paths: tuple[Path, ...] = (),
+    working_directory: Path | None = None,
 ) -> tuple[Path, ...]:
     """Resolve the exact mounts that the default query role will receive."""
 
@@ -139,6 +142,7 @@ def effective_chat_input_roots(
         task_input_roots=declared_roots,
         include_packaged_skills=not bool(skills_destination),
         corpus_release=corpus_release,
+        working_directory=working_directory,
     )
     for root in roots:
         exposed = [item for item in protected_paths if _contains(root, item)]
@@ -158,6 +162,7 @@ def run_chat_sandbox_canary(
     skills_index_container_path: str = "",
     corpus_release: CorpusRelease | None = None,
     protected_paths: tuple[Path, ...] = (),
+    working_directory: Path | None = None,
 ) -> dict[str, object]:
     """Execute a no-model read/write canary in the same allowlist namespace."""
 
@@ -170,6 +175,7 @@ def run_chat_sandbox_canary(
         skills_index_container_path=skills_index_container_path,
         corpus_release=corpus_release,
         protected_paths=protected_paths,
+        working_directory=working_directory,
     )
     script = """
 import json
@@ -296,6 +302,7 @@ class SandboxedChat:
             skills_index_container_path=self.skills_index_container_path,
             corpus_release=self.corpus_release,
             protected_paths=self.protected_paths,
+            working_directory=self.working_directory,
         )
         self._query_runner = query_runner or run_query_job
         self.state_path = self.root / "chat.json"
@@ -307,10 +314,14 @@ class SandboxedChat:
                     f"unsupported chat state schema in {self.state_path}"
                 )
             if state.get("config") != expected:
-                raise ChatStateError(
-                    "existing chat configuration differs from this invocation; "
-                    "use another --out-dir or the original options"
-                )
+                if not self._can_add_default_annotation_mount(state.get("config"), expected):
+                    raise ChatStateError(
+                        "existing chat configuration differs from this invocation; "
+                        "use another --out-dir or the original options"
+                    )
+                state["config"] = expected
+                state["updated_at"] = _utc_now()
+                _write_json(self.state_path, state)
             self._state = state
         else:
             self._state = {
@@ -330,9 +341,42 @@ class SandboxedChat:
                 skills_index_container_path=self.skills_index_container_path,
                 corpus_release=self.corpus_release,
                 protected_paths=self.protected_paths,
+                working_directory=self.working_directory,
             )
         if self._state.get("active_session") is None:
             self.new_session()
+
+    def _can_add_default_annotation_mount(
+        self, previous: object, expected: dict[str, object]
+    ) -> bool:
+        """Allow older holdout chats to gain only the shared annotation index."""
+
+        if (
+            self.corpus_release.manifest.get("corpus_family") != "shi_holdout"
+            or self.skills_destination
+            or os.environ.get(GENE_STORE_ENV, "").strip()
+            or not isinstance(previous, dict)
+        ):
+            return False
+        if {
+            key: value for key, value in previous.items() if key != "effective_input_roots"
+        } != {
+            key: value for key, value in expected.items() if key != "effective_input_roots"
+        }:
+            return False
+        store = resolve_gene_store(self.corpus_release)
+        if store is None:
+            return False
+        old_roots = previous.get("effective_input_roots")
+        new_roots = expected.get("effective_input_roots")
+        if not isinstance(old_roots, list) or not isinstance(new_roots, list):
+            return False
+        added = str(store)
+        return (
+            added not in old_roots
+            and new_roots.count(added) == 1
+            and [root for root in new_roots if root != added] == old_roots
+        )
 
     def _config_payload(self) -> dict[str, object]:
         options = self.codex_options

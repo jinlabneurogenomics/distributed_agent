@@ -16,6 +16,7 @@ from ..corpus.registry import (
     get_release,
 )
 from ..runtime import sandbox
+from ..skills.gene_annotations import configure_gene_store
 from ..skills.registry import (
     DATASET_SKILLS_DIR,
     LIFE_SCIENCES_SKILLS_DIR,
@@ -89,6 +90,7 @@ def _codex_input_roots(
     task_input_roots: tuple[Path, ...] | None = None,
     include_packaged_skills: bool = True,
     corpus_release: CorpusRelease | None = None,
+    working_directory: Path | None = None,
 ) -> tuple[Path, ...]:
     """Backward-compatible projection of the effective runtime access plan."""
 
@@ -98,6 +100,7 @@ def _codex_input_roots(
         task_input_roots=task_input_roots,
         include_packaged_skills=include_packaged_skills,
         corpus_release=corpus_release,
+        working_directory=working_directory,
     ).effective_roots
 
 
@@ -121,10 +124,17 @@ def _codex_runtime_access_plan(
     task_input_roots: tuple[Path, ...] | None = None,
     include_packaged_skills: bool = True,
     corpus_release: CorpusRelease | None = None,
+    working_directory: Path | None = None,
 ) -> RuntimeAccessPlan:
     """Build one release-aware plan while keeping task and framework roots distinct."""
 
     release = corpus_release or get_release()
+    gene_store = configure_gene_store(
+        runtime_env,
+        release,
+        working_directory=working_directory,
+        use_default=include_packaged_skills,
+    )
     task_roots = _existing_roots(list(task_input_roots or ()))
     artifact_overrides = {
         artifact: Path(runtime_env[env_key]).expanduser().absolute()
@@ -151,10 +161,8 @@ def _codex_runtime_access_plan(
         CORPUS_MCP_PACKAGE_PATH,
         *skill_dirs,
     ]
-    for key in ("DISTRIBUTED_AGENTS_GENE_STORE",):
-        value = runtime_env.get(key)
-        if value:
-            framework_candidates.append(Path(value))
+    if gene_store is not None:
+        framework_candidates.append(gene_store)
     framework_roots = _existing_roots(framework_candidates)
     effective_roots = _existing_roots([*task_roots, *framework_roots])
     return RuntimeAccessPlan(

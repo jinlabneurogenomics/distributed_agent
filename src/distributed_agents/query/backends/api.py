@@ -10,6 +10,7 @@ from typing import Any
 
 from ...corpus.registry import DEFAULT_RELEASE_ENV, get_release
 from ...runtime.agent_shell import make_local_shell_executor
+from ...skills.gene_annotations import configure_gene_store
 from ...skills.registry import (
     load_local_skills_dirs,
     resolve_skills,
@@ -186,6 +187,12 @@ def run_api_query(request: QueryRequest, *, model: str) -> QueryResult:
     ):
         if value := os.environ.get(key):
             runtime_env[key] = value
+    gene_store = configure_gene_store(
+        runtime_env,
+        release,
+        working_directory=request.working_directory,
+        use_default=not custom_skills,
+    )
     adaptive_context = prepare_adaptive_context(
         mode=request.mode,
         release=release,
@@ -238,6 +245,7 @@ def run_api_query(request: QueryRequest, *, model: str) -> QueryResult:
                 *input_roots,
                 *map(Path, skill_dirs),
                 *release.runtime_roots(),
+                *((gene_store,) if gene_store is not None else ()),
             ),
             writable_dir=run_dir,
         ),

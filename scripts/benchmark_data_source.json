@@ -1,0 +1,22 @@
+{
+  "repo_id": "perturbai/wholebrain_crispr_atlas",
+  "revision": "a7c65dc0a64da4bd47cf6ef5f4dec6c7ef745e87",
+  "filename": "analysis/2603_shi_manuscript/diff_expr_genes/wilcoxon_de_results_group_name_final_data_no_multi_guide_cells.parquet",
+  "bytes": 10761466473,
+  "sha256": "cade64a236e3707e91c289bae32282e8b919276760223e581af2342232bcb969",
+  "holdout_registry": {
+    "path": "data/inputs/holdout/holdout_perturbations.csv",
+    "sha256": "b5984d1c32ed054fbffea37166c73eafad373dd4659dc0d14ea16862881e418f",
+    "targets": 273
+  },
+  "training_counts": {
+    "path": "data/inputs/holdout/151_TH_Prkcd_Grin2c_Glut_deg_counts_training.csv",
+    "sha256": "48fb8105306c5444815f5fa82affeb83ca439ccb20751783172fe545881098f3",
+    "targets": 1674
+  },
+  "inventory": {
+    "perturbation_labels": 2046,
+    "cell_groups": 23,
+    "measured_genes": 17994
+  }
+}

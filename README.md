@@ -58,6 +58,10 @@ Install the minimal environment from the repository root:
 pixi install -e minimal
 ```
 
+This includes the HTTP clients and Pandas, PyArrow, and DuckDB dependencies used
+by the query skills. Gene annotations use the installed Shi SQLite index;
+query/chat resolve its location automatically for both Shi corpus variants.
+
 DistributedAgents uses the Codex CLI by default for ease of integration. Authenticate once before the first run:
 
 ```bash
@@ -105,6 +109,29 @@ Run the same command again to resume that chat. Use a different output directory
 
 For API-key authentication with the Codex CLI, add `--codex-auth apikey` to either command.
 
+## Full atlas and benchmark inputs
+
+The full differential-expression atlas is downloaded separately from Hugging
+Face. Prepare it and the benchmark derivatives with:
+
+```bash
+pixi run -e minimal python scripts/prepare_benchmark_data.py
+export DISTRIBUTED_AGENTS_SHARED_ROOT="$PWD"
+```
+
+This downloads the pinned 10.8 GB Parquet, verifies its SHA-256, creates the
+no-counts and holdout training variants, and validates all eight BioEval task
+manifests. Allow 35 GB of free space; the prepared files occupy about 31 GB
+under `data/`. Interrupted downloads resume, and existing verified files are
+reused.
+
+The source revision and checksum are recorded in
+[`scripts/benchmark_data_source.json`](scripts/benchmark_data_source.json).
+Prepared-file checksums are saved in `data/benchmark-data.provenance.json`.
+Add `--verify-only` to check existing files without downloading. To use another
+data directory, add `--shared-root /path/to/atlas` and set
+`DISTRIBUTED_AGENTS_SHARED_ROOT` to that same directory when running BioEval.
+
 ## Manuscript analyses
 
 Large datasets and workbooks are stored with Git LFS. After installing Git LFS
@@ -140,6 +167,8 @@ data/
 notebook/               Main and supplementary figure notebooks
 src/manuscript_figures/ Preparation methods and shared plotting style
 ```
+
+All data needed to regenerate the manuscript tables and figures is bundled under `data/`.
 
 ## License
 

@@ -33,11 +33,10 @@ def apply_proxy_env(env: dict[str, str], proxy: "ProxyHandle") -> None:
     """Point a subprocess's OpenAI and Anthropic clients at the cost-tracking proxy.
 
     Sets both ``OPENAI_BASE_URL`` (read by openai-python / the Agents SDK) and
-    ``OPENAI_API_BASE`` (read by langchain_openai, which Biomni uses). The real
-    ``OPENAI_API_KEY`` is left untouched: the proxy runs without a master key and
-    forwards using its own upstream key, and keeping the real key in the
-    subprocess means the Agents SDK trace exporter (which talks to OpenAI
-    directly, not through the proxy) still authenticates.
+    ``OPENAI_API_BASE`` (read by langchain_openai, which Biomni uses). The run's
+    selected upstream credential also authenticates the local proxy. Supplying
+    that same credential to the client keeps framework-specific key overrides
+    consistent and lets the Agents SDK trace exporter authenticate directly.
 
     For Biomni runs on Anthropic models (``--biomni-model claude-*``) the same
     must happen for the Anthropic client, or its traffic goes straight to
@@ -46,13 +45,16 @@ def apply_proxy_env(env: dict[str, str], proxy: "ProxyHandle") -> None:
     the anthropic SDK, which appends ``/v1/messages`` — the route LiteLLM serves
     at the proxy *root* — so strip the ``/v1`` suffix. Both vars are set (the
     API_URL one wins) so a stale value in the environment can't silently bypass
-    the proxy. The real ``ANTHROPIC_API_KEY`` is likewise left untouched.
+    the proxy.
     """
     env["OPENAI_BASE_URL"] = proxy.base_url
     env["OPENAI_API_BASE"] = proxy.base_url
     anthropic_base = proxy.base_url.rsplit("/v1", 1)[0]
     env["ANTHROPIC_BASE_URL"] = anthropic_base
     env["ANTHROPIC_API_URL"] = anthropic_base
+    if proxy.api_key is not None:
+        env["OPENAI_API_KEY"] = proxy.api_key
+        env["ANTHROPIC_API_KEY"] = proxy.api_key
 
 
 def apply_tls_egress_env(

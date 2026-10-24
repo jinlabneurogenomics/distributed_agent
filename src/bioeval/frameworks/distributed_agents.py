@@ -66,6 +66,7 @@ def distributed_agents_command(
     cmd = [
         pixi_executable,
         "run",
+        *(["-e", "api"] if backend == "api" else []),
         "distributed_agents",
         "query",
         "--task-file",

@@ -12,10 +12,11 @@ DistributedAgents has four runtime command surfaces:
 4. `distributed_agents corpus` inspects and validates separately installed corpus
    releases.
 
-The default installation supports the Codex query/chat path and corpus
-inspection. Install `distributed_agents[api]` for the direct query backend,
-`distributed_agents[build]` for corpus authoring, and `distributed_agents[analysis]` when host-side
-Parquet inspection is required.
+The default installation supports the Codex query/chat path, corpus inspection,
+external source clients, and Parquet/SQL query helpers. Install
+`distributed_agents[api]` for the direct query backend and
+`distributed_agents[build]` for corpus authoring. The `analysis` extra remains
+available for compatibility; its Parquet dependency is included by default.
 
 ## Query modes
 

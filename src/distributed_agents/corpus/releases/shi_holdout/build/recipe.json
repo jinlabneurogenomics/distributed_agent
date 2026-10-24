@@ -1,0 +1,19 @@
+{
+  "schema_version": "distributed_agents-corpus-build-recipe-v1",
+  "input": "artifacts/reports/reports.jsonl",
+  "input_role": "immutable_post_generation_report_ledger",
+  "builder": "build/build_ledgers.py",
+  "repairs": "build/repairs.json",
+  "outputs": [
+    "artifacts/ledgers/evidence.jsonl",
+    "artifacts/ledgers/references.jsonl",
+    "artifacts/ledgers/findings.jsonl",
+    "artifacts/ledgers/null_findings.jsonl",
+    "artifacts/ledgers/pathways.jsonl",
+    "artifacts/ledgers/cell_types.jsonl",
+    "artifacts/audits/extraction.json"
+  ],
+  "determinism": "stdlib-only; canonical sorted-key JSONL and stable CSV ordering",
+  "network": false,
+  "model_calls": false
+}

@@ -9,8 +9,8 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Any, Literal
 
+from ..runtime.paths import REPO_ROOT
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
 # Product aliases are convenient interactively but make an eval irreproducible.
 # Resolve the aliases accepted by our CLI to an explicit API model before launch.
 _RUNTIME_MODEL_ALIASES = {

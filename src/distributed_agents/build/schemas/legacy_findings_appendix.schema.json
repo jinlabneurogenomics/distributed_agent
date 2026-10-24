@@ -1,0 +1,335 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://distributed_agents.local/schemas/legacy-findings-appendix-v1.schema.json",
+  "title": "Legacy Findings Report Structured Appendix",
+  "description": "Validation contract for the six JSONL ledgers in the v1.4 findings report prompt. Validate this normalized object after extracting the JSONL records from the Markdown report.",
+  "$comment": "JSON Schema checks row shape and closed vocabularies. A post-validation pass separately enforces unique IDs, cross-ledger referential integrity, and derived-view grounding rules.",
+  "type": "object",
+  "required": [
+    "gene_target",
+    "evidence",
+    "references",
+    "biological_findings",
+    "literature_comparisons",
+    "pathways",
+    "cell_type_specificity"
+  ],
+  "properties": {
+    "gene_target": {"$ref": "#/$defs/nonEmptyString"},
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/evidence"}
+    },
+    "references": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/reference"}
+    },
+    "biological_findings": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/biologicalFinding"}
+    },
+    "literature_comparisons": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/literatureComparison"}
+    },
+    "pathways": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/pathway"}
+    },
+    "cell_type_specificity": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/cellTypeSpecificity"}
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "nonEmptyString": {"type": "string", "minLength": 1},
+    "cellType": {
+      "type": "string",
+      "enum": [
+        "001 L5-6 IT Glut",
+        "005 L4-5 IT CTX Glut",
+        "007 L2-3 IT CTX Glut",
+        "008 L2-3 IT ENT PPP RSP Glut",
+        "009 L2-3 IT PIR AON ENT Glut",
+        "012 MEA LA CA1 DG Glut",
+        "017 CA3 CA2-FC DG Glut",
+        "022 L5 ET CTX Glut",
+        "027 NP-CT-L6b-OB Glut",
+        "046 CTX-CGE GABA",
+        "052 Pvalb Gaba",
+        "053 Sst Gaba",
+        "054 CNU-MGE GABA",
+        "059 CNU-LGE LSX GABA",
+        "066 CNU-HYa HY GABA",
+        "110 CNU-HYa HY MM Glut",
+        "145 MH-LH TH Glut",
+        "151 TH Prkcd Grin2c Glut",
+        "155 MB Glut",
+        "191 MB P MY GABA",
+        "215 MB Dopa",
+        "217 P MY Pineal Glut",
+        "308 CB GABA"
+      ]
+    },
+    "cellTypeList": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/cellType"}
+    },
+    "nullableCellTypeList": {
+      "oneOf": [
+        {"$ref": "#/$defs/cellTypeList"},
+        {"type": "null"}
+      ]
+    },
+    "nonEmptyStringList": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/nonEmptyString"}
+    },
+    "nullableNonEmptyStringList": {
+      "oneOf": [
+        {"$ref": "#/$defs/nonEmptyStringList"},
+        {"type": "null"}
+      ]
+    },
+    "evidenceId": {"type": "string", "pattern": "^E[0-9]{3,}$"},
+    "referenceId": {"type": "string", "pattern": "^R[0-9]{3,}$"},
+    "findingId": {"type": "string", "pattern": "^F[0-9]{3,}$"},
+    "comparisonId": {"type": "string", "pattern": "^LC[0-9]{3,}$"},
+    "evidenceIdList": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/evidenceId"}
+    },
+    "referenceIdList": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/referenceId"}
+    },
+    "requiredReferenceIdList": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/referenceId"}
+    },
+    "findingIdList": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/findingId"}
+    },
+    "evidence": {
+      "type": "object",
+      "required": [
+        "evidence_id",
+        "evidence_slug",
+        "cell_type",
+        "genes",
+        "statistics",
+        "description"
+      ],
+      "properties": {
+        "evidence_id": {"$ref": "#/$defs/evidenceId"},
+        "evidence_slug": {"$ref": "#/$defs/nonEmptyString"},
+        "cell_type": {
+          "oneOf": [
+            {"$ref": "#/$defs/cellType"},
+            {"type": "null"}
+          ]
+        },
+        "genes": {"$ref": "#/$defs/nullableNonEmptyStringList"},
+        "statistics": {"$ref": "#/$defs/nonEmptyString"},
+        "description": {"$ref": "#/$defs/nonEmptyString"}
+      },
+      "additionalProperties": false
+    },
+    "reference": {
+      "type": "object",
+      "required": [
+        "ref_id",
+        "ref_slug",
+        "source",
+        "source_type",
+        "citation",
+        "url",
+        "description"
+      ],
+      "properties": {
+        "ref_id": {"$ref": "#/$defs/referenceId"},
+        "ref_slug": {"$ref": "#/$defs/nonEmptyString"},
+        "source": {"$ref": "#/$defs/nonEmptyString"},
+        "source_type": {
+          "$ref": "#/$defs/nonEmptyString",
+          "description": "Examples from the prompt include pubmed, pmc, openalex, review, database, clinicaltrials, and other."
+        },
+        "citation": {"$ref": "#/$defs/nonEmptyString"},
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "description": {"$ref": "#/$defs/nonEmptyString"}
+      },
+      "additionalProperties": false
+    },
+    "biologicalFinding": {
+      "type": "object",
+      "required": [
+        "finding_id",
+        "finding_type",
+        "summary",
+        "why_it_matters",
+        "cell_types",
+        "genes",
+        "comparators",
+        "direction",
+        "confidence",
+        "evidence_ids",
+        "ref_ids",
+        "literature_status",
+        "main_caveats"
+      ],
+      "properties": {
+        "finding_id": {"$ref": "#/$defs/findingId"},
+        "finding_type": {
+          "type": "string",
+          "enum": [
+            "cell_type_selectivity",
+            "cross_perturbation_contrast",
+            "convergent_module",
+            "buffered_response",
+            "homeostatic_compensation",
+            "literature_direction_mismatch",
+            "disease_mechanism_refinement",
+            "therapeutic_direction_warning",
+            "biomarker_candidate",
+            "negative_result",
+            "pathway_uncoupling",
+            "other"
+          ]
+        },
+        "summary": {"$ref": "#/$defs/nonEmptyString"},
+        "why_it_matters": {"$ref": "#/$defs/nonEmptyString"},
+        "cell_types": {"$ref": "#/$defs/nullableCellTypeList"},
+        "genes": {"$ref": "#/$defs/nullableNonEmptyStringList"},
+        "comparators": {"$ref": "#/$defs/nullableNonEmptyStringList"},
+        "direction": {
+          "oneOf": [
+            {"$ref": "#/$defs/nonEmptyString"},
+            {"type": "null"}
+          ]
+        },
+        "confidence": {
+          "type": "string",
+          "enum": ["high", "moderate", "low", "exploratory"]
+        },
+        "evidence_ids": {"$ref": "#/$defs/evidenceIdList"},
+        "ref_ids": {"$ref": "#/$defs/referenceIdList"},
+        "literature_status": {
+          "oneOf": [
+            {"$ref": "#/$defs/nonEmptyString"},
+            {"type": "null"}
+          ]
+        },
+        "main_caveats": {"$ref": "#/$defs/nonEmptyString"}
+      },
+      "additionalProperties": false
+    },
+    "literatureComparison": {
+      "type": "object",
+      "required": [
+        "comparison_id",
+        "finding_id",
+        "comparison_scope",
+        "dataset_claim",
+        "literature_claim",
+        "relationship_to_literature",
+        "context_match",
+        "evidence_ids",
+        "ref_ids",
+        "confidence"
+      ],
+      "properties": {
+        "comparison_id": {"$ref": "#/$defs/comparisonId"},
+        "finding_id": {"$ref": "#/$defs/findingId"},
+        "comparison_scope": {
+          "$ref": "#/$defs/nonEmptyString",
+          "description": "Examples from the prompt include target_function, cell_type_context, pathway_direction, cross_perturbation_relationship, disease_mechanism, therapeutic_direction, biomarker, and other."
+        },
+        "dataset_claim": {"$ref": "#/$defs/nonEmptyString"},
+        "literature_claim": {"$ref": "#/$defs/nonEmptyString"},
+        "relationship_to_literature": {
+          "$ref": "#/$defs/nonEmptyString",
+          "description": "Examples from the prompt include agrees, moderately_agrees, extends, refines, contradicts_expected_relationship, opposes_reported_direction, no_direct_literature, and literature_ambiguous."
+        },
+        "context_match": {"$ref": "#/$defs/nonEmptyString"},
+        "evidence_ids": {"$ref": "#/$defs/evidenceIdList"},
+        "ref_ids": {"$ref": "#/$defs/requiredReferenceIdList"},
+        "confidence": {
+          "type": "string",
+          "enum": ["high", "moderate", "low", "exploratory"]
+        }
+      },
+      "additionalProperties": false
+    },
+    "pathway": {
+      "type": "object",
+      "required": [
+        "pathway",
+        "finding_ids",
+        "cell_type",
+        "genes",
+        "direction",
+        "evidence_ids"
+      ],
+      "properties": {
+        "pathway": {
+          "oneOf": [
+            {"$ref": "#/$defs/nonEmptyString"},
+            {"type": "null"}
+          ]
+        },
+        "finding_ids": {"$ref": "#/$defs/findingIdList"},
+        "cell_type": {
+          "$ref": "#/$defs/nullableCellTypeList",
+          "description": "The legacy prompt uses the singular key cell_type here even though its value is an array."
+        },
+        "genes": {"$ref": "#/$defs/nullableNonEmptyStringList"},
+        "direction": {
+          "oneOf": [
+            {"$ref": "#/$defs/nonEmptyString"},
+            {"type": "null"}
+          ]
+        },
+        "evidence_ids": {"$ref": "#/$defs/evidenceIdList"}
+      },
+      "additionalProperties": false
+    },
+    "cellTypeSpecificity": {
+      "type": "object",
+      "required": [
+        "cell_type",
+        "finding_ids",
+        "summary",
+        "evidence_ids",
+        "ref_ids"
+      ],
+      "properties": {
+        "cell_type": {"$ref": "#/$defs/cellType"},
+        "finding_ids": {"$ref": "#/$defs/findingIdList"},
+        "summary": {"$ref": "#/$defs/nonEmptyString"},
+        "evidence_ids": {"$ref": "#/$defs/evidenceIdList"},
+        "ref_ids": {"$ref": "#/$defs/referenceIdList"}
+      },
+      "additionalProperties": false
+    }
+  }
+}

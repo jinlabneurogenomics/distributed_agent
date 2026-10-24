@@ -5,9 +5,13 @@ description = "Agent runtime for evidence-grounded perturbation biology analysis
 readme = "src/distributed_agents/README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "duckdb>=1.5,<2",
     "jsonschema>=4.23,<5",
     "networkx>=3.2,<4",
+    "pandas>=2.2,<3",
+    "pyarrow>=15",
     "python-dotenv>=1.0",
+    "requests>=2.31,<3",
 ]
 
 [project.optional-dependencies]
@@ -107,6 +111,32 @@ notebook = "jupyter lab notebook/"
 [tool.pixi.feature.manuscript.pypi-dependencies]
 distributed_agents = { path = ".", editable = true, extras = ["manuscript"] }
 
+[tool.pixi.feature.api.pypi-dependencies]
+distributed_agents = { path = ".", editable = true, extras = ["api"] }
+
+# BioEval launches these proxies as separate processes with their own dependencies.
+[tool.pixi.feature.tls-proxy.dependencies]
+python = "3.12.*"
+
+[tool.pixi.feature.tls-proxy.pypi-dependencies]
+mitmproxy = ">=12.3,<13"
+
+[tool.pixi.feature.litellm-proxy.dependencies]
+python = "3.12.*"
+
+[tool.pixi.feature.litellm-proxy.pypi-dependencies]
+# Maintainer-recommended pin after the compromised 1.107.0 release:
+# https://docs.litellm.ai/blog/security-incident-oct-21-2026
+litellm = { version = "==1.106.2", extras = ["proxy"] }
+# LiteLLM's authentication error handler imports Prisma even without a database.
+prisma = ">=0.15,<0.16"
+
+[tool.pixi.feature.litellm-proxy.activation.env]
+LITELLM_LOCAL_MODEL_COST_MAP = "True"
+
 [tool.pixi.environments]
 default = { features = ["manuscript"], solve-group = "manuscript" }
 minimal = { solve-group = "minimal" }
+api = { features = ["api"], solve-group = "api" }
+tls-proxy = { features = ["tls-proxy"], no-default-feature = true }
+litellm-proxy = { features = ["litellm-proxy"], no-default-feature = true }

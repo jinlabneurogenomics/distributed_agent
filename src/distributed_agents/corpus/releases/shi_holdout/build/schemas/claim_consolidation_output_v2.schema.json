@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://distributed_agents.local/schemas/july-claim-consolidation-output-v2.schema.json",
+  "title": "Shi Holdout Bottom-up Claim Consolidation Output v2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["batch_id", "component_results"],
+  "properties": {
+    "batch_id": {"type": "string", "minLength": 1},
+    "component_results": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/componentResult"}
+    }
+  },
+  "$defs": {
+    "contribution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["finding_doc_id", "role", "rationale"],
+      "properties": {
+        "finding_doc_id": {"type": "string", "minLength": 1},
+        "role": {
+          "type": "string",
+          "enum": ["ANCHORS", "CONTRASTS", "QUALIFIES", "SUPPORTS"]
+        },
+        "rationale": {"type": "string", "minLength": 1}
+      }
+    },
+    "claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "local_claim_id",
+        "statement",
+        "scope",
+        "higher_order_basis",
+        "confidence",
+        "source_proposal_ids",
+        "contributions"
+      ],
+      "properties": {
+        "local_claim_id": {"type": "string", "pattern": "^C[1-9][0-9]*$"},
+        "statement": {"type": "string", "minLength": 1},
+        "scope": {"type": "string", "minLength": 1},
+        "higher_order_basis": {"type": "string", "minLength": 1},
+        "confidence": {
+          "type": "string",
+          "enum": ["high", "moderate", "low"]
+        },
+        "source_proposal_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "contributions": {
+          "type": "array",
+          "minItems": 2,
+          "items": {"$ref": "#/$defs/contribution"}
+        }
+      }
+    },
+    "rejectedProposal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["proposal_id", "rationale"],
+      "properties": {
+        "proposal_id": {"type": "string", "minLength": 1},
+        "rationale": {"type": "string", "minLength": 1}
+      }
+    },
+    "componentResult": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["component_id", "claims", "rejected_proposals"],
+      "properties": {
+        "component_id": {"type": "string", "minLength": 1},
+        "claims": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/claim"}
+        },
+        "rejected_proposals": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/rejectedProposal"}
+        }
+      }
+    }
+  }
+}

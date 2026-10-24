@@ -1,0 +1,64 @@
+{
+  "schema_version": "distributed_agents-corpus-repairs-v1",
+  "repairs": [
+    {
+      "repair_id": "kif5c-cell-type-missing-comma",
+      "kind": "replace_json_line",
+      "target_gene": "Kif5c",
+      "section": "Cell Type Specificity JSONL",
+      "raw_sha256": "ac947891d591f54d16c0bc5407f5b2125b756fa00182192bfa5b67d703582fe6",
+      "reason": "Insert the missing comma between the summary and evidence_ids fields.",
+      "replacement": {
+        "cell_type": "subcortical glutamatergic, dopaminergic, and pineal groups",
+        "finding_ids": ["F001", "N004"],
+        "summary": "110, 145, 151, 155, 215, and 217 were downstream-null, including 151 and 155 with significant Kif5c self-transcript DE; real KIF5C phenotypes may be shifted to excluded motor neurons or to axonal transport.",
+        "evidence_ids": ["E004", "E005", "E006", "E007", "E008"],
+        "ref_ids": ["R001", "R008"]
+      }
+    },
+    {
+      "repair_id": "cplx1-cell-type-f3-padding",
+      "kind": "replace_list_value",
+      "target_gene": "Cplx1",
+      "section": "Cell Type Specificity JSONL",
+      "record_sha256": "846d5d5abc4ffc6e5762a5c33fd54af1dfcf725bb2b93d866cb22f2e5b84df62",
+      "field": "finding_ids",
+      "old": "F3",
+      "new": "F003",
+      "reason": "Canonicalize an unpadded link to the existing F003 finding."
+    },
+    {
+      "repair_id": "dab1-cell-type-f2-padding",
+      "kind": "replace_list_value",
+      "target_gene": "Dab1",
+      "section": "Cell Type Specificity JSONL",
+      "record_sha256": "741beb3f1e29f2c6132cd06e2f997b23da64df25d989c41b07409ee270a34189",
+      "field": "finding_ids",
+      "old": "F2",
+      "new": "F002",
+      "reason": "Canonicalize an unpadded link to the existing F002 finding."
+    },
+    {
+      "repair_id": "ephb4-cell-type-f3-padding",
+      "kind": "replace_list_value",
+      "target_gene": "Ephb4",
+      "section": "Cell Type Specificity JSONL",
+      "record_sha256": "8844ac2ea08175d902b6dfa54dcd401c48b4b19eccfc8730862eaae99d22b298",
+      "field": "finding_ids",
+      "old": "F3",
+      "new": "F003",
+      "reason": "Canonicalize an unpadded link to the existing F003 finding."
+    },
+    {
+      "repair_id": "hsd17b4-cell-type-r2-subscript",
+      "kind": "replace_list_value",
+      "target_gene": "Hsd17b4",
+      "section": "Cell Type Specificity JSONL",
+      "record_sha256": "864c87052ebfe109033765a85bcec3e21e1e85cb8da7e353e60b79946a4fd9e8",
+      "field": "ref_ids",
+      "old": "R₂",
+      "new": "R002",
+      "reason": "Canonicalize a Unicode-subscript link to the existing R002 reference."
+    }
+  ]
+}

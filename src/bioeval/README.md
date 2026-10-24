@@ -15,12 +15,16 @@ pixi install
 pixi run bioeval --help
 ```
 
-The bundled task TOMLs refer to data beneath `DISTRIBUTED_AGENTS_SHARED_ROOT`. Set it to
-the directory containing the required `data/` and `debug/` inputs:
+Prepare the full atlas and benchmark inputs, then point the bundled task TOMLs
+at the directory containing `data/`:
 
 ```bash
-export DISTRIBUTED_AGENTS_SHARED_ROOT=/path/to/shared-distributed_agents-root
+pixi run -e minimal python scripts/prepare_benchmark_data.py
+export DISTRIBUTED_AGENTS_SHARED_ROOT="$PWD"
 ```
+
+See [the README's data preparation instructions](../../README.md#full-atlas-and-benchmark-inputs)
+for storage requirements and verification options.
 
 Preview a task without calling a model:
 
@@ -91,11 +95,17 @@ for repeated runs and `--run-id NAME` for a stable batch name.
   OpenAI or Anthropic API key.
 
 API keys may be exported or stored in the repository's untracked `.env` file.
+For `--distributed_agents-backend api`, first run `pixi install -e api`;
+BioEval selects that environment automatically.
 The default Biomni cost tracker also requires:
 
 ```bash
 pixi install -e litellm-proxy
 ```
+
+This installs the `litellm` executable in `.pixi/envs/litellm-proxy/`, where
+BioEval's launcher expects it. Check the installation with
+`pixi run -e litellm-proxy litellm --version`.
 
 Pass `--no-track-cost` to omit optional proxy-based accounting for an
 unprotected run.
@@ -130,6 +140,10 @@ cd src/bioeval/containers
 apptainer build bioeval-filtered-search.sif bioeval-filtered-search.def
 cd ../../..
 ```
+
+This installs `mitmdump` in `.pixi/envs/tls-proxy/`. Check the installation with
+`pixi run -e tls-proxy mitmdump --version`. Both proxy environments have their
+own dependencies and are installed separately from `default` and `minimal`.
 
 Protected Biomni runs also require the `litellm-proxy` environment described
 above. The normal protected-run defaults already enable the required fairness

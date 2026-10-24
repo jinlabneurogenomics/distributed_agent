@@ -1,0 +1,33 @@
+{
+  "schema_version": "distributed_agents-biokg-build-recipe-v2",
+  "stages": [
+    {
+      "name": "ledger_nodes",
+      "builder": "build/build_nodes.py"
+    },
+    {
+      "name": "legacy_language_relationships",
+      "builder": "build/build_relationships.py"
+    }
+  ],
+  "inputs": [
+    "artifacts/reports/reports.jsonl",
+    "artifacts/ledgers/findings.jsonl",
+    "artifacts/ledgers/evidence.jsonl",
+    "artifacts/ledgers/references.jsonl",
+    "artifacts/claims/claims.jsonl",
+    "artifacts/claims/contributions.jsonl",
+    "projections/biokg/data/base/nodes.jsonl"
+  ],
+  "outputs": [
+    "projections/biokg/data/base/nodes.jsonl",
+    "projections/biokg/data/base/node_build.json",
+    "projections/biokg/data/base/relationships.jsonl",
+    "projections/biokg/data/base/relationship_build.json"
+  ],
+  "node_types": ["TargetGene", "Gene", "Finding", "Evidence", "Reference", "Claim"],
+  "relationship_types": ["HAS_FINDING", "HAS_TARGET", "REPORTS_GENE", "SUPPORTED_BY", "CITES", "EXPRESSES_CLAIM"],
+  "semantic_extraction": false,
+  "network": false,
+  "model_calls": false
+}

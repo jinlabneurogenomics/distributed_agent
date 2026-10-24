@@ -181,6 +181,7 @@ def run_codex_query(request: QueryRequest, *, model: str) -> QueryResult:
         task_input_roots=options.input_roots,
         include_packaged_skills=not bool(request.skills_destination),
         corpus_release=corpus_release,
+        working_directory=working_directory,
     )
     input_roots = access_plan.effective_roots
     capability_preflight = _preflight_release_runtime(

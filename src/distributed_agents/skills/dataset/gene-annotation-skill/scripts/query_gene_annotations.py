@@ -2,15 +2,10 @@
 """Query the gene-annotation store — the deterministic gene<->set membership backbone.
 
 Filter / parameter-provider primitive over the closed gene universe (18,023 real
-genes: perturbation targets + measured readout). Two tables:
-
-  out/genes.parquet            DIMENSION: one row per gene, scalar flags
-                               (is_perturbation_target, is_measured, is_control_target,
-                               type_of_gene, entrez/ensembl IDs).
-  out/gene_membership.parquet  FACT: (gene, resource, set_id, set_name), many-to-many.
-                               Resources: GO:BP/CC/MF, reactome, kegg, MSigDB:MH,
-                               MSigDB:CP:WIKIPATHWAYS, MSigDB:CP:BIOCARTA, CORUM,
-                               functional_class.
+genes: perturbation targets + measured readout). Reads gene flags and curated
+memberships from the manifest-declared gene annotation SQLite index. An explicit
+--store-dir or DISTRIBUTED_AGENTS_GENE_STORE can instead select a SQLite file or a
+legacy directory containing genes.parquet and gene_membership.parquet.
 
 Its main job is to hand a *deterministic gene list* to the graph / retrieval lanes
 as a **prior group** — e.g. the CORUM proteasome subunits, or the WikiPathways WNT
@@ -19,9 +14,9 @@ specificity, and manuscript-synthesis reasoning all need this "expected-similar"
 to compare observed findings against. It also answers attribute-set questions
 directly ("list all TF targets" = 398), the deterministic 4th access mode.
 
-Runs in the `annotation` pixi env (needs pandas):
+Runs in the documented `minimal` pixi environment:
 
-    pixi run -e annotation python debug/260704_annotation/query_gene_annotations.py MODE ...
+    pixi run -e minimal python src/distributed_agents/skills/dataset/gene-annotation-skill/scripts/query_gene_annotations.py MODE ...
 
 Modes
 -----
@@ -51,26 +46,74 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import sqlite3
 import sys
 from pathlib import Path
 
 import pandas as pd
 
-_HERE = Path(__file__).resolve().parent
-
-
 def store_dir(override: str | None) -> Path:
-    if override:
-        return Path(override).expanduser()
-    env = os.environ.get("DISTRIBUTED_AGENTS_GENE_STORE")
-    return Path(env).expanduser() if env else _HERE / "out"
+    explicit = override or os.environ.get("DISTRIBUTED_AGENTS_GENE_STORE")
+    if explicit:
+        return Path(explicit).expanduser().resolve()
+    # Query/chat resolve this on the host and pass the exact mounted path in the
+    # environment. Only direct CLI use needs the installed corpus registry.
+    try:
+        from distributed_agents.skills.gene_annotations import resolve_gene_store
+    except ImportError:
+        # The sandbox deliberately omits core modules. An absent host-resolved
+        # store should produce the same setup guidance there as on the host.
+        store = None
+    else:
+        store = resolve_gene_store()
+    if store is None:
+        raise SystemExit(
+            "No gene-annotation store is installed for this corpus. Install the "
+            "Shi annotation capsule, or pass --store-dir /path/to/store "
+            "(a SQLite file or a directory with genes.parquet and "
+            "gene_membership.parquet)."
+        )
+    return store
 
 
 def load(store: Path) -> tuple[pd.DataFrame, pd.DataFrame]:
+    if store.is_file():
+        try:
+            with store.open("rb") as stream:
+                header = stream.read(64)
+            if header.startswith(b"version https://git-lfs.github.com/spec/v1"):
+                raise SystemExit(
+                    f"gene-annotation store is a Git LFS pointer: {store}\n"
+                    "Run git lfs pull in the data checkout to download the SQLite file."
+                )
+            if not header.startswith(b"SQLite format 3\x00"):
+                raise SystemExit(f"gene-annotation store is not a SQLite database: {store}")
+            connection = sqlite3.connect(store.resolve().as_uri() + "?mode=ro", uri=True)
+            try:
+                dim = pd.read_sql_query(
+                    "SELECT symbol AS gene, is_perturbation_target, is_measured, "
+                    "is_control_target FROM genes", connection,
+                )
+                fact = pd.read_sql_query(
+                    "SELECT g.symbol AS gene, s.resource, s.source_id AS set_id, "
+                    "s.set_name FROM memberships m "
+                    "JOIN annotation_sets s ON s.id = m.set_id "
+                    "JOIN genes g ON g.id = m.gene_id", connection,
+                )
+            finally:
+                connection.close()
+        except (OSError, sqlite3.Error, pd.errors.DatabaseError) as exc:
+            raise SystemExit(f"Cannot read gene-annotation index {store}: {exc}") from exc
+        # SQLite stores booleans as integers; pandas.query needs boolean masks.
+        for column in ("is_perturbation_target", "is_measured", "is_control_target"):
+            dim[column] = dim[column].astype(bool)
+        return dim, fact
     dim_p, fact_p = store / "genes.parquet", store / "gene_membership.parquet"
-    if not fact_p.is_file():
-        raise SystemExit(f"gene-annotation store not found at {store}\n"
-                         "Pass --store-dir or set DISTRIBUTED_AGENTS_GENE_STORE.")
+    missing = [path.name for path in (dim_p, fact_p) if not path.is_file()]
+    if missing:
+        raise SystemExit(f"gene-annotation store at {store} is missing {', '.join(missing)}\n"
+                         "Pass --store-dir or set DISTRIBUTED_AGENTS_GENE_STORE to a "
+                         "SQLite file or a directory containing both Parquet tables.")
     return pd.read_parquet(dim_p), pd.read_parquet(fact_p)
 
 
@@ -188,7 +231,8 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     p = argparse.ArgumentParser(description=__doc__,
                                 formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("mode", choices=["resources", "search", "genes-in", "sets-for"])
-    p.add_argument("--store-dir", default=None, help="Override the store dir (holds *.parquet).")
+    p.add_argument("--store-dir", default=None,
+                   help="Override the store: a SQLite file or a directory holding both Parquet tables.")
     p.add_argument("--resource", default=None,
                    help="Restrict to one resource (e.g. CORUM, reactome, GO:BP, "
                         "MSigDB:CP:WIKIPATHWAYS, functional_class).")

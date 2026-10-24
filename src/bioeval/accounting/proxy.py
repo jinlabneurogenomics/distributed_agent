@@ -25,7 +25,7 @@ import tempfile
 import time
 import urllib.error
 import urllib.request
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 
 from dotenv import dotenv_values
@@ -43,6 +43,7 @@ class ProxyHandle:
 
     base_url: str
     usage_log: Path
+    api_key: str | None = field(default=None, repr=False)
 
 
 @dataclass(frozen=True)
@@ -128,18 +129,24 @@ def _scoped_config(path: Path, model: ProxyModelConfig, credential: str) -> None
             "retry_after": 30,
             "request_timeout": 600,
         },
+        "general_settings": {"master_key": f"os.environ/{credential}"},
     }
     path.write_text(json.dumps(payload, indent=2) + "\n")
 
 
-def _wait_until_ready(base_url: str, timeout: float, proc: subprocess.Popen) -> None:
+def _wait_until_ready(
+    base_url: str, timeout: float, proc: subprocess.Popen, *, api_key: str
+) -> None:
     deadline = time.time() + timeout
     health = base_url.rsplit("/v1", 1)[0] + "/health/readiness"
+    request = urllib.request.Request(
+        health, headers={"Authorization": f"Bearer {api_key}"}
+    )
     while time.time() < deadline:
         if proc.poll() is not None:
             raise RuntimeError(f"litellm proxy exited early (code {proc.returncode})")
         try:
-            with urllib.request.urlopen(health, timeout=2) as resp:
+            with urllib.request.urlopen(request, timeout=2) as resp:
                 if resp.status == 200:
                     return
         except (urllib.error.URLError, OSError):
@@ -225,8 +232,12 @@ def litellm_proxy(
 
         atexit.register(_terminate)
         try:
-            _wait_until_ready(base_url, readiness_timeout, proc)
-            yield ProxyHandle(base_url=base_url, usage_log=usage_log_path)
+            _wait_until_ready(
+                base_url, readiness_timeout, proc, api_key=env[credential]
+            )
+            yield ProxyHandle(
+                base_url=base_url, usage_log=usage_log_path, api_key=env[credential]
+            )
         finally:
             _terminate()
             with contextlib.suppress(ValueError):
